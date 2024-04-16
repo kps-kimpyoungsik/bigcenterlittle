@@ -5,6 +5,7 @@ import LayoutAside from "../adm_4000Aside";
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
 import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	const modaladm4111 = useToggleState({});
 	const modaladm4112 = useToggleState({});
@@ -13,10 +14,10 @@ function ContentsContainer() {
 			<LayoutAside />
 			<div className="fww-con">
 				<ul className="fww-brd">
-					<li className=""><Link to="/admin">홈</Link></li>
-					<li className=""><Link to="#">관리자페이지</Link></li>
-					<li className=""><Link to="#">사용자관리</Link></li>
-					<li className=""><Link to="#">회원관리</Link></li>
+					<li><Link to="/admin">홈</Link></li>
+					<li><Link to="#">관리자페이지</Link></li>
+					<li><Link to="#">사용자관리</Link></li>
+					<li><Link to="#">회원관리</Link></li>
 				</ul>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">회원정보 상세</h1>
@@ -25,7 +26,7 @@ function ContentsContainer() {
 							<div className="fo-item">
 								<p className="fo-key">사용자유형</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="시스템" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'시스템'} placeholder={"검색어 입력"} readOnly={true}/>
 								</div>
 							</div>
 							<div className="fo-item">

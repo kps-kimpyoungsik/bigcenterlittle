@@ -4,6 +4,7 @@ import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
 import UIDatePicker from "components/datepicker";
 import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -71,13 +72,13 @@ function ContentsContainer() {
 							<div className="sf-item">
 								<p className="sf-key">기업명</p>
 								<div className="sf-value">
-									<input name="" id="" className="tf tf-md w100p" type="text" value="" placeholder="검색어 입력" />
+									<UIInput className={'tf tf-md w100p'} value={''} placeholder={"검색어 입력"} />
 								</div>						
 							</div>
 							<div className="sf-item">
 								<p className="sf-key">사용자명</p>
 								<div className="sf-value">
-									<input name="" id="" className="tf tf-md w100p" type="text" value="" placeholder="검색어 입력" />
+									<UIInput className={'tf tf-md w100p'} value={''} placeholder={"검색어 입력"} />
 								</div>						
 							</div>								
 

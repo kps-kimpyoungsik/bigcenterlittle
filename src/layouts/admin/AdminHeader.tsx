@@ -1,54 +1,54 @@
 
 import React, {} from "react";
-import { Link, NavLink  } from 'react-router-dom';
-import logo from '../../assets/img/logo/logo_blk.svg';
+import { Link, NavLink, useLocation  } from 'react-router-dom';
+import logo from 'assets/img/logo/logo_blk.svg';
 const global = {
 	content: {
 		sub1: [
 			{
-				s_id:1,
+				g_id:1,
 				name : "통합정보조회",
 				path : "/admin"
 			},
 			{
-				s_id:2,
+				g_id:2,
 				name : "모집관리",
 				path : "/admin"
 			},
 			{
-				s_id:3,
+				g_id:3,
 				name : "출연관리",
 				path : "/admin"
 			},
 			{
-				s_id:4,
+				g_id:4,
 				name : "과제관리",
 				path : "/admin"
 			},
 			{
-				s_id:5,
+				g_id:5,
 				name : "지급관리",
 				path : "/admin"
 			},
 			{
-				s_id:6,
+				g_id:6,
 				name : "환수관리",
 				path : "/admin"
 			},
 			{
-				s_id:7,
+				g_id:7,
 				name : "성과관리",
 				path : "/admin"
 			},
 		],
 		sub2: [
 			{
-				s_id:1,
+				g_id:1,
 				name : "가상계좌조회",
 				path : "/admin"
 			},
 			{
-				s_id:2,
+				g_id:2,
 				name : "모계좌조회",
 				path : "/admin"
 			},
@@ -56,7 +56,7 @@ const global = {
 	}
 };
 function LayoutHeader() {
-	//const { location } = useHistory();
+	const location = useLocation(); 
 	return (
 		<div className='fww-header-util'>
 			<div className='fww-util'>
@@ -93,14 +93,14 @@ function LayoutHeader() {
 				<div className='right-area'>
 					<nav className='fww-gnb'>
 						<ul>
-							<li className='d1'><NavLink to="#">기금관리</NavLink></li>
-							<li className='d1'><NavLink to="#">계좌관리</NavLink></li>
-							<li className='d1'><NavLink to="#">공시/발급</NavLink></li>
-							<li className='d1 active'><NavLink to="/admin/adm_4000/adm4100">사용자관리</NavLink></li>
-							<li className='d1'><NavLink to="/admin/adm_5000/adm5100">게시판관리</NavLink></li>
-							<li className='d1'><NavLink to="/admin/adm_6000/adm6100">시스템관리</NavLink></li>
-							<li className='d1'><NavLink to="#">결재함</NavLink></li>
-							<li className='d1'><NavLink to="#">보고서</NavLink></li>
+							<li className={location.pathname.includes('adm_1') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_4000/adm1100">기금관리</NavLink></li>
+							<li className={location.pathname.includes('adm_2') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_4000/adm2100">계좌관리</NavLink></li>
+							<li className={location.pathname.includes('adm_3') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_4000/adm3100">공시/발급</NavLink></li>
+							<li className={location.pathname.includes('adm_4') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_4000/adm4100">사용자관리</NavLink></li>
+							<li className={location.pathname.includes('adm_5') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_5000/adm5100">게시판관리</NavLink></li>
+							<li className={location.pathname.includes('adm_6') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_6000/adm6100">시스템관리</NavLink></li>
+							<li className={location.pathname.includes('adm_7') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_4000/adm7100">결재함</NavLink></li>
+							<li className={location.pathname.includes('adm_8') ? 'd1 active' : 'd1'}><NavLink to="/admin/adm_4000/adm8100">보고서</NavLink></li>
 						</ul>
 					</nav>
 					<nav className='fww-gnb-depth2'>
@@ -109,7 +109,7 @@ function LayoutHeader() {
 								<p className='hide'>기금관리</p>
 								<ul className='d2'>
 									{global.content.sub1.map((block) => (
-										<li key={block.s_id}><Link to={block.path}>{block.name}</Link></li>
+										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>								
 								
@@ -118,7 +118,7 @@ function LayoutHeader() {
 								<p className='hide'>계좌관리</p>
 								<ul className='d2'>
 									{global.content.sub2.map((block) => (
-										<li key={block.s_id}><Link to={block.path}>{block.name}</Link></li>
+										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>
 							</li>

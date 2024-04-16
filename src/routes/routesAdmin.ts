@@ -1,7 +1,11 @@
 import React from 'react';
 import { DefaultLayout } from '../layouts/admin';
 import {
+	admIndexPage,
 	admMainPage,
+
+	//alert
+	admAlertPage,
 	
 	// TEST
 	adm0000Page,
@@ -61,11 +65,20 @@ export type PageRouteProps = {
 };
 export const routes: Array<PageRouteProps> = [
 	{
-		path: '/admin',
+		path: '/admin/',
+		component: admIndexPage,
+		layout: DefaultLayout,
+	},	
+	{
+		path: '/admin/home',
 		component: admMainPage,
 		layout: DefaultLayout,
 	},
-
+	{
+		path: '/admin/adm_alert',
+		component: admAlertPage,
+		layout: DefaultLayout,
+	},
 	{
 		path: '/admin/adm_4000/adm0000',
 		component: adm0000Page,

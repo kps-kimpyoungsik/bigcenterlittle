@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
 function PortalAside() {
 	const aside = [
 		{
@@ -17,13 +18,14 @@ function PortalAside() {
 			s_name : "한도금액통제",
 			s_path : "/admin/adm_4000/adm4310"
 		}
-	];	
+	];
+	const location = useLocation(); 
 	return (
 		<aside className='fww-aside'>
 			<p className="tit-d1">사용자관리</p>
 			<ul className='d1'>
 				{aside.map((aside) => (
-					<li key={aside.s_id}>
+					<li className={location.pathname === aside.s_path ? 'active' : ''} key={aside.s_id}>
 						<Link to={aside.s_path} className='no-sub'>{aside.s_name}</Link>
 					</li>
 				))}

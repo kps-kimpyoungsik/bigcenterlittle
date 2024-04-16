@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactModal from 'react-modal';
 
+
 type ModalPopupProps = {
 	open: boolean;
 	title: string;
@@ -16,6 +17,7 @@ ModalPopup.defaultProps = {
 };
 
 function ModalPopup(props: ModalPopupProps) {
+	ReactModal.setAppElement('*');
 	const { open, title, size, children } = props;
 	const handleClose = () => {
 		if (props.onClose) {

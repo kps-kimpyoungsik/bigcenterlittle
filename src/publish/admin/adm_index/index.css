@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap"); 
+body {
+    margin: 0;
+    padding: 0;
+  }
+  body, th, td, input, select, textarea, button {
+      font-family: 'Noto Sans KR', AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, "돋움", sans-serif;
+  }   
+  .stk-header {
+    position: relative;
+    height: 64px;
+    width: 100%;
+    background: #92c100;
+  }
+  .stk-header>.inner {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5px 20px;
+  }
+  .stk-header h1 {
+    color: #110082b5;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+  }
+  .stk-header h1>img {
+    margin-right: 10px;
+  }
+  .stk-header nav ul {
+    display: flex;
+    column-gap: 5px;
+  }
+  .stk-header nav ul li {
+    list-style: none;
+  }
+  .stk-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  .stk-header nav ul li.active a {
+    color: #000;
+    background: orange;
+    font-weight: 600;
+  }      
+  .stk-main {
+    padding: 20px;
+  }
+  .stk-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    padding-left: 0;
+    gap: 10px 10px;
+  }
+  .stk-main ul li {
+    display: block;
+    list-style: none;
+  }
+  .stk-main ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    background: #1a2b81;
+    color: #fff;
+    line-height: 30px;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  .stk-main ul li a:hover {
+    background: orange;
+  }
+
+  .stk-main h2 {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .stk-main table {
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    font-size: 12px;
+    width: 100%;
+    table-layout: fixed;
+    /* max-width: 800px; */
+  }
+  .stk-main th {
+    background: #ccc;
+  }
+  .stk-main th, .stk-main td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: left;
+  }
+  .stk-main th:nth-of-type(1), .stk-main td:nth-of-type(1) {width: 100px;}
+  .stk-main th:nth-of-type(8), .stk-main td:nth-of-type(8) {width: 70px; text-align: center;}
+  .stk-main th:nth-of-type(9), .stk-main td:nth-of-type(9) {width: 40px; text-align: center;}
+  .stk-main td a {
+    text-decoration: none;
+    border: 1px solid #7a7a7a;
+    background: #fff;
+    color: #7a7a7a;
+    padding: 0px 3px;
+  }
+  .stk-main td a.p {
+    background-color: #1a2b81;
+    border: 1px solid #1a2b81;
+    color: #fff;        
+  }
+  .stk-main td.state1 {
+    color: #adadad;
+    text-align: center;
+  }
+  .stk-main td.state2 {
+    color: #adadad;
+    text-align: center;
+  }
+  .stk-main td.state3 {
+    color: blue;
+    text-align: center;
+  }
+  .stk-main tr:nth-child(even) {
+    background: #efefef;
+  }
+  .stk-main tr:hover {
+    background: #d1d1d1;
+  }    

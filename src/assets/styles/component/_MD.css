@@ -152,9 +152,13 @@ body.ReactModal__Body--open {
 /*Alret setting*/
 .size-alert .ReactModal__Content .modal-popup-header {
 	position: relative;
-	font-size:0;
 	margin-bottom:0;
 }
+.size-alert .ReactModal__Content .modal-popup-header .title {
+	font-size:0;
+}
+
+
 .size-alert .ReactModal__Content .btn-close{
 	position: absolute;
 	top:0;
@@ -171,6 +175,7 @@ body.ReactModal__Body--open {
 .size-alert .ReactModal__Content .modal-bottom {
 	margin-top:0;
 }
+.size-alert .ReactModal__Content .modal-bottom .bt,
 .size-alert .ReactModal__Content .modal-bottom .buttons {
 	min-width:110px;
 }
