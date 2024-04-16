@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 export type AbstractButton = {
 	href?: string;
 	type?: 'button' | 'submit' | 'reset';
-	size?: 'sm' | 'md' | 'big' | 'xl';
+	size?: 'sm' | 'md' | 'big';
+	hz?: 'item' | 'root' | '';
 	//round?: boolean;
 	children?: React.ReactNode;
 } & Omit<
@@ -15,7 +16,7 @@ export type AbstractButton = {
 
 export type ButtonProps = {
 	/** 형태 설정 */
-	appearance?: 'primary' | 'primary-outline' | 'primary-teritary' | 'secondary' | 'secondary-outline';
+	color?: 'pri' | 'pri-o' | 'pri-o2' | 'gray' | 'gray-o';
 	/** 왼쪽에 아이콘 노출 */
 	leftIcon?: React.ReactNode | null;
 	rightIcon?: React.ReactNode | null;
@@ -26,8 +27,10 @@ function Button(props: ButtonProps, ref: any) {
 	const {
 		href,
 		type = 'button',
-		appearance = 'primary',
-		size = 'l',
+		color = 'pri',
+		size = 'big',
+		hz = '',
+		
 		//round = false,
 		children,
 		leftIcon,
@@ -39,12 +42,12 @@ function Button(props: ButtonProps, ref: any) {
 		<>
 			{href ? (
 				<Link
+					className="bt"
 					to={href}
-					data-appearance={appearance}
+					data-color={color}
 					data-size={size}
 					//data-round={round}
 					ref={ref}
-					className="buttons"
 				>
 					{leftIcon && <i className="icon left">{leftIcon}</i>}
 					{children}
@@ -52,12 +55,13 @@ function Button(props: ButtonProps, ref: any) {
 				</Link>
 			) : (
 				<button
-					type={type}
-					data-intent={appearance}
+					className="bt"
+					data-color={color}
 					data-size={size}
+					data-hz={hz}	
+					type={type}
 					//data-round={round}
 					ref={ref}
-					className="buttons"
 					{...otherProps}
 				>
 					{leftIcon && <i className="icon left">{leftIcon}</i>}

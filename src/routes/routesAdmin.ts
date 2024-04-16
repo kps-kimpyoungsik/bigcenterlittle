@@ -3,6 +3,9 @@ import { DefaultLayout } from '../layouts/admin';
 import {
 	admMainPage,
 	
+	// TEST
+	adm0000Page,
+
 	// 게시판관리 [4000]
 	adm4100Page,
 	adm4110Page,
@@ -63,6 +66,11 @@ export const routes: Array<PageRouteProps> = [
 		layout: DefaultLayout,
 	},
 
+	{
+		path: '/admin/adm_4000/adm0000',
+		component: adm0000Page,
+		layout: DefaultLayout,
+	},	
 	// 사용자관리 [4000]
 	{
 		path: '/admin/adm_4000/adm4100',

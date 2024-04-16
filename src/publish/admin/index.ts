@@ -1,3 +1,4 @@
+export { default as adm0000Page } from './adm_4000/adm_0000';
 export { default as admMainPage } from './adm_main';
 export { default as adm4100Page } from './adm_4000/adm_4100';
 export { default as adm4110Page } from './adm_4000/adm_4110';

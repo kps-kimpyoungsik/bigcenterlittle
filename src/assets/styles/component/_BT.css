@@ -23,7 +23,7 @@
 .bt:disabled {
     cursor: not-allowed;
 }
-.bt-pri { /*primary*/
+.bt-pri { /*pri*/
   background: var(--p1);
   border-color: var(--p1);
   color: #fff;
@@ -41,7 +41,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.bt-pri-o { /*primary-outline*/
+.bt-pri-o { /*pri-o*/
   color: var(--p2);
   border-color: var(--p1);
   background: #fff;
@@ -57,7 +57,7 @@
   background: #fff;
 }
 
-.bt-pri-o2 { /*primary-outline2*/
+.bt-pri-o2 { /*pri-o2*/
   color: var(--p2);
   border-color: #5C9EFF;
   background: #EDF4FF;
@@ -89,7 +89,7 @@
   background: #8491AF;
 }
 
-.bt-gray-o { /*gray-outline*/
+.bt-gray-o { /*gray-o*/
   background: #fff;
   border-color: #ccc;
   color: #333;
@@ -196,7 +196,7 @@ background-image: url(../../img/icon/ic_down_14.svg);
 }
 
 /*Buttons*/
-.buttons {
+.bt {
 	appearance: none;
 	display: inline-flex;
 	align-items: center;
@@ -206,25 +206,25 @@ background-image: url(../../img/icon/ic_down_14.svg);
 	white-space: nowrap;
 	border-radius: 3px;
 }
-.buttons:disabled{
+.bt:disabled{
 	cursor: not-allowed;
 	opacity: 0.5;
 }
 
 /*button size*/
-.buttons[data-size='big'] {
+.bt[data-size='big'] {
 	min-width: 140px;
 	height: 50px;
 	font-size: 16px;
 }
-.buttons[data-size='md'] {
+.bt[data-size='md'] {
 	min-width: 65px;
 	height: 36px;
 	font-size: 14px;
 	padding-left: 12px;
 	padding-right: 12px;
 }
-.buttons[data-size='sm'] {
+.bt[data-size='sm'] {
 	min-width: 48px;
 	height: 30px;
 	font-size: 14px;
@@ -232,62 +232,62 @@ background-image: url(../../img/icon/ic_down_14.svg);
 	padding-right: 12px;
 }
 
-/*button primary*/
-.buttons[data-intent='primary'] {
+/*button pri*/
+.bt[data-color='pri'] {
 	background: var(--p1);
 	border-color: var(--p1);
 	color: #fff;
 	font-weight: 700;
 }
-.buttons[data-intent='primary']:hover:not([disabled]) {
+.bt[data-color='pri']:hover:not([disabled]) {
 	background: #1D6ADD;
 }
-.buttons[data-intent='primary']:disabled {
+.bt[data-color='pri']:disabled {
 	background: var(--p1);
 	color: rgba(255, 255, 255, 0.5);
 	opacity: 1;
 }
-.buttons[data-intent='primary-outline'] {
+.bt[data-color='pri-o'] {
 	color: var(--p2);
 	border-color: var(--p1);
 	background: #fff;
 	font-weight: 500;
 }
-.buttons[data-intent='primary-outline']:hover:not([disabled]) {
+.bt[data-color='pri-o']:hover:not([disabled]) {
 	background: #F2F7FF;
 }
-.buttons[data-intent='primary-outline']:disabled {
+.bt[data-color='pri-o']:disabled {
 	opacity: 0.5;
 }
-.buttons[data-intent='primary-teritary'] {
+.bt[data-color='pri-o2'] {
 	color: var(--p2);
 	border-color: #5C9EFF;
 	background: #EDF4FF;
 	font-weight: 500;
 }
-.buttons[data-intent='primary-teritary']:hover:not([disabled]){
+.bt[data-color='pri-o2']:hover:not([disabled]){
 	background: #DFECFF;
 }
-/*button secondary*/
-.buttons[data-intent='secondary']{
+/*button gray*/
+.bt[data-color='gray']{
 	background: #8491AF;
 	border-color: #8491AF;
 	color: #fff;
 	font-weight: 700;
 }
-.buttons[data-intent='secondary']:hover:not([disabled]){
+.bt[data-color='gray']:hover:not([disabled]){
 	background: #707E9F;
 }
-.buttons[data-intent='secondary']:disabled {
+.bt[data-color='gray']:disabled {
 	background-color: #8491AF;
 	opacity: 1;
 }
-.buttons[data-intent='secondary-outline']{
+.bt[data-color='gray-o']{
 	background: #fff;
 	border-color: #ccc;
 	color: #333;
 	font-weight: 400;
 }
-.buttons[data-intent='secondary-outline']:hover:not([disabled]){
+.bt[data-color='gray-o']:hover:not([disabled]){
 	background: #F8F8F8;
 }

@@ -97,15 +97,15 @@ function ContentsContainer() {
 						</div> 
 					</div>						
 					<div className="hz-root hz-right hz-gap5">
-						<Button appearance='secondary-outline' size="sm" >비밀번호 오류해제</Button>
-						<Button appearance='secondary-outline' size="sm" onClick={modaladm4111.open}>권한등록</Button>
-						<Button appearance='secondary-outline' size="sm" onClick={modaladm4112.open}>사업지정</Button>
-						<Button appearance='secondary-outline' size="sm" >임시비밀번호발급</Button>
-						<Button appearance='primary-outline' size="sm" >수정</Button>
-						<Button appearance='secondary-outline' size="sm" >출연기업승인</Button>
-						<Button appearance='secondary-outline' size="sm" >이메일 인증 재발송</Button>
-						<Button appearance='secondary-outline' size="sm" >비밀번호 오류해제</Button>
-						<Button appearance='secondary-outline' size="sm" >목록</Button>
+						<Button color='gray-o' size="sm" >비밀번호 오류해제</Button>
+						<Button color='gray-o' size="sm" onClick={modaladm4111.open}>권한등록</Button>
+						<Button color='gray-o' size="sm" onClick={modaladm4112.open}>사업지정</Button>
+						<Button color='gray-o' size="sm" >임시비밀번호발급</Button>
+						<Button color='pri-o' size="sm" >수정</Button>
+						<Button color='gray-o' size="sm" >출연기업승인</Button>
+						<Button color='gray-o' size="sm" >이메일 인증 재발송</Button>
+						<Button color='gray-o' size="sm" >비밀번호 오류해제</Button>
+						<Button color='gray-o' size="sm" >목록</Button>
 					</div>
 				</main>
 			</div>
@@ -120,7 +120,7 @@ function ContentsContainer() {
 					권한등록
 				</div>
 				<div className="modal-bottom">
-					<Button appearance='primary' size="big">권한지정</Button>
+					<Button color='pri' size="big">권한지정</Button>
 				</div>	
 			</ModalPopup>
 			{/* mdaol - 사업지정 */}
@@ -134,7 +134,7 @@ function ContentsContainer() {
 					사업지정
 				</div>
 				<div className="modal-bottom">
-					<Button appearance='primary' size="big">사업지정</Button>
+					<Button color='pri' size="big">사업지정</Button>
 				</div>	
 			</ModalPopup>
 		</PageContainer>
