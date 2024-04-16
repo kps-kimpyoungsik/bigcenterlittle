@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.al {
+    display: none;
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 6px;
+    min-width: 360px;
+}
+.al>.inner {
+    overflow: hidden;
+}
+.al .btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/icon/ic_x_20.svg) no-repeat 0 0;
+    /* background: red; */
+    border: 0;
+    text-indent: -9999px;   
+    cursor: pointer; 
+}
+.al .al-con {
+    text-align: center;
+    height: 115px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.al .al-bottom {
+    margin-bottom: 25px;
+}
+.al .al-bottom .bt {
+    width: 110px;
+}
+
+
+
+.al.active {display: block;}
+.al+.al-dim {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.5;
+}
+.al+.al-dim.active {display: block;}

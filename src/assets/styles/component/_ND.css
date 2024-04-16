@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.nd {
+  height:  140px;
+  /* background: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+.nd .ic {
+  display: block;
+  width:  30px;
+  height:  30px;
+  background: url(../../img/icon/ic_exc_30.svg) no-repeat 0 0;
+  background-size: contain;
+}
+.nd {
+  
+}

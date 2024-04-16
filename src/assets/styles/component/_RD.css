@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.ip-rd-label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    /* padding-left: 24px; */
+    padding-left: 18px;
+    height: 18px;
+    line-height: 18px;    
+}
+.ip-rd-label:last-of-type {
+    margin-right: 0;
+}
+.ip-rd-label .ip-rd {
+    position: absolute;
+    left: -9999px;
+}
+.ip-rd-label .check {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: url(../../img/icon/ic_radio_normal.svg);
+}
+.ip-rd-label .ip-rd:checked+.check {
+    background: url(../../img/icon/ic_radio_active.svg);
+}
+.ip-rd-label .ip-rd:disabled+.check {
+    background: url(../../img/icon/ic_radio_normal_disabled.svg);
+}
+.ip-rd-label .ip-rd:checked:disabled+.check {
+    background: url(../../img/icon/ic_radio_active_disabled.svg);
+}
+.ip-rd-label .txt {
+    margin-left: 6px;
+}
+
+.ip-chbt-group {
+    display: grid;
+    /* grid-template-columns: repeat(4, auto); */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+.ip-chbt-group.column-2 {
+    grid-template-columns: repeat(2, auto);
+}
+.ip-chbt-group .ip-chbt-label {
+    position: relative;
+    font-size: 14px;
+    color: #111111;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+.ip-chbt-group .ip-chbt-label .ip-chbt {
+    position: absolute;
+    left: -9999px;    
+}
+.ip-chbt-group .ip-chbt-label .check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.ip-chbt-group .ip-chbt-label .txt {
+
+}
+.ip-chbt-group .ip-chbt-label .check:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.ip-chbt-group .ip-chbt-label .ip-chbt:checked+.check {
+    border: 1px solid #111;
+}
+.ip-chbt-group .ip-chbt-label .ip-chbt:checked+.check:after {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    /* background: url(../../img/icon/ic_checkbox_black_normal.svg); */
+}
+.ip-chbt-group .ip-chbt-label .ip-chbt:disabled+.check {
+    border: 1px solid #ccc;
+}
+.ip-chbt-group .ip-chbt-label .ip-chbt:disabled:checked+.check {
+    border: 1px solid #ccc;
+}
+.ip-chbt-group .ip-chbt-label .ip-chbt:disabled:checked+.check:after {
+    /* opacity: 0.3; */
+    background: url(../../img/icon/ic_checkbox_black_disabled.svg);
+}
+.ip-chbt-group .ip-chbt-label .ip-chbt:disabled:checked~.txt {
+    color: #ccc;
+}

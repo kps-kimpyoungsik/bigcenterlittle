@@ -1,0 +1,200 @@
+ @charset "UTF-8";
+
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 목적 : [대중소기업상생협력기금종합관리시스템] 헬퍼 클래스 정의
+    @ 작성 : GRIDA Publishing Team.
+    @ 최종 : 2024.$$.$$.$$:$$
+    @ 메모 : '헬퍼'는 자잘한 스타일을 클래스로 미리 만들어놓은 것이다. 
+*/
+
+/*
+ HZ (좌우배치 헬퍼)
+ 버튼, 단순 문구, 인풋 등 무엇이든 다 좌우배치를 시켜주는 헬퍼.
+*/
+/*
+ 사용예)
+  <div class="hz-root">
+    <button class="hz-item"></button>
+    <a class="hz-item"></a>
+    <input class="hz-item"></input>
+  </div>
+*/
+.hz-root {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* gap: 12px; */
+}
+.hz-root.hz-sb {
+    justify-content: space-between;
+}
+.hz-root.hz-left {
+    justify-content: start;
+}
+.hz-root.hz-center {
+    justify-content: center;
+}
+.hz-root.hz-right {
+    justify-content: end;
+}
+.hz-root.hz-top {
+    align-items: flex-start;
+}
+.hz-root.hz-bottom {
+    align-items:flex-end;
+}
+.hz-root.hz-gap0 {gap: 0px;}
+.hz-root.hz-gap1 {gap: 1px;}
+.hz-root.hz-gap2 {gap: 2px;}
+.hz-root.hz-gap3 {gap: 3px;}
+.hz-root.hz-gap4 {gap: 4px;}
+.hz-root.hz-gap5 {gap: 5px;}
+.hz-root.hz-gap6 {gap: 6px;}
+.hz-root.hz-gap7 {gap: 7px;}
+.hz-root.hz-gap8 {gap: 8px;}
+.hz-root.hz-gap9 {gap: 9px;}
+.hz-root.hz-gap10 {gap: 10px;}
+.hz-root.hz-gap11 {gap: 11px;}
+.hz-root.hz-gap12 {gap: 12px;}
+.hz-root.hz-gap13 {gap: 13px;}
+.hz-root.hz-gap14 {gap: 14px;}
+.hz-root.hz-gap15 {gap: 15px;}
+.hz-root.hz-gap16 {gap: 16px;}
+.hz-root.hz-gap24 {gap: 24px;}
+.hz-root>.hz-item {
+    margin-left: 0 !important;
+    /* flex-basis: 0; */
+    flex-shrink: 0;
+}
+.hz-root>.hz-item.hz-fg {
+    flex-grow: 1;
+}
+.hz-root>.hz-item .badge {
+    margin-left: 0 !important;
+}
+.hz-root>.hz-item.grow {
+    flex-grow: 1;
+}
+
+
+.fc-pri {color: #0D84FF;}
+.fc-sec {color: #EBF6FF;}
+.fc-err {color: #FF404E;}
+.fc-black {color: #000;}
+.fc-white {color: #fff;}
+
+.fc-333 {color: #333;}
+.fc-666 {color: #666;}
+.fc-999 {color: #999;}
+
+.bg-pri {background: #0D84FF;}
+.bg-sec {background: #EBF6FF;}
+.bg-err {background: #FF404E;}
+
+.fw100 {font-weight: 100;}
+.fw200 {font-weight: 200;}
+.fw300 {font-weight: 300;}
+.fw400 {font-weight: 400;}
+.fw500 {font-weight: 500;}
+.fw600 {font-weight: 600;}
+.fw700 {font-weight: 700;}
+.fw800 {font-weight: 800;}
+.fw900 {font-weight: 900;}
+
+.fs0 {font-size: 0px !important;}
+.fs11 {font-size: 11px !important;}
+.fs12 {font-size: 12px !important;}
+.fs13 {font-size: 13px !important;}
+.fs14 {font-size: 14px !important;}
+.fs15 {font-size: 15px !important;}
+.fs16 {font-size: 16px !important;}
+.fs17 {font-size: 17px !important;}
+.fs18 {font-size: 18px !important;}
+.fs19 {font-size: 19px !important;}
+.fs20 {font-size: 20px !important;}
+.fs21 {font-size: 21px !important;}
+.fs22 {font-size: 22px !important;}
+.fs23 {font-size: 23px !important;}
+.fs24 {font-size: 24px !important;}
+.fs25 {font-size: 25px !important;}
+.fs26 {font-size: 26px !important;}
+.fs27 {font-size: 27px !important;}
+.fs28 {font-size: 28px !important;}
+.fs29 {font-size: 29px !important;}
+.fs30 {font-size: 30px !important;}
+.fs31 {font-size: 31px !important;}
+.fs32 {font-size: 32px !important;}
+
+.underline {text-decoration: underline;}
+.no-underline {text-decoration: none;}
+
+.p10 {padding: 10px !important}
+.p15 {padding: 15px !important}
+.p16 {padding: 16px !important}
+.p32 {padding: 32px !important}
+
+.w100p {width: 100% !important}
+.w0 {width: 0 !important;}
+.w10 {width: 10px !important}
+.w20 {width: 20px !important}
+.w30 {width: 30px !important}
+.w40 {width: 40px !important}
+.w50 {width: 50px !important}
+.w60 {width: 60px !important}
+.w70 {width: 70px !important}
+.w76 {width: 76px !important}
+.w80 {width: 80px !important}
+.w90 {width: 90px !important}
+.w100 {width: 100px !important}
+.w120 {width: 120px !important}
+.w130 {width: 130px !important}
+.w215 {width: 215px !important}
+.w375 {width: 375px !important;}
+.w1180 {width: 1180px !important;}
+.w1595 {width: 1595px !important}
+
+.h0 {height: 0 !important;}
+
+.ta-left {text-align: left !important}
+.ta-center {text-align: center !important}
+.ta-right {text-align: right !important}
+
+.mb0 {margin-bottom: 0px !important;}
+.mb1 {margin-bottom: 1px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb12 {margin-bottom: 12px !important;}
+.mb15 {margin-bottom: 15px !important;}
+.mb18 {margin-bottom: 18px !important;}
+.mb25 {margin-bottom: 25px !important;}
+.mb30 {margin-bottom: 30px !important;}
+
+.mt0 {margin-top: 0px !important;}
+.mt1 {margin-top: 1px !important;}
+.mt5 {margin-top: 5px !important;}
+.mt10 {margin-top: 10px !important;}
+
+.mr30 {margin-right: 30px !important;}
+.ml30 {margin-left: 30px !important;}
+
+.por {position: relative !important;}
+.poa {position: absolute !important;}
+
+.top1 {top: 1px !important;}
+  
+.d-block {display: block !important;}
+.d-inline-block {display: inline-block !important;}
+.d-inline {display: inline !important;}
+
+.br2 {border-radius: 2px;}
+
+.ddd {
+  max-width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.hide {display: none !important;}
