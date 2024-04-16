@@ -56,8 +56,11 @@
 .sf.sf-1row>.inner {
   width: calc(100% - 100px);
 }
-
-.sf.sf-1row .sf-btn {
+.sf.sf-1row .sf-item:last-of-type:after {
+  background: none;
+}
+/* .sf.sf-1row .sf-btn */
+.sf.sf-1row>.inner+ .bt {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

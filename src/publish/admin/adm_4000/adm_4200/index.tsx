@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -75,7 +76,8 @@ function ContentsContainer() {
 									</div>						
 								</div>							
 							</div> 
-							<button className="sf-btn bt bt-md bt-pri" type="button">조회</button>
+							{/* <button className="sf-btn bt bt-md bt-pri" type="button">조회</button> */}
+							<Button color="pri" size="md">조회</Button>
 						</div>											
 
 						<div className="tb-top">

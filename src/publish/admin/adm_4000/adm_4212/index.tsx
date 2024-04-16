@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -171,7 +172,7 @@ function ContentsContainer() {
 										<div className="hz-root hz-gap8">
 											<input name="" id="" className="hz-item tf tf-md w120" type="text" value="" placeholder="" />
 											<input name="" id="" className="hz-item tf tf-md hz-fg" type="text" value="" placeholder="" />
-											<button className="hz-item bt bt-md bt-gray-o" type="button">우편번호 찾기</button>										
+											<Button color="gray-o" size="md">우편번호 찾기</Button>
 										</div>
 
 									</div>						
@@ -244,9 +245,9 @@ function ContentsContainer() {
 								</tbody>
 							</table>
 						</div>
-						<div className="hz-root hz-right hz-gap5">
-							<button className="bt bt-sm bt-pri-o" type="button">저장</button>
-							<button className="bt bt-sm bt-gray-o" type="button">목록</button>
+					<div className="hz-root hz-right hz-gap5">
+							<Button color="pri-o" size="sm">저장</Button>
+							<Button color="gray-o" size="sm">목록</Button>
 						</div>
 
 					</main>

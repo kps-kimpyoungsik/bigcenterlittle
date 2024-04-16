@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -24,7 +25,8 @@ function ContentsContainer() {
 
 									<div className="hz-root hz-right hz-gap5 mt5 mb18">
 										<input name="" id="" className="hz-item tf tf-sm w215" type="text" value="" placeholder="검색" />
-										<button className="hz-item bt bt-sm bt-pri" type="button">검색</button>
+										{/* <button className="hz-item bt bt-sm bt-pri" type="button">검색</button> */}
+										<Button color="pri" size="sm">검색</Button>	
 									</div>
 
 									<div id='sheetDiv'>[D] IBSHEET 영역</div>
@@ -40,17 +42,17 @@ function ContentsContainer() {
 									<div className="hz-root hz-sb hz-bottom mb10">
 										<h2 className="hz-item tx tx-hd3 mt0 mb12">최종결재자 한도금액</h2>
 										<div className="hz-item hz-root hz-right hz-gap5">
-											<button className="hz-item bt bt-sm bt-gray-o" type="button">결재자 삭제</button>
-											<button className="hz-item bt bt-sm bt-gray-o bt-up" type="button">아래로</button>
-											<button className="hz-item bt bt-sm bt-gray-o bt-down" type="button">위로</button>
+											<Button color="gray-o" size="sm">결재자 삭제 </Button>
+											<button className="hz-item bt-up" type="button">아래로</button>
+											<button className="hz-item bt-down" type="button">위로</button>
 										</div>																			
 									</div>
 
 									<div id='sheetDiv2'>[D] IBSHEET 영역</div>
 
 									<div className="hz-root hz-right hz-gap5 mt10">
-										<button className="hz-item bt bt-sm bt-pri-o" type="button">저장</button>
-										<button className="hz-item bt bt-sm bt-gray-o" type="button">목록</button>
+										<Button color="pri-o" size="sm">저장</Button>
+										<Button color="gray-o" size="sm">목록</Button>
 									</div>
 
 								</div>

@@ -93,8 +93,11 @@ body.ReactModal__Body--open {
 	padding: 30px 25px !important;
 	border: 0px !important;
 	border-radius: 10px !important;
-	max-height: calc(100vh - 320px);
+	/* max-height: calc(100vh - 320px); */
  }
+.ReactModal__Content .modal-con {
+	max-height: 625px;
+}
 
  .modal-popup-header {
 	display:flex;

@@ -36,7 +36,7 @@ function ContentsContainer() {
 						<Button color="pri-o" size="sm">버튼</Button>	
 						<Button color="pri-o2" size="sm">버튼</Button>	
 						<Button color="gray" size="sm">버튼</Button>	
-						<Button color="gray-o" size="sm">버튼</Button>	
+						<Button color="gray-o" size="sm">버튼</Button>
 						<Button color="gray-o" size="sm">버튼</Button>	
 					</div>
 				</main>			

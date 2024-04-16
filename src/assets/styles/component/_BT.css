@@ -18,6 +18,7 @@
 	text-decoration: none;
   border-radius: 3px;
   text-align: center;
+  box-sizing: border-box;
   border: 1px solid red;
 }
 .bt:disabled {
@@ -173,7 +174,32 @@
 	min-width: 0;
 	width :30px;
 	height: 30px;
+  
+  /* min-width: 48px; */
+  /* width: auto; */
+  /* height: 30px; */
+  line-height: 30px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  font-weight: 400;  
 }
+
+.bt-up:hover,
+.bt-down:hover { 
+  background: #F8F8F8;
+}
+.bt-gray-o:disabled,
+.bt-gray-o:disabled:hover {
+  opacity: 0.5;
+}
+
+
+
 .bt-up:after,
 .bt-down:after {
 	position: absolute;

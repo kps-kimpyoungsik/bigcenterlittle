@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
 			<LayoutAside />
-
-				모달팝업 넣어야 함.
 			
 				<div className="fww-con">
 
@@ -43,7 +42,7 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="hz-root hz-gap8">
 											<input name="" id="" className="hz-item hz-fg tf tf-md" type="text" value="admin" placeholder="사용자ID" />
-											<button className="hz-item bt bt-md bt-gray-o" type="button">중복 확인</button>
+											<Button color="gray-o" size="md">중복 확인</Button>
 										</div>
 									</div>						
 								</div>
@@ -150,10 +149,10 @@ function ContentsContainer() {
 
 							</div> 
 						</div>		
-						<div className="hz-root hz-right hz-gap5">
-							<button className="hz-item bt bt-sm bt-gray-o" type="button">취소</button>
-							<button className="hz-item bt bt-sm bt-pri" type="button">저장</button>
-							<button className="hz-item bt bt-sm bt-gray-o" type="button">목록</button>
+					<div className="hz-root hz-right hz-gap5">
+							<Button color="gray-o" size="sm">취소</Button>
+							<Button color="pri-o" size="sm">저장</Button>
+							<Button color="gray-o" size="sm">목록</Button>
 						</div>
 
 					</main>

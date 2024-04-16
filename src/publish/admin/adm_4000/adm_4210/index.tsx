@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -168,9 +169,9 @@ function ContentsContainer() {
 
 									
 						<div className="hz-root hz-right hz-gap5">
-							<button className="bt bt-md bt-gray-o" type="button">사업자등록증 등록/경신</button>
-							<button className="bt bt-md bt-gray-o" type="button">수정</button>
-							<button className="bt bt-md bt-gray-o" type="button">목록</button>
+							<Button color="pri-o" size="sm">사업자등록증 등록/경신</Button>
+							<Button color="pri-o" size="sm">수정</Button>
+							<Button color="gray-o" size="sm">목록</Button>
 						</div>
 
 					</main>
