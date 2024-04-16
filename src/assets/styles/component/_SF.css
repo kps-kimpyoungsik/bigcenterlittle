@@ -16,13 +16,11 @@
   min-width: 0;
 }
 .sf .sf-item {
-  /* background: pink; */
   position: relative;
   display: flex;
   column-gap: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   min-width: 0;
-  /* border: 1px dashed red; */
 }
 .sf .sf-item:after {
   position: absolute;
