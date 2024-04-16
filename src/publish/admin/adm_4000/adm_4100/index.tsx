@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import UIDatePicker from "components/datepicker";
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -21,9 +22,9 @@ function ContentsContainer() {
 								<p className="sf-key">등록일자</p>
 								<div className="sf-value">
 									<div className="hz-root hz-gap5">
-										<input name="" id="" className="hz-item hz-fg tf tf-md" type="text" value="" placeholder="YYYY-MM-DD" />
+										<UIDatePicker className="hz-item"/>
 										<span className="hz-item">~</span>
-										<input name="" id="" className="hz-item hz-fg tf tf-md" type="text" value="" placeholder="YYYY-MM-DD" />
+										<UIDatePicker className="hz-item"/>
 									</div>
 								</div>
 							</div>
