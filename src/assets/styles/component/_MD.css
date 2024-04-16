@@ -59,3 +59,115 @@
     opacity: 0.5;
 }
 .md+.md-dim.active {display: block;}
+
+
+/*ReactMocal css*/
+body.ReactModal__Body--open {
+	overflow: hidden;
+	max-height: 100vh;
+}
+.ReactModal__Overlay {
+	z-index: 900;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.6)!important;
+	opacity: 0;
+ }
+.ReactModal__Overlay--after-open{
+	opacity: 1;
+ }
+.ReactModal__Overlay--before-close{
+	opacity: 0;
+ }
+ .ReactModal__Content {
+	position: static !important;
+	overflow: hidden !important;	
+	flex: 1;
+	display: flex;
+	flex-direction: column;	
+	inset: 0 !important;
+	padding: 30px 25px !important;
+	border: 0px !important;
+	border-radius: 10px !important;
+	max-height: calc(100vh - 320px);
+ }
+
+ .modal-popup-header {
+	display:flex;
+	align-items: center;
+	margin-bottom:20px;
+ }
+ .modal-popup-header .title {
+	font-size:22px;
+	line-height: -1px;
+	font-weight: 600;
+	color:#000;
+
+ }
+ .modal-popup-header .btn-close {
+	display: inline-block;
+	margin-left: auto;
+	font-size:0;
+	border:0;
+	padding:0;
+	width:20px;
+	height:20px;
+	background-repeat: no-repeat;
+	background-image: url('assets/img/icon/ic_x_20.svg');
+	background-color: transparent;
+ }
+.modal-popup-body {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+.modal-con{
+	overflow: auto;
+	overflow-x: hidden;
+	flex: 1;
+	display: block;
+}
+.modal-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top:20px;
+	gap: 8px;
+}
+
+.size-mid .ReactModal__Content{
+	max-width: 600px;
+}
+.size-alert .ReactModal__Content{
+	max-width: 360px;
+}
+
+/*Alret setting*/
+.size-alert .ReactModal__Content .modal-popup-header {
+	position: relative;
+	font-size:0;
+	margin-bottom:0;
+}
+.size-alert .ReactModal__Content .btn-close{
+	position: absolute;
+	top:0;
+	right:0;
+}
+.size-alert .ReactModal__Content .modal-con{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 115px;
+	font-size:15px;
+	font-weight:500;
+}
+.size-alert .ReactModal__Content .modal-bottom {
+	margin-top:0;
+}
+.size-alert .ReactModal__Content .modal-bottom .buttons {
+	min-width:110px;
+}

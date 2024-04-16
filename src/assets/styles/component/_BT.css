@@ -22,35 +22,7 @@
 }
 .bt:disabled {
     cursor: not-allowed;
-    /* pointer-events: all !important; */
 }
-/*
-.bt>.icon {
-	font-size: 18px;
-	margin-right: 5px;
-	top: -2px;	
-}
-.bt-txt {
-    background: none;
-    line-height: 1;
-    color: #3e3e52;
-    font-size: 14px;
-    font-weight: 600;
-    height: auto;
-    padding: 0;
-    text-decoration: underline;
-}
-.bt-txt-link {
-    background: none;
-    line-height: 1;
-    color: #0D84FF;
-    font-size: 14px;
-    font-weight: 600;
-    height: auto;
-    padding: 0;
-    text-decoration: underline;
-}
-*/
 .bt-pri { /*primary*/
   background: var(--p1);
   border-color: var(--p1);
@@ -184,131 +156,6 @@
   background: red;
 }
 
-
-/*
-.bt-add {
-    cursor: pointer;
-    min-width: 20px;
-    width: 20px;
-    height: 20px;
-    background: url(../img/icon/ic_add.svg) no-repeat 0 0;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-remove {
-    cursor: pointer;
-    min-width: 20px;
-    width: 20px;
-    height: 20px;
-    background: url(../img/icon/ic_remove.svg) no-repeat 0 0;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-refresh {
-    cursor: pointer;
-    min-width: 28px;
-    width: 28px;
-    height: 28px;
-    background: url(../img/icon/ic_refresh_28.svg) no-repeat 0 0;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-filter {
-    cursor: pointer;
-    min-width: 28px;
-    width: 28px;
-    height: 28px;
-    background: url(../img/icon/ic_filter_28.svg) no-repeat 0 0;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-hamburger {
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    background: url(../img/icon/ic_hamburger_32.svg) no-repeat 50% 50%;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-edit {
-    cursor: pointer;
-    width: 28px;
-    height: 28px;
-    background: url(../img/icon/ic_edit_28.svg) no-repeat 50% 50%;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-edit.active {background-image: url(../img/icon/ic_edit_28_active.svg);}
-.bt-msg {
-    cursor: pointer;
-    width: 28px;
-    height: 28px;
-    background: url(../img/icon/ic_msg_28.svg) no-repeat 50% 50%;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-msg.active {background-image: url(../img/icon/ic_msg_28_active.svg);}
-.bt-memo {
-    cursor: pointer;
-    width: 28px;
-    height: 28px;
-    background: url(../img/icon/ic_memo_28.svg) no-repeat 50% 50%;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-memo.active {background-image: url(../img/icon/ic_memo_28_active.svg);}
-
-.bt-more {
-    cursor: pointer;
-    min-width: 24px;
-    width: 24px;
-    height: 24px;
-    background: url(../img/icon/ic_more_24.svg) no-repeat 0 0;
-    text-indent: -9999px;
-    border: 0;
-}
-.bt-more-outline {
-    cursor: pointer;
-    min-width: 28px;
-    width: 28px;
-    height: 28px;
-    background: #fff url(../img/icon/ic_more_24.svg) no-repeat 50% 50%;
-    background-size: 70%;
-    text-indent: -9999px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-}
-.link-more {
-    font-size: 14px;
-    font-weight: 600;
-    color: #3e3e52;
-    text-decoration: none;
-    padding-right: 25px;
-    background: url(../img/icon/ic_arr_right_24.svg) no-repeat 100% 50%;
-}
-.bt-grab {
-    cursor: grab;
-    min-width: 24px;
-    width: 24px;
-    height: 24px;
-    background: url(../img/icon/ic_grab_24.svg) no-repeat 0 0;
-    text-indent: -9999px;
-    border: 0;
-}
-
-.bt-doc {
-    cursor: pointer;
-    height: 28px;
-    padding-left: 25px;
-    background: url(../img/icon/ic_doc_10.svg) no-repeat 8px 50%;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #111;
-}
-*/
-
 .bt-prev-28,
 .bt-next-28 {
     cursor: pointer;
@@ -317,36 +164,6 @@
     border: 0;
     text-indent: -9999px;
 }
-/* .bt-prev-28 {
-    background: url(../img/icon/ic_arr_left_28_normal.svg) no-repeat 50% 50%;
-}
-.bt-next-28 {
-    background: url(../img/icon/ic_arr_right_28_normal.svg) no-repeat 50% 50%;
-}
-.bt-prev-28:disabled  {
-    background: url(../img/icon/ic_arr_left_28_disabled.svg) no-repeat 50% 50%;
-}
-.bt-next-28:disabled  {
-    background: url(../img/icon/ic_arr_right_28_disabled.svg) no-repeat 50% 50%;
-} */
-
-
-/*
-.bt-group.block {
-}
-.bt-group.block .bt {
-    margin-left: 0;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.bt-group.block .bt:last-of-type {
-    margin-bottom: 0;
-}
-.bt-group.center {
-    text-align: center;
-}
-
-*/
 
 /*20240415/mglee*/
 .bt-up,
@@ -376,4 +193,101 @@
 }
 .bt-down:after {
 background-image: url(../../img/icon/ic_down_14.svg);
+}
+
+/*Buttons*/
+.buttons {
+	appearance: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	border:1px solid transparent;
+	white-space: nowrap;
+	border-radius: 3px;
+}
+.buttons:disabled{
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+/*button size*/
+.buttons[data-size='big'] {
+	min-width: 140px;
+	height: 50px;
+	font-size: 16px;
+}
+.buttons[data-size='md'] {
+	min-width: 65px;
+	height: 36px;
+	font-size: 14px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.buttons[data-size='sm'] {
+	min-width: 48px;
+	height: 30px;
+	font-size: 14px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+/*button primary*/
+.buttons[data-intent='primary'] {
+	background: var(--p1);
+	border-color: var(--p1);
+	color: #fff;
+	font-weight: 700;
+}
+.buttons[data-intent='primary']:hover:not([disabled]) {
+	background: #1D6ADD;
+}
+.buttons[data-intent='primary']:disabled {
+	background: var(--p1);
+	color: rgba(255, 255, 255, 0.5);
+	opacity: 1;
+}
+.buttons[data-intent='primary-outline'] {
+	color: var(--p2);
+	border-color: var(--p1);
+	background: #fff;
+	font-weight: 500;
+}
+.buttons[data-intent='primary-outline']:hover:not([disabled]) {
+	background: #F2F7FF;
+}
+.buttons[data-intent='primary-outline']:disabled {
+	opacity: 0.5;
+}
+.buttons[data-intent='primary-teritary'] {
+	color: var(--p2);
+	border-color: #5C9EFF;
+	background: #EDF4FF;
+	font-weight: 500;
+}
+.buttons[data-intent='primary-teritary']:hover:not([disabled]){
+	background: #DFECFF;
+}
+/*button secondary*/
+.buttons[data-intent='secondary']{
+	background: #8491AF;
+	border-color: #8491AF;
+	color: #fff;
+	font-weight: 700;
+}
+.buttons[data-intent='secondary']:hover:not([disabled]){
+	background: #707E9F;
+}
+.buttons[data-intent='secondary']:disabled {
+	background-color: #8491AF;
+	opacity: 1;
+}
+.buttons[data-intent='secondary-outline']{
+	background: #fff;
+	border-color: #ccc;
+	color: #333;
+	font-weight: 400;
+}
+.buttons[data-intent='secondary-outline']:hover:not([disabled]){
+	background: #F8F8F8;
 }
