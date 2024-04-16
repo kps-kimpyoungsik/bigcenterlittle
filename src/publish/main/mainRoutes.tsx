@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Route} from "react-router-dom";
-import DefaultRoute from '../../routes/DefaultRoute';
-import { PageRouteProps, routes } from '../../routes/routesMain';
+import DefaultRoute from 'routes/DefaultRoute';
+import { PageRouteProps, routes } from 'routes/routesMain';
 function Main() {
 	return (
 		<Route>

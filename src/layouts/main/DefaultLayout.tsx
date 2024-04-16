@@ -10,8 +10,8 @@ function DefaultLayout(props: DefaultLayoutProps) {
 			<MainHeader />
 			<div className="fww-container">
 				{props.children}
+				<MainFooter />
 			</div>
-			<MainFooter />
 		</div>
 	);
 }

@@ -1,44 +1,44 @@
 
 import React, {} from "react";
-import { Link, NavLink, useHistory,  } from 'react-router-dom';
+import { Link, NavLink, useLocation  } from 'react-router-dom';
 import logo from '../../assets/img/logo/logo_blk.svg';
 const global = {
 	content: {
 		sub1: [
 			{
-				s_id:1,
+				g_id:1,
 				name : "공지사항",
-				path : "/main/portal/news/noti"
+				path : "/main/user_1000/user_1100"
 			},
 			{
-				s_id:2,
+				g_id:2,
 				name : "지원사례",
 				path : "/main/portal/news/excellet"
 			},
 			{
-				s_id:3,
+				g_id:3,
 				name : "기금소개",
 				path : "/main/portal/fund/info/"
 			},
 			{
-				s_id:3,
+				g_id:4,
 				name : "출연혜택",
 				path : "/main/portal/fund/benefit/"
 			},
 			{
-				s_id:3,
+				g_id:5,
 				name : "오시는 길",
 				path : "/main/portal/fund/path/"
 			}
 		],
 		sub2: [
 			{
-				s_id:1,
+				g_id:1,
 				name : "자주 묻는 질문",
 				path : "/main/portal/support/faq"
 			},
 			{
-				s_id:2,
+				g_id:2,
 				name : "매뉴얼",
 				path : "/main/portal/support/manual/"
 			}
@@ -46,13 +46,13 @@ const global = {
 	}
 };
 function LayoutHeader() {
-	const { location } = useHistory();
+	const location = useLocation(); 
 	return (
 		<div className='fww-header-util'>
 			<div className='fww-util'>
 				<ul>
-					<li><Link to="#">로그인</Link></li>
-					<li><Link to="#">회원가입</Link></li>
+					<li><Link to="#" className="login">로그인</Link></li>
+					<li><Link to="#" className="join">회원가입</Link></li>
 					<li>
 						<span>
 							<em className='user-name'>김주경</em>님
@@ -61,16 +61,16 @@ function LayoutHeader() {
 						<button className='btn-session-extend' type='button'>연장</button>
 					</li>
 					<li>
-						<Link to="#">로그아웃</Link>
+						<Link to="#" className="logout">로그아웃</Link>
 					</li>
 					<li>
-						<Link to="#">마이페이지</Link>
+						<Link to="#" className="mypage">마이페이지</Link>
 					</li>
 					<li>
-						<Link to="#">관리자페이지</Link>
+						<Link to="#" className="admin">관리자페이지</Link>
 					</li>
 					<li>
-						<Link to="#">홈페이지</Link>
+						<Link to="#" className="home">홈페이지</Link>
 					</li>
 				</ul>
 			</div>
@@ -83,8 +83,8 @@ function LayoutHeader() {
 				<div className='right-area'>
 					<nav className='fww-gnb'>
 						<ul>
-							<li className={location.pathname === '/main/portal/news/noti' ? 'd1 active' : 'd1'}><NavLink to="/main/portal/news/noti">기금안내</NavLink></li>
-							<li className='d1'><NavLink to="#">고객지원</NavLink></li>
+							<li className={location.pathname.includes('user_1') ? 'd1 active' : 'd1'}><NavLink to="/main/user_1000/user_1100">기금안내</NavLink></li>
+							<li className={location.pathname.includes('user_2') ? 'd1 active' : 'd1'}><NavLink to="/main/user_2000/user_2100">고객지원</NavLink></li>
 							<li className='d1'><NavLink to="#">출연관리</NavLink></li>
 							<li className='d1'><NavLink to="#">과제관리</NavLink></li>
 							<li className='d1'><NavLink to="#">지급관리</NavLink></li>
@@ -98,7 +98,7 @@ function LayoutHeader() {
 								<p className='hide'>기금안내</p>
 								<ul className='d2'>
 									{global.content.sub1.map((block) => (
-										<li key={block.s_id}><Link to={block.path}>{block.name}</Link></li>
+										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>								
 								
@@ -107,7 +107,7 @@ function LayoutHeader() {
 								<p className='hide'>고객지원</p>
 								<ul className='d2'>
 									{global.content.sub2.map((block) => (
-										<li key={block.s_id}><Link to={block.path}>{block.name}</Link></li>
+										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>
 							</li>
