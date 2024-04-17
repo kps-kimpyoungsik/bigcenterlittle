@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_5000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -104,10 +105,10 @@ function ContentsContainer() {
 									<div className="fo-value">
 										파일업로더
 										<div className="hz-root hz-left hz-gap5">
-											<button className="bt bt-sm bt-gray-o" type="button">파일추가</button>
-											<button className="bt bt-sm bt-gray-o" type="button">항목제거</button>
-											<button className="bt bt-sm bt-gray-o" type="button">전체 항목제거</button>
-											<button className="bt bt-sm bt-gray-o" type="button">다운로드</button>
+											<Button color="gray-o" size="sm">파일추가</Button>
+											<Button color="gray-o" size="sm">항목제거</Button>
+											<Button color="gray-o" size="sm">전체 항목제거</Button>
+											<Button color="gray-o" size="sm">다운로드</Button>
 										</div>
 									</div>
 								</div>							
@@ -116,9 +117,9 @@ function ContentsContainer() {
 						</div>
 			
 						<div className="hz-root hz-right hz-gap5">
-							<button className="bt bt-sm bt-gray-o" type="button">저장</button>
-							<button className="bt bt-sm bt-pri-o" type="button">수정</button>
-							<button className="bt bt-sm bt-gray-o" type="button">목록</button>
+							<Button color="pri-o" size="sm">저장</Button>
+							<Button color="pri-o" size="sm">수정</Button>
+							<Button color="gray-o" size="sm">목록</Button>
 						</div>					
 
 					</main>
