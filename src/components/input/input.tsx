@@ -7,6 +7,7 @@ export interface UIInputProps {
 	setFocus?: boolean;
 	full?: boolean;
 	readOnly?: boolean;
+	disabled?: boolean;
 	className?: string;
 	placeholder?: string;
 	attrs?: React.InputHTMLAttributes<HTMLInputElement>;
@@ -31,6 +32,7 @@ function UIInput(props: UIInputProps) {
 		  className={props.className}
 		  placeholder={props.placeholder}
 		  readOnly={props.readOnly}
+		  disabled={props.disabled}
 		  {...attrs}
 		  onChange={(event: React.ChangeEvent<HTMLInputElement>): void => {
 			setInputValue(event.target.value);
