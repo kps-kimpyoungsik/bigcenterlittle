@@ -75,7 +75,6 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3  req">
 								<p className="fo-key">수신 아이디</p>
 								<div className="fo-value">
-									<input  name="" id="" className="tf tf-md w375" type="text" value="" placeholder="" />
 									<UIInput className={'tf tf-md w375'} value={'ITCENGROUP'} placeholder={''}/>
 								</div>
 							</div>
