@@ -18,7 +18,7 @@ function ContentsContainer() {
 
 					<main className="fww-main">
 						<h1 className="tx tx-hd2">펌뱅킹관리</h1>
-						<form className="sf sf-1row">
+						<form className="sf sf-1row" name="" action="" method="">
 							<div className="inner">
 								<div className="sf-item sf-m-1-3">
 									<p className="sf-key">펌뱅킹 명칭</p>

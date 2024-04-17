@@ -18,7 +18,7 @@ function ContentsContainer() {
 
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">SMS 발송관리</h1>
-					<form className="sf">
+					<form className="sf" name="" action="" method="">
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">SMS 발송기간</p>
