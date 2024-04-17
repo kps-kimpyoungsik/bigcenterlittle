@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -18,7 +19,7 @@ function ContentsContainer() {
 					<main className="fww-main">
 						<h1 className="tx tx-hd2">사업 관리</h1>
 
-						<div className="sf sf-1row">
+						<form className="sf sf-1row" name="" action="" method="">
 							<div className="inner">
 								<div className="sf-item">
 									<p className="sf-key">사업명</p>
@@ -27,16 +28,16 @@ function ContentsContainer() {
 									</div>						
 								</div>							
 							</div> 
-							<button className="sf-btn bt bt-md bt-pri" type="button">조회</button>
-						</div>											
+							<Button color="pri" size="md">조회</Button>
+						</form>											
 
 						<div className="tb-top">
 							<div>
 								<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
 							</div>
 							<div className="hz-root hz-gap5">
-								<button className="bt bt-sm bt-pri-o" type="button">등록</button>
-								<button className="bt bt-sm bt-gray-o" type="button">다운로드</button>
+								<Button color="pri-o" size="sm">등록</Button>
+								<Button color="gray-o" size="sm">다운로드</Button>
 								<div className="sl sl-sm w120">
 									<select name="" id="" className="">
 										<option value="0">20개씩보기</option>

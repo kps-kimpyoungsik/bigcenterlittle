@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -18,7 +19,7 @@ function ContentsContainer() {
 					<main className="fww-main">
 						<h1 className="tx tx-hd2">사업 상세</h1>
 
-						<div className="fo fo-col3 mb10">
+						<form className="fo fo-col3 mb10" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
 									<p className="fo-key">사업코드</p>
@@ -149,12 +150,12 @@ function ContentsContainer() {
 						
 
 							</div> 
-						</div>						
+						</form>						
 
 						<div className="hz-root hz-right hz-gap5">
-							<button className="bt bt-sm bt-gray-o" type="button">삭제</button>
-							<button className="bt bt-sm bt-pri-o" type="button">수정</button>
-							<button className="bt bt-sm bt-gray-o" type="button">목록</button>
+							<Button color="gray-o" size="sm">삭제</Button>
+							<Button color="pri-o" size="sm">수정</Button>
+							<Button color="gray-o" size="sm">목록</Button>
 						</div>
 						
 					</main>

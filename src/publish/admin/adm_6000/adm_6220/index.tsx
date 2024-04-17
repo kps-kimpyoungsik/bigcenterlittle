@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Button from 'components/buttons/';
+
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -44,8 +46,8 @@ function ContentsContainer() {
 								<p className="tx fc-black"></p>총 <em className="fw500">2</em>건
 							</div>
 							<div className="hz-root hz-gap5">
-								<button className="bt bt-sm bt-gray-o" type="button">- 삭제</button>
-								<button className="bt bt-sm bt-gray-o" type="button">+ 추가</button>							
+								<Button color="gray-o" size="sm">- 삭제</Button>
+								<Button color="gray-o" size="sm">+ 추가</Button>
 							</div>
 						</div>
 						<div id='sheetDiv mb30'>[D] IBSHEET 영역</div>
@@ -53,9 +55,9 @@ function ContentsContainer() {
 						<div>[대·중소기업·농어업혐력재단]동반성장 투자재원 지급신청 수정요청의 건 ... (생략)</div>
 						
 						<div className="hz-root hz-right hz-gap5 mt10">
-							<button className="bt bt-sm bt-pri-o" type="button">저장</button>
-							<button className="bt bt-sm bt-pri-o" type="button">직접발송</button>
-							<button className="bt bt-sm bt-gray-o" type="button">목록</button>
+							<Button color="pri-o" size="sm">저장</Button>
+							<Button color="pri-o" size="sm">직접발송</Button>
+							<Button color="gray-o" size="sm">목록</Button>
 						</div>
 					</main>
 

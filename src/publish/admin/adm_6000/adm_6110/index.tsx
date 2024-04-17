@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -49,7 +50,7 @@ function ContentsContainer() {
 						<div>[대·중소기업·농어업혐력재단]동반성장 투자재원 지급신청 수정요청의 건 ... (생략)</div>
 						
 						<div className="hz-root hz-right mt10">
-							<button className="bt bt-sm bt-pri-o" type="button">목록</button>
+							<Button color="gray-o" size="sm">목록</Button>	
 						</div>					
 							
 						</main>

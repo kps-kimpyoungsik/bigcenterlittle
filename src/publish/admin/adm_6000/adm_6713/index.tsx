@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -76,8 +77,8 @@ function ContentsContainer() {
 						<div>
 							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
 						</div>
-						<div className="hz-root hz-gap8">
-							<button className="bt bt-md bt-gray-o" type="button">모계좌 등록</button>							
+						<div className="hz-root">
+							<Button color="gray-o" size="md">모계좌 등록</Button>
 						</div>
 					</div>
 					<div id='sheetDiv'>[D] IBSHEET 영역</div>

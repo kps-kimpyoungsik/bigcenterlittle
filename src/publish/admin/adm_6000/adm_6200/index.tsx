@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -17,7 +18,7 @@ function ContentsContainer() {
 
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">SMS 발송관리</h1>
-					<div className="sf">
+					<form className="sf">
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">SMS 발송기간</p>
@@ -75,17 +76,17 @@ function ContentsContainer() {
 								</div>						
 							</div>
 						</div> 
-					</div>			
+					</form>			
 					<div className="hz-root hz-center mb25">
-						<button className="hz-item bt bt-md bt-pri" type="button">조회</button>
+						<Button color="pri" size="md">조회</Button>
 					</div>									
 					<div className="tb-top">
 						<div>
 							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
 						</div>
 						<div className="hz-root hz-gap8">
-							<button className="bt bt-sm bt-pri-o" type="button">SMS 발송</button>
-							<button className="bt bt-sm bt-gray-o" type="button">다운로드</button>
+							<Button color="pri-o" size="sm">SMS 발송</Button>
+							<Button color="gray-o" size="sm">다운로드</Button>
 							<div className="sl sl-sm w120">
 								<select name="" id="" className="">
 									<option value="0">20개씩보기</option>
