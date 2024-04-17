@@ -26,73 +26,73 @@ function ContentsContainer() {
 							<div className="fo-item">
 								<p className="fo-key">사용자유형</p>
 								<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={'시스템'} placeholder={"검색어 입력"} readOnly={true}/>
+									<UIInput className={'tf tf-md w100p'} value={'시스템'} readOnly={true}/>
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">사용자ID</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="admin" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'admin'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">사용자명</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="관리자" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'관리자'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">기업명</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="[111-82-22222]대·중소기업 농·어업협력재단" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'[111-82-22222]대·중소기업 농·어업협력재단'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">이메일</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="admin@email.com" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'admin@email.com'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">사무실전화번호</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="02-1111-2344" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'02-1111-2344'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">이메일 인증</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="예" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'예'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">인증일시</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="2024-03-15 15:06:23" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'2024-03-15 15:06:23'} readOnly={true}/>
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">비밀번호오류횟수</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="3" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'admin'} readOnly={true}/>
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">사용여부</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="아니오" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'아니오'} readOnly={true}/>
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">등록자</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="시스템" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'시스템'} readOnly={true}/>
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">등록일시</p>
 								<div className="fo-value">
-									<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="2024-03-15 15:06:23" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={'2024-03-15 15:06:23'} readOnly={true}/>
 								</div>
 							</div>								
 						</div> 

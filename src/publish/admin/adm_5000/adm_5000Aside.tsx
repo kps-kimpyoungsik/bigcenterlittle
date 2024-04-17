@@ -29,7 +29,7 @@ function PortalAside() {
 			<p className="tit-d1">게시판관리</p>
 			<ul className='d1'>
 				{aside.map((aside) => (
-					<li className={location.pathname.slice(0,-2) === aside.s_path.slice(0,-2) ? 'active' : ''} key={aside.s_id}>
+					<li className={location.pathname.slice(0,-1) === aside.s_path.slice(0,-1) ? 'active' : ''} key={aside.s_id}>
 						<Link to={aside.s_path} className='no-sub'>{aside.s_name}</Link>
 					</li>
 				))}
