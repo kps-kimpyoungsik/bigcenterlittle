@@ -19,7 +19,7 @@ function ContentsContainer() {
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">기업등록</h1>
 					<h2 className="tx tx-hd3">기본정보</h2>
-					<div className="fo fo-col2">
+					<form className="fo fo-col2" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item req"> 
 								<p className="fo-key">기업규모</p>
@@ -195,7 +195,7 @@ function ContentsContainer() {
 								</div>		
 							</div>
 						</div>
-					</div>	
+					</form>	
 					<h2 className="tx tx-hd3">사업자등록증 이력</h2>
 					<div className="tb mb10">
 						<div className="tb-top">

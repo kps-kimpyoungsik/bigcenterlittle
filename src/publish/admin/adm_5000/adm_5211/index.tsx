@@ -17,7 +17,7 @@ function ContentsContainer() {
 				</ul>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">FAQ 상세</h1>
-					<div className="fo fo-col2">
+					<form className="fo fo-col2" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item fo-m-1-3 ">
 								<p className="fo-key">제목</p>
@@ -77,7 +77,7 @@ function ContentsContainer() {
 								</div>
 							</div>							
 						</div> 
-					</div>
+					</form>
 					<div className="hz-root hz-right hz-gap5">
 						<Button color="gray-o" size="sm">삭제</Button>	
 						<Button color="pri-o" size="sm">수정</Button>	

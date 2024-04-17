@@ -21,7 +21,7 @@ function ContentsContainer() {
 				</ul>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">회원정보 상세</h1>
-					<div className="fo fo-col3 mb10">
+					<form className="fo fo-col3 mb10" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item">
 								<p className="fo-key">사용자유형</p>
@@ -96,7 +96,7 @@ function ContentsContainer() {
 								</div>
 							</div>								
 						</div> 
-					</div>						
+					</form>						
 					<div className="hz-root hz-right hz-gap5">
 						<Button color='gray-o' size="sm" >비밀번호 오류해제</Button>
 						<Button color='gray-o' size="sm" onClick={modaladm4111.open}>권한등록</Button>

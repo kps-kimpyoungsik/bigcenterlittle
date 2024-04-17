@@ -18,7 +18,7 @@ function ContentsContainer() {
 				</ul>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">회원관리</h1>
-					<div className="sf">
+					<form className="sf" name="" action="" method="">
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">등록일자</p>
@@ -83,7 +83,7 @@ function ContentsContainer() {
 							</div>								
 
 						</div> 
-					</div>			
+					</form>			
 					<div className="hz-root hz-center mb25">
 						<Button color="pri" size="md">조회</Button>
 					</div>									

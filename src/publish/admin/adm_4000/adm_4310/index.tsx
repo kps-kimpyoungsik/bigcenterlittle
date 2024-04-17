@@ -17,7 +17,7 @@ function ContentsContainer() {
 				</ul>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">한도금액 통제</h1>
-					<div className="sf sf-1row">
+					<form className="sf sf-1row" name="" action="" method="">
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">이름/아이디</p>
@@ -27,7 +27,7 @@ function ContentsContainer() {
 							</div>							
 						</div> 
 						<Button color="pri" size="md">조회</Button>
-					</div>											
+					</form>											
 
 					<div className="tb-top">
 						<div>
