@@ -162,9 +162,3 @@ input, button, textarea {
 .datepicker .react-datepicker__navigation--next {
   right:20px;
 }
-
-
-.hz-root .datepicker {
-  margin-left:0!important;
-  flex-shrink:0;
-}

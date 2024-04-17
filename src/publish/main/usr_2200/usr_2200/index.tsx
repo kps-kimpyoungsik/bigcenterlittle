@@ -1,22 +1,28 @@
-
 import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
-import LayoutAside from "../user1000Aside";
-function ContentsContainer() {
+import LayoutAside from "../user2200Aside";
+function ManualContainer(): JSX.Element {
 	return (
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
+			<ul className="fww-brd">
 					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">기금안내</Link></li>
-					<li><Link to="#">지원사례</Link></li>
+					<li><Link to="#">고객지원</Link></li>
+					<li><Link to="#">매뉴얼</Link></li>
 				</ul>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">지원사례</h1>
+					<h1 className="tx tx-hd2">매뉴얼</h1>
 					<div className="tb-search-form">
 						<div className="hz-root hz-center">
+							<div className="hz-item sl sl-big">
+								<select>
+									<option>전체</option>
+									<option>일반</option>
+									<option>투자재원</option>
+								</select>
+							</div>
 							<div className="hz-item sl sl-big">
 								<select>
 									<option>전체</option>
@@ -58,7 +64,7 @@ function ContentsContainer() {
 								<tr>
 									<td>110</td>
 									<td className="ta-left">
-										<Link to="/main/user_1000/user_1210" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
+										<Link to="/main/user_2000/user_2210" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
 									</td>
 									<td>홍길동</td>
 									<td>2024-03-31</td>
@@ -67,7 +73,7 @@ function ContentsContainer() {
 								<tr>
 									<td>110</td>
 									<td className="ta-left">
-										<Link to="/main/user_1000/user_1210" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
+										<Link to="/main/user_2000/user_2210" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
 									</td>
 									<td>홍길동</td>
 									<td>2024-03-31</td>
@@ -76,7 +82,7 @@ function ContentsContainer() {
 								<tr>
 									<td>110</td>
 									<td className="ta-left">
-										<Link to="/main/user_1000/user_1210" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
+										<Link to="/main/user_2000/user_2210" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
 									</td>
 									<td>홍길동</td>
 									<td>2024-03-31</td>
@@ -106,8 +112,8 @@ function ContentsContainer() {
 						</div>
 					</div>
 				</main>
-			</div>			
+			</div>
 		</PageContainer>
 	);
 }
-export default ContentsContainer;
+export default ManualContainer;

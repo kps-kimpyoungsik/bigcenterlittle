@@ -61,26 +61,25 @@ function LayoutHeader() {
 		<div className='fww-header-util'>
 			<div className='fww-util'>
 				<ul>
-					<li><Link to="#">로그인</Link></li>
-					<li><Link to="#">회원가입</Link></li>
+					{/* Login 전 */}
+					<li><Link to="/main/home/usr_1300" className="login">로그인</Link></li>
+					<li><Link to="/main/home/usr_1200" className="join">회원가입</Link></li>
 					<li>
 						<span>
-							<em className='user-name'>김주경</em>님
+							<em className='user-name'>홍길동</em>님
 							(남은시간 세션 <em className='user-session'>58:31</em>)
-						</span>
+						</span>&nbsp;
 						<button className='btn-session-extend' type='button'>연장</button>
 					</li>
+					{/* Login 후 */}
 					<li>
-						<Link to="#">로그아웃</Link>
+						<Link to="#" className="logout">로그아웃</Link>
 					</li>
 					<li>
-						<Link to="#">마이페이지</Link>
+						<Link to="#" className="mypage">마이페이지</Link>
 					</li>
 					<li>
-						<Link to="#">관리자페이지</Link>
-					</li>
-					<li>
-						<Link to="#">홈페이지</Link>
+						<Link to="/main/" className="home">홈페이지</Link>
 					</li>
 				</ul>
 			</div>
