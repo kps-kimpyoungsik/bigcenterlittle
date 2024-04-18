@@ -385,10 +385,11 @@
 
 .fww-root .fww-group-aside-con .fww-con {
     flex-grow: 1;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     flex-basis: auto;
     max-width: none;
     /* max-width: 100%; */
+    /* min-width:  calc(100vw - 265px); */
 }
 
 
