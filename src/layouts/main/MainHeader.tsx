@@ -145,7 +145,7 @@ function LayoutHeader() {
 						<Link to="/main/usr_1000/usr_1500" className="mypage">마이페이지</Link>
 					</li>
 					<li>
-						<Link to="/admin/home" className="admin">관리자페이지</Link>
+						<Link to="/admin/home" className="admin" target="_blank">관리자페이지</Link>
 					</li>
 
 				</ul>

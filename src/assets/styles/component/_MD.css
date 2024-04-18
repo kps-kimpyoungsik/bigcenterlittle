@@ -84,6 +84,7 @@ body.ReactModal__Body--open {
 	opacity: 0;
  }
  .ReactModal__Content {
+	box-sizing: border-box;
 	position: static !important;
 	overflow: hidden !important;	
 	flex: 1;

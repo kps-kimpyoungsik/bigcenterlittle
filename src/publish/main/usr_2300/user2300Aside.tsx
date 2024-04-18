@@ -5,7 +5,7 @@ function PortalAside() {
 		{
 			a_id:1,
 			a_name : "안내사항",
-			a_path : "/main/usr_23000/usr_2300"
+			a_path : "/main/usr_2300/usr_2300"
 		},
 		{
 			a_id:2,
