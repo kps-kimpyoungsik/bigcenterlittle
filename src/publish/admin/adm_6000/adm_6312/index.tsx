@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import useToggleState from 'components/hooks/useToggleState';
+import ModalPopup from 'components/modal/';
 import UIDatePicker from "components/datepicker";
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
+	const modaladm6313 = useToggleState({});
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -21,7 +24,7 @@ function ContentsContainer() {
 					<main className="fww-main">
 						<h1 className="tx tx-hd2">사업 등록</h1>
 						
-						<form className="fo fo-col2" name="" action="" method="">
+						<form className="fo fo-col3" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
 									<p className="fo-key">사업코드</p>
@@ -44,13 +47,21 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">사업시작일</p>
 									<div className="fo-value">
-										데이트피커
+										<div className="hz-root hz-gap5">
+											<UIDatePicker className="hz-item"/>
+											<span className="hz-item">~</span>
+											<UIDatePicker className="hz-item"/>
+										</div>	
 									</div>
 								</div>
 								<div className="fo-item req">
 									<p className="fo-key">사업종료일</p>
 									<div className="fo-value">
-									데이트피커
+										<div className="hz-root hz-gap5">
+												<UIDatePicker className="hz-item"/>
+												<span className="hz-item">~</span>
+												<UIDatePicker className="hz-item"/>
+											</div>	
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -92,6 +103,8 @@ function ContentsContainer() {
 									<div className="sl sl-md w100p">
 											<select name="" id="" className="">
 												<option value="0">선택</option>
+												<option value="1">예</option>
+												<option value="2">아니오</option>
 											</select>
 										</div>										
 									</div>
@@ -135,7 +148,11 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">주담당자</p>
 									<div className="fo-value">
-										
+										<div className="hz-root hz-gap8">
+										<UIInput className={'tf tf-md tf-readonly2 w100p'} value={'홍길동'} readOnly={true} />
+										<Button color='gray-o' size="md" onClick={modaladm6313.open}>찾기</Button>
+										<Button color="gray-o" size="md">리프레시</Button>
+										</div>
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -150,6 +167,8 @@ function ContentsContainer() {
 									<div className="sl sl-md w100p">
 											<select name="" id="" className="">
 												<option value="0">선택</option>
+												<option value="1">예</option>
+												<option value="2">아니오</option>
 											</select>
 										</div>										
 									</div>
@@ -157,8 +176,8 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">운영사업</p>
 									<div className="fo-value">
-									<div className="sl sl-md w100p">
-											<select name="" id="" className="">
+									<div className="sl sl-md w100p" data-state="disabled">
+											<select name="" id="" className="" disabled>
 												<option value="0">선택</option>
 												<option value="1">예</option>
 												<option value="2">아니오</option>
@@ -198,11 +217,32 @@ function ContentsContainer() {
 							</div> 
 						</form>
 						
+						<div className="hz-root hz-right hz-gap5">
+							<Button color='pri-o' size="sm" >저장</Button>
+							<Button color='gray-o' size="sm" >목록</Button>
+						</div>
 
+
+
+						
 						
 					</main>
 
 				</div>
+				{/* modal - 사용자검색 */}
+				<ModalPopup
+					open={modaladm6313.isShowing}
+					title="$"
+					size="mid"
+					onClose={modaladm6313.close}
+				>
+					<div className="modal-con">
+						...
+					</div>
+					<div className="modal-bottom">
+						<Button color='pri' size="big">$</Button>
+					</div>	
+				</ModalPopup>								
 		</PageContainer>
 	);
 }

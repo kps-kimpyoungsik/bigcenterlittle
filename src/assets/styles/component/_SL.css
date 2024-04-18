@@ -26,7 +26,8 @@
 .sl.sl-md>select {
   height: 36px;
   font-size: 14px;
-  padding: 0px 10px 0px 12px;
+  /* padding: 0px 10px 0px 12px; */
+  padding: 0px 35px 0px 12px;
 }
 .sl.sl-sm>select {
   height: 30px;
@@ -69,78 +70,13 @@
     cursor: default;
 }
 
-
-/*sel-complex*/
-.sl.sl-complex {
-    position: relative;
-}
-.sl.sl-complex .sl-complex-ctr {
-    border: 1px solid #ccc;
-    height: 32px;
-    border-radius: 0px;
-    appearance: none;
-    padding: 0 27px 0 7px;
-    width: 100%;
-    cursor: pointer;
-    font-size: 14px;
-    color: #111;
-    border-radius: 4px;
-    background: none;
-    text-align: left;
-}
-.sl.sl-complex.active .sl-complex-ctr {
-    outline: 2px solid #000;
-}
-.sl.sl-complex .sl-complex-con {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 36px;
-    border: 1px solid #ccc;
-    background: #fff;
-    border-radius:  4px;
-}
-.sl.sl-complex.active .sl-complex-con {
-    display: block;
-}
-.sl.sl-complex .sl-complex-con .sl-comlex-con-section {
-    border-bottom: 1px solid #ccc;
-    padding: 8px;
-}
-.sl.sl-complex .sl-complex-con .sl-comlex-con-section:last-of-type {
-    border-bottom: 0;
-}
-.sl.sl-complex .sl-complex-con .sl-comlex-con-section .sl-comlex-con-tit {
-    font-size: 14px;
-    font-weight: 600;
-    color: #111;
-    margin-bottom: 8px;
-}
-.sl.sl-complex .sl-complex-con .sl-comlex-con-section .ip-rd-group .ip-rd-label {
-    display: block;
-    width: 100%;
-    height: 32px;
-    line-height: 32px;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333;
-    border-bottom: 1px dashed #e3e3e3;
-    padding-left: 0;
-}
-.sl.sl-complex .sl-complex-con .sl-comlex-con-section .ip-rd-group .ip-rd-label:last-of-type {
-    border-bottom:  0;
-}
-.sl.sl-complex .sl-complex-con .sl-comlex-con-section .ip-rd-group .ip-rd-label .check {
-    width: 16px;
-    height: 12px;
-    background: none;
-    left: auto;
-    right: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-/* .sl.sl-complex .sl-complex-con .sl-comlex-con-section .ip-rd-group .ip-rd-label .ip-rd:checked+.check {
-    background: url(../img/icon/ic_select_active_normal.svg);
-} */
+/*disabled*/
+.sl>select:disabled {
+    border-color: #ccc;
+    color: #666;
+    background: #f3f3f3;
+    cursor: not-allowed;
+  }
+  .sl[data-state="disabled"]:after{
+    opacity: 0.3;
+  }
