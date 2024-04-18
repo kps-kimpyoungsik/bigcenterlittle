@@ -141,10 +141,19 @@ body.ReactModal__Body--open {
 	margin-top:20px;
 	gap: 8px;
 }
-
-.size-mid .ReactModal__Content{
+.size-sm .ReactModal__Content{
 	max-width: 600px;
 }
+.size-mid .ReactModal__Content{
+	max-width: 800px;
+}
+.size-lg .ReactModal__Content{
+	max-width: 1000px;
+}
+.size-xlg .ReactModal__Content{
+	max-width: 1290px;
+}
+
 .size-alert .ReactModal__Content{
 	max-width: 360px;
 }
