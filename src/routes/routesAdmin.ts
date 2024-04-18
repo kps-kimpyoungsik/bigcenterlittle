@@ -51,6 +51,7 @@ import {
 	adm6311Page,
 	adm6312Page,
 	adm6314Page,
+	adm6410Page,
 	adm6710Page,
 	adm6711Page,
 	adm6712Page,
@@ -269,6 +270,11 @@ export const routes: Array<PageRouteProps> = [
 		component: adm6314Page,
 		layout: DefaultLayout,
 	},			
+	{
+		path: '/admin/adm_6000/adm6410',
+		component: adm6410Page,
+		layout: DefaultLayout,
+	},				
 	{
 		path: '/admin/adm_6000/adm6710',
 		component: adm6710Page,
