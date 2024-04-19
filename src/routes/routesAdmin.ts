@@ -52,6 +52,23 @@ import {
 	adm6312Page,
 	adm6314Page,
 	adm6410Page,
+
+	adm6411Page,
+	adm6412Page,
+	adm6413Page,
+	adm6421Page,
+	adm6422Page,
+	adm6424Page,
+	adm6431Page,
+	adm6432Page,
+	adm6433Page,
+	adm6434Page,
+	adm6510Page,
+	adm6520Page,
+	adm6521Page,
+	adm6522Page,
+	adm6610Page,
+
 	adm6710Page,
 	adm6711Page,
 	adm6712Page,
@@ -275,6 +292,90 @@ export const routes: Array<PageRouteProps> = [
 		component: adm6410Page,
 		layout: DefaultLayout,
 	},				
+
+	{
+		path: '/admin/adm_6000/adm6410',
+		component: adm6410Page,
+		layout: DefaultLayout,
+	},				
+
+	{
+		path: '/admin/adm_6000/adm6411',
+		component: adm6411Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6412',
+		component: adm6412Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6413',
+		component: adm6413Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6421',
+		component: adm6421Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6422',
+		component: adm6422Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6424',
+		component: adm6424Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6431',
+		component: adm6431Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6432',
+		component: adm6432Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6433',
+		component: adm6433Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6434',
+		component: adm6434Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6510',
+		component: adm6510Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6520',
+		component: adm6520Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6521',
+		component: adm6521Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6522',
+		component: adm6522Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_6000/adm6610',
+		component: adm6610Page,
+		layout: DefaultLayout,
+	},	
+
+
 	{
 		path: '/admin/adm_6000/adm6710',
 		component: adm6710Page,

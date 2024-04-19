@@ -6,7 +6,6 @@
 			"<div className=\"hz-root hz-gap10\">",
 			"</div>"				
 		],
-		"description": "hz"
 	},
 
 	//버튼 BIG
@@ -14,7 +13,15 @@
 	//버튼 MD
 
 	//버튼 SM
-	
+
+	//텍스트 필드
+	"tf": {
+		"prefix": "_tf",
+		"body": [
+			"<UIInput className={'tf tf-md w100p'} value={''} placeholder={'검색어 입력'} />"	
+		],
+	},	
+
 	//데이트피커
 	"dp": {
 		"prefix": "_dp",
@@ -25,8 +32,119 @@
 			"\t<UIDatePicker className=\"hz-item\"/>",
 			"</div>"				
 		],
-		"description": "dp"
-	}
+	},
+
+	//셀렉트
+	"sl": {
+		"prefix": "_sl",
+		"body": [
+			"<div className=\"sl sl-sm w120\">",
+			"\t<select name=\"\" id=\"\" className=\"\">",
+			"\t\t<option value=\"0\">선택/전체</option>",
+			"\t\t<option value=\"1\">$</option>",
+			"\t</select>",
+			"</div>"
+		],
+	},	
+
+	//SF 서치필터
+	"sf": {
+		"prefix": "_sf",
+		"body": [
+			"{/*클래스옵션: sf-1row, sf-2col*/}",
+			"<form className=\"sf sf-1row sf-2col\">",
+			"\t<div className=\"inner\">",
+			"\t\t<div className=\"sf-item\">",
+			"\t\t\t<p className=\"sf-key\">$</p>",
+			"\t\t\t<div className=\"sf-value\">",
+			"\t\t\t\t<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} />",
+			"\t\t\t</div>",
+			"\t\t</div>",		
+			"\t</div>", 
+			"\t<button className=\"bt\" data-color=\"pri\" data-size=\"md\" data-hz=\"\" type=\"button\">조회</button>",
+			"</form>",
+			"<div className=\"hz-root hz-center mb25\">",
+			"\t<button className=\"bt\" data-color=\"pri\" data-size=\"md\" data-hz=\"\" type=\"button\">조회</button>",
+			"</div>"
+		],
+	},
+
+
+	//FO 폼
+	"fo": {
+		"prefix": "_fo",
+		"body": [
+			"{/*클래스옵션: fo-col2, fo-col3 sf-1row*/}",
+			"<form className=\"fo fo-col2\" name=\"\" action=\"\" method=\"\">",
+			"\t<div className=\"inner\">",
+			"\t\t<div className=\"fo-item req\">",
+			"\t\t\t<p className=\"fo-key\">$</p>",
+			"\t\t\t<div className=\"fo-value\">",
+			"\t\t$",
+			"\t\t\t</div>",
+			"\t\t</div>",					
+			"\t</div>", 
+			"</form>",
+			"<div className=\"hz-root hz-right hz-gap5\">",
+			"\t<Button color=\"pri-o\" size=\"sm\" >저장</Button>",
+			"\t<Button color=\"gray-o\" size=\"sm\" >목록</Button>",
+			"</div>"			
+		],
+	},	
+
+	//FO 폼아래(Form Btn) 저장및기타 버튼들
+	"fb": {
+		"prefix": "_fb",
+			"body": [
+					"<div className=\"hz-root hz-right hz-gap5\">",
+					"\t<Button color=\"pri-o\" size=\"sm\" >저장</Button>",
+					"\t<Button color=\"gray-o\" size=\"sm\" >목록</Button>",
+					"</div>"
+				],
+	},		
+
+	//Table Top (테이블이나 그리드위에 기능버튼들)
+	"tt": {
+		"prefix": "_tt",
+		"body": [
+			"<div className=\"tb-top\">",
+			"\t<div>",
+			"\t\t<p className=\"tx fc-black\"></p>총 <em className=\"fw500\">103</em>건",
+			"\t</div>",
+			"\t<div className=\"hz-root hz-gap5\">",
+			"\t\t<Button color=\"pri-o\" size=\"sm\">등록</Button>",
+			"\t\t<Button color=\"pri-o\" size=\"sm\">저장</Button>",
+			"\t\t<Button color=\"gray-o\" size=\"sm\">다운로드</Button>",
+			"\t\t<div className=\"sl sl-sm w120\">",
+			"\t\t\t<select name=\"\" id=\"\" className=\"\">",
+			"\t\t\t\t<option value=\"20\">20개씩보기</option>",
+			"\t\t\t\t<option value=\"50\">50개씩보기</option>",
+			"\t\t\t\t<option value=\"100\">100개씩보기</option>",
+			"\t\t\t\t<option value=\"200\">200개씩보기</option>",
+			"\t\t\t\t<option value=\"500\">500개씩보기</option>",
+			"\t\t\t\t<option value=\"1000\">1000개씩보기</option>",
+			"\t\t\t</select>",
+			"\t\t</div>",									
+			"\t</div>",
+			"</div>"					
+		],
+	},
+
+	//IBSHeet
+	"ib": {
+		"prefix": "_ib",
+		"body": [
+			"<div className=\"ibsheet\">[D] IBSHEET 영역</div>",
+		],
+	},		
+
+	//$
+	"$": {
+		"prefix": "_$",
+		"body": [
+		],
+	},	
+
 }
 
 

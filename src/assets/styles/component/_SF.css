@@ -66,3 +66,8 @@
   transform: translateY(-50%);
   right: 30px;
 }
+
+/*2col*/
+.sf.sf-2col>.inner {
+  grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);  
+}
