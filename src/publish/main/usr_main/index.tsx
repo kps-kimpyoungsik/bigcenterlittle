@@ -43,7 +43,7 @@ function HomeContainer(){
 						<div className="inner">
 							<div className="board-group">
 								<div className="bd-card notice">
-									<h3 className="bd-title">공지사항</h3>
+									<h3 className="bd-title">안내사항</h3>
 									<ul className="bd-list">
 										<li>
 											<Link to="#">

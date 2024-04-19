@@ -1,5 +1,5 @@
 
-import React, {} from "react";
+import React, { useState} from "react";
 import { Link, NavLink, useLocation  } from 'react-router-dom';
 import logo from 'assets/img/logo/logo_blk.svg';
 const global = {
@@ -56,73 +56,64 @@ const global = {
 		sub3: [
 			{
 				g_id:1,
-				name : "출연신청",
-				path : "/main/usr_2000/usr_2000"
+				name : "과제승인신청",
+				path : "/main/usr_2100/usr_2100"
 			},
 			{
 				g_id:2,
-				name : "출연현황",
-				path : "/main/usr_2000/usr_2002"
+				name : "과제현황",
+				path : "/main/usr_2100/usr_2105"
 			},
 			{
 				g_id:3,
-				name : "전용신청",
-				path : "/main/usr_2000/usr_2007"
+				name : "지급정산신청",
+				path : "/main/usr_2100/usr_2114"
 			},
 			{
 				g_id:4,
-				name : "전용현황",
-				path : "/main/usr_2000/usr_2009"
+				name : "지급현황",
+				path : "/main/usr_2100/usr_2123"
+			},
+			{
+				g_id:5,
+				name : "환수신청",
+				path : "/main/usr_2100/usr_2133"
 			}
 		],
 		sub4: [
 			{
 				g_id:1,
-				name : "출연신청",
-				path : "/main/usr_2000/usr_2000"
+				name : "통합정보조회",
+				path : "/main/usr_2200/usr_2200"
 			},
 			{
 				g_id:2,
-				name : "출연현황",
-				path : "/main/usr_2000/usr_2002"
+				name : "입출금내역조회",
+				path : "/main/usr_2200/usr_2201"
 			},
 			{
 				g_id:3,
-				name : "전용신청",
-				path : "/main/usr_2000/usr_2007"
-			},
-			{
-				g_id:4,
-				name : "전용현황",
-				path : "/main/usr_2000/usr_2009"
+				name : "기부금영수증 조회",
+				path : "/main/usr_2200/usr_2202"
 			}
 		],
 		sub5: [
 			{
 				g_id:1,
-				name : "출연신청",
-				path : "/main/usr_2000/usr_2000"
+				name : "안내사항",
+				path : "/main/usr_2300/usr_2300"
 			},
 			{
 				g_id:2,
-				name : "출연현황",
-				path : "/main/usr_2000/usr_2002"
-			},
-			{
-				g_id:3,
-				name : "전용신청",
-				path : "/main/usr_2000/usr_2007"
-			},
-			{
-				g_id:4,
-				name : "전용현황",
-				path : "/main/usr_2000/usr_2009"
+				name : "자주묻는질문",
+				path : "/main/usr_2300/usr_2302"
 			}
 		],
 	}
 };
 function LayoutHeader() {
-	const location = useLocation(); 
+	const location = useLocation();
+	const [hidden, setHidden] = useState(true);
 	return (
 		<div className='fww-header-util'>
 			<div className='fww-util'>
@@ -150,62 +141,56 @@ function LayoutHeader() {
 
 				</ul>
 			</div>
-			<header className='fww-header'>
+			<header className={hidden ? 'fww-header usr' : 'fww-header usr active'}>
 				<div className='left-area'>
 					<Link to="/main" className='logo'>
 						<img src={logo} alt="대·중소기업 상생협력기금 종합시스템" />
 					</Link>
 				</div>
 				<div className='right-area'>
-					<nav className='fww-gnb'>
+					<nav 
+						className='fww-gnb' 
+						onMouseEnter={() => setHidden(false)}
+						onMouseLeave={() => setHidden(true)}
+					>
 						<ul>
-							<li className={location.pathname.includes('usr_190') ? 'd1 active' : 'd1'}><NavLink to="/main/usr_1900/usr_1900">상생협력기금 안내</NavLink></li>
-							<li className={location.pathname.includes('usr_200') ? 'd1 active' : 'd1'}><NavLink to="/main/usr_2000/usr_2000">기금출연</NavLink></li>
-							<li className={location.pathname.includes('usr_210') ? 'd1 active' : 'd1'}><NavLink to="/main/usr_2100/usr_2100">기금운영</NavLink></li>
-							<li className={location.pathname.includes('usr_220') ? 'd1 active' : 'd1'}><NavLink to="/main/usr_2200/usr_2200">통합정보조회</NavLink></li>
-							<li className={location.pathname.includes('usr_230') ? 'd1 active' : 'd1'}><NavLink to="/main/usr_2300/usr_2300">고객지원</NavLink></li>
-						</ul>
-					</nav>
-					<nav className='fww-gnb-depth2'>
-						<ul>
-							<li>
-								<p className='hide'>상생협력기금 안내</p>
+							<li className={location.pathname.includes('usr_190') ? 'd1 active' : 'd1'}>
+								<NavLink to="/main/usr_1900/usr_1900">상생협력기금 안내</NavLink>
 								<ul className='d2'>
 									{global.content.sub1.map((block) => (
-										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
+										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
-								</ul>								
-								
+								</ul>
 							</li>
-							<li>
-								<p className='hide'>기금출연</p>
+							<li className={location.pathname.includes('usr_200') ? 'd1 active' : 'd1'}>
+								<NavLink to="/main/usr_2000/usr_2000">기금출연</NavLink>
 								<ul className='d2'>
 									{global.content.sub2.map((block) => (
-										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
+										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>
 							</li>
-							<li>
-								<p className='hide'>기금운영</p>
+							<li className={location.pathname.includes('usr_210') ? 'd1 active' : 'd1'}>
+								<NavLink to="/main/usr_2100/usr_2100">기금운영</NavLink>
 								<ul className='d2'>
 									{global.content.sub3.map((block) => (
-										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
+										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>
 							</li>
-							<li>
-								<p className='hide'>통합정보조회</p>
+							<li className={location.pathname.includes('usr_220') ? 'd1 active' : 'd1'}>
+								<NavLink to="/main/usr_2200/usr_2200">통합정보조회</NavLink>
 								<ul className='d2'>
 									{global.content.sub4.map((block) => (
-										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
+										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>
 							</li>
-							<li>
-								<p className='hide'>고객지원</p>
+							<li className={location.pathname.includes('usr_230') ? 'd1 active' : 'd1'}>
+								<NavLink to="/main/usr_2300/usr_2300">고객지원</NavLink>
 								<ul className='d2'>
 									{global.content.sub5.map((block) => (
-										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
+										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
 									))}
 								</ul>
 							</li>
