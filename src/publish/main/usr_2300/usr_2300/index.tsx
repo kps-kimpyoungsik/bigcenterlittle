@@ -3,6 +3,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2300Aside";
+import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -16,11 +18,13 @@ function ContentsContainer() {
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">안내사항</h1>
 					<div className="tb-search-form">
-						<div className="hz-root hz-center">
+						<div className="hz-root hz-center hz-gap10">
 							<div className="hz-item sl sl-big">
 								<select>
 									<option>전체</option>
-									<option>일반</option>
+									<option>공지사항</option>
+									<option>안내자료</option>
+									<option>매뉴얼</option>
 									<option>투자재원</option>
 								</select>
 							</div>
@@ -31,8 +35,8 @@ function ContentsContainer() {
 									<option>내용</option>
 								</select>
 							</div>
-							<input type="text" className="hz-item tf tf-big" placeholder="" />
-							<button type="button" className="hz-item bt bt-big bt-pri">조회</button>
+							<UIInput className={'hz-item tf tf-big'} value={''} placeholder={"입력하세요."} />
+							<Button color="pri" size="big">조회</Button>
 						</div>
 					</div>
 					<div className="tb">
@@ -47,6 +51,7 @@ function ContentsContainer() {
 							<caption>게시판 목록</caption>
 							<colgroup>
 								<col width="90px" />
+								<col width="140px" />
 								<col />
 								<col width="120px" />
 								<col width="140px" />
@@ -55,6 +60,7 @@ function ContentsContainer() {
 							<thead>
 								<tr>
 									<th scope="col">번호</th>
+									<th scope="col">유형</th>
 									<th scope="col">제목</th>
 									<th scope="col">작성자</th>
 									<th scope="col">등록일</th>
@@ -64,8 +70,9 @@ function ContentsContainer() {
 							<tbody>
 								<tr>
 									<td>110</td>
+									<td>공지사항</td>
 									<td className="ta-left">
-										<Link to="/main/user_2000/user_2110" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
+										<Link to="/main/usr_2300/usr_2301" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
 									</td>
 									<td>홍길동</td>
 									<td>2024-03-31</td>
@@ -73,8 +80,9 @@ function ContentsContainer() {
 								</tr>
 								<tr>
 									<td>110</td>
+									<td>투자재원</td>
 									<td className="ta-left">
-										<Link to="/main/user_2000/user_2110" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
+										<Link to="/main/usr_2300/usr_2301" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
 									</td>
 									<td>홍길동</td>
 									<td>2024-03-31</td>
@@ -82,8 +90,9 @@ function ContentsContainer() {
 								</tr>
 								<tr>
 									<td>110</td>
+									<td>투자재원</td>
 									<td className="ta-left">
-										<Link to="/main/user_2000/user_2110" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
+										<Link to="/main/usr_2300/usr_2301" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
 									</td>
 									<td>홍길동</td>
 									<td>2024-03-31</td>

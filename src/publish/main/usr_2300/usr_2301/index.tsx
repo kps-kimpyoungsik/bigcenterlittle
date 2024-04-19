@@ -12,13 +12,21 @@ function ContentsContainer() {
 				<ul className="fww-brd">
 					<li><Link to="/main/">홈</Link></li>
 					<li><Link to="#">고객지원</Link></li>
-					<li><Link to="#">매뉴얼</Link></li>
+					<li><Link to="#">안내사항</Link></li>
 				</ul>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">매뉴얼</h1>
+					<h1 className="tx tx-hd2">안내사항</h1>
 					<div className="tb tb-view">
 						<div className="tb-view-top">
 							<div className="tb-view-title">
+								<span className="badge red">공지</span>
+								{/*  badge color
+								<span className="badge yellow">공지</span>
+								<span className="badge gray">공지</span>
+								<span className="badge blue">공지</span>
+								<span className="badge green">공지</span>
+								<span className="badge purple">공지</span>
+								*/}
 								<h3 className="title">대·중소기업상생협력기금 운영 관리 규정</h3>
 							</div>
 							<ul className="tb-view-info">
@@ -39,7 +47,7 @@ function ContentsContainer() {
 						붙임. 대·중소기업상생협력기금 운영·관리 규정 개정(안)(본문)
 					</div>
 					<div className="hz-root hz-center">
-						<Button color='gray-o' size="big" href="/main/user_2000/user_2200">목록</Button>
+						<Button color='gray-o' size="big" href="/main/usr_2300/usr_2300">목록</Button>
 					</div>
 					<div className="tb-view-move">
 						<ul>

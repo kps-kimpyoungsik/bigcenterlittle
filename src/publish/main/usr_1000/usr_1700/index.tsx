@@ -7,8 +7,14 @@ function ContentsContainer() {
 	return (
 		<PageContainer>
 			<div className='fww-con'>
-				page
-			</div>			
+				<ul className="fww-brd">
+					<li><Link to="/main/">홈</Link></li>
+					<li><Link to="#">회원가입</Link></li>
+				</ul>
+				<main className="fww-main">
+					
+				</main>
+			</div>				
 		</PageContainer>
 	);
 }
