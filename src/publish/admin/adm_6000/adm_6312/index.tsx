@@ -23,7 +23,7 @@ function ContentsContainer() {
 
 					<main className="fww-main">
 						<h1 className="tx tx-hd2">사업 등록</h1>
-						
+
 						<form className="fo fo-col3" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
@@ -158,7 +158,11 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">부서장</p>
 									<div className="fo-value">
-										
+										<div className="hz-root hz-gap8">
+											<UIInput className={'tf tf-md tf-readonly2 w100p'} value={'홍길동'} readOnly={true} />
+											<Button color='gray-o' size="md" onClick={modaladm6313.open}>찾기</Button>
+											<Button color="gray-o" size="md">리프레시</Button>
+											</div>
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -222,9 +226,8 @@ function ContentsContainer() {
 							<Button color='gray-o' size="sm" >목록</Button>
 						</div>
 
-
-
-						
+						<div className="hz-root hz-gap10">
+						</div>
 						
 					</main>
 
@@ -232,16 +235,55 @@ function ContentsContainer() {
 				{/* modal - 사용자검색 */}
 				<ModalPopup
 					open={modaladm6313.isShowing}
-					title="$"
+					title="사용자검색"
 					size="mid"
 					onClose={modaladm6313.close}
 				>
 					<div className="modal-con">
-						...
+						<form className="sf sf-1row sf-2col mb30">
+							<div className="inner">
+								<div className="sf-item">
+									<p className="sf-key">사용자유형</p>
+									<div className="sf-value">
+										<div className="sl sl-md w100p">
+											<select name="" id="" className="">
+												<option value="0">전체</option>
+												<option value="1">내부사용자</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div className="sf-item">
+									<p className="sf-key">이름</p>
+									<div className="sf-value">
+										<UIInput className={'tf tf-md w100p'} value={''} placeholder={'검색어 입력'} />
+									</div>
+								</div>
+							</div>
+							<button className="bt" data-color="pri" data-size="md" data-hz="" type="button">조회</button>
+						</form>
+
+						<div className="tb-top">
+							<div>
+								<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
+							</div>
+							<div className="hz-root hz-gap5">
+								<div className="sl sl-sm w120">
+									<select name="" id="" className="">
+										<option value="20">20개씩보기</option>
+										<option value="50">50개씩보기</option>
+										<option value="100">100개씩보기</option>
+										<option value="200">200개씩보기</option>
+										<option value="500">500개씩보기</option>
+										<option value="1000">1000개씩보기</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div className="ibsheet">[D] IBSHEET 영역</div>
+
 					</div>
-					<div className="modal-bottom">
-						<Button color='pri' size="big">$</Button>
-					</div>	
 				</ModalPopup>								
 		</PageContainer>
 	);
