@@ -7,6 +7,8 @@
 .pt  .row {
     display: flex;
 }
+.pt  .row.gap30 {column-gap: 30px;}
+
 .pt  .row .col.col-10 {width: 100%;}
 .pt  .row .col.col-9 {width: 90%;}
 .pt  .row .col.col-8 {width: 80%;}
@@ -17,6 +19,13 @@
 .pt  .row .col.col-3 {width: 30%;}
 .pt  .row .col.col-2 {width: 20%;}
 .pt  .row .col.col-1 {width: 10%;}
+
+/*고정너비+나머지차지/20240419*/
+.pt .col.fg {
+    flex-grow: 1;
+}
+
+
 .pt  .row.three .col:nth-of-type(1) {width: 33.33%;}
 .pt  .row.three .col:nth-of-type(2) {width: 33.33%;}
 .pt  .row.three .col:nth-of-type(3) {width: 33.34%;}

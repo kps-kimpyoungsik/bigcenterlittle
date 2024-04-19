@@ -33,7 +33,7 @@ function ContentsContainer() {
 										<input name="" id="" className="tf tf-md w100p" type="text" value="02-111-1111" placeholder="" />
 									</div>						
 								</div>
-								<div className="fo-item fo-m-1-3 req">
+								<div className="fo-item fo-m-1-3">
 									<p className="fo-key">발송자 이름</p>
 									<div className="fo-value">
 										<input name="" id="" className="tf tf-md w100p" type="text" value="관리자" placeholder="" />
@@ -52,7 +52,9 @@ function ContentsContainer() {
 						</div>
 						<div id='sheetDiv mb30'>[D] IBSHEET 영역</div>
 						
-						<div>[대·중소기업·농어업혐력재단]동반성장 투자재원 지급신청 수정요청의 건 ... (생략)</div>
+						<div className="ta-view mt30">
+							대·중소기업·농어업협력재단 심사가 완료되었습니다.
+						</div>
 						
 						<div className="hz-root hz-right hz-gap5 mt10">
 							<Button color="pri-o" size="sm">저장</Button>

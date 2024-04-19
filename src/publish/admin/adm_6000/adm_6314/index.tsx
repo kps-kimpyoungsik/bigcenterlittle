@@ -29,19 +29,19 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">사업코드</p>
 									<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={''} readOnly={true} />
+									<UIInput className={'tf tf-md w100p'} value={'023'} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item req">
 									<p className="fo-key">사업명</p>
 									<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={''} readOnly={false} />
+									<UIInput className={'tf tf-md w100p'} value={'지역사회 동반성장 지원사업'} readOnly={false} />
 									</div>
 								</div>
 								<div className="fo-item req">
 									<p className="fo-key">사업약칭</p>
 									<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={''} readOnly={false} />
+									<UIInput className={'tf tf-md w100p'} value={'지역사회'} readOnly={false} />
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -80,11 +80,7 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">사업용도</p>
 									<div className="fo-value">
-										<div className="sl sl-md w100p">
-											<select name="" id="" className="">
-												<option value="0">선택</option>
-											</select>
-										</div>
+										<UIInput className={'tf tf-md w100p'} value={'상생협력기금의 조성 운영 및 관리를 위한 사업'} placeholder={''} />
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -151,7 +147,7 @@ function ContentsContainer() {
 										<div className="hz-root hz-gap8">
 										<UIInput className={'tf tf-md tf-readonly2 w100p'} value={'홍길동'} readOnly={true} />
 										<Button color='gray-o' size="md" onClick={modaladm6313.open}>찾기</Button>
-										<Button color="gray-o" size="md">리프레시</Button>
+										<button type="button" className="bt-refresh">리프레시</button>
 										</div>
 									</div>
 								</div>
@@ -161,7 +157,7 @@ function ContentsContainer() {
 										<div className="hz-root hz-gap8">
 											<UIInput className={'tf tf-md tf-readonly2 w100p'} value={'홍길동'} readOnly={true} />
 											<Button color='gray-o' size="md" onClick={modaladm6313.open}>찾기</Button>
-											<Button color="gray-o" size="md">리프레시</Button>
+											<button type="button" className="bt-refresh">리프레시</button>
 											</div>
 									</div>
 								</div>
@@ -189,6 +185,7 @@ function ContentsContainer() {
 										</div>										
 									</div>
 								</div>
+								
 								<div className="fo-item">
 									<p className="fo-key">비고사항</p>
 									<div className="fo-value">
@@ -214,7 +211,7 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">등록일시</p>
 									<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={''} readOnly={true}/>
+									<UIInput className={'tf tf-md w100p'} value={'2020-12-15(화) 10:10:10'} readOnly={true}/>
 									</div>
 								</div>
 

@@ -63,6 +63,19 @@ input, button, textarea {
     font-weight: 400;
 }
 
+.tf[readonly] {
+  color: #333;
+  /* border-color: #CCC; */
+  /* background: #F3F3F3; */
+  border-color: transparent;
+  background: none;
+}
+.tf[readonly]:focus {
+/* border-color: #CCC; */
+  border-color: transparent;
+  background: none;  
+}
+
 /*unit*/
 .tf-unit {
     position: relative;
@@ -97,6 +110,7 @@ input, button, textarea {
 .datepicker .react-datepicker-wrapper{
   display: inline-flex;
   align-items: center;
+  width: 100%;
 }
 .datepicker .react-datepicker__input-container::after {
   content: '';

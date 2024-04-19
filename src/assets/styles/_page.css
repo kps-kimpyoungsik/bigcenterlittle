@@ -9,6 +9,12 @@
     @ 메모 : 앞에서 _component, _layout으로 커버되지 않는 각 페이지마다 유니크한 부분은 이곳에서 따로 정의한다.
 */
 
+/*
+
+[관리자페이지]--------------------------------------------------------------------------------------------------
+
+*/
+
 /*adm_4320*/
 /*adm_4320*/
 .adm_4320_btn_in_out {
@@ -53,7 +59,6 @@
 background-image: url(../img/icon/ic_left_10.svg);	
 }
 
-
 /*user table form*/
 .tb-search-form .hz-root{
     padding:30px 0;
@@ -71,6 +76,23 @@ background-image: url(../img/icon/ic_left_10.svg);
 .fww-main .tb-search-form + .tb + .pg {
     margin-bottom:70px;
 }
+
+/*adm_6210에서 쓰이는 페이크-텍스트에어리어*/
+.ta-view {
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 200px;
+}
+
+
+
+
+/*
+
+[사용자페이지]--------------------------------------------------------------------------------------------------
+
+*/
 
 /*user 게시판 상세페이지*/
 .tb-view {
@@ -667,7 +689,6 @@ background-image: url(../img/icon/ic_left_10.svg);
     line-height: 1;
     color:#666;
 }
-
 /*사용자메인*/
 .usr-home {
     background-image: url('../img/pages/usr_home_bg.svg');

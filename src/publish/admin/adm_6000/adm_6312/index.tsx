@@ -47,21 +47,13 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">사업시작일</p>
 									<div className="fo-value">
-										<div className="hz-root hz-gap5">
-											<UIDatePicker className="hz-item"/>
-											<span className="hz-item">~</span>
-											<UIDatePicker className="hz-item"/>
-										</div>	
+										<UIDatePicker className="hz-item w100p"/>
 									</div>
 								</div>
 								<div className="fo-item req">
 									<p className="fo-key">사업종료일</p>
 									<div className="fo-value">
-										<div className="hz-root hz-gap5">
-												<UIDatePicker className="hz-item"/>
-												<span className="hz-item">~</span>
-												<UIDatePicker className="hz-item"/>
-											</div>	
+										<UIDatePicker className="hz-item"/>
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -151,7 +143,7 @@ function ContentsContainer() {
 										<div className="hz-root hz-gap8">
 										<UIInput className={'tf tf-md tf-readonly2 w100p'} value={'홍길동'} readOnly={true} />
 										<Button color='gray-o' size="md" onClick={modaladm6313.open}>찾기</Button>
-										<Button color="gray-o" size="md">리프레시</Button>
+										<button type="button" className="bt-refresh">리프레시</button>
 										</div>
 									</div>
 								</div>
@@ -161,7 +153,7 @@ function ContentsContainer() {
 										<div className="hz-root hz-gap8">
 											<UIInput className={'tf tf-md tf-readonly2 w100p'} value={'홍길동'} readOnly={true} />
 											<Button color='gray-o' size="md" onClick={modaladm6313.open}>찾기</Button>
-											<Button color="gray-o" size="md">리프레시</Button>
+											<button type="button" className="bt-refresh">리프레시</button>
 											</div>
 									</div>
 								</div>

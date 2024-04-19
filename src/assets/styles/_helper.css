@@ -135,6 +135,9 @@
 .p16 {padding: 16px !important}
 .p32 {padding: 32px !important}
 
+.h100p {height: 100% !important}
+.h36 {height: 36px !important}
+
 .w100p {width: 100% !important}
 .w0 {width: 0 !important;}
 .w10 {width: 10px !important}
@@ -151,6 +154,7 @@
 .w120 {width: 120px !important}
 .w130 {width: 130px !important}
 .w215 {width: 215px !important}
+.w320 {width: 320px !important;}
 .w375 {width: 375px !important;}
 .w565 {width: 565px !important;}
 .w1180 {width: 1180px !important;}
@@ -176,6 +180,7 @@
 .mt5 {margin-top: 5px !important;}
 .mt8 {margin-top: 8px !important;}
 .mt10 {margin-top: 10px !important;}
+.mt30 {margin-top: 30px !important;}
 
 .mr30 {margin-right: 30px !important;}
 .ml30 {margin-left: 30px !important;}

@@ -51,10 +51,24 @@
 }
 
 /*narrow*/
+
+.tb-narrow thead th,
+.tb-narrow tbody td {
+    border-right: 1px solid #e4e4e4;
+}
+.tb-narrow thead th:last-of-type,
+.tb-narrow tbody tr td:last-of-type {
+    border-right: 0;
+}
 .tb-narrow thead th {
-  height: 50px;
+  height: 48px;
+  background: #F6FAFF;
+  font-size: 14px;
+  color: #000;
 }
 .tb-narrow tbody td {
   height: 26px;
-  padding: 12px 15px;
+  padding: 7px 15px;
+  font-size: 14px;
+  color: #333;
 }

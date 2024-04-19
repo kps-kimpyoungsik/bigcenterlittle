@@ -6,7 +6,6 @@ export type AbstractButton = {
 	href?: string;
 	type?: 'button' | 'submit' | 'reset';
 	size?: 'sm' | 'md' | 'big';
-	hz?: 'item' | 'root' | '';
 	//round?: boolean;
 	children?: React.ReactNode;
 } & Omit<
@@ -29,7 +28,6 @@ function Button(props: ButtonProps, ref: any) {
 		type = 'button',
 		color = 'pri',
 		size = 'big',
-		hz = '',
 		
 		//round = false,
 		children,
@@ -58,7 +56,6 @@ function Button(props: ButtonProps, ref: any) {
 					className="bt"
 					data-color={color}
 					data-size={size}
-					data-hz={hz}	
 					type={type}
 					//data-round={round}
 					ref={ref}

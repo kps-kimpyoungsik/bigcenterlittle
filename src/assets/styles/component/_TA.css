@@ -11,8 +11,9 @@
     min-height: 126px;
 }
 .ta.ta-readonly {
-    border-color: #CCC;
-    background: #F3F3F3;		
+    /* border-color: #CCC; */
+    border-color: transparent;
+    /* background: #F3F3F3;		 */
 }
 .ta .ta-ip {
     border: 0;

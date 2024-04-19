@@ -137,7 +137,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">1</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-1" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-1" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-1" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -147,7 +147,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">2</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-2" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-2" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-2" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -157,7 +157,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">3</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-3" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-3" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-3" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -167,7 +167,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">4</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-4" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-4" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-4" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -177,7 +177,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">5</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-5" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-5" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-5" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -187,7 +187,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">6</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-6" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-6" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-6" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -231,7 +231,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">1</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-1" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-1" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-1" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -247,7 +247,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">2</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-2" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-2" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-2" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -263,7 +263,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">3</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-3" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-3" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-3" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -279,7 +279,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">4</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-4" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-4" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-4" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -295,7 +295,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">5</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-5" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-5" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-5" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -311,7 +311,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">6</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-6" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-6" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-6" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -327,7 +327,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">7</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-7" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-7" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-7" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -343,7 +343,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">8</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-8" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-8" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-8" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -359,7 +359,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">9</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-9" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-9" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-9" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -375,7 +375,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">10</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-10" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-10" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-10" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -391,7 +391,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">11</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-11" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-11" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-11" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -407,7 +407,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">12</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-12" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-12" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-12" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -423,7 +423,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">13</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-1" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-1" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-13" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -439,7 +439,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">$</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-14" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-14" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-14" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -455,7 +455,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">15</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-15" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-15" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-15" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>
@@ -471,7 +471,7 @@ function ContentsContainer() {
 									<tr>
 										<td className="ta-cetner">16</td>
 										<td className="ta-cetner">
-											<label htmlFor="ch-auth-16" className="hz-item ip-ch-label ip-ch-18">
+											<label htmlFor="ch-auth-16" className="ip-ch-label ip-ch-18">
 												<input name="ch-auth" id="ch-auth-16" className="ip-ch" type="checkbox" value="" />
 												<span className="check"></span> 
 											</label>

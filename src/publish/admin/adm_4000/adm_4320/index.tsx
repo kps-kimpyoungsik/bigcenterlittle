@@ -34,9 +34,11 @@ function ContentsContainer() {
 								<div className="hz-root hz-sb hz-bottom mb10">
 									<h2 className="hz-item tx tx-hd3 mt0 mb12">최종결재자 한도금액</h2>
 									<div className="hz-item hz-root hz-right hz-gap5">
-										<Button color="gray-o" size="sm">결재자 삭제 </Button>
-										<button className="hz-item bt-up" type="button">아래로</button>
-										<button className="hz-item bt-down" type="button">위로</button>
+											<Button color="gray-o" size="sm">결재자 삭제 </Button>
+											<button className="hz-item bt bt-gray-o bt-up" type="button">위로</button>
+											<button className="hz-item bt bt-gray-o bt-up" type="button" disabled>위로</button>
+											<button className="hz-item bt bt-gray-o bt-down" type="button">아래로</button>																						
+											<button className="hz-item bt bt-gray-o bt-down" type="button" disabled>아래로</button>																						
 									</div>																			
 								</div>
 								<div className='ibsheet'>[D] IBSHEET 영역</div>

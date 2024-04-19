@@ -47,7 +47,10 @@ function ContentsContainer() {
 						</div>
 						<div id='sheetDiv mb30'>[D] IBSHEET 영역</div>
 						
-						<div>[대·중소기업·농어업혐력재단]동반성장 투자재원 지급신청 수정요청의 건 ... (생략)</div>
+						<div className="ta-view mt30">
+							[상생협력재단] <em className="fc-err">$NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 심사가 완료되었습니다.
+							[상생협력재단] <em className="fc-err">$NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 집행이 완료되었습니다. 지급금액 <em className="fc-err">$###</em>원, 집행일 <em className="fc-err">$YYYY-MM-DD</em>
+						</div>
 						
 						<div className="hz-root hz-right mt10">
 							<Button color="gray-o" size="sm">목록</Button>

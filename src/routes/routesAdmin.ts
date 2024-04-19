@@ -292,13 +292,6 @@ export const routes: Array<PageRouteProps> = [
 		component: adm6410Page,
 		layout: DefaultLayout,
 	},				
-
-	{
-		path: '/admin/adm_6000/adm6410',
-		component: adm6410Page,
-		layout: DefaultLayout,
-	},				
-
 	{
 		path: '/admin/adm_6000/adm6411',
 		component: adm6411Page,

@@ -34,16 +34,15 @@
 	border: 1px solid hotpink;
 }
 
-/*_TF.css*/
-.tf[readonly] {
-    color: #333;
-    /* border-color: #CCC; */
-    /* background: #F3F3F3; */
-    border-color: transparent;
-    background: none;
+/*pages - 6421*/
+.pannel {
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
-.tf[readonly]:focus {
-  /* border-color: #CCC; */
-    border-color: transparent;
-    background: none;  
+.pannel .pannel-top {
+	border-bottom: 1px solid #ddd;	
+	padding: 15px 17px 15px 20px;
+}
+.pannel .pannel-bottom {
+	padding: 15px;
 }
