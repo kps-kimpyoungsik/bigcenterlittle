@@ -631,3 +631,39 @@ background-image: url(../img/icon/ic_left_10.svg);
 .mypage .fo + .hz-root {
     margin-top:50px;
 }
+.mypage .w100p .react-datepicker-wrapper {
+    display: flex;
+}
+.mypage .fo-value .address {
+    width:855px;
+}
+.mypage .fo-value .address .hz-root {
+    width: 270px;
+}
+.mypage .fo-value .w-half {
+    width:370px;
+}
+/*비밀번호수정*/
+.mypage.pw-edit {
+    max-width: 820px;
+    padding:40px 0;
+}
+.mypage.pw-edit .tx-hd2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mypage.pw-edit .sub-tx {
+    font-size:15px;
+    line-height: 1;
+    color:#000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.mypage.pw-edit .w385 {
+    width:385px
+}
+.mypage.pw-edit .tx-msg {
+    font-size:13px;
+    line-height: 1;
+    color:#666;
+}
