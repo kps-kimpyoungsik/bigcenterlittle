@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INDEX-사용자페이지 (대·중소기업 상생협력기금 종합관리시스템 퍼블리싱)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <script>
+      const info = {
+        /*
+          state1 : 작업전
+          state2 : 작업중
+          state3 : 완료
+        */
+        "title": "대·중소기업 상생협력기금 종합관리시스템 퍼블리싱",
+        "url_first": "http://localhost:",
+        "url_port": "3000",
+        "table_head": ['PID','D1','D2','D3','D4','D5','D6','날짜','진행','메모'],
+        "ia": [
+          {
+            "d1": "HOME",
+            "d1id": "usr_1000",
+            "page": [
+              ["usr_1100", "HOME", "홈", "-", "-", "-", "-", "2024.04.19", "state1", "-"],
+              ["usr_1200", "HOME", "회원가입", "회원가입 약관동의", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1201p", "HOME", "회원가입", "인증수단 선택 창", "-", "-", "-", "2024.04.19", "state1", "-"],
+              ["usr_1202", "HOME", "회원가입", "회원가입 정보입력", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1203p", "HOME", "회원가입", "기업검색 팝업", "-", "-", "-", "2024.04.19", "state1", "-"],
+              ["usr_1204", "HOME", "회원가입", "회원가입 완료", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1300", "HOME", "로그인", "-", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1400", "HOME", "아이디/비밀번호 찾기", "아이디 찾기 탭", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1401p", "HOME", "아이디/비밀번호 찾기", "인증수단 선택 창", "-", "-", "-", "2024.04.19", "state1", "-"],
+              ["usr_1402", "HOME", "아이디/비밀번호 찾기", "아이디 찾기 결과", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1403", "HOME", "아이디/비밀번호 찾기", "비밀번호 찾기 탭", "-", "-", "-", "2024.04.19", "state1", "-"],
+              ["usr_1500", "HOME", "마이페이지", "내정보", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1501", "HOME", "마이페이지", "내기업정보", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1502", "HOME", "마이페이지", "비밀번호 수정", "-", "-", "-", "2024.04.19", "state3", "-"],
+              ["usr_1600", "HOME", "개인정보처리방침", "", "-", "-", "-", "2024.04.19", "state1", "-"],
+              ["usr_1700", "HOME", "이용약관", "", "-", "-", "-", "2024.04.19", "state1", "-"],
+              ["usr_1800", "HOME", "이메일무단수집거부", "", "-", "-", "-", "2024.04.19", "state1", "-"],
+            ]
+          },
+          {
+            "d1": "상생협력기금 안내",
+            "d1id": "usr_1900",
+            "page": [
+              ["usr_1900", "제도소개", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1901", "투명한기금운영", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1902", "기관안내", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1903", "우수사례", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1906", "우수사례", "우수사례 상세", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1904", "수요조사", "수요조사 신청목록", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1907", "수요조사", "수요조사 지원내역 목록", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1908", "수요조사", "수요조사 상세", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1905", "수요조사", "수요조사 등록", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1909", "수요조사", "수요조사 지원내용", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_1910", "수요조사", "수요조사 지원 내용 수정", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },
+          {
+            "d1": "기금출연",
+            "d1id": "usr_2000",
+            "page": [
+              ["usr_2000", "출연신청", "출연신청 정보 입력", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2001p", "출연신청", "안내사항 보기창", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2002", "출연현황", "출연현황 목록 - 목록 없음", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2003", "출연현황", "출연현황 목록", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2004", "출연현황", "출연 상세 - 전자인증 전", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2005p", "출연현황", "가상 계좌 발급 안내창", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2006", "출연현황", "출연 내용 수정", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2007", "전용신청", "전용 신청정보 입력", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2008p", "전용신청", "출연 번호 선택창", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2009", "전용현황", "전용현황 목록 - 목록없음", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2010", "전용현황", "전용현황 목록", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2011", "전용현황", "전용 요청 상세", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2012", "전용현황", "전용 요청 내용 수정", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },          
+          {
+            "d1": "기금운영",
+            "d1id": "usr_2100",
+            "page": [
+              ["usr_2100", "기금운영", "과제승인신청", "과제 신청 약관 동의", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2101", "기금운영", "과제승인신청", "과제 신청 정보 입력", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2102p", "기금운영", "과제승인신청", "수행기관 찾기 팝업", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2103p", "기금운영", "과제승인신청", "수행기관 신규 등록 팝업", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2104p", "기금운영", "과제승인신청", "수행기관 관리 팝업", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2105", "기금운영", "과제현황", "과제 현황 목록 - 목록 없음", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2106", "기금운영", "과제현황", "과제 현황 목록", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2107", "기금운영", "과제현황", "과제 상세", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2108", "기금운영", "과제현황", "과제 내용 수정", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2109", "기금운영", "과제현황", "상생기금외 지원 내역", "상생기금외 지원 내역 목록 - 목록 없음", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2110", "기금운영", "과제현황", "상생기금외 지원 내역", "상생기금외 지원 내역 목록", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2111", "기금운영", "과제현황", "상생기금외 지원 내역", "상생기금외 지원 내용", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2112", "기금운영", "과제현황", "상생기금외 지원 내역", "상생기금외 지원 내역 등록", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2113p", "기금운영", "과제현황", "상생기금외 지원 내역", "과제 선택창", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2114", "기금운영", "지급정산신청", "지급신청 약관 동의", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2115p", "기금운영", "지급정산신청", "수행 과제 선택창", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2116", "기금운영", "지급정산신청", "지급신청 - 목록 없음", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2117", "기금운영", "지급정산신청", "지급신청 - 수행기업이 없는 경우", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2118", "기금운영", "지급정산신청", "지급신청 - 수행기업이 있는 경우", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2119", "기금운영", "지급정산신청", "지급 신청 정보 입력", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2120p", "기금운영", "지급정산신청", "지원기업 목록 수정창", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2121p", "기금운영", "지급정산신청", "지원기업 목록 수정 창 - 수행기업이 있는 경우", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2122p", "기금운영", "지급정산신청", "수행 기업 목록 수정 창", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2123", "기금운영", "지급현황", "지급현황 - 목록없음", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2124", "기금운영", "지급현황", "지급현황 목록", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2125", "기금운영", "지급현황", "지급 상세", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2126p", "기금운영", "지급현황", "지원기업 목록", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2127p", "기금운영", "지급현황", "수행기업 목록", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2128p", "기금운영", "지급현황", "지원기업 목록 - 수행기업이 있는 경우", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2129", "기금운영", "지급현황", "지급내용 수정", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2120p", "기금운영", "지급현황", "지원기업 목록 수정창", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2121p", "기금운영", "지급현황", "지원기업 목록 수정창 - 수행기업이 있는 경우", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2122p", "기금운영", "지급현황", "수행기업 목록 수정창", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2133", "기금운영", "환수신청", "환수신청 목록 - 목록없음", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2134", "기금운영", "환수신청", "환수신청 목록", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2135p", "기금운영", "환수신청", "지급과제찾기창", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2136", "기금운영", "환수신청", "환수신청·정보입력", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2138p", "기금운영", "환수신청", "환수기업 내역등록창", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2137", "기금운영", "환수신청", "환수신청 내용", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },          
+          {
+            "d1": "통합정보조회",
+            "d1id": "usr_2200",
+            "page": [
+              ["usr_2200", "통합정보조회", "통합정보조회", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2201", "통합정보조회", "입출금내역조회", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2202", "통합정보조회", "기부금영수증 조회", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },          
+          {
+            "d1": "고객지원",
+            "d1id": "usr_2300",
+            "page": [
+              ["usr_2300", "고객지원", "안내사항", "안내사항 목록", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2301", "고객지원", "안내사항", "안내사항 상세", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2302", "고객지원", "자주묻는질문", "자주묻는 질문 목록", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["usr_2303", "고객지원", "자주묻는질문", "자주묻는 질문 상세", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },          
+          /*          
+          {
+            "d1": "$",
+            "d1id": "usr_$",
+            "page": [
+              ["usr_$", "-", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },
+          */
+        ]
+      }
+      window.onload = function() {
+        const root = document.querySelector('.stk-main');
+        const table_base = '';
+
+        for (let i = 0; i < info.ia.length; i++) {
+          //카테고리수만큼...(i)
+          root.insertAdjacentHTML('beforeend', '<h2>'+info.ia[i].d1+'</h2>'); //제목
+          let tb = document.createElement('table'); //테이블
+          root.appendChild(tb);
+          
+          /*Thead------------------------------------------------------------------------*/
+          let tb_h = document.createElement('thead');
+          tb.appendChild(tb_h);
+          let tb_h_tr = document.createElement('tr');
+          tb_h.appendChild(tb_h_tr);
+          for (let ii = 0; ii < info.table_head.length; ii++) {
+            tb_h_tr.insertAdjacentHTML('beforeend', '<th>'+info.table_head[ii]+'</th>');
+          }
+          /*//Thead------------------------------------------------------------------------*/
+
+          let tb_b = document.createElement('tbody');
+          tb.appendChild(tb_b);
+          
+          for (let j = 0; j < info.ia[i].page.length; j++) {
+            //특정 카테고리내 페이지수만큼...(j)
+            let tb_b_tr = document.createElement('tr');
+            tb_b.appendChild(tb_b_tr);
+            
+            for (let k = 0; k < info.table_head.length; k++) {
+              //칼럼개수만큼...(k)
+              let tb_b_tr_tb = document.createElement('td');
+              
+              if(k === 0){ //링크일경우,
+                let url = info.url_first+info.url_port+'/'+'main/'+info.ia[i].d1id+'/'+info.ia[i].page[j][k];
+                let state = info.ia[i].page[j][8];
+                let linkClass = '';
+                switch(state) {
+                  case 'state1':
+                    break;
+                  case 'state2':
+                    break;
+                  case 'state3':  
+                    linkClass = 'p';
+                    break;
+                }
+
+                tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+'<a class=\''+linkClass+'\' href=\''+url+'\' target=\'_blank\'>'+info.ia[i].page[j][k]+'</a>'+'</td>');  
+                
+              }else if(k === 8) { //진행일경우,
+                let state = info.ia[i].page[j][k];
+                let stateClass = '';
+                let stateTxt = '';
+                switch(state) {
+                  case 'state1':
+                    stateClass = state;
+                    stateTxt = '작업전';
+                    break;
+                  case 'state2':
+                    stateClass = state;
+                    stateTxt = '작업중';
+                    break;
+                  case 'state3':  
+                    stateClass = state;
+                    stateTxt = '완료';
+                    break;
+                }                
+                tb_b_tr.insertAdjacentHTML('beforeend', '<td class=\''+stateClass+'\'>'+stateTxt+'</td>');
+                
+              }else { //나머지,
+                tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+info.ia[i].page[j][k]+'</td>');
+              }
+            }
+          }
+        }          
+      }
+    </script>    
+  </head>
+  <body>
+
+    <header class="stk-header">
+      <div class="inner">
+        <h1>
+          <!-- <img src="./static/img/logo/logo_blk.svg" alt="대·중소기업 상생협력기금 종합관리시스템"> -->
+          대·중소기업 상생협력기금 종합관리시스템
+           퍼블리싱
+        </h1>
+        <nav>
+          <ul>
+            <li class="active"> <!--[D] active-->
+              <a href="pub_list_usr.html">사용자 페이지</a>
+            </li>
+            <li class="">
+              <a href="pub_list_adm.html">관리자 페이지</a>
+            </li>
+            <!--
+            <li class=""> 
+              <a href="index_common.html">공통영역</a>
+            </li>            
+            <li class=""> 
+              <a href="index_comp.html">컴포넌트</a>
+            </li>
+            -->
+          </ul>
+        </nav>
+      </div>
+    </header>    
+
+    <div class="stk-main"></div>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body, th, td, input, select, textarea, button {
+          font-family: 'Noto Sans KR', AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, "돋움", sans-serif;
+      }   
+      .stk-header {
+        position: relative;
+        height: 64px;
+        width: 100%;
+        background: #92c100;
+      }
+      .stk-header>.inner {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 5px 20px;
+      }
+      .stk-header h1 {
+        color: #110082b5;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+      }
+      .stk-header h1>img {
+        margin-right: 10px;
+      }
+      .stk-header nav ul {
+        display: flex;
+        column-gap: 5px;
+      }
+      .stk-header nav ul li {
+        list-style: none;
+      }
+      .stk-header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 10px;
+      }
+      .stk-header nav ul li.active a {
+        color: #000;
+        background: orange;
+        font-weight: 600;
+      }      
+      .stk-main {
+        padding: 20px;
+      }
+      .stk-main ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0;
+        padding-left: 0;
+        gap: 10px 10px;
+      }
+      .stk-main ul li {
+        display: block;
+        list-style: none;
+      }
+      .stk-main ul li a {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        background: #1a2b81;
+        color: #fff;
+        line-height: 30px;
+        padding: 10px 15px;
+        font-size: 20px;
+      }
+      .stk-main ul li a:hover {
+        background: orange;
+      }
+
+      .stk-main h2 {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+      .stk-main table {
+        border-collapse: collapse;
+        margin-bottom: 25px;
+        font-size: 12px;
+        width: 100%;
+        table-layout: fixed;
+        /* max-width: 800px; */
+      }
+      .stk-main th {
+        background: #ccc;
+      }
+      .stk-main th, .stk-main td {
+        border: 1px solid #ccc;
+        padding: 4px;
+        text-align: left;
+      }
+      .stk-main th:nth-of-type(1), .stk-main td:nth-of-type(1) {width: 100px;}
+      .stk-main th:nth-of-type(8), .stk-main td:nth-of-type(8) {width: 70px; text-align: center;}
+      .stk-main th:nth-of-type(9), .stk-main td:nth-of-type(9) {width: 40px; text-align: center;}
+      .stk-main td a {
+        text-decoration: none;
+        border: 1px solid #7a7a7a;
+        background: #fff;
+        color: #7a7a7a;
+        padding: 0px 3px;
+      }
+      .stk-main td a.p {
+        background-color: #1a2b81;
+        border: 1px solid #1a2b81;
+        color: #fff;        
+      }
+      .stk-main td.state1 {
+        color: #adadad;
+        text-align: center;
+      }
+      .stk-main td.state2 {
+        color: #adadad;
+        text-align: center;
+      }
+      .stk-main td.state3 {
+        color: blue;
+        text-align: center;
+      }
+      .stk-main tr:nth-child(even) {
+        background: #efefef;
+      }
+      .stk-main tr:hover {
+        background: #d1d1d1;
+      }      
+    </style>
+
+  </body>
+</html>

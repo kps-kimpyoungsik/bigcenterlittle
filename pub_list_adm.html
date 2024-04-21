@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>INDEX-관리자페이지 (대·중소기업 상생협력기금 종합관리시스템 퍼블리싱)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <script>
+      const info = {
+        /*
+          state1 : 작업전
+          state2 : 작업중
+          state3 : 완료
+        */
+        "title": "대·중소기업 상생협력기금 종합관리시스템 퍼블리싱",
+        "url_first": "http://localhost:",
+        "url_port": "3000",
+        "table_head": ['PID','D1','D2','D3','D4','D5','D6','날짜','진행','메모'],
+        "ia": [
+          {
+            "d1": "메인",
+            "d1id": "adm_main",
+            "page": [
+              ["admmain", "메인", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },
+          {
+            "d1": "로그인",
+            "d1id": "adm_login",
+            "page": [
+              ["admmlogin", "로그인", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },
+          {
+            "d1": "기금관리",
+            "d1id": "adm_1000",
+            "page": [
+              ["adm1100", "기금관리", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },
+          {
+            "d1": "계좌관리",
+            "d1id": "adm_2000",
+            "page": [
+              ["adm2100", "계좌관리", "가상계좌조회", "가상계좌조회 리스트", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["adm2110p", "계좌관리", "가상계좌조회", "기업별 잔액조회(팝업)", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["adm2200", "계좌관리", "모계좌조회", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },
+          {
+            "d1": "공시/발급",
+            "d1id": "adm_3000",
+            "page": [
+            ["adm3100", "공시/발급", "법인세공시",	"법인세공시 리스트",	"-", "-", "-", "2024.$$.$$", "state1", "포함: adm3110p, adm3120p"],
+            // ["adm3110p" ,"공시/발급",	"법인세공시",	"법인세공시 리스트", "연장공문 파일업로드(팝업)", "-", "-", "2024.$$.$$", "state1", "-"],
+            // ["adm3120p", "공시/발급", "법인세공시",	"법인세공시 리스트",	"연장공문 열람(팝업)", "-", "-", "2024.$$.$$", "state1", "-"],
+            ["adm3200", "공시/발급",	"기부영수증",	"-", "-", "-", "-", "2024.$$.$$", "state1", "-"]
+            ] 
+          }, 
+          {
+            "d1": "사용자관리",
+            "d1id": "adm_4000",
+            "page": [
+              ["adm4100", "사용자관리", "회원관리", "회원리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4110", "사용자관리", "회원관리", "회원정보 상세", "", "-", "-", "2024.04.12", "state3", "포함: adm4113, adm4114"],
+              // ["adm4111p", "사용자관리", "회원관리", "회원정보 상세", "권한등록(팝업)", "-", "-", "2024.04.12", "state3", "-"],
+              // ["adm4112p", "사용자관리", "회원관리", "회원정보 상세", "사업지정(팝업)", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4113", "사용자관리", "회원관리", "회원정보 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4114", "사용자관리", "회원관리", "회원정보 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4200", "사용자관리", "기업관리", "기업관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4210", "사용자관리", "기업관리", "기업상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4211p", "사용자관리", "기업관리", "기업상세", "사업자등록증 등록/갱신(팝업)", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["adm4212", "사용자관리", "기업관리", "기업등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4213", "사용자관리", "기업관리", "기업수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4310", "사용자관리", "한도금액 통제", "한도금액 통제 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm4320", "사용자관리", "한도금액 통제", "최종결재자 한도금액 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+            ] 
+          },              
+          {
+            "d1": "게시판관리",
+            "d1id": "adm_5000",
+            "page": [
+              ["adm5100", "게시판관리", "공지사항", "공지사항 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5110", "게시판관리", "공지사항", "공지사항 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5120", "게시판관리", "공지사항", "공지사항 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5130", "게시판관리", "공지사항", "공지사항 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5210", "게시판관리", "FAQ관리", "FAQ관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5211", "게시판관리", "FAQ관리", "FAQ 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5212", "게시판관리", "FAQ관리", "FAQ 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5213", "게시판관리", "FAQ관리", "FAQ 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5310", "게시판관리", "팝업관리", "팝업 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5311", "게시판관리", "팝업관리", "팝업 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5312", "게시판관리", "팝업관리", "팝업 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5313", "게시판관리", "팝업관리", "팝업 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5320", "게시판관리", "우수사례관리", "우수사례 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5321", "게시판관리", "우수사례관리", "우수사례 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5322p", "게시판관리", "우수사례관리", "우수사례 상세", "썸네일 이미지미리보기 팝업", "-", "-", "2024.04.12", "state1", "-"],
+              ["adm5323", "게시판관리", "우수사례관리", "우수사례 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm5324", "게시판관리", "우수사례관리", "우수사례 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+            ] 
+          },            
+          {
+            "d1": "시스템관리",
+            "d1id": "adm_6000",
+            "page": [
+              ["adm6100", "시스템관리", "메일발송관리", "메일발송 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6110", "시스템관리", "메일발송관리", "메일발송 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6120", "시스템관리", "메일발송관리", "메일발송", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6200", "시스템관리", "SMS 발송관리", "SMS 발송관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6210", "시스템관리", "SMS 발송관리", "SMS 발송내역 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6220", "시스템관리", "SMS 발송관리", "SMS 발송", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6310", "시스템관리", "사업관리", "사업관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6311", "시스템관리", "사업관리", "사업 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6312", "시스템관리", "사업관리", "사업 등록", "-", "-", "-", "2024.04.12", "state3", "포함: adm6313p"],
+              // ["adm6313p", "시스템관리", "사업관리", "사업 등록", "사용자 검색(팝업)", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6314", "시스템관리", "사업관리", "사업 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6410", "시스템관리", "코드관리", "코드관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6411", "시스템관리", "코드관리", "코드 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6412", "시스템관리", "코드관리", "코드 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6413", "시스템관리", "코드관리", "코드 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6421", "시스템관리", "메뉴관리", "메뉴관리", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6422", "시스템관리", "메뉴관리", "메뉴상세", "-", "-", "-", "2024.04.12", "state3", "포함: adm6423p"],
+              // ["adm6423p", "시스템관리", "메뉴관리", "메뉴상세", "상위메뉴 변경(팝업)", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6424", "시스템관리", "메뉴관리", "하위메뉴추가 & 메뉴수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6431", "시스템관리", "권한관리", "권한관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6432", "시스템관리", "권한관리", "권한 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6433", "시스템관리", "권한관리", "권한 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6434", "시스템관리", "권한관리", "권한 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6510", "시스템관리", "풍선도움말", "-", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6520", "시스템관리", "명칭관리", "명칭관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6521", "시스템관리", "명칭관리", "명칭 상세", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6522", "시스템관리", "명칭관리", "명칭 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6610", "시스템관리", "통계목관리", "통계목관리 리스트", "-", "-", "-", "2024.04.12", "state3", "포함: adm6611p, adm6612p. adm6613p, adm6614p, adm6615p, adm6616p"],
+              // ["adm6611p", "시스템관리", "통계목관리", "코드 상세(팝업)", "-", "-", "-", "2024.04.12", "state3", "-"],
+              // ["adm6612p", "시스템관리", "통계목관리", "코드 수정(팝업)", "-", "-", "-", "2024.04.12", "state3", "-"],
+              // ["adm6613p", "시스템관리", "통계목관리", "코드 등록(팝업)", "-", "-", "-", "2024.04.12", "state3", "-"],
+              // ["adm6614p", "시스템관리", "통계목관리", "통계목 코드조회(팝업)", "-", "-", "-", "2024.04.12", "state3", "-"],
+              // ["adm6615p", "시스템관리", "통계목관리", "사업연결하기(팝업)", "-", "-", "-", "2024.04.12", "state3", "-"],
+              // ["adm6616p", "시스템관리", "통계목관리", "사업연결하기(팝업)", "출연기업찾기(팝업)", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6710", "시스템관리", "펌뱅킹관리", "펌뱅킹관리 리스트", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6711", "시스템관리", "펌뱅킹관리", "펌뱅킹정보 등록", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6712", "시스템관리", "펌뱅킹관리", "펌뱅킹정보 수정", "-", "-", "-", "2024.04.12", "state3", "-"],
+              ["adm6713", "시스템관리", "펌뱅킹관리", "펌뱅킹정보 상세", "-", "-", "-", "2024.04.12", "state3", "포함: adm6714p, adm6715p"],
+              // ["adm6714p", "시스템관리", "펌뱅킹관리", "모계좌관리 등록(팝업)", "-", "-", "-", "2024.04.12", "state3", "-"],
+              // ["adm6715p", "시스템관리", "펌뱅킹관리", "모계좌관리 수정(팝업)", "-", "-", "-", "2024.04.12", "state3", "-"],
+            ] 
+          },                    
+          {
+            "d1": "결재함",
+            "d1id": "adm_7000",
+            "page": [
+              ["adm7000", "결재함", "결재선 설정", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["adm7100", "결재함", "결재함 리스트", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["adm7101", "결재함", "결재함 상세", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["adm7103p", "결재함", "결재함 상세", "반려사유(팝업)", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+              ["adm7202p", "결재함", "결재함 상세", "이체실행(팝업)", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },                    
+          {
+            "d1": "보고서",
+            "d1id": "adm_8000",
+            "page": [
+              ["adm8100", "보고서", "미정(협의필요)", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },          
+          /*          
+          {
+            "d1": "$",
+            "d1id": "adm_$",
+            "page": [
+              ["adm$", "-", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+            ] 
+          },
+          */
+        ]
+      }
+      window.onload = function() {
+        const root = document.querySelector('.stk-main');
+        const table_base = '';
+
+        for (let i = 0; i < info.ia.length; i++) {
+          //카테고리수만큼...(i)
+          root.insertAdjacentHTML('beforeend', '<h2>'+info.ia[i].d1+'</h2>'); //제목
+          let tb = document.createElement('table'); //테이블
+          root.appendChild(tb);
+          
+          /*Thead------------------------------------------------------------------------*/
+          let tb_h = document.createElement('thead');
+          tb.appendChild(tb_h);
+          let tb_h_tr = document.createElement('tr');
+          tb_h.appendChild(tb_h_tr);
+          for (let ii = 0; ii < info.table_head.length; ii++) {
+            tb_h_tr.insertAdjacentHTML('beforeend', '<th>'+info.table_head[ii]+'</th>');
+          }
+          /*//Thead------------------------------------------------------------------------*/
+
+          let tb_b = document.createElement('tbody');
+          tb.appendChild(tb_b);
+          
+          for (let j = 0; j < info.ia[i].page.length; j++) {
+            //특정 카테고리내 페이지수만큼...(j)
+            let tb_b_tr = document.createElement('tr');
+            tb_b.appendChild(tb_b_tr);
+            
+            for (let k = 0; k < info.table_head.length; k++) {
+              //칼럼개수만큼...(k)
+              let tb_b_tr_tb = document.createElement('td');
+              
+              if(k === 0){ //링크일경우,
+                let url = info.url_first+info.url_port+'/'+'admin/'+info.ia[i].d1id+'/'+info.ia[i].page[j][k];
+                let state = info.ia[i].page[j][8];
+                let linkClass = '';
+                switch(state) {
+                  case 'state1':
+                    break;
+                  case 'state2':
+                    break;
+                  case 'state3':  
+                    linkClass = 'p';
+                    break;
+                }
+
+                tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+'<a class=\''+linkClass+'\' href=\''+url+'\' target=\'_blank\'>'+info.ia[i].page[j][k]+'</a>'+'</td>');  
+                
+              }else if(k === 8) { //진행일경우,
+                let state = info.ia[i].page[j][k];
+                let stateClass = '';
+                let stateTxt = '';
+                switch(state) {
+                  case 'state1':
+                    stateClass = state;
+                    stateTxt = '작업전';
+                    break;
+                  case 'state2':
+                    stateClass = state;
+                    stateTxt = '작업중';
+                    break;
+                  case 'state3':  
+                    stateClass = state;
+                    stateTxt = '완료';
+                    break;
+                }                
+                tb_b_tr.insertAdjacentHTML('beforeend', '<td class=\''+stateClass+'\'>'+stateTxt+'</td>');
+                
+              }else { //나머지,
+                tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+info.ia[i].page[j][k]+'</td>');
+              }
+            }
+          }
+        }          
+      }
+    </script>
+  </head>
+  <body>
+
+    <header class="stk-header">
+      <div class="inner">
+        <h1>
+          <!-- <img src="./static/img/logo/logo_blk.svg" alt=""> -->
+          대·중소기업 상생협력기금 종합관리시스템
+           퍼블리싱
+        </h1>
+        <nav>
+          <ul>
+            <li class="">
+              <a href="pub_list_usr.html">사용자 페이지</a>
+            </li>
+            <li class="active"> <!--[D] active-->
+              <a href="pub_list_adm.html">관리자 페이지</a>
+            </li>
+            <!--
+            <li class=""> 
+              <a href="index_common.html">공통영역</a>
+            </li>            
+            <li class=""> 
+              <a href="index_comp.html">컴포넌트</a>
+            </li>
+            -->
+          </ul>
+        </nav>
+      </div>
+    </header>    
+
+    <div class="stk-main"></div>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body, th, td, input, select, textarea, button {
+          font-family: 'Noto Sans KR', AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, "돋움", sans-serif;
+      }   
+      .stk-header {
+        position: relative;
+        height: 64px;
+        width: 100%;
+        background: #92c100;
+      }
+      .stk-header>.inner {
+        display: flex;
+        align-items: center;
+        column-gap: 25px;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 5px 20px;
+      }
+      .stk-header h1 {
+        color: #110082b5;
+        font-size: 28px;
+        display: flex;
+        align-items: center;
+      }
+      .stk-header h1>img {
+        margin-right: 10px;
+      }
+      .stk-header nav ul {
+        display: flex;
+        column-gap: 5px;
+      }
+      .stk-header nav ul li {
+        list-style: none;
+      }
+      .stk-header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 10px;
+      }
+      .stk-header nav ul li.active a {
+        color: #000;
+        background: orange;
+        font-weight: 600;
+      }      
+      .stk-main {
+        padding: 20px;
+      }
+      .stk-main ul {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0;
+        padding-left: 0;
+        gap: 10px 10px;
+      }
+      .stk-main ul li {
+        display: block;
+        list-style: none;
+      }
+      .stk-main ul li a {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        background: #1a2b81;
+        color: #fff;
+        line-height: 30px;
+        padding: 10px 15px;
+        font-size: 20px;
+      }
+      .stk-main ul li a:hover {
+        background: orange;
+      }
+
+      .stk-main h2 {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 5px;
+      }
+      .stk-main table {
+        border-collapse: collapse;
+        margin-bottom: 25px;
+        font-size: 12px;
+        width: 100%;
+        table-layout: fixed;
+        /* max-width: 800px; */
+      }
+      .stk-main th {
+        background: #ccc;
+      }
+      .stk-main th, .stk-main td {
+        border: 1px solid #ccc;
+        padding: 4px;
+        text-align: left;
+      }
+      .stk-main th:nth-of-type(1), .stk-main td:nth-of-type(1) {width: 100px;}
+      .stk-main th:nth-of-type(8), .stk-main td:nth-of-type(8) {width: 70px; text-align: center;}
+      .stk-main th:nth-of-type(9), .stk-main td:nth-of-type(9) {width: 40px; text-align: center;}
+      .stk-main td a {
+        text-decoration: none;
+        border: 1px solid #7a7a7a;
+        background: #fff;
+        color: #7a7a7a;
+        padding: 0px 3px;
+      }
+      .stk-main td a.p {
+        background-color: #1a2b81;
+        border: 1px solid #1a2b81;
+        color: #fff;        
+      }
+      .stk-main td.state1 {
+        color: #adadad;
+        text-align: center;
+      }
+      .stk-main td.state2 {
+        color: #adadad;
+        text-align: center;
+      }
+      .stk-main td.state3 {
+        color: blue;
+        text-align: center;
+      }
+      .stk-main tr:nth-child(even) {
+        background: #efefef;
+      }
+      .stk-main tr:hover {
+        background: #d1d1d1;
+      }      
+    </style>
+
+  </body>
+</html>
