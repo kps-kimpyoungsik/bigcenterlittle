@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import useToggleState from 'components/hooks/useToggleState';
+import ModalPopup from 'components/modal/';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
+	const modaladm4211 = useToggleState({});
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -35,13 +38,13 @@ function ContentsContainer() {
 							<div className="fo-item">
 								<p className="fo-key">법인등록번호</p>
 								<div className="fo-value">
-									<UIInput type={'number'} className={'tf tf-md w100p'} value={'111122-3333334'} placeholder={'법인등록번호'} readOnly={true}/>
+									<UIInput type={'text'} className={'tf tf-md w100p'} value={'111122-3333334'} placeholder={'법인등록번호'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item"> 
 								<p className="fo-key">사업자등록번호</p>
 								<div className="fo-value">
-									<UIInput type={'number'} className={'tf tf-md w100p'} value={'123-12-12345'} placeholder={'사업자등록번호'} readOnly={true}/>
+									<UIInput type={'text'} className={'tf tf-md w100p'} value={'123-12-12345'} placeholder={'사업자등록번호'} readOnly={true}/>
 								</div>
 							</div>
 							<div className="fo-item">
@@ -71,7 +74,7 @@ function ContentsContainer() {
 							<div className="fo-item">
 								<p className="fo-key">집단</p>
 								<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={'-'} placeholder={'집단'} readOnly={true}/>
+									<UIInput className={'tf tf-md w100p'} value={' '} placeholder={'집단'} readOnly={true}/>
 								</div>						
 							</div>
 							<div className="fo-item"> 
@@ -163,12 +166,26 @@ function ContentsContainer() {
 						</table>
 					</div>
 					<div className="hz-root hz-right hz-gap5">
-						<Button color="pri-o" size="sm">사업자등록증 등록/경신</Button>
+						<Button color="pri-o" size="sm" onClick={modaladm4211.open}>사업자등록증 등록/경신</Button>
 						<Button color="pri-o" size="sm">수정</Button>
 						<Button color="gray-o" size="sm">목록</Button>
 					</div>
 				</main>
 			</div>
+			{/* modal - 4211 */}
+			<ModalPopup
+				open={modaladm4211.isShowing}
+				title="사업자등록증 등록/갱신"
+				size="mid"
+				onClose={modaladm4211.close}
+			>
+				<div className="modal-con">
+					Fileupload...
+				</div>
+				<div className="modal-bottom">
+					<Button color='pri' size="big">등록/갱신</Button>
+				</div>	
+			</ModalPopup>			
 		</PageContainer>
 	);
 }
