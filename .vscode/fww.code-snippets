@@ -130,10 +130,10 @@ import UIDatePicker from "components/datepicker";
 			"\t\t\t</div>",
 			"\t\t</div>",		
 			"\t</div>", 
-			"\t<button className=\"bt\" data-color=\"pri\" data-size=\"md\" data-hz=\"\" type=\"button\">조회</button>",
+			"\t<button className=\"bt\" data-color=\"pri\" data-size=\"md\"  type=\"button\">조회</button>",
 			"</form>",
-			"<div className=\"hz-root hz-center mb25\">",
-			"\t<button className=\"bt\" data-color=\"pri\" data-size=\"md\" data-hz=\"\" type=\"button\">조회</button>",
+			"<div className=\"hz-root hz-center mb30\">",
+			"\t<button className=\"bt\" data-color=\"pri\" data-size=\"md\"  type=\"button\">조회</button>",
 			"</div>"
 		],
 	},

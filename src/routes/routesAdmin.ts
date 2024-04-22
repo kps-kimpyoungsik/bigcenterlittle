@@ -10,6 +10,10 @@ import {
 	// TEST
 	adm0000Page,
 
+	// 계좌관리 [2000]
+	adm2100Page,
+	adm2200Page,
+
 	// 게시판관리 [4000]
 	adm4100Page,
 	adm4110Page,
@@ -97,6 +101,18 @@ export const routes: Array<PageRouteProps> = [
 		component: admAlertPage,
 		layout: DefaultLayout,
 	},
+	// 계좌관리 [2000]
+	{
+		path: '/admin/adm_2000/adm2100',
+		component: adm2100Page,
+		layout: DefaultLayout,
+	},
+	{
+		path: '/admin/adm_2000/adm2200',
+		component: adm2200Page,
+		layout: DefaultLayout,
+	},	
+	
 	{
 		path: '/admin/adm_4000/adm0000',
 		component: adm0000Page,

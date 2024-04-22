@@ -2,6 +2,8 @@ export { default as adm0000Page } from './adm_4000/adm_0000';
 export { default as admIndexPage } from './adm_index';
 export { default as admMainPage } from './adm_main';
 export { default as admAlertPage } from './adm_alert';
+export { default as adm2100Page } from './adm_2000/adm_2100';
+export { default as adm2200Page } from './adm_2000/adm_2200';
 export { default as adm4100Page } from './adm_4000/adm_4100';
 export { default as adm4110Page } from './adm_4000/adm_4110';
 export { default as adm4113Page } from './adm_4000/adm_4113';
