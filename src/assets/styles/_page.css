@@ -1154,3 +1154,27 @@ background-image: url(../img/icon/ic_left_10.svg);
 .home-section .banner-group img {
     display:block;
 }
+
+/*기금출연*/
+.fund-datepicker {
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.sf-fund .sf-value > .hz-root {
+    min-height:36px;
+}
+.fund-section .section-title {
+    font-weight:500;
+}
+.fund-section + .fund-section {
+    margin-top:40px;
+}
+.fund-section .fo .bt[data-size='md']{
+    min-width:initial;
+}
+.fund-section .tx-msg {
+    font-size:13px;
+    color:#666;
+}

@@ -21,7 +21,7 @@ function ContentsContainer() {
 						</ul>
 						<section className="join-section">
 							<div className="join-top">
-								<h3 className="join-title">이용약관 동의</h3>
+								<h3 className="section-title">이용약관 동의</h3>
 								<label htmlFor="ch-all" className="hz-item ip-ch-label ip-ch-18">
 									<input name="ch-all" id="ch-all" className="ip-ch" type="checkbox" />
 									<span className="check"></span> 
@@ -41,7 +41,7 @@ function ContentsContainer() {
 						</section>
 						<section className="join-section">
 							<div className="join-top">
-								<h3 className="join-title">개인정보수집 및 이용 안내</h3>
+								<h3 className="section-title">개인정보수집 및 이용 안내</h3>
 							</div>
 							<div className="terms-conts">
 								약관내용출력

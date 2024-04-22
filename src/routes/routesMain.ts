@@ -1,10 +1,12 @@
 import React from 'react';
 import { DefaultLayout } from '../layouts/main';
+import { FundLayout } from '../layouts/main';
 import {
 	usrMainPage,
 	usr1200Page,usr1202Page,usr1204Page,usr1300Page,usr1400Page,usr1402Page,
 	usr1500Page,usr1501Page,usr1502Page,usr1600Page,usr1700Page,usr1800Page,
-	usr2300Page,usr2301Page,usr2302Page,usr2303Page,
+	usr2002Page,usr2004Page,
+		usr2300Page,usr2301Page,usr2302Page,usr2303Page,
 	} from '../publish/main/';
 
 export type PageRouteProps = {
@@ -90,6 +92,18 @@ export const routes: Array<PageRouteProps> = [
 		path: '/main/usr_1000/usr_1800',
 		component: usr1800Page,
 		layout: DefaultLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2002',
+		component: usr2002Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2004',
+		component: usr2004Page,
+		layout: FundLayout,
 		exact: true,
 	},
 	{
