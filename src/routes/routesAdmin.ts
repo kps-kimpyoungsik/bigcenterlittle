@@ -10,6 +10,9 @@ import {
 	// TEST
 	adm0000Page,
 
+	// 로그인 [login]
+	admloginPage,
+
 	// 기금관리 [1000]
 	adm1100Page,
 
@@ -113,6 +116,12 @@ export const routes: Array<PageRouteProps> = [
 		component: adm0000Page,
 		layout: DefaultLayout,
 	},	
+	// 로그인 [login]
+	{
+		path: '/admin/adm_login/admlogin',
+		component: admloginPage,
+		layout: DefaultLayout,
+	},
 
 	// 기금관리 [1000]
 	{
