@@ -1,5 +1,6 @@
 import React from 'react';
 import { DefaultLayout } from '../layouts/admin';
+import { LoginLayout } from '../layouts/admin';
 import {
 	admIndexPage,
 	admMainPage,
@@ -120,7 +121,7 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/admin/adm_login/admlogin',
 		component: admloginPage,
-		layout: DefaultLayout,
+		layout: LoginLayout,
 	},
 
 	// 기금관리 [1000]
