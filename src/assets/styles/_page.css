@@ -244,7 +244,7 @@ background-image: url(../img/icon/ic_left_10.svg);
     padding-bottom:40px;
 }
 .member-join .tx.tx-hd2 {
-    margin-bottom:60px;
+    margin-bottom:50px;
 }
 .join-step {
     display: flex;
@@ -689,6 +689,77 @@ background-image: url(../img/icon/ic_left_10.svg);
     line-height: 1;
     color:#666;
 }
+
+/*개인정보처리방침*/
+.fw-policy {
+    font-size:15px;
+    line-height: 25px;
+    color:#333;
+    letter-spacing: -0.6px;
+}
+.fw-policy .top-box{
+    border: 1px solid #E4E4E4;
+    background-color: #F8F8F8;
+    padding:25px;
+    letter-spacing: -0.4px;
+}
+.fw-policy .top-box .date {color:#666;}
+.fw-policy-cont {
+    margin-top:25px;
+}
+.fw-policy-cont strong {
+    font-weight:600;
+}
+.fw-policy-cont a {
+    color:#333;
+    text-decoration: underline;
+}
+.fw-policy-cont ul {
+    padding-left:30px;
+}
+.fw-policy-cont ul > ul {
+    padding-left:45px;
+}
+.fw-policy-cont > ul > li + li {
+    margin-top:5px;
+}
+.fw-policy-cont p + p,
+.fw-policy-cont p + ul,
+.fw-policy-cont ul + p {
+    margin-top:20px;
+}
+.fw-policy-section h2 {
+    font-size:22px;
+    line-height: 1;
+    font-weight:600;
+    color:#000;
+    margin-bottom:30px;
+}
+.fw-policy-section h3 {
+    font-size: 18px;
+    line-height: 1;
+    font-weight:600;
+    color:#000;
+    margin-bottom: 10px;
+}
+.fw-policy-section p+ h3,
+.fw-policy-section ul + h3 {
+    margin-top:30px;
+}
+.fw-policy-section + .fw-policy-section{
+    margin-top:50px;
+}
+.fw-policy-section .list-group li {
+    padding-left:20px;
+}
+.fw-policy-section .list-group .no {
+    float: left;
+    margin-left:-20px;
+}
+.fw-policy-section .list-group .no::after{
+    content: '.';
+}
+
 /*사용자메인*/
 .usr-home {
     background-image: url('../img/pages/usr_home_bg.svg');
