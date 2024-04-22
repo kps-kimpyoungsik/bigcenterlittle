@@ -10,12 +10,16 @@ import {
 	// TEST
 	adm0000Page,
 
+	// 기금관리 [1000]
+	adm1100Page,
+
 	// 계좌관리 [2000]
 	adm2100Page,
 	adm2200Page,
 	
-	// 기금관리
-	adm1100Page,
+	// 공시/발급 [3000]
+	adm3100Page,
+	adm3200Page,	
 
 	// 게시판관리 [4000]
 	adm4100Page,
@@ -104,6 +108,19 @@ export const routes: Array<PageRouteProps> = [
 		component: admAlertPage,
 		layout: DefaultLayout,
 	},
+	{
+		path: '/admin/adm_4000/adm0000',
+		component: adm0000Page,
+		layout: DefaultLayout,
+	},	
+
+	// 기금관리 [1000]
+	{
+		path: '/admin/adm_1000/adm1100',
+		component: adm1100Page,
+		layout: DefaultLayout,
+	},
+
 	// 계좌관리 [2000]
 	{
 		path: '/admin/adm_2000/adm2100',
@@ -115,18 +132,18 @@ export const routes: Array<PageRouteProps> = [
 		component: adm2200Page,
 		layout: DefaultLayout,
 	},	
-	
+
+	// 공시/발급 [3000]
 	{
-		path: '/admin/adm_4000/adm0000',
-		component: adm0000Page,
-		layout: DefaultLayout,
-	},	
-	// 기금관리 [1000]
-	{
-		path: '/admin/adm_1000/adm1100',
-		component: adm1100Page,
+		path: '/admin/adm_3000/adm3100',
+		component: adm3100Page,
 		layout: DefaultLayout,
 	},
+	{
+		path: '/admin/adm_3000/adm3200',
+		component: adm3200Page,
+		layout: DefaultLayout,
+	},		
 
 	// 사용자관리 [4000]
 	{

@@ -38,8 +38,8 @@ function ContentsContainer() {
 								<div className="sf-item sf-m-2-4">
 									<p className="sf-key">거래일시</p>
 									<div className="sf-value">
-										<div className="hz-root hz-gap8">
-											<div className="hz-item hz-fg hz-root hz-gap5">
+										<div className="hz-root hz-left hz-gap8">
+											<div className="hz-item hz-root hz-gap5">
 												<UIDatePicker className="hz-item"/>
 												<span className="hz-item">~</span>
 												<UIDatePicker className="hz-item"/>
