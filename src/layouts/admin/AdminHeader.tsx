@@ -200,7 +200,7 @@ function LayoutHeader() {
 						<Link to="#" className="mypage">마이페이지</Link>
 					</li>
 					<li>
-						<Link to="/main/" className="home">홈페이지</Link>
+						<Link to="/main/" className="home" target="_blank">홈페이지</Link>
 					</li>
 				</ul>
 			</div>
