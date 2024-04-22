@@ -345,7 +345,8 @@
 .fww-root .fww-group-aside-con .fww-aside>ul>li.thispage>button,
 .fww-root .fww-group-aside-con .fww-aside>ul>li.thispage>a,
 .fww-root .fww-group-aside-con .fww-aside>ul>li.active>button,
-.fww-root .fww-group-aside-con .fww-aside>ul>li.active>a {
+.fww-root .fww-group-aside-con .fww-aside>ul>li.active>a,
+.fww-root .fww-group-aside-con .fww-aside>ul>li> button.active {
     background: var(--p1);
     color: #fff;
     font-weight: 600;
@@ -353,16 +354,20 @@
 .fww-root .fww-group-aside-con .fww-aside>ul>li>button.no-sub:after {
     display: none;
 }
-.fww-root .fww-group-aside-con .fww-aside>ul>li.active>button:after {
+.fww-root .fww-group-aside-con .fww-aside>ul>li.active>button:after,
+.fww-root .fww-group-aside-con .fww-aside>ul>li>button.active:after {
     background: url(../img/icon/ic_lnb_arr_up_white.svg) no-repeat 0 0;
 }
+
+
 
 .fww-root .fww-group-aside-con .fww-aside .d2 {
     display: none;
     background: #EDF4FF;
     padding: 6px 12px;
 }
-.fww-root .fww-group-aside-con .fww-aside>ul>li.active .d2 {
+.fww-root .fww-group-aside-con .fww-aside>ul>li.active .d2,
+.fww-root .fww-group-aside-con .fww-aside>ul>li > .active + .d2 {
     display: block;
 }
 
