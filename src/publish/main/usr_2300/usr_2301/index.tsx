@@ -19,14 +19,7 @@ function ContentsContainer() {
 					<div className="tb tb-view">
 						<div className="tb-view-top">
 							<div className="tb-view-title">
-								<span className="badge red">공지</span>
-								{/*  badge color
-								<span className="badge yellow">공지</span>
-								<span className="badge gray">공지</span>
-								<span className="badge blue">공지</span>
-								<span className="badge green">공지</span>
-								<span className="badge purple">공지</span>
-								*/}
+								<span className="badge badge-24 red">공지</span>
 								<h3 className="title">대·중소기업상생협력기금 운영 관리 규정</h3>
 							</div>
 							<ul className="tb-view-info">

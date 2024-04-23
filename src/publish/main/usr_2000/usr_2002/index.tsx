@@ -124,25 +124,25 @@ function ContentsContainer() {
 						<strong>Badge</strong>
 						<br />
 						출연상태<br />
-						<label className="badge blue">신청</label>
-						<label className="badge green">입금확인</label>
-						<label className="badge gray">수납완료</label>
+						<label className="badge badge-22 blue">신청</label>
+						<label className="badge badge-22 green">입금확인</label>
+						<label className="badge badge-22 gray">수납완료</label>
 						<br /><br />
 						과제현황<br />
-						<label className="badge blue">신청</label>
-						<label className="badge purple">변경심사</label>
-						<label className="badge green">접수완료</label>
-						<label className="badge yellow">수정요청</label>
-						<label className="badge red">반려</label>
-						<label className="badge gray">심사완료</label>
+						<label className="badge badge-22 blue">신청</label>
+						<label className="badge badge-22 purple">변경심사</label>
+						<label className="badge badge-22 green">접수완료</label>
+						<label className="badge badge-22 yellow">수정요청</label>
+						<label className="badge badge-22 red">반려</label>
+						<label className="badge badge-22 gray">심사완료</label>
 						<br /><br />
 						지급현황<br />
-						<label className="badge blue">신청</label>
-						<label className="badge green">접수중</label>
-						<label className="badge yellow">수정요청</label>
-						<label className="badge red">반려</label>
-						<label className="badge green">최종접수</label>
-						<label className="badge gray">지급완료</label>
+						<label className="badge badge-22 blue">신청</label>
+						<label className="badge badge-22 green">접수중</label>
+						<label className="badge badge-22 yellow">수정요청</label>
+						<label className="badge badge-22 red">반려</label>
+						<label className="badge badge-22 green">최종접수</label>
+						<label className="badge badge-22 gray">지급완료</label>
 					</div>
 					{/* NO-data */}
 					<div className="nd">
