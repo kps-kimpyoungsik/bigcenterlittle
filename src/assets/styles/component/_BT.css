@@ -335,3 +335,19 @@ a.bt {
   height: 16px;
   background: url(../../img/icon/ic_refresh_16.svg) no-repeat 50% 50%;
 }
+
+/*right arrow*/
+.bt.bt-right-arr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2px;
+  padding-right: 7px;
+}
+.bt.bt-right-arr:after {
+  content: "";
+  display: block;  
+  width: 16px;
+  height: 16px;
+  background: url(../../img/icon/ic_right_arr_16.svg) no-repeat 50% 50%;
+}

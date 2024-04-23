@@ -8,7 +8,6 @@
     @ 최종 : 2024.$$.$$.$$:$$
     @ 메모 : 앞에서 _component, _layout으로 커버되지 않는 각 페이지마다 유니크한 부분은 이곳에서 따로 정의한다.
 */
-
 /*
 
 [관리자페이지]--------------------------------------------------------------------------------------------------
@@ -168,4 +167,91 @@ background-image: url(../img/icon/ic_left_10.svg);
     border: 1px solid #ccc;
     padding: 15px;
     height: 200px;
+}
+
+/*adm_7000 (결재선)*/
+.approval-gen {
+    /* border: 1px dashed blue; */
+    display: flex;
+}
+.approval-gen .box {
+    border: 1px solid #e4e4e4;
+    padding: 22px 15px 15px 15px;
+    margin: 10px 0;
+    min-height: 359px;
+}
+.approval-gen .approval-gen-member {
+    flex-grow:  1;
+    flex-shrink:  0;
+    flex-basis:  0;
+    /* background: pink; */
+}
+.approval-gen .approval-gen-member .ibsheet { /*temp*/
+    /* height: 386px;  */
+    /* border: 1px dashed red; */
+}
+.approval-gen .approval-gen-selected {
+    flex-grow:  1;
+    flex-shrink:  0;
+    flex-basis:  0;  
+    /* background: skyblue; */
+}
+.approval-gen .approval-gen-selected .ibsheet { /*temp*/
+    /* height: 280px;  */
+    /* border: 1px dashed red; */
+}
+.approval-gen .approval-ctr {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 1; 
+    width: 95px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.approval-gen .approval-ctr  .bt {
+    /* width: 65px; */
+}
+.info {
+    background: #F9FAFC;
+    padding: 12px 15px 18px 12px;
+}
+.info .info-tit {
+    position: relative;
+    font-size:  15px;
+    font-weight:  600;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 22px;
+}
+.info .info-tit:after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 4px;
+    left: 0;
+    background: url(../img/icon/icon_info_14.svg) no-repeat 0 0;
+    width: 14px;
+    height:  14px;
+}
+.info .info-list {
+    font-size:  13px;
+    font-weight:  400;
+    color: #666;
+}
+.info .info-list>li {
+    position: relative;
+    padding-left: 10px;
+}
+.info .info-list>li:after {
+    position: absolute;
+    content: "·";
+    display: block;
+    top: 8px;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
 }

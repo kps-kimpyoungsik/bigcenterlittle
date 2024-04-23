@@ -48,7 +48,6 @@ export { default as adm6311Page } from './adm_6000/adm_6311';
 export { default as adm6312Page } from './adm_6000/adm_6312';
 export { default as adm6314Page } from './adm_6000/adm_6314';
 export { default as adm6410Page } from './adm_6000/adm_6410';
-
 export { default as adm6411Page } from './adm_6000/adm_6411';
 export { default as adm6412Page } from './adm_6000/adm_6412';
 export { default as adm6413Page } from './adm_6000/adm_6413';
@@ -64,10 +63,15 @@ export { default as adm6520Page } from './adm_6000/adm_6520';
 export { default as adm6521Page } from './adm_6000/adm_6521';
 export { default as adm6522Page } from './adm_6000/adm_6522';
 export { default as adm6610Page } from './adm_6000/adm_6610';
-
 export { default as adm6710Page } from './adm_6000/adm_6710';
 export { default as adm6711Page } from './adm_6000/adm_6711';
 export { default as adm6712Page } from './adm_6000/adm_6712';
 export { default as adm6713Page } from './adm_6000/adm_6713';
+
+export { default as adm7000Page } from './adm_7000/adm_7000';
+export { default as adm7100Page } from './adm_7000/adm_7100';
+export { default as adm7101Page } from './adm_7000/adm_7101';
+
+
 
 //export { default as Popups } from './Popups';

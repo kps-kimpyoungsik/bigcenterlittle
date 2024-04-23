@@ -67,7 +67,6 @@ import {
 	adm6312Page,
 	adm6314Page,
 	adm6410Page,
-
 	adm6411Page,
 	adm6412Page,
 	adm6413Page,
@@ -83,11 +82,15 @@ import {
 	adm6521Page,
 	adm6522Page,
 	adm6610Page,
-
 	adm6710Page,
 	adm6711Page,
 	adm6712Page,
 	adm6713Page,
+
+	// 결재함 [7000]
+	adm7000Page,
+	adm7100Page,
+	adm7101Page,
 
 } from '../publish/admin/';
 
@@ -420,8 +423,6 @@ export const routes: Array<PageRouteProps> = [
 		component: adm6610Page,
 		layout: DefaultLayout,
 	},	
-
-
 	{
 		path: '/admin/adm_6000/adm6710',
 		component: adm6710Page,
@@ -442,4 +443,22 @@ export const routes: Array<PageRouteProps> = [
 		component: adm6713Page,
 		layout: DefaultLayout,
 	},	
+
+//결재함 [7000]
+{
+	path: '/admin/adm_7000/adm7000',
+	component: adm7000Page,
+	layout: DefaultLayout,
+},
+{
+	path: '/admin/adm_7000/adm7100',
+	component: adm7100Page,
+	layout: DefaultLayout,
+},
+{
+	path: '/admin/adm_7000/adm7101',
+	component: adm7101Page,
+	layout: DefaultLayout,
+},
+
 ];

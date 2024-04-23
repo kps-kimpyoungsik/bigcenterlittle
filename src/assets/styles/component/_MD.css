@@ -142,6 +142,11 @@ body.ReactModal__Body--open {
 	margin-top:20px;
 	gap: 8px;
 }
+.modal-popup .modal-bottom .bt,
+.modal-popup .modal-bottom .buttons {
+	min-width:110px;
+}
+
 .size-sm .ReactModal__Content{
 	max-width: 600px;
 }
