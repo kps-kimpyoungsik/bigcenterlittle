@@ -3,7 +3,7 @@ import React from 'react';
 import { Route , Switch} from "react-router-dom";
 import DefaultRoute from 'routes/DefaultRoute';
 import { PageRouteProps, routes } from 'routes/routesMain';
-import NotFound from "../norfound";
+//import NotFound from "../norfound";
 function Main() {
 	return (
 		<Switch>
@@ -20,7 +20,7 @@ function Main() {
 					);
 				})}
 			</Route>
-			<Route path="/*" render={NotFound} />
+			{/* <Route path="/*" render={NotFound} /> */}
 		</Switch>
 		
 	);
