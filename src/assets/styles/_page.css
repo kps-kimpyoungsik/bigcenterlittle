@@ -211,6 +211,7 @@ background-image: url(../img/icon/ic_left_10.svg);
     border-radius: 12px;
     font-size: 14px;
     margin-right:12px;
+    background:  #FF4A4A;
 }
 
 .tb-view-info{
@@ -1094,6 +1095,7 @@ background-image: url(../img/icon/ic_left_10.svg);
     overflow: hidden;
     letter-spacing: -0.6px;
 }
+
 .home-section .badge {
     min-width:50px;
     height:26px;
@@ -1118,6 +1120,7 @@ background-image: url(../img/icon/ic_left_10.svg);
 .home-section .badge.green {
     background-color: #21DF84;
 }
+
 .home-section .button-more {
     position: absolute;
     top:30px;

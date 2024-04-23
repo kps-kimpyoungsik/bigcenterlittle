@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* Badge (Tag) */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding:0 8px;
+  height:20px;
+  color:#fff;
+  font-size:11px;
+  line-height: 1;
+  font-weight: 700;
+  min-width: 54px;
+  border-radius: 10px;
+}
+
+/*14(관리자 기업관리) ON*/
+/*
+  green: #1BE166
+*/
+.badge.badge-on {
+  min-width: 22px;
+  height: 14px;
+  line-height: 14px;
+  border-radius: 13px;
+  font-size:9px;
+  font-weight:600;    
+  box-sizing: border-box;
+  background-color: #1BE166;
+  color: #fff;
+}
+
+/*23(관리자 결재함 상세)*/
+/*
+  red: #FF4A4A
+  blue: #408CFF
+  green: #23C95C
+  gray: #999999
+*/
+.badge.badge-23 {
+  min-width: 40px;
+  height: 23px;
+  line-height: 23px;
+  border-radius: 13px;
+  font-size: 12px;
+  font-weight: 600;        
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.badge.badge-23.red {color: #FF4A4A; border-color: #FF4A4A;}
+.badge.badge-23.blue {color: #408CFF; border-color: #408CFF;}
+.badge.badge-23.green {color: #23C95C; border-color: #23C95C;}
+.badge.badge-23.gray {color: #999999; border-color: #999999;}
+
+/*사용자 기금출연*/
+.badge.badge-22 {
+  min-width: 54px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 13px;
+  font-size: 11px;
+  font-weight:700;    
+  background: #000;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0;
+}
+.badge.badge-22.blue{background: #4690FF;}
+.badge.badge-22.purple {background: #6D81FE;}
+.badge.badge-22.green {background: #11C850;}
+.badge.badge-22.yellow {background: #FFBF1C;}
+.badge.badge-22.red {background: #FF424D;}
+.badge.badge-22.gray {background: #999999;}
+
+/*24(공지사항 상세페이지)*/
+/*
+  red: #FF5757 --> red: #FF4A4A
+*/
+.badge.badge-24.red {background-color: #FF4A4A;}
+
+/*26(사용자메인)*/
+.badge.badge-26 {
+  min-width:50px;
+  height:26px;
+  border-radius: 13px;
+  font-size:14px;
+  font-weight:700;
+}
+
+/*26(사용자 메인)*/
+/*
+  red: #FF6A6A
+  green: #21DF84
+  yellow: #FFD465
+*/
+.badge.badge-26 {
+  min-width:50px;
+  height:26px;
+  border-radius: 13px;
+  font-size:14px;
+  font-weight:700;
+}
+.badge.badge-26.red {background-color: #FF6A6A;}
+.badge.badge-26.green {background-color: #21DF84;}
+.badge.badge-26.yellow {background-color: #FFD465;}
