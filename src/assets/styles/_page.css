@@ -166,7 +166,15 @@ background-image: url(../img/icon/ic_left_10.svg);
     background: #f8f8f8;
     border: 1px solid #ccc;
     padding: 15px;
-    height: 200px;
+    height: auto;
+    /* height: 200px; */
+}
+/*adm_7101에서 쓰이는 페이크-텍스트에어리어*/
+.ta-view.ta-view-white {
+    background: #fff;
+    border: 0;
+    padding: 15px;
+    /* height: 200px; */
 }
 
 /*adm_7000 (결재선)*/
@@ -254,4 +262,22 @@ background-image: url(../img/icon/ic_left_10.svg);
     left: 0;
     transform: translateY(-50%);
     font-size: 20px;
+}
+
+/*사용자 서브타이틀(어드민도 쓰길래...)*/
+.section-title {
+    font-weight: 600;
+    color:#000;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.section-title::before {
+    content: '';
+    display: inline-block;
+    width:3px;
+    height:16px;
+    background-color:var(--p1);
+    margin-right:10px;
+    pointer-events: none;
 }
