@@ -103,6 +103,8 @@ input, button, textarea {
   border-color: #ccc;
   background: #fff;
   color: #333;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 /*datepicker*/
