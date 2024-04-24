@@ -5,22 +5,22 @@ function PortalAside() {
 		{
 			a_id:1,
 			a_name : "출연신청",
-			a_path : "/main/user_2000/usr_2000"
+			a_path : "/main/usr_2000/usr_2000"
 		},
 		{
 			a_id:2,
 			a_name : "출연현황",
-			a_path : "/main/user_2000/user_2002"
+			a_path : "/main/usr_2000/usr_2002"
 		},
 		{
 			a_id:3,
 			a_name : "전용신청",
-			a_path : "/main/user_2000/usr_2007"
+			a_path : "/main/usr_2000/usr_2007"
 		},
 		{
 			a_id:4,
 			a_name : "전용현황",
-			a_path : "/main/user_2000/usr_2009"
+			a_path : "/main/usr_2000/usr_2009"
 		},
 	];
 	const location = useLocation(); 

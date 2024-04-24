@@ -3,117 +3,189 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
+import UIInput from 'components/input/input';
+import Button from 'components/buttons/';
+import useToggleState from 'components/hooks/useToggleState';
+import ModalPopup from 'components/modal/';
+import UIDatePicker from "components/datepicker";
 function ContentsContainer() {
+	const modaladm2000 = useToggleState({});
+	const sectors = [
+		'동반성장 투자재원','상생형 창법 밴처기업 지원사업','공동투자형 기술개발','산업혁신운동','대중소 상생형 스마트공장','대중소기업 혁신 파트너십','성과공유제',
+		'협력이익공유제','대중소기업 동반진출','동반성장 문화확산-신용카드 영세가맹점 지원사업','동반성장 문화확산-협력시ESG 평가지원사업','동반성장 문화확산-혁신주도형 동반성장',
+		'분사기업(스핀오프) 상생협력 사업','상생결제제도 운영','지역사회 동반성장 지원사업','기술유출방지시스템'
+	]
 	return (
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
 				<ul className="fww-brd">
 					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">고객지원</Link></li>
-					<li><Link to="#">자주 묻는 질문</Link></li>
+					<li><Link to="#">기금출연</Link></li>
+					<li><Link to="#">출연신청</Link></li>
 				</ul>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">자주 묻는 질문(FAQ)</h1>
-					<div className="tb-search-form">
-						<div className="hz-root hz-center">
-							<div className="hz-item sl sl-big">
-								<select>
-									<option>전체</option>
-									<option>일반</option>
-									<option>투자재원</option>
-								</select>
-							</div>
-							<div className="hz-item sl sl-big">
-								<select>
-									<option>전체</option>
-									<option>제목</option>
-									<option>내용</option>
-								</select>
-							</div>
-							<input type="text" className="hz-item tf tf-big" placeholder="" />
-							<button type="button" className="hz-item bt bt-big bt-pri">조회</button>
-						</div>
+					<h1 className="tx tx-hd2">출연신청</h1>
+					<div className="hz-root hz-right hz-gap10">
+						<Button color="pri" size="md">저장</Button>
+						<Button color="gray-o" size="md">목록</Button>
 					</div>
-					<div className="tb">
-						<div className="tb-top">
-							<div>
-								<p className="tx fc-black">
-									총 <em className="fw500 fc-pri">103</em>건의 게시물이 있습니다(<em className="fw500 fc-pri">1/N</em> 페이지)
-								</p>
+					<section className="fund-section">
+						<div className="hz-root hz-gap10 hz-item mb15">
+							<h3 className="section-title">출연신청 안내 동의</h3>
+							{/* <p className="tx-msg">(<span className="fc-pri">*</span>는 필수 입력사항입니다)</p> */}
+						</div>
+						<form className="sf sf-1row" name="" action="" method="">
+							<div className="hz-root hz-sb">
+								<label htmlFor="ch-1" className="hz-item ip-ch-label ip-ch-18">
+									<input id="ch-1" className="ip-ch" type="checkbox" />
+									<span className="check"></span> 
+									<span className="txt fw400">안내사항을 확인하였으며, 안내사항에 동의합니다(필수)</span>
+								</label>
+								<Button color="gray-o" size="sm" onClick={modaladm2000.open}>안내사항 보기</Button>
+							</div>
+						</form>
+					</section>
+					<section className="fund-section">
+						<h3 className="section-title mb15">출연 내용</h3>
+						<form className="fo fo-col2" name="" action="" method="">
+							<div className="inner">
+								<div className="fo-item">
+									<p className="fo-key">기부내용</p>
+									<div className="fo-value">
+										<div className="sl sl-md w320">
+											<select>
+												<option>금전</option>
+												<option>현물</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item req">
+									<p className="fo-key">출연 신청일</p>
+									<div className="fo-value">
+										<div className="w320">
+											<UIDatePicker />
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</section>
+					<section className="fund-section">
+						<div className="hz-root hz-sb mb15">
+							<div className="hz-root hz-gap10 hz-item">
+								<h3 className="section-title">출연 금액</h3>
+								<span className="tx-msg">※ 출연금은 최소 1개 이상을 입력해야 합니다.</span>
+							</div>
+							<div className="hz-root hz-gap5">
+								<Button color='pri-o' size="sm">행추가</Button> 
+								<Button color='gray-o' size="sm">행삭제</Button> 
 							</div>
 						</div>
-						<table>
-							<caption>게시판 목록</caption>
-							<colgroup>
-								<col width="90px" />
-								<col />
-								<col width="120px" />
-								<col width="140px" />
-								<col width="120px" />
-							</colgroup>
-							<thead>
-								<tr>
-									<th scope="col">번호</th>
-									<th scope="col">제목</th>
-									<th scope="col">작성자</th>
-									<th scope="col">등록일</th>
-									<th scope="col">조회수</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>110</td>
-									<td className="ta-left">
-										<Link to="/main/user_2000/user_2110" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
-									</td>
-									<td>홍길동</td>
-									<td>2024-03-31</td>
-									<td>1234</td>
-								</tr>
-								<tr>
-									<td>110</td>
-									<td className="ta-left">
-										<Link to="/main/user_2000/user_2110" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
-									</td>
-									<td>홍길동</td>
-									<td>2024-03-31</td>
-									<td>1234</td>
-								</tr>
-								<tr>
-									<td>110</td>
-									<td className="ta-left">
-										<Link to="/main/user_2000/user_2110" className="tx tx-bd2 tx-link">대·중소기업상생협력기금 운영·관리 규정 안내</Link>
-									</td>
-									<td>홍길동</td>
-									<td>2024-03-31</td>
-									<td>1234</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div className="pg">
-						<div className="group">
-							<button type="button" className="item first">처음</button>
-							<button type="button" className="item prev">이전</button>
-						</div>
-						<div className="group">
-							<button type="button" className="item">1</button>
-							<button type="button" className="item active">2</button>
-							<button type="button" className="item">3</button>
-							<button type="button" className="item">4</button>
-							<button type="button" className="item">5</button>
-							<button type="button" className="item">99</button>
-							<button type="button" className="item">999</button>
-							<button type="button" className="item">9999</button>
-						</div>
-						<div className="group">
-							<button type="button" className="item next">다음</button>
-							<button type="button" className="item last">끝</button>
-						</div>
+						<form name="" action="" method="">
+							<div className="tb tb-narrow">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col width="60px" />
+										<col />
+										<col width="480px" />
+									</colgroup>
+									<thead>
+										<tr>
+											<th>
+												<label htmlFor="ch-all" className="hz-item ip-ch-label ip-ch-18">
+													<input id="ch-all" className="ip-ch" type="checkbox" />
+													<span className="check"></span> 
+												</label>
+											</th>
+											<th scope="col"><span className="th-req">출연 금액 입력</span></th>
+											<th scope="col"><span className="th-req">출연 금액 별 사업명 선택</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<label htmlFor="ch-t1" className="hz-item ip-ch-label ip-ch-18">
+													<input id="ch-t1" className="ip-ch" type="checkbox" />
+													<span className="check"></span> 
+												</label>
+											</td>
+											<td>
+												<div className="fund-form-group">
+													<div className="fund-form-items tf-unit d-block">
+														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
+														<span className="u">원</span>
+													</div>
+													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(일억원 한글금액출력))</span></div>
+												</div>
+											</td>
+											<td>
+												<div className="sl sl-md">
+													<select>
+														<option>선택하세요</option>
+														{sectors.map((sec, idx) =>
+															<option key={idx}>{sec}</option>
+														)}
+													</select>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div className="tb-total">
+								<div className="tb-total-items">
+									출연 금액 합계
+								</div>
+								<div className="tb-total-items">
+									<UIInput className={'tf tf-md w100p'} value={'100,000,000'} placeholder={''} readOnly={true} />	
+									<span className="w">원</span>
+									<span className="fc-pri">(일억원)</span> 
+								</div>
+							</div>
+						</form>
+					</section>
+					<section className="fund-section">
+						<h3 className="section-title mb15">기업정보</h3>
+						<form className="fo fo-col2" name="" action="" method="">
+							<div className="inner">
+								<div className="fo-item">
+									<p className="fo-key">법인등록번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">기업명</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+							</div>
+						</form>
+					</section>
+					<div className="hz-root hz-right hz-gap10 mt30">
+						<Button color="pri" size="md">저장</Button>
+						<Button color="gray-o" size="md">목록</Button>						
 					</div>
 				</main>
-			</div>			
+			</div>
+			{/* modal - 안내사항 보기 */}
+			<ModalPopup
+				open={modaladm2000.isShowing}
+				title="안내사항 보기"
+				size="mid"
+				onClose={modaladm2000.close}
+			>
+				<div className="modal-con">
+					<p style={{padding:"100px 0",textAlign:"center"}}>안내 내용 수급 필요</p>
+				</div>
+				<div className="modal-bottom">
+					<Button color="pri" size="big">확인</Button>
+				</div>
+			</ModalPopup>	
 		</PageContainer>
 	);
 }
