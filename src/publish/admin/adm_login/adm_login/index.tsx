@@ -19,10 +19,10 @@ function ContentsContainer() {
 							<p className="tit tx fs12 fc-pri">ADMIN LOGIN</p>
 							<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={false} />
 							<UIInput type="password" className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={false} />
-							<p className="login-alert">아이디를 입력해 주세요.</p>
-							<p className="login-alert">비밀번호를 입력해 주세요.</p>
-							<p className="login-alert">로그인정보가 일치하지 않습니다.</p>
-							<p className="login-alert">비밀번호 5회이상 일치하지 않아 잠겼습니다.</p>
+							<p className="tx tx-alert">아이디를 입력해 주세요.</p>
+							<p className="tx tx-alert">비밀번호를 입력해 주세요.</p>
+							<p className="tx tx-alert">로그인정보가 일치하지 않습니다.</p>
+							<p className="tx tx-alert">비밀번호 5회이상 일치하지 않아 잠겼습니다.</p>
 							<Button color="pri" size="md">로그인</Button>
 						</div>
 						

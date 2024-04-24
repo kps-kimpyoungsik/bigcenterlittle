@@ -25,6 +25,7 @@
 }
 .adm-login {
     position: absolute;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -70,23 +71,6 @@
     font-size: 14px;
     font-weight: 700;
     margin-top: 15px;
-}
-.adm-login>.form-area .login-alert {
-    display: flex;
-    align-items: center;
-    column-gap: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    color: var(--e1);
-    text-align: left;
-    margin-top: 8px;
-}
-.adm-login>.form-area .login-alert::before {
-    display: inline-block;
-    content: "";
-    width: 13px;
-    height: 13px;
-    background: url(../img/icon/ic_loginalert_13.svg) no-repeat 0 0;
 }
 .adm-login-wrap .adm-login-footer {
     position: absolute;
@@ -173,7 +157,7 @@ background-image: url(../img/icon/ic_left_10.svg);
 .ta-view.ta-view-white {
     background: #fff;
     border: 0;
-    padding: 15px;
+    padding: 15px 0;
     /* height: 200px; */
 }
 
@@ -263,7 +247,6 @@ background-image: url(../img/icon/ic_left_10.svg);
     transform: translateY(-50%);
     font-size: 20px;
 }
-
 /*사용자 서브타이틀(어드민도 쓰길래...)*/
 .section-title {
     font-weight: 600;
@@ -280,4 +263,81 @@ background-image: url(../img/icon/ic_left_10.svg);
     background-color:var(--p1);
     margin-right:10px;
     pointer-events: none;
+}
+
+/*adm_7101 (결재선 프로세스)*/
+.approval-process {
+    display: flex;
+    /* column-gap: 70px; */
+    column-gap: 67px;
+    height: 180px;
+}
+.approval-process .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+.approval-process .item:after {
+    position: absolute;
+    top:  50%;
+    right: -50px;
+    transform: translate(0, -50%);
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icon/ic_right_arr_30.svg) no-repeat 0 0;
+}
+.approval-process .item:last-of-type:after {
+    display: none;
+}
+.approval-process .item .role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    background: #f9fafc;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.approval-process .item .do {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.approval-process .item .stamp {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 44px;
+    height: 44px;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.approval-process .item .date {
+    font-size: 13px;
+    color: #666;
+    font-weight: 400;
+}
+.approval-process .item .who {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+.approval-process .item.active .who {
+    color: var(--p2);
 }

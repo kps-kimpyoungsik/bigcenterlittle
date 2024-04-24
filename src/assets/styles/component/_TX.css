@@ -60,3 +60,21 @@
 .tx.tx-link:hover {
   /* color: var(--p2); */
 }
+
+.tx-alert {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--e1);
+  text-align: left;
+  margin-top: 8px;
+}
+.tx-alert:before {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: url(../../img/icon/ic_loginalert_13.svg) no-repeat 0 0;
+}
