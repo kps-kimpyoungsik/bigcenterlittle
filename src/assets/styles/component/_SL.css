@@ -47,7 +47,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
+    /* z-index: 1; */ /*20240424 : 화살표가 캘린더를 뚫고나오는 현상 해결*/
     text-align: center;
     pointer-events: none;
 }
