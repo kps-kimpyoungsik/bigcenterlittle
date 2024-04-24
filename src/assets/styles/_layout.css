@@ -18,8 +18,13 @@
 .md {z-index: 750;}
 .md-dim {z-index: 700;}
 .fww-header-util {z-index: 500;}
+.fww-root {
+    /*min-width: 1903px;*/ /*크롬*/
+    min-width: 1897px; /*익스*/
+}
 .fww-root .fww-header-util {
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -290,7 +295,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    padding-top: 125px;
+    /* padding-top: 125px; */
 }
 .fww-root .fww-group-aside-con .fww-aside {
     flex-grow: 0;
