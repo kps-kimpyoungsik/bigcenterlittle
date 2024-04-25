@@ -5,7 +5,7 @@ import {
 	usrMainPage,
 	usr1200Page,usr1202Page,usr1204Page,usr1300Page,usr1400Page,usr1402Page,
 	usr1500Page,usr1501Page,usr1502Page,usr1600Page,usr1700Page,usr1800Page,
-	usr2002Page,usr2004Page,
+	usr2000Page,usr2002Page,usr2004Page,usr2006Page,usr2007Page,usr2009Page,usr2011Page,usr2012Page,
 		usr2300Page,usr2301Page,usr2302Page,usr2303Page,
 	} from '../publish/main/';
 
@@ -95,6 +95,12 @@ export const routes: Array<PageRouteProps> = [
 		exact: true,
 	},
 	{
+		path: '/main/usr_2000/usr_2000',
+		component: usr2000Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
 		path: '/main/usr_2000/usr_2002',
 		component: usr2002Page,
 		layout: FundLayout,
@@ -103,6 +109,36 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/main/usr_2000/usr_2004',
 		component: usr2004Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2006',
+		component: usr2006Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2007',
+		component: usr2007Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2009',
+		component: usr2009Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2011',
+		component: usr2011Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2012',
+		component: usr2012Page,
 		layout: FundLayout,
 		exact: true,
 	},
