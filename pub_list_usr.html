@@ -14,6 +14,17 @@
         "url_first": "http://localhost:",
         "url_port": "3000",
         "table_head": ['PID','D1','D2','D3','D4','D5','D6','날짜','진행','메모'],
+        /*예외 URL 추가*/
+        "url_exception": [
+          { 
+          "pid": "usr_1100",
+          "alternative_url": "" 
+          },
+          { 
+          "pid": "admlogin",
+          "alternative_url": "login" 
+          }, 
+        ],               
         "ia": [
           {
             "d1": "HOME",
@@ -182,7 +193,15 @@
               let tb_b_tr_tb = document.createElement('td');
               
               if(k === 0){ //링크일경우,
+
                 let url = info.url_first+info.url_port+'/'+'main/'+info.ia[i].d1id+'/'+info.ia[i].page[j][k];
+
+                for (let l = 0; l < info.url_exception.length; l++) {
+                  if(info.ia[i].page[j][k] == info.url_exception[l].pid) {
+                    url = info.url_first+info.url_port+'/'+'main/'+info.url_exception[l].alternative_url;
+                  }
+                }
+
                 let state = info.ia[i].page[j][8];
                 let linkClass = '';
                 switch(state) {
