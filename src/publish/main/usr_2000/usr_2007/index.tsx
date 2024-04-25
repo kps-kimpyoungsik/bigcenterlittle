@@ -27,12 +27,12 @@ function ContentsContainer() {
 				</ul>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">전용신청</h1>
-					<div className="hz-root hz-right hz-gap10">
+					<div className="hz-root hz-right hz-gap10 mb30">
 						<Button color="gray-o" size="md">취소</Button>
 						<Button color="pri" size="md">저장</Button>
 					</div>
 					<section className="fund-section">
-						<div className="hz-root hz-gap10 hz-item mb15">
+						<div className="hz-root hz-gap10 hz-sb mb15">
 							<h3 className="section-title">전용신청 안내동의</h3>
 							<p className="tx-msg"><span className="fc-pri">*</span>&nbsp;필수 입력</p>
 						</div>
@@ -115,7 +115,7 @@ function ContentsContainer() {
 						<div className="hz-root hz-sb mb15">
 							<div className="hz-root hz-gap10 hz-item">
 								<h3 className="section-title">전용 요청 금액</h3>
-								<span className="tx-msg"><span className="fc-pri">※ 최소 1개 이상을 입력해야 합니다.</span></span>
+								<p className="tx-msg"><span className="fc-pri">※ 최소 1개 이상을 입력해야 합니다.</span></p>
 							</div>
 							<div className="hz-root hz-gap5">
 								<Button color='pri-o' size="sm">행추가</Button> 

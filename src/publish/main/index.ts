@@ -25,6 +25,10 @@ export { default as usr2011Page } from './usr_2000/usr_2011';
 export { default as usr2012Page } from './usr_2000/usr_2012';
 //기금운영
 export { default as usr2100Page } from './usr_2100/usr_2100';
+export { default as usr2101Page } from './usr_2100/usr_2101';
+export { default as usr2105Page } from './usr_2100/usr_2105';
+export { default as usr2107Page } from './usr_2100/usr_2107';
+export { default as usr2108Page } from './usr_2100/usr_2108';
 // 고객지원
 export { default as usr2300Page } from './usr_2300/usr_2300';
 export { default as usr2301Page } from './usr_2300/usr_2301';

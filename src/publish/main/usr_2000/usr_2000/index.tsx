@@ -26,12 +26,12 @@ function ContentsContainer() {
 				</ul>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">출연신청</h1>
-					<div className="hz-root hz-right hz-gap10">
+					<div className="hz-root hz-right hz-gap10 mb30">
 						<Button color="pri" size="md">저장</Button>
 						<Button color="gray-o" size="md">목록</Button>
 					</div>
 					<section className="fund-section">
-						<div className="hz-root hz-gap10 hz-item mb15">
+						<div className="hz-root hz-gap10 hz-sb mb15">
 							<h3 className="section-title">출연신청 안내 동의</h3>
 							<p className="tx-msg"><span className="fc-pri">*</span>&nbsp;필수 입력</p>
 						</div>
