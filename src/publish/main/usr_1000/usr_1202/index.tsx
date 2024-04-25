@@ -141,48 +141,48 @@ function ContentsContainer() {
 				onClose={modaladm1202.close}
 			>
 				<div className="modal-con">
-				<div className="tb-search-form bd mb30">
-					<div className="hz-root hz-center hz-gap8">
-						<div className="hz-item sl sl-md">
-							<select>
-								<option>기업명</option>
-								<option>법인사업자번호</option>
-							</select>
+					<div className="tb-search-form bd mb30">
+						<div className="hz-root hz-center hz-gap8">
+							<div className="hz-item sl sl-md">
+								<select>
+									<option>기업명</option>
+									<option>법인사업자번호</option>
+								</select>
+							</div>
+							<UIInput className={'hz-item tf tf-md'} value={''} placeholder={"입력하세요."} />
+							<Button color="pri" size="md">조회</Button>
 						</div>
-						<UIInput className={'hz-item tf tf-md'} value={''} placeholder={"입력하세요."} />
-						<Button color="pri" size="md">조회</Button>
 					</div>
-				</div>
-				<div className="tb-top">
-					<div>
-						<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
+					<div className="tb-top">
+						<div>
+							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
+						</div>
+						<div className="hz-root hz-gap8">
+							<div className="sl sl-sm w120">
+								<select name="" id="" className="">
+									<option>50개씩보기</option>
+								</select>
+							</div>									
+						</div>
 					</div>
-					<div className="hz-root hz-gap8">
-						<div className="sl sl-sm w120">
-							<select name="" id="" className="">
-								<option>50개씩보기</option>
-							</select>
-						</div>									
+					<div className="ibsheet">[D] IBSHEET 영역</div>
+					<div className="pg">
+						<div className="group">
+							<button type="button" className="item first">처음</button>
+							<button type="button" className="item prev">이전</button>
+						</div>
+						<div className="group">
+							<button type="button" className="item">1</button>
+							<button type="button" className="item active">2</button>
+							<button type="button" className="item">3</button>
+							<button type="button" className="item">4</button>
+							<button type="button" className="item">5</button>
+						</div>
+						<div className="group">
+							<button type="button" className="item next">다음</button>
+							<button type="button" className="item last">끝</button>
+						</div>
 					</div>
-				</div>
-				<div className="ibsheet">[D] IBSHEET 영역</div>
-				<div className="pg">
-					<div className="group">
-						<button type="button" className="item first">처음</button>
-						<button type="button" className="item prev">이전</button>
-					</div>
-					<div className="group">
-						<button type="button" className="item">1</button>
-						<button type="button" className="item active">2</button>
-						<button type="button" className="item">3</button>
-						<button type="button" className="item">4</button>
-						<button type="button" className="item">5</button>
-					</div>
-					<div className="group">
-						<button type="button" className="item next">다음</button>
-						<button type="button" className="item last">끝</button>
-					</div>
-				</div>
 				</div>
 			</ModalPopup>				
 		</PageContainer>

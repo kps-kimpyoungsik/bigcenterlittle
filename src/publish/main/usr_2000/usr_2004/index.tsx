@@ -1,5 +1,5 @@
 
-import React, { useState} from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
@@ -7,10 +7,12 @@ import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
-import { Popover } from "react-tiny-popover";
+//import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip';
+//import { Popover } from "react-tiny-popover";
 function ContentsContainer() {
 	const modaladm2004 = useToggleState({});
-	const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+	//const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -25,7 +27,7 @@ function ContentsContainer() {
 					<div className="hz-root hz-right hz-gap10">
 						<Button color="pri" size="md">기부금영수증</Button>
 						<Button color="gray-o" size="md">삭제</Button>
-						<Button color="gray-o" size="md" href="/main/usr_2000/usr_2006">수정</Button>
+						<Button color="pri-o2" size="md" href="/main/usr_2000/usr_2006">수정</Button>
 						<Button color="gray-o" size="md" href="/main/usr_2000/usr_2002">목록</Button>
 					</div>
 					<section className="fund-section">
@@ -94,7 +96,7 @@ function ContentsContainer() {
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">출연금액</h3>
-						<form className="fo fo-col2" name="" action="" method="">
+						<form className="fo fo-col2 mb0" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
 									<p className="fo-key">출연금</p>
@@ -104,7 +106,7 @@ function ContentsContainer() {
 												<UIInput className={'tf tf-md w120 ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
 												<span className="u">원</span>
 											</div>
-											<div className="fund-form-items tx-msg"><span className="fc-pri">(일억일백만원 한글금액출력)</span></div>
+											<div className="fund-form-items tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></div>
 										</div>
 									</div>
 								</div>
@@ -116,6 +118,18 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
+						<div className="tb-total">
+							<div className="tb-total-items">
+								출연 금액 합계
+							</div>
+							<div className="tb-total-items">
+								<div className="fund-form-items tf-unit">
+									<UIInput className={'tf tf-md ta-right'} value={'1,000,000,000'} placeholder={''}  readOnly={true}/>
+									<span className="u">원</span>
+								</div>
+								<p className="tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></p> 
+							</div>
+						</div>
 					</section>
 					<section className="fund-section">
 						<div className="hz-root hz-sb mb15">
@@ -127,6 +141,23 @@ function ContentsContainer() {
 								<div className="fo-item fo-m-1-3">
 									<div className="fo-key">
 										<span>출연신청서</span>&nbsp;
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip">툴팁</button>
+										<Tooltip 
+											id="tooltip"  
+											disableStyleInjection={true}
+											place={"bottom-start"}
+											className="tooltip-conts"
+											//openOnClick
+										>
+											<div className="msg">
+												<h6 className="popover-title">출연 신청 시 첨부 서류</h6>
+												<ul className="list-group">
+													<li>서면 : 출연신청서(서면) 클릭하여 출연신청서 출력 후 직인을 찍고 스캔하여 수정버튼을 클릭하여 이동한 화면에서 출연신청(첨부문서)에 등록 후 저장하셔야 합니다.</li>
+													<li>전자인증 : 기업용 공인인증서를 이용하여 출연신청서(전자인증)을 클릭하여 인증을 완료하시면 됩니다. 첨부 문서는 없습니다.</li>
+												</ul>
+											</div>
+										</Tooltip>
+										{/* [popover - 이전]
 										<Popover
 											containerStyle={{marginLeft: "5px"}}
 											isOpen={isPopoverOpen}
@@ -135,19 +166,14 @@ function ContentsContainer() {
 											onClickOutside={() => setIsPopoverOpen(false)} 
 											content={({ position }) => (
 												<div className="popover-conts">
-													<div className="msg">
-														<h6 className="popover-title">출연 신청 시 첨부 서류</h6>
-														<ul className="list-group">
-															<li>서면 : 출연신청서(서면) 클릭하여 출연신청서 출력 후 직인을 찍고 스캔하여 수정버튼을 클릭하여 이동한 화면에서 출연신청(첨부문서)에 등록 후 저장하셔야 합니다.</li>
-															<li>전자인증 : 기업용 공인인증서를 이용하여 출연신청서(전자인증)을 클릭하여 인증을 완료하시면 됩니다. 첨부 문서는 없습니다.</li>
-														</ul>
-													</div>
+													
 													<button type="button" className="popover-closed" onClick={() => setIsPopoverOpen(!isPopoverOpen)}>창닫기</button>
 												</div>
 											)}
 										>
 											<button type="button" className="popover-toggle" onClick={() => setIsPopoverOpen(!isPopoverOpen)}></button>
 										</Popover>
+										 */}
 									</div>
 									<div className="fo-value">
 										<div className="fund-form-group">
@@ -156,22 +182,34 @@ function ContentsContainer() {
 											</div>
 											<Button color='pri-o' size="md">전자인증</Button>
 										</div>
-										{/* [전자인증 완료]
+									</div>
+								</div>
+								{/* 전자인증한 상태 */}
+								<div className="fo-item fo-m-1-3">
+									<div className="fo-key">
+										<span>출연신청서</span>&nbsp;
+									</div>
+									<div className="fo-value">
 										<div className="fund-form-group">
 											<div className="fund-form-items">
 												<p className="tx-msg">출연신청서 전자인증을 완료하였습니다.</p>
 											</div>
 											<Button color='gray-o' size="md">미리보기</Button>
 										</div>
-										 */}
-										 {/* [첨부한 파일이 있는 경우]
+									</div>
+								</div>
+								{/* 첨부한 파일이 있는 경우 */}
+								<div className="fo-item fo-m-1-3">
+									<div className="fo-key">
+										<span>출연신청서</span>&nbsp;
+									</div>
+									<div className="fo-value">
 										<div className="fund-form-group">
 											<div className="fund-form-items">
-												<p className="tx-msg">출연신청서 파일첨부를 완료하였습니다..</p>
+												<p className="tx-msg">출연신청서 파일첨부를 완료하였습니다.</p>
 											</div>
 											<Button color='gray-o' size="md">미리보기</Button>
 										</div>
-										 */}
 									</div>
 								</div>
 							</div>
@@ -200,7 +238,7 @@ function ContentsContainer() {
 					<div className="hz-root hz-right hz-gap10 mt30">
 						<Button color="pri" size="md">기부금영수증</Button>
 						<Button color="gray-o" size="md">삭제</Button>
-						<Button color="gray-o" size="md" href="/main/usr_2000/usr_2006">수정</Button>
+						<Button color="pri-o2" size="md" href="/main/usr_2000/usr_2006">수정</Button>
 						<Button color="gray-o" size="md" href="/main/usr_2000/usr_2002">목록</Button>
 					</div>
 				</main>

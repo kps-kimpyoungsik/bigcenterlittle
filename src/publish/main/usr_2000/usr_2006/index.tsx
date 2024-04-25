@@ -1,18 +1,16 @@
 
-import React, { useState} from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
 import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
 import UIDatePicker from "components/datepicker";
-
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
-import { Popover } from "react-tiny-popover";
+import { Tooltip } from 'react-tooltip';
 function ContentsContainer() {
 	const modaladm2004 = useToggleState({});
-	const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -76,7 +74,7 @@ function ContentsContainer() {
 									<colgroup>
 										<col width="60px" />
 										<col />
-										<col width="480px" />
+										<col width="750px" />
 									</colgroup>
 									<thead>
 										<tr>
@@ -123,9 +121,11 @@ function ContentsContainer() {
 									출연 금액 합계
 								</div>
 								<div className="tb-total-items">
-									<UIInput className={'tf tf-md w100p'} value={'100,000,000'} placeholder={''} readOnly={true} />	
-									<span className="w">원</span>
-									<span className="fc-pri">(일억원)</span> 
+									<div className="fund-form-items tf-unit">
+										<UIInput className={'tf tf-md ta-right'} value={'1,000,000,000'} placeholder={''}  readOnly={true}/>
+										<span className="u">원</span>
+									</div>
+									<p className="tx-msg"><span className="fc-pri">(일억원)</span></p> 
 								</div>
 							</div>
 						</form>
@@ -140,27 +140,22 @@ function ContentsContainer() {
 								<div className="fo-item fo-m-1-3">
 									<div className="fo-key">
 										<span>출연신청서</span>&nbsp;
-										<Popover
-											containerStyle={{marginLeft: "5px"}}
-											isOpen={isPopoverOpen}
-											positions={['right']}
-											reposition={false}
-											onClickOutside={() => setIsPopoverOpen(false)} 
-											content={({ position }) => (
-												<div className="popover-conts">
-													<div className="msg">
-														<h6 className="popover-title">출연 신청 시 첨부 서류</h6>
-														<ul className="list-group">
-															<li>서면 : 출연신청서(서면) 클릭하여 출연신청서 출력 후 직인을 찍고 스캔하여 수정버튼을 클릭하여 이동한 화면에서 출연신청(첨부문서)에 등록 후 저장하셔야 합니다.</li>
-															<li>전자인증 : 기업용 공인인증서를 이용하여 출연신청서(전자인증)을 클릭하여 인증을 완료하시면 됩니다. 첨부 문서는 없습니다.</li>
-														</ul>
-													</div>
-													<button type="button" className="popover-closed" onClick={() => setIsPopoverOpen(!isPopoverOpen)}>창닫기</button>
-												</div>
-											)}
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip">툴팁</button>
+										<Tooltip 
+											id="tooltip"  
+											disableStyleInjection={true}
+											place={"bottom-start"}
+											className="tooltip-conts"
+											//openOnClick
 										>
-											<button type="button" className="popover-toggle" onClick={() => setIsPopoverOpen(!isPopoverOpen)}></button>
-										</Popover>
+											<div className="msg">
+												<h6 className="popover-title">출연 신청 시 첨부 서류</h6>
+												<ul className="list-group">
+													<li>서면 : 출연신청서(서면) 클릭하여 출연신청서 출력 후 직인을 찍고 스캔하여 수정버튼을 클릭하여 이동한 화면에서 출연신청(첨부문서)에 등록 후 저장하셔야 합니다.</li>
+													<li>전자인증 : 기업용 공인인증서를 이용하여 출연신청서(전자인증)을 클릭하여 인증을 완료하시면 됩니다. 첨부 문서는 없습니다.</li>
+												</ul>
+											</div>
+										</Tooltip>
 									</div>
 									<div className="fo-value">
 										<div className="fund-form-group">
@@ -178,7 +173,7 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="fund-form-group">
 											<div className="fund-form-items">
-												<div className="hz-root hz-gap8 w100p mr30">
+												<div className="hz-root hz-gap5 w100p mr30">
 													<UIInput className={'tf tf-md hz-item grow'} value={'협력재단 출연신청서.pdf(67.58KB)'} placeholder={''} />
 													<Button color='pri-o2' size="md">찾기</Button>
 													<Button color='gray-o' size="md">삭제</Button>
@@ -190,7 +185,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<p className="tx-msg mt10 mb18"><span className="fc-pri">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</span></p>
+						<p className="tx-msg mt10 mb18">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</p>
 						<div>file upload...</div>
 					</section>
 					<section className="fund-section">

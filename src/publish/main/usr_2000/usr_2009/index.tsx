@@ -3,15 +3,15 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
-import UIDatePicker from "components/datepicker";
-import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
+import UIDatePicker from "components/datepicker";
 function ContentsContainer() {
 	const sectors = [
-		'전체','동반성장 투자재원','상생형 창법 밴처기업 지원사업','공동투자형 기술개발','산업혁신운동','대중소 상생형 스마트공장','대중소기업 혁신 파트너십','성과공유제',
-		'협력이익공유제','대중소깅버 동반진출','동반성장 문화확산-신용카드 영세가맹점 지원사업','동반성장 문화확산-협력시ESG 평가지원사업','동반성장 문화확산-혁신주도형 동반성장',
-		'분사기업(스핀오프) 상생협력 사업','상생결제제도 운영','지역사회 동반성장 지원사업'
-	]
+		'전체','투자재원','창업벤처기업지원','공동투자형 기술개발','산업혁신운동','상생형 스마트공장','파트너십','성과공유제','협력이익공유제','동반진출 지원사업','문화확산-신용카드',
+		'문화확산-ESG','문화확산-동반성장','분사기업(스핀오프)상생협력 사업','상생결제','지역사회','통합출연','운영비(투자재원)','운영비(기업자융형상생','운영비(공동투자형기술개발)',
+		'운영비(산업혁신운동)','운영비(상생형 스마트공장)','운영비(파트너십)','운영비(성과공유제)','운영비(협력이익공유제)','운영비(동반진출 지원사업)','운영비(문화확산-신용카드)',
+		'운영비(문화확산-ESG)','운영비(문화확산-동반성장)','운영비(분사기업(스핀오프)상생협력 사업)','운영비(통합출연)','입금오류출연',
+	]		
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -19,14 +19,14 @@ function ContentsContainer() {
 				<ul className="fww-brd">
 					<li><Link to="/main/">홈</Link></li>
 					<li><Link to="#">기금출연</Link></li>
-					<li><Link to="#">출연현황</Link></li>
+					<li><Link to="#">전용현황</Link></li>
 				</ul>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">출연현황</h1>
+					<h1 className="tx tx-hd2">전용현황</h1>
 					<form className="sf sf-fund" name="" action="" method="">
 						<div className="inner">
-							<div className="sf-item sf-m-1-3">
-								<p className="sf-key">출연 신청기간</p>
+							<div className="sf-item sf-m-1-4">
+								<p className="sf-key">전용 신청기간</p>
 								<div className="sf-value">
 									<div className="fund-datepicker">
 										<div className="hz-root hz-gap5">
@@ -44,7 +44,35 @@ function ContentsContainer() {
 								</div>
 							</div>
 							<div className="sf-item">
-								<p className="sf-key">출연상태</p>
+								<p className="sf-key">전용상태</p>
+								<div className="sf-value">
+									<div className="sl sl-md">
+										<select>
+											<option value="">선택하세요.</option>
+											{sectors.map((sec, idx) =>
+												<option key={idx}>{sec}</option>
+											)}
+										</select>
+									</div>
+								</div>
+							</div>
+							<div className="sf-item">
+								<p className="sf-key">출연사업</p>
+								<div className="sf-value">
+									<div className="sl sl-md">
+										<select>
+											<option value="">전체</option>
+											<option value="">신청중</option>
+											<option value="">접수중</option>
+											<option value="">반려</option>
+											<option value="">승인완료</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							{/* 
+							<div className="sf-item">
+								<p className="sf-key">환원여부</p>
 								<div className="sf-value">
 									<div className="hz-root hz-gap15">
 										<label htmlFor="rd-1-1" className="ip-rd-label">
@@ -55,40 +83,17 @@ function ContentsContainer() {
 										<label htmlFor="rd-1-2" className="ip-rd-label">
 											<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio" />
 											<span className="check"></span>
-											<span className="txt">신청</span>
+											<span className="txt">예</span>
 										</label>
 										<label htmlFor="rd-1-3" className="ip-rd-label">
 											<input name="rd-1" id="rd-1-3" className="ip-rd" type="radio" />
 											<span className="check"></span>
-											<span className="txt">입금확인중</span>
-										</label>
-										<label htmlFor="rd-1-4" className="ip-rd-label">
-											<input name="rd-1" id="rd-1-4" className="ip-rd" type="radio" />
-											<span className="check"></span>
-											<span className="txt">수납완료</span>
+											<span className="txt">아니오</span>
 										</label>
 									</div>
 								</div>
 							</div>
-							<div className="sf-item">
-								<p className="sf-key">출연사업</p>
-								<div className="sf-value">
-									<div className="sl sl-md">
-										<select>
-											<option value="">업종</option>
-											{sectors.map((sec, idx) =>
-												<option key={idx}>{sec}</option>
-											)}
-										</select>
-									</div>
-								</div>
-							</div>
-							<div className="sf-item">
-								<p className="sf-key">출연번호</p>
-								<div className="sf-value">
-									<UIInput className={'tf tf-md w100p'} value={''} placeholder={"출연번호를 입력하세요"} />
-								</div>
-							</div>
+							 */}
 						</div>
 					</form>
 					<div className="hz-root hz-center mb25">
@@ -121,33 +126,8 @@ function ContentsContainer() {
 					<div className="ibsheet">
 						<p style={{height:"200px", background:"#f4f4f4"}}>
 							[D] IBSHEET 영역<br />
-							<Link to="/main/usr_2000/usr_2004" style={{color:"#333", padding:"5px", textDecoration:"underline"}}>[임시] 상세페이지 이동</Link>
+							<Link to="/main/usr_2000/usr_2011" style={{color:"#333", padding:"5px", textDecoration:"underline"}}>[임시] 상세페이지 이동</Link>
 						</p>
-					</div>
-					{/* Badge */}
-					<div style={{margin:'20px 0 0'}}>
-						<strong>Badge</strong>
-						<br />
-						출연상태<br />
-						<label className="badge badge-22 blue">신청</label>
-						<label className="badge badge-22 green">입금확인</label>
-						<label className="badge badge-22 gray">수납완료</label>
-						<br /><br />
-						과제현황<br />
-						<label className="badge badge-22 blue">신청</label>
-						<label className="badge badge-22 purple">변경심사</label>
-						<label className="badge badge-22 green">접수완료</label>
-						<label className="badge badge-22 yellow">수정요청</label>
-						<label className="badge badge-22 red">반려</label>
-						<label className="badge badge-22 gray">심사완료</label>
-						<br /><br />
-						지급현황<br />
-						<label className="badge badge-22 blue">신청</label>
-						<label className="badge badge-22 green">접수중</label>
-						<label className="badge badge-22 yellow">수정요청</label>
-						<label className="badge badge-22 red">반려</label>
-						<label className="badge badge-22 green">최종접수</label>
-						<label className="badge badge-22 gray">지급완료</label>
 					</div>
 					<div className="pg">
 						<div className="group">
@@ -170,8 +150,7 @@ function ContentsContainer() {
 						</div>
 					</div>
 					<div className="hz-root hz-right hz-gap10 mt30">
-						<Button color="gray-o" size="md">기부금영수증 바로가기</Button>
-						<Button color="pri" size="md">출연신청</Button>
+						<Button color="pri" size="md">전용신청</Button>
 					</div>
 				</main>
 			</div>			

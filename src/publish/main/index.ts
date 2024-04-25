@@ -15,8 +15,14 @@ export { default as usr1600Page } from './usr_1000/usr_1600';
 export { default as usr1700Page } from './usr_1000/usr_1700';
 export { default as usr1800Page } from './usr_1000/usr_1800';
 //기금출현
+export { default as usr2000Page } from './usr_2000/usr_2000';
 export { default as usr2002Page } from './usr_2000/usr_2002';
 export { default as usr2004Page } from './usr_2000/usr_2004';
+export { default as usr2006Page } from './usr_2000/usr_2006';
+export { default as usr2007Page } from './usr_2000/usr_2007';
+export { default as usr2009Page } from './usr_2000/usr_2009';
+export { default as usr2011Page } from './usr_2000/usr_2011';
+export { default as usr2012Page } from './usr_2000/usr_2012';
 // 고객지원
 export { default as usr2300Page } from './usr_2300/usr_2300';
 export { default as usr2301Page } from './usr_2300/usr_2301';

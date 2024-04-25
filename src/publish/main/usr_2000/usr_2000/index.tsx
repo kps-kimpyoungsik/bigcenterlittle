@@ -33,7 +33,7 @@ function ContentsContainer() {
 					<section className="fund-section">
 						<div className="hz-root hz-gap10 hz-item mb15">
 							<h3 className="section-title">출연신청 안내 동의</h3>
-							{/* <p className="tx-msg">(<span className="fc-pri">*</span>는 필수 입력사항입니다)</p> */}
+							<p className="tx-msg">(<span className="fc-pri">*</span>는 필수 입력사항입니다)</p>
 						</div>
 						<form className="sf sf-1row" name="" action="" method="">
 							<div className="hz-root hz-sb">
@@ -114,11 +114,11 @@ function ContentsContainer() {
 											</td>
 											<td>
 												<div className="fund-form-group">
-													<div className="fund-form-items tf-unit d-block">
+													<div className="fund-form-items tf-unit">
 														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
 														<span className="u">원</span>
 													</div>
-													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(일억원 한글금액출력))</span></div>
+													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(일억원 한글금액출력)</span></div>
 												</div>
 											</td>
 											<td>
@@ -140,9 +140,11 @@ function ContentsContainer() {
 									출연 금액 합계
 								</div>
 								<div className="tb-total-items">
-									<UIInput className={'tf tf-md w100p'} value={'100,000,000'} placeholder={''} readOnly={true} />	
-									<span className="w">원</span>
-									<span className="fc-pri">(일억원)</span> 
+									<div className="fund-form-items tf-unit">
+										<UIInput className={'tf tf-md ta-right'} value={'1,000,000,000'} placeholder={''}  readOnly={true}/>
+										<span className="u">원</span>
+									</div>
+									<p className="tx-msg"><span className="fc-pri">(일억원 한글금액출력)</span></p> 
 								</div>
 							</div>
 						</form>
@@ -152,7 +154,7 @@ function ContentsContainer() {
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
-									<p className="fo-key">법인등록번호</p>
+									<p className="fo-key">사업자번호</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
 									</div>
