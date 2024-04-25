@@ -34,8 +34,12 @@ function ContentsContainer() {
 								<div className="fo-item fo-m-1-3">
 									<p className="fo-key">새로운 비밀번호를 입력</p>
 									<div className="fo-value">
-										<UIInputPW className={'tf tf-md w385'} value={''} placeholder={'새로운 비밀번호를 입력하세요.'} />
-										<p className="tx-msg mt8">* 영문, 숫자, 특수문자를 혼합으로 8~16자리까지 입력 가능합니다.</p>
+										<div>
+											<UIInputPW className={'tf tf-md w385'} value={''} placeholder={'새로운 비밀번호를 입력하세요.'} />
+											<p className="tx-msg mt8">* 영문, 숫자, 특수문자를 혼합으로 8~16자리까지 입력 가능합니다.</p>
+										</div>
+										
+										
 									</div>
 								</div>
 							</div>

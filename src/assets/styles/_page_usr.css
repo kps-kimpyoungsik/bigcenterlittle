@@ -1006,6 +1006,10 @@
 .sf-fund .sf-value > .hz-root {
     min-height:36px;
 }
+
+.fund-section * {
+    box-sizing: border-box;
+}
 .fund-section .section-title {
     font-weight:500;
 }
@@ -1040,7 +1044,6 @@
     border-bottom: 1px solid #3E8BFD;
     height: 50px;
 }
-
 .tb-total-items {
     display: flex;
     align-items: center;
@@ -1065,7 +1068,6 @@
     color:#666;
     margin-right:10px;
 }
-
 .th-req::after {
     content: "*";
     color: var(--p2);
@@ -1074,7 +1076,6 @@
     position: relative;
     left: 3px;
 }
-
 
 /*popover*/
 .popover-toggle {
@@ -1165,4 +1166,32 @@
     content:'-';
     float: left;
     margin-left:-10px;
+}
+
+
+/*기금운영 - 과제신청*/
+.fund-biz-title {
+    font-size:22px;
+    color:#000;
+    line-height: 1;
+    font-weight:600;
+    letter-spacing: -0.8px;
+    padding:24px 20px;
+    border:1px solid #ddd;
+    border-radius: 3px;
+    background-color: #F9FAFC;
+    margin-bottom:40px;
+}
+.fund-biz-preview {
+    background-color: #F5F5F5;
+}
+
+.tb table[data-type=file] * {
+    box-sizing: border-box;
+}
+.tb table[data-type=file] td{
+    padding:18px 15px;
+}
+.biz-agree-list .tb-narrow table{
+    border-top:1px solid #E4E4E4;
 }

@@ -34,7 +34,7 @@ function ContentsContainer() {
 					<section className="fund-section">
 						<div className="hz-root hz-gap10 hz-item mb15">
 							<h3 className="section-title">전용신청 안내동의</h3>
-							<p className="tx-msg"><span className="fc-pri">*</span> 필수 입력</p>
+							<p className="tx-msg"><span className="fc-pri">*</span>&nbsp;필수 입력</p>
 						</div>
 						<form className="sf sf-1row" name="" action="" method="">
 							<div className="hz-root hz-sb">
@@ -115,7 +115,7 @@ function ContentsContainer() {
 						<div className="hz-root hz-sb mb15">
 							<div className="hz-root hz-gap10 hz-item">
 								<h3 className="section-title">전용 요청 금액</h3>
-								<span className="tx-msg">※ 출연금은 최소 1개 이상을 입력해야 합니다.</span>
+								<span className="tx-msg"><span className="fc-pri">※ 최소 1개 이상을 입력해야 합니다.</span></span>
 							</div>
 							<div className="hz-root hz-gap5">
 								<Button color='pri-o' size="sm">행추가</Button> 

@@ -185,7 +185,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<p className="tx-msg mt10 mb18">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</p>
+						<p className="tx-msg mt10 mb18"><span className="fc-pri">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</span></p>
 						<div>file upload...</div>
 					</section>
 					<section className="fund-section">

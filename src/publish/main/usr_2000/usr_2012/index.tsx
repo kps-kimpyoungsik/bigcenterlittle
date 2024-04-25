@@ -91,7 +91,7 @@ function ManualContainer(): JSX.Element {
 						<div className="hz-root hz-sb mb15">
 							<div className="hz-root hz-gap10 hz-item">
 								<h3 className="section-title">전용 요청 금액</h3>
-								<span className="tx-msg">※ 최소 1개 이상을 입력해야 합니다.</span>
+								<p className="tx-msg"><span className="fc-pri">※ 최소 1개 이상을 입력해야 합니다.</span></p>
 							</div>
 							<div className="hz-root hz-gap5">
 								<Button color='pri-o' size="sm">행추가</Button> 
@@ -116,7 +116,7 @@ function ManualContainer(): JSX.Element {
 												</label>
 											</th>
 											<th scope="col"><span className="th-req">사업명 선택</span></th>
-											<th scope="col"><span className="th-req">배분/전용금액(원)</span></th>
+											<th scope="col"><span className="th-req">전용금액(원)</span></th>
 										</tr>
 									</thead>
 									<tbody>

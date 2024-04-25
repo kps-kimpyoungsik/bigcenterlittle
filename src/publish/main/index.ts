@@ -23,6 +23,8 @@ export { default as usr2007Page } from './usr_2000/usr_2007';
 export { default as usr2009Page } from './usr_2000/usr_2009';
 export { default as usr2011Page } from './usr_2000/usr_2011';
 export { default as usr2012Page } from './usr_2000/usr_2012';
+//기금운영
+export { default as usr2100Page } from './usr_2100/usr_2100';
 // 고객지원
 export { default as usr2300Page } from './usr_2300/usr_2300';
 export { default as usr2301Page } from './usr_2300/usr_2301';
