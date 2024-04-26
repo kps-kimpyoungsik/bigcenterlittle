@@ -51,6 +51,28 @@ function ContentsContainer() {
 					<div className="hz-root hz-center mb30">
 						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button>
 					</div>
+
+					<div className="tb-top">
+						<div>
+							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
+						</div>
+						<div className="hz-root hz-gap5">
+							<Button color="pri-o" size="sm">등록</Button>
+							<div className="sl sl-sm w120">
+								<select name="" id="" className="">
+									<option value="20">20개씩보기</option>
+									<option value="50">50개씩보기</option>
+									<option value="100">100개씩보기</option>
+									<option value="200">200개씩보기</option>
+									<option value="500">500개씩보기</option>
+									<option value="1000">1000개씩보기</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div className="ibsheet">[D] IBSHEET 영역</div>
+
 				</main>
 			</div>
 		</PageContainer>

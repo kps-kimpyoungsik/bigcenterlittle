@@ -76,6 +76,17 @@ import UIDatePicker from "components/datepicker";
 				"\t<textarea readOnly className=\"ta-ip\" placeholder=\"\"></textarea>",
 			"</div>"
 		],
+	},	
+	
+	//텍스트에어리어 리드온리
+	"tav": {
+		"prefix": "_tav",
+		"body": [
+			"<div className=\"ta-view h200 mt30\">",
+				"\t[상생협력재단] <em className=\"fc-err\">$NAME(기업명)</em>-과제번호 <em className=\"fc-err\">$####</em>의 심사가 완료되었습니다.",
+				"\t[상생협력재단] <em className=\"fc-err\">$NAME(기업명)</em>-과제번호 <em className=\"fc-err\">$####</em>의 집행이 완료되었습니다. 지급금액 <em className=\"fc-err\">$###</em>원, 집행일 <em className=\"fc-err\">$YYYY-MM-DD</em>",
+			"</div>"			
+		],
 	},		
 
 	//데이트피커

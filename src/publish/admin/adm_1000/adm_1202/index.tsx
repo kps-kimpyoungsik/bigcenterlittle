@@ -14,10 +14,29 @@ function ContentsContainer() {
 					<li><Link to="/admin/">홈</Link></li>
 					<li><Link to="#">관리자페이지</Link></li>
 					<li><Link to="#">기금관리</Link></li>
-					<li><Link to="#">$</Link></li>
+					<li><Link to="#">출연관리</Link></li>
+					<li><Link to="#">출연신청안내관리</Link></li>
 				</ul>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">통합정보조회</h1>
+					<h1 className="tx tx-hd2">출연 신청 안내 등록</h1>
+					<div className="hz-root hz-right hz-gap5 mb10">
+						<Button color="pri-o" size="sm" >저장</Button>
+						<Button color="gray-o" size="sm" >목록</Button>
+					</div>					
+					<form className="fo fo-col2" name="" action="" method="">
+						<div className="inner">
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">제목</p>
+								<div className="fo-value">
+								<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={false} />
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<div>[D]에디터 영역</div>
+					<div>[D]파일업로드 영역</div>
+									
 				</main>
 			</div>
 		</PageContainer>

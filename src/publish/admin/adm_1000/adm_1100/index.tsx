@@ -12,6 +12,7 @@ function ContentsContainer() {
 			<div className='fww-con'>
 				<ul className="fww-brd">
 					<li><Link to="/admin/">홈</Link></li>
+					<li><Link to="#">관리자페이지</Link></li>
 					<li><Link to="#">기금관리</Link></li>
 					<li><Link to="#">통합정보조회</Link></li>
 				</ul>
