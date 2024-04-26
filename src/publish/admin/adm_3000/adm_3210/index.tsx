@@ -82,7 +82,7 @@ function ContentsContainer() {
 							</div>
 						</form>
 						<h3 className="section-title mb15">기부영수증 발행방법</h3>
-						<form className="fo fo-col2" name="" action="" method="">
+						<form className="fo fo-col2 mb0" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
 									<p className="fo-key">선택</p>
@@ -137,22 +137,23 @@ function ContentsContainer() {
 
 									</div>
 								</div>
-								<div className="fo-item fo-m-1-3">
-									<p className="fo-key">분할 발행 합계 금액(원)</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md ta-right w100p'} value={'1,000,000'} placeholder={''} readOnly={true} />
-									</div>
-								</div>																								
-
 							</div>
 						</form>
-						<div className="hz-root hz-right hz-gap5">
-							<Button color="gray-o" size="sm" >취소</Button>
-							<Button color="gray-o" size="sm" >등록</Button>
+
+						<div className="tb-total mb10">
+							<div className="tb-total-items">
+								분할 발행 합계 금액(원)
+							</div>
+							<div className="tb-total-items">
+								<UIInput className={'tf tf-md ta-right w100p'} value={'1,000,000,000'} placeholder={''} readOnly={true} />
+							</div>
 						</div>
 
+						<div className="hz-root hz-right hz-gap5">
+							<Button color="gray-o" size="sm" >취소</Button>
+							<Button color="pri-o" size="sm" >등록</Button>
+						</div>
 					</main>
-
 				</div>
 		</PageContainer>
 	);
