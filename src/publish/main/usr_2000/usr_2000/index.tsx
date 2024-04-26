@@ -185,7 +185,7 @@ function ContentsContainer() {
 					<p style={{padding:"100px 0",textAlign:"center"}}>안내 내용 수급 필요</p>
 				</div>
 				<div className="modal-bottom">
-					<Button color="pri" size="big">확인</Button>
+					<Button color="pri" size="md">확인</Button>
 				</div>
 			</ModalPopup>	
 		</PageContainer>

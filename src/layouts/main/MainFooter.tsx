@@ -7,7 +7,7 @@ function LayoutFooter() {
 				<li><Link to="/main/usr_1000/usr_1600">개인정보처리방침</Link></li>
 				<li><Link to="/main/usr_1000/usr_1700">이용약관</Link></li>
 				<li><Link to="/main/usr_1000/usr_1800">이메일무단수집거부</Link></li>
-				<li><Link to="#">찾아오시는 길</Link></li>
+				<li><Link to="#">보안설치프로그램</Link></li>
 			</ul>
 			<div className='fww-footer-info'>
 				<div className='info'>

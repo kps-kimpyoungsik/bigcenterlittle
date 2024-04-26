@@ -222,7 +222,7 @@ function ContentsContainer() {
 					<p style={{padding:"100px 0",textAlign:"center"}}>안내사항 내용 수급 필요</p>
 				</div>
 				<div className="modal-bottom">
-					<Button color="pri" size="big" onClick={modaladm2007.close}>확인</Button>
+					<Button color="pri" size="md" onClick={modaladm2007.close}>확인</Button>
 				</div>
 			</ModalPopup>
 			{/* modal - 전용 처리할 출연 선택 */}
@@ -284,7 +284,7 @@ function ContentsContainer() {
 					</div>
 				</div>
 				<div className="modal-bottom">
-					<Button color="pri" size="big" onClick={modaladm2007_1.close}>확인</Button>
+					<Button color="pri" size="md" onClick={modaladm2007_1.close}>확인</Button>
 				</div>
 			</ModalPopup>
 		</PageContainer>

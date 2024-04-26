@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../PageContainer';
-import './index.css';
+// import './index.css';
 function ContentsContainer() {
 	return (
 		<PageContainer>
