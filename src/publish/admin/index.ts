@@ -69,12 +69,12 @@ export { default as admloginPage } from './adm_login/adm_login';
  export { default as adm1704Page } from './adm_1000/adm_1704';
  export { default as adm1705Page } from './adm_1000/adm_1705';
 
-
-
 export { default as adm2100Page } from './adm_2000/adm_2100';
 export { default as adm2200Page } from './adm_2000/adm_2200';
+
 export { default as adm3100Page } from './adm_3000/adm_3100';
 export { default as adm3200Page } from './adm_3000/adm_3200';
+export { default as adm3210Page } from './adm_3000/adm_3210';
 
 export { default as adm4100Page } from './adm_4000/adm_4100';
 export { default as adm4110Page } from './adm_4000/adm_4110';

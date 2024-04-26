@@ -478,7 +478,7 @@
 .fww-container {
     display:flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */ /*2024.04.26 - 어드민쪽 컨텐츠량 적을때도 세로 스크롤이 생겨서 일단 빼봄. */
     overflow: visible;
 }
 .fww-group-aside-con {

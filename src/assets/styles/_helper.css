@@ -77,7 +77,18 @@
 .hz-root>.hz-item.grow {
     flex-grow: 1;
 }
-
+.hz-root.hz-col2 {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+}
+.hz-root.hz-col3 {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
+}
+.hz-root.hz-col6 {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
+}
 
 .fc-pri {color: #0D84FF;}
 .fc-sec {color: #EBF6FF;}
@@ -161,6 +172,7 @@
 .w190 {width: 190px !important}
 .w200 {width: 200px !important}
 .w215 {width: 215px !important}
+.w218 {width: 218px !important}
 .w245 {width: 245px !important}
 .w262 {width: 262px !important}
 .w320 {width: 320px !important;}

@@ -86,6 +86,7 @@ import {
 	// 공시/발급 [3000]
 	adm3100Page,
 	adm3200Page,	
+	adm3210Page,	
 
 	// 게시판관리 [4000]
 	adm4100Page,
@@ -585,6 +586,11 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/admin/adm_3000/adm3200',
 		component: adm3200Page,
+		layout: DefaultLayout,
+	},		
+	{
+		path: '/admin/adm_3000/adm3210',
+		component: adm3210Page,
 		layout: DefaultLayout,
 	},		
 
