@@ -170,7 +170,7 @@ function ContentsContainer() {
 				onClose={modaladm3202.close}
 			>
 				<div className="modal-con">
-					{/*클래스옵션: sf-1row, sf-2col*/}
+					
 					<form className="sf sf-1row sf-2col">
 						<div className="inner">
 							<div className="sf-item sf-m-1-3">

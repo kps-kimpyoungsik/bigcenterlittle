@@ -14,10 +14,11 @@ function ContentsContainer() {
 					<li><Link to="/admin/">홈</Link></li>
 					<li><Link to="#">관리자페이지</Link></li>
 					<li><Link to="#">기금관리</Link></li>
-					<li><Link to="#">$</Link></li>
+					<li><Link to="#">과제관리</Link></li>
+					<li><Link to="#">과제신청안내관리</Link></li>
 				</ul>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">통합정보조회</h1>
+					<h1 className="tx tx-hd2">과제 신청 현황</h1>
 				</main>
 			</div>
 		</PageContainer>
