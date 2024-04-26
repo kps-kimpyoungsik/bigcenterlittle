@@ -98,7 +98,7 @@ function PortalAside() {
 					<button className={location.pathname.includes('adm12') ? 'ctr active' : 'ctr'} type="button" onClick={(e)=>{toggleHandler(e)}}>출연관리</button>
 					<ul className='d2'>
 						{aside.depth.sub2.map((sub) => (
-							<li className={location.pathname.slice(0,-1) === sub.s_path.slice(0,-1) ? 'active' : ''} key={sub.s_id}>
+							<li className={location.pathname.slice(-4,23) === sub.s_path.slice(-4,23) ? 'active' : ''} key={sub.s_id}>
 								<Link to={sub.s_path}>{sub.s_name}</Link>
 							</li>
 						))}
@@ -141,7 +141,7 @@ function PortalAside() {
 					<Link to="/admin/adm_1000/adm1700" >수요조사관리</Link>
 				</li>
 
-{/* 
+				{/* 
 				{aside.depth2.map((sub) => (
 					<li  key={sub.s_id}>
 						<Link to={sub.s_path} className='no-sub'>{sub.s_name}</Link>
