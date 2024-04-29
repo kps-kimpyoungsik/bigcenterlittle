@@ -13,7 +13,7 @@ function ContentsContainer() {
 					<li><Link to="#">상생협력기금안내</Link></li>
 					<li><Link to="#">제도소개</Link></li>
 				</ul>
-				<main className="fww-main" data-layout="usr" data-width="mid">
+				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">제도소개</h1>
 					<div className="fww-intro">
 						<h2>대ㆍ중소기업 상생협력기금은,</h2>

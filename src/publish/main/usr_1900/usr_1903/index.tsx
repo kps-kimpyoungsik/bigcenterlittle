@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user1900Aside";
+import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -12,9 +14,22 @@ function ContentsContainer() {
 					<li><Link to="#">상생협력기금안내</Link></li>
 					<li><Link to="#">우수사례</Link></li>
 				</ul>
-				<main className="fww-main" data-layout="usr" data-width="mid">
+				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">우수사례</h1>
 					<div className="fww-intro">
+						<div className="tb-search-form">
+							<div className="tb-search-items">
+								<div className="sl sl-big">
+									<select>
+										<option>전체</option>
+										<option>제목</option>
+										<option>내용</option>
+									</select>
+								</div>
+								<UIInput className={'tf tf-big ml10'} value={''} placeholder={"입력하세요."} />
+							</div>
+							<Button color="pri" size="big">검색</Button>
+						</div>
 						<ul className="gallery-list">
 							<li>
 								<Link to="#" className="gallery-items">

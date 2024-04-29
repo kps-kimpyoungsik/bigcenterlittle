@@ -9,6 +9,9 @@ function FundLayout(props: FundLayoutProps) {
 			<MainHeader />
 			<div className="fww-container">
 				{props.children}
+				<footer className='fww-adn-footer'>
+					Copyright ⓒ 2024 대·중소기업·농어업협력재단. All Rights Reserved.
+				</footer>
 			</div>
 		</div>
 	);

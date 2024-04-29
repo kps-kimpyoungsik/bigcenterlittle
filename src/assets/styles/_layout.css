@@ -574,7 +574,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.52734 4.70215V11.6041C2.52734 12.4201 3.16109 13.1001 3.95734 13.1001H11.1398C11.9198 13.1001 12.5698 12.4371 12.5698 11.6041V4.70215' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 5.7392L7.63 1.2002L14 5.7392' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 
-.fww-adn0footer {
+.fww-adn-footer {
     padding:15px 10px;
     color:#666;
     font-size:13px;
