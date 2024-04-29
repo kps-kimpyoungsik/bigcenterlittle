@@ -294,6 +294,7 @@ a.bt {
 .bt[data-color='gray']:disabled {
 	background-color: #8491AF;
 	opacity: 1;
+  color:rgba(255, 255, 255, 0.5);
 }
 .bt[data-color='gray-o']{
 	background: #fff;
