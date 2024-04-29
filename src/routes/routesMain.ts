@@ -4,7 +4,7 @@ import { FundLayout } from '../layouts/main';
 import {
 	usrMainPage,
 	usr1200Page,usr1202Page,usr1204Page,usr1300Page,usr1400Page,usr1402Page,
-	usr1500Page,usr1501Page,usr1502Page,usr1600Page,usr1700Page,usr1800Page,
+	usr1500Page,usr1501Page,usr1502Page,usr1600Page,usr1700Page,usr1800Page,usr1810Page,
 	usr2000Page,usr2002Page,usr2004Page,usr2006Page,usr2007Page,usr2009Page,usr2011Page,usr2012Page,
 	usr2100Page,usr2101Page,usr2105Page,usr2107Page,usr2108Page,
 	usr2300Page,usr2301Page,usr2302Page,usr2303Page,
@@ -92,6 +92,12 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/main/usr_1000/usr_1800',
 		component: usr1800Page,
+		layout: DefaultLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_1000/usr_1810',
+		component: usr1810Page,
 		layout: DefaultLayout,
 		exact: true,
 	},

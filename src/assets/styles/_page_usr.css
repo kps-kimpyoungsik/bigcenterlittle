@@ -683,6 +683,46 @@
     content: '.';
 }
 
+/*보안프로그램*/
+.curity-program {
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.curity-title {
+    font-size:18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.curity-info > li {
+    font-size:14px;
+    line-height: 1;
+    color:#666;
+    padding-left:16px;
+}
+.curity-info > li .num {
+    float: left;
+    font-size:18px;
+    color:#000;
+    font-weight:500;
+    margin-left: -16px;
+}
+.curity-info > li strong{
+    display: block;
+    margin-bottom: 12px;
+    font-size:18px;
+    color:#000;
+    font-weight:500;
+}
+.curity-info > li + li {
+    margin-top:30px;
+}
+.curity-spec {
+    color:#666;
+    font-size:14px;
+    line-height: 22px;
+}
+
 /*사용자메인*/
 .usr-home {
     background-image: url('../img/pages/usr_home_bg.svg');
