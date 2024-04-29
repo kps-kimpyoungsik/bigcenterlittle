@@ -14,10 +14,220 @@ function ContentsContainer() {
 					<li><Link to="/admin/">홈</Link></li>
 					<li><Link to="#">관리자페이지</Link></li>
 					<li><Link to="#">기금관리</Link></li>
-					<li><Link to="#">$</Link></li>
+					<li><Link to="#">출연현황</Link></li>
 				</ul>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">통합정보조회</h1>
+					<h1 className="tx tx-hd2">출연 상세 </h1>
+					<h3 className="section-title mb15">사업 출연 정보</h3>
+					
+					<form className="fo fo-col2 mb30" name="" action="" method="">
+						<div className="inner">
+							<div className="fo-item">
+								<p className="fo-key">출연번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'000-0000-000'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연상태</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'신청'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연사업</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'동반성장 투자재원'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연 신청일</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연 일자</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연 예정일</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">기부금영수증번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'투자'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">기부금영수증번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'투자-000000-000'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">전자인증 여부</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'전자인증 / 서면'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">기부내용</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'금전'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">계좌번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'하나은행 0000-00-000000'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">3년 만기도래일</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD (D-000일)'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연신청금액(원)</p>
+								<div className="fo-value">
+									<div className="hz-root hz-right hz-gap8 w100p">
+										<UIInput className={'hz-item tf tf-md'} value={'000,000,000'} placeholder={''} readOnly={true} />
+										<span className="hz-item tx fc-pri">(일억일백만원)</span>
+									</div>
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연금액(원)</p>
+								<div className="fo-value">
+									<div className="hz-root hz-right hz-gap8 w100p">
+										<UIInput className={'hz-item tf tf-md'} value={'000,000,000'} placeholder={''} readOnly={true} />
+										<span className="hz-item tx fc-pri">(일억일백만원)</span>
+									</div>
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">지원금액(원)</p>
+								<div className="fo-value">
+									<div className="hz-root hz-right hz-gap8 w100p">
+										<UIInput className={'hz-item tf tf-md'} value={'000,000,000'} placeholder={''} readOnly={true} />
+										<span className="hz-item tx fc-pri">(일억일백만원)</span>
+									</div>
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">전용금액(원)</p>
+								<div className="fo-value">
+									<div className="hz-root hz-right hz-gap8 w100p">
+										<UIInput className={'hz-item tf tf-md'} value={'000,000,000'} placeholder={''} readOnly={true} />
+										<span className="hz-item tx fc-pri">(일억일백만원)</span>
+									</div>
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">지원잔액(원)=사용전</p>
+								<div className="fo-value">
+									<div className="hz-root hz-right hz-gap8 w100p">
+										<UIInput className={'hz-item tf tf-md'} value={'000,000,000'} placeholder={''} readOnly={true} />
+										<span className="hz-item tx fc-pri">(일억일백만원)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<h3 className="section-title mb15">출연 기업 정보</h3>
+					<form className="fo fo-col2 mb30" name="" action="" method="">
+						<div className="inner">
+							<div className="fo-item">
+								<p className="fo-key">기업명</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'기업명 출력'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">법인사업자번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'0000-00-0000000'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">사업자번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'0000-00-0000000'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">출연신청자</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'홍길동'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">직급</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'직급 출력'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">부서</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'부서 출력'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">이메일</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} readOnly={true} />
+								</div>
+							</div>
+							<div className="fo-item">
+								<p className="fo-key">전화번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} readOnly={true} />
+								</div>
+							</div>																																																																																																														
+						</div>
+					</form>					
+
+					<h3 className="section-title mb15">첨부파일</h3>
+					<form className="fo fo-col2" name="" action="" method="">
+						<div className="inner">
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">출연신청서</p>
+								<div className="fo-value">
+									<p className="tx tx-cp1">출연신청서 제출이 완료되지 않았습니다.</p>
+								</div>
+							</div>
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">출연신청서</p>
+								<div className="fo-value">
+									<p className="tx tx-cp1">출연신청서 전자인증을 완료하였습니다.</p>
+									<Button color="gray-o" size="md" >미리보기</Button>
+								</div>
+							</div>							
+						</div>
+					</form>
+					<div className="mb30">[D]Fileupload UI</div>
+					
+
+					<h3 className="section-title mb15">비고사항</h3>
+					<div className="ta-view h200 mb10">
+						[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 심사가 완료되었습니다.
+						[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 집행이 완료되었습니다. 지급금액 <em className="fc-err">$###</em>원, 집행일 <em className="fc-err">YYYY-MM-DD</em>
+					</div>
+					<div className="hz-root hz-right hz-gap5">
+						<Button color="pri-o" size="sm" >기부금 영수증 바로가기</Button>
+						<Button color="gray-o" size="sm" >수정</Button>
+						<Button color="gray-o" size="sm" >목록</Button>
+					</div>
+
 				</main>
 			</div>
 		</PageContainer>
