@@ -11,7 +11,7 @@ function ContentsContainer() {
 					<li><Link to="/main/">홈</Link></li>
 					<li><Link to="#">보안프로그램 설치</Link></li>
 				</ul>
-				<main className="fww-main">
+				<main className="fww-main" data-layout="usr">
 					<div className="curity-program">
 						<h1 className="tx tx-hd2">보안프로그램 설치</h1>
 						<h3 className="curity-title mb30">고객님의 안전한 서비스를 위해 보안 프로그램을 설치 하셔야 합니다.</h3>

@@ -20,7 +20,7 @@ function ContentsContainer() {
 					<li><Link to="#">마이페이지</Link></li>
 					<li><Link to="#">내기업정보</Link></li>
 				</ul>
-				<main className="fww-main">
+				<main className="fww-main" data-layout="usr">
 					<div className="mypage">
 						<h1 className="tx tx-hd2">내기업정보</h1>
 						<div className="top-guide">

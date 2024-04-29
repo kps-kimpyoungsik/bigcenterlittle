@@ -11,7 +11,7 @@ function ContentsContainer() {
 					<li><Link to="/main/">홈</Link></li>
 					<li><Link to="#">이메일무단수집거부</Link></li>
 				</ul>
-				<main className="fww-main">
+				<main className="fww-main" data-layout="usr">
 					<div className="member-join">
 						<h1 className="tx tx-hd2">이메일무단수집거부</h1>
 						<div className="fw-policy">

@@ -16,6 +16,12 @@ export { default as usr1600Page } from './usr_1000/usr_1600';
 export { default as usr1700Page } from './usr_1000/usr_1700';
 export { default as usr1800Page } from './usr_1000/usr_1800';
 export { default as usr1810Page } from './usr_1000/usr_1810';
+//상생협력기금안내
+export { default as usr1900Page } from './usr_1900/usr_1900';
+export { default as usr1901Page } from './usr_1900/usr_1901';
+export { default as usr1902Page } from './usr_1900/usr_1902';
+export { default as usr1903Page } from './usr_1900/usr_1903';
+export { default as usr1904Page } from './usr_1900/usr_1904';
 //기금출현
 export { default as usr2000Page } from './usr_2000/usr_2000';
 export { default as usr2002Page } from './usr_2000/usr_2002';

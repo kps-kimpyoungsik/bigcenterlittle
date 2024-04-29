@@ -16,7 +16,7 @@ function ContentsContainer() {
 					<li><Link to="/main/">홈</Link></li>
 					<li><Link to="#">회원가입</Link></li>
 				</ul>
-				<main className="fww-main">
+				<main className="fww-main" data-layout="usr">
 					<div className="member-join">
 						<h1 className="tx tx-hd2">회원가입</h1>
 						<ul className="join-step">

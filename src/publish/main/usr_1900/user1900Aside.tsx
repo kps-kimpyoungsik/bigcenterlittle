@@ -4,19 +4,34 @@ function PortalAside() {
 	const aside = [
 		{
 			a_id:1,
-			a_name : "자주 묻는 질문(FAQ)",
-			a_path : "/main/user_2000/user_2100"
+			a_name : "제도소개",
+			a_path : "/main/usr_1900/usr_1900"
 		},
 		{
 			a_id:2,
-			a_name : "매뉴얼",
-			a_path : "/main/user_2000/user_2200"
+			a_name : "투명한기금운영",
+			a_path : "/main/usr_1900/usr_1901"
+		},
+		{
+			a_id:3,
+			a_name : "기관안내",
+			a_path : "/main/usr_1900/usr_1902"
+		},
+		{
+			a_id:4,
+			a_name : "우수사례",
+			a_path : "/main/usr_1900/usr_1903"
+		},
+		{
+			a_id:5,
+			a_name : "수요조사",
+			a_path : "/main/usr_1900/usr_1904"
 		},
 	];
 	const location = useLocation(); 
 	return (
 		<aside className='fww-aside'>
-			<p className="tit-d1">기금안내</p>
+			<p className="tit-d1">상생협력기금 안내</p>
 			<ul className='d1'>
 				{aside.map((aside) => (
 					<li className={location.pathname === aside.a_path ? 'active' : ''} key={aside.a_id}>

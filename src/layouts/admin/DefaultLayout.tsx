@@ -1,5 +1,5 @@
 import React from "react";
-//import MainFooter from './AdminFooter';
+import MainFooter from './AdminFooter';
 import MainHeader from "./AdminHeader";
 type DefaultLayoutProps = {
 	children: React.ReactNode;
@@ -10,6 +10,7 @@ function DefaultLayout(props: DefaultLayoutProps) {
 			<MainHeader />
 			<div className="fww-container">
 				{props.children}
+				<MainFooter />
 			</div>
 		</div>
 	);

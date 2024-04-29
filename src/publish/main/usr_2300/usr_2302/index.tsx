@@ -15,20 +15,20 @@ function ManualContainer(): JSX.Element {
 					<li><Link to="#">고객지원</Link></li>
 					<li><Link to="#">자주묻는질문</Link></li>
 				</ul>
-				<main className="fww-main">
+				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">자주묻는질문(FAQ)</h1>
 					<div className="tb-search-form">
-						<div className="hz-root hz-center hz-gap10">
-							<div className="hz-item sl sl-big">
+						<div className="tb-search-items">
+							<div className="sl sl-big">
 								<select>
 									<option>전체</option>
 									<option>제목</option>
 									<option>내용</option>
 								</select>
 							</div>
-							<UIInput className={'hz-item tf tf-big'} value={''} placeholder={"입력하세요."} />
-							<Button color="pri" size="big">검색</Button>
+							<UIInput className={'tf tf-big ml10'} value={''} placeholder={"입력하세요."} />
 						</div>
+						<Button color="pri" size="big">검색</Button>
 					</div>
 					<div className="tb">
 						<div className="tb-top">

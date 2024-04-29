@@ -13,7 +13,7 @@ function ContentsContainer() {
 					<li><Link to="#">마이페이지</Link></li>
 					<li><Link to="#">비밀번호 수정</Link></li>
 				</ul>
-				<main className="fww-main">
+				<main className="fww-main" data-width="usr">
 					<div className="mypage pw-edit">
 						<h1 className="tx tx-hd2">비밀번호 수정</h1>
 						<div className="sub-tx">비밀번호를 새롭게 설정해 주세요.</div>

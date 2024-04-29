@@ -7,28 +7,28 @@ const global = {
 		sub1: [
 			{
 				g_id:1,
-				name : "제도소개청",
+				name : "제도소개",
 				path : "/main/usr_1900/usr_1900"
 			},
 			{
 				g_id:2,
 				name : "투명한기금운영",
-				path : "/main/portal/news/usr_1901"
+				path : "/main/usr_1900/usr_1901"
 			},
 			{
 				g_id:3,
 				name : "기관안내",
-				path : "/main/portal/fund/usr_1902"
+				path : "/main/usr_1900/usr_1902"
 			},
 			{
 				g_id:4,
 				name : "우수사례",
-				path : "/main/portal/fund/usr_1903"
+				path : "/main/usr_1900/usr_1903"
 			},
 			{
 				g_id:5,
 				name : "수요조사",
-				path : "/main/portal/fund/usr_1904"
+				path : "/main/usr_1900/usr_1904"
 			}
 		],
 		sub2: [
