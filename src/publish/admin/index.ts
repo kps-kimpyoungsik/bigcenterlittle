@@ -74,7 +74,9 @@ export { default as adm2200Page } from './adm_2000/adm_2200';
 
 export { default as adm3100Page } from './adm_3000/adm_3100';
 export { default as adm3200Page } from './adm_3000/adm_3200';
-export { default as adm3210Page } from './adm_3000/adm_3210';
+export { default as adm3300Page } from './adm_3000/adm_3300';
+export { default as adm3301Page } from './adm_3000/adm_3301';
+export { default as adm3302Page } from './adm_3000/adm_3302';
 
 export { default as adm4100Page } from './adm_4000/adm_4100';
 export { default as adm4110Page } from './adm_4000/adm_4110';

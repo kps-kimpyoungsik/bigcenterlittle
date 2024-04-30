@@ -55,22 +55,21 @@ function ContentsContainer() {
 								</div>
 								<div className="fo-item fo-m-1-4">
 									<p className="fo-key">코드그룹 설명</p>
-									<div className="fo-value">
-										<div className="ta">
-											<textarea className="ta-ip" placeholder="">
-						
-											</textarea>
+									
+									<div className="fo-value d-block"> {/* [M] */} 
+										<div className="ta w100p"> {/* [M] */}
+											<textarea className="ta-ip" placeholder=""></textarea> 
 										</div>
 										<p className="tx tx-cp1 mt5">
 											<em className="fc-err">12</em> Bytes / 
 											<em className="fc-err">2,000</em> Bytes
-											</p>
+										</p>
 
 									</div>
 								</div>													
 								<div className="fo-item fo-m-1-4">
 									<p className="fo-key">코드값 목록</p>
-									<div className="fo-value">
+									<div className="fo-value d-block"> {/* [M] */} 
 										<div className="tb-top">
 											<div>
 												<p className="tx fc-black"></p>총 <em className="fw500">103</em>건

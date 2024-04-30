@@ -86,7 +86,9 @@ import {
 	// 공시/발급 [3000]
 	adm3100Page,
 	adm3200Page,	
-	adm3210Page,	
+	adm3300Page,
+	adm3301Page,	
+	adm3302Page,
 
 	// 게시판관리 [4000]
 	adm4100Page,
@@ -589,10 +591,20 @@ export const routes: Array<PageRouteProps> = [
 		layout: DefaultLayout,
 	},		
 	{
-		path: '/admin/adm_3000/adm3210',
-		component: adm3210Page,
+		path: '/admin/adm_3000/adm3300',
+		component: adm3300Page,
+		layout: DefaultLayout,
+	},			
+	{
+		path: '/admin/adm_3000/adm3301',
+		component: adm3301Page,
 		layout: DefaultLayout,
 	},		
+	{
+		path: '/admin/adm_3000/adm3302',
+		component: adm3302Page,
+		layout: DefaultLayout,
+	},			
 
 	// 사용자관리 [4000]
 	{
