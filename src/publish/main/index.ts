@@ -22,6 +22,11 @@ export { default as usr1901Page } from './usr_1900/usr_1901';
 export { default as usr1902Page } from './usr_1900/usr_1902';
 export { default as usr1903Page } from './usr_1900/usr_1903';
 export { default as usr1904Page } from './usr_1900/usr_1904';
+export { default as usr1905Page } from './usr_1900/usr_1905';
+export { default as usr1906Page } from './usr_1900/usr_1906';
+export { default as usr1908Page } from './usr_1900/usr_1908';
+export { default as usr1909Page } from './usr_1900/usr_1909';
+export { default as usr1910Page } from './usr_1900/usr_1910';
 //기금출현
 export { default as usr2000Page } from './usr_2000/usr_2000';
 export { default as usr2002Page } from './usr_2000/usr_2002';

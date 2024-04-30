@@ -12,7 +12,7 @@ function ContentsContainer() {
 					<li><Link to="#">상생협력기금안내</Link></li>
 					<li><Link to="#">투명한기금운영</Link></li>
 				</ul>
-				<main className="fww-main">
+				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">투명한기금운영</h1>
 				</main>
 			</div>			

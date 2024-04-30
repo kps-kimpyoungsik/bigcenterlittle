@@ -17,19 +17,21 @@ function ManualContainer(): JSX.Element {
 				</ul>
 				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">자주묻는질문(FAQ)</h1>
-					<div className="tb-search-form">
-						<div className="tb-search-items">
-							<div className="sl sl-big">
-								<select>
-									<option>전체</option>
-									<option>제목</option>
-									<option>내용</option>
-								</select>
+					<form name="" action="" method="">
+						<div className="tb-search-form">
+							<div className="tb-search-items">
+								<div className="sl sl-big">
+									<select>
+										<option>전체</option>
+										<option>제목</option>
+										<option>내용</option>
+									</select>
+								</div>
+								<UIInput className={'tf tf-big ml10'} value={''} placeholder={"입력하세요."} />
 							</div>
-							<UIInput className={'tf tf-big ml10'} value={''} placeholder={"입력하세요."} />
+							<Button color="pri" size="big">검색</Button>
 						</div>
-						<Button color="pri" size="big">검색</Button>
-					</div>
+					</form>
 					<div className="tb">
 						<div className="tb-top">
 							<div>

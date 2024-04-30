@@ -17,33 +17,34 @@ function ContentsContainer() {
 				</ul>
 				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">안내사항</h1>
-					<div className="tb-search-form notice">
-						<div className="tb-search-items">
-							<label>상태</label>
-							<div className="sl sl-big">
-								<select>
-									<option>전체</option>
-									<option>공지사항</option>
-									<option>안내자료</option>
-									<option>매뉴얼</option>
-									<option>투자재원</option>
-								</select>
+					<form name="" action="" method="">
+						<div className="tb-search-form notice">
+							<div className="tb-search-items">
+								<label>상태</label>
+								<div className="sl sl-big">
+									<select>
+										<option>전체</option>
+										<option>공지사항</option>
+										<option>안내자료</option>
+										<option>매뉴얼</option>
+										<option>투자재원</option>
+									</select>
+								</div>
 							</div>
-						</div>
-						<div className="tb-search-items">
-							<label>조회구분</label>
-							<div className="sl sl-big">
-								<select>
-									<option>전체</option>
-									<option>제목</option>
-									<option>내용</option>
-								</select>
+							<div className="tb-search-items">
+								<label>조회구분</label>
+								<div className="sl sl-big">
+									<select>
+										<option>전체</option>
+										<option>제목</option>
+										<option>내용</option>
+									</select>
+								</div>
+								<UIInput className={'tf tf-big ml10'} value={''} placeholder={"입력하세요."} />
 							</div>
-							<UIInput className={'tf tf-big ml10'} value={''} placeholder={"입력하세요."} />
+							<Button color="pri" size="big">조회</Button>
 						</div>
-						
-						<Button color="pri" size="big">조회</Button>
-					</div>
+					</form>
 					<div className="tb">
 						<div className="tb-top">
 							<div>

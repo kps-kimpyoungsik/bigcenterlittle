@@ -175,8 +175,10 @@ function ContentsContainer() {
 											<div className="fund-form-items">
 												<div className="hz-root hz-gap5 w100p mr30">
 													<UIInput className={'tf tf-md hz-item grow'} value={'협력재단 출연신청서.pdf(67.58KB)'} placeholder={''} />
-													<Button color='pri-o2' size="md">찾기</Button>
-													<Button color='gray-o' size="md">삭제</Button>
+													<div className="hz-root hz-gap5 w120 ">
+														<Button color='pri-o2' size="md">찾기</Button>
+														<Button color='gray-o' size="md">삭제</Button>
+													</div>
 												</div>
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>

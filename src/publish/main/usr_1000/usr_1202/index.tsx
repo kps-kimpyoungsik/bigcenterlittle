@@ -110,7 +110,6 @@ function ContentsContainer() {
 												</select>
 											</div>
 										</div>
-										
 									</div>
 								</div>
 								<div className="fo-item fo-m-1-3 req">
