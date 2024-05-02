@@ -78,6 +78,10 @@ input, button, textarea {
   background: none;  
 }
 
+.tf.tf-str {
+  text-decoration: line-through;
+}
+
 /*unit*/
 .tf-unit {
     position: relative;

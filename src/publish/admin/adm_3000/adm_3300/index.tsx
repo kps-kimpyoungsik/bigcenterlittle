@@ -89,31 +89,33 @@ function ContentsContainer() {
 								<div className="fo-item fo-m-1-3">
 									<p className="fo-key">기부금발행금액</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md ta-right w100p'} value={'0'} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md ta-right w100p'} value={'600,000'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">발행방법</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md w100p'} value={'단건으로 발행'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">기부금영수증발행구분</p>
 									<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={''} placeholder={'발행은 사업구분-날짜구분-자동순번으로 채번됩니다.'} readOnly={true} />
+										<p className="tx">발행은 사업구분-날짜구분-자동순번으로 채번됩니다.</p>
+										<UIInput className={'tf tf-md w100p'} value={'동반-20240411-001'} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md tf-str w100p'} value={'동반-20240411-001'} placeholder={''} readOnly={true} /> {/* tf-str 추가 */}
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">재단발행부서</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md w100p'} value={'상생기금부'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">재단발행담당자</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md w100p'} value={'홍길동'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 							</div>
@@ -122,6 +124,7 @@ function ContentsContainer() {
 						<div className="ibsheet">[D] IBSHEET 영역</div>
 						<div className="hz-root hz-right hz-gap5">
 							<Button color="pri-o" size="sm" >기부영수증등록</Button>
+							<Button color="gray-o" size="sm" >기부영수증취소</Button>
 							<Button color="gray-o" size="sm" >목록</Button>
 						</div>
 						
