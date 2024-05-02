@@ -1,0 +1,53 @@
+{
+	"gnb" : [
+		{
+			"name":"상생협력기금안내",
+			"path":"usr_1900/usr_1900",
+			"sub":[
+				{"s_id":1, "sceenid":"1900", "name" : "제도소개" },
+				{"s_id":2, "sceenid":"1901", "name" : "투명한기금운영"},
+				{"s_id":3, "sceenid":"1902", "name" : "기관안내"},
+				{"s_id":4, "sceenid":"1903", "name" : "우수사례"},
+				{"s_id":5, "sceenid":"1904", "name" : "수요조사"}
+			]
+		},
+		{
+			"name":"기금출연",
+			"path":"usr_2000/usr_2000",
+			"sub":[
+				{"s_id":1, "sceenid":"2000", "name" : "출연신청" },
+				{"s_id":2, "sceenid":"2002", "name" : "출연현황" },
+				{"s_id":3, "sceenid":"2007", "name" : "전용신청" },
+				{"s_id":4, "sceenid":"2009", "name" : "전용현황" }
+			]
+		},
+		{
+			"name":"기금운영",
+			"path":"usr_2100/usr_2100",
+			"sub":[
+				{"s_id":1, "sceenid":"2100", "name" : "과제승인신청" },
+				{"s_id":2, "sceenid":"2105", "name" : "과제현황" },
+				{"s_id":3, "sceenid":"2114", "name" : "지급정산신청" },
+				{"s_id":4, "sceenid":"2123", "name" : "지급현황" },
+				{"s_id":5, "sceenid":"2133", "name" : "환수신청" }
+			]
+		},
+		{
+			"name":"통합정보조회",
+			"path":"usr_2200/usr_2200",
+			"sub":[
+				{"s_id":1, "sceenid":"2200", "name" : "통합정보조회" },
+				{"s_id":2, "sceenid":"2201", "name" : "입출금내역조회" },
+				{"s_id":3, "sceenid":"2202", "name" : "기부금영수증 조회" }
+			]
+		},
+		{
+			"name":"고객지원",
+			"path":"usr_2300/usr_2300",
+			"sub":[
+				{"s_id":1, "sceenid":"2300", "name" : "안내사항" },
+				{"s_id":2, "sceenid":"2302", "name" : "자주묻는질문" }
+			]
+		}
+	]
+} 

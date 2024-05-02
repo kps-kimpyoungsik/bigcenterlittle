@@ -10,6 +10,7 @@ import ModalPopup from 'components/modal/';
 //import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip';
 //import { Popover } from "react-tiny-popover";
+import Virtual from 'assets/img/pages/usr_virtual.svg';
 function ContentsContainer() {
 	const modaladm2004 = useToggleState({});
 	//const [isPopoverOpen, setIsPopoverOpen] = useState(false);
@@ -251,7 +252,19 @@ function ContentsContainer() {
 				onClose={modaladm2004.close}
 			>
 				<div className="modal-con">
-					<p style={{padding:"100px 0",textAlign:"center"}}>발급 안내 내용 수급 필요</p>
+					<div className="virtual-account">
+						<h3 className="mb15">가상계좌란?</h3>
+						<p className="mb30">대중소기업 협력재단이 하나은행으로부터 가상계좌를 발급받아 출연기업에게 부여하고, 출연금이 개별 가상계좌에 입금되면 실시간 (또는 지정된 시각)으로 대중소기업 상생협력기금 모계좌에 자동으로 이체해드리는 서비스입니다.</p>
+						<h3 className="mb15">서비스 흐름</h3>
+						<div className="mb30">
+							<img src={Virtual} alt="서비스 흐름" />
+						</div>
+						<h3 className="mb15">안내 문의</h3>
+						<ul className="list-group">
+							<li>기금담당 : 홍길동</li>
+							<li>전화번호 : 02-368-8700</li>
+						</ul>
+					</div>
 				</div>
 				<div className="modal-bottom">
 					<Button color="pri" size="md">확인</Button>

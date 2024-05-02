@@ -1,18 +1,15 @@
 
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user1900Aside";
+import Breadcrumb from 'layouts/main/Breadcrumb';
 function ContentsContainer() {
 	return (
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">상생협력기금안내</Link></li>
-					<li><Link to="#">제도소개</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={0} lnbIdx={0}/>
 				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">제도소개</h1>
 					<div className="fww-intro">
