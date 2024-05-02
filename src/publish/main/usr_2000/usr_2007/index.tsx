@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
+import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
 import useToggleState from 'components/hooks/useToggleState';
@@ -20,11 +21,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">기금출연</Link></li>
-					<li><Link to="#">전용신청</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={1} lnbIdx={2}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">전용신청</h1>
 					<div className="hz-root hz-right hz-gap10 mb30">

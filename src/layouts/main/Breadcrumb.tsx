@@ -14,7 +14,7 @@ function Breadcrumb(props: BreadcrumbProps, ref: any) {
 	return (
 		<ul className="fww-brd">
 			<li><Link to="/main/">홈</Link></li>
-			<li><Link to="#">{menutree.gnb[gnbIdx].name}</Link></li>
+			<li><Link to={'/main/'+ menutree.gnb[gnbIdx].path}>{menutree.gnb[gnbIdx].name}</Link></li>
 			<li><Link to="#">{menutree.gnb[gnbIdx].sub[lnbIdx].name}</Link></li>
 		</ul>
 	);	

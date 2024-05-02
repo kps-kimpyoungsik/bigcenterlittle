@@ -3,6 +3,83 @@ import React, {useState} from "react";
 import { Link, NavLink, useLocation  } from 'react-router-dom';
 import logo from 'assets/img/logo/logo_blk.svg';
 const global = {
+	gnb:[
+		{
+			name:"기금관리",
+			path:"adm_1000/adm1100",
+			sub:[
+				{s_id:1, sceenid:"1100", name : "통합정보조회" },
+				{s_id:2, sceenid:"1200", name : "출연관리" },
+				{s_id:3, sceenid:"1300", name : "과제관리" },
+				{s_id:4, sceenid:"1400", name : "지급관리" },
+				{s_id:5, sceenid:"1500", name : "환수관리" },
+				{s_id:6, sceenid:"1600", name : "성과관리" },
+				{s_id:7, sceenid:"1700", name : "수요조사관리" },
+			]
+		},
+		{
+			name:"계좌관리",
+			path:"adm_2000/adm2100",
+			sub:[
+				{s_id:1, sceenid:"2100", name : "가상계좌조회" },
+				{s_id:2, sceenid:"2200", name : "모계좌조회" },
+				
+			]
+		},
+		{
+			name:"공시/발급",
+			path:"adm_3000/adm3100",
+			sub:[
+				{s_id:1, sceenid:"3100", name : "법인세공시" },
+				{s_id:2, sceenid:"3200", name : "기부영수증" },
+				
+			]
+		},
+		{
+			name:"사용자관리",
+			path:"adm_4000/adm4100",
+			sub:[
+				{s_id:1, sceenid:"4100", name : "회원관리" },
+				{s_id:2, sceenid:"4200", name : "기업관리" },
+				{s_id:3, sceenid:"4310", name : "한도금액 통제" },
+			]
+		},
+		{
+			name:"게시판관리",
+			path:"adm_5000/adm5100",
+			sub:[
+				{s_id:1, sceenid:"5100", name : "공지사항" },
+				{s_id:2, sceenid:"5210", name : "FAQ관리" },
+				{s_id:3, sceenid:"5310", name : "팝업관리" },
+				{s_id:4, sceenid:"5320", name : "우수사례관리" },
+			]
+		},
+		{
+			name:"시스템관리",
+			path:"adm_6000/adm6100",
+			sub:[
+				{s_id:1, sceenid:"6100", name : "메일발송관리" },
+				{s_id:2, sceenid:"6200", name : "SMS 발송관리" },
+				{s_id:3, sceenid:"6310", name : "사업관리" },
+				{s_id:4, sceenid:"6410", name : "코드관리" },
+				{s_id:5, sceenid:"6421", name : "메뉴관리" },
+				{s_id:6, sceenid:"6431", name : "권한관리" },
+				{s_id:7, sceenid:"6510", name : "풍선도움말" },
+				{s_id:8, sceenid:"6520", name : "명칭관리" },
+				{s_id:9, sceenid:"6610", name : "통계목관리" },
+				{s_id:10, sceenid:"6710", name : "펌뱅킹관리" },
+			]
+		},
+		{
+			name:"결재함",
+			path:"adm_7000/adm7100",
+			sub:[
+				{s_id:1, sceenid:"7000", name : "결재선 설정" },
+				{s_id:2, sceenid:"7100", name : "결재함 리스트" },
+				{s_id:3, sceenid:"7101", name : "결재함 상세" },
+			]
+		},
+	],
 	content: {
 		sub1: [
 			{
@@ -217,120 +294,23 @@ function LayoutHeader() {
 						onMouseLeave={() => setHidden(true)}
 					>
 						<ul>
-							<li className={location.pathname.includes('adm_1') ? 'd1 active' : 'd1'}>
-								<NavLink to="/admin/adm_1000/adm1100">기금관리</NavLink>
-								<ul className='d2'>
-									{global.content.sub1.map((block) => (
-										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
-							<li className={location.pathname.includes('adm_2') ? 'd1 active' : 'd1'}>
-								<NavLink to="/admin/adm_2000/adm2100">계좌관리</NavLink>
-								<ul className='d2'>
-									{global.content.sub2.map((block) => (
-										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
-							<li className={location.pathname.includes('adm_3') ? 'd1 active' : 'd1'}>
-								<NavLink to="/admin/adm_3000/adm3100">공시/발급</NavLink>
-								<ul className='d2'>
-									{global.content.sub3.map((block) => (
-										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
-							<li className={location.pathname.includes('adm_4') ? 'd1 active' : 'd1'}>
-								<NavLink to="/admin/adm_4000/adm4100">사용자관리</NavLink>
-								<ul className='d2'>
-									{global.content.sub4.map((block) => (
-										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
-							<li className={location.pathname.includes('adm_5') ? 'd1 active' : 'd1'}>
-								<NavLink to="/admin/adm_5000/adm5100">게시판관리</NavLink>
-								<ul className='d2'>
-									{global.content.sub5.map((block) => (
-										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
-							<li className={location.pathname.includes('adm_6') ? 'd1 active' : 'd1'}>
-								<NavLink to="/admin/adm_6000/adm6100">시스템관리</NavLink>
-								<ul className='d2'>
-									{global.content.sub6.map((block) => (
-										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
-							<li className={location.pathname.includes('adm_7') ? 'd1 active' : 'd1'}>
-								<NavLink to="/admin/adm_7000/adm7100">결재함</NavLink>
-								<ul className='d2'>
-									{global.content.sub7.map((block) => (
-										<li className={location.pathname === block.path ? 'active' : ''} key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
+							{global.gnb.map((gnb, index) => (
+								<li key={index} className={location.pathname.includes(gnb.path.slice(0,8)) ? 'd1 active' : 'd1'}>
+									<NavLink to={"/admin/" + gnb.path }>{gnb.name}</NavLink>
+									<ul className='d2' >
+										{gnb.sub.map((depth2) => (
+											<li key={depth2.s_id} className={location.pathname.slice(-4,23) === depth2.sceenid? 'active' : ''}>
+												<Link to={"/admin/" + gnb.path.slice(0,8) + "/adm" + depth2.sceenid}>{depth2.name}</Link>
+											</li>
+										))}
+									</ul>
+								</li>
+							))}
 							<li className={location.pathname.includes('adm_8') ? 'd1 active' : 'd1'}>
 								<NavLink to="#">보고서</NavLink>
 							</li>
 						</ul>
 					</nav>
-					<nav className='fww-gnb-depth2'>
-						<ul>
-							<li>
-								<p className='hide'>기금관리</p>
-								<ul className='d2'>
-									{global.content.sub1.map((block) => (
-										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>								
-								
-							</li>
-							<li>
-								<p className='hide'>계좌관리</p>
-								<ul className='d2'>
-									{global.content.sub2.map((block) => (
-										<li key={block.g_id}><Link to={block.path}>{block.name}</Link></li>
-									))}
-								</ul>
-							</li>
-							<li>
-								<p className='hide'>공시/발급</p>
-								<ul className='d2'>
-								</ul>
-							</li>
-							<li>
-								<p className='hide'>사용자관리</p>
-								<ul className='d2'>
-								</ul>
-							</li>
-							<li>
-								<p className='hide'>게시판관리</p>
-								<ul className='d2'>
-								</ul>
-							</li>
-							<li>
-								<p className='hide'>시스템관리</p>
-								<ul className='d2'>
-								</ul>
-							</li>
-							<li>
-								<p className='hide'>결재함</p>
-								<ul className='d2'>
-								</ul>
-							</li>
-							<li>
-								<p className='hide'>보고서</p>
-								<ul className='d2'>
-								</ul>
-							</li>
-							
-						</ul>
-					</nav>
-
 				</div>
 			</header>
 		</div>

@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
+import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIDatePicker from "components/datepicker";
 import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
@@ -16,11 +17,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">기금출연</Link></li>
-					<li><Link to="#">출연현황</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={1} lnbIdx={1}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">출연현황</h1>
 					<form className="sf sf-fund" name="" action="" method="">

@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2300Aside";
+import Breadcrumb from 'layouts/main/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ManualContainer(): JSX.Element {
@@ -10,11 +11,7 @@ function ManualContainer(): JSX.Element {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-			<ul className="fww-brd">
-					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">고객지원</Link></li>
-					<li><Link to="#">자주묻는질문</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={4} lnbIdx={1}/>
 				<main className="fww-main" data-layout="usr">
 					<h1 className="tx tx-hd2">자주묻는질문(FAQ)</h1>
 					<form name="" action="" method="">
