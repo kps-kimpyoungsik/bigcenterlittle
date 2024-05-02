@@ -31,19 +31,13 @@ function ContentsContainer() {
 												<span className="hz-item">~</span>
 												<UIDatePicker className="hz-item"/>
 											</div>
-											<div className="hz-item hz-root hz-gap5">
-												<button className="bt" data-color="pri-o2" data-size="md" type="button">이전3개월</button>
-												<button className="bt" data-color="pri-o2" data-size="md" type="button">이전6개월</button>
-												<button className="bt" data-color="pri" data-size="md" type="button">이전12개월</button>
-												<button className="bt" data-color="pri-o2" data-size="md" type="button">이전24개월</button>
-											</div>
 										</div>
 								</div>
 							</div>
 							<div className="sf-item sf-m-1-3">
 								<p className="sf-key">제목</p>
 								<div className="sf-value">
-									<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} />
+									<UIInput className={'tf tf-md w100p'} value={''} placeholder={'제목을 입력하세요.'} />
 								</div>
 							</div>
 						</div>
