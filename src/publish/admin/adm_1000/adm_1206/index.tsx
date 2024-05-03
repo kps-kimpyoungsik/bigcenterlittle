@@ -130,8 +130,8 @@ function ContentsContainer() {
 									</div>
 								</div>
 							</div>
-							<div className="fo-item">
-								<p className="fo-key">지원잔액(원)=사용전</p>
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">지원잔액(원)</p>
 								<div className="fo-value">
 									<div className="hz-root hz-right hz-gap8 w100p">
 										<UIInput className={'hz-item tf tf-md'} value={'000,000,000'} placeholder={''} readOnly={true} />
@@ -142,8 +142,31 @@ function ContentsContainer() {
 						</div>
 					</form>
 
+					<h3 className="section-title mb15">첨부파일</h3>
+					<form className="fo fo-col2" name="" action="" method="">
+						<div className="inner">
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">출연신청서</p>
+								<div className="fo-value">
+									<p className="tx tx-cp1">출연신청서 제출이 완료되지 않았습니다.</p>
+								</div>
+							</div>
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">출연신청서</p>
+								<div className="fo-value">
+									<div className="hz-root hz-sb hz-gap8 w100p">
+										<p className="hz-item tx tx-cp1">출연신청서 전자인증을 완료하였습니다.</p>
+										<Button color="gray-o" size="md" >다운로드</Button>
+									</div>
+
+								</div>
+							</div>							
+						</div>
+					</form>
+					<div className="mb30">[D]Fileupload UI</div>					
+
 					<h3 className="section-title mb15">출연 기업 정보</h3>
-					<form className="fo fo-col2 mb30" name="" action="" method="">
+					<form className="fo fo-col2" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item">
 								<p className="fo-key">기업명</p>
@@ -195,36 +218,8 @@ function ContentsContainer() {
 							</div>																																																																																																														
 						</div>
 					</form>					
-
-					<h3 className="section-title mb15">첨부파일</h3>
-					<form className="fo fo-col2" name="" action="" method="">
-						<div className="inner">
-							<div className="fo-item fo-m-1-3">
-								<p className="fo-key">출연신청서</p>
-								<div className="fo-value">
-									<p className="tx tx-cp1">출연신청서 제출이 완료되지 않았습니다.</p>
-								</div>
-							</div>
-							<div className="fo-item fo-m-1-3">
-								<p className="fo-key">출연신청서</p>
-								<div className="fo-value">
-									<p className="tx tx-cp1">출연신청서 전자인증을 완료하였습니다.</p>
-									<Button color="gray-o" size="md" >미리보기</Button>
-								</div>
-							</div>							
-						</div>
-					</form>
-					<div className="mb30">[D]Fileupload UI</div>
-					
-
-					<h3 className="section-title mb15">비고사항</h3>
-					<div className="ta-view h200 mb10">
-						[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 심사가 완료되었습니다.
-						[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 집행이 완료되었습니다. 지급금액 <em className="fc-err">$###</em>원, 집행일 <em className="fc-err">YYYY-MM-DD</em>
-					</div>
 					<div className="hz-root hz-right hz-gap5">
-						<Button color="pri-o" size="sm" >기부금 영수증 바로가기</Button>
-						<Button color="gray-o" size="sm" >수정</Button>
+						<Button color="pri-o" size="sm" >기부영수증 출력</Button>
 						<Button color="gray-o" size="sm" >목록</Button>
 					</div>
 

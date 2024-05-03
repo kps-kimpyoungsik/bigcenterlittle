@@ -111,6 +111,10 @@ function ContentsContainer() {
 					</div>
 
 					<div className="ibsheet">[D] IBSHEET 영역</div>
+					<label className="badge badge-22 blue">신청</label>
+					<label className="badge badge-22 yellow">입금확인중</label>
+					<label className="badge badge-22 gray">수납완료</label>	
+									
 
 				</main>
 			</div>

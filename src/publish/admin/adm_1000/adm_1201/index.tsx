@@ -40,23 +40,29 @@ function ContentsContainer() {
 								<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD HH:MM:SS'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">내용</p>
+								<div className="fo-value">
+									<div className="ta-view h200 w100p">
+										[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 심사가 완료되었습니다.
+										[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 집행이 완료되었습니다. 지급금액 <em className="fc-err">$###</em>원, 집행일 <em className="fc-err">YYYY-MM-DD</em>
+									</div>								
+								</div>
+							</div>							
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">첨부파일</p>
+								<div className="fo-value">
+									<div>[D]fileupload UI</div>			
+								</div>
+							</div>														
 						</div>
 					</form>
 
-					<div className="ta-view h200 mt30">
-						[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 심사가 완료되었습니다.
-						[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 집행이 완료되었습니다. 지급금액 <em className="fc-err">$###</em>원, 집행일 <em className="fc-err">YYYY-MM-DD</em>
-					</div>
-
-					<div>[D]fileupload...</div>
-
-					
 					<div className="hz-root hz-right hz-gap5 mt10">
 						<Button color="gray-o" size="sm">삭제</Button>
 						<Button color="pri-o" size="sm">수정</Button>
 						<Button color="gray-o" size="sm">목록</Button>
 					</div>
-					
 
 				</main>
 			</div>
