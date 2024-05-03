@@ -297,13 +297,13 @@ a.bt {
   color:rgba(255, 255, 255, 0.5);
 }
 .bt[data-color='gray-o']{
-	background: #fff;
+	background-color: #fff;
 	border-color: #ccc;
 	color: #333;
 	font-weight: 400;
 }
 .bt[data-color='gray-o']:hover:not([disabled]){
-	background: #F8F8F8;
+	background-color: #F8F8F8;
 }
 
 /*리프레시*/
@@ -351,4 +351,23 @@ a.bt {
   width: 16px;
   height: 16px;
   background: url(../../img/icon/ic_right_arr_16.svg) no-repeat 50% 50%;
+}
+
+.bt.bt-left-ico, 
+.bt.bt-right-ico {
+  font-size:0;
+  min-width:36px;
+  padding:0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bt.bt-left-ico {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 11.6L1.49532 6.10469L7 0.600006' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.bt.bt-right-ico {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.49609 11.6L7.00077 6.10468L1.49609 0.599998' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.bt.bt-left-ico:disabled,
+.bt.bt-right-ico:disabled {
+  opacity: 0.5;
 }
