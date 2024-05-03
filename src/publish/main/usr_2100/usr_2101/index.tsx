@@ -1,13 +1,14 @@
 
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2100Aside";
+import Breadcrumb from 'layouts/main/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 import UIDatePicker from "components/datepicker";
-import { Tooltip } from "react-tooltip";
 import useToggleState from 'components/hooks/useToggleState';
+import { Tooltip } from "react-tooltip";
 import ModalPopup from 'components/modal/';
 function ContentsContainer() {
 	const sectors1 = [
@@ -25,9 +26,6 @@ function ContentsContainer() {
 		'금융 및 보험업','부동산업 및 임대업','전문, 과학 및 기술 서비스업','사업시설관리 및 사업지원 서비스업','공공행정, 국방 및 사회보장 행정','교육 서비스업','보건업 및 사회복지 서비스업',
 		'예술, 스포츠 및 여가관련 서비스업','협회 및 단체, 수리 및 기타 개인 서비스업','가구 내 고용활동 및 달리 분류되지 않은 자가소비 생산활동','국제 및 외국기관','기타'
 	]
-
-	
-
 	const chkeck = [
 		{id:1,tx:'경쟁력강화'},{id:2,tx:'소통활성'},{id:3,tx:'공유가치 창출'},{id:4,tx:'제도활성화'},{id:5,tx:'우수한생산성강화'},
 		{id:6,tx:'경쟁력강화'},{id:7,tx:'소통활성'},{id:8,tx:'공유가치 창출'},{id:9,tx:'제도활성화'},{id:10,tx:'우수한생산성강화'},
@@ -36,15 +34,13 @@ function ContentsContainer() {
 	const modalusr2102 = useToggleState({});
 	const modalusr2103 = useToggleState({});
 	const modalusr2104 = useToggleState({});
+	const modalusr2105 = useToggleState({});
+	const handleChange = (e) => {if( e.target.value === 'open') {modalusr2105.open();}}
 	return (
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">기금운영</Link></li>
-					<li><Link to="#">과제현황</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={2} lnbIdx={0}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">과제승인신청</h1>
 					<div className="hz-root hz-right hz-gap10 mb30">
@@ -204,9 +200,8 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="d-block">
 											<div className="chk-group">
-												
 												{chkeck.map((chkeck) => (
-													<div className="chk-items">
+													<div key={chkeck.id} className="chk-items">
 														<input type="checkbox" id={'chk-g-'+chkeck.id} />
 														<label htmlFor={'chk-g-'+chkeck.id}>{chkeck.tx}</label>
 													</div>
@@ -272,9 +267,9 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="hz-root hz-gap10 w100p">
 											<div className="sl sl-md w556">
-												<select>
-													<option>수행기관 없음</option>
-													<option>수행기관 선택</option>
+												<select onChange={handleChange}>
+													<option >수행기관 없음</option>
+													<option value={'open'}>수행기관 선택</option>
 												</select>
 											</div>
 											<div className="hz-root hz-gap5 w-auto">
@@ -401,6 +396,97 @@ function ContentsContainer() {
 					</div>
 				</main>
 			</div>
+			{/* modal - 수행 기관 선택 */}
+			<ModalPopup
+					open={modalusr2105.isShowing}
+					title="수행 기관 선택"
+					size="lg"
+					onClose={modalusr2105.close}
+			>
+				<div className="modal-con">
+					<div className="modal-tskana">
+						<form className="fo fo-col2" name="" action="" method="">
+							<div className="inner">
+								<div className="fo-item">
+									<p className="fo-key">사업자번호</p>
+									<div className="fo-value">
+										<UIInput type={'number'} className={'tf tf-md w100p'} value={''} placeholder={'숫자만 입력'} />	
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">기업명</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={''} placeholder={'기업명을 입력하세요.'} />	
+									</div>
+								</div>
+							</div>
+						</form>
+						<div className="hz-root hz-center hz-gap8 mt30">
+							<Button color="pri-o" size="md" onClick={() => {modalusr2105.close(); modalusr2103.open()}}>수행기관 신규등록</Button>
+							<Button color="gray-o" size="md" >조회</Button>
+						</div>
+						<div className="approval-gen mt30">
+							<div className="approval-gen-member">
+								<h3 className="tx tx-bd1">수행기관목록</h3>
+								<div className="box">
+									<div className="ibsheet">[D] IBSHEET 영역</div>
+								</div>
+								<div className="pg mt8">
+									<div className="group">
+										<button type="button" className="item first">처음</button>
+										<button type="button" className="item prev">이전</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item">1</button>
+										<button type="button" className="item active">2</button>
+										<button type="button" className="item">3</button>
+										<button type="button" className="item">4</button>
+										<button type="button" className="item">5</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item next">다음</button>
+										<button type="button" className="item last">끝</button>
+									</div>
+								</div>
+							</div>
+							<div className="approval-ctr">
+								<button type="button" className="bt bt-left-ico" data-size="md" data-color="gray-o">&lt;</button>
+								<button type="button" className="bt bt-right-ico" data-size="md" data-color="gray-o">&gt;</button>
+							</div>
+							<div className="approval-gen-selected">
+								<div className="hz-root hz-sb">
+									<h3 className="tx tx-bd1">선택된 수행기관</h3>
+									<Button color="gray-o" size="sm" >선택초기화</Button>
+								</div>
+								<div className="box">
+									<div className="ibsheet">[D] IBSHEET 영역</div>
+								</div>
+								<div className="pg mt8">
+									<div className="group">
+										<button type="button" className="item first">처음</button>
+										<button type="button" className="item prev">이전</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item">1</button>
+										<button type="button" className="item active">2</button>
+										<button type="button" className="item">3</button>
+										<button type="button" className="item">4</button>
+										<button type="button" className="item">5</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item next">다음</button>
+										<button type="button" className="item last">끝</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="modal-bottom">
+					<Button color="gray-o" size="md">취소</Button>
+					<Button color="pri" size="md">선택완료</Button>
+				</div>
+			</ModalPopup>
 			{/* modal - 수행 기관 찾기 */}
 			<ModalPopup
 					open={modalusr2102.isShowing}
@@ -426,8 +512,65 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-
-						<Button color="gray-o" size="sm" onClick={() => {modalusr2102.close(); modalusr2104.open()}}>(임시)수행기관 관리</Button>
+						<div className="hz-root hz-center hz-gap8 mt30">
+							<Button color="gray-o" size="md" >조회</Button>
+						</div>
+						<div className="approval-gen mt30">
+							<div className="approval-gen-member">
+								<h3 className="tx tx-bd1">수행기관목록</h3>
+								<div className="box">
+									<div className="ibsheet">[D] IBSHEET 영역</div>
+									<Button color="gray-o" size="sm" onClick={() => {modalusr2102.close(); modalusr2104.open()}}>(임시)수행기관관리</Button>
+								</div>
+								<div className="pg mt8">
+									<div className="group">
+										<button type="button" className="item first">처음</button>
+										<button type="button" className="item prev">이전</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item">1</button>
+										<button type="button" className="item active">2</button>
+										<button type="button" className="item">3</button>
+										<button type="button" className="item">4</button>
+										<button type="button" className="item">5</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item next">다음</button>
+										<button type="button" className="item last">끝</button>
+									</div>
+								</div>
+							</div>
+							<div className="approval-ctr">
+								<button type="button" className="bt bt-left-ico" data-size="md" data-color="gray-o">&lt;</button>
+								<button type="button" className="bt bt-right-ico" data-size="md" data-color="gray-o">&gt;</button>
+							</div>
+							<div className="approval-gen-selected">
+								<div className="hz-root hz-sb">
+									<h3 className="tx tx-bd1">선택된 수행기관</h3>
+									<Button color="gray-o" size="sm" >선택초기화</Button>
+								</div>
+								<div className="box">
+									<div className="ibsheet">[D] IBSHEET 영역</div>
+								</div>
+								<div className="pg mt8">
+									<div className="group">
+										<button type="button" className="item first">처음</button>
+										<button type="button" className="item prev">이전</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item">1</button>
+										<button type="button" className="item active">2</button>
+										<button type="button" className="item">3</button>
+										<button type="button" className="item">4</button>
+										<button type="button" className="item">5</button>
+									</div>
+									<div className="group">
+										<button type="button" className="item next">다음</button>
+										<button type="button" className="item last">끝</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="modal-bottom">

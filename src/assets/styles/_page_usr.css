@@ -1852,11 +1852,14 @@
     padding:10px;
     box-sizing: border-box;
     width:100%;
-    min-height: 70px;
+    /* min-height: 70px; */
     resize: vertical;
 }
 .ta-ip::placeholder {
     color:#ccc;
+}
+.ta-ip:read-only {
+    border-color: transparent;
 }
 
 .chk-group {

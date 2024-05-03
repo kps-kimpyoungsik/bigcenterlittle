@@ -2,10 +2,10 @@ import React from "react";
 //import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user1900Aside";
+import Breadcrumb from 'layouts/main/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 import map from 'assets/img/pages/usr_map.png';
-import Breadcrumb from 'layouts/main/Breadcrumb';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -103,7 +103,7 @@ function ContentsContainer() {
 								</div>
 								<Button color="pri" size="big">조회</Button>
 							</div>
-							<div className="tb tb-narrow" data-bg="white">
+							<div className="tb">
 								<table>
 									<caption></caption>
 									<colgroup>
@@ -136,6 +136,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={6}>
 												<div className="nd">
+													<i className="ic"></i>
 													<p className="tx tx-cp2 fc-666">검색된 정보가 없습니다.</p>
 												</div>
 											</td>

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import menutree from 'layouts/main/menutree.json';
 function PortalAside() {
+	const gnb = menutree.gnb[0].path.slice(0,8);
+	const lnb = menutree.gnb[0].sub;
 	const aside = [
 		{
 			a_id:1,
@@ -31,9 +34,9 @@ function PortalAside() {
 	const location = useLocation(); 
 	return (
 		<aside className='fww-aside'>
-			<p className="tit-d1">상생협력기금 안내</p>
+			<p className="tit-d1">{menutree.gnb[0].name}</p>
 			<ul className='d1'>
-				{aside.map((aside) => (
+				{/* {aside.map((aside) => (
 					<li className={location.pathname === aside.a_path ? 'active' : ''} key={aside.a_id}>
 						<Link to={aside.a_path} className='no-sub'>{aside.a_name}</Link>
 					</li>
@@ -43,7 +46,12 @@ function PortalAside() {
 				</li>
 				<li className={location.pathname.slice(-4,23) === '1904' || location.pathname.slice(-4,23) === '1908' || location.pathname.slice(-4,23) === '1905' || location.pathname.slice(-4,23) === '1909' || location.pathname.slice(-4,23) === '1910' ? 'active' : ''}>
 					<Link to="/main/usr_1900/usr_1904" className='no-sub'>수요조사</Link>
+				</li> */}
+				{lnb.map((lnb) => (
+				<li key={lnb.s_id} className={location.pathname.slice(-4,23) === lnb.sceenid? 'active' : ''}>
+					<Link to={'/main/'+gnb+'/usr_'+lnb.sceenid} className='no-sub'>{lnb.name}</Link>
 				</li>
+				))}
 			</ul>
 		</aside>
 	);
