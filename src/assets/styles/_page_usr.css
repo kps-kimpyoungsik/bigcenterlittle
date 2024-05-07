@@ -1593,9 +1593,9 @@
     min-height:36px;
 }
 
-.fund-section * {
+/* .fund-section * {
     box-sizing: border-box;
-}
+} */
 .fund-section .fo-value .datepicker {
     flex:1;
 }
@@ -1836,7 +1836,7 @@
     position: relative;
     left:3px;
 }
-.fo-key .req + .button-tooltip {
+.fo-key span + .button-tooltip {
     margin-left:7px;
 }
 .fo-value .w556 {
