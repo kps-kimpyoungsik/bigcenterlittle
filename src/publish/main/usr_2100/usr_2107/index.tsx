@@ -85,7 +85,8 @@ function ContentsContainer() {
 									</div>
 								</div>
 								{/* 유형 type */}
-								<div className="fo-item">
+								<div className="fo-rs-tit row6">유형</div>
+								<div className="fo-item fo-item-rs">
 									<p className="fo-key">출연사업</p>
 									<div className="fo-value"><UIInput className={'tf tf-md w100p'} value={'[사업분야에서 선택한 분야 출력]'} placeholder={''} readOnly={true} /></div>
 								</div>
@@ -95,7 +96,7 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'[중소기업의 생산성 향상을 위한 지원 사업]'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-								<div className="fo-item">
+								<div className="fo-item fo-item-rs">
 									<p className="fo-key">지원분야</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'[지원분야에서 선택한 분야 출력]'} placeholder={''} readOnly={true} />

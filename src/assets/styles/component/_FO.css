@@ -107,3 +107,26 @@
 
 /*세로형 폼 테이블*/
 /* --> TB.CSS */
+
+/*병합유형*/
+.fo-rs-tit {
+  position: absolute;
+  width: 78px;
+  height: 102px;
+  background: #F6FAFF;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #e4e4e4;
+}
+.fo-rs-tit.row1 {top: 0px;}
+.fo-rs-tit.row2 {top: 52px;}
+.fo-rs-tit.row3 {top: 104px;}
+.fo-rs-tit.row4 {top: 156px;}
+.fo-rs-tit.row5 {top: 208px;}
+.fo-rs-tit.row6 {top: 260px;}
+.fo-item.fo-item-rs .fo-key {
+  padding-left: 95px;
+}
