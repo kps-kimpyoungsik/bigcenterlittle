@@ -281,6 +281,7 @@ export const routes: Array<PageRouteProps> = [
 		component: adm1308Page,
 		layout: DefaultLayout,
 	},		
+	/*
 	{
 		path: '/admin/adm_1000/adm1305',
 		component: adm1305Page,
@@ -301,6 +302,7 @@ export const routes: Array<PageRouteProps> = [
 		component: adm1308Page,
 		layout: DefaultLayout,
 	},		
+	*/
 	{
 		path: '/admin/adm_1000/adm1400',
 		component: adm1400Page,
