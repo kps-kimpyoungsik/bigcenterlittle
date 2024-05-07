@@ -244,13 +244,22 @@ a.bt {
 	padding-left: 12px;
 	padding-right: 12px;
 }
+/*tiny size 추가/20240507*/
+.bt[data-size='tn'] {
+  min-width: 54px;
+  width: auto;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  font-weight: 400;
+}
 
 /*button pri*/
 .bt[data-color='pri'] {
 	background: var(--p1);
 	border-color: var(--p1);
 	color: #fff;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 .bt[data-color='pri']:hover:not([disabled]) {
 	background: #1D6ADD;
@@ -286,7 +295,7 @@ a.bt {
 	background: #8491AF;
 	border-color: #8491AF;
 	color: #fff;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 .bt[data-color='gray']:hover:not([disabled]){
 	background: #707E9F;

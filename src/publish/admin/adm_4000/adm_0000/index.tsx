@@ -39,6 +39,16 @@ function ContentsContainer() {
 						<Button color="gray-o" size="sm">버튼</Button>
 						<Button color="gray-o" size="sm">버튼</Button>	
 					</div>
+
+					<br />
+					<div className="hz-root hz-gap5">
+						<Button color="pri" size="tn">버튼</Button>	
+						<Button color="pri-o" size="tn">버튼</Button>	
+						<Button color="pri-o2" size="tn">버튼</Button>	
+						<Button color="gray" size="tn">버튼</Button>	
+						<Button color="gray-o" size="tn">버튼</Button>
+						<Button color="gray-o" size="tn">버튼</Button>	
+					</div>					
 					
 					<h1 className="deco-h1">BD(뱃지)</h1>
 					<br /><br />
