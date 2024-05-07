@@ -112,7 +112,7 @@
 .fo-rs-tit {
   position: absolute;
   width: 78px;
-  height: 102px;
+  height: 104px;
   background: #F6FAFF;
   z-index: 2;
   text-align: center;
@@ -122,11 +122,11 @@
   border-right: 1px solid #e4e4e4;
 }
 .fo-rs-tit.row1 {top: 0px;}
-.fo-rs-tit.row2 {top: 52px;}
-.fo-rs-tit.row3 {top: 104px;}
-.fo-rs-tit.row4 {top: 156px;}
-.fo-rs-tit.row5 {top: 208px;}
-.fo-rs-tit.row6 {top: 260px;}
+.fo-rs-tit.row2 {top: 53px;}
+.fo-rs-tit.row3 {top: 106px;}
+.fo-rs-tit.row4 {top: 159px;}
+.fo-rs-tit.row5 {top: 212px;}
+.fo-rs-tit.row6 {top: 265px;}
 .fo-item.fo-item-rs .fo-key {
   padding-left: 95px;
 }
