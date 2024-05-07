@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export type AbstractButton = {
 	href?: string;
 	type?: 'button' | 'submit' | 'reset';
-	size?: 'sm' | 'md' | 'big';
+	size?: 'tn' | 'sm' | 'md' | 'big';
 	//round?: boolean;
 	children?: React.ReactNode;
 } & Omit<
