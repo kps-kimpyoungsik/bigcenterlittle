@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
@@ -51,7 +51,7 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">요청일</p>
 									<div className="fo-value">
-										<div className="w320">
+										<div className="w215">
 											<UIDatePicker />
 										</div>
 									</div>

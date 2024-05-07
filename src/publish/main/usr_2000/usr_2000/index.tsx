@@ -61,7 +61,7 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">출연 신청일</p>
 									<div className="fo-value">
-										<div className="w320">
+										<div className="w215">
 											<UIDatePicker />
 										</div>
 									</div>

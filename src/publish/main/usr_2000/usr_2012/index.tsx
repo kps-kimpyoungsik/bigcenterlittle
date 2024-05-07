@@ -38,7 +38,9 @@ function ManualContainer(): JSX.Element {
 								<div className="fo-item">
 									<p className="fo-key">전용일자</p>
 									<div className="fo-value">
-										<UIDatePicker />
+										<div className="w215">
+											<UIDatePicker />
+										</div>
 									</div>
 								</div>
 								<div className="fo-item">

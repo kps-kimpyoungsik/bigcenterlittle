@@ -92,7 +92,6 @@ function ContentsContainer() {
 												<span className="fc-pri">(사업기간 내 사업 운영 및 비용 집행)</span> <br />
 												모든 제출 증빙자료의 발행일자가 고제 기간 내에 포함될 수 있도록 설정 바랍니다.<br />ex) 견적서, 세금계선서, 이체확인증 등<br />
 												<p className="mt5">※ 해당연도 지급 요청 마감은 매년 11월 30일 18:00까지이며 이후 당해연도 내 추가 지급신청 불가.</p>
-
 											</div>
 										</Tooltip>
 									</div>
@@ -230,7 +229,7 @@ function ContentsContainer() {
 											place={"bottom-start"}
 											className="tooltip-conts"
 										>
-											<div className="msg">tooltip...</div>
+											<div className="msg">수혜받는 중소기업 수를 기입</div>
 										</Tooltip>
 									</div>
 									<div className="fo-value">
@@ -260,7 +259,9 @@ function ContentsContainer() {
 											className="tooltip-conts"
 										>
 											<div className="msg">
-												효율적인 사업수행을 위하여 출연기업이 선정한 대행기관(기업)을 의미하며, 협력재단이 수행기관에게 직접 지급하는 경우에만 사업자등록증의 상호명을 기입(수행기관 변경 및 추가 시 사업변경 신청 필수)
+												효율적인 사업수행을 위하여 출연기업이 선정한 대행기관(기업)을 의미하며, <br />
+												협력재단이 수행기관에게 직접 지급하는 경우에만 사업자등록증의 상호명을 기입<br />
+												(수행기관 변경 및 추가 시 사업변경 신청 필수)
 											</div>
 										</Tooltip>
 									</div>
