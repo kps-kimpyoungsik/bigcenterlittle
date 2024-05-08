@@ -47,6 +47,14 @@ function ContentsContainer() {
 						<h3 className="section-title mb15">출연 내용</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
+								<div className="fo-item req">
+									<p className="fo-key">출연 신청일</p>
+									<div className="fo-value">
+										<div className="w215">
+											<UIDatePicker />
+										</div>
+									</div>
+								</div>
 								<div className="fo-item">
 									<p className="fo-key">기부내용</p>
 									<div className="fo-value">
@@ -58,14 +66,7 @@ function ContentsContainer() {
 										</div>
 									</div>
 								</div>
-								<div className="fo-item req">
-									<p className="fo-key">출연 신청일</p>
-									<div className="fo-value">
-										<div className="w215">
-											<UIDatePicker />
-										</div>
-									</div>
-								</div>
+								
 							</div>
 						</form>
 					</section>
@@ -86,8 +87,8 @@ function ContentsContainer() {
 									<caption></caption>
 									<colgroup>
 										<col width="60px" />
-										<col />
 										<col width="480px" />
+										<col />
 									</colgroup>
 									<thead>
 										<tr>
@@ -97,8 +98,8 @@ function ContentsContainer() {
 													<span className="check"></span> 
 												</label>
 											</th>
-											<th scope="col"><span className="th-req">출연 금액 입력</span></th>
-											<th scope="col"><span className="th-req">출연 금액 별 사업명 선택</span></th>
+											<th scope="col"><span className="th-req">출연 사업</span></th>
+											<th scope="col"><span className="th-req">출연 금액</span></th>
 										</tr>
 									</thead>
 									<tbody>
@@ -110,15 +111,6 @@ function ContentsContainer() {
 												</label>
 											</td>
 											<td>
-												<div className="fund-form-group">
-													<div className="fund-form-items tf-unit">
-														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
-														<span className="u">원</span>
-													</div>
-													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(일억원 한글금액출력)</span></div>
-												</div>
-											</td>
-											<td>
 												<div className="sl sl-md">
 													<select>
 														<option>선택하세요</option>
@@ -128,11 +120,20 @@ function ContentsContainer() {
 													</select>
 												</div>
 											</td>
+											<td>
+												<div className="fund-form-group">
+													<div className="fund-form-items tf-unit">
+														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
+														<span className="u">원</span>
+													</div>
+													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(일억원 한글금액출력)</span></div>
+												</div>
+											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div className="tb-total">
+							<div className="tb-total mb15">
 								<div className="tb-total-items">
 									출연 금액 합계
 								</div>
@@ -144,12 +145,28 @@ function ContentsContainer() {
 									<p className="tx-msg"><span className="fc-pri">(일억원 한글금액출력)</span></p> 
 								</div>
 							</div>
+							<div className="tx-msg">
+								<span className="fc-pri">※ 출연신청 후 출연금액을 가상계좌로 입금하시면 출연일자로 확정되며 기부금영수증이 발급됩니다. <br />
+								단 가상계좌로 입금 시 다른 일자로 분할해서 입금하시는 경우 취소 후 다시 신청하셔야 합니다. 이점 주의해 주시기 바랍니다.</span>
+							</div>
 						</form>
 					</section>
 					<section className="fund-section">
-						<h3 className="section-title mb15">기업정보</h3>
+						<h3 className="section-title mb15">출연 기업 정보</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
+								<div className="fo-item">
+									<p className="fo-key">기업명</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">법인사업자번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'0000-00-0000000'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
 								<div className="fo-item">
 									<p className="fo-key">사업자번호</p>
 									<div className="fo-value">
@@ -159,7 +176,35 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">기업명</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+										<div className="sl sl-md w100p">
+											<select>
+												<option>기업명</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">직급</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'과장'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">부서</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'협력팀'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">이메일</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">전화번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} />
 									</div>
 								</div>
 							</div>

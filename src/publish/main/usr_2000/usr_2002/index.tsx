@@ -43,6 +43,12 @@ function ContentsContainer() {
 							<div className="sf-item">
 								<p className="sf-key">출연상태</p>
 								<div className="sf-value">
+									<div className="sl sl-md">
+										<select>
+											<option value="">전체</option>
+										</select>
+									</div>
+									{/*  
 									<div className="hz-root hz-gap15">
 										<label htmlFor="rd-1-1" className="ip-rd-label">
 											<input name="rd-1" id="rd-1-1" className="ip-rd" type="radio" defaultChecked/>
@@ -65,6 +71,7 @@ function ContentsContainer() {
 											<span className="txt">수납완료</span>
 										</label>
 									</div>
+									select로 변경*/}
 								</div>
 							</div>
 							<div className="sf-item">
@@ -81,11 +88,23 @@ function ContentsContainer() {
 								</div>
 							</div>
 							<div className="sf-item">
+								<p className="sf-key">기부영수증 <br / >발급여부</p>
+								<div className="sf-value">
+									<div className="sl sl-md">
+										<select>
+											<option value="">전체</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							{/* 
+							<div className="sf-item">
 								<p className="sf-key">출연번호</p>
 								<div className="sf-value">
 									<UIInput className={'tf tf-md w100p'} value={''} placeholder={"출연번호를 입력하세요"} />
 								</div>
 							</div>
+							// 변경으로 삭제 */}
 						</div>
 					</form>
 					<div className="hz-root hz-center mb25">

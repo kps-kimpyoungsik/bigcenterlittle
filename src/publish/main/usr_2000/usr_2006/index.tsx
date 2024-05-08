@@ -41,6 +41,14 @@ function ContentsContainer() {
 									</div>
 								</div>
 								<div className="fo-item">
+									<p className="fo-key">출연 신청일</p>
+									<div className="fo-value">
+										<div className="w215">
+											<UIDatePicker />
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
 									<p className="fo-key">기부내용</p>
 									<div className="fo-value">
 										<div className="sl sl-md w320">
@@ -51,17 +59,10 @@ function ContentsContainer() {
 										</div>
 									</div>
 								</div>
-								<div className="fo-item">
-									<p className="fo-key">출연 신청일</p>
-									<div className="fo-value">
-										<div className="w320">
-											<UIDatePicker />
-										</div>
-									</div>
-								</div>
 							</div>
 						</form>
 					</section>
+					{/* 
 					<section className="fund-section">
 						<h3 className="section-title mb15">출연금액</h3>
 						<form name="" action="" method="">
@@ -127,6 +128,7 @@ function ContentsContainer() {
 							</div>
 						</form>
 					</section>
+					출연금액삭제 */}
 					<section className="fund-section">
 						<div className="hz-root hz-sb mb15">
 							<h3 className="section-title hz-item">첨부파일</h3>
@@ -188,19 +190,59 @@ function ContentsContainer() {
 						<div>file upload...</div>
 					</section>
 					<section className="fund-section">
-						<h3 className="section-title mb15">기업정보</h3>
+						<h3 className="section-title mb15">출연 기업 정보</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
-									<p className="fo-key">법인등록번호</p>
+									<p className="fo-key">기업명</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">법인사업자번호</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'0000-00-0000000'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
+									<p className="fo-key">사업자번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
 									<p className="fo-key">기업명</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+										<div className="sl sl-md w100p">
+											<select>
+												<option>기업명</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">직급</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'과장'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">부서</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'협력팀'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">이메일</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">전화번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} />
 									</div>
 								</div>
 							</div>
