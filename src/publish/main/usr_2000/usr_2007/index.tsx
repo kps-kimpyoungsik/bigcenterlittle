@@ -188,15 +188,55 @@ function ContentsContainer() {
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
-									<p className="fo-key">법인등록번호</p>
+									<p className="fo-key">기업명</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">법인사업자번호</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'0000-00-0000000'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
+									<p className="fo-key">사업자번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
 									<p className="fo-key">기업명</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+										<div className="sl sl-md w100p">
+											<select>
+												<option>기업명</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">직급</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'과장'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">부서</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'협력팀'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">이메일</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">전화번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} />
 									</div>
 								</div>
 							</div>
