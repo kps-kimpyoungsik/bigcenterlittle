@@ -62,7 +62,7 @@ function ContentsContainer() {
 								<p className="fo-key">결재선명</p>
 								<div className="fo-value">
 									<div className="hz-root hz-gap8 w400">
-										<UIInput className={'tf tf-md w100p'} value={'홍길동 > 이순신 > 신채호 > 장보고 > 강감찬'} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md w100p'} value={'홍길동 > 이순신 > 신채호 > 장보고 > 강감찬'} placeholder={''} readOnly={false} />
 										<Button color="pri-o2" size="md">저장</Button>
 									</div>
 								</div>
