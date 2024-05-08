@@ -7,7 +7,7 @@ import {
 	usr1500Page,usr1501Page,usr1502Page,usr1600Page,usr1700Page,usr1800Page,usr1810Page,
 	usr1900Page,usr1901Page,usr1902Page,usr1903Page,usr1904Page,usr1905Page,usr1906Page,usr1908Page,usr1909Page,usr1910Page,
 	usr2000Page,usr2002Page,usr2004Page,usr2006Page,usr2007Page,usr2009Page,usr2011Page,usr2012Page,
-	usr2100Page,usr2101Page,usr2105Page,usr2107Page,usr2108Page,
+	usr2100Page,usr2101Page,usr2105Page,usr2107Page,usr2108Page,usr2114Page,usr2116Page,usr2119Page,
 	usr2300Page,usr2301Page,usr2302Page,usr2303Page,
 	} from '../publish/main/';
 
@@ -237,6 +237,24 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/main/usr_2100/usr_2108',
 		component: usr2108Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2100/usr_2114',
+		component: usr2114Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2100/usr_2116',
+		component: usr2116Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2100/usr_2119',
+		component: usr2119Page,
 		layout: FundLayout,
 		exact: true,
 	},

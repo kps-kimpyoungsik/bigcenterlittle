@@ -1678,6 +1678,7 @@
 }
 .fund-section .tx-msg {
     font-size:13px;
+    line-height: 1;
     color:#666;
 }
 .fund-section .tx-msg.multiline span {
@@ -1966,6 +1967,11 @@
 
 .modal-tskana .fo.fo-col2 .fo-item .fo-key {
     width: 150px;
+}
+.modal-con .tx-msg{
+    font-size:13px;
+    color:#666;
+    line-height: 1;
 }
 
 /*popover*/
