@@ -116,7 +116,7 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3">
 								<p className="fo-key">내용</p>
 								<div className="fo-value">
-									<div className="ta h50">
+									<div className="ta h50 w100p">
 										<textarea  className="ta-ip" placeholder=""></textarea>
 									</div>
 								</div>
