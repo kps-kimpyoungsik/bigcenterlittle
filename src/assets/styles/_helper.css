@@ -90,19 +90,19 @@
     grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
 }
 
-.fc-pri {color: #0D84FF;}
-.fc-sec {color: #EBF6FF;}
-.fc-err {color: #FF404E;}
-.fc-black {color: #000;}
-.fc-white {color: #fff;}
+.fc-pri {color: #0D84FF !important;}
+.fc-sec {color: #EBF6FF !important;}
+.fc-err {color: #FF404E !important;}
+.fc-black {color: #000 !important;}
+.fc-white {color: #fff !important;}
 
-.fc-333 {color: #333;}
-.fc-666 {color: #666;}
-.fc-999 {color: #999;}
+.fc-333 {color: #333 !important;}
+.fc-666 {color: #666 !important;}
+.fc-999 {color: #999 !important;}
 
-.bg-pri {background: #0D84FF;}
-.bg-sec {background: #EBF6FF;}
-.bg-err {background: #FF404E;}
+.bg-pri {background: #0D84FF !important;}
+.bg-sec {background: #EBF6FF !important;}
+.bg-err {background: #FF404E !important;}
 
 .fw100 {font-weight: 100;}
 .fw200 {font-weight: 200;}

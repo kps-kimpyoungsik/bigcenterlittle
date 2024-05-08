@@ -347,7 +347,7 @@ function ContentsContainer() {
 								</tr>
 							</tbody>
 						</table>
-					</div>									
+					</div>
 
 					<h3 className="section-title mb15">출연 기업정보</h3>
 					<form className="fo fo-col2" name="" action="" method="">
