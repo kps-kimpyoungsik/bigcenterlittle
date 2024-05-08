@@ -38,7 +38,6 @@ import {
 	// adm1304Page,
 	adm1305Page,
 	adm1306Page,
-	adm1307Page,
 	adm1308Page,
 	// adm1309Page,
 	// adm1310Page,
@@ -271,11 +270,6 @@ export const routes: Array<PageRouteProps> = [
 		component: adm1306Page,
 		layout: DefaultLayout,
 	},
-	{
-		path: '/admin/adm_1000/adm1307',
-		component: adm1307Page,
-		layout: DefaultLayout,
-	},		
 	{
 		path: '/admin/adm_1000/adm1308',
 		component: adm1308Page,

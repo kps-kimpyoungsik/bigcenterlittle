@@ -5,8 +5,12 @@ import LayoutAside from "../adm_1000Aside";
 import UIDatePicker from "components/datepicker";
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
+import useToggleState from 'components/hooks/useToggleState';
+import ModalPopup from 'components/modal/';
 import { Tooltip } from 'react-tooltip';
 function ContentsContainer() {
+	const modaladm1306p = useToggleState({});
+	const modaladm1307p = useToggleState({});
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -260,6 +264,85 @@ function ContentsContainer() {
 						</div>
 					</form>
 
+					<h3 className="section-title mb15">변경이력</h3>
+					<div className="tb tb-narrow mb30"> 
+						<table>
+							<caption></caption>
+							<colgroup>
+								<col width="200px" />
+								<col width="" />
+								<col width="" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>구분</th>
+									<th>기존</th>
+									<th>변경</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<UIInput className={'tf tf-md w100p ta-center'} value={'지원금액 변경'} placeholder={''} readOnly={true} />
+									</td>
+									<td>
+										<UIInput className={'tf tf-md w100p ta-right'} value={'000,000,000원'} placeholder={''} readOnly={true} />
+									</td>
+									<td>
+										<UIInput className={'tf tf-md w100p ta-right'} value={'000,000,000원'} placeholder={''} readOnly={true} />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<UIInput className={'tf tf-md w100p ta-center'} value={'지원기간 변경'} placeholder={''} readOnly={true} />
+									</td>
+									<td>
+										<UIInput className={'tf tf-md w100p ta-center'} value={'YYYY-MM-DD(Day) ~ YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
+									</td>
+									<td>
+										<UIInput className={'tf tf-md w100p ta-center'} value={'YYYY-MM-DD(Day) ~ YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<UIInput className={'tf tf-md w100p ta-center'} value={'기타 변경 사유'} placeholder={''} readOnly={true} />
+									</td>
+									<td colSpan={2}>
+										<UIInput className={'tf tf-md w100p'} value={'수행기관 추가'} placeholder={''} readOnly={true} />
+									</td>
+								</tr>																
+							</tbody>
+						</table>
+					</div>					
+
+					<div className="tb tb-narrow mb30"> 
+						<table>
+							<caption></caption>
+							<colgroup>
+								<col width="200px" />
+								<col width="" />
+								<col width="" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>구분</th>
+									<th>기존</th>
+									<th>변경</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td colSpan={3}>
+										<div className="nd">
+											<i className="ic"></i>
+											<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
+										</div>
+									</td>
+								</tr>												
+							</tbody>
+						</table>
+					</div>							
+
 					<h3 className="section-title mb15">내부검토사항</h3>
 					<div className="tb tb-narrow mb30"> 
 						<table>
@@ -496,8 +579,66 @@ function ContentsContainer() {
 						<Button color="gray-o" size="sm" >목록</Button>
 					</div>
 
+						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
+						<Button color='gray' size="sm" onClick={modaladm1306p.open}>adm_1306p 열기</Button> <br /><br />
+						<Button color='gray' size="sm" onClick={modaladm1307p.open}>adm_1307p 열기</Button> <br /><br />
+						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}					
+
 				</main>
 			</div>
+			{/* modal - 1306p */}
+			<ModalPopup
+				open={modaladm1306p.isShowing}
+				title="과제 심사 번호 입력"
+				size="sm"
+				onClose={modaladm1306p.close}
+			>
+				<div className="modal-con">
+					<form className="fo fo-col2" name="" action="" method="">
+						<div className="inner">
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">심사번호</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={''} placeholder={'심사번호를 입력하세요'} readOnly={false} />
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+				<div className="modal-bottom">
+					<div className="hz-root hz-gap8">
+						<Button color='gray-o' size="md">취소</Button>
+						<Button color='pri' size="md">저장</Button>
+					</div>
+				</div>	
+			</ModalPopup>
+
+			{/* modal - 1307p */}
+			<ModalPopup
+				open={modaladm1307p.isShowing}
+				title="수정요청"
+				size="sm"
+				onClose={modaladm1307p.close}
+			>
+				<div className="modal-con">
+					<div className="ta h130 w100p mb10">
+						<textarea readOnly className="ta-ip" placeholder="수정의견을 입력하세요"></textarea>
+					</div>
+					<label htmlFor="ch-1" className="hz-item ip-ch-label ip-ch-18">
+						<input id="ch-1" className="ip-ch" type="checkbox" />
+						<span className="check"></span> 
+						<span className="txt">출연기업의 신청자에게 안내메일이 발송됩니다.</span>
+					</label>					
+
+				</div>
+				<div className="modal-bottom">
+					<div className="hz-root hz-gap8">
+						<Button color='gray-o' size="md">취소</Button>
+						<Button color='pri' size="md">저장</Button>
+					</div>
+				</div>	
+			</ModalPopup>						
 		</PageContainer>
 	);
 }

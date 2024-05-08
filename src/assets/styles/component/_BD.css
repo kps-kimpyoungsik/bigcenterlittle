@@ -61,7 +61,7 @@
   line-height: 22px;
   border-radius: 13px;
   font-size: 11px;
-  font-weight:700;    
+  font-weight:600;    
   background: #000;
   color: #fff;
   box-sizing: border-box;
@@ -73,6 +73,7 @@
 .badge.badge-22.yellow {background: #FFBF1C;}
 .badge.badge-22.red {background: #FF424D;}
 .badge.badge-22.gray {background: #999999;}
+.badge.badge-22.skyblue {background: #14B8FA;}
 
 /*24(공지사항 상세페이지)*/
 /*
