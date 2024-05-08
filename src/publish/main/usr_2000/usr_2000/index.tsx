@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
@@ -145,9 +145,11 @@ function ContentsContainer() {
 									<p className="tx-msg"><span className="fc-pri">(일억원 한글금액출력)</span></p> 
 								</div>
 							</div>
-							<div className="tx-msg">
-								<span className="fc-pri">※ 출연신청 후 출연금액을 가상계좌로 입금하시면 출연일자로 확정되며 기부금영수증이 발급됩니다. <br />
-								단 가상계좌로 입금 시 다른 일자로 분할해서 입금하시는 경우 취소 후 다시 신청하셔야 합니다. 이점 주의해 주시기 바랍니다.</span>
+							<div className="tx-msg multiline">
+								<span className="fc-pri">
+									출연신청 후 출연금액을 가상계좌로 입금하시면 출연일자로 확정되며 기부금영수증이 발급됩니다. <br />
+									단 가상계좌로 입금 시 다른 일자로 분할해서 입금하시는 경우 취소 후 다시 신청하셔야 합니다. 이점 주의해 주시기 바랍니다.
+								</span>
 							</div>
 						</form>
 					</section>
@@ -224,10 +226,67 @@ function ContentsContainer() {
 				onClose={modaladm2000.close}
 			>
 				<div className="modal-con">
-					<p style={{padding:"100px 0",textAlign:"center"}}>안내 내용 수급 필요</p>
+					<div className="fww-noti">
+						<section className="mb30">
+							<h3>출연절차</h3>
+							<div className="step">
+								<dl>
+									<dt>01 출연신청</dt>
+									<dd>아래 [출연신청] 버튼 <br/>누른 후 저장 <br/>(출연신청서 첨부 必)</dd>
+								</dl>
+								<dl>
+									<dt>02 상생협력기금출연</dt>
+									<dd>기업별 지정 계좌로<br />출연금 입금</dd>
+								</dl>
+								<dl>
+									<dt>03 출연확인</dt>
+									<dd>재단에서 출연입금내역<br />확인하여 처리</dd>
+								</dl>
+								<dl>
+									<dt>04 기부금영수증 출력</dt>
+									<dd>출연신청번호 <br />클릭하여<br />기부금영수증 출력</dd>
+								</dl>
+							</div>
+							<div className="tx-msg">※ 출연신청 이후 별도 확인 절차는 없으며, 출연상태가 출연상태가 [수납완료]일때 기부금영수증이 발급됩니다. (온라인출력)</div>
+						</section>
+						<section className="mb30">
+							<h3>기금활용사업</h3>
+							<ul className="bz">
+								<li><span>동반성장<br />투자재원</span></li>
+								<li><span>공동투자형<br />기술개발</span></li>
+								<li><span>산업혁신<br />운동</span></li>
+								<li><span>대·중소 상생형<br />스마트공장</span></li>
+								<li><span>대·중소기업<br />혁신파트너</span></li>
+								<li><span>대·중소기업<br />동반진출</span></li>
+								<li><span>기업자율형<br />상생프로그램</span></li>
+								<li><span>성과<br />공유제</span></li>
+								<li><span>협력이익<br />공유제</span></li>
+								<li><span>협력사ESG<br />평가지원</span></li>
+							</ul>
+						</section>
+						<dl className="guide">
+							<dt>유의사항</dt>
+							<dd>
+								<ul className="list-group">
+									<li>
+										출연신청 시 활용사업을 지정하여 출연하여야 하면, 수납처리가 완료된 출연금은 신청 시 지정된 사업으로만 지원할 수 있습니다.<br />
+										<span className="fc-pri">타 사업으로 지원을 원하는 경우 ‘상생협력기금 운영위원회’의 승인을 받아야 출연금 사업간 전용 후 지원 가능합니다.</span>
+									</li>
+									<li>
+										출연금은 「상속세 및 증여세법」 에따라 출연 일자로 부터 3년 이내 지원 되어야 합니다.<br />
+										<span className="fc-pri">3년을 초과하여 출연금 잔액이 남아 있을 경우 증여세가 부과될 수 있습니다.</span>
+									</li>
+									<li>
+										상생협력기금 종합관리시스템 오픈(21.7.21) 이후 출연계좌번호가 가상계좌로 변경되었습니다.<br />
+										<span className="fc-pri">(기존) 기업별, 사업별 실물계좌 → (변경) 기업별 가상계좌 반드시 출연신청서 내 계좌번호를 확인하여 출연해 주시기 바랍니다.</span>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
 				</div>
 				<div className="modal-bottom">
-					<Button color="pri" size="md">확인</Button>
+					<Button color="pri" size="md" onClick={modaladm2000.close}>확인</Button>
 				</div>
 			</ModalPopup>	
 		</PageContainer>
