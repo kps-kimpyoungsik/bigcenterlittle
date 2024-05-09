@@ -36,7 +36,20 @@ function ContentsContainer() {
 										</select>
 									</div>
 								</div>
-							</div>							
+							</div>			
+
+							{/* [M.20240509] 추가 */}
+							<div className="fo-item fo-m-1-3">
+								<div className="fo-key fdc">
+									<span className="req">썸네일</span>
+									<span>(pixel: 000 × 000)</span>
+								</div>
+								<div className="fo-value">
+									
+								</div>
+							</div>													
+							{/* //[M.20240509] 추가 */}
+
 							<div className="fo-item fo-m-1-3  req">
 								<p className="fo-key">내용</p>
 							<div className="fo-value">
