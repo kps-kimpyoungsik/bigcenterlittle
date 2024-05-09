@@ -1964,6 +1964,24 @@
     position: relative;
     left: 3px;
 }
+.tb-narrow tbody th {
+    font-size:14px;
+    font-weight: 500;
+    background-color: #F6FAFF;
+    padding:0 15px;
+    border-bottom:1px solid #e4e4e4;
+}
+.tb-narrow tbody th.bd-r {
+    border-right:1px solid #e4e4e4;
+}
+.tb-narrow tbody th.bd-nb {
+    border-bottom:none;
+}
+.tb-narrow td .fo {
+    border-top:1px solid #e4e4e4;
+    margin-bottom:0;
+}
+
 
 .modal-tskana .fo.fo-col2 .fo-item .fo-key {
     width: 150px;
@@ -1971,7 +1989,6 @@
 .modal-con .tx-msg{
     font-size:13px;
     color:#666;
-    line-height: 1;
 }
 
 /*popover*/
@@ -2063,6 +2080,7 @@
 }
 .tooltip-conts .list-group li {
     padding-left:10px;
+    letter-spacing: -0.4px;
 }
 .tooltip-conts .list-group li::before {
     content:'-';

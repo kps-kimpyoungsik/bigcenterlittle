@@ -12,29 +12,31 @@ import { Tooltip } from "react-tooltip";
 import ModalPopup from 'components/modal/';
 function ContentsContainer() {
 	const sectors1 = [
-		'동반성장 문화확산 - 혁신주도형 동반성장','동반성장 문화확산 - 신용카드 영세가맹점 지원사업','통합출연사업','수·위탁기업간 네트워크형 공동사업','공동투자형 기술개발',
-		'대·중소 상생형 스마트공장','분사기업(스핀오프) 상생협력 사업','대·중소기업 혁신 파트너십','산업혁신운동','지역사회 동반성장 지원사업','동반성장 투자재원',
-		'동반성장 문화확산 - 협력사 ESG 평가지원사업','상생결제제도 운영','성과공유제','기술유출방지시스템','협력이익공유제','상생형 창업·벤처기업 지원사업','대·중소기업 동반진출'
+		'구매조건부신제품개발사업(공동R&D)','대·중소기업 혁신파트너십지원사업','대 중소 상생형 스마트공장','대·중소기업 해외동반진출 지원사업','동반성장몰_복지포인트 지원사업','성과공유제 확산 사업',
+		'상생형 창업·벤처기업 지원사업','민간자율 기획사업','협력사 ESG 지원사업','동반성장 문화확산','동반성장 협력사 PR챌린지','지역사회 동반성장 지원사업','신용카드 영세가맹점 지원사업',
+		'대·중소기업 안전보건 상생협력','기술유출 방지시스템','산업혁신운동','동반성장 복지포인트 지원사업','협력이 익공유제','원가절감 네트워크형 공동사업','상생협력기금조성·운영 관리 경비','기타 오입금(잘못 출연된 기금의 반환과제용)'
 	]
 	const sectors2 = [
-		'대ㆍ중소기업 간 상생협력 성과의 공평한 배분에 관한 사업','대ㆍ중소기업 간 기술협력 촉진 사업','대ㆍ중소기업 간 인력교류 확대 사업','대ㆍ중소기업 간 환경경영협력 촉진사업',
-		'대ㆍ중소기업 간 임금격차 완화 및 일자리 창출 지원사업','상생협력기금의 조성ㆍ운용 및 관리를 위한 경비','중소기업의 생산성 향상을 위한 지원 사업',
-		'중소기업의 기술 보호 지원 사업','중소기업 및 벤처기업의 창원 지원 사업','대ㆍ중소기업의 국내외 판로 확대를 위한 공동 협력 사업','대ㆍ중소기업 간 거래 공정화 지원 사업','대ㆍ중소기업 간 동반성장 기반 구축 및 문화 확산에 관한 사업'
+		'상생협력 성과의 공평한 배분에 관한 사업','기술협력 촉진 사업','인력교류 확대 사업','환경경영협력 촉진사업','임금격차 완화 및 일자리 창출 지원사업','상생협력기금의 조성·운용 및 관리를 위한 경비',
+		'중소기업의 생산성 향상을 위한 지원 사업','중소기업의 기술보호 지원사업','중소기업 및 벤처기업의 창업 지원 사업','국내외 판로확대를 위한 공동협력 사업','동반성장기반 구축 및 문화확산에 관한 사업','기금 사용용도 미지정'
 	]
 	const sectors3 = [
 		'농업, 임업 및 어업','제조업','전기, 가스, 증기 및 수도사업','하수 페기물 처리, 원료재생 및 환경복원업','건설업','도매 및 소매업','운수업','숙박 및 음식점업','출판, 영상, 방송통신 및 정보서비스업',
 		'금융 및 보험업','부동산업 및 임대업','전문, 과학 및 기술 서비스업','사업시설관리 및 사업지원 서비스업','공공행정, 국방 및 사회보장 행정','교육 서비스업','보건업 및 사회복지 서비스업',
 		'예술, 스포츠 및 여가관련 서비스업','협회 및 단체, 수리 및 기타 개인 서비스업','가구 내 고용활동 및 달리 분류되지 않은 자가소비 생산활동','국제 및 외국기관','기타'
 	]
-	const chkeck = [
-		{id:1,tx:'경쟁력강화'},{id:2,tx:'소통활성'},{id:3,tx:'공유가치 창출'},{id:4,tx:'제도활성화'},{id:5,tx:'우수한생산성강화'},
-		{id:6,tx:'경쟁력강화'},{id:7,tx:'소통활성'},{id:8,tx:'공유가치 창출'},{id:9,tx:'제도활성화'},{id:10,tx:'우수한생산성강화'},
-		{id:11,tx:'경쟁력강화'},{id:12,tx:'소통활성'},{id:13,tx:'공유가치 창출'},{id:14,tx:'제도활성화'},{id:15,tx:'우수한생산성강화'}
+
+	const sectors4 = [
+		'공평한 성과배분','인력개발 및 교류','창업ㆍ벤처지원','국내 판로확대','해외 판로확대','생산성 향상','연구개발(R&D기술협력)','기술ㆍ지식재산권 이전','지역경제 활성화','기술보호',
+		'복리후생(양극화해소 포함)','환경경영','안전재해 지원','저출산육아지원','기타 자발적 상생활동','상생협력기금조성 운영 관리 경비','오입금(잘못 출연된 기금의 반환과제용)',
 	]
+
 	const modalusr2102 = useToggleState({});
 	const modalusr2103 = useToggleState({});
 	const modalusr2104 = useToggleState({});
 	const modalusr2105 = useToggleState({});
+	const modalusr2139 = useToggleState({});
+	
 	const handleChange = (e) => {if( e.target.value === 'open') {modalusr2105.open();}}
 	return (
 		<PageContainer>
@@ -54,6 +56,26 @@ function ContentsContainer() {
 						</div>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
+								<div className="fo-item req">
+									<div className="fo-key">출연사업</div>
+									<div className="fo-value">
+										<div className="hz-root hz-gap5 w100p">
+											<UIInput className={'tf tf-md hz-item hz-fg'} value={'사업명'} placeholder={''} />
+											<Button color='gray-o' size="md" onClick={modalusr2139.open}>출연사업선택</Button> 
+										</div>
+									</div>
+								</div>
+								<div className="fo-item req">
+									<div className="fo-key">과제신청 가능금액(원)</div>
+									<div className="fo-value">
+										<div className="hz-root hz-gap5 w100p">
+											<div className="tf-unit hz-item hz-fg">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
+												<span className="u">원</span>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div className="fo-item fo-m-1-3">
 									<div className="fo-key">
 										<span className="req">과제명</span>
@@ -71,12 +93,14 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={''} placeholder={'과제명을 입력하세요'} />
 									</div>
 								</div>
+								{/* 
 								<div className="fo-item req">
 									<p className="fo-key">과제신청일</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''}  readOnly={true}/>
 									</div>
 								</div>
+								v0.89 삭제*/}
 								<div className="fo-item">
 									<div className="fo-key">
 										<span className="req">과제기간</span>
@@ -100,19 +124,6 @@ function ContentsContainer() {
 											<UIDatePicker className="hz-item"/>
 											<span className="hz-item">~</span>
 											<UIDatePicker className="hz-item"/>
-										</div>
-									</div>
-								</div>
-								<div className="fo-item req">
-									<p className="fo-key">사업명</p>
-									<div className="fo-value">
-										<div className="sl sl-md w100p">
-											<select>
-												<option>선택하세요.</option>
-												{sectors1.map((sec, idx) =>
-													<option key={idx}>{sec}</option>
-												)}
-											</select>
 										</div>
 									</div>
 								</div>
@@ -140,18 +151,36 @@ function ContentsContainer() {
 										</div>
 									</div>
 								</div>
+								{/* 
 								<div className="fo-item req">
-									<p className="fo-key">지원분야</p>
+									<p className="fo-key">사업명</p>
 									<div className="fo-value">
 										<div className="sl sl-md w100p">
 											<select>
 												<option>선택하세요.</option>
+												{sectors1.map((sec, idx) =>
+													<option key={idx}>{sec}</option>
+												)}
+											</select>
+										</div>
+									</div>
+								</div>
+								v0.89 삭제 */}
+								<div className="fo-item req">
+									<p className="fo-key">과제분류(대분류)</p>
+									<div className="fo-value">
+										<div className="sl sl-md w100p">
+											<select>
+												<option>선택하세요.</option>
+												{sectors4.map((sec, idx) =>
+													<option key={idx}>{sec}</option>
+												)}
 											</select>
 										</div>
 									</div>
 								</div>
 								<div className="fo-item req">
-									<p className="fo-key">과제분야</p>
+									<p className="fo-key">과제분류(소분류)</p>
 									<div className="fo-value">
 										<div className="sl sl-md w100p">
 											<select>
@@ -176,43 +205,143 @@ function ContentsContainer() {
 								<div className="msg">지원계획 내용과 지원을 통해 기대되는 효과 기입</div>
 							</Tooltip>
 						</div>
-						<form className="fo fo-col2" name="" action="" method="">
-							<div className="inner">
-								<div className="fo-item fo-m-1-3 req">
-									<p className="fo-key">지원내용 입력</p>
-									<div className="fo-value">
-										<div className="ta-group w100p">
-											<textarea rows={3} className="ta-ip" placeholder="지원내용을 입력하세요(입력 제한 없음)"></textarea>
-										</div>
-									</div>
-								</div>
-								<div className="fo-item fo-m-1-3 req">
-									<p className="fo-key">기대효과 입력</p>
-									<div className="fo-value">
-										<div  className="ta-group w100p">
-											<textarea rows={3} className="ta-ip" placeholder="기대효과를 입력하세요(입력 제한 없음)"></textarea>
-										</div>
-									</div>
-								</div>
-								<div className="fo-item fo-m-1-3 req">
-									<p className="fo-key">기대성과 선택</p>
-									<div className="fo-value">
-										<div className="d-block">
-											<div className="chk-group">
-												{chkeck.map((chkeck) => (
-													<div key={chkeck.id} className="chk-items">
-														<input type="checkbox" id={'chk-g-'+chkeck.id} />
-														<label htmlFor={'chk-g-'+chkeck.id}>{chkeck.tx}</label>
+						<form name="" action="" method="" className=" mb30">
+							<div className="tb tb-narrow mb15">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col width="80px" />
+										<col width="120px" />
+										<col />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" colSpan={2}><span className="th-req">과제개요</span></th>
+											<td>
+												<div className="ta-group w100p">
+													<textarea rows={3} className="ta-ip" placeholder="과제에 대한 개요를 입력하세요."/>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" rowSpan={2} className="bd-r bd-nb">기대효과</th>
+											<th scope="row"><span className="th-req">정성</span></th>
+											<td>
+												<div className="fo fo-col2">
+													<div className="inner">
+														<div className="fo-item fo-m-1-3">
+															<p className="fo-key">거래관계 향상</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'거래관계 향상에 대한 의견을 자유롭게 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item fo-m-1-3">
+															<p className="fo-key">협력관계 향상</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'협력관계 향상에 대한 의견을 자유롭게 입력하세요.'} />
+															</div>
+														</div>
 													</div>
-												))}
-											</div>
-											<div className="tx-msg">
-												<span className="fc-pri">※ 과제신청 시 기대되는 성과에 대해서 모두 선택해 주세요(필수선택)</span>
-											</div>
-										</div>
-									</div>
-								</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row"><span className="th-req">정량</span></th>
+											<td>
+												<div className="fo fo-col2">
+													<div className="inner">
+														<div className="fo-item">
+															<p className="fo-key">매출액</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'기대되는 매출액을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">지식재산권</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'지식재산권을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">일자리창출</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'기대되는 일자리창출 수를 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">수출액</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'수출액을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">판로처 확대</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'판로처 확대로 기대되는 내용을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">신규참여 수탁기업 수</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'수탁기업수를 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">신규 투자액</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'신규 투자액을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">신설 창업기업 수</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'창업기업의 수를 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">생산성 향상</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'기대되는 생산성 향상 내용을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">중소기업 체감도</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'중소기업 체감도(%)를 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">예상 구매액</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'예상구매액을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">기타 성과1</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'기타 성과를 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">예상 판매액</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'예상판매액을 입력하세요.'} />
+															</div>
+														</div>
+														<div className="fo-item">
+															<p className="fo-key">기타 성과2</p>
+															<div className="fo-value">
+																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'기타 성과를 입력하세요.'} />
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
+							<div className="tx-msg"><span className="fc-pri">※ 기대효과(정성), 기대효과(정량)에 최소 1개 이상의 항목에 입력해 주세요.</span></div>
 						</form>
 					</section>
 					<section className="fund-section">
@@ -286,8 +415,8 @@ function ContentsContainer() {
 					<section className="fund-section">
 						<div className="hz-root hz-sb mb15">
 							<div className="hz-root hz-gap10 hz-item">
-								<h3 className="section-title">출연 금액</h3>
-								<p className="tx-msg">※ 지원금은 최소 1개 이상을 입력해야 합니다.</p>
+								<h3 className="section-title">지원 항목 별 지원금</h3>
+								<p className="tx-msg"><span className="fc-pri">※ 지원금은 최소 1개 이상을 입력해야 합니다.</span></p>
 							</div>
 							<div className="hz-root hz-gap5">
 								<Button color='pri-o' size="sm">행추가</Button> 
@@ -315,6 +444,7 @@ function ContentsContainer() {
 											<th scope="col">지원항목</th>
 											<th scope="col">산출근거</th>
 											<th scope="col">증빙방법</th>
+											<th scope="col">금액(원)</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -334,6 +464,14 @@ function ContentsContainer() {
 											<td>
 												<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'증빙방법을 입력하세요(입력수제한없음)'} />
 											</td>
+											<td>
+												<div className="hz-root hz-gap5 w100p">
+													<div className="tf-unit hz-item hz-fg">
+														<UIInput className={'tf tf-md ta-right'} value={''} placeholder={'지원금액을 입력하세요(숫자만입력)'} />
+														<span className="u">원</span>
+													</div>
+												</div>
+											</td>
 										</tr>
 									</tbody>
 								</table>
@@ -351,41 +489,55 @@ function ContentsContainer() {
 						</form>
 					</section>
 					<section className="fund-section">
-						<h3 className="section-title mb15">신청 기업 정보</h3>
+						<h3 className="section-title mb15">기업 정보</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
-								<div className="fo-item fo-m-1-3">
-									<p className="fo-key">신청기업</p>
+								<div className="fo-item">
+									<p className="fo-key">기업명</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'기업명출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">부서명</p>
+									<p className="fo-key">법인사업자번호</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'부서명출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'0000-00-0000000'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">사업자번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item req">
 									<p className="fo-key">담당자</p>
 									<div className="fo-value">
-										<div className="sl sl-md w100p">
-											<select>
-												<option>홍길동</option>
-											</select>
-										</div>
+										<UIInput className={'tf tf-md w100p'} value={'홍길동'} placeholder={''}/>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">직급</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'직급 출력'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">부서</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'부서 출력'} placeholder={''} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">이메일</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'이메일출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">전화번호</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'전화번호출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} />
 									</div>
 								</div>
 							</div>
@@ -397,6 +549,78 @@ function ContentsContainer() {
 					</div>
 				</main>
 			</div>
+			{/* modal - 출연사업 선택 */}
+			<ModalPopup
+					open={modalusr2139.isShowing}
+					title="출연사업 선택"
+					size="mid"
+					onClose={modalusr2139.close}
+			>
+				<div className="modal-con">
+					<div className="modal-tskana">
+						<form className="fo fo-col2 mb15" name="" action="" method="">
+							<div className="inner">
+								<div className="fo-item fo-item fo-m-1-3">
+									<p className="fo-key">출연사업</p>
+									<div className="fo-value">
+										<div className="sl sl-md w100p">
+											<select>
+												<option>전체</option>
+												{sectors1.map((sec, idx) =>
+													<option key={idx}>{sec}</option>
+												)}
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<div className="hz-root hz-center mb30">
+							<Button color="pri" size="md">조회</Button>
+						</div>
+						<div className="tb-top">
+							<div>
+								<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
+							</div>
+							<div className="hz-root hz-gap8">
+								<div className="sl sl-sm w120">
+									<select>
+										<option value="0">20개씩보기</option>
+										<option value="0">50개씩보기</option>
+										<option value="0">100개씩보기</option>
+										<option value="0">200개씩보기</option>
+										<option value="0">500개씩보기</option>
+										<option value="0">1000개씩보기</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div className="ibsheet">
+							<p style={{height:"300px"}}>[D] IBSHEET 영역</p>
+						</div>
+						<div className="pg mt10">
+							<div className="group">
+								<button type="button" className="item first">처음</button>
+								<button type="button" className="item prev">이전</button>
+							</div>
+							<div className="group">
+								<button type="button" className="item">1</button>
+								<button type="button" className="item active">2</button>
+								<button type="button" className="item">3</button>
+								<button type="button" className="item">4</button>
+								<button type="button" className="item">5</button>
+								<button type="button" className="item">99</button>
+								<button type="button" className="item">999</button>
+								<button type="button" className="item">9999</button>
+							</div>
+							<div className="group">
+								<button type="button" className="item next">다음</button>
+								<button type="button" className="item last">끝</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ModalPopup>
 			{/* modal - 수행 기관 선택 */}
 			<ModalPopup
 					open={modalusr2105.isShowing}
@@ -513,10 +737,10 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<div className="hz-root hz-center hz-gap8 mt30">
-							<Button color="gray-o" size="md" >조회</Button>
+						<div className="hz-root hz-center hz-gap8 mb30">
+							<Button color="pri" size="md" >조회</Button>
 						</div>
-						<div className="approval-gen mt30">
+						<div className="approval-gen">
 							<div className="approval-gen-member">
 								<h3 className="tx tx-bd1">수행기관목록</h3>
 								<div className="box">
@@ -589,6 +813,9 @@ function ContentsContainer() {
 			>
 				<div className="modal-con">
 					<div className="modal-tskana">
+						<div className="ta-right mb10">
+							<p className="tx-msg"><span className="fc-pri">*</span>&nbsp;필수 입력</p>
+						</div>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item fo-m-1-3 req">
@@ -612,7 +839,9 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">설립일자</p>
 									<div className="fo-value">
-										<UIDatePicker />
+										<div className="w215">
+											<UIDatePicker />
+										</div>
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -656,7 +885,7 @@ function ContentsContainer() {
 									</div>
 								</div>
 								<div className="fo-item req">
-									<p className="fo-key">담당자명명</p>
+									<p className="fo-key">담당자명</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={''} placeholder={'담당자명을 입력하세요.'} />	
 									</div>
@@ -727,7 +956,9 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">설립일자</p>
 									<div className="fo-value">
-										<UIDatePicker />
+										<div className="w215">
+											<UIDatePicker />
+										</div>
 									</div>
 								</div>
 								<div className="fo-item req">
@@ -803,7 +1034,7 @@ function ContentsContainer() {
 							</div>
 						</form>
 						<section className="fund-section mt30">
-							<h3 className="section-title mb15">심사 진행상태</h3>
+							<h3 className="section-title mb15">심사의견</h3>
 							<div className="tb tb-narrow">
 								<table>
 									<caption></caption>
@@ -856,6 +1087,7 @@ function ContentsContainer() {
 					<Button color="pri" size="md">저장</Button>
 				</div>
 			</ModalPopup>
+			
 		</PageContainer>
 	);
 }
