@@ -19,7 +19,7 @@
   position: relative;
   display: flex;
   column-gap: 10px;
-  /* overflow: hidden; */
+  overflow: hidden; /*20240509/ovh 다시 살림. 우측 item마다 있는 회색 막대 보이는 이슈. 왜 지웠었는지 기억이 안남...*/
   min-width: 0;
 }
 .sf .sf-item:after {
@@ -77,4 +77,14 @@
 /*2col*/
 .sf.sf-2col>.inner {
   grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);  
+}
+
+/*제목 전체가 아닌 일부에만 별표들어가야하는 케이스일때.*/
+.fo-key .req::after {
+  content:'*';
+  color:var(--p2);
+  font-size:14px;
+  font-weight:500;
+  position: relative;
+  left:3px;
 }

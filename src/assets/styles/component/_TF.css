@@ -59,7 +59,8 @@ input, button, textarea {
     cursor: not-allowed;
 }
 .tf::placeholder {
-    color: #CCC;
+    /* color: #CCC; */
+    color: #666;
     font-weight: 400;
 }
 
