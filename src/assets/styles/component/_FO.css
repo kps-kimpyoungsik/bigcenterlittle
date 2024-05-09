@@ -46,6 +46,12 @@
     align-items: center;
     justify-content: center;
 }
+
+/*2024.05.09 우수사례 수정 - 썸네일*/
+.fo .fo-item .fo-key.fdc {
+  flex-direction: column;
+}
+
 .fo .fo-item.req>.fo-key:after {
   content: "*";
   display: block;
