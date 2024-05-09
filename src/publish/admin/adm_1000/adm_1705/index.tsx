@@ -27,67 +27,67 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3">
 								<p className="fo-key">제목</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'입력했던 제목이 출력됩니다.'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">지원일시</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD HH:MM:SS'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">모집상태</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'모집중'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">신청기업명</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'수요조사에 지원한 기업명 출력'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">담당자명</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'담당자명'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">직함</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'직함출력'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">휴대폰번호</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'01000000000'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">연락처</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'01000000000'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">이메일주소</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'abcde@gmail.com'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">상생협력기금 사용여부</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'사용'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item">
 								<p className="fo-key">금액(원)</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'$'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 						</div>
@@ -99,19 +99,22 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3">
 								<p className="fo-key">필수서류</p>
 								<div className="fo-value">
-									$
+									<div className="hz-root  hz-gap8 w100p">
+										<UIInput className={'hz-item hz-fg tf tf-md'} value={'$'} placeholder={''} readOnly={true} />	
+										<Button color="gray-o" size="md">미리보기</Button>
+									</div>
 								</div>
 							</div>
 							<div className="fo-item fo-m-1-3">
 								<p className="fo-key">추가서류1</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'$'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 							<div className="fo-item fo-m-1-3">
 								<p className="fo-key">추가서류2</p>
 								<div className="fo-value">
-									$
+									<UIInput className={'tf tf-md w100p'} value={'$'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
 						</div>
