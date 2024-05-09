@@ -1964,24 +1964,23 @@
     position: relative;
     left: 3px;
 }
-.tb-narrow tbody th {
+.fund-section .tb-narrow tbody th {
     font-size:14px;
     font-weight: 500;
     background-color: #F6FAFF;
     padding:0 15px;
     border-bottom:1px solid #e4e4e4;
 }
-.tb-narrow tbody th.bd-r {
+.fund-section .tb-narrow tbody th.bd-r {
     border-right:1px solid #e4e4e4;
 }
-.tb-narrow tbody th.bd-nb {
+.fund-section .tb-narrow tbody th.bd-nb {
     border-bottom:none;
 }
-.tb-narrow td .fo {
+.fund-section .tb-narrow td .fo {
     border-top:1px solid #e4e4e4;
     margin-bottom:0;
 }
-
 
 .modal-tskana .fo.fo-col2 .fo-item .fo-key {
     width: 150px;
@@ -2149,7 +2148,7 @@
 }
 
 /*textarea*/
-.ta-ip {
+.ta-group .ta-ip {
     display: block;
     border:1px solid #ccc;
     border-radius: 3px;
@@ -2159,10 +2158,10 @@
     /* min-height: 70px; */
     resize: vertical;
 }
-.ta-ip::placeholder {
+.ta-group .ta-ip::placeholder {
     color:#ccc;
 }
-.ta-ip:read-only {
+.ta-group .ta-ip:read-only {
     border-color: transparent;
 }
 
