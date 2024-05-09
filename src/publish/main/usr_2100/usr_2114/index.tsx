@@ -68,7 +68,7 @@ function ContentsContainer() {
 									<span className="check"></span> 
 									<span className="txt">전체 동의</span>
 								</label>
-								<p className="tx-msg"><span className="fc-err">(※ 아래 조건을 충족하지 않을 경우, 동반성장 투자재원 지급 신청이 반려될 수 있습니다)</span></p>
+								<p className="tx-msg"><span className="fc-pri">(※ 아래 조건을 충족하지 않을 경우, 동반성장 투자재원 지급 신청이 반려될 수 있습니다)</span></p>
 							</div>
 							<div className="tb tb-narrow">
 								<table data-type="file">

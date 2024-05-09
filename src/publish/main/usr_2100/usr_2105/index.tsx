@@ -7,6 +7,11 @@ import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 import UIDatePicker from "components/datepicker";
 function ContentsContainer() {
+	const sectors1 = [
+		'구매조건부신제품개발사업(공동R&D)','대·중소기업 혁신파트너십지원사업','대 중소 상생형 스마트공장','대·중소기업 해외동반진출 지원사업','동반성장몰_복지포인트 지원사업','성과공유제 확산 사업',
+		'상생형 창업·벤처기업 지원사업','민간자율 기획사업','협력사 ESG 지원사업','동반성장 문화확산','동반성장 협력사 PR챌린지','지역사회 동반성장 지원사업','신용카드 영세가맹점 지원사업',
+		'대·중소기업 안전보건 상생협력','기술유출 방지시스템','산업혁신운동','동반성장 복지포인트 지원사업','협력이 익공유제','원가절감 네트워크형 공동사업','상생협력기금조성·운영 관리 경비','기타 오입금(잘못 출연된 기금의 반환과제용)'
+	]
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -43,7 +48,7 @@ function ContentsContainer() {
 							<div className="sf-item">
 								<p className="sf-key">과제명</p>
 								<div className="sf-value">
-									<UIInput type={'number'} className={'tf tf-md w100p'} value={''} placeholder={'과제신청번호를 입력하세요.'} />
+									<UIInput type={'number'} className={'tf tf-md w100p'} value={''} placeholder={'과제명을 입력하세요.'} />
 								</div>
 							</div>
 							<div className="sf-item">
@@ -51,7 +56,10 @@ function ContentsContainer() {
 								<div className="sf-value">
 									<div className="sl sl-md">
 										<select>
-											<option value="">전체</option>
+											<option>전체</option>
+											{sectors1.map((sec, idx) =>
+												<option key={idx}>{sec}</option>
+											)}
 										</select>
 									</div>
 								</div>
@@ -101,7 +109,14 @@ function ContentsContainer() {
 					</div>
 					<div className="ibsheet">
 						<p style={{height:"200px", background:"#f4f4f4"}}>
-							[D] IBSHEET 영역<br />
+							[D] IBSHEET 영역<br /><br />
+
+							<span className="badge badge-23 blue">신청</span>
+							<span className="badge badge-23 green">접수완료</span>
+							<span className="badge badge-23 yellow">수정요청</span>
+							<span className="badge badge-23 red">반려</span>
+							<span className="badge badge-23 gray">심사완료</span><br /><br />
+
 							<Link to="/main/usr_2100/usr_2107" style={{color:"#333", padding:"5px", textDecoration:"underline"}}>[임시] 상세페이지 이동</Link>
 						</p>
 					</div>
@@ -126,7 +141,7 @@ function ContentsContainer() {
 						</div>
 					</div>
 					<div className="hz-root hz-right hz-gap10 mt30">
-						<Button color="pri" size="md">과제신청</Button>
+						<Button color="pri" size="md" href="/main/usr_2100/usr_2100">과제신청</Button>
 					</div>
 				</main>
 			</div>			

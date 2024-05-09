@@ -117,7 +117,7 @@
 /*병합유형*/
 .fo-rs-tit {
   position: absolute;
-  width: 78px;
+  width: 58px;
   height: 104px;
   background: #F6FAFF;
   z-index: 2;
@@ -134,5 +134,5 @@
 .fo-rs-tit.row5 {top: 212px;}
 .fo-rs-tit.row6 {top: 265px;}
 .fo-item.fo-item-rs .fo-key {
-  padding-left: 95px;
+  padding-left: 75px;
 }
