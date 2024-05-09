@@ -341,6 +341,7 @@
     color:#666;
 }
 
+
 .member-join .fo {
     margin-bottom:50px;
 }
@@ -375,6 +376,7 @@
 }
 .modal-con .tb-search-form.bd {
     border:1px solid #E4E4E4;
+    padding:0;
 }
 .modal-con .tb-search-form .sl {
     min-width:120px;
@@ -1703,6 +1705,10 @@
     display: flex;
     align-items: center;
     flex: 1 1 auto;
+    max-width:calc(100% - 110px)
+}
+.fund-form-items + * {
+    margin-left:auto;
 }
 
 /*안내사항(modal)*/

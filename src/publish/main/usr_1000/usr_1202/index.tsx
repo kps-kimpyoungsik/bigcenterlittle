@@ -114,7 +114,7 @@ function ContentsContainer() {
 								</div>
 								<div className="fo-item fo-m-1-3 req">
 									<p className="fo-key">기업명</p>
-									<div className="fo-value">
+									<div className="fo-value flex-wrap">
 										<div className="hz-root hz-gap8 w565">
 											<UIInput className={'hz-item hz-fg tf tf-md'} value={'(주)신세계동대구복합환승센터'} placeholder={'기업명을 찾기 후 선택하세요'} />
 											<Button color='pri-o' size="md"  onClick={modaladm1202.open}>찾기</Button>

@@ -98,6 +98,7 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'000-00-00000'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
+								{/* 
 								<div className="fo-item fo-m-1-3 req">
 									<p className="fo-key">아이디</p>
 									<div className="fo-value">
@@ -106,6 +107,7 @@ function ContentsContainer() {
 										</div>
 									</div>
 								</div>
+								v0.89삭제 */}
 								<div className="fo-item fo-m-1-3 req">
 									<p className="fo-key">주소</p>
 									<div className="fo-value">
