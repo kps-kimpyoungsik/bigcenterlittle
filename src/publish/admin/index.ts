@@ -52,7 +52,7 @@ export { default as admloginPage } from './adm_login/adm_login';
 //  export { default as adm1413Page } from './adm_1000/adm_1413';
  export { default as adm1500Page } from './adm_1000/adm_1500';
  export { default as adm1501Page } from './adm_1000/adm_1501';
- export { default as adm1502Page } from './adm_1000/adm_1502';
+//  export { default as adm1502Page } from './adm_1000/adm_1502';
 //  export { default as adm1503Page } from './adm_1000/adm_1503';
 //  export { default as adm1504Page } from './adm_1000/adm_1504';
 //  export { default as adm1505Page } from './adm_1000/adm_1505';
@@ -65,7 +65,7 @@ export { default as admloginPage } from './adm_login/adm_login';
  export { default as adm1700Page } from './adm_1000/adm_1700';
  export { default as adm1701Page } from './adm_1000/adm_1701';
  export { default as adm1702Page } from './adm_1000/adm_1702';
- export { default as adm1703Page } from './adm_1000/adm_1703';
+//  export { default as adm1703Page } from './adm_1000/adm_1703';
  export { default as adm1704Page } from './adm_1000/adm_1704';
  export { default as adm1705Page } from './adm_1000/adm_1705';
 

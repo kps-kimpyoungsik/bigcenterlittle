@@ -63,7 +63,7 @@ import {
 	// adm1413Page,
 	adm1500Page,
 	adm1501Page,
-	adm1502Page,
+	// adm1502Page,
 	// adm1503Page,
 	// adm1504Page,
 	// adm1505Page,
@@ -76,7 +76,7 @@ import {
 	adm1700Page,
 	adm1701Page,
 	adm1702Page,
-	adm1703Page,
+	// adm1703Page,
 	adm1704Page,
 	adm1705Page,
 
@@ -342,11 +342,13 @@ export const routes: Array<PageRouteProps> = [
 		component: adm1501Page,
 		layout: DefaultLayout,
 	},					
+	/*
 	{
 		path: '/admin/adm_1000/adm1502',
 		component: adm1502Page,
 		layout: DefaultLayout,
 	},						
+	*/
 	{
 		path: '/admin/adm_1000/adm1600',
 		component: adm1600Page,
@@ -367,11 +369,13 @@ export const routes: Array<PageRouteProps> = [
 		component: adm1702Page,
 		layout: DefaultLayout,
 	},
+	/*
 	{
 		path: '/admin/adm_1000/adm1703',
 		component: adm1703Page,
 		layout: DefaultLayout,
 	},	
+	*/
 	{
 		path: '/admin/adm_1000/adm1704',
 		component: adm1704Page,

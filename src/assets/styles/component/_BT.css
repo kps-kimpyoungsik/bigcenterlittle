@@ -219,7 +219,8 @@ background-image: url(../../img/icon/ic_down_14.svg);
 }
 
 /*Buttons*/
-a.bt {
+a.bt,
+label.bt {
   display: inline-flex;
   align-items: center;
   justify-content: center;
