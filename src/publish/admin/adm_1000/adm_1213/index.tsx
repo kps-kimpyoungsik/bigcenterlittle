@@ -336,7 +336,7 @@ function ContentsContainer() {
 						<br/><br/>
 						<Button color='gray' size="sm" onClick={modaladm1211.open}>1211p</Button> <br/><br/>
 						<Button color='gray' size="sm" onClick={modaladm1214.open}>1214p</Button>
-						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}					
+						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
 
 				</main>
 			</div>

@@ -79,6 +79,7 @@ import {
 	// adm1703Page,
 	adm1704Page,
 	adm1705Page,
+	adm1706Page,
 
 	// 계좌관리 [2000]
 	adm2100Page,
@@ -384,6 +385,11 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/admin/adm_1000/adm1705',
 		component: adm1705Page,
+		layout: DefaultLayout,
+	},	
+	{
+		path: '/admin/adm_1000/adm1706',
+		component: adm1706Page,
 		layout: DefaultLayout,
 	},	
 

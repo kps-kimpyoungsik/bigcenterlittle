@@ -68,6 +68,7 @@ export { default as admloginPage } from './adm_login/adm_login';
 //  export { default as adm1703Page } from './adm_1000/adm_1703';
  export { default as adm1704Page } from './adm_1000/adm_1704';
  export { default as adm1705Page } from './adm_1000/adm_1705';
+ export { default as adm1706Page } from './adm_1000/adm_1706';
 
 export { default as adm2100Page } from './adm_2000/adm_2100';
 export { default as adm2200Page } from './adm_2000/adm_2200';

@@ -20,7 +20,6 @@ function ContentsContainer() {
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">수요조사 모집 내역</h1>
 
-
 					<h3 className="section-title mb15">모집내용</h3>
 					<form className="fo fo-col2 mb30" name="" action="" method="">
 						<div className="inner">
@@ -118,7 +117,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</div>
-					</form>					
+					</form>
 
 				</main>
 			</div>
