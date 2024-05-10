@@ -37,10 +37,10 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3 ">
 								<p className="fo-key">
 									썸네일 <br />
-									(pixel: 000 × 000)
+									(pixel: 353 × 280)  {/* [M] 사이즈값 추가 */}
 								</p>
 								<div className="fo-value fs0">
-									<img className="w125 h90" src="https://picsum.photos/536/354" alt="" onClick={modaladm5322.open} />
+									<img className="w125 h90" src="https://picsum.photos/353/280" alt="" onClick={modaladm5322.open} />
 								</div>
 							</div>		
 							<div className="fo-item fo-m-1-3 ">
@@ -100,7 +100,7 @@ function ContentsContainer() {
 				onClose={modaladm5322.close}
 			>
 				<div className="modal-con">
-					<img className="w100p" src="https://picsum.photos/536/354" alt="" />
+					<img className="w100p" src="https://picsum.photos/353/280" alt="" />
 				</div>
 				<div className="modal-bottom">
 					<Button color='pri' size="big">확인</Button>
