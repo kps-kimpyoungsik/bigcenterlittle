@@ -1,17 +1,22 @@
 import React from 'react';
 export interface UIInputProps {
-	//type?: string;
+	id?: string;
 	value?: any;
 	valueChanged?: (value: any) => void;
 	autoFocus?: boolean;
 	setFocus?: boolean;
+	//full?: boolean;
 	readOnly?: boolean;
 	disabled?: boolean;
+	//className?: string;
 	placeholder?: string;
 	attrs?: React.InputHTMLAttributes<HTMLInputElement>;
 	onKeyEnter?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
+UIInput.defaultProps = {
+	id: "file",
+} as UIInputProps;
 
 function UIInput(props: UIInputProps) {
 	const [inputValue, setInputValue] = React.useState<string>(props.value == null ? "" : props.value);
@@ -25,11 +30,11 @@ function UIInput(props: UIInputProps) {
 				className='tf tf-md' placeholder={props.placeholder}
 				defaultValue={inputValue}
 			/>
-			<label htmlFor="file" className="bt" data-color="pri-o2" data-size="md">파일찾기</label>
+			<label htmlFor={props.id} className="bt" data-color="pri-o2" data-size="md">찾기</label>
 			<input
 				ref={(element) => props.setFocus === true && element?.focus()}
 				type='file'
-				id='file'
+				id={props.id}
 				value={inputValue}
 				readOnly={props.readOnly}
 				disabled={props.disabled}
