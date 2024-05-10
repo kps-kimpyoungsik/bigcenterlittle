@@ -115,7 +115,6 @@ function ContentsContainer() {
 							</div>
 						</div>
 
-						<hr />
 						<div className="ibsheet">[D] IBSHEET 영역</div>					
 
 						<div className="hz-root hz-gap5 mt10">

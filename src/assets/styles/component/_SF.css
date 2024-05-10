@@ -3,7 +3,8 @@
 .sf {
   border-radius: 10px;
   background: #fff;
-  padding: 30px;
+  /* padding: 30px; */
+  padding: 15px 30px;
   border: 1px solid #e4e4e4;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -11,7 +12,8 @@
 .sf>.inner {
   display: grid;
   grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);  
-  gap: 20px 60px;
+  /* gap: 20px 60px; */
+  gap: 15px 60px;
   min-height: 0;
   min-width: 0;
 }
@@ -47,6 +49,7 @@
   width: 95px;
 
   margin-top: 10px;
+  /* margin-top: 7px; */
   font-size: 14px;
   font-weight: 500;
   flex-shrink: 0;
