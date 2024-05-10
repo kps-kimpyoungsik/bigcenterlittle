@@ -113,9 +113,7 @@ input, button, textarea {
 }
 
 /*datepicker*/
-.datepicker  {
-  /* max-width:150px; */
-}
+
 .datepicker .react-datepicker-wrapper{
   display: inline-flex;
   align-items: center;
@@ -201,10 +199,8 @@ input, button, textarea {
 }
 .filebox .tf {
 flex-grow: 1;
+max-width:calc(100% - 120px);
 }	
-.filebox label {
-
-}
 .filebox input[type="file"] {
 position: absolute;
 width: 0;

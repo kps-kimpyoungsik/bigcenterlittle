@@ -31,6 +31,7 @@ function UIInput(props: UIInputProps) {
 				defaultValue={inputValue}
 			/>
 			<label htmlFor={props.id} className="bt" data-color="pri-o2" data-size="md">찾기</label>
+			{inputValue && <button type="button" className='bt' data-color="gray-o" data-size="md" onClick={() => {setInputValue('');}}>삭제</button>}
 			<input
 				ref={(element) => props.setFocus === true && element?.focus()}
 				type='file'
