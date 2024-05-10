@@ -5,6 +5,7 @@ import LayoutAside from "../adm_1000Aside";
 import UIDatePicker from "components/datepicker";
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
+import UIInputFile from 'components/input/inputFile';
 function ContentsContainer() {	
 	return (		
 		<PageContainer>
@@ -59,15 +60,14 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3 req">
 								<p className="fo-key">썸네일이미지</p>
 								<div className="fo-value">
-									
-									{/* TypeFile */}
+									<UIInputFile placeholder={'이미지 파일을 첨부해 주세요(jpg, gif, png 파일)'} />
+									{/* TypeFile 
 									<div className="filebox w100p">
 										<UIInput className={'tf tf-md'} value={''} placeholder={'이미지 파일을 첨부해 주세요(jpg, gif, png 파일)'} readOnly={false} />
-										{/* <Button color="gray-o" size="md" >삭제</Button> */}
 										<label htmlFor="file" className="bt" data-color="pri-o2" data-size="md">파일찾기</label>
 										<input type="file" id="file" />
 									</div>
-									{/* //TypeFile */}
+									*/}
 
 								</div>
 							</div>

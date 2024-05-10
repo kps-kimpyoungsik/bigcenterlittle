@@ -5,18 +5,13 @@ export interface UIInputProps {
 	valueChanged?: (value: any) => void;
 	autoFocus?: boolean;
 	setFocus?: boolean;
-	full?: boolean;
 	readOnly?: boolean;
 	disabled?: boolean;
-	className?: string;
 	placeholder?: string;
 	attrs?: React.InputHTMLAttributes<HTMLInputElement>;
 	onKeyEnter?: (event: React.KeyboardEvent<HTMLInputElement>) => void;
 }
 
-// UIInput.defaultProps = {
-// 	type: "text",
-// } as UIInputProps;
 
 function UIInput(props: UIInputProps) {
 	const [inputValue, setInputValue] = React.useState<string>(props.value == null ? "" : props.value);
@@ -25,13 +20,17 @@ function UIInput(props: UIInputProps) {
 		setInputValue(props.value == null ? "" : props.value);
 	}, [props.value]);
 	return (
-		<div>
+		<div className='filebox w100p'>
+			<input type='text' 
+				className='tf tf-md' placeholder={props.placeholder}
+				defaultValue={inputValue}
+			/>
+			<label htmlFor="file" className="bt" data-color="pri-o2" data-size="md">파일찾기</label>
 			<input
 				ref={(element) => props.setFocus === true && element?.focus()}
 				type='file'
+				id='file'
 				value={inputValue}
-				className={props.className}
-				placeholder={props.placeholder}
 				readOnly={props.readOnly}
 				disabled={props.disabled}
 				{...attrs}
@@ -42,13 +41,7 @@ function UIInput(props: UIInputProps) {
 					}
 					props.valueChanged(String(event.target.value));
 				}}
-				onKeyUp={(event: React.KeyboardEvent<HTMLInputElement>): void => {
-					if (props.onKeyEnter != null && event.key === "Enter") {
-					props.onKeyEnter(event);
-					}
-				}}
 			/>
-			<button type='button'></button>
 		</div>
 	);
 }
