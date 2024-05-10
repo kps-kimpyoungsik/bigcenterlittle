@@ -200,7 +200,7 @@ function ContentsContainer() {
 											</td>
 										</tr>
 										<tr>
-											<th scope="row" rowSpan={2} className="bd-r bd-nb">기대효과</th>
+											<th scope="row" rowSpan={2} className="bd-r bd-nb">기대<br />효과</th>
 											<th scope="row"><span className="th-req">정성</span></th>
 											<td>
 												<div className="fo fo-col2">
