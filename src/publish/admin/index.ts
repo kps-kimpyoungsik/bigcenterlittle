@@ -2,8 +2,8 @@ export { default as adm0000Page } from './adm_4000/adm_0000';
 export { default as admIndexPage } from './adm_index';
 export { default as admMainPage } from './adm_main';
 export { default as admAlertPage } from './adm_alert';
-// export { default as admloginPage } from './adm_login/adm_login';
 export { default as admloginPage } from './adm_login/adm_login';
+export { default as admmypagePage } from './adm_mypage/adm_mypage';
 
  export { default as adm1100Page } from './adm_1000/adm_1100';
 //  export { default as adm1101Page } from './adm_1000/adm_1101';

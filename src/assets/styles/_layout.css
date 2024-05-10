@@ -310,7 +310,8 @@
     flex-basis: auto;
     width: 265px;
     /* border-right: 1px solid #e3e3e3; */
-    padding: 55px 15px; 
+    /* padding: 55px 15px;  */
+    padding: 35px 15px; 
     box-sizing: border-box;
     background: #fff;
 }

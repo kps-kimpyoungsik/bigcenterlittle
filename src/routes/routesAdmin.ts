@@ -14,6 +14,9 @@ import {
 	// 로그인 [login]
 	admloginPage,
 
+	// 마이페이지[mypage]
+	admmypagePage,
+
 	// 기금관리 [1000]
 	adm1100Page,
 	// adm1101Page,
@@ -198,7 +201,13 @@ export const routes: Array<PageRouteProps> = [
 		component: admloginPage,
 		layout: LoginLayout,
 	},
-
+	// 마이페이지 [mypage]
+	{
+		// path: '/admin/adm_mypage/admmypage',
+		path: '/admin/adm_mypage',
+		component: admmypagePage,
+		layout: DefaultLayout,
+	},
 	// 기금관리 [1000]
 	{
 		path: '/admin/adm_1000/adm1100',
