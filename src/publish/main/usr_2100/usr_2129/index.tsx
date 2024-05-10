@@ -1,4 +1,3 @@
-
 import React from "react";
 //import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
@@ -6,32 +5,35 @@ import LayoutAside from "../user2100Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
+import { Tooltip } from "react-tooltip";
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
-import { Tooltip } from "react-tooltip";
 function ContentsContainer() {
-	const modaladm2121 = useToggleState({});
-	const modaladm2122 = useToggleState({});
+	const modalusr2120 = useToggleState({});
+	const modalusr2122 = useToggleState({});
 	return (
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<Breadcrumb gnbIdx={2} lnbIdx={2}/>
+				<Breadcrumb gnbIdx={2} lnbIdx={3}/>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">지급 등록</h1>
-					<div className="hz-root hz-right hz-gap10 mb30">
+					<h1 className="tx tx-hd2">지급 내용 수정</h1>
+					<div className="hz-root hz-right hz-gap10">
+						<Button color="gray-o" size="md">삭제</Button>
 						<Button color="gray-o" size="md">취소</Button>
 						<Button color="pri" size="md">저장</Button>
-						<Button color="gray-o" size="md" href="/main/usr_2100/usr_2114">목록</Button>
 					</div>
 					<section className="fund-section">
-						<div className="hz-root hz-gap10 hz-sb mb15">
-							<h3 className="section-title">지급 신청 정보 확인</h3>
-							<p className="tx-msg"><span className="fc-pri">*</span>&nbsp;필수 입력</p>
-						</div>
+						<h3 className="section-title mb15">신청 기본 정보</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
-								<div className="fo-item fo-m-1-3 req">
+								<div className="fo-item">
+									<p className="fo-key">지급신청번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'Y-00-00000'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
 									<p className="fo-key">지급신청일</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
@@ -41,138 +43,15 @@ function ContentsContainer() {
 						</form>
 					</section>
 					<section className="fund-section">
-						<h3 className="section-title mb15">과제 정보</h3>
-						<form className="fo fo-col2" name="" action="" method="">
-							<div className="inner">
-								<div className="fo-item fo-m-1-3">
-									<div className="fo-key">
-										<span>과제명</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip1">도움말</button>
-										<Tooltip 
-											id="tooltip1"  
-											disableStyleInjection={true}
-											place={"bottom-start"}
-											className="tooltip-conts"
-										>
-											<div className="msg">출연기업의 지원과제계획 제목을 작성(연도 구분 있을 시 연도 표시)</div>
-										</Tooltip>
-									</div>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'과제명이 출력됩니다.'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item fo-m-1-3">
-									<div className="fo-key">
-										<span>과제신청번호</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip2">도움말</button>
-										<Tooltip 
-											id="tooltip2"  
-											disableStyleInjection={true}
-											place={"bottom-start"}
-											className="tooltip-conts"
-										>
-											<div className="msg">tooltip...</div>
-										</Tooltip>
-									</div>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'T-00-00000'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item fo-m-1-3">
-									<div className="fo-key">
-										<span>과제기간</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip3">도움말</button>
-										<Tooltip 
-											id="tooltip3"  
-											disableStyleInjection={true}
-											place={"bottom-start"}
-											className="tooltip-conts"
-										>
-											<div className="msg">
-												<h6 className="tooltip-title">과제 운영기간(최대 1년), 사업기갑 변경 시 과제변경 신청 필수</h6>
-												<span className="fc-pri">(사업기간 내 사업 운영 및 비용 집행)</span> <br />
-												모든 제출 증빙자료의 발행일자가 고제 기간 내에 포함될 수 있도록 설정 바랍니다.<br />ex) 견적서, 세금계선서, 이체확인증 등<br />
-												<p className="mt5">※ 해당연도 지급 요청 마감은 매년 11월 30일 18:00까지이며 이후 당해연도 내 추가 지급신청 불가.</p>
-											</div>
-										</Tooltip>
-									</div>
-									<div className="fo-value">
-										<div className="hz-root hz-left hz-gap5">
-											<UIInput className={'w280 hz-fg tf tf-md'} value={'YYYY-MM-DD(Day) ~ YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
-											<div className="hz-item tx-msg">(MM월DD일)</div>
-										</div>
-									</div>
-								</div>
-								<div className="fo-item">
-									<p className="fo-key">사업분류</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'[출연사업에서 선택한 분야 출력]'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item">
-									<div className="fo-key">
-										<span>기금사용용도</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip4">도움말</button>
-										<Tooltip 
-											id="tooltip4"  
-											disableStyleInjection={true}
-											place={"bottom-start"}
-											className="tooltip-conts"
-										>
-											<div className="msg">[참고] 상생협력기금 사용용도 분류표’를 참조하여 해당하는 번호를 기입</div>
-										</Tooltip>
-									</div>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'[중소기업의 생산성 향상을 위한 지원 사업]'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								
-								<div className="fo-item">
-									<p className="fo-key">과제분야(대분류)</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'[과제분야에서 선택한 분야 출력]'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item">
-									<p className="fo-key">과제분야(소분류)</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'[과제분야에서 선택한 분야 출력]'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item fo-m-1-3">
-									<div className="fo-key">
-										<span>수행기관</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip5">도움말</button>
-										<Tooltip 
-											id="tooltip5"  
-											disableStyleInjection={true}
-											place={"bottom-start"}
-											className="tooltip-conts"
-										>
-											<div className="msg">
-												효율적인 사업수행을 위하여 출연기업이 선정한 대행기관(기업)을 의미하며,<br />
-												협력재단이 수행기관에게 직접 지급하는 경우에만 사업자등록증의 상호명을 기입<br />
-												(수행기관 변경 및 추가 시 사업변경 신청 필수)
-											</div>
-										</Tooltip>
-									</div>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'[수행기관명] [수행기관명] [수행기관명] [수행기관명]'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-							</div>
-						</form>
-					</section>
-					<section className="fund-section">
-						<h3 className="section-title mb15">지원금 지급 방식</h3>
+						<h3 className="section-title hz-item mb15">지원금 지급 방식</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
 									<div className="fo-key">
 										<span>지원금 지급방식</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip6">도움말</button>
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip9">도움말</button>
 										<Tooltip 
-											id="tooltip6"  
+											id="tooltip9"  
 											disableStyleInjection={true}
 											place={"bottom-start"}
 											className="tooltip-conts"
@@ -203,7 +82,21 @@ function ContentsContainer() {
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">총 지급신청금액</p>
+									<div className="fo-key">
+										<span>총 지급신청금액</span>
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip8">도움말</button>
+										<Tooltip 
+											id="tooltip8"  
+											disableStyleInjection={true}
+											place={"bottom-start"}
+											className="tooltip-conts"
+										>
+											<div className="msg">
+												지원(중소)기업을 직·간접적으로 지원하는 전체 금액<br />
+												(수행기관에 지급하는 경우, 수행기관에 지급되는 금액 포함)
+											</div>
+										</Tooltip>
+									</div>
 									<div className="fo-value">
 										<div className="hz-root hz-gap5 w100p">
 											<div className="tf-unit hz-item hz-fg">
@@ -221,8 +114,8 @@ function ContentsContainer() {
 						<div className="hz-root hz-sb mb15">
 							<h3 className="section-title hz-item">지원금 지원 기업</h3>
 							<div className="hz-root hz-gap8">
-								<Button color='gray-o' size="sm" onClick={modaladm2122.open}>수행기업 목록 수정</Button> 
-								<Button color='gray-o' size="sm" onClick={modaladm2121.open}>지원기업 목록 수정</Button> 
+								<Button color='gray-o' size="sm" onClick={modalusr2122.open}>수행기업 목록 수정</Button> 
+								<Button color='gray-o' size="sm" onClick={modalusr2120.open}>지원기업 목록 수정</Button> 
 							</div>
 						</div>
 						<form className="fo fo-col2" name="" action="" method="">
@@ -230,9 +123,9 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<div className="fo-key">
 										<span>지원기업수</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip7">도움말</button>
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip10">도움말</button>
 										<Tooltip 
-											id="tooltip7"  
+											id="tooltip10"  
 											disableStyleInjection={true}
 											place={"bottom-start"}
 											className="tooltip-conts"
@@ -241,8 +134,8 @@ function ContentsContainer() {
 										</Tooltip>
 									</div>
 									<div className="fo-value">
-										<div className="hz-root hz-gap5 ">
-											<UIInput className={'tf tf-md ta-right hz-item hz-fg'} value={'0'} placeholder={''} readOnly={true}/>	
+										<div className="hz-root hz-gap5">
+											<UIInput className={'tf tf-md ta-right w100p'} value={'2'} placeholder={''} readOnly={true} />	
 											<p className="tx-msg hz-item">개사</p>
 										</div>
 									</div>
@@ -250,9 +143,9 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<div className="fo-key">
 										<span>중소기업 지원금액</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip8">도움말</button>
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip12">도움말</button>
 										<Tooltip 
-											id="tooltip8"  
+											id="tooltip12"  
 											disableStyleInjection={true}
 											place={"bottom-start"}
 											className="tooltip-conts"
@@ -273,9 +166,9 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<div className="fo-key">
 										<span>수행기관 수</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip9">도움말</button>
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip11">도움말</button>
 										<Tooltip 
-											id="tooltip9"  
+											id="tooltip11"  
 											disableStyleInjection={true}
 											place={"bottom-start"}
 											className="tooltip-conts"
@@ -285,7 +178,7 @@ function ContentsContainer() {
 									</div>
 									<div className="fo-value">
 										<div className="hz-root hz-gap5">
-											<UIInput className={'tf tf-md ta-right hz-item hz-fg'} value={'0'} placeholder={''} readOnly={true}/>	
+											<UIInput className={'tf tf-md ta-right w100p'} value={'2'} placeholder={''} readOnly={true} />	
 											<p className="tx-msg hz-item">개사</p>
 										</div>
 									</div>
@@ -293,9 +186,9 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<div className="fo-key">
 										<span>수행기관 지급금액</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip10">도움말</button>
+										<button type="button" className="button-tooltip" data-tooltip-id="tooltip13">도움말</button>
 										<Tooltip 
-											id="tooltip10"  
+											id="tooltip13"  
 											disableStyleInjection={true}
 											place={"bottom-start"}
 											className="tooltip-conts"
@@ -313,36 +206,77 @@ function ContentsContainer() {
 										</div>
 									</div>
 								</div>
-								{/* 
-								<div className="fo-item fo-m-1-3">
-									<div className="fo-key">
-										<span>총 지원금액</span>
-										<button type="button" className="button-tooltip" data-tooltip-id="tooltip11">도움말</button>
-										<Tooltip 
-											id="tooltip11"  
-											disableStyleInjection={true}
-											place={"bottom-start"}
-											className="tooltip-conts"
-										>
-											<div className="msg">
-												지원(중소)기업을 직·간접적으로 지원하는 전체 금액<br />
-												(수행기관에 지급하는 경우, 수행기관에 지급되는 금액 포함)
-											</div>
-										</Tooltip>
-									</div>
-									<div className="fo-value">
-										<div className="hz-root hz-gap5 w100p">
-											<div className="tf-unit hz-item hz-fg">
-												<UIInput className={'tf tf-md  ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
-												<span className="u">원</span>
-											</div>
-											<div className="hz-item tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></div>
-										</div>										
-									</div>
-								</div>
-								v0.89 삭제 */}
 							</div>
 						</form>
+					</section>
+					<section className="fund-section">
+						<div className="hz-root hz-sb mb15">
+							<div className="hz-root hz-gap5">
+								<h3 className="section-title">첨부파일</h3>
+								<button type="button" className="button-tooltip" data-tooltip-id="tooltip7">도움말</button>
+								<Tooltip 
+									id="tooltip7"  
+									disableStyleInjection={true}
+									place={"bottom-start"}
+									className="tooltip-conts"
+								>
+									<div className="msg">
+										<h6 className="tooltip-title">과제 신청 시 첨부 서류</h6>
+										<ul>
+											<li>1. 운영규정 별지 제2호 동반성장 투자재원 과제신청서(과제요약서 포함)
+												<ul className="list-group">
+													<li>서면 : 지급신청서(서면) 클릭하여 지급신청서 출력 후 직인을 찍고 스캔하여 첨부문서에 등록하셔야 합니다.</li>
+													<li>전자인증 : 기업용 공인인증서를 이용하여 지급신청서(전자인증) 을 클릭하여 인증이 완료 되면 됩니다. <br />별도 첨부 문서는 없습니다.</li>
+												</ul>
+											</li>
+											<li>2. 세부사업계획서(완료심사의 경우, 사업완료보고서)</li>
+											<li>3. 수행기관 사업자등록증(해당시)</li>
+											<li>4. 기타 심사에 필요하다고 판단되는 경우, 추가 서류를 요청 드릴 수 있습니다.</li>
+										</ul>
+									</div>
+								</Tooltip>
+							</div>
+							<Button color='gray-o' size="sm">첨부파일수정</Button> 
+						</div>
+						<form className="fo fo-col2" name="" action="" method="">
+							<div className="inner">
+								<div className="fo-item fo-m-1-3 req">
+									<p className="fo-key">지급 신청서</p>
+									<div className="fo-value">
+										<div className="fund-form-group">
+											<div className="fund-form-items">
+												<div className="hz-root hz-gap5 w100p mr30">
+													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={'파일을 첨부해 주세요.'} />
+													<div className="hz-root hz-gap5 w120 ">
+														<Button color='pri-o2' size="md">찾기</Button>
+													</div>
+												</div>
+											</div>
+											<Button color='gray-o' size="md">양식 다운로드</Button>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item fo-m-1-3 req">
+									<p className="fo-key">선지급 요청서(선지급시만)</p>
+									<div className="fo-value">
+										<div className="fund-form-group">
+											<div className="fund-form-items">
+												<div className="hz-root hz-gap5 w100p mr30">
+													<UIInput className={'tf tf-md hz-item grow'} value={'파일명.확장자(0,000kb)'} placeholder={'파일을 첨부해 주세요.'} />
+													<div className="hz-root hz-gap5 w120 ">
+														<Button color='pri-o2' size="md">찾기</Button>
+														<Button color='gray-o' size="md">삭제</Button>
+													</div>
+												</div>
+											</div>
+											<Button color='gray-o' size="md">양식 다운로드</Button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<p className="tx-msg mb15"><span className="fc-pri">※ 항목 외 기타 파일들은 파일 첨부를 이용해 주세요.</span></p>
+						<div>file upload...</div>
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">기업 정보</h3>
@@ -369,49 +303,49 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">담당자</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'홍길동'} placeholder={''}/>
+										<UIInput className={'tf tf-md w100p'} value={'홍길동'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">직급</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'직급 출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'직급 출력'} placeholder={''} readOnly={true}  />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">부서</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'부서 출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'부서 출력'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">이메일</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">전화번호</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} readOnly={true}  />
 									</div>
 								</div>
 							</div>
 						</form>
 					</section>
 					<div className="hz-root hz-right hz-gap10 mt30">
+						<Button color="gray-o" size="md">삭제</Button>
 						<Button color="gray-o" size="md">취소</Button>
 						<Button color="pri" size="md">저장</Button>
-						<Button color="gray-o" size="md" href="/main/usr_2100/usr_2114">목록</Button>
 					</div>
 				</main>
 			</div>
-			{/* modal - 지원기업 목록 수정 */}
+			{/* modal - 지원 기업 목록 */}
 			<ModalPopup
-				open={modaladm2121.isShowing}
-				title="지원기업 목록 수정"
+				open={modalusr2120.isShowing}
+				title="지원 기업 목록"
 				size="mid"
-				onClose={modaladm2121.close}
+				onClose={modalusr2120.close}
 			>
 				<div className="modal-con">
 					<div className="hz-root hz-right hz-gap10 mb15">
@@ -457,13 +391,13 @@ function ContentsContainer() {
 					<Button color="gray-o" size="md">취소</Button>
 					<Button color="pri" size="md">저장</Button>
 				</div>
-			</ModalPopup>
-			{/* modal - 수행 기관 목록 수정 */}
+			</ModalPopup>	
+			{/* modal - 수행 기업 목록 */}
 			<ModalPopup
-				open={modaladm2122.isShowing}
-				title="수행 기관 목록 수정"
+				open={modalusr2122.isShowing}
+				title="수행 기업 목록"
 				size="mid"
-				onClose={modaladm2122.close}
+				onClose={modalusr2122.close}
 			>
 				<div className="modal-con">
 					<div className="hz-root hz-right hz-gap10 mb15">
@@ -504,12 +438,12 @@ function ContentsContainer() {
 						<p style={{height:"300px"}}>[D] IBSHEET 영역</p>
 					</div>
 					<p className="tx-msg mt10">※ [지원기업 목록]의 지원금액합계와 [수행금액 목록]의 지급금액합계가 일치하도록 작성하여 주시기 바랍니다.</p>
-				</div> 
+				</div>
 				<div className="modal-bottom">
 					<Button color="gray-o" size="md">취소</Button>
 					<Button color="pri" size="md">저장</Button>
 				</div>
-			</ModalPopup>
+			</ModalPopup>	
 		</PageContainer>
 	);
 }

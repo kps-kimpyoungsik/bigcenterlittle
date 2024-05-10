@@ -1693,6 +1693,14 @@
     margin-left:-14px;
 }
 
+.fund-section .col-group {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.fund-section .col-group .col-2 {
+    width:50%;
+}
 
 .fund-form-group {
     display: flex;
