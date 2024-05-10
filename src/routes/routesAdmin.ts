@@ -159,6 +159,10 @@ import {
 	adm7100Page,
 	adm7101Page,
 
+	// 보고서 [8000]
+	adm8100Page,
+	adm8200Page,
+
 } from '../publish/admin/';
 
 export type PageRouteProps = {
@@ -732,6 +736,18 @@ export const routes: Array<PageRouteProps> = [
 {
 	path: '/admin/adm_7000/adm7101',
 	component: adm7101Page,
+	layout: DefaultLayout,
+},
+
+//보고서 [8000]
+{
+	path: '/admin/adm_8000/adm8100',
+	component: adm8100Page,
+	layout: DefaultLayout,
+},
+{
+	path: '/admin/adm_8000/adm8200',
+	component: adm8200Page,
 	layout: DefaultLayout,
 },
 

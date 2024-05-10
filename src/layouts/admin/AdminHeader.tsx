@@ -79,6 +79,14 @@ const global = {
 				{s_id:3, sceenid:"7101", name : "결재함 상세" },
 			]
 		},
+		{
+			name:"보고서",
+			path:"adm_8000/adm8100",
+			sub:[
+				{s_id:1, sceenid:"8100", name : "누적 현황통계" },
+				{s_id:2, sceenid:"8200", name : "연도별 현황통계" },
+			]
+		},
 	],
 	content: {
 		sub1: [
@@ -250,6 +258,18 @@ const global = {
 				path : "/admin/adm_7000/adm7101"
 			},
 		],
+		sub8: [
+			{
+				g_id:1,
+				name : "누적 현황통계",
+				path : "/admin/adm_8000/adm8100"
+			},
+			{
+				g_id:2,
+				name : "연도별 현황통계",
+				path : "/admin/adm_8000/adm8200"
+			},
+		],
 	}
 };
 function LayoutHeader() {
@@ -306,9 +326,9 @@ function LayoutHeader() {
 									</ul>
 								</li>
 							))}
-							<li className={location.pathname.includes('adm_8') ? 'd1 active' : 'd1'}>
+							{/* <li className={location.pathname.includes('adm_8') ? 'd1 active' : 'd1'}>
 								<NavLink to="#">보고서</NavLink>
-							</li>
+							</li> */}
 						</ul>
 					</nav>
 				</div>

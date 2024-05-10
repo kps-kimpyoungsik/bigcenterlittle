@@ -142,6 +142,9 @@ export { default as adm7000Page } from './adm_7000/adm_7000';
 export { default as adm7100Page } from './adm_7000/adm_7100';
 export { default as adm7101Page } from './adm_7000/adm_7101';
 
+export { default as adm8100Page } from './adm_8000/adm_8100';
+export { default as adm8200Page } from './adm_8000/adm_8200';
+
 
 
 //export { default as Popups } from './Popups';
