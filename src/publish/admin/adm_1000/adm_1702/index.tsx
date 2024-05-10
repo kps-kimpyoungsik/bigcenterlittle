@@ -58,9 +58,13 @@ function ContentsContainer() {
 					<form className="fo fo-col2 mb30" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item fo-m-1-3 req">
-								<p className="fo-key">썸네일이미지</p>
+								 
 								<div className="fo-value">
-									<UIInputFile placeholder={'이미지 파일을 첨부해 주세요(jpg, gif, png 파일)'} />
+									<div className="hz-root hz-gap8 w100p">
+										<UIInputFile placeholder={'이미지 파일을 첨부해 주세요(jpg, gif, png 파일)'} id={'file01'} />
+										<Button color="gray-o" size="md">삭제</Button>
+									</div>
+
 									{/* TypeFile 
 									<div className="filebox w100p">
 										<UIInput className={'tf tf-md'} value={''} placeholder={'이미지 파일을 첨부해 주세요(jpg, gif, png 파일)'} readOnly={false} />
