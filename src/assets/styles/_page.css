@@ -83,6 +83,132 @@
     color: #666;
 }
 
+/*메인대시보드*/
+.adm-dash {
+    width: 100%;
+    background: #EFF2F6;
+    padding: 0px 40px 40px 40px;
+}
+.adm-dash .adm-dash-section {
+    border: 1px solid red;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.adm-dash .adm-dash-section .tit-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.adm-dash .adm-dash-section .tit {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.adm-dash .adm-dash-section.adm-dash-section-01 .main-list>li {
+    position: relative;
+    border: 1px solid blue;
+    height: 120px;
+}
+.adm-dash .adm-dash-section.adm-dash-section-01 .main-list>li>a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: pink;
+}
+.adm-dash .adm-dash-section.adm-dash-section-01 .main-list>li .tit-d2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.adm-dash .adm-dash-section.adm-dash-section-01 .main-list>li .value {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 ,
+.adm-dash .adm-dash-section.adm-dash-section-03 {
+    padding: 25px 30px;
+    border-radius: 8px;
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
+    gap: 25px 20px;
+    /* padding: 0px 30px 30px 30px;     */
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li {
+    position: relative;
+    height: 140px;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    /* padding: 26px; */
+    overflow: hidden;
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li.tot ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li.tot {
+    border-color: #CADFFA;
+    background: #EDF4FF;
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li>a ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li>a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background: pink; */
+    /* border: 1px solid red; */
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li .tit-d2 ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li .tit-d2 {
+    position: absolute;
+    top: 26px;
+    left: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+}
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li .tit-d2:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -15px;
+    content: "";
+    display: block;
+    width:  6px;
+    height:  12px;
+    background: red;
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li.tot .tit-d2 ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li.tot .tit-d2 {
+    color: #297BF2;
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li .value ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li .value {
+    position: absolute;
+    bottom: 26px;
+    right: 26px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;    
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li.tot .value ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li.tot .value {
+    color: #297BF2;
+}
+.adm-dash .adm-dash-section.adm-dash-section-02 .main-list>li .value>em ,
+.adm-dash .adm-dash-section.adm-dash-section-03 .main-list>li .value>em {
+    font-weight: 600;
+}
+.adm-dash .adm-dash-section.adm-dash-section-04 {
+    padding: 25px 30px; 
+    border-radius: 8px;
+}
+
+
 /*adm_1701*/
 .info-bottom {
     margin-top: 10px;
@@ -90,7 +216,7 @@
 }
 .info-bottom .desc {
     font-size:  15px;
-    font-weight: 400;
+    font-weight: 400; 
     text-align: center;
     margin-bottom: 10px;
 }
