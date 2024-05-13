@@ -18,7 +18,8 @@
 				{"s_id":1, "sceenid":"2000", "name" : "출연신청" },
 				{"s_id":2, "sceenid":"2002", "name" : "출연현황" },
 				{"s_id":3, "sceenid":"2007", "name" : "전용신청" },
-				{"s_id":4, "sceenid":"2009", "name" : "전용현황" }
+				{"s_id":4, "sceenid":"2009", "name" : "전용현황" },
+				{"s_id":5, "sceenid":"2013", "name" : "출연ㆍ지원 현황" }
 			]
 		},
 		{

@@ -36,6 +36,7 @@ export { default as usr2007Page } from './usr_2000/usr_2007';
 export { default as usr2009Page } from './usr_2000/usr_2009';
 export { default as usr2011Page } from './usr_2000/usr_2011';
 export { default as usr2012Page } from './usr_2000/usr_2012';
+export { default as usr2013Page } from './usr_2000/usr_2013';
 //기금운영
 export { default as usr2100Page } from './usr_2100/usr_2100';
 export { default as usr2101Page } from './usr_2100/usr_2101';

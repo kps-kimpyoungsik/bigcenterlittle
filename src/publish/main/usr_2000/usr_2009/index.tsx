@@ -45,10 +45,11 @@ function ContentsContainer() {
 								<div className="sf-value">
 									<div className="sl sl-md">
 										<select>
-											<option value="">선택하세요.</option>
-											{sectors.map((sec, idx) =>
-												<option key={idx}>{sec}</option>
-											)}
+											<option value="">전체</option>
+											<option value="">신청중</option>
+											<option value="">접수중</option>
+											<option value="">반려</option>
+											<option value="">승인완료</option>
 										</select>
 									</div>
 								</div>
@@ -58,12 +59,12 @@ function ContentsContainer() {
 								<div className="sf-value">
 									<div className="sl sl-md">
 										<select>
-											<option value="">전체</option>
-											<option value="">신청중</option>
-											<option value="">접수중</option>
-											<option value="">반려</option>
-											<option value="">승인완료</option>
+											<option value="">선택하세요.</option>
+											{sectors.map((sec, idx) =>
+												<option key={idx}>{sec}</option>
+											)}
 										</select>
+										
 									</div>
 								</div>
 							</div>
@@ -103,7 +104,7 @@ function ContentsContainer() {
 					</div>
 					<div className="tb-top">
 						<div>
-							<p className="tx fc-black"></p>총 <em className="fw500">1103</em>건
+							<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
 						</div>
 						<div className="hz-root hz-gap8">
 							<Button color="gray-o" size="sm">등록</Button>
@@ -123,7 +124,11 @@ function ContentsContainer() {
 					<div className="ibsheet">
 						<p style={{height:"200px", background:"#f4f4f4"}}>
 							[D] IBSHEET 영역<br />
-							<Link to="/main/usr_2000/usr_2011" style={{color:"#333", padding:"5px", textDecoration:"underline"}}>[임시] 상세페이지 이동</Link>
+							<Link to="/main/usr_2000/usr_2011" style={{color:"#333", padding:"5px", textDecoration:"underline"}}>[임시] 상세페이지 이동</Link><br /><br />
+							<label className="badge badge-22 blue">신청</label>
+							<label className="badge badge-22 skyblue">접수중</label>
+							<label className="badge badge-22 red">반려</label>
+							<label className="badge badge-22 gray">승인완료</label>
 						</p>
 					</div>
 					<div className="pg">

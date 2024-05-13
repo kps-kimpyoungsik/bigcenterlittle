@@ -1732,19 +1732,24 @@
 
 .fund-form-group {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     flex-wrap: wrap;
     width:100%;
     position: relative;
 }
-.fund-form-items {
+.fund-form-items{
     display: flex;
     align-items: center;
     flex: 1 1 auto;
+}
+.fund-form-items:not(.tf-unit) {
     max-width:calc(100% - 110px)
 }
 .fund-form-items + * {
     margin-left:auto;
+}
+.fund-form-items:not(.tf-unit) .tf {
+    max-width: calc(100% - 120px);
 }
 
 /*안내사항(modal)*/
@@ -2023,6 +2028,13 @@
     border-top:1px solid #e4e4e4;
     margin-bottom:0;
 }
+.fund-section .pt .row {
+    justify-content: space-between;
+}
+.fund-section .pt .row .col.col-5 {
+    width:calc(50% - 20px);
+}
+
 
 .modal-tskana .fo.fo-col2 .fo-item .fo-key {
     width: 150px;
@@ -2201,7 +2213,7 @@
     resize: vertical;
 }
 .ta-group .ta-ip::placeholder {
-    color:#ccc;
+    color:#666;
 }
 .ta-group .ta-ip:read-only {
     border-color: transparent;

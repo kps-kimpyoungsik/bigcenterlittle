@@ -13,9 +13,9 @@ function ContentsContainer() {
 	const modaladm2007 = useToggleState({});
 	const modaladm2007_1 = useToggleState({});
 	const sectors = [
-		'동반성장 투자재원','상생형 창법 밴처기업 지원사업','공동투자형 기술개발','산업혁신운동','대중소 상생형 스마트공장','대중소기업 혁신 파트너십','성과공유제',
-		'협력이익공유제','대중소기업 동반진출','동반성장 문화확산-신용카드 영세가맹점 지원사업','동반성장 문화확산-협력시ESG 평가지원사업','동반성장 문화확산-혁신주도형 동반성장',
-		'분사기업(스핀오프) 상생협력 사업','상생결제제도 운영','지역사회 동반성장 지원사업','기술유출방지시스템'
+		'구매조건부신제품개발사업(공동R&D)','대·중소기업 혁신파트너십지원사업','대 중소 상생형 스마트공장','대·중소기업 해외동반진출 지원사업','동반성장몰_복지포인트 지원사업',
+		'성과공유제 확산 사업','상생형 창업·벤처기업 지원사업','민간자율 기획사업','협력사 ESG 지원사업','동반성장 문화확산','동반성장 협력사 PR챌린지','지역사회 동반성장 지원사업',
+		'신용카드 영세가맹점 지원사업','대·중소기업 안전보건 상생협력','기술유출 방지시스템','상생협력기금조성·운영 관리 경비','기타 오입금(잘못 출연된 기금의 반환과제용'
 	]
 	return (
 		<PageContainer>
@@ -45,11 +45,11 @@ function ContentsContainer() {
 						</form>
 					</section>
 					<section className="fund-section">
-						<h3 className="section-title mb15">전용 요청일자</h3>
+						<h3 className="section-title mb15">전용 신청 일자</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item req">
-									<p className="fo-key">요청일</p>
+									<p className="fo-key">전용요청일</p>
 									<div className="fo-value">
 										<div className="w215">
 											<UIDatePicker />
@@ -59,7 +59,10 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">출연 번호 선택</p>
 									<div className="fo-value">
-										<Button color="gray-o" size="md" onClick={modaladm2007_1.open}>출연사업선택</Button>
+										<div className="hz-root hz-gap5 w100p">
+											<UIInput className={'tf tf-md hz-item hz-fg'} value={'00-00-00000'} placeholder={''} readOnly={true} />
+											<Button color="gray-o" size="md" onClick={modaladm2007_1.open}>출연사업선택</Button>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -69,39 +72,39 @@ function ContentsContainer() {
 						<h3 className="section-title mb15">출연 내용</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
-								<div className="fo-item fo-m-1-3">
-									<p className="fo-key">사업명</p>
+								<div className="fo-item">
+									<p className="fo-key">출연사업</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'동반성장투자재원'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">출연 일자</p>
+									<p className="fo-key">출연일</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">기부내용</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'금전'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item">
 									<p className="fo-key">출연금액</p>
 									<div className="fo-value">
-										<div className="tf-unit w100p">
-											<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
-											<span className="u">원</span>
+										<div className="fund-form-group">
+											<div className="fund-form-items tf-unit">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
+												<span className="u">원</span>
+											</div>
+											<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
 										</div>
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">대상금액(원)</p>
+									<p className="fo-key">전용가능잔액(원)</p>
 									<div className="fo-value">
-										<div className="tf-unit w100p">
-											<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
-											<span className="u">원</span>
+										<div className="fund-form-group">
+											<div className="fund-form-items tf-unit">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
+												<span className="u">원</span>
+											</div>
+											<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
 										</div>
 									</div>
 								</div>
@@ -164,7 +167,7 @@ function ContentsContainer() {
 														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
 														<span className="u">원</span>
 													</div>
-													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(일억원 한글금액출력)</span></div>
+													<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
 												</div>
 											</td>
 										</tr>
@@ -182,6 +185,19 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
+					</section>
+					<section className="fund-section">
+						<h3 className="section-title mb15">비고사항</h3>
+						<form name="" action="" method="">
+							<div className="ta-group w100p">
+								<textarea className="ta-ip" rows={3} defaultValue={''} placeholder={''}/>
+							</div>
+						</form>
+					</section>
+					<section className="fund-section">
+						<h3 className="section-title mb15">파일첨부</h3>
+						fileupload...
+						<p className="tx-msg mt10"><span className="fc-pri">※ 자사별 전용공문을 첨부해 주세요.</span></p>
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">기업정보</h3>
@@ -205,12 +221,12 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-								<div className="fo-item">
-									<p className="fo-key">기업명</p>
+								<div className="fo-item req">
+									<p className="fo-key">담당자</p>
 									<div className="fo-value">
 										<div className="sl sl-md w100p">
 											<select>
-												<option>기업명</option>
+												<option>홍길동</option>
 											</select>
 										</div>
 									</div>
@@ -256,7 +272,42 @@ function ContentsContainer() {
 				onClose={modaladm2007.close}
 			>
 				<div className="modal-con">
-					<p style={{padding:"100px 0",textAlign:"center"}}>안내사항 내용 수급 필요</p>
+					<div className="fww-noti">
+						<section className="mb30">
+							<h3>출연절차</h3>
+							<div className="step">
+								<dl>
+									<dt>01 출연선택</dt>
+									<dd>전용이 가능한 <br />출연사업을 선택</dd>
+								</dl>
+								<dl>
+									<dt>02 전용신청</dt>
+									<dd>전용할 사업과 <br />전용금액을 입력</dd>
+								</dl>
+								<dl>
+									<dt>03 전용공문</dt>
+									<dd>전용공문을 첨부</dd>
+								</dl>
+								<dl>
+									<dt>04 전용신청완료</dt>
+									<dd>모든 신청정보를 <br />입력 후 제출</dd>
+								</dl>
+							</div>
+						</section>
+						<dl className="guide mb8">
+							<dt>유의사항</dt>
+							<dd>
+								<ul className="list-group">
+									<li>전용신청 시 출연사업을 지정하여 전용신청을 해야 합니다.</li>
+									<li>전용가능금액 한도 내에서 신청이 가능합니다.</li>
+									<li>
+										전용신청 시 자사별 전용공문을 첨부해야 제출할 수 있습니다.<br />
+										<span className="fc-pri">전용공문은 재단에서 별도로 제공하고 있지 않습니다. 자사에서 구비중인 전용공문을 준비해 주세요.</span>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
 				</div>
 				<div className="modal-bottom">
 					<Button color="pri" size="md" onClick={modaladm2007.close}>확인</Button>
@@ -270,7 +321,7 @@ function ContentsContainer() {
 				onClose={modaladm2007_1.close}
 			>
 				<div className="modal-con">
-					<form className="fo fo-col2 mb30" name="" action="" method="">
+					<form className="fo fo-col2" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item fo-item fo-m-1-3">
 								<p className="fo-key">신청기간</p>
@@ -296,6 +347,9 @@ function ContentsContainer() {
 							</div>
 						</div>
 					</form>
+					<div className="hz-root hz-center mb30">
+						<Button color="pri" size="md">조회</Button>
+					</div>
 					<div className="ibsheet">
 						<p style={{height:"300px"}}>[D] IBSHEET 영역</p>
 					</div>

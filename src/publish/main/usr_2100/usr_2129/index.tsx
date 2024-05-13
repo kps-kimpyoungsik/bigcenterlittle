@@ -4,6 +4,7 @@ import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2100Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIInput from 'components/input/input';
+import UIInputFile from 'components/input/inputFile';
 import Button from 'components/buttons/';
 import { Tooltip } from "react-tooltip";
 import useToggleState from 'components/hooks/useToggleState';
@@ -244,13 +245,8 @@ function ContentsContainer() {
 									<p className="fo-key">지급 신청서</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-													</div>
-												</div>
+											<div className="fund-form-items mr30">
+												<UIInputFile  placeholder={'파일을 첨부해 주세요.'}/>
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>
 										</div>
@@ -260,10 +256,10 @@ function ContentsContainer() {
 									<p className="fo-key">선지급 요청서(선지급시만)</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
+											<div className="fund-form-items mr30">
+												<div className="hz-root hz-gap8 w100p">
 													<UIInput className={'tf tf-md hz-item grow'} value={'파일명.확장자(0,000kb)'} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
+													<div className="hz-root hz-gap8">
 														<Button color='pri-o2' size="md">찾기</Button>
 														<Button color='gray-o' size="md">삭제</Button>
 													</div>

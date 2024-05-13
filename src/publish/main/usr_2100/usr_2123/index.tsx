@@ -113,7 +113,7 @@ function ContentsContainer() {
 					</div>
 					<div className="tb-top">
 						<div>
-							<p className="tx fc-black"></p>총 <em className="fw500">1103</em>건
+							<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
 						</div>
 						<div className="hz-root hz-gap8">
 							<Button color="gray-o" size="sm">다운로드</Button>

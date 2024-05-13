@@ -124,9 +124,9 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="fund-form-group">
 											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
+												<div className="hz-root hz-gap8 w100p">
 													<UIInput className={'tf tf-md hz-item grow'} value={'환수신청서.doc'} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
+													<div className="hz-root hz-gap8">
 														<Button color='pri-o2' size="md">찾기</Button>
 														<Button color='gray-o' size="md">삭제</Button>
 													</div>
