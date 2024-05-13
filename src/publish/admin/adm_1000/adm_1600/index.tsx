@@ -102,8 +102,8 @@ function ContentsContainer() {
 				</div>
 				<div className="modal-bottom">
 					<div className="hz-root hz-gap8">
-						<Button color='gray-o' size="sm">취소</Button>
-						<Button color='pri' size="sm">저장</Button>
+						<Button color='gray-o' size="md">취소</Button>
+						<Button color='pri' size="md">저장</Button>
 					</div>
 				</div>	
 			</ModalPopup>
@@ -120,8 +120,8 @@ function ContentsContainer() {
 				</div>
 				<div className="modal-bottom">
 					<div className="hz-root hz-gap8">
-						<Button color='gray-o' size="sm">취소</Button>
-						<Button color='pri' size="sm">저장</Button>
+						<Button color='gray-o' size="md">취소</Button>
+						<Button color='pri' size="md">저장</Button>
 					</div>
 				</div>	
 			</ModalPopup>

@@ -199,7 +199,7 @@ function ContentsContainer() {
 						</div>
 				</div>
 				<div className="modal-bottom">
-					<Button color='pri' size="big">권한지정</Button>
+					<Button color='pri' size="md">권한지정</Button>
 				</div>	
 			</ModalPopup>
 			{/* modal - 사업지정 */}
@@ -489,7 +489,7 @@ function ContentsContainer() {
 						</div>
 				</div>
 				<div className="modal-bottom">
-					<Button color='pri' size="big">사업지정</Button>
+					<Button color='pri' size="md">사업지정</Button>
 				</div>	
 			</ModalPopup>
 		</PageContainer>

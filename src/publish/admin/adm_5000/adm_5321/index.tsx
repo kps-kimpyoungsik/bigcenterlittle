@@ -103,7 +103,7 @@ function ContentsContainer() {
 					<img className="w100p" src="https://picsum.photos/353/280" alt="" />
 				</div>
 				<div className="modal-bottom">
-					<Button color='pri' size="big">확인</Button>
+					<Button color='pri' size="md">확인</Button>
 				</div>	
 			</ModalPopup>			
 		</PageContainer>

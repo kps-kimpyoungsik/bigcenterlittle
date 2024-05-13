@@ -124,7 +124,7 @@ function ContentsContainer() {
 				onClose={modaladm8210p.close}
 			>
 				<div className="modal-con">
-					<form className="sf sf-1row sf-2col mb30">
+					<form className="sf sf-1row sf-2col mbmodal-bottom30">
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">년도</p>
@@ -152,7 +152,7 @@ function ContentsContainer() {
 				</div>
 				<div className="modal-bottom">
 					<div className="hz-root hz-gap8">
-						<Button color='gray-o' size="sm">닫기</Button>
+						<Button color='gray-o' size="md">닫기</Button>
 					</div>
 				</div>	
 			</ModalPopup>

@@ -183,7 +183,7 @@ function ContentsContainer() {
 					Fileupload...
 				</div>
 				<div className="modal-bottom">
-					<Button color='pri' size="big">등록/갱신</Button>
+					<Button color='pri' size="md">등록/갱신</Button>
 				</div>	
 			</ModalPopup>			
 		</PageContainer>
