@@ -40,6 +40,9 @@ function PortalAside() {
 				<li className={location.pathname.slice(-4,23) === '2009' || location.pathname.slice(-4,23) === '2011' || location.pathname.slice(-4,23) === '2012' ? 'active' : ''}>
 					<Link to="/main/usr_2000/usr_2009">전용현황</Link>
 				</li>
+				<li className={location.pathname.slice(-4,23) === '2013' ? 'active' : ''}>
+					<Link to="/main/usr_2000/usr_2013">출연ㆍ지원 현황</Link>
+				</li>
 				{/* 
 				{aside.map((aside) => (
 					<li className={location.pathname === aside.a_path ? 'active' : ''} key={aside.a_id}>

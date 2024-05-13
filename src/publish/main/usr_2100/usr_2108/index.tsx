@@ -5,6 +5,7 @@ import LayoutAside from "../user2100Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
+import UIInputFile from 'components/input/inputFile';
 import UIDatePicker from "components/datepicker";
 import useToggleState from 'components/hooks/useToggleState';
 import { Tooltip } from "react-tooltip";
@@ -496,13 +497,16 @@ function ContentsContainer() {
 									<p className="fo-key">과제 신청서</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
+											<div className="fund-form-items mr30">
+												<UIInputFile  placeholder={'파일을 첨부해 주세요.'}/>
+												{/* 
+												<div className="hz-root hz-gap5 w100p">
 													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={'파일을 첨부해 주세요.'} />
 													<div className="hz-root hz-gap5 w120 ">
 														<Button color='pri-o2' size="md">찾기</Button>
 													</div>
 												</div>
+												 */}
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>
 										</div>
@@ -512,13 +516,8 @@ function ContentsContainer() {
 									<p className="fo-key">과제 계획서</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-													</div>
-												</div>
+											<div className="fund-form-items mr30">
+												<UIInputFile  placeholder={'파일을 첨부해 주세요.'}/>
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>
 										</div>
@@ -546,14 +545,8 @@ function ContentsContainer() {
 									<p className="fo-key">수행기관 사업자 등록증<br />(수행기관 해당시만)</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-														<Button color='gray-o' size="md">삭제</Button>
-													</div>
-												</div>
+											<div className="fund-form-items mr30">
+												<UIInputFile  placeholder={'파일을 첨부해 주세요.'}/>
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>
 										</div>
@@ -574,10 +567,10 @@ function ContentsContainer() {
 									<p className="fo-key">과제 계획서</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
+											<div className="fund-form-items mr30">
+												<div className="hz-root hz-gap8 w100p">
 													<UIInput className={'tf tf-md hz-item grow'} value={'과제신청서.pdf(67.58KB)'} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
+													<div className="hz-root hz-gap8">
 														<Button color='pri-o2' size="md">찾기</Button>
 														<Button color='gray-o' size="md">삭제</Button>
 													</div>
@@ -591,10 +584,10 @@ function ContentsContainer() {
 									<p className="fo-key">수행기관 사업자 등록증<br />(수행기관 해당시만)</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
+											<div className="fund-form-items mr30">
+												<div className="hz-root hz-gap8 w100p">
 													<UIInput className={'tf tf-md hz-item grow'} value={'사업자등록증.pdf(67.58KB)'} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
+													<div className="hz-root hz-gap8 ">
 														<Button color='pri-o2' size="md">찾기</Button>
 														<Button color='gray-o' size="md">삭제</Button>
 													</div>

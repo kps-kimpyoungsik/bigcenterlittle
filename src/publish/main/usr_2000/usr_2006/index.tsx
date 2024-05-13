@@ -1,10 +1,11 @@
 
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2000Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIInput from 'components/input/input';
+//import UIInputFile from 'components/input/inputFile';
 import Button from 'components/buttons/';
 import UIDatePicker from "components/datepicker";
 import useToggleState from 'components/hooks/useToggleState';
@@ -37,7 +38,10 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">출연상태</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'신청'} placeholder={''} readOnly={true} />
+										<label className="badge badge-22 blue">신청</label>
+										<label className="badge badge-22 green">입금확인</label>
+										<label className="badge badge-22 gray">수납완료</label>
+										{/* <UIInput className={'tf tf-md w100p'} value={'신청'} placeholder={''} readOnly={true} /> */}
 									</div>
 								</div>
 								<div className="fo-item">
@@ -51,11 +55,33 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">기부내용</p>
 									<div className="fo-value">
-										<div className="sl sl-md w320">
+										<div className="sl sl-md w100p">
 											<select>
 												<option>금전</option>
 												<option>현물</option>
 											</select>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item req">
+									<p className="fo-key">출연 사업</p>
+									<div className="fo-value">
+										<div className="sl sl-md w100p">
+											<select>
+												<option>동반성장 투자재원</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item req">
+									<p className="fo-key">출연 금액</p>
+									<div className="fo-value">
+										<div className="hz-root hz-gap5 w100p">
+											<div className="tf-unit hz-item hz-fg">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} />
+												<span className="u">원</span>
+											</div>
+											<div className="hz-item tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></div>
 										</div>
 									</div>
 								</div>
@@ -171,15 +197,17 @@ function ContentsContainer() {
 									</div>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={'협력재단 출연신청서.pdf(67.58KB)'} placeholder={''} />
-													<div className="hz-root hz-gap5 w120 ">
+											<div className="fund-form-items mr30">
+												{/* <UIInputFile  placeholder={'파일을 첨부해 주세요.'}/> */}
+												<div className="hz-root hz-gap8 w100p">
+													<UIInput className={'tf tf-md hz-item grow'} value={'사업자등록증.pdf(67.58KB)'} placeholder={'파일을 첨부해 주세요.'} />
+													<div className="hz-root hz-gap8 ">
 														<Button color='pri-o2' size="md">찾기</Button>
 														<Button color='gray-o' size="md">삭제</Button>
 													</div>
 												</div>
 											</div>
+											
 											<Button color='gray-o' size="md">양식 다운로드</Button>
 										</div>
 									</div>
@@ -211,12 +239,12 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-								<div className="fo-item">
-									<p className="fo-key">기업명</p>
+								<div className="fo-item req">
+									<p className="fo-key">담당자</p>
 									<div className="fo-value">
 										<div className="sl sl-md w100p">
 											<select>
-												<option>기업명</option>
+												<option>홍길동</option>
 											</select>
 										</div>
 									</div>

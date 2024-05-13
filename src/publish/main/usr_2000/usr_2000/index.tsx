@@ -87,8 +87,9 @@ function ContentsContainer() {
 									<caption></caption>
 									<colgroup>
 										<col width="60px" />
-										<col width="480px" />
 										<col />
+										<col />
+										
 									</colgroup>
 									<thead>
 										<tr>
@@ -126,7 +127,7 @@ function ContentsContainer() {
 														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
 														<span className="u">원</span>
 													</div>
-													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(일억원 한글금액출력)</span></div>
+													<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
 												</div>
 											</td>
 										</tr>
@@ -175,12 +176,12 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-								<div className="fo-item">
-									<p className="fo-key">기업명</p>
+								<div className="fo-item req">
+									<p className="fo-key">담당자</p>
 									<div className="fo-value">
 										<div className="sl sl-md w100p">
 											<select>
-												<option>기업명</option>
+												<option>홍길동</option>
 											</select>
 										</div>
 									</div>

@@ -20,6 +20,7 @@ export interface DatePickerProps extends DatePickerBaseProps {
 	withoutWrapper?: boolean;
 	showToday?: boolean;
 	className?: string;
+	dateFormat?:string;
 }
 
 // DatePicker
@@ -31,7 +32,7 @@ function UIDatePicker(props: DatePickerProps) {
 		<div className="datepicker">
 			<DatePicker
 				ref={datePickerRef}
-				dateFormat='yyyy.MM.dd'
+				dateFormat={props.dateFormat}
 				minDate={props.minDate}
 				maxDate={props.maxDate}
 				selected={selectedDate}

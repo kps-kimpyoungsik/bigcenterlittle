@@ -933,6 +933,7 @@ function ContentsContainer() {
 			>
 				<div className="modal-con">
 					<div className="modal-tskana">
+						<div className="ta-right mb8 tx-msg"><span className="fc-pri">＊</span> 필수 입력</div>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item fo-m-1-3 req">

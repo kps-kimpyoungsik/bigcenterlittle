@@ -5,6 +5,7 @@ import LayoutAside from "../user1900Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
+import UIInputFile from 'components/input/inputFile';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -122,13 +123,9 @@ function ContentsContainer() {
 									<p className="fo-key">필수서류</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={''} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-														<Button color='gray-o' size="md">삭제</Button>
-													</div>
+											<div className="fund-form-items mr30">
+												<div className="w100p">
+													<UIInputFile placeholder={'파일을 첨부해 주세요.'}/>
 												</div>
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>
@@ -139,12 +136,9 @@ function ContentsContainer() {
 									<p className="fo-key">추가서류1</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={''} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-													</div>
+											<div className="fund-form-items mr30">
+												<div className="w100p">
+													<UIInputFile placeholder={'파일을 첨부해 주세요.'}/>
 												</div>
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>
@@ -155,12 +149,9 @@ function ContentsContainer() {
 									<p className="fo-key">추가서류2</p>
 									<div className="fo-value">
 										<div className="fund-form-group">
-											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={''} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-													</div>
+											<div className="fund-form-items mr30">
+												<div className="w100p">
+													<UIInputFile placeholder={'파일을 첨부해 주세요.'}/>
 												</div>
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>

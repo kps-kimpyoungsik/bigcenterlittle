@@ -5,6 +5,7 @@ import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2100Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIInput from 'components/input/input';
+import UIInputFile from 'components/input/inputFile';
 import Button from 'components/buttons/';
 import UIDatePicker from "components/datepicker";
 import useToggleState from 'components/hooks/useToggleState';
@@ -128,11 +129,8 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="fund-form-group">
 											<div className="fund-form-items">
-												<div className="hz-root hz-gap5 w100p mr30">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-													</div>
+												<div className="w100p">
+													<UIInputFile placeholder={'파일을 첨부해 주세요.'}/>
 												</div>
 											</div>
 										</div>

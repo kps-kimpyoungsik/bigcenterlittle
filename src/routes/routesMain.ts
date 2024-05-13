@@ -6,7 +6,7 @@ import {
 	usr1200Page,usr1202Page,usr1204Page,usr1300Page,usr1400Page,usr1402Page,
 	usr1500Page,usr1501Page,usr1502Page,usr1600Page,usr1700Page,usr1800Page,usr1810Page,
 	usr1900Page,usr1901Page,usr1902Page,usr1903Page,usr1904Page,usr1905Page,usr1906Page,usr1908Page,usr1909Page,usr1910Page,
-	usr2000Page,usr2002Page,usr2004Page,usr2006Page,usr2007Page,usr2009Page,usr2011Page,usr2012Page,
+	usr2000Page,usr2002Page,usr2004Page,usr2006Page,usr2007Page,usr2009Page,usr2011Page,usr2012Page,usr2013Page,
 	usr2100Page,usr2101Page,usr2105Page,usr2107Page,usr2108Page,usr2114Page,usr2115Page, usr2116Page,usr2119Page,
 	usr2123Page,usr2125Page,usr2129Page,usr2133Page,usr2136Page,usr2137Page,usr2138Page,
 	usr2300Page,usr2301Page,usr2302Page,usr2303Page,
@@ -208,6 +208,12 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/main/usr_2000/usr_2012',
 		component: usr2012Page,
+		layout: FundLayout,
+		exact: true,
+	},
+	{
+		path: '/main/usr_2000/usr_2013',
+		component: usr2013Page,
 		layout: FundLayout,
 		exact: true,
 	},

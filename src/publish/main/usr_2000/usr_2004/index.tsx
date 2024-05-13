@@ -41,13 +41,15 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">출연상태</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'신청'} placeholder={''} readOnly={true} />
+										<label className="badge badge-22 blue">신청</label>
+										<label className="badge badge-22 green">입금확인</label>
+										<label className="badge badge-22 gray">수납완료</label>
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">기부내용</p>
+									<p className="fo-key">출연사업</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'금전'} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md w100p'} value={'동반성장 투자재원'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
@@ -65,13 +67,25 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">기부금 영수증번호</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'투자-000000-000'} placeholder={''} readOnly={true} />	
+										<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />	
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">전자인증 여부</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'전자인증 / 서면'} placeholder={''} readOnly={true} />	
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">기부내용</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'금전'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
 									<p className="fo-key">출연금 입금계좌</p>
 									<div className="fo-value">
-										<div className="hz-root hz-left hz-gap5">
+										<div className="hz-root hz-sb w100p">
 											<UIInput className={'w215 hz-fg tf tf-md'} value={'하나은행 0000-00-000000'} placeholder={''} readOnly={true} />
 											<div className="hz-item">
 												<Button color='pri-o' size="md" onClick={modaladm2004.open}>가상계좌확인서 발급 안내</Button>
@@ -83,14 +97,38 @@ function ContentsContainer() {
 									<p className="fo-key">3년 만기 도래일</p>
 									<div className="fo-value">
 										<div className="hz-root hz-left hz-gap5">
-											<UIInput className={'w120 hz-fg tf tf-md'} value={'YYYY-MM-DD'} placeholder={''} readOnly={true} />
+											<UIInput className={'tf tf-md'} value={'YYYY-MM-DD'} placeholder={''} readOnly={true} />
 											<div className="hz-item tx-msg">(D-000일)</div>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">출연신청금액(원)</p>
+									<div className="fo-value">
+										<div className="hz-root hz-gap5 w100p">
+											<div className="tf-unit hz-item hz-fg">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
+												<span className="u">원</span>
+											</div>
+											<div className="hz-item tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></div>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">출연금액(원)</p>
+									<div className="fo-value">
+										<div className="hz-root hz-gap5 w100p">
+											<div className="tf-unit hz-item hz-fg">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
+												<span className="u">원</span>
+											</div>
+											<div className="hz-item tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</form>
-						<div className="tx-msg">※ 출연신청 후 별도 승인절차가 없습니다. 위 계좌로 출연예정일에 입금해주시면 됩니다.</div>
+						<div className="tx-msg"><span className="fc-pri">※ 출연신청 후 별도 승인절차가 없습니다. 위 계좌로 입금해주시면 됩니다. 단 출연금을 한번에 입금하지 않고 분할해서 입금하시는 경우 입금일자가 서로 다르면 취소하고 다시 신청해야 합니다.</span></div>
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">출연금액</h3>
@@ -99,12 +137,12 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">출연금</p>
 									<div className="fo-value">
-										<div className="fund-form-group">
-											<div className="tf-unit d-block ">
-												<UIInput className={'tf tf-md w120 ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
+										<div className="hz-root hz-gap5 w100p">
+											<div className="tf-unit hz-item hz-fg">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
 												<span className="u">원</span>
 											</div>
-											<div className="fund-form-items tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></div>
+											<div className="hz-item tx-msg"><span className="fc-pri">(1억원 한글금액출력)</span></div>
 										</div>
 									</div>
 								</div>
@@ -204,7 +242,7 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="fund-form-group">
 											<div className="fund-form-items">
-												<p className="tx-msg">출연신청서 파일첨부를 완료하였습니다.</p>
+												<UIInput className={'tf tf-md w100p'} value={'파일명.확장자(0,000kb)'} placeholder={''} readOnly={true} />
 											</div>
 											<Button color='gray-o' size="md">미리보기</Button>
 										</div>
@@ -236,12 +274,12 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-								<div className="fo-item">
-									<p className="fo-key">기업명</p>
+								<div className="fo-item req">
+									<p className="fo-key">담당자</p>
 									<div className="fo-value">
 										<div className="sl sl-md w100p">
 											<select>
-												<option>기업명</option>
+												<option>홍길동</option>
 											</select>
 										</div>
 									</div>

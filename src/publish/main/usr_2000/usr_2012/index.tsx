@@ -13,7 +13,7 @@ function ManualContainer(): JSX.Element {
 			<div className='fww-con'>
 				<Breadcrumb gnbIdx={1} lnbIdx={3}/>
 				<main className="fww-main">
-					<h1 className="tx tx-hd2">전용현황</h1>
+					<h1 className="tx tx-hd2">전용 내용 수정</h1>
 					<div className="hz-root hz-right hz-gap10">
 						<Button color="gray-o" size="md">취소</Button>
 						<Button color="pri" size="md">저장</Button>
@@ -29,24 +29,12 @@ function ManualContainer(): JSX.Element {
 										<UIInput className={'tf tf-md w100p'} value={'C-0000-00000'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-								<div className="fo-item">
-									<p className="fo-key">처리구분</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'전용'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item">
-									<p className="fo-key">전용일자</p>
+								<div className="fo-item req">
+									<p className="fo-key">전용요청일</p>
 									<div className="fo-value">
 										<div className="w215">
 											<UIDatePicker />
 										</div>
-									</div>
-								</div>
-								<div className="fo-item">
-									<p className="fo-key">처리자</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'홍길동'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 							</div>
@@ -57,29 +45,38 @@ function ManualContainer(): JSX.Element {
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
-									<p className="fo-key">출연번호</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'000000000000'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item">
-									<p className="fo-key">출연일자</p>
-									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
-									</div>
-								</div>
-								<div className="fo-item">
-									<p className="fo-key">사업명</p>
+									<p className="fo-key">출연사업</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'동반성장투자재원'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">출연금액(원)</p>
+									<p className="fo-key">출연일</p>
 									<div className="fo-value">
-										<div className="tf-unit w100p">
-											<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true} />
-											<span className="u">원</span>
+										<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">출연금액</p>
+									<div className="fo-value">
+										<div className="fund-form-group">
+											<div className="fund-form-items tf-unit">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true}  />
+												<span className="u">원</span>
+											</div>
+											<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">전용가능잔액(원)</p>
+									<div className="fo-value">
+										<div className="fund-form-group">
+											<div className="fund-form-items tf-unit">
+												<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''} readOnly={true}  />
+												<span className="u">원</span>
+											</div>
+											<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
 										</div>
 									</div>
 								</div>
@@ -127,15 +124,20 @@ function ManualContainer(): JSX.Element {
 												</label>
 											</td>
 											<td>
-												<UIInput className={'tf tf-md w100p'} value={'문화확산ESG'} placeholder={''} readOnly={true} />
+												<div className="sl sl-md w100p">
+													<select>
+														<option>ESG</option>
+													</select>
+												</div>
+												{/* <UIInput className={'tf tf-md w100p'} value={'문화확산ESG'} placeholder={''} readOnly={true} /> */}
 											</td>
 											<td>
 												<div className="fund-form-group">
-													<div className="fund-form-items tf-unit d-block">
+													<div className="fund-form-items tf-unit">
 														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
 														<span className="u">원</span>
 													</div>
-													<div className="fund-form-items tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
+													<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
 												</div>
 											</td>
 											
@@ -174,7 +176,7 @@ function ManualContainer(): JSX.Element {
 								</div>
 							</div>
 						</form>
-						<p className="tx-msg mt10 mb18"><span className="fc-pri">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</span></p>
+						<p className="tx-msg mt10 mb18"><span className="fc-pri">※ 자사별 전용공문을 첨부해 주세요.</span></p>
 						<div>file upload...</div>
 					</section>
 					<section className="fund-section">
@@ -182,15 +184,55 @@ function ManualContainer(): JSX.Element {
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
 								<div className="fo-item">
-									<p className="fo-key">법인등록번호</p>
+									<p className="fo-key">기업명</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'기업명'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">법인사업자번호</p>
 									<div className="fo-value">
 										<UIInput className={'tf tf-md w100p'} value={'0000-00-0000000'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
 								<div className="fo-item">
-									<p className="fo-key">기업명</p>
+									<p className="fo-key">사업자번호</p>
 									<div className="fo-value">
-										<UIInput className={'tf tf-md w100p'} value={'기업명 출력'} placeholder={''} readOnly={true} />
+										<UIInput className={'tf tf-md w100p'} value={'1234-12-1234567'} placeholder={''} readOnly={true} />
+									</div>
+								</div>
+								<div className="fo-item req">
+									<p className="fo-key">담당자</p>
+									<div className="fo-value">
+										<div className="sl sl-md w100p">
+											<select>
+												<option>홍길동</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">직급</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'과장'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">부서</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'협력팀'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">이메일</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'이메일 출력'} placeholder={''} />
+									</div>
+								</div>
+								<div className="fo-item">
+									<p className="fo-key">전화번호</p>
+									<div className="fo-value">
+										<UIInput className={'tf tf-md w100p'} value={'전화번호 출력'} placeholder={''} />
 									</div>
 								</div>
 							</div>
