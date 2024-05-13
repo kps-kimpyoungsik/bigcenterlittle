@@ -36,7 +36,8 @@ function ContentsContainer() {
 									<div className="thumnails">
 										<img src="https://fund.win-win.or.kr/common/ui/main/images/layout/visual_01.png" alt="thumnails" />
 									</div>
-									<div className="subject"><span className="txt">우수사례 제목이 출력됩니다.</span></div>
+									<div className="subject">우수사례 제목이 출력됩니다.</div>
+									<div className="bottoms"><span className="date">2024-08-01</span></div>
 								</Link>
 							</li>
 							<li>
@@ -44,7 +45,8 @@ function ContentsContainer() {
 									<div className="thumnails">
 										<img src="https://fund.win-win.or.kr/common/ui/main/images/layout/visual_02.png" alt="thumnails" />
 									</div>
-									<div className="subject"><span className="txt">농·어촌상생협력기금</span></div>
+									<div className="subject">농·어촌상생협력기금</div>
+									<div className="bottoms"><span className="date">2024-08-01</span></div>
 								</Link>
 							</li>
 							<li>
@@ -52,7 +54,8 @@ function ContentsContainer() {
 									<div className="thumnails">
 										<img src="https://fund.win-win.or.kr/common/ui/main/images/layout/visual_03.png" alt="thumnails" />
 									</div>
-									<div className="subject"><span className="txt">기업자율형 상생프로그램</span></div>
+									<div className="subject">기업자율형 상생프로그램</div>
+									<div className="bottoms"><span className="date">2024-08-01</span></div>
 								</Link>
 							</li>
 							<li>
@@ -60,7 +63,8 @@ function ContentsContainer() {
 									<div className="thumnails">
 										<img src={noImg} alt="no Images" />
 									</div>
-									<div className="subject"><span className="txt">대·중소기업 동반진출</span></div>
+									<div className="subject">대·중소기업 동반진출</div>
+									<div className="bottoms"><span className="date">2024-08-01</span></div>
 								</Link>
 							</li>
 							<li>
@@ -68,7 +72,8 @@ function ContentsContainer() {
 									<div className="thumnails">
 										<img src={noImg} alt="no Images" />
 									</div>
-									<div className="subject"><span className="txt">농·어촌상생협력기금</span></div>
+									<div className="subject">농·어촌상생협력기금</div>
+									<div className="bottoms"><span className="date">2024-08-01</span></div>
 								</Link>
 							</li>
 							<li>
@@ -76,7 +81,8 @@ function ContentsContainer() {
 									<div className="thumnails">
 										<img src={noImg} alt="no Images" />
 									</div>
-									<div className="subject"><span className="txt">공통투자형 기술개발</span></div>
+									<div className="subject">공통투자형 기술개발</div>
+									<div className="bottoms"><span className="date">2024-08-01</span></div>
 								</Link>
 							</li>
 						</ul>

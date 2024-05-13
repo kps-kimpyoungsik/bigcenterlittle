@@ -1358,7 +1358,7 @@
     font-size:15px;
 }
 .org-wrap h2.skyblue {
-    background-color: #49B3FF;
+    background-color: #31A7FC;
 }
 .org-wrap .mid-group {
     display: flex;
@@ -1436,7 +1436,7 @@
     position: relative;
     font-size:14px;
     height:42px;
-    background-color: #1BD69D;
+    background-color: #17C279;
 }
 .org-wrap .part h3::before{
     content: '';
@@ -1449,7 +1449,7 @@
     pointer-events: none;
 }
 .org-wrap .part.skyblue h3 {
-    background-color: #3E8BFD;
+    background-color: #3C8AFF;
 }
 .org-wrap .part ul > li {
     position: relative;
@@ -1535,17 +1535,17 @@
     color:#fff;
 }
 .graphic-items:nth-child(1) {
-    background-color: #37A7F9;
-    outline: 15px solid rgba(55, 167, 249, 0.1);
+    background-color: rgb(130, 151, 183);
+    outline: 15px solid rgba(130, 151, 183, 0.1);
     
 }
 .graphic-items:nth-child(2) {
-    background-color: #4B8EF3;
-    outline: 15px solid rgba(75, 142, 243, 0.15);
+    background-color: rgb(78, 149, 255);
+    outline: 15px solid rgba(78, 149, 255, 0.15);
 }
 .graphic-items:nth-child(3) {
-    background-color: #27D168;
-    outline: 15px solid rgba(39, 209, 104, 0.15);
+    background-color: rgb(23, 194, 121);
+    outline: 15px solid rgba(23, 194, 121, 0.1);
 }
 .graphic-items span {
     display: block;
@@ -1605,13 +1605,6 @@
 }
 .gallery-items .subject {
     margin-top:20px;
-    display: flex;
-    align-items: center;
-}
-.gallery-items .badge {
-    margin-right:8px;
-}
-.gallery-items .subject .txt {
     font-size:18px;
     line-height: 1;
     font-weight:500;
@@ -1619,8 +1612,43 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    flex:1;
 }
+.gallery-items .bottoms {
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    font-size:14px;
+    letter-spacing: -0.6px;
+    line-height: 1;
+}
+.gallery-items .bottoms .date {
+    display: inline-flex;
+    align-items: center;
+    color:#666;
+    
+}
+.gallery-items .badge {
+    padding:0;
+    font-size:14px;
+    min-width:inherit;
+    height:inherit;
+    font-weight:500;
+}
+.gallery-items .badge.blue {
+    color:#217AFF;
+}
+.gallery-items .badge.gray {
+    color:#888;
+}
+.gallery-items .badge + .date::before {
+    content:'';
+    display: inline-block;
+    width:1px;
+    height:12px;
+    background-color: #ccc;
+    margin:0 10px;
+}
+
 .gallery-list + .pg {
     margin-top:50px;
 }

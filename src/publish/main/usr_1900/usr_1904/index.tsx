@@ -57,7 +57,11 @@ function ContentsContainer() {
 										<div className="thumnails">
 											<img src={noImg} alt="no Images" />
 										</div>
-										<div className="subject"><label className="badge badge-23 blue">모집중</label><span className="txt">우수사례 제목이 출력됩니다.</span></div>
+										<div className="subject">수요조사 제목 출력</div>
+										<div className="bottoms">
+											<label className="badge blue">모집중</label>
+											<span className="date">2024-02-25 ~ 2024-05-21</span>
+										</div>
 									</Link>
 								</li>
 								<li>
@@ -65,7 +69,11 @@ function ContentsContainer() {
 										<div className="thumnails">
 											<img src={noImg} alt="no Images" />
 										</div>
-										<div className="subject"><label className="badge badge-23 gray">모집완료</label><span className="txt">농·어촌상생협력기금</span></div>
+										<div className="subject">수요조사 제목 출력</div>
+										<div className="bottoms">
+											<label className="badge gray">모집완료</label>
+											<span className="date">2024-02-25 ~ 2024-05-21</span>
+										</div>
 									</Link>
 								</li>
 								<li>
@@ -73,7 +81,11 @@ function ContentsContainer() {
 										<div className="thumnails">
 											<img src={noImg} alt="no Images" />
 										</div>
-										<div className="subject"><label className="badge badge-23 blue">모집중</label><span className="txt">기업자율형 상생프로그램</span></div>
+										<div className="subject">수요조사 제목 출력</div>
+										<div className="bottoms">
+											<label className="badge blue">모집중</label>
+											<span className="date">2024-02-25 ~ 2024-05-21</span>
+										</div>
 									</Link>
 								</li>
 								<li>
@@ -81,7 +93,11 @@ function ContentsContainer() {
 										<div className="thumnails">
 											<img src={noImg} alt="no Images" />
 										</div>
-										<div className="subject"><label className="badge badge-23 blue">모집중</label><span className="txt">대·중소기업 동반진출</span></div>
+										<div className="subject">수요조사 제목 출력</div>
+										<div className="bottoms">
+											<label className="badge blue">모집중</label>
+											<span className="date">2024-02-25 ~ 2024-05-21</span>
+										</div>
 									</Link>
 								</li>
 								<li>
@@ -89,7 +105,11 @@ function ContentsContainer() {
 										<div className="thumnails">
 											<img src={noImg} alt="no Images" />
 										</div>
-										<div className="subject"><label className="badge badge-23 blue">모집중</label><span className="txt">농·어촌상생협력기금</span></div>
+										<div className="subject">수요조사 제목 출력</div>
+										<div className="bottoms">
+											<label className="badge blue">모집중</label>
+											<span className="date">2024-02-25 ~ 2024-05-21</span>
+										</div>
 									</Link>
 								</li>
 								<li>
@@ -97,7 +117,11 @@ function ContentsContainer() {
 										<div className="thumnails">
 											<img src={noImg} alt="no Images" />
 										</div>
-										<div className="subject"><label className="badge badge-23 blue">모집중</label><span className="txt">공통투자형 기술개발</span></div>
+										<div className="subject">수요조사 제목 출력수요조사 제목 출력</div>
+										<div className="bottoms">
+											<label className="badge blue">모집중</label>
+											<span className="date">2024-02-25 ~ 2024-05-21</span>
+										</div>
 									</Link>
 								</li>
 							</ul>
