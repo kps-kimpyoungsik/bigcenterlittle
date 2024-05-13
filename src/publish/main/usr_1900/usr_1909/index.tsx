@@ -15,7 +15,7 @@ function ContentsContainer() {
 					<h1 className="tx tx-hd2">수요조사 지원 내용</h1>
 					<section className="fund-section">
 						<div className="hz-root hz-gap10 hz-sb mb15">
-							<h3 className="section-title">첨부파일</h3>
+							<h3 className="section-title">기본 정보</h3>
 							<p className="tx-msg"><span className="fc-pri">*</span>&nbsp;필수 입력</p>
 						</div>
 						<form className="fo fo-col2" name="" action="" method="">
@@ -82,7 +82,6 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'미사용'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-
 							</div>
 						</form>
 					</section>
@@ -105,7 +104,7 @@ function ContentsContainer() {
 													</div>
 												</div>
 											</div>
-											<Button color='gray-o' size="md">다운로드</Button>
+											<Button color='gray-o' size="md">미리보기</Button>
 										</div>
 									</div>
 								</div>
