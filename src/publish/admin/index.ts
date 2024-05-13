@@ -137,6 +137,7 @@ export { default as adm6710Page } from './adm_6000/adm_6710';
 export { default as adm6711Page } from './adm_6000/adm_6711';
 export { default as adm6712Page } from './adm_6000/adm_6712';
 export { default as adm6713Page } from './adm_6000/adm_6713';
+export { default as adm6810Page } from './adm_6000/adm_6810';
 
 export { default as adm7000Page } from './adm_7000/adm_7000';
 export { default as adm7100Page } from './adm_7000/adm_7100';

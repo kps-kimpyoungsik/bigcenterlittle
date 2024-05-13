@@ -418,7 +418,6 @@ function ContentsContainer() {
 				</div>	
 			</ModalPopup>		
 
-
 		</PageContainer>
 	);
 }

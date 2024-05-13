@@ -2,7 +2,8 @@
     /* Select */
 .sl {
     position: relative;
-    min-width: 100px;
+    /* min-width: 100px; */
+    min-width: 75px;
 }
 .sl>select {
   outline: 0;

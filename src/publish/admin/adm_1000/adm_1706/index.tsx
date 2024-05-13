@@ -80,7 +80,7 @@ function ContentsContainer() {
 							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
 						</div>
 						<div className="hz-root hz-gap5">
-							<Button color="pri-o" size="sm">rhkwp등록</Button>
+							<Button color="pri-o" size="sm">과제등록</Button>
 							<div className="sl sl-sm w120">
 								<select name="" id="" className="">
 									<option value="20">20개씩보기</option>

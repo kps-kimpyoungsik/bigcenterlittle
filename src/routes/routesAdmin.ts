@@ -156,6 +156,7 @@ import {
 	adm6711Page,
 	adm6712Page,
 	adm6713Page,
+	adm6810Page,
 
 	// 결재함 [7000]
 	adm7000Page,
@@ -728,6 +729,11 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/admin/adm_6000/adm6713',
 		component: adm6713Page,
+		layout: DefaultLayout,
+	},	
+	{
+		path: '/admin/adm_6000/adm6810',
+		component: adm6810Page,
 		layout: DefaultLayout,
 	},	
 
