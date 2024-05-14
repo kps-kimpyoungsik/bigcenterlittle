@@ -292,11 +292,12 @@ background-image: url(../img/icon/ic_left_10.svg);
 
 /*adm_6210에서 쓰이는 페이크-텍스트에어리어*/
 .ta-view {
-    background: #f8f8f8;
-    border: 1px solid #ccc;
+    /* background: #f8f8f8; */
+    background: #fff;
+    /* border: 1px solid #ccc; */
+    border: 0;
     padding: 15px;
     height: auto;
-    /* height: 200px; */
 }
 /*adm_7101에서 쓰이는 페이크-텍스트에어리어*/
 .ta-view.ta-view-white {

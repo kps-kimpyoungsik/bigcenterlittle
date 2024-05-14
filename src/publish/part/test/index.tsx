@@ -1,14 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import PageContainer from '../../PageContainer';
-import LayoutAside from "../adm_4000Aside";
-import useToggleState from 'components/hooks/useToggleState';
-import ModalPopup from 'components/modal/';
+// import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import PageContainer from '../PageContainer';
 import Button from 'components/buttons/';
 function ContentsContainer() {
 	return (
 		<PageContainer>
-			<LayoutAside />
+			
 			<div className="fww-con">
 				<main className="fww-main">
 
