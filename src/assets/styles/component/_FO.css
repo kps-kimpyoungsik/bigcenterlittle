@@ -7,6 +7,9 @@
     box-sizing: border-box;
     margin-bottom: 10px;
 }
+.fo.no-top-line {
+  border-top: 0;
+}
 .fo>.inner {
   display: grid;
   /* grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr); */
