@@ -80,9 +80,7 @@ function ContentsContainer() {
 					<label className="badge badge-26 yellow">뱃지</label>
 					<label className="badge badge-26 gray">뱃지</label>
 
-					<div className="loading">
-						<div className="loader"></div>
-					</div>
+
 	
 				</main>			
 			</div>

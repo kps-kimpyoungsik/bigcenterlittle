@@ -11,9 +11,9 @@ function App() {
 		<Suspense fallback={<PageLoading />}>
 			<BrowserRouter>
 				<Switch>
-					<Route path="/main" render={ Main} />
-					<Route path="/admin" render={ Admin} />
-					<Route path="/part" render={ Part} />
+					<Route path="/main" render={ Main} /> {/* 관리자페이지 */}
+					<Route path="/admin" render={ Admin} /> {/* 사용자페이지 */}
+					<Route path="/part" render={ Part} /> {/* 퍼블리셔 관리 파일 */}
 				</Switch>
 				<ToastContainer
 					position="top-right"

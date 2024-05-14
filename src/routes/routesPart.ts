@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultLayout } from '../layouts/admin';
+import { LoginLayout } from '../layouts/admin';
 import {
 	
 	testPage,
@@ -15,7 +15,7 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/part/test',
 		component: testPage,
-		layout: DefaultLayout,
+		layout: LoginLayout,
 	},	
 
 
