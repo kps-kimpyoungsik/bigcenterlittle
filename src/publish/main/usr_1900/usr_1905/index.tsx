@@ -90,6 +90,19 @@ function ContentsContainer() {
 									<p className="fo-key">상생협력기금 사용여부</p>
 									<div className="fo-value">
 										<div className="hz-root hz-gap15">
+											<label htmlFor="rd-1-1" className="ip-rd-label">
+												<input name="rd-1" id="rd-1-1" className="ip-rd" type="radio"/>
+												<span className="check"></span>
+												<span className="txt">사용</span>
+											</label>
+											<label htmlFor="rd-1-2" className="ip-rd-label">
+												<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio" />
+												<span className="check"></span>
+												<span className="txt">미사용</span>
+											</label>
+										</div>
+										{/*  
+										<div className="hz-root hz-gap15">
 											<label htmlFor="ch-1" className="hz-item ip-ch-label ip-ch-18">
 												<input id="ch-1" className="ip-ch" type="checkbox" />
 												<span className="check"></span> 
@@ -101,6 +114,7 @@ function ContentsContainer() {
 												<span className="txt">미사용</span>
 											</label>
 										</div>
+										*/}
 									</div>
 								</div>
 								<div className="fo-item fo-m-1-3">
