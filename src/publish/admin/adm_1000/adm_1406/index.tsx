@@ -275,25 +275,120 @@ function ContentsContainer() {
 						<Button color="gray-o" size="sm" >목록</Button>
 					</div>
 
-					<h3 className="section-title mb15">지원내용 및 기대효과</h3>
+					<h3 className="section-title mb15">과제개요 및 기대효과</h3>
 					<form className="fo fo-col2 mb30" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item fo-m-1-3">
-								<p className="fo-key">과제내용</p>
+								<p className="fo-key">과제개요</p>
 								<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={'생산성 향상을 위한 자동화 설비 도입'} placeholder={''} readOnly={true} />
+									<div className="ta-view h100 w100p">
+										[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 심사가 완료되었습니다.
+										[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 집행이 완료되었습니다. 지급금액 <em className="fc-err">$###</em>원, 집행일 <em className="fc-err">YYYY-MM-DD</em>
+									</div>
 								</div>
 							</div>
 							<div className="fo-item fo-m-1-3">
-								<p className="fo-key">기대효과(정성)</p>
+								<p className="fo-key">정성효과</p>
 								<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={'자동화 설비 도입을 통한 원가절감 및 품질 향상'} placeholder={''} readOnly={true} />
+									<div className="ta-view h100 w100p">
+											[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 심사가 완료되었습니다.
+											[상생협력재단] <em className="fc-err">NAME(기업명)</em>-과제번호 <em className="fc-err">$####</em>의 집행이 완료되었습니다. 지급금액 <em className="fc-err">$###</em>원, 집행일 <em className="fc-err">YYYY-MM-DD</em>
+										</div>
 								</div>
 							</div>
 							<div className="fo-item fo-m-1-3">
-								<p className="fo-key">기대효과(정량)</p>
-								<div className="fo-value">
-									<UIInput className={'tf tf-md w100p'} value={'$'} placeholder={''} readOnly={true} />
+								<p className="fo-key">기대효과</p>
+								<div className="fo-value d-block">
+									
+									<form className="fo fo-col2 no-top-line mb0" name="" action="" method="">
+										<div className="inner">
+											<div className="fo-item">
+												<p className="fo-key">매출액</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={'1000억'} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">지식재산권</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">일자리창출</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">수출액</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">판로처 확대</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">신규참여 수탁기업 수</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">신규 투자액</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">신설 창업기업 수</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">생산성 향상</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">중소기업 체감도</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">예상 구매액</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">기타 성과1</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">예상 판매액</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+											<div className="fo-item">
+												<p className="fo-key">기타 성과2</p>
+												<div className="fo-value">
+													<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} readOnly={true} />
+												</div>
+											</div>
+										</div>
+									</form>
+
 								</div>
 							</div>
 						</div>
