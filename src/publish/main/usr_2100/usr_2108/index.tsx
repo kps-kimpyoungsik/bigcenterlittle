@@ -499,14 +499,6 @@ function ContentsContainer() {
 										<div className="fund-form-group">
 											<div className="fund-form-items mr30">
 												<UIInputFile  placeholder={'파일을 첨부해 주세요.'}/>
-												{/* 
-												<div className="hz-root hz-gap5 w100p">
-													<UIInput className={'tf tf-md hz-item grow'} value={''} placeholder={'파일을 첨부해 주세요.'} />
-													<div className="hz-root hz-gap5 w120 ">
-														<Button color='pri-o2' size="md">찾기</Button>
-													</div>
-												</div>
-												 */}
 											</div>
 											<Button color='gray-o' size="md">양식 다운로드</Button>
 										</div>
@@ -656,7 +648,6 @@ function ContentsContainer() {
 													<UIInput className={'tf tf-md ta-right'} value={'1,000,000,000'} placeholder={''}/>
 													<span className="u">원</span>
 												</div>
-
 											</td>
 										</tr>
 										<tr>
@@ -688,6 +679,56 @@ function ContentsContainer() {
 								</table>
 							</div>
 							<p className="tx-msg">※ 안내사항 : 위에서 변경될 내용에 대해 변경하시고 체크박스를 선택하시면 변경내용이 자동으로 적용됩니다.</p>
+						</form>
+					</section>
+					<section className="fund-section">
+						<h3 className="section-title mb15">지원기간 변경 이력</h3>
+						<form name="" action="" method="">
+							<div className="tb tb-narrow">
+								<table>
+									<caption></caption>
+									<colgroup>
+										<col width="90px"/>
+										<col />
+										<col />
+										<col width="240px"/>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">NO</th>
+											<th scope="col">기존</th>
+											<th scope="col">변경</th>
+											<th scope="col">변경일</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>
+												<UIInput className={'tf tf-md ta-center w100p'} value={'YYYY-MM-DD(Day) ~ YYYY-MM-DD(Day)'} readOnly={true} />
+											</td>
+											<td>
+												<UIInput className={'tf tf-md ta-center w100p'} value={'YYYY-MM-DD(Day) ~ YYYY-MM-DD(Day)'} readOnly={true} />
+											</td>
+											<td>
+												<UIInput className={'tf tf-md ta-center w100p'} value={'YYYY-MM-DD(Day)'} readOnly={true} />
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>
+												<UIInput className={'tf tf-md ta-center w100p'} value={'YYYY-MM-DD(Day) ~ YYYY-MM-DD(Day)'} readOnly={true} />
+											</td>
+											<td>
+												<UIInput className={'tf tf-md ta-center w100p'} value={'YYYY-MM-DD(Day) ~ YYYY-MM-DD(Day)'} readOnly={true} />
+											</td>
+											<td>
+												<UIInput className={'tf tf-md ta-center w100p'} value={'YYYY-MM-DD(Day)'} readOnly={true} />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</form>
 					</section>
 					<div className="hz-root hz-right hz-gap10 mt30">

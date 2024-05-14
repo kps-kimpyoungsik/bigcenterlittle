@@ -1688,9 +1688,9 @@
     min-height:36px;
 }
 
-/* .fund-section * {
-    box-sizing: border-box;
-} */
+.fund-section.simply {
+    display:none;
+}
 .fund-section .fo-value .datepicker {
     flex:1;
 }

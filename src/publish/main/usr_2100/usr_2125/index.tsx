@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 //import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2100Aside";
@@ -11,6 +11,10 @@ import ModalPopup from 'components/modal/';
 function ContentsContainer() {
 	const modalusr2126 = useToggleState({});
 	const modalusr2127 = useToggleState({});
+	const [checked, setChecked] = useState(true);
+	const checkHandled = ({target}) => {
+		if (target.checked) {setChecked(true)} else {setChecked(false)}
+	}
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -28,7 +32,7 @@ function ContentsContainer() {
 						<div className="hz-root hz-gap15 mb15">
 							<h3 className="section-title">지급 신청 정보</h3>
 							<div className="switch-button">
-								<input type="checkbox" id="switch-chk" />
+								<input type="checkbox" id="switch-chk" checked={checked} onChange={(e) => checkHandled(e)} />
 								<label htmlFor="switch-chk">
 									<span className="toggle"></span>상세보기
 								</label>
@@ -489,7 +493,7 @@ function ContentsContainer() {
 						</form>
 						<div>file upload...</div>
 					</section>
-					<section className="fund-section">
+					<section className={checked ? 'fund-section' : 'fund-section simply'}>
 						<h3 className="section-title mb15">내부검토사항</h3>
 						<form name="" action="" method="">
 							<div className="tb tb-narrow">
@@ -526,7 +530,7 @@ function ContentsContainer() {
 							</div>
 						</form>
 					</section>
-					<section className="fund-section">
+					<section className={checked ? 'fund-section' : 'fund-section simply'}>
 						<h3 className="section-title mb15">반려사유</h3>
 						<form name="" action="" method="">
 							<div className="tb tb-narrow">
@@ -563,7 +567,7 @@ function ContentsContainer() {
 							</div>
 						</form>
 					</section>
-					<section className="fund-section">
+					<section className={checked ? 'fund-section' : 'fund-section simply'}>
 						<h3 className="section-title hz-item mb15">심사 의견</h3>
 						<form name="" action="" method="">
 							<div className="tb tb-narrow">
@@ -617,7 +621,7 @@ function ContentsContainer() {
 							</div>
 						</form>
 					</section>
-					<section className="fund-section">
+					<section className={checked ? 'fund-section' : 'fund-section simply'}>
 						<h3 className="section-title mb15">기업 정보</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
