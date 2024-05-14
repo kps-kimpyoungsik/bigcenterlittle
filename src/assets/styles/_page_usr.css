@@ -2037,7 +2037,7 @@
 
 
 .modal-tskana .fo.fo-col2 .fo-item .fo-key {
-    width: 150px;
+    width: 124px;
 }
 .modal-con .tx-msg{
     font-size:13px;
@@ -2200,6 +2200,46 @@
 .fo-value.flex-wrap  .fo-item > .fo-key {
     width:180px;
 }
+
+.tb-top .price-summary {
+    display: flex;
+    align-items: center;
+    margin-left:15px;
+    font-size:14px;
+    line-height: 1;
+    color:#333;
+
+}
+.tb-top .price-summary::before {
+    content:'';
+    display: inline-block;
+    width:10px;
+    height:8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.32584 3.51347C5.65768 3.75295 5.65768 4.24705 5.32584 4.48653L0.951123 7.64371C0.554305 7.93009 -3.77953e-07 7.64655 -3.56562e-07 7.15718L-8.05521e-08 0.842818C-5.91613e-08 0.353453 0.554305 0.0699077 0.951123 0.356287L5.32584 3.51347Z' fill='%239CA7B4'/%3E%3C/svg%3E%0A");
+    margin-right:8px;
+    pointer-events: none;
+}
+.tb-top .price-summary .price {
+    font-weight:500;
+    letter-spacing: -0.6px;
+}
+.tb-top .price-summary .sign {
+    margin:0 5px;
+}
+.tb-top .price-summary .items {
+    display: inline-flex;
+    align-items: center;
+}
+.tb-top .price-summary .items label{
+    font-weight:500;
+    margin-right:5px;
+}
+.tb-top .price-summary .items .total {
+    font-weight:400;
+}
+
 
 /*textarea*/
 .ta-group .ta-ip {

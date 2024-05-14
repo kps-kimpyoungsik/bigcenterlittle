@@ -54,6 +54,12 @@ export { default as usr2133Page } from './usr_2100/usr_2133';
 export { default as usr2136Page } from './usr_2100/usr_2136';
 export { default as usr2137Page } from './usr_2100/usr_2137';
 export { default as usr2138Page } from './usr_2100/usr_2138';
+//통합정보조회
+export { default as usr2200Page } from './usr_2200/usr_2200';
+export { default as usr2201Page } from './usr_2200/usr_2201';
+export { default as usr2202Page } from './usr_2200/usr_2202';
+export { default as usr2209Page } from './usr_2200/usr_2209';
+export { default as usr2213Page } from './usr_2200/usr_2213';
 // 고객지원
 export { default as usr2300Page } from './usr_2300/usr_2300';
 export { default as usr2301Page } from './usr_2300/usr_2301';
