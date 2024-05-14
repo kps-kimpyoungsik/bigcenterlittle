@@ -299,6 +299,21 @@ background-image: url(../img/icon/ic_left_10.svg);
     padding: 15px;
     height: auto;
 }
+
+/*pages - 6421*/
+.pannel {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.pannel .pannel-top {
+	border-bottom: 1px solid #ddd;	
+	padding: 15px 17px 15px 20px;
+}
+.pannel .pannel-bottom {
+	padding: 15px;
+}
+
+
 /*adm_7101에서 쓰이는 페이크-텍스트에어리어*/
 .ta-view.ta-view-white {
     background: #fff;
@@ -306,7 +321,6 @@ background-image: url(../img/icon/ic_left_10.svg);
     padding: 15px 0;
     /* height: 200px; */
 }
-
 /*adm_7000 (결재선)*/
 .approval-gen {
     /* border: 1px dashed blue; */

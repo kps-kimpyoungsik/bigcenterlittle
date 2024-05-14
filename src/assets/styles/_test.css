@@ -14,6 +14,7 @@
 	font-weight: 600;
 	color: hotpink;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .deco-h2 {
 	font-size: 28px;
@@ -34,43 +35,3 @@
 	border: 1px solid hotpink;
 }
 
-/*pages - 6421*/
-.pannel {
-	border: 1px solid #ddd;
-	border-radius: 4px;
-}
-.pannel .pannel-top {
-	border-bottom: 1px solid #ddd;	
-	padding: 15px 17px 15px 20px;
-}
-.pannel .pannel-bottom {
-	padding: 15px;
-}
-
-/*20240502 - 상단영역 확보*/
-/*제목*/
-/* .tx.tx-hd2 {
-	font-size: 26px;
-} */
-
-/*서치패널*/
-/* .sf {
-	padding: 20px;
-}
-.sf>.inner {
-	gap: 15px 60px;
-} */
-
-/*인풋,버튼*/
-/* .bt[data-size='md']  {
-	height: 32px;
-}
-.tf.tf-md {
-	height: 32px;
-}
-.sl.sl-md>select {
-	height: 32px;
-}
-.react-datepicker__input-container [type=text] {
-	height: 30px;
-} */
