@@ -12,6 +12,7 @@ import ModalPopup from 'components/modal/';
 import { Tooltip } from 'react-tooltip';
 //import { Popover } from "react-tiny-popover";
 import Virtual from 'assets/img/pages/usr_virtual.svg';
+import Kupload from 'components/input/kupload';
 function ContentsContainer() {
 	const modaladm2004 = useToggleState({});
 	//const [isPopoverOpen, setIsPopoverOpen] = useState(false);
@@ -250,7 +251,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<div>file upload...</div>
+						<div><Kupload />{/* file upload... */}</div>
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">기업정보</h3>

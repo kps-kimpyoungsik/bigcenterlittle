@@ -8,6 +8,8 @@
 @import url("_page_usr.css"); /*사용자page(추후삭제)*/
 @import url("_helper.css"); /*헬퍼류(간단CSS 수정 클래스 모음집)*/
 @import url("_test.css"); /*테스트시*/
+@import url("https://fund.win-win.or.kr/raonkupload/css/raonkupload.min.css")/*kupload css - 추후 삭제*/
+
 
 /*
     파일 개요
