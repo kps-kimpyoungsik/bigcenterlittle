@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import './assets/styles/fww.css';
 import Main from "./publish/main/mainRoutes";
 import Admin from "./publish/admin/AdminRoutes";
+import Part from "./publish/part/PartRoutes";
 import PageLoading from "./publish/loading";
 function App() {
 	return (
@@ -12,7 +13,7 @@ function App() {
 				<Switch>
 					<Route path="/main" render={ Main} />
 					<Route path="/admin" render={ Admin} />
-					
+					<Route path="/part" render={ Part} />
 				</Switch>
 				<ToastContainer
 					position="top-right"
