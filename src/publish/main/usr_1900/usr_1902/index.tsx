@@ -153,7 +153,8 @@ function ContentsContainer() {
 								</div>
 								<div className="loc-items address">
 									<h6>주소</h6>
-									04554 서울특별시 중구 퇴계로 173 남산스퀘어빌딩 7층, (fax: 02-368-8709) 
+									<p className="mb12">서울특별시 중구 퇴계로 173 <br />남산스퀘어빌딩 7층</p>
+									fax 02-368-8709
 								</div>
 								<div className="loc-items bus">
 									<h6>버스</h6>

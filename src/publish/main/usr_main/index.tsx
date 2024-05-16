@@ -46,39 +46,29 @@ function HomeContainer(){
 									<h3 className="bd-title">안내사항</h3>
 									<ul className="bd-list">
 										<li>
-											<Link to="#">
-												<label className="badge red">중요</label>
-												<div className="subject">대·중소기업상생협력기금 운영·관리 규정</div>
-												<div className="date">2024.03.30</div>
-											</Link>
+											<label className="badge red">중요</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<Link to="#">
-												<label className="badge red">중요</label>
-												<div className="subject">대·중소기업상생협력기금 운영·관리 규정</div>
-												<div className="date">2024.03.30</div>
-											</Link>
+											<label className="badge red">중요</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<Link to="#">
-												<label className="badge gray">공지</label>
-												<div className="subject">대·중소기업상생협력기금 운영·관리 규정</div>
-												<div className="date">2024.03.30</div>
-											</Link>
+											<label className="badge red">중요</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<Link to="#">
-												<label className="badge gray">공지</label>
-												<div className="subject">대·중소기업상생협력기금 운영·관리 규정</div>
-												<div className="date">2024.03.30</div>
-											</Link>
+											<label className="badge red">중요</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<Link to="#">
-												<label className="badge gray">공지</label>
-												<div className="subject">대·중소기업상생협력기금 운영·관리 규정 대·중소기업상생협력기금 운영·관리 규정</div>
-												<div className="date">2024.03.30</div>
-											</Link>
+											<label className="badge red">중요</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="date">2024.03.30</div>
 										</li>
 									</ul>
 									<button type="button" className="button-more">더보기</button>
@@ -88,18 +78,14 @@ function HomeContainer(){
 										<h3 className="bd-title">자주하는 질문</h3>
 										<ul className="bd-list">
 											<li>
-												<Link to="#">
-													<label className="badge yellow">Q.</label>
-													<div className="subject">상생협력기금이란 무엇인가요?</div>
-													<div className="date">2024.03.30</div>
-												</Link>
+												<label className="badge yellow">Q.</label>
+												<div className="subject"><Link to="#"  className="tx tx-link">상생협력기금이란 무엇인가요?</Link></div>
+												<div className="date">2024.03.30</div>
 											</li>
 											<li>
-												<Link to="#">
-													<label className="badge yellow">Q.</label>
-													<div className="subject">상생협력기금 현황 등 보고는 어디에서 확인하나요?</div>
-													<div className="date">2024.03.30</div>
-												</Link>
+												<label className="badge yellow">Q.</label>
+												<div className="subject"><Link to="#"  className="tx tx-link">상생협력기금 현황 등 보고는 어디에서 확인하나요?</Link></div>
+												<div className="date">2024.03.30</div>
 											</li>
 										</ul>
 										<button type="button" className="button-more">더보기</button>
@@ -108,18 +94,14 @@ function HomeContainer(){
 										<h3 className="bd-title">지원사례</h3>
 										<ul className="bd-list">
 											<li>
-												<Link to="#">
-													<label className="badge green">사례</label>
-													<div className="subject">생협력기금 지원사례_임금격차완화, 일자리창출, 벤처창업</div>
-													<div className="date">2024.03.30</div>
-												</Link>
+												<label className="badge green">사례</label>
+												<div className="subject"><Link to="#"  className="tx tx-link">생협력기금 지원사례_임금격차완화, 일자리창출, 벤처창업</Link></div>
+												<div className="date">2024.03.30</div>
 											</li>
 											<li>
-												<Link to="#">
-													<label className="badge green">사례</label>
-													<div className="subject">상생협력기금 지원사례_동반성장 기반 구축 및 문화 확산편</div>
-													<div className="date">2024.03.30</div>
-												</Link>
+												<label className="badge green">사례</label>
+												<div className="subject"><Link to="#"  className="tx tx-link">상생협력기금 지원사례_동반성장 기반 구축 및 문화 확산편</Link></div>
+												<div className="date">2024.03.30</div>
 											</li>
 										</ul>
 										<button type="button" className="button-more">더보기</button>
