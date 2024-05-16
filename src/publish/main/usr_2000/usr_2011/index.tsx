@@ -5,6 +5,7 @@ import LayoutAside from "../user2000Aside";
 import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
+import Raonkupload from 'components/input/kupload';
 function ManualContainer(): JSX.Element {
 	return (
 		<PageContainer>
@@ -249,7 +250,7 @@ function ManualContainer(): JSX.Element {
 							</div>
 						</form>
 						<p className="tx-msg mt10 mb18"><span className="fc-pri">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</span></p>
-						<div>file upload...</div>
+						<Raonkupload /> {/* 기능X css 디자인  */}
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">반려사유</h3>

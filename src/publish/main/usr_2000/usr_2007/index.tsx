@@ -9,6 +9,7 @@ import Button from 'components/buttons/';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
 import UIDatePicker from "components/datepicker";
+import Raonkupload from 'components/input/kupload';
 function ContentsContainer() {
 	const modaladm2007 = useToggleState({});
 	const modaladm2007_1 = useToggleState({});
@@ -196,7 +197,7 @@ function ContentsContainer() {
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">파일첨부</h3>
-						fileupload...
+						<Raonkupload /> {/* 기능X css 디자인  */}
 						<p className="tx-msg mt10"><span className="fc-pri">※ 자사별 전용공문을 첨부해 주세요.</span></p>
 					</section>
 					<section className="fund-section">
@@ -264,18 +265,18 @@ function ContentsContainer() {
 					</div>
 				</main>
 			</div>
-			{/* modal - 안내사항 보기 */}
+			{/* modal - 전용신청 안내사항 */}
 			<ModalPopup
 				open={modaladm2007.isShowing}
-				title="안내사항 보기"
+				title="전용신청 안내사항"
 				size="mid"
 				onClose={modaladm2007.close}
 			>
 				<div className="modal-con">
 					<div className="fww-noti">
 						<section className="mb30">
-							<h3>출연절차</h3>
-							<div className="step">
+							<h3>전용신청절차</h3>
+							<div className="step fund">
 								<dl>
 									<dt>01 출연선택</dt>
 									<dd>전용이 가능한 <br />출연사업을 선택</dd>
@@ -294,19 +295,17 @@ function ContentsContainer() {
 								</dl>
 							</div>
 						</section>
-						<dl className="guide mb8">
+						<dl className="guide mb15">
 							<dt>유의사항</dt>
 							<dd>
 								<ul className="list-group">
 									<li>전용신청 시 출연사업을 지정하여 전용신청을 해야 합니다.</li>
 									<li>전용가능금액 한도 내에서 신청이 가능합니다.</li>
-									<li>
-										전용신청 시 자사별 전용공문을 첨부해야 제출할 수 있습니다.<br />
-										<span className="fc-pri">전용공문은 재단에서 별도로 제공하고 있지 않습니다. 자사에서 구비중인 전용공문을 준비해 주세요.</span>
-									</li>
+									<li>전용신청 시 자사별 전용공문을 첨부해야 제출할 수 있습니다.</li>
 								</ul>
 							</dd>
 						</dl>
+						<div className="tx-msg"><span className="fc-pri">※ 전용공문은 재단에서 별도로 제공하고 있지 않습니다. 자사에서 구비중인전용공문을 준비해 주세요.</span></div>
 					</div>
 				</div>
 				<div className="modal-bottom">

@@ -10,6 +10,7 @@ import UIDatePicker from "components/datepicker";
 import useToggleState from 'components/hooks/useToggleState';
 import { Tooltip } from "react-tooltip";
 import ModalPopup from 'components/modal/';
+import Raonkupload from 'components/input/kupload';
 function ContentsContainer() {
 	const sectors1 = [
 		'구매조건부신제품개발사업(공동R&D)','대·중소기업 혁신파트너십지원사업','대 중소 상생형 스마트공장','대·중소기업 해외동반진출 지원사업','동반성장몰_복지포인트 지원사업','성과공유제 확산 사업',
@@ -591,10 +592,8 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-
 						<p className="tx-msg mb15"><span className="fc-pri">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</span></p>
-
-						<div>file upload...</div>
+						<Raonkupload /> {/* 기능X css 디자인  */}
 					</section>
 					<section className="fund-section">
 						<div className="hz-root hz-gap10 mb25">

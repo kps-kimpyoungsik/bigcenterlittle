@@ -7,6 +7,7 @@ import Breadcrumb from 'layouts/main/Breadcrumb';
 import UIInput from 'components/input/input';
 import Button from 'components/buttons/';
 import { Tooltip } from "react-tooltip";
+import Raonkupload from 'components/input/kupload';
 function ContentsContainer() {
 	const [checked, setChecked] = useState(true);
 	const checkHandled = ({target}) => {
@@ -532,7 +533,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<div>file upload...</div>
+						<Raonkupload /> {/* 기능X css 디자인  */}
 					</section>
 					<section className={checked ? 'fund-section' : 'fund-section simply'}>
 						<h3 className="section-title mb15">변경이력</h3>

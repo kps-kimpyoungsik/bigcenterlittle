@@ -8,6 +8,7 @@ import Button from 'components/buttons/';
 import { Tooltip } from "react-tooltip";
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
+import Raonkupload from 'components/input/kupload';
 function ContentsContainer() {
 	const modalusr2126 = useToggleState({});
 	const modalusr2127 = useToggleState({});
@@ -491,7 +492,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<div>file upload...</div>
+						<Raonkupload /> {/* 기능X css 디자인  */}
 					</section>
 					<section className={checked ? 'fund-section' : 'fund-section simply'}>
 						<h3 className="section-title mb15">내부검토사항</h3>

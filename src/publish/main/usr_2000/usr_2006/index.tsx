@@ -11,6 +11,7 @@ import UIDatePicker from "components/datepicker";
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
 import { Tooltip } from 'react-tooltip';
+import Raonkupload from 'components/input/kupload';
 function ContentsContainer() {
 	const modaladm2004 = useToggleState({});
 	return (
@@ -215,7 +216,7 @@ function ContentsContainer() {
 							</div>
 						</form>
 						<p className="tx-msg mt10 mb18"><span className="fc-pri">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</span></p>
-						<div>file upload...</div>
+						<Raonkupload /> {/* 기능X css 디자인  */}
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">출연 기업 정보</h3>

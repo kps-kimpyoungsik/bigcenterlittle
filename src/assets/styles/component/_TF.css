@@ -14,7 +14,8 @@ input, button, textarea {
 .tf:focus {
   border-color: var(--p1);
 }
-.tf.tf-error {
+.tf.tf-error,
+.tf:invalid  {
   border-color: var(--e1);
 }
 
