@@ -28,8 +28,8 @@ function ContentsContainer() {
 					</div>
 					<div className="tb-view-file">
 						<ul>
-							<li><i className="ic file">첨부파일</i> <Link to="#">대·중소기업상생협력기금 운영관리 규정.hwp</Link><span>(33,792 Byte)</span></li>
-							<li><i className="ic file">첨부파일</i> <Link to="#">대·중소기업상생협력기금 운영관리 규정.hwp</Link><span>(33,792 Byte)</span></li>
+							<li><i className="ic file">첨부파일</i> <Link to="#" className="tx tx-link">대·중소기업상생협력기금 운영관리 규정.hwp</Link><span>(33,792 Byte)</span></li>
+							<li><i className="ic file">첨부파일</i> <Link to="#" className="tx tx-link">대·중소기업상생협력기금 운영관리 규정.hwp</Link><span>(33,792 Byte)</span></li>
 						</ul>
 					</div>
 					<div className="tb-view-cont">
@@ -39,7 +39,7 @@ function ContentsContainer() {
 					<div className="tb-view-move">
 						<ul>
 							<li className="disabled"><label className="prev">이전글</label> 이전글이 없습니다.</li>
-							<li><label className="next">다음글</label> <Link to="#">2024년도 상생협력기금 일자리창출, 벤처창업 관련 규정안내 공지</Link></li>
+							<li><label className="next">다음글</label> <Link to="#" className="tx tx-link">2024년도 상생협력기금 일자리창출, 벤처창업 관련 규정안내 공지</Link></li>
 						</ul>
 					</div>
 					<div className="hz-root hz-center">
