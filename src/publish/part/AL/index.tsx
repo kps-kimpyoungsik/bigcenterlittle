@@ -10,7 +10,7 @@ function ContentsContainer() {
 			<div className="fww-con">
 				<main className="fww-main">
 
-					<h1 className="deco-h1">BT(버튼)</h1>
+					<h1 className="deco-h1">AL(알럿트ㄹ)</h1>
 					<div className="hz-root hz-gap10">
 						<Button color="pri" size="big">버튼</Button>
 						<Button color="pri-o" size="big">버튼</Button>

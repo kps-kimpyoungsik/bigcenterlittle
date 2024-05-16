@@ -3,6 +3,7 @@ import React from "react";
 import { Link, useLocation } from 'react-router-dom';
 import PageContainer from '../PageContainer';
 import Button from 'components/buttons/';
+import { Tooltip } from 'react-tooltip';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -10,78 +11,25 @@ function ContentsContainer() {
 			<div className="fww-con">
 				<main className="fww-main">
 
-					<h1 className="deco-h1">BT(버튼)</h1>
-					<div className="hz-root hz-gap10">
-						<Button color="pri" size="big">버튼</Button>
-						<Button color="pri-o" size="big">버튼</Button>
-						<Button color="pri-o2" size="big">버튼</Button>
-						<Button color="gray" size="big">버튼</Button>
-						<Button color="gray-o" size="big">버튼</Button>
-					</div>
+					<h1 className="deco-h1">TT(툴팁)</h1>
 
-					<br />
-					<div className="hz-root hz-gap8">
-						<Button color="pri" size="md">버튼</Button>
-						<Button color="pri-o" size="md">버튼</Button>
-						<Button color="pri-o2" size="md">버튼</Button>
-						<Button color="gray" size="md">버튼</Button>
-						<Button color="gray-o" size="md">버튼</Button>
-					</div>
+					<button type="button" className="button-tooltip" data-tooltip-id="tooltip">툴팁</button>
+					<Tooltip 
+								id="tooltip"  
+								disableStyleInjection={true}
+								place={"bottom-start"}
+								className="tooltip-conts"
+								//openOnClick
+							>
+								<div className="msg">
+									<h6 className="tooltip-title">출연 신청 시 첨부 서류</h6>
+									<ul className="list-group">
+										<li>서면 : 출연신청서(서면) 클릭하여 출연신청서 출력 후 직인을 찍고 스캔하여 수정버튼을 클릭하여 이동한 화면에서 출연신청(첨부문서)에 등록 후 저장하셔야 합니다.</li>
+										<li>전자인증 : 기업용 공인인증서를 이용하여 출연신청서(전자인증)을 클릭하여 인증을 완료하시면 됩니다. 첨부 문서는 없습니다.</li>
+									</ul>
+								</div>
+							</Tooltip>					
 
-					<br />
-					<div className="hz-root hz-gap5">
-						<Button color="pri" size="sm">버튼</Button>	
-						<Button color="pri-o" size="sm">버튼</Button>	
-						<Button color="pri-o2" size="sm">버튼</Button>	
-						<Button color="gray" size="sm">버튼</Button>	
-						<Button color="gray-o" size="sm">버튼</Button>
-						<Button color="gray-o" size="sm">버튼</Button>	
-					</div>
-
-					<br />
-					<div className="hz-root hz-gap5">
-						<Button color="pri" size="tn">버튼</Button>	
-						<Button color="pri-o" size="tn">버튼</Button>	
-						<Button color="pri-o2" size="tn">버튼</Button>	
-						<Button color="gray" size="tn">버튼</Button>	
-						<Button color="gray-o" size="tn">버튼</Button>
-						<Button color="gray-o" size="tn">버튼</Button>	
-					</div>					
-					
-					<h1 className="deco-h1">BD(뱃지)</h1>
-					<br /><br />
-					<h2 className="deco-h2">ON (그리드)</h2>
-					<label className="badge badge-on">ON</label>
-
-					<br /><br />
-					<h2 className="deco-h2">H22(사용자 기금출연)</h2>
-					<label className="badge badge-22 blue">뱃지뱃지</label>
-					<label className="badge badge-22 purple">뱃지</label>
-					<label className="badge badge-22 green">뱃지</label>
-					<label className="badge badge-22 yellow">뱃지</label>
-					<label className="badge badge-22 red">뱃지</label>
-					<label className="badge badge-22 gray">뱃지</label>
-
-					<br /><br />
-					<h2 className="deco-h2">H23(관리자 결재함 상세)</h2>
-					<label className="badge badge-23 red">뱃지</label>
-					<label className="badge badge-23 blue">뱃지</label>
-					<label className="badge badge-23 green">뱃지</label>
-					<label className="badge badge-23 gray">뱃지</label>
-
-					<br /><br />
-					<h2 className="deco-h2">H24(사용자 공지사항 상세페이지)</h2>
-					<label className="badge badge-24 red">뱃지</label>
-
-					<br /><br />
-					<h2 className="deco-h2">H26(사용자 메인)</h2>
-					<label className="badge badge-26 red">뱃지</label>
-					<label className="badge badge-26 green">뱃지</label>
-					<label className="badge badge-26 yellow">뱃지</label>
-					<label className="badge badge-26 gray">뱃지</label>
-
-
-	
 				</main>			
 			</div>
 			

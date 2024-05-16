@@ -3,6 +3,7 @@ import React from "react";
 import { Link, useLocation } from 'react-router-dom';
 import PageContainer from '../PageContainer';
 import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -10,75 +11,40 @@ function ContentsContainer() {
 			<div className="fww-con">
 				<main className="fww-main">
 
-					<h1 className="deco-h1">BT(버튼)</h1>
-					<div className="hz-root hz-gap10">
-						<Button color="pri" size="big">버튼</Button>
-						<Button color="pri-o" size="big">버튼</Button>
-						<Button color="pri-o2" size="big">버튼</Button>
-						<Button color="gray" size="big">버튼</Button>
-						<Button color="gray-o" size="big">버튼</Button>
-					</div>
+					<h1 className="deco-h1">TF(텍스트필드)</h1>
 
-					<br />
-					<div className="hz-root hz-gap8">
-						<Button color="pri" size="md">버튼</Button>
-						<Button color="pri-o" size="md">버튼</Button>
-						<Button color="pri-o2" size="md">버튼</Button>
-						<Button color="gray" size="md">버튼</Button>
-						<Button color="gray-o" size="md">버튼</Button>
-					</div>
-
-					<br />
-					<div className="hz-root hz-gap5">
-						<Button color="pri" size="sm">버튼</Button>	
-						<Button color="pri-o" size="sm">버튼</Button>	
-						<Button color="pri-o2" size="sm">버튼</Button>	
-						<Button color="gray" size="sm">버튼</Button>	
-						<Button color="gray-o" size="sm">버튼</Button>
-						<Button color="gray-o" size="sm">버튼</Button>	
-					</div>
-
-					<br />
-					<div className="hz-root hz-gap5">
-						<Button color="pri" size="tn">버튼</Button>	
-						<Button color="pri-o" size="tn">버튼</Button>	
-						<Button color="pri-o2" size="tn">버튼</Button>	
-						<Button color="gray" size="tn">버튼</Button>	
-						<Button color="gray-o" size="tn">버튼</Button>
-						<Button color="gray-o" size="tn">버튼</Button>	
-					</div>					
 					
-					<h1 className="deco-h1">BD(뱃지)</h1>
-					<br /><br />
-					<h2 className="deco-h2">ON (그리드)</h2>
-					<label className="badge badge-on">ON</label>
+					<h2 className="deco-h2">BIG</h2>
+					<UIInput className={'tf tf-big w100p'} value={''} placeholder={'플레이스홀더'} readOnly={false} /> 
+					<br/><br/>
+					<UIInput className={'tf tf-big w100p'} value={'디폴트'} placeholder={'PH'} readOnly={false} />
+					<br/><br/>
+					<UIInput className={'tf tf-big tf-error w100p'} value={'에러'} placeholder={'PH'} readOnly={false} />
+					<br/><br/>
+					<UIInput className={'tf tf-big w100p'} value={'리드온리'} placeholder={'PH'} readOnly={true} />
+					
 
-					<br /><br />
-					<h2 className="deco-h2">H22(사용자 기금출연)</h2>
-					<label className="badge badge-22 blue">뱃지뱃지</label>
-					<label className="badge badge-22 purple">뱃지</label>
-					<label className="badge badge-22 green">뱃지</label>
-					<label className="badge badge-22 yellow">뱃지</label>
-					<label className="badge badge-22 red">뱃지</label>
-					<label className="badge badge-22 gray">뱃지</label>
+					<br/><br/>
+					<h2 className="deco-h2">Medium</h2>
+					<UIInput className={'tf tf-md w100p'} value={'디폴트'} placeholder={'PH'} readOnly={false} />
+					<br/><br/>
+					<UIInput className={'tf tf-md w100p'} value={'리드온리'} placeholder={'PH'} readOnly={true} />
 
-					<br /><br />
-					<h2 className="deco-h2">H23(관리자 결재함 상세)</h2>
-					<label className="badge badge-23 red">뱃지</label>
-					<label className="badge badge-23 blue">뱃지</label>
-					<label className="badge badge-23 green">뱃지</label>
-					<label className="badge badge-23 gray">뱃지</label>
+					<br/><br/>
+					<h2 className="deco-h2">Small</h2>
+					<UIInput className={'tf tf-sm w100p'} value={'디폴트'} placeholder={'PH'} readOnly={false} />
+					<br/><br/>
+					<UIInput className={'tf tf-sm w100p'} value={'리드온리'} placeholder={'PH'} readOnly={true} />
 
-					<br /><br />
-					<h2 className="deco-h2">H24(사용자 공지사항 상세페이지)</h2>
-					<label className="badge badge-24 red">뱃지</label>
-
-					<br /><br />
-					<h2 className="deco-h2">H26(사용자 메인)</h2>
-					<label className="badge badge-26 red">뱃지</label>
-					<label className="badge badge-26 green">뱃지</label>
-					<label className="badge badge-26 yellow">뱃지</label>
-					<label className="badge badge-26 gray">뱃지</label>
+					<br/><br/>
+					<h2 className="deco-h2">Other Type</h2>					
+					
+					<h3 className="deco-h3">Password</h3>					
+					<UIInput type="password" className={'tf tf-md w100p'} value={'1111'} placeholder={''} readOnly={false} />
+					
+					<br/><br/>
+					<h3 className="deco-h3">Number</h3>					
+					<UIInput type="number" className={'tf tf-md w100p'} value={'1111'} placeholder={''} readOnly={false} />					
 
 
 	

@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/*
+    파일 개요
+    ---------------------------------------------------------------------
+    @ 목적 : [대중소기업상생협력기금종합관리시스템] 상세 페이지 스타일 정의
+    @ 작성 : GRIDA Publishing Team.
+    @ 최종 : 2024.$$.$$.$$:$$
+    @ 메모 : 앞에서 _component, _layout으로 커버되지 않는 각 페이지마다 유니크한 부분은 이곳에서 따로 정의한다.
+*/
+
+/*adm_4320*/
+/*adm_4320*/
+.adm_4320_btn_in_out {
+    position: absolute;
+    top:  calc(50% - 50px);
+    transform: translateY(-50%);
+    right: -17px;
+}
+.adm_4320_btn_in_out .btn-in,
+.adm_4320_btn_in_out .btn-out {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+		border: 1px solid #CCCCCC;
+		background: #fff;
+		border-radius: 50%;		
+    text-indent: -9999px;
+}
+.adm_4320_btn_in_out .btn-in {
+   top: 40px;
+}
+.adm_4320_btn_in_out .btn-out {
+  top: 0;  
+}
+.adm_4320_btn_in_out  .btn-in:after,
+.adm_4320_btn_in_out  .btn-out:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: "";
+	display: block;
+	width: 5px;
+	height: 10px;
+	background:  no-repeat 0 0;
+	background-size: contain;
+}
+.adm_4320_btn_in_out  .btn-in:after {
+	background-image: url(../img/icon/ic_right_10.svg);
+}
+.adm_4320_btn_in_out  .btn-out:after {
+background-image: url(../img/icon/ic_left_10.svg);	
+}
+
+
+/*user table form*/
+.tb-search-form .hz-root{
+    padding:30px 0;
+}
+.tb-search-form .bt-big {
+    min-width:90px;
+}
+.tb-search-form .sl {
+    min-width: 150px;
+}
+
+.tb-search-form  .tf {
+    width:384px;
+}
+.tb-search-form .hz-item + .hz-item {
+    margin-left:10px !important;
+}
+.tb-search-form + .tb + .pg {
+    margin-bottom:70px;
+}
+
+/*user 게시판 상세페이지*/
+.tb-view {
+    
+    padding-top:30px;
+}
+.tb-view-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:18px 15px;
+    border-top:2px solid #000;
+    border-bottom:1px solid #ddd;
+}
+.tb-view-title {
+    display: flex;
+    align-items: center;
+}
+.tb-view-title .title {
+    font-size:16px;
+    line-height: 24px;
+    color:#000;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.tb-view-title .badge {
+    padding:0;
+    min-width: 50px;
+    height:24px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-right:12px;
+}
+
+.tb-view-info{
+    display: flex;
+    align-items: center;
+    font-size:15px;
+    color:#666;
+}
+.tb-view-info li {
+    display: flex;
+    align-items: center;
+}
+.tb-view-info li + li::before {
+    content: '';
+    display: inline-block;
+    width:1px;
+    height: 13px;
+    background-color: #ccc;
+    margin:0 20px;
+}
+.tb-view-info .val{
+    color:#333;
+    margin-left:8px;
+    font-weight: 500;
+}
+.tb-view-file {
+    padding:25px 15px;
+    border-bottom: 1px solid #eee;;
+}
+.tb-view-file li {
+    display: flex;
+    align-items: center;
+    font-size:15px;
+    line-height: 25px;
+    color:#333;
+}
+.tb-view-file li + li {
+    margin-top:4px;
+}
+.tb-view-file li a {
+    color:#333;
+}
+.tb-view-file .ic.file {
+    display: inline-block;
+    font-size:0;
+    width:20px;
+    height:20px;
+    margin-right:10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9993 5.66759L8.32505 8.34185C7.50028 9.16662 7.50028 10.5079 8.32505 11.3327C9.14982 12.1575 10.4911 12.1575 11.3159 11.3327L14.9315 7.71702C16.3562 6.29242 16.3562 3.99306 14.9315 2.56845C13.5069 1.14385 11.2076 1.14385 9.78298 2.56845L2.06845 10.283C0.643849 11.7076 0.643849 14.0069 2.06845 15.4315C3.49306 16.8562 5.79242 16.8562 7.21702 15.4315L8.57498 14.0736' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.tb-view-cont {
+    padding:20px 15px;
+    font-size:15px;
+    line-height: 25px;
+    font-weight:400;
+    color:#333;
+    min-height:270px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.tb-view-move {
+    margin-top:20px;
+    padding-bottom:70px;
+}
+.tb-view-move li {
+    display: flex;
+    align-items: center;
+    padding:20px 0;
+    font-size:15px;
+    color:#333;
+}
+.tb-view-move li + li {
+    border-top:1px solid #eee;
+}
+.tb-view-move li a {
+    color:#333;
+}
+.tb-view-move li label {
+    margin-right:30px;
+    display: flex;
+    align-items: center;
+    color:#000;
+}
+.tb-view-move li label::after {
+    content: '';
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:20px;
+    height: 20px;
+    margin-left:10px;
+}
+.tb-view-move .disabled label {
+    color:#666;
+}
+.tb-view-move li .prev::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.95 6.87988L7.07995 0.999882L1.19995 6.87988' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.tb-view-move li .next::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.19995 1L7.06995 6.88L12.95 1' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.tb-view-move .disabled .prev::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.95 6.87988L7.07995 0.999882L1.19995 6.87988' stroke='%23BBBBBB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.tb-view-move .disabled .next::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.19995 1L7.06995 6.88L12.95 1' stroke='%23BBBBBB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}

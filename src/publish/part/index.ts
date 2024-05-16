@@ -1,4 +1,3 @@
-export { default as test } from './test';
 export { default as TX } from './TX';
 export { default as BT } from './BT';
 export { default as BD } from './BD';

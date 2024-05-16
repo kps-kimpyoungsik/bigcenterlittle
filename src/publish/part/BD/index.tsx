@@ -10,46 +10,7 @@ function ContentsContainer() {
 			<div className="fww-con">
 				<main className="fww-main">
 
-					<h1 className="deco-h1">BT(버튼)</h1>
-					<div className="hz-root hz-gap10">
-						<Button color="pri" size="big">버튼</Button>
-						<Button color="pri-o" size="big">버튼</Button>
-						<Button color="pri-o2" size="big">버튼</Button>
-						<Button color="gray" size="big">버튼</Button>
-						<Button color="gray-o" size="big">버튼</Button>
-					</div>
-
-					<br />
-					<div className="hz-root hz-gap8">
-						<Button color="pri" size="md">버튼</Button>
-						<Button color="pri-o" size="md">버튼</Button>
-						<Button color="pri-o2" size="md">버튼</Button>
-						<Button color="gray" size="md">버튼</Button>
-						<Button color="gray-o" size="md">버튼</Button>
-					</div>
-
-					<br />
-					<div className="hz-root hz-gap5">
-						<Button color="pri" size="sm">버튼</Button>	
-						<Button color="pri-o" size="sm">버튼</Button>	
-						<Button color="pri-o2" size="sm">버튼</Button>	
-						<Button color="gray" size="sm">버튼</Button>	
-						<Button color="gray-o" size="sm">버튼</Button>
-						<Button color="gray-o" size="sm">버튼</Button>	
-					</div>
-
-					<br />
-					<div className="hz-root hz-gap5">
-						<Button color="pri" size="tn">버튼</Button>	
-						<Button color="pri-o" size="tn">버튼</Button>	
-						<Button color="pri-o2" size="tn">버튼</Button>	
-						<Button color="gray" size="tn">버튼</Button>	
-						<Button color="gray-o" size="tn">버튼</Button>
-						<Button color="gray-o" size="tn">버튼</Button>	
-					</div>					
-					
 					<h1 className="deco-h1">BD(뱃지)</h1>
-					<br /><br />
 					<h2 className="deco-h2">ON (그리드)</h2>
 					<label className="badge badge-on">ON</label>
 

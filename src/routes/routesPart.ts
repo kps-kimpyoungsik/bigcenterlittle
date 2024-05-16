@@ -2,7 +2,6 @@ import React from 'react';
 import { LoginLayout } from '../layouts/admin';
 import {
 	
-	test,
 	TX,
 	BT,
 	BD,
@@ -30,11 +29,6 @@ export type PageRouteProps = {
 	layout: React.ComponentType<any>;
 };
 export const routes: Array<PageRouteProps> = [
-	{
-		path: '/part/test',
-		component: test,
-		layout: LoginLayout,
-	},	
 	{
 		path: '/part/TX',
 		component: TX,

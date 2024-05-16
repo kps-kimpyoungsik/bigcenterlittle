@@ -16,9 +16,9 @@
 /*// [D] 2023.11.28 폰트정의 삭제*/
 
 .IBMain *{font-family:inherit;font-style:inherit;font-weight:inherit;font-variant:inherit;text-overflow:ellipsis;word-wrap:normal;word-break:normal}
-.IBMain table{margin:auto;}
-.IBMain .IBSolidRow table{width:auto;}
-.IBMain .IBSolidRow table,.IBMain .IBRowAbove table,.IBMain .IBRowBelow table,.IBMain table.IBMainTable,.IBMain table.IBSection{margin:0px;}
+/* .IBMain table{margin:auto;} */
+/* .IBMain .IBSolidRow table{width:auto;} */
+/* .IBMain .IBSolidRow table,.IBMain .IBRowAbove table,.IBMain .IBRowBelow table,.IBMain table.IBMainTable,.IBMain table.IBSection{margin:0px;} */
 .IBMain,.IBMain *{font-size:13px;line-height:18px}
 .IBWide,.IBWide *{font-size:15px;line-height:20px}
 .IBGiant,.IBGiant *{font-size:21px;line-height:24px}
@@ -26,7 +26,7 @@
 .IBSmall,.IBSmall *{font-size:13px;line-height:16px}
 .IBMini,.IBMini *{font-size:13px;line-height:16px}
 .IBTiny,.IBTiny *{font-size:13px;line-height:16px}
-.IBRowAbove .IBTabHtmlBase,.IBRowBelow .IBTabHtmlBase{font-family:'Noto Sans CJK kr Bold','Noto Sans KR Bold','Noto Sans Bold','Nanum Gothic Bold',sans-serif;font-style:normal}
+/* .IBRowAbove .IBTabHtmlBase,.IBRowBelow .IBTabHtmlBase{font-family:'Noto Sans CJK kr Bold','Noto Sans KR Bold','Noto Sans Bold','Nanum Gothic Bold',sans-serif;font-style:normal} */
 .IBMessage{font-size:inherit}
 .IBMenuItemText{font-size:inherit;line-height:22px}
 .IBMenuA11yItemText{font-size:inherit;line-height:22px;padding-left:2px}
@@ -41,23 +41,29 @@
 .IBPickCell,.IBPick2CellM,.IBPick2CellY{font-size:inherit;line-height:inherit}
 .IBDialogButton{font-size:inherit;line-height:inherit}
 .IBHeaderFont *,.IBRowAbove .IBTabHtmlBase *,.IBRowBelow .IBTabHtmlBase *,.IBMessage *,.IBMenuItemText *,.IBMenuControl *,.IBPickCell *,.IBPick2CellM *,.IBPick2CellY *,.IBDialogButton *{font-size:inherit;line-height:inherit}
-.IBMain span{color:#8ad5dd;font-weight:bold}
-.IBMain b,.IBMain .SheetBold{color:#1a92ec;font-weight:bold}
-.IBMain i,.IBMain .SheetBlue{color:#1a92ec;font-style:normal}
-.IBHeaderRow b,.IBHeaderRow i,.IBHeaderRow .SheetBold,.IBHeaderRow .SheetBlue,.IBSheetButton b,.IBSheetButton i,.IBSheetButton .SheetBold,.IBSheetButton .SheetBlue,.IBTabHtmlBase b,.IBTabHtmlBase i,.IBTabHtmlBase .SheetBold,.IBTabHtmlBase .SheetBlue{color:#FF8}
-.IBMain em,.IBMain .SheetRed{color:#EA4647;font-style:normal}
-.IBMain em>b,.IBMain .SheetRed .SheetBold{color:#EA4647}
-.IBHeaderRow em,.IBHeaderRow em>b,.IBHeaderRow .SheetRed,.IBHeaderRow .SheetRed .SheetBold,.IBSheetButton em,.IBSheetButton em>b,.IBSheetButton .SheetRed,.IBSheetButton .SheetRed .SheetBold,.IBTabHtmlBase em,.IBTabHtmlBase em>b,.IBTabHtmlBase .SheetRed,.IBTabHtmlBase .SheetRed .SheetBold{color:#F88}
-.IBMain s,.IBMain .SheetGray{color:#AAA;text-decoration:none}
-.IBMain s>b,.IBMain .SheetGray .SheetBold,.IBMain s>i,.IBMain .SheetGray .SheetBlue{color:#AAA}
-.IBRowHeight{height:30px}
- .IBHigh .IBRowHeight{height:40px}
+/* .IBMain span{color:#8ad5dd;font-weight:bold} */
+/* .IBMain b,.IBMain .SheetBold{color:#1a92ec;font-weight:bold} */
+/* .IBMain i,.IBMain .SheetBlue{color:#1a92ec;font-style:normal} */
+/* .IBHeaderRow b,.IBHeaderRow i,.IBHeaderRow .SheetBold,.IBHeaderRow .SheetBlue,.IBSheetButton b,.IBSheetButton i,.IBSheetButton .SheetBold,.IBSheetButton .SheetBlue,.IBTabHtmlBase b,.IBTabHtmlBase i,.IBTabHtmlBase .SheetBold,.IBTabHtmlBase .SheetBlue{color:#FF8} */
+/* .IBMain em,.IBMain .SheetRed{color:#EA4647;font-style:normal} */
+/* .IBMain em>b,.IBMain .SheetRed .SheetBold{color:#EA4647} */
+/* .IBHeaderRow em,.IBHeaderRow em>b,.IBHeaderRow .SheetRed,.IBHeaderRow .SheetRed .SheetBold,.IBSheetButton em,.IBSheetButton em>b,.IBSheetButton .SheetRed,.IBSheetButton .SheetRed .SheetBold,.IBTabHtmlBase em,.IBTabHtmlBase em>b,.IBTabHtmlBase .SheetRed,.IBTabHtmlBase .SheetRed .SheetBold{color:#F88} */
+/* .IBMain s,.IBMain .SheetGray{color:#AAA;text-decoration:none} */
+/* .IBMain s>b,.IBMain .SheetGray .SheetBold,.IBMain s>i,.IBMain .SheetGray .SheetBlue{color:#AAA} */
+.IBRowHeight{
+  /* height:30px */
+  height:35px;
+}
+ /* .IBHigh .IBRowHeight{height:40px}
  .IBBig .IBRowHeight{height:50px}
  .IBLow .IBRowHeight{height:27px}
  .IBSmall .IBRowHeight{height:22px}
- .IBMini .IBRowHeight{height:20px}
- .IBHeaderRowHeight{height:34px}
- .IBHigh .IBHeaderRowHeight{height:44px}
+ .IBMini .IBRowHeight{height:20px} */
+ .IBHeaderRowHeight{
+  /* height:34px */
+  height:36px;
+}
+ /* .IBHigh .IBHeaderRowHeight{height:44px}
  .IBBig .IBHeaderRowHeight{height:54px}
  .IBLow .IBHeaderRowHeight{height:29px}
  .IBSmall .IBHeaderRowHeight{height:24px}
@@ -75,7 +81,7 @@
  .IBSpaceOutRowHeight{height:28px}
  .IBHigh .IBSpaceOutRowHeight{height:35px}
  .IBBig .IBSpaceOutRowHeight{height:45px}
- .IBSmall .IBSpaceOutRowHeight{height:20px}
+ .IBSmall .IBSpaceOutRowHeight{height:20px} */
  .IBSpaceMargin{margin:0px}
 .IBWidth{width:100%}
 .IBWide .IBWidth{width:100%}
@@ -89,99 +95,181 @@
 .IBWide .IBWidthPad{width:30px}
 .IBBig .IBWidthPad{width:45px}
 .IBLow .IBWidthPad{width:20px}
-.IBMain{color:#1a364e}
-.IBMainTable{background:white;border-bottom:1px solid #cfd1d6}
+/* .IBMain{color:#1a364e} */
+.IBMainTable{
+  /* background:white; */
+  /* border-bottom:1px solid #cfd1d6 */
+}
 .IBHasSpace4{border-bottom:1px solid transparent}
-.IBSolidRow{background:#e5f0f2}
- .IBSearchRow{border-bottom:1px solid #cfd1d6}
-.IBFillRow{background:#F7F7F7}
- .IBNoDataRow{border-top:1px solid #53bfca !important}
- .IBRowSpace4 .IBSolidRow{background:white;border-bottom:1px solid #cfd1d6;border-left:1px solid #cfd1d6;border-right:1px solid #cfd1d6}
- .IBRowSpace0.IBRowSpaceFirst .IBSolidRow,.IBRowSpace2.IBRowSpaceFirst .IBSolidRow,.IBRowSpace3.IBRowSpaceFirst .IBSolidRow{border-top:1px solid #cfd1d6}
- .IBRowSpace1.IBRowSpaceLast .IBSolidRow{border-bottom:1px solid #cfd1d6}
- .IBRowSpace4.IBRowSpaceFirst .IBSolidRow{border-top:1px solid #1a364e}
- .IBRowSpace0 .IBSolidRow,.IBRowSpace1 .IBSolidRow,.IBRowSpace2 .IBSolidRow,.IBRowSpace3 .IBSolidRow{border-left:1px solid #cfd1d6;border-right:1px solid #cfd1d6}
-  .IBSpaceSelectInner,.IBSpaceSelectInnerIcon,.IBSpaceEditInner,.IBSpaceEditInnerIcon{border:1px solid #cfd1d6;background-color:white}
-.IBSpaceEditReadOnly{border:1px solid #cfd1d6;background-color:#d8d8d8;min-height:18px}
-.IBTabHtmlBase{background:#53bfca;text-align:center;color:white}
- .IBTabHtml1,.IBTabHtmlIcon1{background:#3c5575}
- .IBTabFocus{background:red}
- .IBTabDrag{background:#0F8;display:table-cell;text-align:center;vertical-align:middle;color:white}
- .IBToolHtml,.IBToolHtml1,.IBToolHtmlIcon,.IBToolHtmlIcon1{text-align:center}
- .IBToolHtml1,.IBToolHtmlIcon1{font-weight:bold;color:#53bfca}
- .IBPagesLink{color:#54A3DB;font-weight:bold;text-decoration:none!important}
- .IBPagesLinkActive{color:inherit;font-weight:bold;text-decoration:none!important}
+/* .IBSolidRow{background:#e5f0f2} */
+ /* .IBSearchRow{border-bottom:1px solid #cfd1d6} */
+.IBFillRow{
+  /* background:#F7F7F7 */
+  background: red;
+}
+ /* .IBNoDataRow{border-top:1px solid #53bfca !important} */
+ /* .IBRowSpace4 .IBSolidRow{background:white;border-bottom:1px solid #cfd1d6;border-left:1px solid #cfd1d6;border-right:1px solid #cfd1d6} */
+ /* .IBRowSpace0.IBRowSpaceFirst .IBSolidRow,.IBRowSpace2.IBRowSpaceFirst .IBSolidRow,.IBRowSpace3.IBRowSpaceFirst .IBSolidRow{border-top:1px solid #cfd1d6} */
+ /* .IBRowSpace1.IBRowSpaceLast .IBSolidRow{border-bottom:1px solid #cfd1d6} */
+ /* .IBRowSpace4.IBRowSpaceFirst .IBSolidRow{border-top:1px solid #1a364e} */
+ /* .IBRowSpace0 .IBSolidRow,.IBRowSpace1 .IBSolidRow,.IBRowSpace2 .IBSolidRow,.IBRowSpace3 .IBSolidRow{border-left:1px solid #cfd1d6;border-right:1px solid #cfd1d6} */
+  /* .IBSpaceSelectInner,.IBSpaceSelectInnerIcon,.IBSpaceEditInner,.IBSpaceEditInnerIcon{border:1px solid #cfd1d6;background-color:white} */
+/* .IBSpaceEditReadOnly{border:1px solid #cfd1d6;background-color:#d8d8d8;min-height:18px} */
+/* .IBTabHtmlBase{background:#53bfca;text-align:center;color:white} */
+ /* .IBTabHtml1,.IBTabHtmlIcon1{background:#3c5575} */
+ /* .IBTabFocus{background:red} */
+ /* .IBTabDrag{background:#0F8;display:table-cell;text-align:center;vertical-align:middle;color:white} */
+ /* .IBToolHtml,.IBToolHtml1,.IBToolHtmlIcon,.IBToolHtmlIcon1{text-align:center} */
+ /* .IBToolHtml1,.IBToolHtmlIcon1{font-weight:bold;color:#53bfca} */
+ /* .IBPagesLink{color:#54A3DB;font-weight:bold;text-decoration:none!important} */
+ /* .IBPagesLinkActive{color:inherit;font-weight:bold;text-decoration:none!important} */
  .IBDropCols table{border-spacing:10px 0px}
- .IBHeaderGroup{border:1px solid #cfd1d6}
- .IBHeaderGroupFocus{background-color:#EAFAFD}
- .IBHeaderGroupDelete{color:white;border-color:white}
- .IBHeaderGroupCustom{font-style:italic;color:#BBB}
- .IBHeaderGroupCustom:hover{background-color:#ddd;color:#000}
- .IBCellBase{border-bottom:1px solid #cfd1d6;border-right:1px solid #cfd1d6;border-left:0px none;border-top:0px none}
+ /* .IBHeaderGroup{border:1px solid #cfd1d6} */
+ /* .IBHeaderGroupFocus{background-color:#EAFAFD} */
+ /* .IBHeaderGroupDelete{color:white;border-color:white} */
+ /* .IBHeaderGroupCustom{font-style:italic;color:#BBB} */
+ /* .IBHeaderGroupCustom:hover{background-color:#ddd;color:#000} */
+ .IBCellBase{
+  /* border-bottom:1px solid #cfd1d6; */
+  /* border-right:1px solid #cfd1d6; */
+  border-bottom:1px solid #E4E4E4;
+  border-right:1px solid #E4E4E4;  
+  border-left:0px none;
+  border-top:0px none
+}
 .IBLastCell{border-right:1px solid;border-bottom:1px solid}
 .IBCellHeader{color:white;background:#3d5575;border-bottom:1px solid #6F7F94;border-right:1px solid #6F7F94}
- .IBHeaderFocus{background:#85CDC7}
- .IBHeaderDrag{background:#85CDC7;border-right:1px solid white}
+ /* .IBHeaderFocus{background:#85CDC7} */
+ /* .IBHeaderDrag{background:#85CDC7;border-right:1px solid white} */
  .IBLevelButton{color:black}
    .IBCellFilter{color:#1a92ec}
  .IBFilter0Value{color:silver}
  .IBRadioChecked{color:#4ac0cd}
- .IBCellUser{background-color:#E0F0F2}
- .IBColorDefault{background-color:#FFFFFF}
+ /* .IBCellUser{background-color:#E0F0F2} */
+ /* .IBColorDefault{background-color:#FFFFFF} */
  .IBClassNoFocus{color:#07203a}
  .IBClassReadOnly{opacity:1}
- .IBColorFormula{background-color:transparent}
- .IBColorAlternate{background-color:#fcfcfd}
- .IBColorSelected,.IBColorSelectedCell{background-color:#e1f2f0}
- .IBColorError{background-color:#FFD2D2}
+ /* .IBColorFormula{background-color:transparent} */
+ /* .IBColorAlternate{background-color:#fcfcfd} */
+ /* .IBColorSelected,.IBColorSelectedCell{background-color:#e1f2f0} */
+ /* .IBColorError{background-color:#FFD2D2} */
  .IBColorDeleted{background-color:#ffe6e0}
- .IBColorAdded{background-color:#eee6fa}
- .IBColorMoved2{background-color:#DAF3F2}
- .IBColorChanged{background-color:#fffded}
- .IBColorChangedCell{background-color:#EEE}
- .IBColorDetail{background-color:#FFF0FF}
- .IBColorDetailSelected{background-color:#FFF0E0}
- .IBColorDragged{background-color:#E0E0C0}
- .IBColorCellMenu{background-color:#FA0}
- .IBColorHoveredCell{background-color:rgb(180, 231, 236)}
- .IBColorHoveredCellReadOnly{background-color:#F0F0F0}
- .IBColorHoveredCellNoFocus{background-color:#F8F8F8}
- .IBColorHoveredCellHeader{background-color:#5b81b4}
- .IBColorHoveredCellIndex{background-color:rgb(180, 231, 236)}
- .IBColorHoveredCellSpace{background-color:#FFFFFF}
- .IBColorHoveredCellTab{background-color:#5AB5F5}
- .IBColorHoveredCellTab1{background-color:#485970}
- .IBColorHoveredCellSpaceBool0,.IBColorHoveredCellSpaceBool1,.IBColorHoveredCellSpaceBoolX,.IBColorHoveredCellSpaceBoolIcon{background-color:#FFFFFF}
- .IBColorHoveredCellButton,.IBColorHoveredCellButton1{background-color:#F2F2F2}
- .IBColorFocusedCell,.IBColorFocusedCellRelative{background-color:#ffffff}
- .IBClassFocusedCell,.IBClassFocusedCell *{color:black}
-.IBColorFocusedCellRect{background-color:#D7FFCA}
- .IBClassFocusedCellSpaceEdit > div{border:1px solid #70d1db!important}
- .IBClassFocusedCellSpaceDefaults > div{border:1px solid #70d1db!important}
+ /* .IBColorAdded{background-color:#eee6fa} */
+ /* .IBColorMoved2{background-color:#DAF3F2} */
+ 
+ /*수정행 색상 변경(?) --> 딱히 색 변경 안해도 됨.*/
+ .IBColorChanged{
+  /* background-color:#fffded */
+}
+ .IBColorChangedCell{
+  /* background-color:#EEE */
+}
+
+
+ /* .IBColorDetail{background-color:#FFF0FF} */
+ /* .IBColorDetailSelected{background-color:#FFF0E0} */
+ /* .IBColorDragged{background-color:#E0E0C0} */
+ /* .IBColorCellMenu{background-color:#FA0} */
+ .IBColorHoveredCell{
+  /* background-color:rgb(180, 231, 236) */
+  background-color: rgba(237, 244, 255, 1);
+}
+ /* .IBColorHoveredCellReadOnly{background-color:#F0F0F0} */
+ /* .IBColorHoveredCellNoFocus{background-color:#F8F8F8} */
+ /* .IBColorHoveredCellHeader{background-color:#5b81b4} */
+ /* .IBColorHoveredCellIndex{background-color:rgb(180, 231, 236)} */
+ /* .IBColorHoveredCellSpace{background-color:#FFFFFF} */
+ /* .IBColorHoveredCellTab{background-color:#5AB5F5} */
+ /* .IBColorHoveredCellTab1{background-color:#485970} */
+ /* .IBColorHoveredCellSpaceBool0,.IBColorHoveredCellSpaceBool1,.IBColorHoveredCellSpaceBoolX,.IBColorHoveredCellSpaceBoolIcon{background-color:#FFFFFF} */
+ /* .IBColorHoveredCellButton,.IBColorHoveredCellButton1{background-color:#F2F2F2} */
+ /* .IBColorFocusedCell,.IBColorFocusedCellRelative{background-color:#ffffff} */
+ /* .IBClassFocusedCell,.IBClassFocusedCell *{color:black} */
+.IBColorFocusedCellRect{
+  /* background-color:#D7FFCA */
+  background: red;
+}
+ .IBClassFocusedCellSpaceEdit > div{
+  /* border:1px solid #70d1db!important */
+  border: 1px solid red !important;
+}
+/*
+ .IBClassFocusedCellSpaceDefaults > div{
+  border:1px solid #70d1db!important}
  .IBColorFocusedCellHeader{background-color:#384960}
  .IBColorDefaultCol{background-color:#1a364e}
  .IBColorDefaultRow{background-color:#FFFFFE}
- .IBHoverRowBackground{background:rgba(152, 207, 229, 0.1)}
- .IBFocusRowBackground{background-color:rgba(152, 207, 229, 0.2)}
- .IBHoverRowBorder{border:1px solid #8ec0c5}
- .IBFocusRowBorder{border:1px solid #60b6be}
- .IBHoverCellBorder{border:1px solid rgb(142, 192, 197)}
- .IBFocusCellBorder{border:2px solid rgba(110, 175, 182)}
- .IBEditCellBorder{border:2px solid rgb(69, 124, 130)}
- .IBFocusCellCorner{border:1px solid white;background:#1a92ec}
- .IBEditCellCorner{border:1px solid white;background:#D37C89}
- .IBEditInput, .IBEditTextarea{color:black !important;background-color:transparent !important}
- .IBEditHeaderInput,.IBEditHeaderTextarea{color:white !important}
- .IBEditReadOnly,.IBEditTextarea.IBEditReadOnly{background-color:#EEE !important}
- .IBEditHeaderInput.IBEditReadOnly,.IBEditHeaderTextarea.IBEditReadOnly{background-color:#1a364e !important}
- .IBDialogButton,u.IBSheetButton{background:#53bfca;border:0px solid #53bfca;color:white}
-.IBDialogButton:active,u.IBToolButtonButton1,u.IBToolSpaceButton1,u.IBToolButtonButton1:active,u.IBToolSpaceButton1:active{background:#1a364e;border:0px solid #1a364e}
-.IBDialogButtonHover{color:yellow}
+ */
+
+ /*열 선택*/
+ .IBHoverRowBackground{
+  /* background:rgba(152, 207, 229, 0.1) */
+  background: rgba(70, 144, 255, 0.1);
+}
+ .IBFocusRowBackground{
+  /* background-color:rgba(152, 207, 229, 0.2) */
+  background: rgba(70, 144, 255, 0.1);
+}
+ .IBHoverRowBorder{
+  /* border:1px solid #8ec0c5 */
+    border: 1px solid #4892FF;
+}
+ .IBFocusRowBorder{
+  /* border:1px solid #60b6be */
+  border: 1px solid #4892FF;
+}
+ .IBHoverCellBorder{
+  /* border:1px solid rgb(142, 192, 197) */
+  border: 0;
+}
+ .IBFocusCellBorder{
+  /* border:2px solid rgba(110, 175, 182) */
+  border: 1px solid #4892FF;
+}
+ .IBEditCellBorder{
+  /* border:2px solid rgb(69, 124, 130) */
+  border: 0;
+}
+ .IBFocusCellCorner{
+  /* border:1px solid white; */
+  /* background:#1a92ec */
+}
+ .IBEditCellCorner{
+  /* border:1px solid white;background:#D37C89; */
+}
+ .IBEditInput, .IBEditTextarea{
+  /* color:black !important; */
+  /* background-color:transparent !important */
+}
+ .IBEditHeaderInput,.IBEditHeaderTextarea{
+  /* color:white !important */
+}
+ .IBEditReadOnly,.IBEditTextarea.IBEditReadOnly{
+  /* background-color:#EEE !important */
+}
+ .IBEditHeaderInput.IBEditReadOnly,.IBEditHeaderTextarea.IBEditReadOnly{
+  /* background-color:#1a364e !important */
+  /* background-color:red !important */
+}
+ /* .IBDialogButton,u.IBSheetButton{background:#53bfca;border:0px solid #53bfca;color:white} */
+/* .IBDialogButton:active,u.IBToolButtonButton1,u.IBToolSpaceButton1,u.IBToolButtonButton1:active,u.IBToolSpaceButton1:active{background:#1a364e;border:0px solid #1a364e} */
+/* .IBDialogButtonHover{color:yellow} */
 .IBMenuHead{color:white;background:#1a364e}
- .IBMenuOuter{background:white;border:1px solid #3d5575}
- .IBMenuFoot{background:#ebedf3;border-top:1px solid #cfd1d6}
- .IBMenuEdit,.IBMenuEditEdit,.IBMenuEnum{border:1px solid #cfd1d6;background-color:white;color:black}
+ 
+/*IBSheet Select*/
+.IBMenuOuter{
+  /* background:white;border:1px solid #3d5575; */
+  background: #fff;
+  border: 1px solid #4892FF;
+  color: #666;
+}
+ /* .IBMenuFoot{background:#ebedf3;border-top:1px solid #cfd1d6} */
+
+ .IBMenuEdit,.IBMenuEditEdit,.IBMenuEnum{
+  /* border:1px solid #cfd1d6;background-color:white;color:black */
+}
  .IBMenuCaption,.IBMenuLevel{color:#3d5575;background:#ebedf3;text-align:center;border-top:1px solid #cfd1d6;border-bottom:1px solid #cfd1d6}
+ 
  .IBMenuSeparator{border-top:1px solid #cfd1d6}
  .IBMenuVSeparator{border-right:1px solid #cfd1d6}
  .IBMenuHover{background:#EBF4FB}
@@ -189,7 +277,8 @@
  .IBMenuFocus.IBMenuHover{background:#E4F0F8}
  .IBMenuHeader{border:1px solid #3d5575;background:white}
  .IBEnumMenuHeader{border:1px solid #3d5575}
- .IBPickMY{color:white;background:#3d5575}
+ .IBPickMY{color:white;background:#3d5575} 
+ 
  .IBPickTableParent,.IBPick2TableParent{border:1px solid #1a364e;border-top:0px none}
  .IBPickFooter,.IBPick2Footer,.IBPickTimeCell{background:#ebedf3;border:1px solid #1a364e;border-top:1px solid #cfd1d6}
  .IBPickRowW{background:#ebedf3}
@@ -201,7 +290,8 @@
 .IBPickNow{background-color:#bef6fc}
  .IBPickNE{text-decoration:line-through}
  .IBPickNE button{text-decoration:line-through}
- .IBPickHover,.IBPick2MHover,.IBPick2YHover{background-color:#EAEAEA}
+
+ .IBPickHover,.IBPick2MHovfe  r,.IBPick2YHover{background-color:#EAEAEA}
  .IBPickSelHover,.IBPick2MSelHover,.IBPick2YSelHover{background-color:#EAEAEA}
    .IBPick2Sep{background:#ECECEC}
  .IBMessage,.IBPageMessage{background:white;box-shadow:10px 10px 10px rgba(49, 36, 36, 0.12);border:1px solid #1a364e}
@@ -211,6 +301,7 @@
  .IBPagerHeader{background:#1a364e;color:white}
  .IBPagerHeaderSingle{border-bottom:1px solid #cfd1d6}
  .IBPagerBody{background:#D0E6F5}
+
  .IBPagerBodyLeft,.IBPagerHeaderLeft{border-left:1px solid #cfd1d6}
  .IBPagerBodyRight,.IBPagerHeaderRight{border-right:1px solid #cfd1d6}
  .IBPagerItem{border-bottom:1px solid #cfd1d6}
@@ -221,6 +312,7 @@
  .IBHintSpaceSelectOuter{border:1px solid #ACE}
  .IBHintHeaderOuter{background:#1a364e;color:white}
  .IBTipOuter,.IBDragObject{background:white;border:1px solid #68788C}
+
  .IBHeadLeft,.IBBodyLeft,.IBFootLeft{border-left:1px solid #cfd1d6}
 .IBHeadMid,.IBBodyMid,.IBFootMid{border-left:1px solid #cfd1d6;border-right:1px solid #cfd1d6}
 .IBHeadRight,.IBBodyRight,.IBFootRight{border-right:1px solid #cfd1d6}
@@ -231,6 +323,7 @@
 .IBLeftSplitter{border-left:1px solid #cfd1d6}
 .IBRightSplitter{border-right:1px solid #cfd1d6}
 .IBWide .IBLeftSplitter,.IBWide .IBRightSplitter{width:9px}
+
 .IBTouch .IBLeftSplitter,.IBTouch .IBRightSplitter{width:15px}
 .IBSplitterDisabled{cursor:default}
 .IBVScroll{padding-top:0px;padding-bottom:0px;overflow:hidden;border-top:1px solid #cfd1d6;border-right:1px solid #cfd1d6}
@@ -320,7 +413,7 @@
 .IBTiny .IBRowSpaceLast .IBSolidRow{padding-bottom:0px}
 .IBRowSpaceFirst.IBRowSpace0{padding-top:0px}
 .IBRowSpaceLast.IBRowSpace4{padding-top:0px}
-            .IBTabberRow{padding:0px}
+.IBTabberRow{padding:0px}
  .IBNoDataRow{padding:5px 0px 5px 5px;overflow:hidden;background-color:white}
 .IBNoDataRow div{text-align:center}
 .IBNoDataIcon{display:inline-block;width:15px;height:15px;margin-right:5px;vertical-align:text-bottom;background-repeat:no-repeat;background-size:contain;background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iaW5mbyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgdmlld0JveD0iMCAwIDQ1Ljk5OSA0NS45OTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1Ljk5OSA0NS45OTk7Ig0KCSB4bWw6c3BhY2U9InByZXNlcnZlIj4NCgk8Zz4NCgkJPHBhdGggZD0iTTM5LjI2NCw2LjczNmMtOC45ODItOC45ODEtMjMuNTQ1LTguOTgyLTMyLjUyOCwwYy04Ljk4Miw4Ljk4Mi04Ljk4MSwyMy41NDUsMCwzMi41MjhjOC45ODIsOC45OCwyMy41NDUsOC45ODEsMzIuNTI4LDANCgkJCUM0OC4yNDUsMzAuMjgxLDQ4LjI0NCwxNS43MTksMzkuMjY0LDYuNzM2eiBNMjUuOTk5LDMzYzAsMS42NTctMS4zNDMsMy0zLDNzLTMtMS4zNDMtMy0zVjIxYzAtMS42NTcsMS4zNDMtMywzLTNzMywxLjM0MywzLDNWMzN6DQoJCQkgTTIyLjk0NiwxNS44NzJjLTEuNzI4LDAtMi44OC0xLjIyNC0yLjg0NC0yLjczNWMtMC4wMzYtMS41ODQsMS4xMTYtMi43NzEsMi44NzktMi43NzFjMS43NjQsMCwyLjg4LDEuMTg4LDIuOTE3LDIuNzcxDQoJCQlDMjUuODk3LDE0LjY0OCwyNC43NDYsMTUuODcyLDIyLjk0NiwxNS44NzJ6Ii8+DQoJPC9nPg0KPC9zdmc+DQo=)}
@@ -1038,8 +1131,19 @@ u.IBToolSpaceButton,u.IBToolSpaceButton1,.IBMain .IBToolSpaceIconInner{padding:4
 .IBMain .IBSideBottom{padding-bottom:15px;background-position:center bottom}
 .IBWide .IBSideBottom{padding-bottom:20px}
 .IBBig .IBSideBottom{padding-bottom:25px}
-.IBMain .IBDateLeft,.IBMain .IBDatesLeft,.IBMain .IBDateRight,.IBMain .IBDatesRight,.IBMain .IBDateTop,.IBMain .IBDatesTop,.IBMain .IBDateBottom,.IBMain .IBDatesBottom{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMyLjc1IDMyLjc1Ij48ZyBmaWxsPSIjMmU0ZTY3Ij48cGF0aCBkPSJNMjkuMzc1IDEuMjVoLTEuMTIzYy4wMjktLjA5My4wNTktLjE4Ni4wNTktLjI4OWEuOTYzLjk2MyAwIDAgMC0xLjkyNCAwYzAgLjEwMy4wMjguMTk2LjA1OS4yODloLTMuNjhjLjAyOS0uMDkzLjA1OS0uMTg2LjA1OS0uMjg5YS45NjIuOTYyIDAgMSAwLTEuOTI1IDAgLjkzLjkzIDAgMCAwIC4wNTkuMjg5aC0zLjY4MWMuMDI5LS4wOTMuMDU4LS4xODYuMDU4LS4yODlhLjk2MS45NjEgMCAwIDAtMS45MjIgMGMwIC4xMDMuMDI4LjE5Ni4wNTguMjg5aC0zLjY4MWMuMDI5LS4wOTMuMDU5LS4xODYuMDU5LS4yODlhLjk2Mi45NjIgMCAwIDAtMS45MjMgMGMwIC4xMDMuMDI4LjE5Ni4wNTguMjg5aC0zLjY4YS45My45MyAwIDAgMCAuMDU5LS4yODkuOTYuOTYgMCAxIDAtMS45MjMgMGMwIC4xMDMuMDI4LjE5Ni4wNTguMjg5SDMuMzc1QTIuNzUyIDIuNzUyIDAgMCAwIC42MjUgNHYyNmEyLjc1MSAyLjc1MSAwIDAgMCAyLjc1IDIuNzVIMjYuMjdsNS44NTUtNS44NTVWNGEyLjc1MiAyLjc1MiAwIDAgMC0yLjc1LTIuNzV6bTEuMjUgMjUuMDIzbC0uMzExLjMxMWgtMi4zNTVjLTEuMTAyIDAtMiAuOS0yIDJ2Mi4zNTVsLS4zMTEuMzExSDMuMzc1Yy0uNjg5IDAtMS4yNS0uNTYxLTEuMjUtMS4yNVY1aDI4LjV2MjEuMjczeiIvPjxwYXRoIGQ9Ik0xMS4zNiAxMC4yNjdoNC4yOTl2NC4yOTlIMTEuMzZ6TTE3LjA5MSAxMC4yNjdoNC4zdjQuMjk5aC00LjN6TTIyLjgyMyAxMC4yNjdoNC4yOTl2NC4yOTloLTQuMjk5ek01LjYyOCAxNS45OTloNC4yOTl2NC4yOTlINS42Mjh6TTExLjM2IDE1Ljk5OWg0LjI5OXY0LjI5OUgxMS4zNnpNMjEuMzkxIDE1Ljk5OWgtNC4zdjQuMjk5aDQuM3YtNC4yOTl6bS0uNjUgMy42NDloLTN2LTNoM3Yzek0yMi44MjMgMTUuOTk5aDQuMjk5djQuMjk5aC00LjI5OXpNNS42MjggMjEuNzNoNC4yOTl2NC4yOTlINS42Mjh6TTExLjM2IDIxLjczaDQuMjk5djQuMjk5SDExLjM2ek0xNy4wOTEgMjEuNzNoNC4zdjQuMjk5aC00LjN6TTIyLjgyMyAyMS43M2g0LjI5OXY0LjI5OWgtNC4yOTl6Ii8+PC9nPjwvc3ZnPg==)}
-.IBDefaultsLeft, .IBDefaultsRight, .IBDefaultsTop, .IBDefaultsBottom{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cGF0aCBmaWxsPSIjN0E4ODk5IiBkPSJNOC4zMzQsMTEuNzExYy0wLjE4NywwLjE4OC0wLjQ4MiwwLjE4OC0wLjY2OSwwTDIuMTQsNi4xOTRjLTAuMTg3LTAuMTg3LTAuMTg3LTAuNDkyLDAtMC42NzlsMS4yMzYtMS4yMjcNCgljMC4xODctMC4xODcsMC40ODUtMC4xODcsMC42NjksMEw4LDguMjQzbDMuOTUyLTMuOTU1YzAuMTg3LTAuMTg3LDAuNDg3LTAuMTg3LDAuNjY5LDBsMS4yMzksMS4yMjcNCgljMC4xODcsMC4xODcsMC4xODcsMC40OTIsMCwwLjY3OUw4LjMzNCwxMS43MTF6Ii8+DQo8L3N2Zz4NCg==)}
+.IBMain .IBDateLeft,.IBMain .IBDatesLeft,.IBMain .IBDateRight,.IBMain .IBDatesRight,.IBMain .IBDateTop,.IBMain .IBDatesTop,.IBMain .IBDateBottom,.IBMain .IBDatesBottom{
+  /* background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDMyLjc1IDMyLjc1Ij48ZyBmaWxsPSIjMmU0ZTY3Ij48cGF0aCBkPSJNMjkuMzc1IDEuMjVoLTEuMTIzYy4wMjktLjA5My4wNTktLjE4Ni4wNTktLjI4OWEuOTYzLjk2MyAwIDAgMC0xLjkyNCAwYzAgLjEwMy4wMjguMTk2LjA1OS4yODloLTMuNjhjLjAyOS0uMDkzLjA1OS0uMTg2LjA1OS0uMjg5YS45NjIuOTYyIDAgMSAwLTEuOTI1IDAgLjkzLjkzIDAgMCAwIC4wNTkuMjg5aC0zLjY4MWMuMDI5LS4wOTMuMDU4LS4xODYuMDU4LS4yODlhLjk2MS45NjEgMCAwIDAtMS45MjIgMGMwIC4xMDMuMDI4LjE5Ni4wNTguMjg5aC0zLjY4MWMuMDI5LS4wOTMuMDU5LS4xODYuMDU5LS4yODlhLjk2Mi45NjIgMCAwIDAtMS45MjMgMGMwIC4xMDMuMDI4LjE5Ni4wNTguMjg5aC0zLjY4YS45My45MyAwIDAgMCAuMDU5LS4yODkuOTYuOTYgMCAxIDAtMS45MjMgMGMwIC4xMDMuMDI4LjE5Ni4wNTguMjg5SDMuMzc1QTIuNzUyIDIuNzUyIDAgMCAwIC42MjUgNHYyNmEyLjc1MSAyLjc1MSAwIDAgMCAyLjc1IDIuNzVIMjYuMjdsNS44NTUtNS44NTVWNGEyLjc1MiAyLjc1MiAwIDAgMC0yLjc1LTIuNzV6bTEuMjUgMjUuMDIzbC0uMzExLjMxMWgtMi4zNTVjLTEuMTAyIDAtMiAuOS0yIDJ2Mi4zNTVsLS4zMTEuMzExSDMuMzc1Yy0uNjg5IDAtMS4yNS0uNTYxLTEuMjUtMS4yNVY1aDI4LjV2MjEuMjczeiIvPjxwYXRoIGQ9Ik0xMS4zNiAxMC4yNjdoNC4yOTl2NC4yOTlIMTEuMzZ6TTE3LjA5MSAxMC4yNjdoNC4zdjQuMjk5aC00LjN6TTIyLjgyMyAxMC4yNjdoNC4yOTl2NC4yOTloLTQuMjk5ek01LjYyOCAxNS45OTloNC4yOTl2NC4yOTlINS42Mjh6TTExLjM2IDE1Ljk5OWg0LjI5OXY0LjI5OUgxMS4zNnpNMjEuMzkxIDE1Ljk5OWgtNC4zdjQuMjk5aDQuM3YtNC4yOTl6bS0uNjUgMy42NDloLTN2LTNoM3Yzek0yMi44MjMgMTUuOTk5aDQuMjk5djQuMjk5aC00LjI5OXpNNS42MjggMjEuNzNoNC4yOTl2NC4yOTlINS42Mjh6TTExLjM2IDIxLjczaDQuMjk5djQuMjk5SDExLjM2ek0xNy4wOTEgMjEuNzNoNC4zdjQuMjk5aC00LjN6TTIyLjgyMyAyMS43M2g0LjI5OXY0LjI5OWgtNC4yOTl6Ii8+PC9nPjwvc3ZnPg==); */
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 8.40002H18.5' stroke='%23297BF2' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.502 18.5999H3.76667C2.52 18.5999 1.5 17.5799 1.5 16.3333V4.99994C1.5 3.75328 2.52 2.73328 3.76667 2.73328H16.2333C17.48 2.73328 18.5 3.75328 18.5 4.99994V13.6019C18.5 13.9079 18.3753 14.1913 18.1713 14.4066L14.3067 18.2713C14.0913 18.4866 13.808 18.5999 13.502 18.5999Z' stroke='%23297BF2' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.8333 18.6V14.0666C12.8333 13.4433 13.3433 12.9333 13.9666 12.9333H18.4999' stroke='%23297BF2' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.9666 1.59998V3.86664' stroke='%23297BF2' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.03345 1.59998V3.86664' stroke='%23297BF2' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  
+}
+.IBDefaultsLeft, .IBDefaultsRight, .IBDefaultsTop, .IBDefaultsBottom{
+  /* background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cGF0aCBmaWxsPSIjN0E4ODk5IiBkPSJNOC4zMzQsMTEuNzExYy0wLjE4NywwLjE4OC0wLjQ4MiwwLjE4OC0wLjY2OSwwTDIuMTQsNi4xOTRjLTAuMTg3LTAuMTg3LTAuMTg3LTAuNDkyLDAtMC42NzlsMS4yMzYtMS4yMjcNCgljMC4xODctMC4xODcsMC40ODUtMC4xODcsMC42NjksMEw4LDguMjQzbDMuOTUyLTMuOTU1YzAuMTg3LTAuMTg3LDAuNDg3LTAuMTg3LDAuNjY5LDBsMS4yMzksMS4yMjcNCgljMC4xODcsMC4xODcsMC4xODcsMC40OTIsMCwwLjY3OUw4LjMzNCwxMS43MTF6Ii8+DQo8L3N2Zz4NCg==) */
+  /* border: 1px solid red; */
+  /* background: url(../../img/icon/ic_sl_normal.svg) no-repeat 50% 50%; */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.19995 8L10.07 13.88L15.95 8' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");    
+}
 .IBEnumLeft, .IBEnumRight, .IBEnumTop, .IBEnumBottom{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cGF0aCBmaWxsPSIjN0E4ODk5IiBkPSJNMTEuMzcsNy43NzZsLTMuMDYzLDMuMDYzYy0wLjA4MiwwLjA4Mi0wLjE5MSwwLjEzLTAuMzA4LDAuMTNzLTAuMjI2LTAuMDQ4LTAuMzA4LTAuMTNMNC42Myw3Ljc3Ng0KCUM0LjU0OCw3LjY5NCw0LjUsNy41ODUsNC41LDcuNDY5YzAtMC4yMzksMC4xOTgtMC40MzgsMC40MzgtMC40MzhoNi4xMjVjMC4yMzksMCwwLjQzOCwwLjE5OCwwLjQzOCwwLjQzOA0KCUMxMS41LDcuNTg1LDExLjQ1Miw3LjY5NCwxMS4zNyw3Ljc3NnoiLz4NCjwvc3ZnPg0K)}
 .IBExpandLeft, .IBExpandRight, .IBExpandTop, .IBExpandBottom{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cGF0aCBzdHJva2U9IiM3QTg4OTkiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBkPSJNNSwzbDUsNWwtNSw1Ii8+DQo8L3N2Zz4NCg==)}
 .IBHeaderRow .IBExpandLeft, .IBHeaderRow .IBExpandRight, .IBHeaderRow .IBExpandTop, .IBHeaderRow .IBExpandBottom{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cGF0aCBzdHJva2U9IndoaXRlIiBvcGFjaXR5PSIwLjUiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBkPSJNNSwzbDUsNWwtNSw1Ii8+DQo8L3N2Zz4NCg==)}
@@ -1258,12 +1362,30 @@ nobr.IBRadioCell,span.IBRadioCell{display:inline-block}
  .IBColorFocusedCellButton{background-color:#586980}
  .IBColorSelectedCol{background-color:#EEE}
  .IBColorSelectedRow{background-color:#EEE}
-.IBColorFocusedCol{background-color:#EEE}
- .IBColorFocusedRow{background-color:#EEE}
-.IBColorEditedCol{background-color:#DDD}
- .IBColorEditedRow{background-color:#DDD}
-.IBColorHoveredCol{background-color:#EEE}
- .IBColorHoveredRow{background-color:#EEE}
+.IBColorFocusedCol{
+  /* background-color:#EEE */
+  background: red;
+}
+ .IBColorFocusedRow{
+  /* background-color:#EEE */
+  background: orange;
+}
+.IBColorEditedCol{
+  /* background-color:#DDD */
+  background: yellow;
+}
+ .IBColorEditedRow{
+  /* background-color:#DDD */
+  background: green;
+}
+.IBColorHoveredCol{
+  /* background-color:#EEE */
+  background: blue;
+}
+ .IBColorHoveredRow{
+  /* background-color:#EEE */
+  background: purple;
+}
 .IBHoverRowBorder{z-index:1;cursor:default}
 .IBHoverCellBorder{z-index:1;padding:1px}
 .IBHoverRowBorder{z-index:1;cursor:default}
@@ -1899,7 +2021,7 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   background: #fff !important;  
 }
 .IBMainTable .IBBodyLeft .IBSection .IBDataRow:nth-child(odd) .IBIndexText {
-  background: #F9FBFD !important;
+  background: #fff !important;
 }
 
 /*첫번째 칼럼의 왼쪽 라인, 마지막 칼럼의 오른쪽 라인*/
@@ -1993,8 +2115,8 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
 
 /*행 교차 홀짝색 */
 .IBColorAlternate {
-  /* background-color:#fff; */
-  background-color: #F9FBFD;
+  background-color:#fff;
+  /* background-color: #F9FBFD; */
 
 }
 

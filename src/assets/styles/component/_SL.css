@@ -42,7 +42,10 @@
     width: 20px;
     height: 20px;
     content: "";
-    background: url(../../img/icon/ic_sl_normal.svg) no-repeat 0 0;
+    /* background: url(../../img/icon/ic_sl_normal.svg) no-repeat 0 0; */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.19995 8L10.07 13.88L15.95 8' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");    
     font-size: 12px;
     position: absolute;
     right: 0;
