@@ -21,6 +21,9 @@
 .bt:disabled {
     cursor: not-allowed;
 }
+.bt:hover {
+  text-decoration: none;
+}
 .bt-pri { /*pri*/
   background: var(--p1);
   border-color: var(--p1);
