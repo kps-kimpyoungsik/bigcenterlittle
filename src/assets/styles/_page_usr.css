@@ -1088,12 +1088,24 @@
 /*상생협력기금안내*/
 
 .fww-intro h2 {
-    padding:137px 0;
+    box-sizing: border-box;
+    height:300px;
     text-align: center;
-    font-size:26px;
+    font-size:28px;
     line-height: 1;
     font-weight: 700;
-    color:#000;
+    color:#fff;
+    background: url('../img/pages/usr_intro_tit.png');
+    padding:96px 0 0;
+    margin-bottom:50px;
+}
+.fww-intro h2::before {
+    content:'';
+    display: block;
+    width:80px;
+    height:60px;
+    background: url('../img/pages/usr_intro_logo.png') no-repeat;
+    margin:0 auto 20px;
 }
 .fww-intro-section  {
     font-size:15px;
@@ -1130,20 +1142,24 @@
     height:430px;
     box-sizing: border-box;
     border-radius: 10px;
-    border:1px solid #ddd;
+    /* border:1px solid #ddd; */
     padding:0 30px;
     font-size:14px;
     line-height: 20px;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: calc(100% - 25px) calc(100% - 20px);
+    /* background-position: center bottom; */
 }
 .fww-intro-section .card:nth-child(1) {
+    background-color: #F0F2FF;
     background-image: url('../img/pages/usr_intro01.svg');
 }
 .fww-intro-section .card:nth-child(2) {
+    background-color: #E7F2FF;
     background-image: url('../img/pages/usr_intro02.svg');
 }
 .fww-intro-section .card:nth-child(3) {
+    background-color: #DFF9F2;
     background-image: url('../img/pages/usr_intro03.svg');
 }
 .fww-intro-section .card h6 {
@@ -1158,6 +1174,8 @@
     color:#666;
     padding:5px 12px;
     text-align: center;
+    border-radius: 5px;
+    background-color: #F0F7FF;
 }
 .fww-intro-section .card > strong {
     display: block;
