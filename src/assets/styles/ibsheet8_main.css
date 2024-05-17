@@ -15,7 +15,15 @@
 /* .IBMain{font-family:'Noto Sans CJK kr','Noto Sans KR','Noto Sans','Verdana','Malgun Gothic','Nanum Gothic',sans-serif;font-style:normal;font-weight:normal;font-variant:normal} */
 /*// [D] 2023.11.28 폰트정의 삭제*/
 
-.IBMain *{font-family:inherit;font-style:inherit;font-weight:inherit;font-variant:inherit;text-overflow:ellipsis;word-wrap:normal;word-break:normal}
+.IBMain *{
+  /* font-family:inherit; */
+  font-style:inherit;
+  /* font-weight:inherit; */
+  /* font-variant:inherit; */
+  text-overflow:ellipsis;
+  word-wrap:normal;
+  word-break:normal
+}
 /* .IBMain table{margin:auto;} */
 /* .IBMain .IBSolidRow table{width:auto;} */
 /* .IBMain .IBSolidRow table,.IBMain .IBRowAbove table,.IBMain .IBRowBelow table,.IBMain table.IBMainTable,.IBMain table.IBSection{margin:0px;} */
@@ -1143,6 +1151,7 @@ u.IBToolSpaceButton,u.IBToolSpaceButton1,.IBMain .IBToolSpaceIconInner{padding:4
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.19995 8L10.07 13.88L15.95 8' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");    
+  background-size: 20px 20px !important;
 }
 .IBEnumLeft, .IBEnumRight, .IBEnumTop, .IBEnumBottom{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cGF0aCBmaWxsPSIjN0E4ODk5IiBkPSJNMTEuMzcsNy43NzZsLTMuMDYzLDMuMDYzYy0wLjA4MiwwLjA4Mi0wLjE5MSwwLjEzLTAuMzA4LDAuMTNzLTAuMjI2LTAuMDQ4LTAuMzA4LTAuMTNMNC42Myw3Ljc3Ng0KCUM0LjU0OCw3LjY5NCw0LjUsNy41ODUsNC41LDcuNDY5YzAtMC4yMzksMC4xOTgtMC40MzgsMC40MzgtMC40MzhoNi4xMjVjMC4yMzksMCwwLjQzOCwwLjE5OCwwLjQzOCwwLjQzOA0KCUMxMS41LDcuNTg1LDExLjQ1Miw3LjY5NCwxMS4zNyw3Ljc3NnoiLz4NCjwvc3ZnPg0K)}
 .IBExpandLeft, .IBExpandRight, .IBExpandTop, .IBExpandBottom{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQo8cGF0aCBzdHJva2U9IiM3QTg4OTkiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBkPSJNNSwzbDUsNWwtNSw1Ii8+DQo8L3N2Zz4NCg==)}
@@ -2133,3 +2142,105 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   background: url(../img/icon/ic_arrow_down_black_16.svg) no-repeat 50% 50%;
 }
 */
+
+/*캘린더 색상 변경*/
+.IBMenuMain{
+  box-shadow: none;
+}
+.IBPickOuter { /*캘린더 전체*/
+  border: 1px solid #3E8BFD;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fff;
+  padding: 15px 20px;
+}
+.IBPickOuter.IBPickOuterTop{
+  transform: translateY(1px);
+}
+.IBPickOuter.IBPickOuterBottom {
+  transform: translateY(-1px);
+}
+
+.IBPickOuter .IBPickMY { /*캘린더 상단 헤드*/
+  background: none; 
+  color: black;
+}
+.IBPickOuter .IBPickMY { /**/
+
+}
+.IBPickOuter .IBPickMY .IBPickBL { /*이전달 버튼*/
+
+}
+.IBPickOuter .IBPickMY .IBPickBR { /*다음달 버튼*/
+
+}
+.IBPickOuter .IBPickTableParent { /*요일 ~ 날짜 부분 wrapper*/
+  border: 0;
+}
+.IBPickOuter .IBPickTableParent .IBPickRowW { /*요일 라인*/
+  background: none;
+}
+.IBPickOuter .IBPickTableParent .IBPickCell { /*날짜 cell*/
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  /* outline: 1px solid red; */
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.IBPickOuter .IBPickTableParent .IBPickCell>div {
+  display: inline-block;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 500;
+}
+.IBPickOuter .IBPickTableParent .IBPickCell .IBPickSel { /*날짜 cell*/
+  background: #3E8BFD;
+}
+.IBPick2TableParent {
+  border: 0;
+}
+.IBPick2Footer {
+  border: 0;
+  background: none;
+  margin-top: 20px;
+} 
+.IBPick2Footer .IBPickButton {
+  white-space: nowrap;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0 15px;
+	font-size: 15px;
+	vertical-align: top;
+	border-radius: 0;
+	text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid red;
+  background: var(--p1);
+  border-color: var(--p1);
+  color: #fff;
+  font-weight: 700;    
+  min-width: 65px;
+  width: auto;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;  
+}
+.IBPick2Footer .IBPickButton:hover {
+  background: #3E8BFD;
+}
+.IBPick2Table  .IBPick2Row .IBPick2M.IBPick2MSel {
+  background: #3E8BFD;
+}
+.IBPick2Table  .IBPick2Row .IBPick2Y.IBPick2YSel {
+  background: #3E8BFD;
+}
