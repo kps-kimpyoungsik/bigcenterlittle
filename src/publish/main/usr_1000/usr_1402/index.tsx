@@ -40,13 +40,17 @@ function ContentsContainer() {
 									<h4 className="mb15">비밀번호 재설정</h4>
 									<div className="sub-txt mb30">비밀번호 재설정 후 이용하시기 바랍니다.</div>
 									<div className="form-items mb15">
-										<label className="mb15">비밀번호</label>
+										<label className="mb15">사용중이던 비밀번호를 입력</label>
 										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
-										<p className="tx-msg">※ 영문, 숫자, 특수문자를 혼합으로 8~16자리까지 입력 가능합니다.</p>
 									</div>
 									<div className="form-items mb40">
-										<label className="mb15">비밀번호 확인</label>
+										<label className="mb15">비밀번호를 한번 더 입력</label>
 										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
+									</div>
+									<div className="form-items mb40">
+										<label className="mb15">새로운 비밀번호를 입력</label>
+										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
+										<p className="tx-msg"><span className="fc-pri">※ 영문, 숫자, 특수문자를 혼합으로 8~16자리까지 입력 가능합니다.</span></p>
 									</div>
 									<div className="hz-root hz-center hz-gap10">
 										<Button color='gray-o' size="big">취소</Button>
