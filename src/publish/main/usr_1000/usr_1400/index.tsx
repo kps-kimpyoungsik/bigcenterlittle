@@ -2,6 +2,8 @@
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
+import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	const [activeIndex, setActiveIndex]=useState(0);
 	const tabClickHandler=(index:number)=>{
@@ -41,12 +43,18 @@ function ContentsContainer() {
 						</div>
 						<div className={ 'tab-cont' + (activeIndex===1 ? ' active' : '') }>
 							<form name="" action="" method="">
-								<div className="sub-txt">
-									본인 명의의 휴대폰으로 인증번호를 받은 후,<br/> 서비스를 이용하실 수 있습니다.
+								<div className="find-pw">
+									<div className="form-items mb15">
+										<label className="mb15">아이디</label>
+										<UIInput className={'tf tf-big w100p'} value={''} placeholder={'아이디를 입력하세요'} />
+									</div>
+									<div className="hz-root hz-center">
+										<Button color='gray-o' size="big">휴대폰 인증하기</Button>
+									</div>
+									<div className="sub-txt">
+										본인 명의의 휴대폰으로 인증번호를 받은 후,<br/> 서비스를 이용하실 수 있습니다.
+									</div>
 								</div>
-								<button type="button" className="button-certify">
-									휴대폰 인증하기
-								</button>
 							</form>
 							<div className="information">
 								<h3>안내</h3>

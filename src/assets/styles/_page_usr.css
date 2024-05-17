@@ -597,6 +597,39 @@
     font-weight:500;
 }
 
+.find-pw {
+    width:400px;
+    margin:0 auto;
+}
+.find-pw label {
+    display: block;
+    font-size:15px;
+    font-weight:500;
+    color:#000;
+}
+.find-pw .form-items + .form-items{
+    margin-top:20px;
+}
+.find-pw .tx-msg {
+    font-size:14px;
+    color:#666;
+    margin-top:10px;
+}
+.find-pw .hz-root .bt{
+    flex:1;
+}
+.find-pw .hz-root + .sub-txt {
+    margin-top:40px;
+}
+
+.find-pw h4 {
+    font-size:20px;
+    line-height: 1;
+    color:#000;
+    text-align: center;
+    font-weight:500;
+}
+
 /*mypage*/
 /* .mypage {
     max-width: 1200px;

@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import Button from 'components/buttons/';
+import UIInputPW from 'components/input/inputPW';
 function ContentsContainer() {
 	const [activeIndex, setActiveIndex]=useState(0);
 	const tabClickHandler=(index:number)=>{
@@ -35,13 +36,26 @@ function ContentsContainer() {
 						</div>
 						<div className={ 'tab-cont' + (activeIndex===1 ? ' active' : '') }>
 							<form name="" action="" method="">
-								<div className="sub-txt">
-									본인 명의의 휴대폰으로 인증번호를 받은 후,<br/> 서비스를 이용하실 수 있습니다.
+								<div className="find-pw">
+									<h4 className="mb15">비밀번호 재설정</h4>
+									<div className="sub-txt mb30">비밀번호 재설정 후 이용하시기 바랍니다.</div>
+									<div className="form-items mb15">
+										<label className="mb15">비밀번호</label>
+										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
+										<p className="tx-msg">※ 영문, 숫자, 특수문자를 혼합으로 8~16자리까지 입력 가능합니다.</p>
+									</div>
+									<div className="form-items mb40">
+										<label className="mb15">비밀번호 확인</label>
+										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
+									</div>
+									<div className="hz-root hz-center hz-gap10">
+										<Button color='gray-o' size="big">취소</Button>
+										<Button color='pri' size="big">저장</Button>
+									</div>
+									
 								</div>
-								<button type="button" className="button-certify">
-									휴대폰 인증하기
-								</button>
 							</form>
+							{/* 
 							<div className="information">
 								<h3>안내</h3>
 								<ul className="list-group">
@@ -50,6 +64,7 @@ function ContentsContainer() {
 									<li>입력하신 정보는 본인확인 용도 외 사용되거나 저장되지 않습니다.</li>
 								</ul>
 							</div>
+							 */}
 						</div>
 					</div>
 				</main>
