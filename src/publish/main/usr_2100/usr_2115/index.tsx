@@ -1,5 +1,6 @@
 
-import React from "react";
+
+import React,{useEffect} from "react";
 //import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../user2100Aside";
@@ -10,7 +11,10 @@ import ModalPopup from 'components/modal/';
 import useToggleState from 'components/hooks/useToggleState';
 import UIDatePicker from "components/datepicker";
 function ContentsContainer() {
-	const modaladm2115 = useToggleState({showing:true});
+	const modalusr2115 = useToggleState({});
+	useEffect(() => {
+		modalusr2115.setShowing(true);
+	},[]);
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -22,10 +26,10 @@ function ContentsContainer() {
 			</div>
 			{/* modal - 수행 과제 선택 */}
 			<ModalPopup
-				open={modaladm2115.isShowing}
+				open={modalusr2115.isShowing}
 				title="수행 과제 선택"
 				size="mid"
-				onClose={modaladm2115.close}
+				onClose={modalusr2115.close}
 			>
 				<div className="modal-con">
 					<div className="modal-tskana">
