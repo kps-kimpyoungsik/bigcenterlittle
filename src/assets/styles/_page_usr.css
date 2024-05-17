@@ -604,6 +604,7 @@
 .find-pw label {
     display: block;
     font-size:15px;
+    line-height: 1;
     font-weight:500;
     color:#000;
 }
