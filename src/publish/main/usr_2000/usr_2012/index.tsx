@@ -178,7 +178,8 @@ function ManualContainer(): JSX.Element {
 							</div>
 						</form>
 						<p className="tx-msg mt10 mb18"><span className="fc-pri">※ 자사별 전용공문을 첨부해 주세요.</span></p>
-						<Raonkupload /> {/* 기능X css 디자인  */}
+						{/* FileUpload... */}
+						<Raonkupload /> {/* 기능X css 디자인 ☆Fileupload 영역입니다☆ */}
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">기업 정보</h3>

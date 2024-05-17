@@ -197,7 +197,8 @@ function ContentsContainer() {
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">파일첨부</h3>
-						<Raonkupload /> {/* 기능X css 디자인  */}
+						{/* FileUpload... */}
+						<Raonkupload /> {/* 기능X css 디자인 ☆Fileupload 영역입니다☆ */}
 						<p className="tx-msg mt10"><span className="fc-pri">※ 자사별 전용공문을 첨부해 주세요.</span></p>
 					</section>
 					<section className="fund-section">

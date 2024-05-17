@@ -492,7 +492,8 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<Raonkupload /> {/* 기능X css 디자인  */}
+						{/* FileUpload... */}
+						<Raonkupload /> {/* 기능X css 디자인 ☆Fileupload 영역입니다☆ */}
 					</section>
 					<section className={checked ? 'fund-section' : 'fund-section simply'}>
 						<h3 className="section-title mb15">내부검토사항</h3>

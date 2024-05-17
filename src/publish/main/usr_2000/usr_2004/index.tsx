@@ -251,7 +251,8 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</form>
-						<Raonkupload /> {/* 기능X css 디자인  */}
+						{/* FileUpload... */}
+						<Raonkupload /> {/* 기능X css 디자인 ☆Fileupload 영역입니다☆ */}
 					</section>
 					<section className="fund-section">
 						<h3 className="section-title mb15">기업정보</h3>

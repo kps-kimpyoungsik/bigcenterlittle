@@ -593,7 +593,8 @@ function ContentsContainer() {
 							</div>
 						</form>
 						<p className="tx-msg mb15"><span className="fc-pri">※ 항목 외 기타 파일들은 아래 파일 첨부를 이용해 주세요.</span></p>
-						<Raonkupload /> {/* 기능X css 디자인  */}
+						{/* FileUpload... */}
+						<Raonkupload /> {/* 기능X css 디자인 ☆Fileupload 영역입니다☆ */}
 					</section>
 					<section className="fund-section">
 						<div className="hz-root hz-gap10 mb25">
