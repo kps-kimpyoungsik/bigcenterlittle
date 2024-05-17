@@ -435,7 +435,6 @@
 }
 .sign-link a {
     font-size:14px;
-    color:#333;
     display: inline-flex;
     align-items: center;
 }
@@ -525,6 +524,7 @@
 }
 .button-certify:hover {
     background-color: #F8F8F8;
+    text-decoration: none;
 }
 .find-idpw .information {
     background-color:#F9FAFC ;

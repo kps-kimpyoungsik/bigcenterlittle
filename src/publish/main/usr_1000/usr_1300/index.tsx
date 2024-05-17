@@ -30,8 +30,8 @@ function ContentsContainer() {
 								<Button color='pri' size="big">로그인</Button>
 							</div>
 							<div className="sign-link">
-								<Link to="/main/usr_1000/usr_1200">회원가입</Link>
-								<Link to="/main/usr_1000/usr_1400">아이디/비밀번호 찾기</Link>
+								<Link className="tx tx-link" to="/main/usr_1000/usr_1200">회원가입</Link>
+								<Link className="tx tx-link" to="/main/usr_1000/usr_1400">아이디/비밀번호 찾기</Link>
 							</div>
 						</form>
 					</div>

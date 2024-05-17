@@ -5,6 +5,7 @@ import PageContainer from '../../PageContainer';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 import UIDatePicker from "components/datepicker";
+import Raonkupload from 'components/input/kupload';
 function ContentsContainer() {
 	const sectors = [
 		'농업, 임업 및 어업', '광업', '제조업', '전기·가스 증기 및 수도사업', '하수 · 폐기물 처리, 원료재생 및 환경복원업', '건설업', '도매 및 소매업', '운수업', 
@@ -132,13 +133,16 @@ function ContentsContainer() {
 								<div className="fo-item fo-m-1-3 req">
 									<p className="fo-key">사업자등록증</p>
 									<div className="fo-value">
-										<div>file upload...</div>
+										<div className="w100p">
+											{/* FileUpload... */}
+											<Raonkupload /> {/* 기능X css 디자인 ☆Fileupload 영역입니다☆ */}
+										</div>
 									</div>
 								</div>
 								<div className="fo-item fo-m-1-3 req">
 									<p className="fo-key">기업로고</p>
 									<div className="fo-value">
-										<div>file upload...</div>
+										fileupload...
 									</div>
 								</div>
 							</div>

@@ -164,7 +164,9 @@ function ContentsContainer() {
 							</div>									
 						</div>
 					</div>
-					<div className="ibsheet">[D] IBSHEET 영역</div>
+					<div className="ibsheet">
+						<p style={{height:"300px"}}>[D] IBSHEET 영역</p>
+					</div>
 					<div className="pg">
 						<div className="group">
 							<button type="button" className="item first">처음</button>

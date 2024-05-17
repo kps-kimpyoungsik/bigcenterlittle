@@ -33,7 +33,7 @@ function kupload() {
 								<li>
 									<ul className='border_none'>
 										<li className='input_chk'>
-											<input type='checkbox' id="input_chk1-1" />
+											<input type='checkbox' id="input_chk1-1" title="★2024_실리콘밸리3기_정산서_롯데벤처스.xlsx" />
 										</li>
 										<li className='fname'>
 											<img src="https://fund.win-win.or.kr/raonkupload/images/xls.png" alt="xlsx" />
@@ -52,7 +52,7 @@ function kupload() {
 								<li>
 									<ul className='border_none'>
 										<li className='input_chk'>
-											<input type='checkbox' id="input_chk1-2" />
+											<input type='checkbox' id="input_chk1-2" title="★2024_실리콘밸리3기_정산서_롯데벤처스.xlsx"/>
 										</li>
 										<li className='fname'>
 											<img src="https://fund.win-win.or.kr/raonkupload/images/xls.png" alt="xlsx" />
