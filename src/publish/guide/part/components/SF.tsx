@@ -1,77 +1,183 @@
 import React from "react";
 import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	return (
 		<div>
-			<h1 className="deco-h1">BT(버튼)</h1>
-			<div className="hz-root hz-gap10">
-				<Button color="pri" size="big">버튼</Button>
-				<Button color="pri-o" size="big">버튼</Button>
-				<Button color="pri-o2" size="big">버튼</Button>
-				<Button color="gray" size="big">버튼</Button>
-				<Button color="gray-o" size="big">버튼</Button>
+			<h1 className="deco-h1">SF(서치필터)</h1>
+			<h2 className="deco-h2">기본</h2>
+			<form className="sf">
+				<div className="inner">
+					<div className="sf-item">
+						<p className="sf-key">$$$$$</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">$$$$$</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">$$$$$</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">$$$$$</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">$$$$$</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">$$$$$</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+				</div>
+			</form>
+			<div className="hz-root hz-center hz-gap8">
+				<Button color="gray-o" size="md">등록</Button>
+				<Button color="pri" size="md">조회</Button>
 			</div>
-
-			<br />
-			<div className="hz-root hz-gap8">
-				<Button color="pri" size="md">버튼</Button>
-				<Button color="pri-o" size="md">버튼</Button>
-				<Button color="pri-o2" size="md">버튼</Button>
-				<Button color="gray" size="md">버튼</Button>
-				<Button color="gray-o" size="md">버튼</Button>
+			<br /><br />
+			<form className="sf">
+				<div className="inner">
+					<div className="sf-item">
+						<p className="sf-key">출연신청기간</p>
+						<div className="sf-value">
+							<div className="hz-root hz-gap5">
+								<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'PH'} />
+								<span>~</span>
+								<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'PH'} />
+							</div>
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">출연기업</p>
+						<div className="sf-value">
+							<div className="hz-root hz-gap8">
+								<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'PH'} />
+								<Button color="pri-o" size="md">출연기업 찾기</Button>
+								<Button color="gray-o" size="md">삭제</Button>
+							</div>
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">출연사업</p>
+						<div className="sf-value">
+							<div className="sl sl-md w100p">
+								<select>
+									<option>선택하세요</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">출연신청기간</p>
+						<div className="sf-value">
+							<div className="hz-root hz-gap5">
+								<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'PH'} />
+								<span>~</span>
+								<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'PH'} />
+							</div>
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">출연기업</p>
+						<div className="sf-value">
+							<div className="hz-root hz-gap8">
+								<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'PH'} />
+								<Button color="pri-o" size="md">출연기업 찾기</Button>
+								<Button color="gray-o" size="md">삭제</Button>
+							</div>
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">출연사업</p>
+						<div className="sf-value">
+							<div className="sl sl-md w100p">
+								<select>
+									<option>선택하세요</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div className="hz-root hz-center hz-gap8">
+				<Button color="gray-o" size="md">등록</Button>
+				<Button color="pri" size="md">조회</Button>
 			</div>
-
-			<br />
-			<div className="hz-root hz-gap5">
-				<Button color="pri" size="sm">버튼</Button>	
-				<Button color="pri-o" size="sm">버튼</Button>	
-				<Button color="pri-o2" size="sm">버튼</Button>	
-				<Button color="gray" size="sm">버튼</Button>	
-				<Button color="gray-o" size="sm">버튼</Button>
-				<Button color="gray-o" size="sm">버튼</Button>	
+			<br /><br />
+			<h2 className="deco-h2">예외 - 1줄일때는 우측에 버튼</h2>
+			<form className="sf sf-1row">
+				<div className="inner">
+					<div className="sf-item">
+						<p className="sf-key">검색어</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'검색어'} />
+						</div>
+					</div>
+				</div>
+				<Button color="pri" size="md">조회</Button>
+			</form>
+			<br /><br />
+			<h2 className="deco-h2">병합</h2>
+			<form className="sf">
+				<div className="inner">
+					<div className="sf-item sf-m-1-3">
+						<p className="sf-key">1</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">2</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item sf-m-1-4">
+						<p className="sf-key">3</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">4</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item sf-m-2-4">
+						<p className="sf-key">5</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+					<div className="sf-item">
+						<p className="sf-key">6</p>
+						<div className="sf-value">
+							<UIInput className={'tf tf-md w100p'} value={''} placeholder={'PH'} />
+						</div>
+					</div>
+				</div>
+			</form>
+			<div className="hz-root hz-center hz-gap8">
+				<Button color="gray-o" size="md">등록</Button>
+				<Button color="pri" size="md">조회</Button>
 			</div>
-
-			<br />
-			<div className="hz-root hz-gap5">
-				<Button color="pri" size="tn">버튼</Button>	
-				<Button color="pri-o" size="tn">버튼</Button>	
-				<Button color="pri-o2" size="tn">버튼</Button>	
-				<Button color="gray" size="tn">버튼</Button>	
-				<Button color="gray-o" size="tn">버튼</Button>
-				<Button color="gray-o" size="tn">버튼</Button>	
-			</div>					
-			
-			<h1 className="deco-h1">BD(뱃지)</h1>
-			<br /><br />
-			<h2 className="deco-h2">ON (그리드)</h2>
-			<label className="badge badge-on">ON</label>
-
-			<br /><br />
-			<h2 className="deco-h2">H22(사용자 기금출연)</h2>
-			<label className="badge badge-22 blue">뱃지뱃지</label>
-			<label className="badge badge-22 purple">뱃지</label>
-			<label className="badge badge-22 green">뱃지</label>
-			<label className="badge badge-22 yellow">뱃지</label>
-			<label className="badge badge-22 red">뱃지</label>
-			<label className="badge badge-22 gray">뱃지</label>
-
-			<br /><br />
-			<h2 className="deco-h2">H23(관리자 결재함 상세)</h2>
-			<label className="badge badge-23 red">뱃지</label>
-			<label className="badge badge-23 blue">뱃지</label>
-			<label className="badge badge-23 green">뱃지</label>
-			<label className="badge badge-23 gray">뱃지</label>
-
-			<br /><br />
-			<h2 className="deco-h2">H24(사용자 공지사항 상세페이지)</h2>
-			<label className="badge badge-24 red">뱃지</label>
-
-			<br /><br />
-			<h2 className="deco-h2">H26(사용자 메인)</h2>
-			<label className="badge badge-26 red">뱃지</label>
-			<label className="badge badge-26 green">뱃지</label>
-			<label className="badge badge-26 yellow">뱃지</label>
-			<label className="badge badge-26 gray">뱃지</label>
 		</div>
 	);
 }

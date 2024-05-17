@@ -89,7 +89,7 @@
 .stk-main .aside div + div {
 	margin-top:40px;
 }
-.stk-main h2 {
+.stk-main h2:not(.deco-h2) {
 	font-size: 20px;
 	margin: 0;
 	margin-bottom: 5px;

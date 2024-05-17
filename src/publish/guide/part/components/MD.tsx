@@ -1,10 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Button from 'components/buttons/';
 import ModalPopup from 'components/modal/';
 import useToggleState from 'components/hooks/useToggleState';
 function ContentsContainer() {
-	//const modalEx =useToggleState({showing:true});
 	const modalEx =useToggleState({});
+	useEffect(() => {
+		modalEx.setShowing(true);
+	},[]);	
 	return (
 		<div>
 			<h1 className="deco-h1">MD (모달)</h1>

@@ -4,7 +4,6 @@ import { ToastContainer } from "react-toastify";
 import './assets/styles/fww.css';
 import Main from "./publish/main/mainRoutes";
 import Admin from "./publish/admin/AdminRoutes";
-import Part from "./publish/part/PartRoutes";
 import Guide from "./publish/guide/PartRoutes";
 import PageLoading from "./publish/loading";
 import NotFound from "./publish/notfound";
@@ -15,7 +14,6 @@ function App() {
 				<Switch>
 					<Route path="/main" render={ Main} /> {/* 관리자페이지 */}
 					<Route path="/admin" render={ Admin} /> {/* 사용자페이지 */}
-					<Route path="/part" render={ Part} /> {/* 퍼블리셔 관리 파일 */} 
 					<Route path="/guide" render={ Guide} /> {/* 퍼블리셔 관리 파일 */} 
 					<Route path={"*"} component={NotFound}/>
 				</Switch>

@@ -1,15 +1,19 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Button from 'components/buttons/';
 import ModalPopup from 'components/modal/';
 import useToggleState from 'components/hooks/useToggleState';
 function ContentsContainer() {
-	const alertType1 = useToggleState({showing:true});
+	const alertType1 = useToggleState({});
 	const alertType2 = useToggleState({});
 	const alertType3 = useToggleState({});
+	useEffect(() => {
+		alertType1.setShowing(true);
+	},[]);
 	return (
 		<div>
 			<h1 className="deco-h1">AL(알럿트)</h1>
 			<div style={{ gap:'10px'}}>
+				
 				<Button color='gray-o' size="sm" onClick={alertType1.open}>자동로그아웃</Button><br /><br />
 				<Button color='gray-o' size="sm" onClick={alertType2.open}>컨펌창</Button><br /><br />
 				<Button color='gray-o' size="sm" onClick={alertType3.open}>첨부파일업로드</Button><br /><br />
@@ -20,6 +24,7 @@ function ContentsContainer() {
 				title="noTitle"
 				size="alert"
 				onClose={alertType1.close}
+				
 			>
 				<div className="modal-con">
 					<p className="msg">

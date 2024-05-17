@@ -64,7 +64,6 @@ function ContentsContainer() {
 		TX : <TX />, BT : <BT />, BD : <BD />,  TF:<TF />, CH:<CH />, RD:<RD />, SL:<SL />, TA:<TA />, PG:<PG />,
 		PT:<PT />, TT:<TT />, AL:<AL />, MD:<MD />,
 		ND:<ND />, TB:<TB />, FO:<FO />, SF:<SF />, IB:<IB />, FU:<FU />
-		
 	}
 	const [content, setContent] = useState('TX');
 	const handleClickButton = e => {
