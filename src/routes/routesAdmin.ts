@@ -1,6 +1,7 @@
 import React from 'react';
 import { DefaultLayout } from '../layouts/admin';
 import { LoginLayout } from '../layouts/admin';
+import { DashLayout } from '../layouts/admin';
 import {
 	admIndexPage,
 	admMainPage,
@@ -183,7 +184,7 @@ export const routes: Array<PageRouteProps> = [
 	{
 		path: '/admin/home',
 		component: admMainPage,
-		layout: DefaultLayout,
+		layout: DashLayout,
 	},
 	{
 		path: '/admin/adm_alert',

@@ -597,6 +597,12 @@
     margin-left:265px;
 }
 
+.fww-dashborad .fww-adn-footer{ 
+    background-color: #EFF2F6;
+    margin:0;
+}
+
+
 /*loading*/
 .loading {
     position: fixed;
