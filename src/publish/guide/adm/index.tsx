@@ -321,11 +321,11 @@ function ContentsContainer() {
 					
 					if(k === 0){ //링크일경우,
 	
-					let url = info.url_first+info.url_port+'/'+'main/'+info.ia[i].d1id+'/'+info.ia[i].page[j][k];
+					let url = info.url_first+info.url_port+'/'+'admin/'+info.ia[i].d1id+'/'+info.ia[i].page[j][k];
 	
 					for (let l = 0; l < info.url_exception.length; l++) {
 						if(info.ia[i].page[j][k] === info.url_exception[l].pid) {
-						url = info.url_first+info.url_port+'/'+'main/'+info.url_exception[l].alternative_url;
+						url = info.url_first+info.url_port+'/'+'admin/'+info.url_exception[l].alternative_url;
 						}
 					}
 	
