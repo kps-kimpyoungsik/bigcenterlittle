@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
@@ -9,12 +10,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className="fww-con">
-				<ul className="fww-brd">
-					<li><Link to="/admin/">홈</Link></li>
-					<li><Link to="#">관리자페이지</Link></li>
-					<li><Link to="#">시스템관리</Link></li>
-					<li><Link to="#">펌뱅킹관리</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={5} lnbD1Idx={9} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">펌뱅킹정보 등록</h1>
 					<form className="fo fo-col2" name="" action="" method="">

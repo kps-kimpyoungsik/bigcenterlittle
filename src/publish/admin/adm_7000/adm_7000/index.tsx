@@ -1,36 +1,30 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React,{useEffect} from "react";
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_7000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
-import UIDatePicker from "components/datepicker";
 function ContentsContainer() {
 	const modaladm7000 = useToggleState({});
+	useEffect(() => {
+		modaladm7000.setShowing(true);
+	},[]);
 	return (
 		<PageContainer>
 			<LayoutAside />
-				<div className="fww-con">
+			<div className="fww-con">
+				<Breadcrumb gnbIdx={6} lnbD1Idx={0} />
+				<main className="fww-main">
+					<h1 className="tx tx-hd2">$</h1>
 
-					<ul className="fww-brd">
-						<li className=""><a href="">홈</a></li>
-						<li className=""><a href="">관리자페이지</a></li>
-						<li className=""><a href="">기금관리</a></li>
-						<li className=""><a href="">지급관리</a></li>
-					</ul>
-
-					<main className="fww-main">
-						<h1 className="tx tx-hd2">$</h1>
-
-						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
-						<br/><br/>
-						<Button color='gray' size="sm" onClick={modaladm7000.open}>adm_7000p 열기</Button> <br /><br />
-						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}				
-
-					</main>
-				</div>
+					{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
+					<br/><br/>
+					<Button color='gray' size="sm" onClick={modaladm7000.open}>adm_7000p 열기</Button> <br /><br />
+					{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}				
+				</main>
+			</div>
 			{/* modal - 7000 */}
 			<ModalPopup
 				open={modaladm7000.isShowing}

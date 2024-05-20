@@ -292,10 +292,10 @@
 
 /*관리자 sub 높이*/
 .fww-root .fww-header.adm::after {
-    height:440px;
+    height:480px;
 }
 .fww-root .fww-header.adm .right-area .fww-gnb .d2 {
-    height:430px;
+    height:470px;
 }
 
 .fww-root .fww-group-aside-con {

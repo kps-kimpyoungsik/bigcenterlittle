@@ -1,21 +1,17 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
+import UIDatePicker from "components/datepicker";
 function ContentsContainer() {
 	return (
 		<PageContainer>
 			<LayoutAside />
-				<div className="fww-con">
-
-					<ul className="fww-brd">
-						<li className=""><a href="">홈</a></li>
-						<li className=""><a href="">관리자페이지</a></li>
-						<li className=""><a href="">시스템관리</a></li>
-						<li className=""><a href="">메일발송관리</a></li>
-					</ul>
-
+			<div className="fww-con">
+				<Breadcrumb gnbIdx={5} lnbD1Idx={0} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">메일발송관리</h1>
 					<form className="sf" name="" action="" method="">
@@ -23,17 +19,17 @@ function ContentsContainer() {
 							<div className="sf-item">
 								<p className="sf-key">메일 발송기간</p>
 								<div className="sf-value">
-									<div className="hz-root hz-gap5">
-										<input  name="" id="" className="hz-item hz-fg tf tf-md" type="text" value="" placeholder="YYYY-MM-DD" />
+									<div className="hz-item hz-root hz-gap5">
+										<UIDatePicker className="hz-item"/>
 										<span className="hz-item">~</span>
-										<input name="" id="" className="hz-item hz-fg tf tf-md" type="text" value="" placeholder="YYYY-MM-DD" />
+										<UIDatePicker className="hz-item"/>
 									</div>
 								</div>
 							</div>
 							<div className="sf-item">
 								<p className="sf-key">메일 수신자</p>
 								<div className="sf-value">
-									<input name="" id="" className="tf tf-md w100p" type="text" value="" placeholder="" />
+									<UIInput className={'tf tf-md w100p'} value={''} placeholder={''} />
 								</div>						
 							</div>
 							<div className="sf-item">
@@ -65,10 +61,9 @@ function ContentsContainer() {
 							<div className="sf-item sf-m-2-4">
 								<p className="sf-key">메일내용</p>
 								<div className="sf-value">
-									<input name="" id="" className="tf tf-md w100p" type="text" value="" placeholder="검색어 입력" />
+									<UIInput className={'tf tf-md w100p'} value={''} placeholder={'검색어 입력'} />
 								</div>						
-							</div>						
-
+							</div>
 						</div> 
 					</form>			
 					<div className="hz-root hz-center mb25">
@@ -115,8 +110,7 @@ function ContentsContainer() {
 						</div>
 					</div>	
 				</main>
-
-				</div>
+			</div>
 		</PageContainer>
 	);
 }

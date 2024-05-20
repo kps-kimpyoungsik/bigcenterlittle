@@ -1,43 +1,36 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_8000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
-import UIDatePicker from "components/datepicker";
 import Button from 'components/buttons/';
-import UIInput from 'components/input/input';
 function ContentsContainer() {
 	const modaladm8210p = useToggleState({});
 	return (
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/admin/">홈</Link></li>
-					<li><Link to="#">관리자페이지</Link></li>
-					<li><Link to="#">보고서</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={7} lnbD1Idx={1} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">연도별 현황통계</h1>
-
-				<form className="sf sf-1row sf-2col mb30">
-					<div className="inner">
-						<div className="sf-item">
-							<p className="sf-key">년도</p>
-							<div className="sf-value">
-								<div className="sl sl-md w120">
-									<select name="" id="" className="">
-										<option value="0">선택</option>
-										<option value="1">$</option>
-									</select>
+					<form className="sf sf-1row sf-2col mb30">
+						<div className="inner">
+							<div className="sf-item">
+								<p className="sf-key">년도</p>
+								<div className="sf-value">
+									<div className="sl sl-md w120">
+										<select name="" id="" className="">
+											<option value="0">선택</option>
+											<option value="1">$</option>
+										</select>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<button className="bt" data-color="pri" data-size="md"  type="button">조회</button>
-				</form>
-
+						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button>
+					</form>
 					<div className="hz-root hz-sb mb10">
 						<h3 className="section-title">분기별 현황</h3>
 					</div>

@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
-import UIDatePicker from "components/datepicker";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
 import Button from 'components/buttons/';
@@ -12,18 +12,10 @@ function ContentsContainer() {
 	return (
 		<PageContainer>
 			<LayoutAside />
-				<div className="fww-con">
-
-					<ul className="fww-brd">
-						<li className=""><a href="">홈</a></li>
-						<li className=""><a href="">관리자페이지</a></li>
-						<li className=""><a href="">시스템관리</a></li>
-						<li className=""><a href="">이상거래감지</a></li>
-					</ul>
-
+			<div className="fww-con">
+				<Breadcrumb gnbIdx={5} lnbD1Idx={10} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">이상거래감지</h1>
-					
 					<form className="sf sf-1row sf-3col">
 						<div className="inner">
 							<div className="sf-item">
@@ -46,7 +38,6 @@ function ContentsContainer() {
 						</div>
 						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button>
 					</form>
-
 					<div className="tb-top">
 						<div>
 							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
@@ -87,17 +78,14 @@ function ContentsContainer() {
 							<button type="button" className="item last">끝</button>
 						</div>
 					</div>	
-
-						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
-						<br/><br/>
-						<Button color='gray' size="sm" onClick={modaladm6811p.open}>6811p</Button> <br/><br/>
-						{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
-
+					{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
+					<br/><br/>
+					<Button color='gray' size="sm" onClick={modaladm6811p.open}>6811p</Button> <br/><br/>
+					{/* 실제 개발시 필요없는 버튼입니다. 삭제해주세요 */}
 				</main>
-				</div>
-
-		{/* modal - 6811p*/}
-		<ModalPopup
+			</div>
+			{/* modal - 6811p*/}
+			<ModalPopup
 				open={modaladm6811p.isShowing}
 				title="이상거래감지 설정"
 				size="mid"
@@ -171,7 +159,6 @@ function ContentsContainer() {
 					</div>
 				</div>	
 			</ModalPopup>
-
 		</PageContainer>
 	);
 }

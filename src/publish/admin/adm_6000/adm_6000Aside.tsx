@@ -1,67 +1,19 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import menutree from 'layouts/admin/menutree.json';
 function PortalAside() {
-	const aside = [
-		{
-			s_id:1,
-			s_name : " 메일발송관리",
-			s_path : "/admin/adm_6000/adm6100"
-		},
-		{
-			s_id:2,
-			s_name : "SMS 발송관리",
-			s_path : "/admin/adm_6000/adm6200"
-		},
-		{
-			s_id:3,
-			s_name : "사업관리",
-			s_path : "/admin/adm_6000/adm6310"
-		},
-		{
-			s_id:4,
-			s_name : "코드관리",
-			s_path : "/admin/adm_6000/adm6410"
-		},
-		{
-			s_id:5,
-			s_name : "메뉴관리",
-			s_path : "/admin/adm_6000/adm6421"
-		},
-		{
-			s_id:6,
-			s_name : "권한관리",
-			s_path : "/admin/adm_6000/adm6431"
-		},
-		{
-			s_id:7,
-			s_name : "풍선도움말",
-			s_path : "/admin/adm_6000/adm6510"
-		},
-		{
-			s_id:8,
-			s_name : "명칭관리",
-			s_path : "/admin/adm_6000/adm6520"
-		},
-		{
-			s_id:9,
-			s_name : "통계목관리",
-			s_path : "/admin/adm_6000/adm6610"
-		},
-		{
-			s_id:10,
-			s_name : "펌뱅킹관리",
-			s_path : "/admin/adm_6000/adm6710"
-		}	
-	];
-	const location = useLocation(); 
+	const location = useLocation();
+	const gnb = menutree.gnb[5].path.slice(0,8);
+	const lnb = menutree.gnb[5].sub;
+	//console.log(location.pathname.slice(19,22) )
 	return (
 		<aside className='fww-aside'>
-			<p className="tit-d1">시스템관리</p>
+			<p className="tit-d1">{menutree.gnb[5].name}</p>
 			<ul className='d1'>
-				{aside.map((aside) => (
-					<li className={location.pathname.slice(0,-1) === aside.s_path.slice(0,-1) ? 'active' : ''} key={aside.s_id}>
-						<Link to={aside.s_path} className='no-sub'>{aside.s_name}</Link>
-					</li>
+				{lnb.map((lnb) => (
+				<li key={lnb.s_id} className={location.pathname.slice(19,22) === lnb.sceenid.slice(0,3)? 'active' : ''}>
+					<Link to={'/admin/'+gnb+'/adm'+lnb.sceenid} className='no-sub'>{lnb.name}</Link>
+				</li>
 				))}
 			</ul>
 		</aside>

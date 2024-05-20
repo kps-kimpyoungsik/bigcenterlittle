@@ -1,0 +1,104 @@
+{
+	"gnb" : [
+		{
+			"name":"기금관리",
+			"path":"adm_1000/adm1100",
+			"sub":[
+				{"s_id":1, "sceenid":"1100", "name" : "통합정보조회", "dep3": []},
+				{"s_id":2, "sceenid":"1200", "name" : "출연관리", 
+					"dep3": [ 
+						{"screenid":"1200", "name":"출연신청안내관리"},
+						{"screenid":"1205", "name":"출연현황"},
+						{"screenid":"1212", "name":"출연금관리리"}
+
+				]},
+				{"s_id":3, "sceenid":"1300", "name" : "과제관리",
+					"dep3":[
+						{"screenid":"1300", "name":"출연신청안내관리"},
+						{"screenid":"1305", "name":"과제신청현황"}
+				]},
+				{"s_id":4, "sceenid":"1400", "name" : "지급관리",
+					"dep3":[
+						{"screenid":"1400", "name":"지급신청안내관리"},
+						{"screenid":"1405", "name":"지급신청현황"}
+				]},
+				{"s_id":5, "sceenid":"1500", "name" : "환수관리", "dep3": []},
+				{"s_id":6, "sceenid":"1600", "name" : "성과관리", "dep3": []},
+				{"s_id":7, "sceenid":"1700", "name" : "수요조사관리",
+					"dep3":[
+						{"screenid":"1700", "name":"수요조사관리"},
+						{"screenid":"1704", "name":"수요조사모집현황"}
+				]},
+				{"s_id":8, "sceenid":"1706", "name" : "통계관리", "dep3": []}
+				
+			]
+		},
+		{
+			"name":"계좌관리",
+			"path":"adm_2000/adm2100",
+			"sub":[
+				{"s_id":1, "sceenid":"2100", "name" : "가상계좌관리", "dep3": [] },
+				{"s_id":2, "sceenid":"2200", "name" : "모계좌관리", "dep3": [] }
+			]
+		},
+		{
+			"name":"공시/발급",
+			"path":"adm_3000/adm3100",
+			"sub":[
+				{"s_id":1, "sceenid":"3100", "name" : "법인세공시", "dep3": [] },
+				{"s_id":2, "sceenid":"3200", "name" : "기부영수증", "dep3": [] }
+			]
+		},
+		{
+			"name":"사용자관리",
+			"path":"adm_4000/adm4100",
+			"sub":[
+				{"s_id":1, "sceenid":"4100", "name" : "회원관리", "dep3": [] },
+				{"s_id":2, "sceenid":"4200", "name" : "기업관리", "dep3": [] },
+				{"s_id":3, "sceenid":"4310", "name" : "한도금액통제", "dep3": [] }
+			]
+		},
+		{
+			"name":"게시판관리",
+			"path":"adm_5000/adm5100",
+			"sub":[
+				{"s_id":1, "sceenid":"5100", "name" : "공지사항", "dep3": [] },
+				{"s_id":2, "sceenid":"5210", "name" : "FAQ관리", "dep3": [] },
+				{"s_id":3, "sceenid":"5310", "name" : "팝업관리", "dep3": [] },
+				{"s_id":4, "sceenid":"5320", "name" : "우수사례관리", "dep3": [] }
+			]
+		},
+		{
+			"name":"시스템관리",
+			"path":"adm_6000/adm6100",
+			"sub":[
+				{"s_id":1, "sceenid":"6100", "name" : "메일발송관리", "dep3": [] },
+				{"s_id":2, "sceenid":"6200", "name" : "SMS 발송관리", "dep3": [] },
+				{"s_id":3, "sceenid":"6310", "name" : "사업관리", "dep3": [] },
+				{"s_id":4, "sceenid":"6410", "name" : "코드관리", "dep3": [] },
+				{"s_id":5, "sceenid":"6421", "name" : "메뉴관리", "dep3": [] },
+				{"s_id":6, "sceenid":"6431", "name" : "권한관리", "dep3": [] },
+				{"s_id":7, "sceenid":"6510", "name" : "풍선도움말", "dep3": [] },
+				{"s_id":8, "sceenid":"6520", "name" : "명칭관리", "dep3": [] },
+				{"s_id":9, "sceenid":"6610", "name" : "통계목관리", "dep3": [] },
+				{"s_id":10, "sceenid":"6710", "name" : "펌뱅킹관리", "dep3": [] },
+				{"s_id":11, "sceenid":"6810", "name" : "이상거래감지", "dep3": [] }
+			]
+		},
+		{
+			"name":"결재함",
+			"path":"adm_7000/adm7100",
+			"sub":[
+				{"s_id":1, "sceenid":"7100", "name" : "결제함", "dep3": [] }
+			]
+		},
+		{
+			"name":"보고서",
+			"path":"adm_8000/adm8100",
+			"sub":[
+				{"s_id":1, "sceenid":"8100", "name" : "누적 현황통계", "dep3": [] },
+				{"s_id":2, "sceenid":"8200", "name" : "연도별 현황통계", "dep3": [] }
+			]
+		}
+	]
+} 

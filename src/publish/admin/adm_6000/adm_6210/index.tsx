@@ -1,21 +1,16 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_6000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import Button from 'components/buttons/';
+import UIInput from 'components/input/input';
 function ContentsContainer() {
 	return (
 		<PageContainer>
 			<LayoutAside />
 				<div className="fww-con">
-
-					<ul className="fww-brd">
-						<li className=""><a href="">홈</a></li>
-						<li className=""><a href="">관리자페이지</a></li>
-						<li className=""><a href="">시스템관리</a></li>
-						<li className=""><a href="">SMS발송 관리</a></li>
-					</ul>
-
+					<Breadcrumb gnbIdx={5} lnbD1Idx={1} />
 					<main className="fww-main">
 						<h1 className="tx tx-hd2">SMS 발송내역 상세</h1>
 						<form className="fo fo-col2 mb30" name="" action="" method="">
@@ -23,19 +18,19 @@ function ContentsContainer() {
 								<div className="fo-item fo-m-1-3">
 									<p className="fo-key">SMS 제목</p>
 									<div className="fo-value">
-										<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="[대·중소기업·농어업혐력재단]동반성장 투자재원 지급신청 수정요청의 건" placeholder="" />
+										<UIInput className={'tf tf-md w100p'} value={'[대·중소기업·농어업혐력재단]동반성장 투자재원 지급신청 수정요청의 건'} placeholder={''} readOnly={true}/>
 									</div>
 								</div>
 								<div className="fo-item fo-m-1-3">
 									<p className="fo-key">발송자 SMS 번호</p>
 									<div className="fo-value">
-										<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="02-111-11111" placeholder="" />
+										<UIInput className={'tf tf-md w100p'} value={'02-111-11111'} placeholder={''} readOnly={true}/>
 									</div>						
 								</div>
 								<div className="fo-item fo-m-1-3">
 									<p className="fo-key">발송자 이름</p>
 									<div className="fo-value">
-										<input readOnly name="" id="" className="tf tf-md w100p" type="text" value="[대·중소기업상생협력기금종합관리시스템] 과제신청 심사 완료" placeholder="" />
+										<UIInput className={'tf tf-md w100p'} value={'[대·중소기업상생협력기금종합관리시스템] 과제신청 심사 완료'} placeholder={''} readOnly={true}/>
 									</div>						
 								</div>		
 							</div> 
