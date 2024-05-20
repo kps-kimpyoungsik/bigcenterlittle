@@ -22,8 +22,8 @@ function ContentsContainer() {
 					<h1 className="tx tx-hd2">과제현황</h1>
 					<div className="hz-root hz-right hz-gap10">
 						<Button color="pri" size="md">제출</Button>
-						<Button color="gray-o" size="md">삭제</Button>
 						<Button color="pri-o2" size="md" href="/main/usr_2100/usr_2108">수정</Button>
+						<Button color="gray-o" size="md">변경심사취소</Button>
 						<Button color="gray-o" size="md" href="/main/usr_2100/usr_2105">목록</Button>
 					</div>
 					<section className="fund-section">
@@ -769,8 +769,8 @@ function ContentsContainer() {
 					</section>
 					<div className="hz-root hz-right hz-gap10 mt30">
 						<Button color="pri" size="md">제출</Button>
-						<Button color="gray-o" size="md">삭제</Button>
 						<Button color="pri-o2" size="md" href="/main/usr_2100/usr_2108">수정</Button>
+						<Button color="gray-o" size="md">변경심사취소</Button>
 						<Button color="gray-o" size="md" href="/main/usr_2100/usr_2105">목록</Button>
 					</div>
 				</main>
