@@ -9,8 +9,8 @@ function ContentsContainer() {
 			<div className="adm-dash">
 				{/* 1.상생협력기금 현황 */}
 				<div className="adm-dash-section adm-dash-section-01">
-					<div className="tit-date">
-						<h2 className="tit hide">상생협력기금 현황</h2>
+					<div className="tit-date hide">
+						<h2 className="tit">상생협력기금 현황</h2>
 					</div>
 					<ul className="main-list">
 						<li>
@@ -40,7 +40,7 @@ function ContentsContainer() {
 					</ul>
 				</div>
 
-				<div className="pt">
+				<div className="pt pl40 pr40">
 					<div className="row">
 						<div className="col col-5 mr10">
 							{/* 2.출연기업 현황 */}

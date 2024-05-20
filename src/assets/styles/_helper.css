@@ -147,6 +147,9 @@
 .p32 {padding: 32px !important}
 .p50 {padding: 50px !important}
 
+.pl40 {padding-left: 40px !important}
+.pr40 {padding-right: 40px !important}
+
 .h100p {height: 100% !important}
 .h36 {height: 36px !important}
 .h50 {height: 50px !important}
