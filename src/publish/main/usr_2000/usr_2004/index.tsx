@@ -89,7 +89,7 @@ function ContentsContainer() {
 										<div className="hz-root hz-sb w100p">
 											<UIInput className={'w215 hz-fg tf tf-md'} value={'하나은행 0000-00-000000'} placeholder={''} readOnly={true} />
 											<div className="hz-item">
-												<Button color='pri-o' size="md" onClick={modaladm2004.open}>가상계좌확인서 발급 안내</Button>
+												<Button color='pri-o2' size="md" onClick={modaladm2004.open}>가상계좌확인서 발급 안내</Button>
 											</div>
 										</div>
 									</div>
@@ -131,6 +131,7 @@ function ContentsContainer() {
 						</form>
 						<div className="tx-msg"><span className="fc-pri">※ 출연신청 후 별도 승인절차가 없습니다. 위 계좌로 입금해주시면 됩니다. 단 출연금을 한번에 입금하지 않고 분할해서 입금하시는 경우 입금일자가 서로 다르면 취소하고 다시 신청해야 합니다.</span></div>
 					</section>
+					{/*
 					<section className="fund-section">
 						<h3 className="section-title mb15">출연금액</h3>
 						<form className="fo fo-col2 mb0" name="" action="" method="">
@@ -168,6 +169,7 @@ function ContentsContainer() {
 							</div>
 						</div>
 					</section>
+					기획서 0.894 삭제  */}
 					<section className="fund-section">
 						<div className="hz-root hz-sb mb15">
 							<h3 className="section-title hz-item">첨부파일</h3>

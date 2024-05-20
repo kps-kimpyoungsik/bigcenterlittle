@@ -14,7 +14,7 @@ function LayoutFooter() {
 					<address>04554 서울특별시 중구 퇴계로 173 남산스퀘어빌딩 7층</address>
 					<p>Tel : 02-368-8771</p>
 					<p>Fax : 02-368-8709</p>
-					<p>E-mail : <a href="mailto:fund@win-win.or.kr">fund@win-win.or.kr</a></p>
+					<p>E-mail : <a href="mailto:fund@win-win.or.kr" className='tx tx-link'>fund@win-win.or.kr</a></p>
 				</div>
 				<div>시스템 관련 문의처 : 02-368-8979</div>
 				<div className='copyright'>Copyright ⓒ 2021 대·중소기업·농어업협력재단. All Rights Reserved.</div>

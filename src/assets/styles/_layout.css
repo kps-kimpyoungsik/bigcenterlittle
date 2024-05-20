@@ -435,6 +435,7 @@
     font-size: 13px;
     color: #333;
 }
+
 .fww-root .fww-group-aside-con .fww-con .fww-brd>li:first-of-type {
     font-size: 0;
 }
@@ -523,6 +524,7 @@
     background-color: #ccc;
     margin-right:50px;
 }
+
 .fww-footer-info {
     padding:35px 0 40px 468px;
     font-size:14px;

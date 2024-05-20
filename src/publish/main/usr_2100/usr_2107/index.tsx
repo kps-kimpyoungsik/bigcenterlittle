@@ -192,19 +192,27 @@ function ContentsContainer() {
 								<table>
 									<caption></caption>
 									<colgroup>
-										<col width="80px" />
-										<col width="120px" />
+										<col width="200px" />
 										<col />
 									</colgroup>
 									<tbody>
 										<tr>
-											<th scope="row" colSpan={2}><span className="th-req">과제개요</span></th>
+											<th scope="row"><span className="th-req">과제개요</span></th>
 											<td>
 												<div className="ta-group w100p">
 													<textarea rows={3} className="ta-ip" placeholder="과제에 대한 개요를 입력하세요." defaultValue="입력된 과제개요 내용이 출력됩니다." />
 												</div>
 											</td>
 										</tr>
+										<tr>
+											<th scope="row" ><span className="th-req">정성효과</span></th>
+											<td>
+												<div className="ta-group w100p">
+													<textarea rows={3} className="ta-ip" placeholder="거래관계 향상에 대한 의견을 자유롭게 입력하세요"/>
+												</div>
+											</td>
+										</tr>
+										{/* 
 										<tr>
 											<th scope="row" rowSpan={2} className="bd-r bd-nb">기대<br />효과</th>
 											<th scope="row"><span className="th-req">정성</span></th>
@@ -227,8 +235,9 @@ function ContentsContainer() {
 												</div>
 											</td>
 										</tr>
+										기획서 v0.894 반영(삭제) */}
 										<tr>
-											<th scope="row"><span className="th-req">정량</span></th>
+											<th scope="row">기대효과</th>
 											<td>
 												<div className="fo fo-col2">
 													<div className="inner">

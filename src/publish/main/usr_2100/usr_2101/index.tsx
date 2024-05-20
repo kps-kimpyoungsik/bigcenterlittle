@@ -61,7 +61,7 @@ function ContentsContainer() {
 									<div className="fo-value">
 										<div className="hz-root hz-gap5 w100p">
 											<UIInput className={'tf tf-md hz-item hz-fg'} value={'사업명'} placeholder={''} />
-											<Button color='gray-o' size="md" onClick={modalusr2139.open}>출연사업선택</Button> 
+											<Button color='pri-o2' size="md" onClick={modalusr2139.open}>출연사업선택</Button> 
 										</div>
 									</div>
 								</div>
@@ -210,13 +210,13 @@ function ContentsContainer() {
 								<table>
 									<caption></caption>
 									<colgroup>
-										<col width="80px" />
-										<col width="120px" />
+									
+										<col width="200px" />
 										<col />
 									</colgroup>
 									<tbody>
 										<tr>
-											<th scope="row" colSpan={2}><span className="th-req">과제개요</span></th>
+											<th scope="row" ><span className="th-req">과제개요</span></th>
 											<td>
 												<div className="ta-group w100p">
 													<textarea rows={3} className="ta-ip" placeholder="과제에 대한 개요를 입력하세요."/>
@@ -224,29 +224,15 @@ function ContentsContainer() {
 											</td>
 										</tr>
 										<tr>
-											<th scope="row" rowSpan={2} className="bd-r bd-nb">기대<br />효과</th>
-											<th scope="row"><span className="th-req">정성</span></th>
+											<th scope="row" ><span className="th-req">정성효과</span></th>
 											<td>
-												<div className="fo fo-col2">
-													<div className="inner">
-														<div className="fo-item fo-m-1-3">
-															<p className="fo-key">거래관계 향상</p>
-															<div className="fo-value">
-																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'거래관계 향상에 대한 의견을 자유롭게 입력하세요.'} />
-															</div>
-														</div>
-														<div className="fo-item fo-m-1-3">
-															<p className="fo-key">협력관계 향상</p>
-															<div className="fo-value">
-																<UIInput className={'tf tf-md  w100p'} value={''} placeholder={'협력관계 향상에 대한 의견을 자유롭게 입력하세요.'} />
-															</div>
-														</div>
-													</div>
+												<div className="ta-group w100p">
+													<textarea rows={3} className="ta-ip" placeholder="거래관계 향상에 대한 의견을 자유롭게 입력하세요"/>
 												</div>
 											</td>
 										</tr>
 										<tr>
-											<th scope="row"><span className="th-req">정량</span></th>
+											<th scope="row">기대효과</th>
 											<td>
 												<div className="fo fo-col2">
 													<div className="inner">
