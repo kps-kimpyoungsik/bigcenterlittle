@@ -32,7 +32,7 @@ function ContentsContainer() {
 			"d1": "메인",
 			"d1id": "adm_main",
 			"page": [
-			["admmain", "메인", "-", "-", "-", "-", "-", "2024.$$.$$", "state1", "-"],
+			["admmain", "메인", "-", "-", "-", "-", "-", "2024.05.20", "state3", "-"],
 			] 
 		},
 		{
