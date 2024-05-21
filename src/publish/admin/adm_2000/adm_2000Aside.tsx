@@ -1,27 +1,18 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import menutree from 'layouts/admin/menutree.json';
 function PortalAside() {
-	const aside = [
-		{
-			s_id:1,
-			s_name : " 가상계좌관리",
-			s_path : "/admin/adm_2000/adm2100"
-		},
-		{
-			s_id:2,
-			s_name : "모계좌관리",
-			s_path : "/admin/adm_2000/adm2200"
-		},
-	];
 	const location = useLocation(); 
+	const gnb = menutree.gnb[1].path.slice(0,8);
+	const lnb = menutree.gnb[1].sub;
 	return (
 		<aside className='fww-aside'>
-			<p className="tit-d1">계좌관리</p>
+			<p className="tit-d1">{menutree.gnb[1].name}</p>
 			<ul className='d1'>
-				{aside.map((aside) => (
-					<li className={location.pathname.slice(0,-2) === aside.s_path.slice(0,-2) ? 'active' : ''} key={aside.s_id}>
-						<Link to={aside.s_path} className='no-sub'>{aside.s_name}</Link>
-					</li>
+				{lnb.map((lnb) => (
+				<li key={lnb.s_id} className={location.pathname.slice(19,21) === lnb.sceenid.slice(0,2)? 'active' : ''}>
+					<Link to={'/admin/'+gnb+'/adm'+lnb.sceenid} className='no-sub'>{lnb.name}</Link>
+				</li>
 				))}
 			</ul>
 		</aside>
