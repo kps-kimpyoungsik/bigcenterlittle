@@ -93,7 +93,7 @@
 			"name":"결재함",
 			"path":"adm_7000/adm7100",
 			"sub":[
-				{"s_id":1, "sceenid":"7100", "name" : "결제함", "dep3": [] }
+				{"s_id":1, "sceenid":"7100", "name" : "결재함", "dep3": [] }
 			]
 		},
 		{
