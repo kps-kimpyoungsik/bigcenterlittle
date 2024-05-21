@@ -3,6 +3,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import Button from 'components/buttons/';
+import Terms from './term'
+import Policy from './policy'
 function ContentsContainer() {
 	return (
 		<PageContainer>
@@ -29,7 +31,7 @@ function ContentsContainer() {
 								</label>
 							</div>
 							<div className="terms-conts">
-								약관내용출력
+								<Terms />
 							</div>
 							<div className="join-agree">
 								<label htmlFor="ch-1" className="hz-item ip-ch-label ip-ch-18">
@@ -44,7 +46,7 @@ function ContentsContainer() {
 								<h3 className="section-title">개인정보수집 및 이용 안내</h3>
 							</div>
 							<div className="terms-conts">
-								약관내용출력
+								<Policy />
 							</div>
 							<div className="join-agree">
 								<label htmlFor="ch-2" className="hz-item ip-ch-label ip-ch-18">
