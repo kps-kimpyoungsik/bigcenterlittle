@@ -36,14 +36,24 @@
     background: #fff;
     display: flex;
     overflow: hidden;
+    border: 1px solid #eee;
 }
 .adm-login>.img-area,
 .adm-login>.form-area {
     width: 50%;
 }
 .adm-login>.img-area {
-    background: url(https://picsum.photos/460/540) no-repeat 0 0;	
+    background: url(../img/char/char_login.svg) no-repeat 0 0;	
     background-size: cover;
+    /* width: 340px; */
+    /* height: 376px; */
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adm-login>.img-area>img {
+    
 }
 /* .adm-login>.img-area>img { */
     /* width: 100%; */
@@ -56,20 +66,33 @@
 }
 .adm-login>.form-area>.inner {
     text-align: center;
-    width: 262px;
+    /* width: 262px; */
+    width: 330px;
     margin-top: 90px;
 }
 .adm-login>.form-area .tit {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--p2);
+    text-align: left;
+}
+.adm-login>.form-area .tf {
+    padding-left: 43px;
+    background: #fff no-repeat 15px 15px;
 }
 .adm-login>.form-area .tf:first-of-type {
     margin-bottom: 8px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99967 10.0003C12.3009 10.0003 14.1663 8.13485 14.1663 5.83366C14.1663 3.53247 12.3009 1.66699 9.99967 1.66699C7.69849 1.66699 5.83301 3.53247 5.83301 5.83366C5.83301 8.13485 7.69849 10.0003 9.99967 10.0003Z' stroke='%23C8C8C8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.1585 18.3333C17.1585 15.1083 13.9501 12.5 10.0001 12.5C6.05013 12.5 2.8418 15.1083 2.8418 18.3333' stroke='%23C8C8C8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.adm-login>.form-area .tf:last-of-type {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.33268V5.66602C5 2.90768 5.83333 0.666016 10 0.666016C14.1667 0.666016 15 2.90768 15 5.66602V7.33268' stroke='%23C8C8C8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='2.6' y='7.6' width='14.8' height='10.8' rx='1.4' stroke='%23C8C8C8' stroke-width='1.2'/%3E%3Cpath d='M13.3301 13.1169H13.3375' stroke='%23C8C8C8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.99607 13.1169H10.0036' stroke='%23C8C8C8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.66209 13.1169H6.66957' stroke='%23C8C8C8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 .adm-login>.form-area .bt {
-    height: 46px;
+    /* height: 46px; */
     width: 100%;
-    font-size: 14px;
-    font-weight: 700;
+    /* font-size: 14px; */
+    /* font-weight: 700; */
     margin-top: 15px;
 }
 .adm-login-wrap .adm-login-footer {
