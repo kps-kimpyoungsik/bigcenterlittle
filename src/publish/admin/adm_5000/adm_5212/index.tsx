@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_5000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
