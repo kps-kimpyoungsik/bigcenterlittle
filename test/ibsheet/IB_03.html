@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FWW-IB</title>
+		<link rel="stylesheet" href="../../src/assets/styles/fww.css" />
+
+		<!--TEST JS-->
+		<!-- <script src="static/js/ibsheet/ibleaders.js"></script> -->
+		<!-- <script src="static/js/ibsheet/ibsheet.js"></script> -->
+		<!-- <script src="static/js/ibsheet/locale/ko.js"></script> -->
+		<!-- <script src="static/js/ibsheet/plugins/ibsheet-common.js"></script> -->
+		<!-- <script src="static/js/ibsheet/plugins/ibsheet-dialog.js"></script> -->
+		<!-- <script src="static/js/ibsheet/plugins/ibsheet-excel.js"></script> -->
+		<!--//TEST JS-->
+		
+		<!--TEST CSS-->
+		<style>
+			body {min-width: 0;}
+		</style>
+		<!--//TEST CSS-->
+
+	</head>
+	<body>
+		
+		<!--[S] fww-root-->
+		<div class="fww-root type-a"> 
+
+			<!--[S] fww-group-aside-con-->
+			<div class="fww-group-aside-con">
+				
+				<!--[S] fww-aside-->
+				<aside class="fww-aside">
+				</aside>
+				<!--//[S] fww-aside-->
+
+				<!--[S] fww-con-->
+				<div class="fww-con">
+
+					<!--[S] fww-main-->
+					<main class="fww-main">
+						<div class="deco-noti">
+							※ IB의 CSS는 별도의 컴포넌트용CSS없이, ibsheet8_main.css에서 직접 수정.
+						</div>
+						<h1 class="deco-h1">IB(IBSHEET)</h1>
+	
+						<div style='height:calc(100% - 20px)'> <!--TEST DIV-->
+							
+							<!--캘린더-->
+							<div style="position: relative">
+								<div class="IBMenuMain IBPickMain IBMenuMainBottom IBPickMainBottom" style="top: 0; left: 0;"><div class="IBMenuOuter IBPickOuter IBMenuOuterBottom IBPickOuterBottom"><div class="IBMenuBody IBPickBody" style="" onclick="CancelEvent(event,1)" ontouchend="CancelEvent(event,1)"><div dir="ltr"><div onselectstart="return false;" onmouseup="Dialogs[0].PickDrag(4);" onmouseover="Dialogs[0].SetActive();"><div class="IBPickBL" onclick="Dialogs[0].MYChg(-1);" style="display: block;">&nbsp;</div><div class="IBPickBR" onclick="Dialogs[0].MYChg(1);" style="display: block;">&nbsp;</div><div onmousedown="return false;" class="IBPickMY"><span class="IBPickMYDown IBHeaderFont" onclick="Dialogs[0].Render(1)">2024년&nbsp;5월&nbsp;</span></div><div onmousedown="return false;" class="IBPickTableParent"><table cellspacing="0" cellpadding="0" class="IBPickTable"><tbody><tr class="IBPickRowW"><td class="IBPickCell"><div class="IBPickWDN IBPickSu">일</div></td><td class="IBPickCell"><div class="IBPickWDN">월</div></td><td class="IBPickCell"><div class="IBPickWDN">화</div></td><td class="IBPickCell"><div class="IBPickWDN">수</div></td><td class="IBPickCell"><div class="IBPickWDN">목</div></td><td class="IBPickCell"><div class="IBPickWDN">금</div></td><td class="IBPickCell"><div class="IBPickWDN IBPickSa">토</div></td></tr><tr class="IBPickRow"><td class="IBPickCell"><div class="IBPickOM IBPickSu" onmouseover="this.className=&quot;IBPickOM IBPickSu IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM IBPickSu&quot;;" onclick="Dialogs[0].DayClick(-2);">28</div></td><td class="IBPickCell"><div class="IBPickOM" onmouseover="this.className=&quot;IBPickOM IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM&quot;;" onclick="Dialogs[0].DayClick(-1);">29</div></td><td class="IBPickCell"><div class="IBPickOM" onmouseover="this.className=&quot;IBPickOM IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM&quot;;" onclick="Dialogs[0].DayClick(0);">30</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(1);">1</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(2);">2</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(3);">3</div></td><td class="IBPickCell"><div class="IBPickSa" onmouseover="this.className=&quot;IBPickSa IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickSa&quot;;" onclick="Dialogs[0].DayClick(4);">4</div></td></tr><tr class="IBPickRow"><td class="IBPickCell"><div class="IBPickSu" onmouseover="this.className=&quot;IBPickSu IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickSu&quot;;" onclick="Dialogs[0].DayClick(5);">5</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(6);">6</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(7);">7</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(8);">8</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(9);">9</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(10);">10</div></td><td class="IBPickCell"><div class="IBPickSa" onmouseover="this.className=&quot;IBPickSa IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickSa&quot;;" onclick="Dialogs[0].DayClick(11);">11</div></td></tr><tr class="IBPickRow"><td class="IBPickCell"><div class="IBPickSu" onmouseover="this.className=&quot;IBPickSu IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickSu&quot;;" onclick="Dialogs[0].DayClick(12);">12</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(13);">13</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(14);">14</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(15);">15</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(16);">16</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(17);">17</div></td><td class="IBPickCell"><div class="IBPickSa" onmouseover="this.className=&quot;IBPickSa IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickSa&quot;;" onclick="Dialogs[0].DayClick(18);">18</div></td></tr><tr class="IBPickRow"><td class="IBPickCell"><div class="IBPickSu" onmouseover="this.className=&quot;IBPickSu IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickSu&quot;;" onclick="Dialogs[0].DayClick(19);">19</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(20);">20</div></td><td class="IBPickCell"><div class="IBPickNow" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickNow&quot;;" onclick="Dialogs[0].DayClick(21);">21</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(22);">22</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(23);">23</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(24);">24</div></td><td class="IBPickCell"><div class="IBPickSel" onmouseover="this.className=&quot;IBPickSa IBPickSelHover&quot;;" ontouchstart="this.className=&quot;IBPickSelHover&quot;;" onmouseout="this.className=&quot;IBPickSel&quot;;" onclick="Dialogs[0].DayClick(25);">25</div></td></tr><tr class="IBPickRow"><td class="IBPickCell"><div class="IBPickSu" onmouseover="this.className=&quot;IBPickSu IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickSu&quot;;" onclick="Dialogs[0].DayClick(26);">26</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(27);">27</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(28);">28</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(29);">29</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(30);">30</div></td><td class="IBPickCell"><div class="IBPickWD" onmouseover="this.className=&quot;IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickWD&quot;;" onclick="Dialogs[0].DayClick(31);">31</div></td><td class="IBPickCell"><div class="IBPickOM IBPickSa" onmouseover="this.className=&quot;IBPickOM IBPickSa IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM IBPickSa&quot;;" onclick="Dialogs[0].DayClick(32);">1</div></td></tr><tr class="IBPickRow"><td class="IBPickCell"><div class="IBPickOM IBPickSu" onmouseover="this.className=&quot;IBPickOM IBPickSu IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM IBPickSu&quot;;" onclick="Dialogs[0].DayClick(33);">2</div></td><td class="IBPickCell"><div class="IBPickOM" onmouseover="this.className=&quot;IBPickOM IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM&quot;;" onclick="Dialogs[0].DayClick(34);">3</div></td><td class="IBPickCell"><div class="IBPickOM" onmouseover="this.className=&quot;IBPickOM IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM&quot;;" onclick="Dialogs[0].DayClick(35);">4</div></td><td class="IBPickCell"><div class="IBPickOM" onmouseover="this.className=&quot;IBPickOM IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM&quot;;" onclick="Dialogs[0].DayClick(36);">5</div></td><td class="IBPickCell"><div class="IBPickOM" onmouseover="this.className=&quot;IBPickOM IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM&quot;;" onclick="Dialogs[0].DayClick(37);">6</div></td><td class="IBPickCell"><div class="IBPickOM" onmouseover="this.className=&quot;IBPickOM IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM&quot;;" onclick="Dialogs[0].DayClick(38);">7</div></td><td class="IBPickCell"><div class="IBPickOM IBPickSa" onmouseover="this.className=&quot;IBPickOM IBPickSa IBPickHover&quot;;" ontouchstart="this.className=&quot;IBPickHover&quot;;" onmouseout="this.className=&quot;IBPickOM IBPickSa&quot;;" onclick="Dialogs[0].DayClick(39);">8</div></td></tr></tbody></table></div></div></div></div></div></div>							
+							</div>
+
+							<div style="position: relative">
+<div class="IBMenuMain IBPickMain IBMenuMainBottom IBPickMainBottom" style="top: 0px; left: 302px;"><div class="IBMenuOuter IBPickOuter IBMenuOuterBottom IBPickOuterBottom"><div class="IBMenuBody IBPickBody" style="" onclick="CancelEvent(event,1)" ontouchend="CancelEvent(event,1)"><div dir="ltr"><div onmouseup="Dialogs[0].PickDrag(4);" onmouseover="Dialogs[0].SetActive();"><div class="IBPickBL" onclick="Dialogs[0].MYChg(-1);" style="display: block;">&nbsp;</div><div class="IBPickBR" onclick="Dialogs[0].MYChg(1);" style="display: block;">&nbsp;</div><div class="IBPickMY"><span class="IBPickMYUp IBHeaderFont" onclick="Dialogs[0].Render(0)">2024년&nbsp;3월&nbsp;</span></div><div class="IBPick2SepH">&nbsp;</div><div class="IBPick2TableParent"><table cellspacing="0" cellpadding="0" class="IBPick2Table"><tbody><tr class="IBPick2Row"><td class="IBPick2CellY"><div class="IBPick2BL" onclick="Dialogs[0].FY-=5;Dialogs[0].Render(3);"></div></td><td class="IBPick2CellY"><div class="IBPick2BR" onclick="Dialogs[0].FY+=5;Dialogs[0].Render(3);"></div></td><td class="IBPick2CellSep"><div class="IBPick2Sep">&nbsp;</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=0;Dialogs[0].Render(3);">1월</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=6;Dialogs[0].Render(3);">7월</div></td></tr><tr class="IBPick2Row"><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2020;Dialogs[0].Render(3);">2020</div></td><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2025;Dialogs[0].Render(3);">2025</div></td><td class="IBPick2CellSep"><div class="IBPick2Sep">&nbsp;</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=1;Dialogs[0].Render(3);">2월</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=7;Dialogs[0].Render(3);">8월</div></td></tr><tr class="IBPick2Row"><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2021;Dialogs[0].Render(3);">2021</div></td><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2026;Dialogs[0].Render(3);">2026</div></td><td class="IBPick2CellSep"><div class="IBPick2Sep">&nbsp;</div></td><td class="IBPick2CellM"><div class="IBPick2M IBPick2MSel" onmouseover="this.className=&quot;IBPick2M IBPick2MSelHover&quot;;" onmouseout="this.className=&quot;IBPick2M IBPick2MSel&quot;;" onclick="Dialogs[0].Month=2;Dialogs[0].Render(3);">3월</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=8;Dialogs[0].Render(3);">9월</div></td></tr><tr class="IBPick2Row"><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2022;Dialogs[0].Render(3);">2022</div></td><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2027;Dialogs[0].Render(3);">2027</div></td><td class="IBPick2CellSep"><div class="IBPick2Sep">&nbsp;</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=3;Dialogs[0].Render(3);">4월</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=9;Dialogs[0].Render(3);">10월</div></td></tr><tr class="IBPick2Row"><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2023;Dialogs[0].Render(3);">2023</div></td><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2028;Dialogs[0].Render(3);">2028</div></td><td class="IBPick2CellSep"><div class="IBPick2Sep">&nbsp;</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=4;Dialogs[0].Render(3);">5월</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=10;Dialogs[0].Render(3);">11월</div></td></tr><tr class="IBPick2Row"><td class="IBPick2CellY"><div class="IBPick2Y IBPick2YSel" onmouseover="this.className=&quot;IBPick2Y IBPick2YSelHover&quot;;" onmouseout="this.className=&quot;IBPick2Y IBPick2YSel&quot;;" onclick="Dialogs[0].Year=2024;Dialogs[0].Render(3);">2024</div></td><td class="IBPick2CellY"><div class="IBPick2Y" onmouseover="this.className=&quot;IBPick2Y IBPick2YHover&quot;;" onmouseout="this.className=&quot;IBPick2Y&quot;;" onclick="Dialogs[0].Year=2029;Dialogs[0].Render(3);">2029</div></td><td class="IBPick2CellSep"><div class="IBPick2Sep">&nbsp;</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=5;Dialogs[0].Render(3);">6월</div></td><td class="IBPick2CellM"><div class="IBPick2M" onmouseover="this.className=&quot;IBPick2M IBPick2MHover&quot;;" onmouseout="this.className=&quot;IBPick2M&quot;;" onclick="Dialogs[0].Month=11;Dialogs[0].Render(3);">12월</div></td></tr></tbody></table></div><div class="IBPick2Footer"><button class="IBPickButton IBDialogButton IBDialogButtonOk" onmouseover="this.className=&quot;IBPickButton IBDialogButton IBDialogButtonOk IBDialogButtonHover IBDialogButtonOkHover IBPickButtonHover&quot;" onmouseout="this.className=&quot;IBPickButton IBDialogButton IBDialogButtonOk&quot;" style="display:none;">이번달</button><button class="IBPickButton IBDialogButton IBDialogButtonOk" onmouseover="this.className=&quot;IBPickButton IBDialogButton IBDialogButtonOk IBDialogButtonHover IBDialogButtonOkHover IBPickButtonHover&quot;" onmouseout="this.className=&quot;IBPickButton IBDialogButton IBDialogButtonOk&quot;" style="display:none;">전체취소</button><button class="IBPickButton IBDialogButton IBDialogButtonOk" onmouseover="this.className=&quot;IBPickButton IBDialogButton IBDialogButtonOk IBDialogButtonHover IBDialogButtonOkHover IBPickButtonHover&quot;" onmouseout="this.className=&quot;IBPickButton IBDialogButton IBDialogButtonOk&quot;" onclick="Dialogs[0].Render(0);">확인</button></div></div></div></div></div></div>							
+							</div>
+							
+
+						</div>
+
+						<script>
+						var ib = ib||{};
+						ib = {
+						//시트 초기화 구문
+						'init':{
+							//공통기능 설정 부분
+							"Cfg": {
+								"CanEdit":1,
+								"SeachMode": 0,
+								"Alternate": 2
+							},
+							"Def": {
+								"Col": {}
+							},
+							//틀고정 좌측 컬럼 설정
+							"LeftCols": [
+								{"Header": "No.","Name": "SEQ","RelWidth": 0,"Type": "Int","Width": 80,"Align": "Center"}
+							],
+							//중앙(메인) 컬럼 설정
+							"Cols": [
+								{"Header": {"Value": "체크박스(Bool)","HeaderCheck": 1},"Type": "Bool","Name": "CheckData","Width": 110,"Align": "Center","CanEdit": 1},
+								{"Header": "아이디","Name": "sId","Type": "Text","Width": 120,"EditMask": "^[a-z|0-9]*$","ResultMask": "^[a-z](([0-9|a-z]){5,9})$","ResultText": "아이디는 6~10글자 이내의 영소문자,숫자로 작성해주세요.(첫글자는 영문자로 시작)","Tip": "아이디는 6~10글자 이내의 영소문자나 숫자로 작성해주세요.(첫글자는 영문자로 시작)"},
+								{"Header": "근무지","Name": "sZone","Type": "Text","Width": 80,"Button": "Defaults","Format": {"AA": "서울","BB": "울산","CC": "평택","DD": "제주","EE": "대전","FF": "전주"},"EditFormat": {"AA": "서울","BB": "울산","CC": "평택","DD": "제주","EE": "대전","FF": "전주"},"Defaults": "|AA|BB|CC|DD|EE|FF","ResultMask": "^(AA|BB|CC|DD|EE|FF|서울|울산|평택|제주|대전|전주)$","ResultText": "입력된 근무지를 확인해주세요.","Tip": "서울,울산,평택,제주,대전,전주 중에 하나를 입력해 주세요."},
+								{"Header": "년월일","Name": "sDate_Ymd","Type": "Date","Width": 120,"Format": "yyyy/MM/dd","Size": 8,"DataFormat": "yyyyMMdd","EditMask": "^\\d*$","ResultMask": "^[0-9][0-9][0-9][0-9][01][0-9][0-3][0-9]$","ResultMessage": "입력된 날짜를 확인해주세요.","ResultMessageTime": 0,"Tip": "8개의 숫자를 구분자 없이 입력해 주세요."},
+								{"Header": "E-Mail","Type": "Text","Name": "sEmail","RelWidth": 1,"ResultMask": "^[\\w\\.\\+%-]+@[A-Za-z0-9\\.-]+\\.[A-Za-z]{2,6}$","ResultMessage": "이메일 주소를 확인해 주세요.","ResultMessageTime": 800,"Tip": "이메일 주소를 형식에 맞게 입력해 주세요."},
+								{"Header": "등급","Type": "Int","Name": "sGrade","Align": "Center","Width": 80,"ResultMask": "^[1-9]$","ResultMessage": "등급은 1부터 9까지만 입력이 가능합니다.","ResultMessageTime": 1000,"Tip": "등급은 1부터 9까지만 입력이 가능합니다."}
+							]
+						},
+						//시트 이벤트
+						'event':{
+								onResultMask:function (evtParam) {
+									console.log(evtParam.eventName + ' 발생');
+									if (evtParam.col === 'sId') {
+										// sId 컬럼의 ResultMask 설정에 의한 유효성 검사를 통과하지 못한 경우
+										// alert 메시지 창을 띄우지 않고 편집모드를 계속 진행
+										// return 1 인 경우 ResultText나 ResultMessage가 동작하지 않는다.
+										return 0;
+									}
+								}
+						},
+						//시트객체 생성
+						'create':function () {
+								var options = this.init;
+
+								options.Events = this.event;
+								IBSheet.create({
+									id: 'sheet', // 생성할 시트의 id
+									el: 'sheetDiv', // 시트를 생성할 Dom 객체 및 id
+									options: options, // 생성될 시트의 속성
+									data: this.data // 생성될 시트의 속성
+								});
+							},
+						//화면 기능
+						'sampleBtn':function () {
+							},
+						//조회 데이터
+						'data':[
+							{"CheckData2": 0, "sId":"sagittis","sZone":"서울","sDate_Ymd":"20240515","sEmail":"In.ornare.sagittis@sapien.co.uk","sGrade":2},
+							{"CheckData2": 0, "sId":"fairytale","sZone":"전주","sDate_Ymd":"20110126","sEmail":"quam.quis.diam@justonec.ca","sGrade":3},
+							{"CheckData2": 0, "sId":"willsmith","sZone":"전주","sDate_Ymd":"20160715","sEmail":"id@massalobortisultrices.com","sGrade":2},
+						]
+						}
+						ib.create();
+
+						</script>
+
+							
+
+					</main>
+					<!--//[S] fww-main-->
+
+				</div>
+				<!--//[S] fww-con-->
+
+			</div>
+			<!--//[S] fww-group-aside-con-->
+			
+		</div>
+		<!--//[S] fww-root-->
+
+
+
+			
+		
+	</body>
+</html>
