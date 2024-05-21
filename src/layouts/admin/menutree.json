@@ -7,6 +7,7 @@
 				{"s_id":1, "sceenid":"1100", "name" : "통합정보조회", "dep3": []},
 				{"s_id":2, "sceenid":"1200", "name" : "출연관리", 
 					"dep3": [ 
+						{"screenid":"", "name":""},
 						{"screenid":"1200", "name":"출연신청안내관리"},
 						{"screenid":"1205", "name":"출연현황"},
 						{"screenid":"1212", "name":"출연금관리리"}
@@ -14,11 +15,13 @@
 				]},
 				{"s_id":3, "sceenid":"1300", "name" : "과제관리",
 					"dep3":[
-						{"screenid":"1300", "name":"출연신청안내관리"},
+						{"screenid":"", "name":""},
+						{"screenid":"1300", "name":"과제신청안내관리"},
 						{"screenid":"1305", "name":"과제신청현황"}
 				]},
 				{"s_id":4, "sceenid":"1400", "name" : "지급관리",
 					"dep3":[
+						{"screenid":"", "name":""},
 						{"screenid":"1400", "name":"지급신청안내관리"},
 						{"screenid":"1405", "name":"지급신청현황"}
 				]},
@@ -26,6 +29,7 @@
 				{"s_id":6, "sceenid":"1600", "name" : "성과관리", "dep3": []},
 				{"s_id":7, "sceenid":"1700", "name" : "수요조사관리",
 					"dep3":[
+						{"screenid":"", "name":""},
 						{"screenid":"1700", "name":"수요조사관리"},
 						{"screenid":"1704", "name":"수요조사모집현황"}
 				]},
