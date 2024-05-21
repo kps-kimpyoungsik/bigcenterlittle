@@ -1,6 +1,7 @@
 
 @import url("https://fund.win-win.or.kr/raonkupload/css/raonkupload.min.css"); /*kupload css - 추후 삭제*/
-@import url("ibsheet8_main.css"); /*ibsheet*/
+@import url("ibsheet8_main.css"); 
+/* @import url("ibsheet8_origin.css");  */
 @import url("_var.css"); /*스타일변수*/
 @import url("_base.css"); /*리셋 및 기본 스타일*/
 @import url("_font.css"); /*폰트 정의*/

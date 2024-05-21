@@ -5,7 +5,7 @@
     ---------------------------------------------------------------------
     @ 목적 : [대중소기업상생협력기금종합관리시스템] 공통 레이아웃 정의
     @ 작성 : IBSheet8 제공 --> GRIDA Publishing Team 수정
-    @ 최종 : 2024.05.17.15:00
+    @ 최종 : 2024.05.20.15:00
     @ 메모 :  
 */
 
@@ -165,9 +165,11 @@
  /* .IBColorAdded{background-color:#eee6fa} */
  /* .IBColorMoved2{background-color:#DAF3F2} */
  
- /*수정행 색상 변경(?) --> 딱히 색 변경 안해도 됨.*/
+ /*수정행 색상 변경 (중요!)*/
  .IBColorChanged{
   /* background-color:#fffded */
+  /* background-color: rgba(13, 177, 75, 0.1); */
+  background-color: #e7f7ed;
 }
  .IBColorChangedCell{
   /* background-color:#EEE */
@@ -299,7 +301,7 @@
  .IBPickNE{text-decoration:line-through}
  .IBPickNE button{text-decoration:line-through}
 
- .IBPickHover,.IBPick2MHovfe  r,.IBPick2YHover{background-color:#EAEAEA}
+ /*.IBPickHover,*/.IBPick2MHovfe  r,.IBPick2YHover{background-color:#EAEAEA}
  .IBPickSelHover,.IBPick2MSelHover,.IBPick2YSelHover{background-color:#EAEAEA}
    .IBPick2Sep{background:#ECECEC}
  .IBMessage,.IBPageMessage{background:white;box-shadow:10px 10px 10px rgba(49, 36, 36, 0.12);border:1px solid #1a364e}
@@ -1717,7 +1719,7 @@ input.IBMenuEditInput,textarea.IBMenuEditTextarea{border:0px none;margin:0px 1px
 .IBPickWDN.IBPickSa{color:#0043ff;}
 .IBPickWDN.IBPickSu{color:#ec264b;}
 .IBHigh .IBPickWDN{line-height:30px}
-.IBPickHover,.IBPickSelHover,.IBPickWD,.IBPickSa,.IBPickSu,.IBPickSel,.IBPickNow,.IBPickWDNE,.IBPickSaNE,.IBPickSuNE,.IBPickSelNE,.IBPickNowNE,.IBPickOM,.IBPickOMNE{margin:1px;padding:1px 3px 2px 3px;line-height:22px;text-align:center;cursor:pointer}
+/*.IBPickHover,*/.IBPickSelHover,.IBPickWD,.IBPickSa,.IBPickSu,.IBPickSel,.IBPickNow,.IBPickWDNE,.IBPickSaNE,.IBPickSuNE,.IBPickSelNE,.IBPickNowNE,.IBPickOM,.IBPickOMNE{margin:1px;padding:1px 3px 2px 3px;line-height:22px;text-align:center;cursor:pointer}
 .IBPickWN,.IBPickWNE{padding:2px 4px 2px 4px;line-height:22px;text-align:center;cursor:pointer}
 .IBHigh .IBPickCell>div{line-height:26px}
 .IBBig .IBPickCell>div{line-height:30px}
@@ -2169,8 +2171,10 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   background: none; 
   color: black;
 }
-.IBPickOuter .IBPickMY { /**/
-
+.IBPickOuter .IBPickMY .IBPickMYDown, 
+.IBPickOuter .IBPickMY .IBPickMYUp { /*년월*/
+  padding-right: 0;
+  font-weight: 600;
 }
 .IBPickOuter .IBPickMY .IBPickBL { /*이전달 버튼*/
 
@@ -2184,7 +2188,8 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
 .IBPickOuter .IBPickTableParent .IBPickRowW { /*요일 라인*/
   background: none;
 }
-.IBPickOuter .IBPickTableParent .IBPickCell { /*날짜 cell*/
+/*날짜 cell*/
+.IBPickOuter .IBPickTableParent .IBPickCell { 
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -2203,9 +2208,15 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   font-size: 13px;
   font-weight: 500;
 }
-.IBPickOuter .IBPickTableParent .IBPickCell .IBPickSel { /*날짜 cell*/
+.IBPickOuter .IBPickTableParent .IBPickCell>div.IBPickHover,
+.IBPickOuter .IBPickTableParent .IBPickCell .IBPickSel ,
+.IBPickOuter .IBPickTableParent .IBPickCell .IBPickSelHover{ 
   background: #3E8BFD;
+  color: #fff;
+  cursor: pointer;
 }
+
+
 .IBPick2TableParent {
   border: 0;
 }
@@ -2248,3 +2259,11 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
 .IBPick2Table  .IBPick2Row .IBPick2Y.IBPick2YSel {
   background: #3E8BFD;
 }
+
+.IBPick2YMHover,
+.IBPick2YHover,
+.IBPick2YSelHover {
+  background: #3E8BFD;
+  color: #fff;
+}
+
