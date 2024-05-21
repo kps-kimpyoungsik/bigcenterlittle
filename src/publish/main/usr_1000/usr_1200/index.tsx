@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import Button from 'components/buttons/';
-import Terms from './term'
-import Policy from './policy'
+import Terms from '../usr_1700/term'
+import Policy from '../usr_1600/policy'
 function ContentsContainer() {
 	return (
 		<PageContainer>

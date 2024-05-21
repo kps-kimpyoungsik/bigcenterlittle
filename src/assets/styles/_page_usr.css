@@ -835,10 +835,6 @@ h1.tx-hd2 + .hz-root {
 .fw-policy-cont strong {
     font-weight:600;
 }
-.fw-policy-cont a {
-    color:#333;
-    text-decoration: underline;
-}
 .fw-policy-cont ul {
     padding-left:30px;
 }
