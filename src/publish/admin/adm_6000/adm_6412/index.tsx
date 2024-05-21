@@ -46,8 +46,8 @@ function ContentsContainer() {
 							</div>
 							<div className="fo-item fo-m-1-4">
 								<p className="fo-key">코드그룹 설명</p>
-								<div className="fo-value">
-									<div className="ta">
+								<div className="fo-value d-block"> {/*[M.20240521]*/}
+									<div className="ta w100p"> {/*[M.20240521]*/}
 										<textarea className="ta-ip" placeholder="">계좌종류 네임 값 설정</textarea>
 									</div>
 									<p className="tx tx-cp1 mt5">
@@ -59,7 +59,7 @@ function ContentsContainer() {
 							</div>													
 							<div className="fo-item fo-m-1-4">
 								<p className="fo-key">코드값 목록</p>
-								<div className="fo-value">
+								<div className="fo-value d-block"> {/*[M.20240521]*/}
 									<div className="tb-top">
 										<div>
 											<p className="tx fc-black"></p>총 <em className="fw500">103</em>건

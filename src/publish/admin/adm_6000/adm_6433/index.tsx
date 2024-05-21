@@ -47,7 +47,7 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-4">
 								<p className="fo-key">권한 설명</p>
 								<div className="fo-value">
-									<div className="ta h200">
+									<div className="ta h200 w100p">
 										<textarea className="ta-ip" placeholder=""></textarea>
 									</div>
 								</div>

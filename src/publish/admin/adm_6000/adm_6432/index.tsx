@@ -36,7 +36,7 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-4">
 								<p className="fo-key">권한 설명</p>
 								<div className="fo-value">
-									<div className="ta h200 ta-readonly">
+									<div className="ta h200 ta-readonly w100p">
 										<textarea readOnly className="ta-ip" placeholder="">
 												권한 설명에 대한 내용이 출력됩니다.
 												권한 설명에 대한 내용이 출력됩니다.
