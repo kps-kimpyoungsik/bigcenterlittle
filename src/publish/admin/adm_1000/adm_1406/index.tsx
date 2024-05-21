@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_1000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
-import UIDatePicker from "components/datepicker";
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
@@ -20,13 +20,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/admin/">홈</Link></li>
-					<li><Link to="#">관리자페이지</Link></li>
-					<li><Link to="#">기금관리</Link></li>
-					<li><Link to="#">지급관리</Link></li>
-					<li><Link to="#">지급신청현황</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={0} lnbD1Idx={3}  lnbD2Idx={2}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">지급 신청 상세</h1>
 					<h3 className="section-title mb15">신청 기업 정보</h3>					
@@ -635,10 +629,8 @@ function ContentsContainer() {
 
 				</main>
 			</div>
-
-			
-		{/* modal - 1410p*/}
-		<ModalPopup
+			{/* modal - 1410p*/}
+			<ModalPopup
 				open={modaladm1410p.isShowing}
 				title="지원 기업 목록"
 				size="lg"
@@ -684,9 +676,8 @@ function ContentsContainer() {
 					<div className="ibsheet">[D] IBSHEET 영역</div>
 				</div>
 			</ModalPopup>
-
-		{/* modal - 1411p*/}
-		<ModalPopup
+			{/* modal - 1411p*/}
+			<ModalPopup
 				open={modaladm1411p.isShowing}
 				title="수행 기업 목록"
 				size="lg"
@@ -733,8 +724,8 @@ function ContentsContainer() {
 				</div>	
 			</ModalPopup>
 
-		{/* modal - 1415p*/}
-		<ModalPopup
+			{/* modal - 1415p*/}
+			<ModalPopup
 				open={modaladm1415p.isShowing}
 				title="지원기업목록(운영비)"
 				size="lg"
@@ -779,11 +770,9 @@ function ContentsContainer() {
 					</form>
 					<div className="ibsheet">[D] IBSHEET 영역</div>
 				</div>
-
 			</ModalPopup>
-
-		{/* modal - 1408p*/}
-		<ModalPopup
+			{/* modal - 1408p*/}
+			<ModalPopup
 				open={modaladm1408p.isShowing}
 				title="지원기업 검증"
 				size="lg"
@@ -803,11 +792,9 @@ function ContentsContainer() {
 					
 					<div className="ibsheet">[D] IBSHEET 영역</div>
 				</div>
-
 			</ModalPopup>
-
-		{/* modal - 1409p*/}
-		<ModalPopup
+			{/* modal - 1409p*/}
+			<ModalPopup
 				open={modaladm1409p.isShowing}
 				title="지원기업 검증 이력"
 				size="lg"
@@ -826,11 +813,9 @@ function ContentsContainer() {
 					
 					<div className="ibsheet">[D] IBSHEET 영역</div>
 				</div>
-
 			</ModalPopup>
-
-		{/* modal - 1412p*/}
-		<ModalPopup
+			{/* modal - 1412p*/}
+			<ModalPopup
 				open={modaladm1412p.isShowing}
 				title="지원기업 계좌 미등록 내역"
 				size="lg"
@@ -853,11 +838,9 @@ function ContentsContainer() {
 						<Button color='pri' size="md">확인</Button>
 					</div>
 				</div>					
-
 			</ModalPopup>
-
-		{/* modal - 1414p*/}
-		<ModalPopup
+			{/* modal - 1414p*/}
+			<ModalPopup
 				open={modaladm1414p.isShowing}
 				title="수행기업 계좌 미등록 내역"
 				size="lg"
@@ -880,11 +863,9 @@ function ContentsContainer() {
 						<Button color='pri' size="md">확인</Button>
 					</div>
 				</div>					
-
 			</ModalPopup>
-
-		{/* modal - 1520p*/}
-		<ModalPopup
+			{/* modal - 1520p*/}
+			<ModalPopup
 				open={modaladm1520p.isShowing}
 				title="문서첨부"
 				size="lg"
@@ -900,11 +881,7 @@ function ContentsContainer() {
 						<Button color='pri' size="md">저장</Button>
 					</div>
 				</div>					
-
 			</ModalPopup>
-			
-																								
-
 		</PageContainer>
 	);
 }

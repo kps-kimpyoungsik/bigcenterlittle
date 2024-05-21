@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_1000Aside";
-import UIDatePicker from "components/datepicker";
-import useToggleState from 'components/hooks/useToggleState';
-import ModalPopup from 'components/modal/';
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
@@ -12,15 +10,9 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/admin/">홈</Link></li>
-					<li><Link to="#">관리자페이지</Link></li>
-					<li><Link to="#">기금관리</Link></li>
-					<li><Link to="#">통합정보조회</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={0} lnbD1Idx={0} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">통합정보조회</h1>
-
 					<form className="sf sf-2col">
 						<div className="inner">
 							<div className="sf-item">
@@ -110,7 +102,6 @@ function ContentsContainer() {
 					<div className="hz-root hz-center mb30">
 						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button>
 					</div>
-
 					<div className="tb-top">
 						<div>
 							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
@@ -129,9 +120,7 @@ function ContentsContainer() {
 							</div>
 						</div>
 					</div>
-
 					<div className="ibsheet">[D] IBSHEET 영역</div>
-
 				</main>
 			</div>
 		</PageContainer>

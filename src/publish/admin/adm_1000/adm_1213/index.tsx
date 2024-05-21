@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_1000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
-import UIDatePicker from "components/datepicker";
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
@@ -14,13 +14,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/admin/">홈</Link></li>
-					<li><Link to="#">관리자페이지</Link></li>
-					<li><Link to="#">기금관리</Link></li>
-					<li><Link to="#">출연관리</Link></li>
-					<li><Link to="#">전용관리</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={0} lnbD1Idx={1}  lnbD2Idx={2}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">전용 상세</h1>
 					<h3 className="section-title mb15">전용 정보</h3>

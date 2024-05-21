@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_1000Aside";
-import UIDatePicker from "components/datepicker";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
@@ -10,13 +10,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<ul className="fww-brd">
-					<li><Link to="/admin/">홈</Link></li>
-					<li><Link to="#">관리자페이지</Link></li>
-					<li><Link to="#">기금관리</Link></li>
-					<li><Link to="#">지급관리</Link></li>
-					<li><Link to="#">지급신청안내관리</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={0} lnbD1Idx={3}  lnbD2Idx={1}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">지급 신청 안내 상세</h1>
 					<div className="hz-root hz-right hz-gap5 mb10">
