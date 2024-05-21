@@ -14,7 +14,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className='fww-con'>
-				<Breadcrumb gnbIdx={0} lnbD1Idx={1}  lnbD2Idx={2}/>
+				<Breadcrumb gnbIdx={0} lnbD1Idx={1}  lnbD2Idx={3}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">전용 상세</h1>
 					<h3 className="section-title mb15">전용 정보</h3>

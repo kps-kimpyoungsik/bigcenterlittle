@@ -10,7 +10,7 @@
 						{"screenid":"", "name":""},
 						{"screenid":"1200", "name":"출연신청안내관리"},
 						{"screenid":"1205", "name":"출연현황"},
-						{"screenid":"1212", "name":"출연금관리리"}
+						{"screenid":"1212", "name":"출연금관리"}
 
 				]},
 				{"s_id":3, "sceenid":"1300", "name" : "과제관리",

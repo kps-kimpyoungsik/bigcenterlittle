@@ -40,17 +40,13 @@ function ContentsContainer() {
 									<h4 className="mb15">비밀번호 재설정</h4>
 									<div className="sub-txt mb30">비밀번호 재설정 후 이용하시기 바랍니다.</div>
 									<div className="form-items mb15">
-										<label className="mb15">사용중이던 비밀번호를 입력</label>
+										<label className="mb15">비밀번호</label>
 										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
+										<p className="tx-msg">※ 영문, 숫자, 특수문자를 혼합으로 8~16자리까지 입력 가능합니다.</p>
 									</div>
 									<div className="form-items mb40">
-										<label className="mb15">비밀번호를 한번 더 입력</label>
+										<label className="mb15">비밀번호 확인</label>
 										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
-									</div>
-									<div className="form-items mb40">
-										<label className="mb15">새로운 비밀번호를 입력</label>
-										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
-										<p className="tx-msg"><span className="fc-pri">※ 영문, 숫자, 특수문자를 혼합으로 8~16자리까지 입력 가능합니다.</span></p>
 									</div>
 									<div className="hz-root hz-center hz-gap10">
 										<Button color='gray-o' size="big">취소</Button>
@@ -59,16 +55,6 @@ function ContentsContainer() {
 									
 								</div>
 							</form>
-							{/* 
-							<div className="information">
-								<h3>안내</h3>
-								<ul className="list-group">
-									<li>이용자의 개인정보 보호를 위해 본인확인 절차가 필요합니다.</li>
-									<li>정보통신망(2012.08.18 시행) 제23조 2(주민번호 사용제한) 규정에 따라 온라인 상 주민번호의 수집/이용을 제한합니다.</li>
-									<li>입력하신 정보는 본인확인 용도 외 사용되거나 저장되지 않습니다.</li>
-								</ul>
-							</div>
-							 */}
 						</div>
 					</div>
 				</main>

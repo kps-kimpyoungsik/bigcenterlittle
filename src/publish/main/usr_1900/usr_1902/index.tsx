@@ -7,6 +7,11 @@ import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 import map from 'assets/img/pages/usr_map.png';
 function ContentsContainer() {
+	const sectors = [
+		'위원회운영부','홍보팀','동반성장평가부','동반성장전략팀','적합업종부','상생협력지원부','기획운영부','경영지원부','상생기금부','농어촌기금운영부','농어촌기금관리부','상생정책지원부',
+		'협력성과확산부','판로지원부','혁신성장지원부','정책협력TF','상생조정지원부','납품대금연동확신지원TF','기술보호지원부','기술임치운영부','상생결제운영부','동반위 운영처','기획조정본부',
+		'농어촌상생기금운영본부','상생협력본부','감사실','상생거래본부'
+	]
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -92,11 +97,16 @@ function ContentsContainer() {
 									<div className="sl sl-big">
 										<select>
 											<option>사업명</option>
+											<option>담당자명</option>
+											<option>부서명</option>
 										</select>
 									</div>
 									<div className="sl sl-big">
 										<select>
 											<option>부서명</option>
+											{sectors.map((sec, idx) =>
+												<option key={idx}>{sec}</option>
+											)}
 										</select>
 									</div>
 									<UIInput className={'tf tf-big ml10'} value={''} placeholder={""} />
@@ -119,7 +129,7 @@ function ContentsContainer() {
 											<th scope="col">이름</th>
 											<th scope="col">직위</th>
 											<th scope="col">부서</th>
-											<th scope="col">작성자</th>
+											<th scope="col">업무</th>
 											<th scope="col">전화번호</th>
 											<th scope="col">이메일</th>
 										</tr>
@@ -128,8 +138,8 @@ function ContentsContainer() {
 										<tr>
 											<td>홍길동</td>
 											<td>과장</td>
-											<td>납풉대금연동확산지원 TF</td>
-											<td>이협력</td>
+											<td>상생기금부</td>
+											<td>제도개선ㆍ통계</td>
 											<td>009-4567-7890</td>
 											<td>hwanghee0504@win-win.or.kr</td>
 										</tr>
