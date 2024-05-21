@@ -22,6 +22,12 @@
     margin-left:auto;
     margin-right:auto;
 }
+.fww-root .fww-group-aside-con .fww-main[data-layout="usr"] h1.tx-hd2 {
+    font-size:42px;
+    line-height: 1;
+    margin-bottom:60px;
+    font-weight:700;
+}
 
 /*게시판 상단 - 검색창*/
 .tb-search-form {
@@ -532,9 +538,11 @@ h1.tx-hd2 + .hz-root {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='22' viewBox='0 0 15 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.6' y='0.6' width='13.8' height='20.8' rx='6.9' stroke='%23777777' stroke-width='1.2'/%3E%3Crect x='1' y='10' width='13' height='1.2' fill='%23777777'/%3E%3Crect x='7' y='5.5' width='1.2' height='3' fill='%23777777'/%3E%3C/svg%3E%0A");
 }
 .sign-form .kpd-check [type=checkbox] {
-    width:0;
-    height:0;
+    width:24px;
+    height:24px;
     opacity: 0;
+    margin:0;
+    cursor: pointer;
 }
 
 .sign-form .bt{
