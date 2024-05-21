@@ -60,10 +60,9 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3 req">
 								 
 								<div className="fo-value">
-									<div className="hz-root hz-gap8 w100p">
-										<UIInputFile placeholder={'이미지 파일을 첨부해 주세요(jpg, gif, png 파일)'} id={'file01'} />
-										<Button color="gray-o" size="md">삭제</Button>
-									</div>
+									
+									<UIInputFile placeholder={'이미지 파일을 첨부해 주세요(jpg, gif, png 파일)'} id={'file01'} />
+									
 
 									{/* TypeFile 
 									<div className="filebox w100p">
