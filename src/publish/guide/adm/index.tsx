@@ -19,6 +19,14 @@ function ContentsContainer() {
 		"alternative_url": "home" 
 		},
 		{ 
+			"pid": "404",
+			"alternative_url": "404" 
+		},
+		{ 
+			"pid": "syscheck",
+			"alternative_url": "syscheck" 
+			},					
+		{ 
 		"pid": "admlogin",
 		"alternative_url": "adm_login"
 		}, 
@@ -28,6 +36,14 @@ function ContentsContainer() {
 		},           
 		],        
 		"ia": [
+		{
+			"d1": "예외(Exception)",
+			"d1id": "adm_common",
+			"page": [
+			["404", "404 NOT FOUND", "-", "-", "-", "-", "-", "2024.05.21", "state3", "-"],
+			["syscheck", "시스템 점검 및 재기동", "-", "-", "-", "-", "-", "2024.05.21", "state3", "-"],
+			] 
+		},
 		{
 			"d1": "메인",
 			"d1id": "adm_main",
@@ -46,7 +62,7 @@ function ContentsContainer() {
 			"d1": "마이페이지",
 			"d1id": "adm_mypage",
 			"page": [
-			["admmypage", "로그인", "-", "-", "-", "-", "-", "2024.05.10", "state3", "-"],
+			["admmypage", "마이페이지", "-", "-", "-", "-", "-", "2024.05.10", "state3", "-"],
 			] 
 		},
 		{

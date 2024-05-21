@@ -10,15 +10,17 @@ import RD from './components/RD';
 import SL from './components/SL';
 import TA from './components/TA';
 import PG from './components/PG';
+import ND from './components/ND';
+import LD from './components/LD';
+
 import PT from './components/PT';
 import TT from './components/TT';
 import AL from './components/AL';
 import MD from './components/MD';
-import ND from './components/ND';
+
 import TB from './components/TB';
 import FO from './components/FO';
 import SF from './components/SF';
-import IB from './components/IB';
 import FU from './components/FU';
 function ContentsContainer() {
 	const asideInfo =[
@@ -35,6 +37,8 @@ function ContentsContainer() {
 				{name:"SL (셀렉트)", target:"SL"},
 				{name:"TA (텍스트에어리어)", target:"TA"},
 				{name:"PG (페이지네이션)", target:"PG"},
+				{name:"ND (노 데이터)", target:"ND"},
+				{name:"LD (로딩)", target:"LD"},
 			]
 		},
 		{
@@ -51,19 +55,18 @@ function ContentsContainer() {
 			idx:2,
 			title:'특수 컴포넌트', 
 			conts:[
-				{name:"ND (노 데이터)", target:"ND"},
+				
 				{name:"TB (테이블)", target:"TB"},
 				{name:"FO (폼)", target:"FO"},
 				{name:"SF (검색필터)", target:"SF"},
-				{name:"IB (IBSHEET)", target:"IB"},
 				{name:"FU (Fileupload)", target:"FU"},
 			]
 		},
 	]
 	const selectComponent = {
-		TX : <TX />, BT : <BT />, BD : <BD />,  TF:<TF />, CH:<CH />, RD:<RD />, SL:<SL />, TA:<TA />, PG:<PG />,
+		TX : <TX />, BT : <BT />, BD : <BD />,  TF:<TF />, CH:<CH />, RD:<RD />, SL:<SL />, TA:<TA />, PG:<PG />, ND:<ND />, LD:<LD />,
 		PT:<PT />, TT:<TT />, AL:<AL />, MD:<MD />,
-		ND:<ND />, TB:<TB />, FO:<FO />, SF:<SF />, IB:<IB />, FU:<FU />
+		TB:<TB />, FO:<FO />, SF:<SF />, FU:<FU />
 	}
 	const [content, setContent] = useState('TX');
 	const handleClickButton = e => {

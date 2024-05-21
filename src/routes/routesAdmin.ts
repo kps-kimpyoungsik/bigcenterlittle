@@ -4,6 +4,10 @@ import { LoginLayout } from '../layouts/admin';
 import { DashLayout } from '../layouts/admin';
 import {
 	admIndexPage,
+
+	p404Page,
+	syscheckPage,
+
 	admMainPage,
 
 	//alert
@@ -181,6 +185,17 @@ export const routes: Array<PageRouteProps> = [
 		component: admIndexPage,
 		layout: DefaultLayout,
 	},	
+	{
+		path: '/admin/404',
+		component: p404Page,
+		layout: LoginLayout,
+	},
+	{
+		path: '/admin/syscheck',
+		component: syscheckPage,
+		layout: LoginLayout,
+	},	
+
 	{
 		path: '/admin/home',
 		component: admMainPage,
