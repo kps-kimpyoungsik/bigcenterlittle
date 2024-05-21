@@ -32,7 +32,7 @@ function ContentsContainer() {
 								<div className="fo-value">
 									<div className="hz-root hz-gap15 h36">
 										<label htmlFor="rd-use-1" className="ip-rd-label">
-											<input name="rd-use" id="rd-use-1" className="ip-rd" type="radio" checked  />
+											<input name="rd-use" id="rd-use-1" className="ip-rd" type="radio" defaultChecked />
 											<span className="check"></span>
 											<span className="txt">사용</span>
 										</label>
@@ -64,7 +64,7 @@ function ContentsContainer() {
 								<div className="fo-value">
 									<div className="hz-root hz-gap15 h36">
 										<label htmlFor="rd-adm-1" className="ip-rd-label">
-											<input name="rd-adm" id="rd-adm-1" className="ip-rd" type="radio"  checked  />
+											<input name="rd-adm" id="rd-adm-1" className="ip-rd" type="radio"  defaultChecked />
 											<span className="check"></span>
 											<span className="txt">예</span>
 										</label>

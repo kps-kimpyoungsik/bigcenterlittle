@@ -161,7 +161,7 @@ function ContentsContainer() {
 											<span className="txt">예</span>
 										</label>
 										<label htmlFor="rd-1-2" className="ip-rd-label">
-											<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  checked />
+											<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  defaultChecked />
 											<span className="check"></span>
 											<span className="txt">아니오</span>
 										</label>
@@ -224,7 +224,7 @@ function ContentsContainer() {
 											<span className="txt">예</span>
 										</label>
 										<label htmlFor="rd-1-2" className="ip-rd-label">
-											<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  checked />
+											<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  defaultChecked />
 											<span className="check"></span>
 											<span className="txt">아니오</span>
 										</label>

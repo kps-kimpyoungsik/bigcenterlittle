@@ -70,7 +70,7 @@ function ContentsContainer() {
 														<span className="txt">사용</span>
 													</label>
 													<label htmlFor="rd-1-2" className="ip-rd-label">
-														<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  checked />
+														<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  defaultChecked />
 														<span className="check"></span>
 														<span className="txt">미사용</span>
 													</label>

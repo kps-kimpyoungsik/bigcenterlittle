@@ -81,7 +81,7 @@ function ContentsContainer() {
 											<span className="txt">단건으로 발행</span>
 										</label>
 										<label htmlFor="rd-1-2" className="ip-rd-label">
-											<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  checked />
+											<input name="rd-1" id="rd-1-2" className="ip-rd" type="radio"  defaultChecked />
 											<span className="check"></span>
 											<span className="txt">다건으로 발행</span>
 										</label>

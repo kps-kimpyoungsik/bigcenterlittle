@@ -7,7 +7,8 @@ function NotFoundContainer() {
 	return (
 		<div className="fww-root">
 			404, Syscheck퍼블은 다음 참고 <br/>
-			src\publish\admin\exceptionpage\404\index.tsx
+			src\publish\admin\exceptionpage\404\index.tsx <br/>
+			src\publish\admin\exceptionpage\syscheck\index.tsx
 		</div>
 
 	);

@@ -100,7 +100,7 @@ function ContentsContainer() {
 								<div className="fo-value">
 									<div className="hz-root hz-gap15">
 										<label htmlFor="rd-1-1" className="ip-rd-label">
-											<input name="rd-1" id="rd-1-1" className="ip-rd" type="radio"  checked  />
+											<input name="rd-1" id="rd-1-1" className="ip-rd" type="radio"  defaultChecked  />
 											<span className="check"></span>
 											<span className="txt">사용</span>
 										</label>
