@@ -5,7 +5,6 @@ function PortalAside() {
 	const location = useLocation(); 
 	const gnb = menutree.gnb[3].path.slice(0,8);
 	const lnb = menutree.gnb[3].sub;
-	console.log(location.pathname.slice(19,21))
 	return (
 		<aside className='fww-aside'>
 			<p className="tit-d1">{menutree.gnb[3].name}</p>
