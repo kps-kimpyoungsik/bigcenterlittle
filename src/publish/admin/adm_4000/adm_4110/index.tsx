@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_4000Aside";
+import Breadcrumb from 'layouts/admin/Breadcrumb';
 import useToggleState from 'components/hooks/useToggleState';
 import ModalPopup from 'components/modal/';
 import Button from 'components/buttons/';
@@ -13,12 +14,7 @@ function ContentsContainer() {
 		<PageContainer>
 			<LayoutAside />
 			<div className="fww-con">
-				<ul className="fww-brd">
-					<li><Link to="/admin">홈</Link></li>
-					<li><Link to="#">관리자페이지</Link></li>
-					<li><Link to="#">사용자관리</Link></li>
-					<li><Link to="#">회원관리</Link></li>
-				</ul>
+				<Breadcrumb gnbIdx={3} lnbD1Idx={0} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">회원정보 상세</h1>
 					<form className="fo fo-col3 mb10" name="" action="" method="">
