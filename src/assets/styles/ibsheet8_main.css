@@ -167,12 +167,10 @@
  
  /*수정행 색상 변경 (중요!)*/
  .IBColorChanged{
-  /* background-color:#fffded */
-  /* background-color: rgba(13, 177, 75, 0.1); */
   background-color: #e7f7ed;
 }
  .IBColorChangedCell{
-  /* background-color:#EEE */
+  /* background-color: #e7f7ed; */
 }
 
 
@@ -2149,6 +2147,14 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
 }
 */
 
+/*캘린더,셀렉트 위치 조정*/
+.IBMenuMain.IBMenuMainBottom {
+  transform: translateY(-1px);
+}
+.IBMenuMain.IBMenuMainTop {
+  transform: translateY(1px);
+}
+
 /*캘린더 색상 변경*/
 .IBMenuMain{
   box-shadow: none;
@@ -2160,13 +2166,6 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   background: #fff;
   padding: 15px 20px;
 }
-.IBPickOuter.IBPickOuterTop{
-  transform: translateY(1px);
-}
-.IBPickOuter.IBPickOuterBottom {
-  transform: translateY(-1px);
-}
-
 .IBPickOuter .IBPickMY { /*캘린더 상단 헤드*/
   background: none; 
   color: black;
@@ -2225,7 +2224,7 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   background: none;
   margin-top: 20px;
 } 
-.IBPick2Footer .IBPickButton {
+.IBPick2Footer .IBDialogButtonOk {
   white-space: nowrap;
 	display: inline-block;
 	cursor: pointer;
@@ -2250,9 +2249,14 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   padding-left: 12px;
   padding-right: 12px;  
 }
-.IBPick2Footer .IBPickButton:hover {
-  background: #3E8BFD;
+.IBPick2Footer .IBDialogButtonOkHover {
+  background: #1D6ADD;
+  border-color: #1D6ADD;
 }
+/* .IBPick2Footer .IBPickButton:hover {
+  background: #3E8BFD;
+  background: red;
+} */
 .IBPick2Table  .IBPick2Row .IBPick2M.IBPick2MSel {
   background: #3E8BFD;
 }
@@ -2260,8 +2264,9 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   background: #3E8BFD;
 }
 
-.IBPick2YMHover,
+.IBPick2MHover,
 .IBPick2YHover,
+.IBPick2MSelHover,
 .IBPick2YSelHover {
   background: #3E8BFD;
   color: #fff;
