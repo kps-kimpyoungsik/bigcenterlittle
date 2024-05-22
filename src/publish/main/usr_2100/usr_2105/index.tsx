@@ -19,7 +19,7 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={2} lnbIdx={1}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">과제현황</h1>
-					<form className="sf sf-2col sf-fund" name="" action="" method="">
+					<form className="sf sf-fund" name="" action="" method="">
 						<div className="inner">
 							<div className="sf-item sf-m-1-3">
 								<p className="sf-key">신청기간</p>
@@ -111,11 +111,11 @@ function ContentsContainer() {
 						<p style={{height:"200px", background:"#f4f4f4"}}>
 							[D] IBSHEET 영역<br /><br />
 
-							<span className="badge badge-23 blue">신청</span>
-							<span className="badge badge-23 green">접수완료</span>
-							<span className="badge badge-23 yellow">수정요청</span>
-							<span className="badge badge-23 red">반려</span>
-							<span className="badge badge-23 gray">심사완료</span><br /><br />
+							<label className="badge badge-22 blue">신청</label>
+							<label className="badge badge-22 green">접수완료</label>
+							<label className="badge badge-22 yellow">수정요청</label>
+							<label className="badge badge-22 red">반려</label>
+							<label className="badge badge-22 gray">심사완료</label><br /><br />
 
 							<Link to="/main/usr_2100/usr_2107" style={{color:"#333", padding:"5px", textDecoration:"underline"}}>[임시] 상세페이지 이동</Link>
 						</p>
@@ -141,7 +141,7 @@ function ContentsContainer() {
 						</div>
 					</div>
 					<div className="hz-root hz-right hz-gap10 mt30">
-						<Button color="pri" size="md" href="/main/usr_2100/usr_2100">과제신청</Button>
+						<Button color="pri" size="md">과제신청</Button>
 					</div>
 				</main>
 			</div>			

@@ -15,8 +15,8 @@ function ContentsContainer() {
 					<div className="member-join">
 						<h1 className="tx tx-hd2">회원가입</h1>
 						<ul className="join-step">
-							<li>STEP 1. 약관동의 및 인증</li>
-							<li>STEP 2. 회원정보 입력</li>
+							<li className="pass">STEP 1. 약관동의 및 인증</li>
+							<li className="pass">STEP 2. 회원정보 입력</li>
 							<li className="active">STEP 3. 가입완료</li>
 						</ul>
 						<div className="join-complete">

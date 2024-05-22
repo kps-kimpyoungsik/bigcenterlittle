@@ -65,12 +65,11 @@ function ContentsContainer() {
 								<div className="fo-item">
 									<p className="fo-key">진행상태</p>
 									<div className="fo-value">
-										{/* <UIInput className={'tf tf-md w100p'} value={'접수완료'} placeholder={''} readOnly={true} /> */}
-										<span className="badge badge-23 blue">신청</span>
-										<span className="badge badge-23 green">접수완료</span>
-										<span className="badge badge-23 yellow">수정요청</span>
-										<span className="badge badge-23 red">반려</span>
-										<span className="badge badge-23 gray">심사완료</span>
+										<label className="badge badge-22 blue">신청</label>
+										<label className="badge badge-22 green">접수완료</label>
+										<label className="badge badge-22 yellow">수정요청</label>
+										<label className="badge badge-22 red">반려</label>
+										<label className="badge badge-22 gray">심사완료</label>
 									</div>
 								</div>
 								<div className="fo-item">
@@ -615,7 +614,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={3}>
 												<div className="nd">
-													<i className="ic"></i>
+													{/* <i className="ic"></i> */}
 													<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 												</div>
 											</td>
@@ -652,7 +651,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={3}>
 												<div className="nd">
-													<i className="ic"></i>
+													{/* <i className="ic"></i> */}
 													<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 												</div>
 											</td>
@@ -702,7 +701,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={5}>
 												<div className="nd">
-													<i className="ic"></i>
+													{/* <i className="ic"></i> */}
 													<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 												</div>
 											</td>

@@ -67,7 +67,7 @@ function ContentsContainer() {
 						<div className="hz-root">
 							<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
 						</div>
-						<div className="hz-root hz-gap8">
+						<div className="hz-root hz-gap5">
 							<p className="mr15">단위(원)</p>
 							<Button color="gray-o" size="sm">다운로드</Button>
 							<div className="sl sl-sm w120">

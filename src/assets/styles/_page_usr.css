@@ -34,7 +34,7 @@
     display: flex;
     align-items: stretch;
     background-color: #F9F9F9;
-    padding:50px;
+    padding:40px 50px;
     margin-bottom:50px;
     justify-content: center;
     gap: 10px;
@@ -264,7 +264,10 @@ h1.tx-hd2 + .hz-root {
     line-height: 1;
     font-weight:500;
     color:#333;
-    background-color: #F3F3F3;
+    background-color: #fff;
+}
+.join-step li.pass {
+    background-color: #f3f3f3;
 }
 .join-step li.active {
     color:#fff;
@@ -1570,8 +1573,10 @@ h1.tx-hd2 + .hz-root {
 .org-wrap .mid-group h2.skyblue::before,
 .org-wrap .mid-group h2.skyblue::after {
     content: '';
+    display: block;
     position: absolute;
     width:1px; 
+    background-image: inherit;
     background-color: #ddd;
     left:calc(50% - 0.5px);
     pointer-events: none;
@@ -1905,9 +1910,9 @@ h1.tx-hd2 + .hz-root {
 .fund-section + .fund-section {
     margin-top:40px;
 }
-.fund-section .fo .bt[data-size='md']{
+/* .fund-section .fo .bt[data-size='md']{
     min-width:initial;
-}
+} */
 .fund-section .tx-msg {
     font-size:13px;
     line-height: 1;
@@ -1950,9 +1955,9 @@ h1.tx-hd2 + .hz-root {
 .fund-form-items + * {
     margin-left:auto;
 }
-.fund-form-items:not(.tf-unit) .tf {
+/* .fund-form-items:not(.tf-unit) .tf {
     max-width: calc(100% - 120px);
-}
+} */
 
 /*안내사항(modal)*/
 .fww-noti section h3{

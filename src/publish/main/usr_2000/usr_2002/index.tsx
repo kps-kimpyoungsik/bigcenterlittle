@@ -93,8 +93,8 @@ function ContentsContainer() {
 						<div>
 							<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
 						</div>
-						<div className="hz-root hz-gap8">
-							<Button color="gray-o" size="sm">등록</Button>
+						<div className="hz-root hz-gap5">
+							<Button color="pri-o" size="sm">등록</Button>
 							<Button color="gray-o" size="sm">다운로드</Button>
 							<div className="sl sl-sm w120">
 								<select>

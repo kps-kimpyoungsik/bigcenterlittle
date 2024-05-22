@@ -200,7 +200,7 @@ input, button, textarea {
 }
 .filebox .tf {
 flex-grow: 1;
-max-width:calc(100% - 120px);
+max-width:calc(100% - 146px);
 }	
 .filebox input[type="file"] {
 position: absolute;

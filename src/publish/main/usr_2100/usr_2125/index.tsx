@@ -522,7 +522,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={3}>
 												<div className="nd">
-													<i className="ic"></i>
+													{/* <i className="ic"></i> */}
 													<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 												</div>
 											</td>
@@ -559,7 +559,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={3}>
 												<div className="nd">
-													<i className="ic"></i>
+													{/* <i className="ic"></i> */}
 													<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 												</div>
 											</td>
@@ -613,7 +613,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={6}>
 												<div className="nd">
-													<i className="ic"></i>
+													{/* <i className="ic"></i> */}
 													<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 												</div>
 											</td>
@@ -695,7 +695,7 @@ function ContentsContainer() {
 			>
 				<div className="modal-con">
 					<div className="hz-root hz-right hz-gap10 mb15">
-						<Button color='pri-o' size="sm">다운로드</Button>
+						<Button color='gray-o' size="sm">다운로드</Button>
 					</div>
 					<div className="tb-top">
 						<div className="hz-root hz-gap15">
@@ -740,7 +740,7 @@ function ContentsContainer() {
 			>
 				<div className="modal-con">
 					<div className="hz-root hz-right hz-gap10 mb15">
-						<Button color='pri-o' size="sm">다운로드</Button>
+						<Button color='gray-o' size="sm">다운로드</Button>
 					</div>
 					<div className="tb-top">
 						<div className="hz-root hz-gap15">

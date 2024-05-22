@@ -14,9 +14,9 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={3} lnbIdx={1}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">입출금내역조회</h1>
-					<form className="sf sf-2col sf-fund" name="" action="" method="">
+					<form className="sf  sf-fund" name="" action="" method="">
 						<div className="inner">
-							<div className="sf-item sf-m-1-3">
+							<div className="sf-item sf-m-1-4">
 								<p className="sf-key">거래일</p>
 								<div className="sf-value">
 									<div className="fund-datepicker">
@@ -34,7 +34,7 @@ function ContentsContainer() {
 									</div>
 								</div>
 							</div>
-							<div className="sf-item">
+							<div className="sf-item sf-m-1-3">
 								<p className="sf-key">계좌구분</p>
 								<div className="sf-value">
 									<div className="hz-root hz-gap5">
@@ -102,7 +102,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 						</div>
-						<div className="hz-root hz-gap8">
+						<div className="hz-root hz-gap5">
 							<Button color="gray-o" size="sm">다운로드</Button>
 							<div className="sl sl-sm w120">
 								<select>

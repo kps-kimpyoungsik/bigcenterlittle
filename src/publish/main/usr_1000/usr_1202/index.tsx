@@ -20,7 +20,7 @@ function ContentsContainer() {
 					<div className="member-join">
 						<h1 className="tx tx-hd2">회원가입</h1>
 						<ul className="join-step">
-							<li>STEP 1. 약관동의 및 인증</li>
+							<li className="pass">STEP 1. 약관동의 및 인증</li>
 							<li className="active">STEP 2. 회원정보 입력</li>
 							<li>STEP 3. 가입완료</li>
 						</ul>
@@ -117,7 +117,7 @@ function ContentsContainer() {
 									<div className="fo-value flex-wrap">
 										<div className="hz-root hz-gap8 w565">
 											<UIInput className={'hz-item hz-fg tf tf-md'} value={'(주)신세계동대구복합환승센터'} placeholder={'기업명을 찾기 후 선택하세요'} />
-											<Button color='pri-o' size="md"  onClick={modaladm1202.open}>찾기</Button>
+											<Button color='pri-o2' size="md"  onClick={modaladm1202.open}>찾기</Button>
 											<Button color='gray-o' size="md">삭제</Button>
 										</div>
 										<p className="tx-msg mt8"><span className="fc-pri">*소속 기업 정보가 없을 경우, 재단 담당자에게 기업 등록 요청 후 회원가입을 진행 바랍니다.</span></p>

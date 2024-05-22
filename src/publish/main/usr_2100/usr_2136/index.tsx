@@ -112,7 +112,7 @@ function ContentsContainer() {
 							</div>
 							{/* NO-data */}
 							<div className="nd">
-								<i className="ic"></i>
+								{/* <i className="ic"></i> */}
 								<p className="tx tx-cp2 fc-666">환수기업 내역 등록을 선택하시고 환수기업 및 환수금액을 입력해 주세요.</p>
 							</div>
 						</form>

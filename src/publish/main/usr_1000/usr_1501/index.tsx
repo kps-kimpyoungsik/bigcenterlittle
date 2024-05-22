@@ -149,7 +149,7 @@ function ContentsContainer() {
 						</form>
 						<div className="hz-root hz-center hz-gap10">
 							<Button color='gray-o' size="big">취소</Button>
-							<Button color='pri' size="big" href="/main/usr_1000/usr_1204">저장</Button>
+							<Button color='pri' size="big">저장</Button>
 						</div>
 					</div>
 				</main>

@@ -414,7 +414,7 @@ function ContentsContainer() {
 				onClose={modaladm2121.close}
 			>
 				<div className="modal-con">
-					<div className="hz-root hz-right hz-gap10 mb15">
+					<div className="hz-root hz-right hz-gap5 mb15">
 						<Button color='pri' size="sm">예금주조회</Button> 
 						<Button color='pri-o' size="sm">행추가</Button> 
 						<Button color='gray-o' size="sm">행삭제</Button> 
@@ -435,7 +435,7 @@ function ContentsContainer() {
 						<div>
 							<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
 						</div>
-						<div className="hz-root hz-gap8">
+						<div className="hz-root hz-gap5">
 							<div className="sl sl-sm w120">
 								<select>
 									<option value="0">20개씩보기</option>
@@ -466,7 +466,7 @@ function ContentsContainer() {
 				onClose={modaladm2122.close}
 			>
 				<div className="modal-con">
-					<div className="hz-root hz-right hz-gap10 mb15">
+					<div className="hz-root hz-right hz-gap5 mb15">
 						<Button color='pri' size="sm">예금주조회</Button> 
 						<Button color='pri-o' size="sm">행추가</Button> 
 						<Button color='gray-o' size="sm">행삭제</Button> 
@@ -487,7 +487,7 @@ function ContentsContainer() {
 						<div>
 							<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
 						</div>
-						<div className="hz-root hz-gap8">
+						<div className="hz-root hz-gap5">
 							<div className="sl sl-sm w120">
 								<select>
 									<option value="0">20개씩보기</option>

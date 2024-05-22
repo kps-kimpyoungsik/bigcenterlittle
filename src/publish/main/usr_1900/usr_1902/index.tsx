@@ -146,7 +146,7 @@ function ContentsContainer() {
 										<tr>
 											<td colSpan={6}>
 												<div className="nd">
-													<i className="ic"></i>
+													{/* <i className="ic"></i> */}
 													<p className="tx tx-cp2 fc-666">검색된 정보가 없습니다.</p>
 												</div>
 											</td>
