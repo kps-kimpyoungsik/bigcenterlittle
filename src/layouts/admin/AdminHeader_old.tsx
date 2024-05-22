@@ -7,7 +7,7 @@ function LayoutHeader() {
 	const location = useLocation(); 
 	const [hidden, setHidden] = useState(true);
 	return (
-		<>
+		<div className='fww-header-util'>
 			<div className='fww-util'>
 				<ul>
 					{/* Login 전 */}
@@ -60,9 +60,8 @@ function LayoutHeader() {
 						</ul>
 					</nav>
 				</div>
-			</header>			
-
-		</>
+			</header>
+		</div>
 	);
 }
 export default LayoutHeader;
