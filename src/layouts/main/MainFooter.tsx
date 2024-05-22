@@ -17,7 +17,7 @@ function LayoutFooter() {
 					<p>E-mail : <a href="mailto:fund@win-win.or.kr" className='tx tx-link'>fund@win-win.or.kr</a></p>
 				</div>
 				<div>시스템 관련 문의처 : 02-368-8979</div>
-				<div className='copyright'>Copyright ⓒ 2021 대·중소기업·농어업협력재단. All Rights Reserved.</div>
+				<div className='copyright'>Copyright ⓒ 2024 대·중소기업·농어업협력재단. All Rights Reserved.</div>
 			</div>
 		</footer>
   	);
