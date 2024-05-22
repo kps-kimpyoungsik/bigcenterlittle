@@ -3,6 +3,7 @@ import React from "react";
 import PageContainer from '../../PageContainer';
 import LayoutAside from "../adm_1000Aside";
 import Breadcrumb from 'layouts/admin/Breadcrumb';
+import UIDatePicker from "components/datepicker"; /* [M.20240522] */
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
@@ -13,17 +14,12 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={0} lnbD1Idx={0} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">통합정보조회</h1>
-					<form className="sf sf-2col">
+					<form className="sf sf-3col">
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">과제년도</p>
 								<div className="sf-value">
-									<div className="sl sl-md w120">
-										<select name="" id="" className="">
-											<option value="1">2024</option>
-											<option value="2">$</option>
-										</select>
-									</div>
+										<UIDatePicker /> {/* [M.20240522] */} 
 								</div>
 							</div>
 							<div className="sf-item">
@@ -31,7 +27,7 @@ function ContentsContainer() {
 								<div className="sf-value">
 									<div className="hz-root hz-gap8 w100p">
 										<UIInput className={'hz-item hz-fg tf tf-md '} value={''} placeholder={'출연기업 찾기'} readOnly={false} />
-										<Button color="gray-o" size="md">찾기</Button>
+										<Button color="pri-o2" size="md">찾기</Button> {/* [M.20240522] */} 
 										<Button color="gray-o" size="md">삭제</Button>
 									</div>
 								</div>
@@ -39,7 +35,7 @@ function ContentsContainer() {
 							<div className="sf-item">
 								<p className="sf-key">수행기관</p>
 								<div className="sf-value">
-									<UIInput className={'tf tf-md w100p'} value={''} placeholder={'수행기업명을 입력하세요.'} readOnly={false} />
+									<UIInput className={'tf tf-md w100p'} value={''} placeholder={'수행기관명을 입력하세요.'} readOnly={false} /> {/* [M.20240522] */} 
 								</div>
 							</div>
 							<div className="sf-item">

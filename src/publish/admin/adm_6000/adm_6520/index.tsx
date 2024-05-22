@@ -15,7 +15,7 @@ function ContentsContainer() {
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">명칭 관리</h1>
 					{/*클래스옵션: sf-1row, sf-2col*/}
-					<form className="sf sf-1row sf-3col">
+					<form className="sf sf-1row mb30" name="" action="" method=""> {/* [M.20240522] */} 
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">명칭</p>

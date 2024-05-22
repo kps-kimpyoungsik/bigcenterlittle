@@ -80,7 +80,8 @@ function ContentsContainer() {
 							<div className="hz-item">
 								<p className="tx fc-black"></p>총 <em className="fw500">103</em>건
 							</div>
-							<div className="hz-item">
+							
+							<div className="hz-item tot"> {/* [M.20240522] */}
 								<em className="fc-err">입금액</em> <span className="price">3,000,000,000,000</span>원
 									&nbsp;- &nbsp;
 								<em className="fc-pri">출금액</em>  <span className="price">3,000,000,000,000</span>원

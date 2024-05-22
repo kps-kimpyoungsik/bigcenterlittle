@@ -13,7 +13,7 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={3} lnbD1Idx={1} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">기업관리</h1>
-					<form className="sf sf-1row" name="" action="" method="">
+					<form className="sf sf-1row mb30" name="" action="" method=""> {/* [M.20240522] */} 
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">기업규모</p>
@@ -72,6 +72,7 @@ function ContentsContainer() {
 						</div> 
 						<Button color="pri" size="md">조회</Button>
 					</form>
+					
 					<div className="tb-top">
 						<div>
 							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건

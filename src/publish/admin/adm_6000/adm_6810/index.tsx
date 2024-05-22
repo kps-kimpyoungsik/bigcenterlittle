@@ -16,7 +16,7 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={5} lnbD1Idx={10} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">이상거래감지</h1>
-					<form className="sf sf-1row sf-3col">
+					<form className="sf sf-1row mb30" name="" action="" method=""> {/* [M.20240522] */} 
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">집행기간</p>
@@ -92,7 +92,7 @@ function ContentsContainer() {
 				onClose={modaladm6811p.close}
 			>
 				<div className="modal-con">
-					{/*클래스옵션: fo-col2, fo-col3 sf-1row*/}
+					
 					<form className="fo fo-col2" name="" action="" method="">
 						<div className="inner">
 							<div className="fo-item fo-m-1-3">
