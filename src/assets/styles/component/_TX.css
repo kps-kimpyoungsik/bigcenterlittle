@@ -52,6 +52,7 @@
 }
 .tx.tx-link:hover {
   color: var(--p2);
+  text-decoration: underline;
 }
 
 .tx.tx-link2 {
