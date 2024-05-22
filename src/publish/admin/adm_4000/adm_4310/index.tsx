@@ -13,7 +13,7 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={3} lnbD1Idx={2} />
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">한도금액 통제</h1>
-					<form className="sf sf-1row" name="" action="" method="">
+					<form className="sf sf-1row mb30" name="" action="" method=""> {/* [M.20240522] */} 
 						<div className="inner">
 							<div className="sf-item">
 								<p className="sf-key">이름/아이디</p>

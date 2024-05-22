@@ -14,31 +14,40 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={0} lnbD1Idx={1}  lnbD2Idx={1}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">출연신청안내관리</h1>
-					<form className="sf sf-2col">
+
+					<form className="sf sf-1row sf-3col mb30"> {/* [M.20240522] */} 
 						<div className="inner">
-							<div className="sf-item sf-m-1-3">
+							<div className="sf-item"> {/* [M.20240522] */} 
 								<p className="sf-key">등록일자</p>
 								<div className="sf-value">
+									
 									<div className="hz-root hz-left hz-gap8">
-											<div className="hz-item hz-root hz-gap5">
-												<UIDatePicker className="hz-item"/>
-												<span className="hz-item">~</span>
-												<UIDatePicker className="hz-item"/>
-											</div>
+										<div className="hz-item hz-root hz-gap5"> 
+											<div className="hz-item w150"><UIDatePicker /></div> {/* [M.20240522] */} 
+											<span className="hz-item">~</span>
+											<div className="hz-item w150"><UIDatePicker /></div> {/* [M.20240522] */} 
 										</div>
+									</div>
+
 								</div>
 							</div>
-							<div className="sf-item sf-m-1-3">
+							<div className="sf-item"> {/* [M.20240522] */} 
 								<p className="sf-key">제목</p>
 								<div className="sf-value">
 									<UIInput className={'tf tf-md w100p'} value={''} placeholder={'제목을 입력하세요.'} />
 								</div>
 							</div>
 						</div>
+						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button> {/* [M.20240522] */} 
 					</form>
+
+					{/* [M.20240522]삭제 */} 
+					{/*
 					<div className="hz-root hz-center mb30">
 						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button>
 					</div>
+					*/}
+
 					<div className="tb-top">
 						<div>
 							<p className="tx fc-black"></p>총 <em className="fw500">103</em>건

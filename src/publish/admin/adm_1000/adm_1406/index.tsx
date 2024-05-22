@@ -473,7 +473,7 @@ function ContentsContainer() {
 								<tr>
 									<td colSpan={3}>
 										<div className="nd">
-											<i className="ic"></i>
+											{/* <i className="ic"></i>  */} {/* [M.20240522]삭제 */}
 											<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 										</div>
 									</td>
@@ -527,7 +527,7 @@ function ContentsContainer() {
 								<tr>
 									<td colSpan={3}>
 										<div className="nd">
-											<i className="ic"></i>
+											{/* <i className="ic"></i> */} {/* [M.20240522]삭제 */}
 											<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 										</div>
 									</td>
@@ -596,7 +596,7 @@ function ContentsContainer() {
 								<tr>
 									<td colSpan={6}>
 										<div className="nd">
-											<i className="ic"></i>
+											{/* <i className="ic"></i> */} {/* [M.20240522]삭제 */}
 											<p className="tx tx-cp2 fc-666">내역이 없습니다.</p>
 										</div>
 									</td>

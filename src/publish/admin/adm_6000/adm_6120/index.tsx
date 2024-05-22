@@ -49,7 +49,7 @@ function ContentsContainer() {
 					<div className="hz-root hz-right hz-gap5 mt10">
 						<Button color="pri-o" size="sm">저장</Button>
 						<Button color="pri-o" size="sm">직접발송</Button>
-						<Button color="pri-o" size="sm">목록</Button>
+						<Button color="gray-o" size="sm">목록</Button> {/* [M.20240522] */}
 					</div>
 				</main>
 			</div>
