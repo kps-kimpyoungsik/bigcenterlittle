@@ -25,7 +25,8 @@
 .fww-root .fww-group-aside-con .fww-main[data-layout="usr"] h1.tx-hd2 {
     font-size:42px;
     line-height: 1;
-    margin:30px 0 60px;
+    margin-top:30px;
+    margin-bottom:60px;
     font-weight:700;
 }
 
@@ -803,7 +804,6 @@ h1.tx-hd2 + .hz-root {
 /*비밀번호수정*/
 .mypage.pw-edit {
     width: 820px;
-    padding:40px 0;
     margin:0 auto;
 }
 .mypage.pw-edit .tx-hd2 {
@@ -815,6 +815,7 @@ h1.tx-hd2 + .hz-root {
     line-height: 1;
     color:#000;
     text-align: center;
+    margin-top:-30px;
     margin-bottom: 50px;
 }
 .mypage.pw-edit .w385 {
@@ -824,6 +825,33 @@ h1.tx-hd2 + .hz-root {
     font-size:13px;
     line-height: 1;
     color:#666;
+}
+
+.mypage .withdrawal {
+    border:1px solid #ddd;
+    padding:20px;
+}
+.mypage .withdrawal li {
+    padding-left:14px;
+    font-size:14px;
+    line-height: 20px;
+    color:#333;
+}
+.mypage .withdrawal li + li {
+    margin-top:5px;
+}
+.mypage .withdrawal li::before {
+    content:'※';
+    float: left;
+    margin-left:-14px;
+}
+
+.mypage.pw-edit .chk-id {
+    margin:70px 0 20px;
+    text-align: center;
+    font-size:15px;
+    line-height: 24px;
+    font-weight: 500;
 }
 
 /*개인정보처리방침*/

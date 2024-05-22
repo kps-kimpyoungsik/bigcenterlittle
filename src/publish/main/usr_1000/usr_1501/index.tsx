@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
+import LayoutAside from "../user1000Aside";
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 import UIDatePicker from "components/datepicker";
@@ -15,10 +16,11 @@ function ContentsContainer() {
 	];
 	return (
 		<PageContainer>
+			<LayoutAside />
 			<div className='fww-con'>
 				<ul className="fww-brd">
 					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">마이페이지</Link></li>
+					<li><Link to="/main/usr_1000/usr_1500">마이페이지</Link></li>
 					<li><Link to="#">내기업정보</Link></li>
 				</ul>
 				<main className="fww-main" data-layout="usr">

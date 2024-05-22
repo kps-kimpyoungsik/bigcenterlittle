@@ -1,16 +1,18 @@
 
 import React from "react";
 import { Link } from 'react-router-dom';
+import LayoutAside from "../user1000Aside";
 import PageContainer from '../../PageContainer';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 function ContentsContainer() {
 	return (
 		<PageContainer>
+			<LayoutAside />
 			<div className='fww-con'>
 				<ul className="fww-brd">
 					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">마이페이지</Link></li>
+					<li><Link to="/main/usr_1000/usr_1500">마이페이지</Link></li>
 					<li><Link to="#">내정보</Link></li>
 				</ul>
 				<main className="fww-main" data-layout="usr">
@@ -73,7 +75,7 @@ function ContentsContainer() {
 						</form>
 						<div className="hz-root hz-center hz-gap10">
 							<Button color='gray-o' size="big">취소</Button>
-							<Button color='pri' size="big" href="/main/usr_1000/usr_1501">저장</Button>
+							<Button color='pri' size="big">저장</Button>
 						</div>
 					</div>
 				</main>

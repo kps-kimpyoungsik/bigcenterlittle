@@ -2,18 +2,20 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
+import LayoutAside from "../user1000Aside";
 import Button from 'components/buttons/';
 import UIInputPW from 'components/input/inputPW';
 function ContentsContainer() {
 	return (
 		<PageContainer>
+			<LayoutAside />
 			<div className='fww-con'>
 				<ul className="fww-brd">
 					<li><Link to="/main/">홈</Link></li>
-					<li><Link to="#">마이페이지</Link></li>
+					<li><Link to="/main/usr_1000/usr_1500">마이페이지</Link></li>
 					<li><Link to="#">비밀번호 수정</Link></li>
 				</ul>
-				<main className="fww-main" data-width="usr">
+				<main className="fww-main" data-layout="usr">
 					<div className="mypage pw-edit">
 						<h1 className="tx tx-hd2">비밀번호 수정</h1>
 						<div className="sub-tx">비밀번호를 새롭게 설정해 주세요.</div>
