@@ -304,90 +304,94 @@ function ContentsContainer() {
 		]
 	}
 	useEffect(() => { 
-		let root = document.querySelector('.skt-adm');
-        const table_base = '';
-		if (root !== null) {
-			for (let i = 0; i < info.ia.length; i++) {
-				//카테고리수만큼...(i)
-				root.insertAdjacentHTML('beforeend', '<h2>'+info.ia[i].d1+'</h2>'); //제목
-				let tb = document.createElement('table'); //테이블
-				root.appendChild(tb);
-				
-				/*Thead------------------------------------------------------------------------*/
-				let tb_h = document.createElement('thead');
-				tb.appendChild(tb_h);
-				let tb_h_tr = document.createElement('tr');
-				tb_h.appendChild(tb_h_tr);
-				for (let ii = 0; ii < info.table_head.length; ii++) {
-				tb_h_tr.insertAdjacentHTML('beforeend', '<th>'+info.table_head[ii]+'</th>');
-				}
-				/*//Thead------------------------------------------------------------------------*/
-	
-				let tb_b = document.createElement('tbody');
-				tb.appendChild(tb_b);
-				
-				for (let j = 0; j < info.ia[i].page.length; j++) {
-				//특정 카테고리내 페이지수만큼...(j)
-				let tb_b_tr = document.createElement('tr');
-				tb_b.appendChild(tb_b_tr);
-				
-				for (let k = 0; k < info.table_head.length; k++) {
-					//칼럼개수만큼...(k)
-					let tb_b_tr_tb = document.createElement('td');
+		return () => {
+			let root = document.querySelector('.skt-adm');
+			const table_base = '';
+			if (root !== null) {
+				for (let i = 0; i < info.ia.length; i++) {
+					//카테고리수만큼...(i)
+					root.insertAdjacentHTML('beforeend', '<h2>'+info.ia[i].d1+'</h2>'); //제목
+					let tb = document.createElement('table'); //테이블
+					root.appendChild(tb);
 					
-					if(k === 0){ //링크일경우,
-	
-					let url = info.url_first+info.url_port+'/'+'admin/'+info.ia[i].d1id+'/'+info.ia[i].page[j][k];
-	
-					for (let l = 0; l < info.url_exception.length; l++) {
-						if(info.ia[i].page[j][k] === info.url_exception[l].pid) {
-						url = info.url_first+info.url_port+'/'+'admin/'+info.url_exception[l].alternative_url;
+					/*Thead------------------------------------------------------------------------*/
+					let tb_h = document.createElement('thead');
+					tb.appendChild(tb_h);
+					let tb_h_tr = document.createElement('tr');
+					tb_h.appendChild(tb_h_tr);
+					for (let ii = 0; ii < info.table_head.length; ii++) {
+					tb_h_tr.insertAdjacentHTML('beforeend', '<th>'+info.table_head[ii]+'</th>');
+					}
+					/*//Thead------------------------------------------------------------------------*/
+		
+					let tb_b = document.createElement('tbody');
+					tb.appendChild(tb_b);
+					
+					for (let j = 0; j < info.ia[i].page.length; j++) {
+					//특정 카테고리내 페이지수만큼...(j)
+					let tb_b_tr = document.createElement('tr');
+					tb_b.appendChild(tb_b_tr);
+					
+					for (let k = 0; k < info.table_head.length; k++) {
+						//칼럼개수만큼...(k)
+						let tb_b_tr_tb = document.createElement('td');
+						
+						if(k === 0){ //링크일경우,
+		
+						let url = info.url_first+info.url_port+'/'+'admin/'+info.ia[i].d1id+'/'+info.ia[i].page[j][k];
+		
+						for (let l = 0; l < info.url_exception.length; l++) {
+							if(info.ia[i].page[j][k] === info.url_exception[l].pid) {
+							url = info.url_first+info.url_port+'/'+'admin/'+info.url_exception[l].alternative_url;
+							}
+						}
+		
+						let state = info.ia[i].page[j][8];
+						let linkClass = '';
+						switch(state) {
+							case 'state1':
+							break;
+							case 'state2':
+							break;
+							case 'state3':  
+							linkClass = 'p';
+							break;
+						}
+		
+						tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+'<a class=\''+linkClass+'\' href=\''+url+'\' target=\'_blank\'>'+info.ia[i].page[j][k]+'</a>'+'</td>');  
+						
+						}else if(k === 8) { //진행일경우,
+						let state = info.ia[i].page[j][k];
+						let stateClass = '';
+						let stateTxt = '';
+						switch(state) {
+							case 'state1':
+							stateClass = state;
+							stateTxt = '작업전';
+							break;
+							case 'state2':
+							stateClass = state;
+							stateTxt = '작업중';
+							break;
+							case 'state3':  
+							stateClass = state;
+							stateTxt = '완료';
+							break;
+						}                
+						tb_b_tr.insertAdjacentHTML('beforeend', '<td class=\''+stateClass+'\'>'+stateTxt+'</td>');
+						
+						}else { //나머지,
+						tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+info.ia[i].page[j][k]+'</td>');
 						}
 					}
-	
-					let state = info.ia[i].page[j][8];
-					let linkClass = '';
-					switch(state) {
-						case 'state1':
-						break;
-						case 'state2':
-						break;
-						case 'state3':  
-						linkClass = 'p';
-						break;
-					}
-	
-					tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+'<a class=\''+linkClass+'\' href=\''+url+'\' target=\'_blank\'>'+info.ia[i].page[j][k]+'</a>'+'</td>');  
-					
-					}else if(k === 8) { //진행일경우,
-					let state = info.ia[i].page[j][k];
-					let stateClass = '';
-					let stateTxt = '';
-					switch(state) {
-						case 'state1':
-						stateClass = state;
-						stateTxt = '작업전';
-						break;
-						case 'state2':
-						stateClass = state;
-						stateTxt = '작업중';
-						break;
-						case 'state3':  
-						stateClass = state;
-						stateTxt = '완료';
-						break;
-					}                
-					tb_b_tr.insertAdjacentHTML('beforeend', '<td class=\''+stateClass+'\'>'+stateTxt+'</td>');
-					
-					}else { //나머지,
-					tb_b_tr.insertAdjacentHTML('beforeend', '<td>'+info.ia[i].page[j][k]+'</td>');
-					}
 				}
-			}
+				}
+			
 			}
 		
-		}
-	})
+		};
+
+	},[])
 	return (
 		<PageContainer>
 			<div className="skt-adm skt-tb"></div>

@@ -68,7 +68,7 @@ function ContentsContainer() {
 							</div>
 							
 							<div className="sf-item">
-								<p className="sf-key">기부영수증 <br />발급여부</p>
+								<p className="sf-key mt0">기부영수증 <br />발급여부</p>
 								<div className="sf-value">
 									<div className="sl sl-md">
 										<select>

@@ -6,7 +6,7 @@ function LayoutHeader() {
 	return (
 		<header className="stk-header">
 			<div className="inner">
-				<h1>INDEX-관리자페이지 (대·중소기업 상생협력기금 종합관리시스템 퍼블리싱)</h1>
+				<h1>INDEX - 대·중소기업 상생협력기금 종합관리시스템 퍼블리싱</h1>
 				<nav>
 					<ul>
 						<li className={location.pathname === '/guide' ? 'active' : ''}><Link to="/guide" >사용자 페이지</Link></li>
