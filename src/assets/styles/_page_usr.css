@@ -1331,6 +1331,7 @@ h1.tx-hd2 + .hz-root {
     background-color: #F0F2FF;
     height: 24px;
     border-radius: 12px;
+    margin-bottom:12px;
 }
 .home-sidebar .ico {
     display: block;

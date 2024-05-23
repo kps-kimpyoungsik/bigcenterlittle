@@ -11,7 +11,7 @@ function LayoutHeader() {
 			<div className='fww-util'>
 				<ul>
 					{/* Login 전 */}
-					<li><Link to="/main/home/usr_1300" className="login">로그인</Link></li>
+					<li><Link to="/admin/adm_login" className="login">로그인</Link></li>
 					<li><Link to="/main/home/usr_1200" className="join">회원가입</Link></li>
 					<li>
 						<span>
