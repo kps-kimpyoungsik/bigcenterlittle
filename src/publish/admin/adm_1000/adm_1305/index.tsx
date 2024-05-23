@@ -14,7 +14,8 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={0} lnbD1Idx={2}  lnbD2Idx={2}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">과제 신청 현황</h1>
-					<form className="sf sf-2col">
+
+					<form className="sf sf-3col">
 						<div className="inner">
 							<div className="sf-item sf-m-1-3">
 								<p className="sf-key">신청기간</p>
@@ -34,15 +35,15 @@ function ContentsContainer() {
 									</div>
 								</div>
 							</div>
-							<div className="sf-item sf-m-1-3">
+							<div className="sf-item"> {/* [M.20240522] */} 
 								<p className="sf-key">과제시작년월</p>
 								<div className="sf-value">
 									<div className="hz-root hz-left hz-gap8">
 										<div className="hz-item hz-root hz-gap8">
-											<UIDatePicker className="hz-item"/>
-											<div className="sl sl-md w120">
+											<div className="hz-item w120"><UIDatePicker className="hz-item w100"/></div> {/* [M.20240522] */} 
+											<div className="sl sl-md w120"> 
 												<select name="" id="" className="">
-													<option value="0">선택/전체</option>
+													<option value="0">전체</option>
 													<option value="1">$</option>
 												</select>
 											</div>

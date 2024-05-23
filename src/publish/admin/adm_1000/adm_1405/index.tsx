@@ -14,9 +14,9 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={0} lnbD1Idx={3}  lnbD2Idx={2}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">지급 신청 현황</h1>
-					<form className="sf sf-2col">
+					<form className="sf sf-3col">
 						<div className="inner">
-							<div className="sf-item sf-m-1-3">
+							<div className="sf-item sf-m-1-3"> {/* [M.20240522] */} 
 								<p className="sf-key">지급신청기간</p>
 								<div className="sf-value">
 									<div className="hz-root hz-left hz-gap8">

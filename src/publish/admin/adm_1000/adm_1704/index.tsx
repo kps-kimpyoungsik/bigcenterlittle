@@ -15,7 +15,7 @@ function ContentsContainer() {
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">수요조사 모집 현황</h1>
 					
-					<form className="sf sf-2col">
+					<form className="sf sf-3col"> {/* [M.20240522] */} 
 						<div className="inner">
 							<div className="sf-item sf-m-1-3">
 								<p className="sf-key">지원일</p>
@@ -56,7 +56,7 @@ function ContentsContainer() {
 												<option value="1">$</option>
 											</select>
 										</div>
-										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={''} />
+										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'검색어를 입력하세요'} /> {/* [M.20240522] */} 
 									</div>
 									
 								</div>

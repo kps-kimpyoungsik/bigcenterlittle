@@ -15,7 +15,7 @@ function ContentsContainer() {
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">전용관리</h1>
 					
-					<form className="sf sf-2col">
+					<form className="sf sf-3col">
 						<div className="inner">
 							<div className="sf-item sf-m-1-3">
 								<p className="sf-key">처리기간</p>
@@ -39,8 +39,8 @@ function ContentsContainer() {
 								<p className="sf-key">출연기업</p>
 								<div className="sf-value">
 									<div className="hz-root hz-gap8">
-										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={''} />
-										<Button color="gray-o" size="md">출연기업찾기</Button>
+										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'출연기업 찾기'} /> {/* [M.20240522] */} 
+										<Button color="pri-o2" size="md">출연기업찾기</Button> {/* [M.20240522] */} 
 										<Button color="gray-o" size="md">삭제</Button>
 									</div>
 									

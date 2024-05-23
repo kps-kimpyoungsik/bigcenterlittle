@@ -22,8 +22,12 @@
 .fww-util {z-index: 510;}
 .fww-header {z-index: 500;}
 .fww-root {
-    /*min-width: 1903px;*/ /*크롬*/
-    min-width: 1897px; /*익스*/
+    /*min-width: 1903px;*/ /*크롬(Bar:17)*/
+    min-width: 1897px; /*엣지(Bar:23)*/
+
+    /*엣지 항상 사이드바 표시 모드*/
+    min-width: 1857px;
+
 }
 .fww-root .fww-header-util {
     /* position: fixed; */

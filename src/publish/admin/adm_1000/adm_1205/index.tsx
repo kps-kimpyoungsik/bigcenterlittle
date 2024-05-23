@@ -14,7 +14,8 @@ function ContentsContainer() {
 				<Breadcrumb gnbIdx={0} lnbD1Idx={1}  lnbD2Idx={2}/>
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">출연현황</h1>
-					<form className="sf sf-2col">
+					
+					<form className="sf sf-3col"> {/* [M.20240522] */} 
 						<div className="inner">
 							<div className="sf-item sf-m-1-3">
 								<p className="sf-key">신청기간</p>
@@ -39,7 +40,7 @@ function ContentsContainer() {
 								<div className="sf-value">
 									<div className="hz-root hz-gap8">
 										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={''} />
-										<Button color="gray-o" size="md">출연기업찾기</Button>
+										<Button color="pri-o2" size="md">출연기업찾기</Button> {/* [M.20240522] */} 
 										<Button color="gray-o" size="md">삭제</Button>
 									</div>
 									
@@ -68,7 +69,7 @@ function ContentsContainer() {
 								</div>
 							</div>
 							<div className="sf-item">
-								<p className="sf-key">기부영수증 발급여부</p>
+								<p className="sf-key">기부영수증 <br/>발급여부</p>
 								<div className="sf-value">
 									<div className="sl sl-md">
 										<select name="" id="" className="">

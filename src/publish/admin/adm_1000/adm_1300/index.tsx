@@ -15,16 +15,16 @@ function ContentsContainer() {
 				<main className="fww-main">
 					<h1 className="tx tx-hd2">과제신청안내관리</h1>
 
-					<form className="sf sf-2col">
+					<form className="sf sf-1row sf-3col mb30"> {/* [M.20240522] */} 
 						<div className="inner">
-							<div className="sf-item sf-m-1-3">
+							<div className="sf-item sf-m-1-2"> {/* [M.20240522] */} 
 								<p className="sf-key">등록일자</p>
 								<div className="sf-value">
 									<div className="hz-root hz-left hz-gap8">
-										<div className="hz-item hz-root hz-gap5">
-											<UIDatePicker className="hz-item"/>
+										<div className="hz-item hz-root hz-gap5"> 
+											<div className="hz-item w150"><UIDatePicker /></div> {/* [M.20240522] */} 
 											<span className="hz-item">~</span>
-											<UIDatePicker className="hz-item"/>
+											<div className="hz-item w150"><UIDatePicker /></div> {/* [M.20240522] */} 
 										</div>
 									</div>
 								</div>
@@ -47,10 +47,15 @@ function ContentsContainer() {
 								</div>
 							</div>																			
 						</div>
+						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button> {/* [M.20240522] */} 
 					</form>
+
+					{/* [M.20240522]삭제 */} 
+					{/*
 					<div className="hz-root hz-center mb30">
 						<button className="bt" data-color="pri" data-size="md"  type="button">조회</button>
 					</div>
+					*/}
 
 					<div className="tb-top">
 						<div>
