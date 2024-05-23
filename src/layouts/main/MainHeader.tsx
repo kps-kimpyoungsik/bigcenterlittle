@@ -47,7 +47,9 @@ function LayoutHeader() {
 						<ul>
 							{menutree.gnb.map((gnb, index) => (
 							<li key={index} className={location.pathname.includes(gnb.path.slice(0,8)) ? 'd1 active' : 'd1'}>
-								<NavLink to={"/main/" + gnb.path }>{gnb.name}</NavLink>
+								<NavLink to={"/main/" + gnb.path }>
+									<span>{gnb.name}</span>
+									</NavLink>
 								<ul className='d2' >
 									{gnb.sub.map((depth2) => (
 									<li key={depth2.s_id} className={location.pathname.slice(-4,23) === depth2.sceenid? 'active' : ''}>

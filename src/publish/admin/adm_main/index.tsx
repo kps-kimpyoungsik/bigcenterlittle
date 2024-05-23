@@ -42,8 +42,8 @@ function ContentsContainer() {
 						</div>
 					</div>
 
-					<div className="adm-dash-section-rest pt pl40 pr40">
-						<div className="inner">
+					<div className="adm-dash-section-rest pt">
+						<div className="inner w1680">
 							<div className="row">
 								<div className="col col-5 mr10">
 									{/* 2.출연기업 현황 */}

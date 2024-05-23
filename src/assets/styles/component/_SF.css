@@ -45,8 +45,9 @@
 .sf .sf-item .sf-key {
   
   /*20240422 제목 길때 드롭되는 경우 있어서 좀 더 길게 수정*/
-  /* width: 85px; */
-  width: 100px;
+  /*20240524 다시 원상태로*/
+  width: 85px;
+  /* width: 100px; */
   /* margin-top: 10px; */
   font-size: 14px;
   font-weight: 500;

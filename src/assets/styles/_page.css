@@ -133,11 +133,15 @@
     font-size: 13px;
 }
 .adm-dash .adm-dash-section.adm-dash-section-01 {
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
+    padding: 20px 0;
+    
+    
 }
 .adm-dash .adm-dash-section.adm-dash-section-01>.inner {
     /* max-width: 1920px; */
-    max-width: 1840px;
+    max-width: 1680px;
+    /* max-width: 1840px; */
     margin: 0 auto;
 }
 .adm-dash .adm-dash-section.adm-dash-section-01 .main-list {
@@ -398,7 +402,7 @@
 .adm-dash .adm-dash-section.adm-dash-section-04>.character {
     position: absolute;
     bottom: 74px;
-    right: -70px;
+    right: -72px;
     display: block;
     width: 85px;
     height: 186px;
