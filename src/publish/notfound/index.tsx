@@ -1,8 +1,5 @@
 
 import React from "react";
-// import PageContainer from '../main/PageContainer';
-// import MainHeader from "layouts/main/MainHeader";
-// import Button from 'components/buttons/';
 import Notfound from 'publish/admin/exceptionpage/404';
 function NotFoundContainer() {
 	return (

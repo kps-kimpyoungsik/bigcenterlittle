@@ -388,9 +388,7 @@ function ContentsContainer() {
 				}
 			
 			}
-		
 		};
-
 	},[])
 	return (
 		<PageContainer>

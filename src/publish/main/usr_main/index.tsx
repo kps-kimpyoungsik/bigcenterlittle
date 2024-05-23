@@ -1,8 +1,19 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../PageContainer';
-import Button from 'components/buttons/';
+//import Button from 'components/buttons/';
 function HomeContainer(){
+	const [fixed, setFixed] = useState(false);
+  	useEffect(() => { 
+		const handleScroll = () => {
+			if (window.scrollY > 68) setFixed(true);
+			else setFixed(false)
+		};
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
 	return (
 		<PageContainer>
 			<div className='fww-con'>
@@ -10,18 +21,20 @@ function HomeContainer(){
 					<section className="home-section" data-section="visual">
 						<div className="inner">
 							<div className="visual-box">
-								<p className="sub-tx">대·중소기업상생협력기금</p>
-								<h1>상생협력</h1>
-								<h3>지속 가능한 발전, 상생협력 촉진, 동반성장</h3>
+								<p className="sub-tx">대·중소기업농·어업협력재단</p>
+								<h1>상생협력기금</h1>
+								{/* <h3>지속 가능한 발전, 상생협력 촉진, 동반성장</h3> */}
 								<div className="tx-cont">
-									대·중소기업·농어업 협력재단에 출연하는 민간 기금으로 대·중소기업 간의 지속가능한 발전,<br />
-									상생협력 촉진 및 동반성장을 통한 국민경제의 지속성장 기반 마련에 이바지합니다.
+									<strong>기업간의 상생협력 촉진을 통해 국민경제의 지속성장 기반을 마련합니다.</strong><br />
+									본 홈페이지는 상생협력기금의 제도를 소개하고 <br />
+									실제 출연부터 과제신청이 가능한 종합시스템입니다.
 								</div>
-								<Button color='pri' size="big">기금소개 바로가기</Button>
+								<Link to="#" className="tx tx-link">상생협력기금 출연기업 담당자 로그인 바로가기</Link>
 							</div>
 							
 						</div>
 					</section>
+					{/*  
 					<section className="home-section" data-section="business">
 						<div className="inner">
 							<h2 className="section-title">대·중소기업상생협력기금 활용 사업</h2>
@@ -39,6 +52,7 @@ function HomeContainer(){
 							</ul>
 						</div>
 					</section>
+					*/}
 					<section className="home-section"  data-section="board">
 						<div className="inner">
 							<div className="board-group">
@@ -46,33 +60,65 @@ function HomeContainer(){
 									<h3 className="bd-title">안내사항</h3>
 									<ul className="bd-list">
 										<li>
-											<label className="badge red">중요</label>
+											<label className="badge red">공지</label>
 											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<label className="badge red">중요</label>
+											<label className="badge red">공지</label>
 											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<label className="badge red">중요</label>
+											<label className="badge red">공지</label>
 											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<label className="badge red">중요</label>
+											<label className="badge red">공지</label>
 											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
-											<label className="badge red">중요</label>
+											<label className="badge red">공지</label>
 											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 									</ul>
 									<button type="button" className="button-more">더보기</button>
 								</div>
+								<div className="bd-card research">
+									<h3 className="bd-title">수요조사</h3>
+									<ul className="bd-list">
+										<li>
+											<label className="badge green">모집중</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="date">2024.05.30 ~ 2025.01.30</div>
+										</li>
+										<li>
+											<label className="badge green">모집중</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="date">2024.05.30 ~ 2025.01.30</div>
+										</li>
+										<li>
+											<label className="badge green">모집중</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="date">2024.05.30 ~ 2025.01.30</div>
+										</li>
+										<li>
+											<label className="badge gray">모집완료</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="date">2024.05.30 ~ 2025.01.30</div>
+										</li>
+										<li>
+											<label className="badge gray">모집완료</label>
+											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="date">2024.05.30 ~ 2025.01.30</div>
+										</li>
+									</ul>
+									<button type="button" className="button-more">더보기</button>
+								</div>
+								{/* 
 								<div className="bd-group">
 									<div className="bd-card faq">
 										<h3 className="bd-title">자주하는 질문</h3>
@@ -107,6 +153,7 @@ function HomeContainer(){
 										<button type="button" className="button-more">더보기</button>
 									</div>
 								</div>
+								 */}
 							</div>
 						</div>
 					</section>
@@ -122,6 +169,29 @@ function HomeContainer(){
 							</div>
 						</div>
 					</section>
+					<div className={fixed ? 'home-sidebar fixed' : 'home-sidebar'}>
+						<div className="sidebar-items">
+							<h3>출연관리</h3>
+							<ul>
+								<li><Link to="#" className="item-link"><i className="ico don1"></i>출연신청</Link></li>
+								<li><Link to="#" className="item-link"><i className="ico don2"></i>출연현황</Link></li>
+							</ul>
+						</div>
+						<div className="sidebar-items">
+							<h3>과제관리</h3>
+							<ul>
+								<li><Link to="#" className="item-link"><i className="ico tsk1"></i>과제승인신청</Link></li>
+								<li><Link to="#" className="item-link"><i className="ico tsk2"></i>과제현황</Link></li>
+							</ul>
+						</div>
+						<div className="sidebar-items">
+							<h3>지급관리</h3>
+							<ul>
+								<li><Link to="#" className="item-link"><i className="ico pay1"></i>지급정산신청</Link></li>
+								<li><Link to="#" className="item-link"><i className="ico pay2"></i>지급현황</Link></li>
+							</ul>
+						</div>
+					</div>
 				</main>
 			</div>
 		</PageContainer>
