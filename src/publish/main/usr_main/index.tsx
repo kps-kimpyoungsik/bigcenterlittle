@@ -26,12 +26,16 @@ function HomeContainer(){
 		<PageContainer>
 			<div className='fww-con'>
 				<main className="usr-home">
+					{/* 
+					<div>
+						업무별 바로가기
+					</div>
+					 */}
 					<section className="home-section" data-section="visual">
 						<div className="inner">
 							<div className="visual-box">
 								<p className="sub-tx">대·중소기업농·어업협력재단</p>
 								<h1>상생협력기금</h1>
-								{/* <h3>지속 가능한 발전, 상생협력 촉진, 동반성장</h3> */}
 								<div className="tx-cont">
 									<strong>기업간의 상생협력 촉진을 통해 국민경제의 지속성장 기반을 마련합니다.</strong><br />
 									본 홈페이지는 상생협력기금의 제도를 소개하고 <br />

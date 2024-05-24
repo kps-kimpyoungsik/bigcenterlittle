@@ -1306,9 +1306,8 @@ h1.tx-hd2 + .hz-root {
 }
 .home-sidebar {
     position: fixed;
-    top:152px;
+    bottom:30px;
     right:30px;
-    
     z-index: 10;
     width:96px;
 }
