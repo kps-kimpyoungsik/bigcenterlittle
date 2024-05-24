@@ -15,7 +15,7 @@ function ContentsContainer() {
 					<div className="curity-program">
 						<h1 className="tx tx-hd2">보안프로그램 설치</h1>
 						<h3 className="curity-title mb30">고객님의 안전한 서비스를 위해 보안 프로그램을 설치 하셔야 합니다.</h3>
-						<div className="tb tb-narrow mb30">
+						<div className="tb tb-narrow mb50">
 							<table>
 								<caption>보안프로그램 목록</caption>
 								<colgroup>
@@ -31,6 +31,7 @@ function ContentsContainer() {
 									</tr>
 								</thead>
 								<tbody>
+									
 									<tr>
 										<td>
 											키보드보안<br /><strong>(TouchEnNxKey with E2E)</strong>
@@ -44,9 +45,23 @@ function ContentsContainer() {
 											<Button color='gray' size="sm" disabled>설치됨</Button> 
 										</td>
 									</tr>
+									<tr>
+										<td>
+											공동인증서 보안<br /><strong>(WIzIN-Delfino G3/G4)</strong>
+										</td>
+										<td className="ta-left">
+											WizIN-Delfino(공동인증 전자서명 프로그램)은 강력한 PKI(공개키 기반) 보안 기술을 적용하여 안전한 금융거래를 이용하실 수 있도록 하는 프로그램입니다.
+										</td>
+										<td>
+											<Button color='pri' size="sm">설치</Button> 
+											{/* 설치된경우 */}
+											<Button color='gray' size="sm" disabled>설치됨</Button> 
+										</td>
+									</tr>
 								</tbody>
 							</table>
 						</div>
+						<h3 className="tx tx-hd3 mb15">키보드 보안(TouchEnNxKey with E2E)</h3>
 						<ul className="curity-info mb30">
 							<li>
 								<span className="num">1.</span><strong>입력 값 보호 기능(키로깅 방지)</strong>
