@@ -131,7 +131,9 @@
     left:0;
     width:100%;
     height:100%;
-    background-color: #fff;
+    background: #fff url(../img/char/char_gnb.svg) no-repeat;
+    background-position: left 113px bottom 40px;
+    /* background-color: #fff; */
     z-index: 1;
     border-bottom:1px solid #ededed;
     opacity: 0;
@@ -183,6 +185,7 @@
     justify-content: center;
     width: 100%;
     /* border: 1px solid red; */
+    
 }
 .fww-root .fww-header .right-area .fww-gnb>ul {
     display: flex;
