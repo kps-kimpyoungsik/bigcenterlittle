@@ -627,7 +627,6 @@ background-image: url(../img/icon/ic_left_10.svg);
 /*adm_7101 (결재선 프로세스)*/
 .approval-process {
     display: flex;
-    /* column-gap: 70px; */
     column-gap: 67px;
     height: 180px;
 }
