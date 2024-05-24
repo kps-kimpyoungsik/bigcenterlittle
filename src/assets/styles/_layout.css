@@ -167,7 +167,7 @@
     line-height: 70px;
     border-bottom:3px solid transparent;
 }
-.fww-gnb .d1 > a.active > span,
+.fww-gnb .d1.active > a > span,
 .fww-gnb .d1:hover > a > span,
 .fww-gnb .d1 > a:hover span{
     color:var(--p1);
