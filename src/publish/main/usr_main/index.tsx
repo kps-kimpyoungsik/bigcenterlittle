@@ -3,16 +3,24 @@ import { Link } from 'react-router-dom';
 import PageContainer from '../PageContainer';
 //import Button from 'components/buttons/';
 function HomeContainer(){
-	const [fixed, setFixed] = useState(false);
+	const [sidebar, setSidebar] = useState(false);
+	const bnr = [
+		{src:'usr_bnr01.png',alt:'상생누리',url:'https://www.winwinnuri.or.kr/'},
+		{src:'usr_bnr02.png',alt:'상생결제 제도',url:'https://www.winwinpay.or.kr/'},
+		{src:'usr_bnr03.png',alt:'대중소 기업 농어업 협력재단 기술자료 임치센터',url:'https://www.kescrow.or.kr/'},
+		{src:'usr_bnr04.png',alt:'대중소 기업 농어업 협력재단 원본 증명서비스',url:'https://proof.kescrow.or.kr/verification/'},
+		{src:'usr_bnr05.png',alt:'농어촌 상생협력기금',url:'https://www.winwinfund.or.kr/'},
+		{src:'usr_bnr06.png',alt:'협력이익공유제 종합정보시스템',url:'https://www.winplus.or.kr/'},
+	];
   	useEffect(() => { 
-		const handleScroll = () => {
-			if (window.scrollY > 68) setFixed(true);
-			else setFixed(false)
-		};
-		window.addEventListener('scroll', handleScroll);
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
+		// const handleScroll = () => {
+		// 	if (window.scrollY > 68) setFixed(true);
+		// 	else setFixed(false)
+		// };
+		// window.addEventListener('scroll', handleScroll);
+		// return () => {
+		// 	window.removeEventListener('scroll', handleScroll);
+		// };
 	}, []);
 	return (
 		<PageContainer>
@@ -34,25 +42,6 @@ function HomeContainer(){
 							
 						</div>
 					</section>
-					{/*  
-					<section className="home-section" data-section="business">
-						<div className="inner">
-							<h2 className="section-title">대·중소기업상생협력기금 활용 사업</h2>
-							<ul className="business-group">
-								<li><Link to="#"><i className="ico bs01"></i>동반성장투자재원</Link></li>
-								<li><Link to="#"><i className="ico bs02"></i>공동투자형기술개발</Link></li>
-								<li><Link to="#"><i className="ico bs03"></i>산업혁신운동</Link></li>
-								<li><Link to="#"><i className="ico bs04"></i>대·중소 상생형스마트공장</Link></li>
-								<li><Link to="#"><i className="ico bs05"></i>대·중소기업 혁신파트너</Link></li>
-								<li><Link to="#"><i className="ico bs06"></i>대중소기업 동반진출</Link></li>
-								<li><Link to="#"><i className="ico bs07"></i>기업자율형 상생프로그램</Link></li>
-								<li><Link to="#"><i className="ico bs08"></i>성과 공유제</Link></li>
-								<li><Link to="#"><i className="ico bs09"></i>협력이익 공유제</Link></li>
-								<li><Link to="#"><i className="ico bs10"></i>협력사ESG 평가지원</Link></li>
-							</ul>
-						</div>
-					</section>
-					*/}
 					<section className="home-section"  data-section="board">
 						<div className="inner">
 							<div className="board-group">
@@ -118,79 +107,44 @@ function HomeContainer(){
 									</ul>
 									<button type="button" className="button-more">더보기</button>
 								</div>
-								{/* 
-								<div className="bd-group">
-									<div className="bd-card faq">
-										<h3 className="bd-title">자주하는 질문</h3>
-										<ul className="bd-list">
-											<li>
-												<label className="badge yellow">Q.</label>
-												<div className="subject"><Link to="#"  className="tx tx-link">상생협력기금이란 무엇인가요?</Link></div>
-												<div className="date">2024.03.30</div>
-											</li>
-											<li>
-												<label className="badge yellow">Q.</label>
-												<div className="subject"><Link to="#"  className="tx tx-link">상생협력기금 현황 등 보고는 어디에서 확인하나요?</Link></div>
-												<div className="date">2024.03.30</div>
-											</li>
-										</ul>
-										<button type="button" className="button-more">더보기</button>
-									</div>
-									<div className="bd-card excellet">
-										<h3 className="bd-title">지원사례</h3>
-										<ul className="bd-list">
-											<li>
-												<label className="badge green">사례</label>
-												<div className="subject"><Link to="#"  className="tx tx-link">생협력기금 지원사례_임금격차완화, 일자리창출, 벤처창업</Link></div>
-												<div className="date">2024.03.30</div>
-											</li>
-											<li>
-												<label className="badge green">사례</label>
-												<div className="subject"><Link to="#"  className="tx tx-link">상생협력기금 지원사례_동반성장 기반 구축 및 문화 확산편</Link></div>
-												<div className="date">2024.03.30</div>
-											</li>
-										</ul>
-										<button type="button" className="button-more">더보기</button>
-									</div>
-								</div>
-								 */}
 							</div>
 						</div>
 					</section>
 					<section className="home-section" data-section="banner">
 						<div className="inner">
 							<div className="banner-group">
-								<Link to="#" target="_blank"><img src={require('assets/img/pages/usr_bnr01.png')} alt="상생누리" /></Link>
-								<Link to="#" target="_blank"><img src={require('assets/img/pages/usr_bnr02.png')} alt="상생결제 제도" /></Link>
-								<Link to="#" target="_blank"><img src={require('assets/img/pages/usr_bnr03.png')} alt="대중소 기업 농어업 협력재단 기술자료 임치센터" /></Link>
-								<Link to="#" target="_blank"><img src={require('assets/img/pages/usr_bnr04.png')} alt="대중소 기업 농어업 협력재단 원본 증명서비스" /></Link>
-								<Link to="#" target="_blank"><img src={require('assets/img/pages/usr_bnr05.png')} alt="농어촌 상생협력기금" /></Link>
-								<Link to="#" target="_blank"><img src={require('assets/img/pages/usr_bnr06.png')} alt="협력이익공유제 종합정보시스템" /></Link>
+								{bnr.map((bnr, index) =>
+									<a key={index} href={bnr.url} target="_blank" rel="noreferrer"><img src={require('assets/img/pages/'+bnr.src+'')} alt={bnr.alt} /></a>			
+								)}
 							</div>
 						</div>
 					</section>
-					<div className={fixed ? 'home-sidebar fixed' : 'home-sidebar'}>
-						<div className="sidebar-items">
-							<h3>출연관리</h3>
-							<ul>
-								<li><Link to="#" className="item-link"><i className="ico don1"></i>출연신청</Link></li>
-								<li><Link to="#" className="item-link"><i className="ico don2"></i>출연현황</Link></li>
-							</ul>
+					<div className={sidebar ? 'home-sidebar' : 'home-sidebar closed'}>
+						<div className="sidebar-list">
+							<div className="sidebar-items">
+								<h3>출연관리</h3>
+								<ul>
+									<li><Link to="#" className="item-link"><i className="ico don1"></i>출연신청</Link></li>
+									<li><Link to="#" className="item-link"><i className="ico don2"></i>출연현황</Link></li>
+								</ul>
+							</div>
+							<div className="sidebar-items">
+								<h3>과제관리</h3>
+								<ul>
+									<li><Link to="#" className="item-link"><i className="ico tsk1"></i>과제승인신청</Link></li>
+									<li><Link to="#" className="item-link"><i className="ico tsk2"></i>과제현황</Link></li>
+								</ul>
+							</div>
+							<div className="sidebar-items">
+								<h3>지급관리</h3>
+								<ul>
+									<li><Link to="#" className="item-link"><i className="ico pay1"></i>지급정산신청</Link></li>
+									<li><Link to="#" className="item-link"><i className="ico pay2"></i>지급현황</Link></li>
+								</ul>
+							</div>
+							<button type="button" className="sidebar-closed" onClick={() => setSidebar(false)} >바로가기 닫기</button>
 						</div>
-						<div className="sidebar-items">
-							<h3>과제관리</h3>
-							<ul>
-								<li><Link to="#" className="item-link"><i className="ico tsk1"></i>과제승인신청</Link></li>
-								<li><Link to="#" className="item-link"><i className="ico tsk2"></i>과제현황</Link></li>
-							</ul>
-						</div>
-						<div className="sidebar-items">
-							<h3>지급관리</h3>
-							<ul>
-								<li><Link to="#" className="item-link"><i className="ico pay1"></i>지급정산신청</Link></li>
-								<li><Link to="#" className="item-link"><i className="ico pay2"></i>지급현황</Link></li>
-							</ul>
-						</div>
+						<button type="button" className="sidebar-open" onClick={() => setSidebar(true)}><span>업무별<br />바로가기</span></button>
 					</div>
 				</main>
 			</div>

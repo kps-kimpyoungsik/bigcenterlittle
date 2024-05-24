@@ -1305,20 +1305,19 @@ h1.tx-hd2 + .hz-root {
     display:block;
 }
 .home-sidebar {
-    position: absolute;
-    top:88px;
+    position: fixed;
+    top:152px;
     right:30px;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid #E4E4E4;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-    padding: 35px 12px;
-    border-radius: 48px;
+    
     z-index: 10;
     width:96px;
 }
-.home-sidebar.fixed {
-    position: fixed;
-    top:133px;
+.sidebar-list {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #E4E4E4;
+    padding: 30px 12px 15px;
+    border-radius: 48px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
 }
 .home-sidebar h3 {
     display: flex;
@@ -1371,17 +1370,76 @@ h1.tx-hd2 + .hz-root {
 .home-sidebar li + li {
     margin-top:12px;
 }
-
 .sidebar-items + .sidebar-items {
     border-top:1px solid #E4E4E4;
     margin-top:15px;
     padding-top:15px;
 }
+.sidebar-closed {
+    display: block;
+    font-size:0;
+    border:none;
+    margin-top:12px;
+    width:100%;
+    height:16px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.1001 7.80444L8.10605 0.798485L1.1001 7.80444' stroke='%23666666' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.sidebar-open {
+    position: absolute;
+    bottom:0;
+    left:calc(50% - 46px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:92px;
+    height:92px;
+    background-color: #4690FF;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    border:none;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all;
+}
 
+.home-sidebar.closed .sidebar-open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.sidebar-open span {
+    display: block;
+    color:#fff;
+    font-size:15px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.sidebar-open span::after {
+    content:'';
+    display: block;
+    width:16px;
+    height:16px;
+    pointer-events: none;
+    margin:3px auto 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L7.99404 8.50596L15 1.5' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.sidebar-list {
+    transform: translateY(0);
+    transition: 0.3s all;
+}
+.home-sidebar.closed .sidebar-list {
+    transform: translateY(+30px);
+    opacity: 0;
+    pointer-events: none;
+}
 
 
 /*상생협력기금안내*/
-
 .fww-intro h2 {
     box-sizing: border-box;
     height:300px;

@@ -147,6 +147,23 @@
     justify-content: center;
     width: 100%;
 }
+
+
+
+.fww-header.active .fww-gnb .d1:first-child::after {
+    content: '';
+    position: absolute;
+    left:-20px;
+    bottom:0;
+    transform: translateX(-100%);
+    width:180px;
+    height:180px;
+    background: url('/src/assets/img/char/char_gnb.svg') center center no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+
 .fww-gnb .d1 {
     max-width:195px;
     flex: 1;
@@ -172,6 +189,9 @@
 .fww-gnb .d1 > a:hover span{
     color:var(--p1);
     border-color:var(--p1);
+}
+.fww-gnb .d1:first-child{
+    position: relative;
 }
 
 .fww-gnb .d1:first-child .d2 {
