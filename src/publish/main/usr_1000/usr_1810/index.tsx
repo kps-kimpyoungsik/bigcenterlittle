@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../../PageContainer';
@@ -61,7 +60,7 @@ function ContentsContainer() {
 								</tbody>
 							</table>
 						</div>
-						<h3 className="tx tx-hd3 mb15">키보드 보안(TouchEnNxKey with E2E)</h3>
+						<h3 className="section-title mb30"><span className="fc-pri fw500">키보드 보안 (TouchEnNxKey with E2E)</span></h3>
 						<ul className="curity-info mb30">
 							<li>
 								<span className="num">1.</span><strong>입력 값 보호 기능(키로깅 방지)</strong>
@@ -117,11 +116,83 @@ function ContentsContainer() {
 								</tbody>
 							</table>
 						</div>
-						<ul className="curity-spec">
+						<ul className="curity-spec mb30">
 							<li>CPU : Pentium II이상 / RAM : 64MB이상 / HDD : 10MB 이상의 저장공간</li>
 							<li>키보드타입 PS/2 Type : 101key/102key/103key/106key 키보드</li>
 							<li>USB Type : 101key</li>
 						</ul>
+						<h3 className="section-title mb30"><span className="fc-pri fw500">공동인증서 보안 (WIzIN-Delfino G3/G4)</span></h3>
+						<ul className="curity-info mb30">
+							<li>
+								<span className="num">1.</span><strong>사용자 인증</strong>
+								사용자 인증에 사용될 공동인증서 제출 및 검증 기능 제공.
+							</li>
+							<li>
+								<span className="num">2.</span><strong>전자서명 수행 및 검증</strong>
+								공동인증서를 이용한 전자서명 및 전자서명의 진위와 서명자 확인
+							</li>
+							<li>
+								<span className="num">3.</span><strong>전자봉투</strong>
+								공동인증서에 포함된 식별번호를 이용하여 인증서 소유자의 신원확인 지원
+							</li>
+						</ul>
+						<div className="tb tb-narrow mb30">
+							<table>
+								<caption></caption>
+								<colgroup>
+									<col />
+									<col width="200px" />
+									<col width="200px" />
+									<col width="200px" />
+									<col width="200px" />
+									<col width="200px" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">Internet Explorer</th>
+										<th scope="col">Edge</th>
+										<th scope="col">Chrome</th>
+										<th scope="col">Safari</th>
+										<th scope="col">Firefox</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>Windows</strong><br />XP ~ 11(32bit/64bit)</td>
+										<td>지원<br />6.0 이상</td>
+										<td>지원</td>
+										<td>지원<br />38.0 이상</td>
+										<td>지원<br />32.0 이상</td>
+										<td>지원<br />5.1.7 이상</td>
+									</tr>
+									<tr>
+										<td><strong>MAC</strong><br />OS X 10.6~ 10.13</td>
+										<td>미지원</td>
+										<td>미지원</td>
+										<td>지원<br />38.0 이상</td>
+										<td>지원<br />32.0 이상</td>
+										<td>지원<br />5.1.7 이상</td>
+									</tr>
+									<tr>
+										<td><strong>Linux</strong><br />14.04, 16.04, 17.04, 17.10</td>
+										<td>미지원</td>
+										<td>미지원</td>
+										<td>지원<br />38.0 이상</td>
+										<td>지원<br />32.0 이상</td>
+										<td>미지원</td>
+									</tr>
+									<tr>
+										<td><strong>Linux Fedora</strong><br />22-25</td>
+										<td>미지원</td>
+										<td>미지원</td>
+										<td>지원<br />38.0 이상</td>
+										<td>지원<br />32.0 이상</td>
+										<td>미지원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</main>
 			</div>			
