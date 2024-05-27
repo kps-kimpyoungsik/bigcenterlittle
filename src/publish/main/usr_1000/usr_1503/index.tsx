@@ -28,18 +28,19 @@ function ContentsContainer() {
 							<span className="check"></span> 
 							<span className="txt">안내사항을 모두 확인하였으며, 이에 동의합니다.</span>
 						</label>
-						
-						<div className="chk-id">
-							아이디 : <span className="fc-pri">idname_showing</span>
-						</div>
-						<form name="" action="" method="">
-							<div className="find-pw mb90" >
-								<div className="form-items">
-									<label className="mb15">비밀번호 입력</label>
-									<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
-								</div>
+						<div className="withdrawal-info">
+							<div className="chk-id">
+								아이디 : <span className="fc-pri">idname_showing</span>
 							</div>
-						</form>
+							<form name="" action="" method="">
+								<div className="find-pw" >
+									<div className="form-items">
+										<label className="mb15">비밀번호 입력</label>
+										<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
+									</div>
+								</div>
+							</form>
+						</div>
 						<div className="hz-root hz-center hz-gap10 mt90">
 							<Button color='gray-o' size="big">취소</Button>
 							<Button color='pri' size="big">탈퇴</Button>
