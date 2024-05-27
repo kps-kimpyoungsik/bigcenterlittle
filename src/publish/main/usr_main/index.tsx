@@ -30,7 +30,7 @@ function HomeContainer(){
 		<PageContainer>
 			<div className='fww-con'>
 				<main className="usr-home">
-					<div className="usr-direct">
+					<div className={checked ? 'usr-direct' : 'usr-direct no-bg'}>
 						<h4>업무별 바로가기</h4>
 						<div className="switch-button">
 							<input type="checkbox" id="switch-chk" checked={checked} onChange={(e) => checkHandled(e)}/>
