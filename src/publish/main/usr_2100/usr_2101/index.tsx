@@ -30,13 +30,12 @@ function ContentsContainer() {
 		'공평한 성과배분','인력개발 및 교류','창업ㆍ벤처지원','국내 판로확대','해외 판로확대','생산성 향상','연구개발(R&D기술협력)','기술ㆍ지식재산권 이전','지역경제 활성화','기술보호',
 		'복리후생(양극화해소 포함)','환경경영','안전재해 지원','저출산육아지원','기타 자발적 상생활동','상생협력기금조성 운영 관리 경비','오입금(잘못 출연된 기금의 반환과제용)',
 	]
-
 	const modalusr2102 = useToggleState({});
 	const modalusr2103 = useToggleState({});
 	const modalusr2104 = useToggleState({});
 	const modalusr2105 = useToggleState({});
 	const modalusr2139 = useToggleState({});
-	
+	const modalusr2149 = useToggleState({});
 	const handleChange = (e) => {if( e.target.value === 'open') {modalusr2105.open();}}
 	return (
 		<PageContainer>
@@ -219,7 +218,7 @@ function ContentsContainer() {
 											<th scope="row" ><span className="th-req">과제개요</span></th>
 											<td>
 												<div className="ta-group w100p">
-													<textarea rows={3} className="ta-ip" placeholder="과제에 대한 개요를 입력하세요."/>
+													<textarea rows={3} className="ta-ip" placeholder="과제에 대한 개요내용을 자유롭게 입력하세요."/>
 												</div>
 											</td>
 										</tr>
@@ -227,7 +226,7 @@ function ContentsContainer() {
 											<th scope="row" ><span className="th-req">정성효과</span></th>
 											<td>
 												<div className="ta-group w100p">
-													<textarea rows={3} className="ta-ip" placeholder="거래관계 향상에 대한 의견을 자유롭게 입력하세요"/>
+													<textarea rows={3} className="ta-ip" placeholder="거래관계 향상에 대한 의견을 자유롭게 입력하세요."/>
 												</div>
 											</td>
 										</tr>
@@ -535,10 +534,10 @@ function ContentsContainer() {
 					</div>
 				</main>
 			</div>
-			{/* modal - 출연사업 선택 */}
+			{/* modal - 출연금액 선택 */}
 			<ModalPopup
 					open={modalusr2139.isShowing}
-					title="출연사업 선택"
+					title="출연금액 선택"
 					size="mid"
 					onClose={modalusr2139.close}
 			>
@@ -546,6 +545,16 @@ function ContentsContainer() {
 					<div className="modal-tskana">
 						<form className="fo fo-col2 mb15" name="" action="" method="">
 							<div className="inner">
+								<div className="fo-item fo-item fo-m-1-3">
+									<p className="fo-key">출연기업</p>
+									<div className="fo-value">
+										<div className="hz-root hz-gap5 w100p">
+											<UIInput className={'tf tf-md hz-item hz-fg'} value={''} placeholder={'출연기업 찾기'} />
+											<Button color='pri-o2' size="md"onClick={() => {modalusr2139.close(); modalusr2149.open()}}>출연기업찾기</Button> 
+											<Button color='gray-o' size="md">삭제</Button> 
+										</div>
+									</div>
+								</div>
 								<div className="fo-item fo-item fo-m-1-3">
 									<p className="fo-key">출연사업</p>
 									<div className="fo-value">
@@ -583,6 +592,76 @@ function ContentsContainer() {
 						</div>
 						<div className="ibsheet">
 							<p style={{height:"300px"}}>[D] IBSHEET 영역</p>
+						</div>
+						<div className="pg mt10">
+							<div className="group">
+								<button type="button" className="item first">처음</button>
+								<button type="button" className="item prev">이전</button>
+							</div>
+							<div className="group">
+								<button type="button" className="item">1</button>
+								<button type="button" className="item active">2</button>
+								<button type="button" className="item">3</button>
+								<button type="button" className="item">4</button>
+								<button type="button" className="item">5</button>
+								<button type="button" className="item">99</button>
+								<button type="button" className="item">999</button>
+								<button type="button" className="item">9999</button>
+							</div>
+							<div className="group">
+								<button type="button" className="item next">다음</button>
+								<button type="button" className="item last">끝</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ModalPopup>
+			{/* modal - 기업검색 */}
+			<ModalPopup
+					open={modalusr2149.isShowing}
+					title="기업검색"
+					size="mid"
+					onClose={modalusr2149.close}
+			>
+				<div className="modal-con">
+					<div className="modal-tskana">
+						<div className="tb-search-form bd mb30">
+							<div className="hz-root hz-center hz-gap8">
+								<div className="hz-item sl sl-md">
+									<select>
+										<option>기업명</option>
+										<option>법인사업자번호</option>
+										<option>사업자등록번호</option>
+									</select>
+								</div>
+								<UIInput className={'hz-item tf tf-md'} value={''} placeholder={"입력하세요."} />
+								<Button color="pri" size="md">조회</Button>
+							</div>
+						</div>
+						{/* NO-data */}
+						<div className="nd">
+							<i className="ic"></i>
+							<p className="tx tx-cp2 fc-666 ta-center">조회된 내역이 없습니다.</p>
+						</div>
+						<div className="tb-top">
+							<div>
+								<p className="tx fc-black">총 <em className="fw500">1103</em>건</p>
+							</div>
+							<div className="hz-root hz-gap8">
+								<div className="sl sl-sm w120">
+									<select>
+										<option value="0">20개씩보기</option>
+										<option value="0">50개씩보기</option>
+										<option value="0">100개씩보기</option>
+										<option value="0">200개씩보기</option>
+										<option value="0">500개씩보기</option>
+										<option value="0">1000개씩보기</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div className="ibsheet">
+							<p style={{height:"200px"}}>[D] IBSHEET 영역</p>
 						</div>
 						<div className="pg mt10">
 							<div className="group">
@@ -1074,7 +1153,6 @@ function ContentsContainer() {
 					<Button color="pri" size="md">저장</Button>
 				</div>
 			</ModalPopup>
-			
 		</PageContainer>
 	);
 }
