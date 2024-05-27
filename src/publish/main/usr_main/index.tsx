@@ -1,9 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../PageContainer';
 //import Button from 'components/buttons/';
 function HomeContainer(){
 	const [sidebar, setSidebar] = useState(false);
+	const [checked, setChecked] = useState(true);
+	const checkHandled = ({target}) => {
+		if (target.checked) {setChecked(true)} else {setChecked(false)}
+	}
 	const bnr = [
 		{src:'usr_bnr01.png',alt:'상생누리',url:'https://www.winwinnuri.or.kr/'},
 		{src:'usr_bnr02.png',alt:'상생결제 제도',url:'https://www.winwinpay.or.kr/'},
@@ -12,25 +16,53 @@ function HomeContainer(){
 		{src:'usr_bnr05.png',alt:'농어촌 상생협력기금',url:'https://www.winwinfund.or.kr/'},
 		{src:'usr_bnr06.png',alt:'협력이익공유제 종합정보시스템',url:'https://www.winplus.or.kr/'},
 	];
-  	useEffect(() => { 
-		// const handleScroll = () => {
-		// 	if (window.scrollY > 68) setFixed(true);
-		// 	else setFixed(false)
-		// };
-		// window.addEventListener('scroll', handleScroll);
-		// return () => {
-		// 	window.removeEventListener('scroll', handleScroll);
-		// };
-	}, []);
+  	// useEffect(() => { 
+	// 	const handleScroll = () => {
+	// 		if (window.scrollY > 68) setFixed(true);
+	// 		else setFixed(false)
+	// 	};
+	// 	window.addEventListener('scroll', handleScroll);
+	// 	return () => {
+	// 		window.removeEventListener('scroll', handleScroll);
+	// 	};
+	// }, []);
 	return (
 		<PageContainer>
 			<div className='fww-con'>
 				<main className="usr-home">
-					{/* 
-					<div>
-						업무별 바로가기
+					<div className="usr-direct">
+						<h4>업무별 바로가기</h4>
+						<div className="switch-button">
+							<input type="checkbox" id="switch-chk" checked={checked} onChange={(e) => checkHandled(e)}/>
+							<label htmlFor="switch-chk" >
+								<span className="toggle"></span>
+							</label>
+						</div>
+						<div className={checked ? 'direct-links' : 'direct-links hidden'}>
+							<div className="direct-items">
+								<h3>출연관리</h3>
+								<ul>
+									<li><Link to="/main/usr_2000/usr_2000" className="item-link"><i className="ico don1"></i>출연신청</Link></li>
+									<li><Link to="/main/usr_2000/usr_2002" className="item-link"><i className="ico don2"></i>출연현황</Link></li>
+								</ul>
+							</div>
+							<div className="direct-items">
+								<h3>과제관리</h3>
+								<ul>
+									<li><Link to="/main/usr_2100/usr_2100" className="item-link"><i className="ico tsk1"></i>과제승인신청</Link></li>
+									<li><Link to="/main/usr_2100/usr_2105" className="item-link"><i className="ico tsk2"></i>과제현황</Link></li>
+								</ul>
+							</div>
+							<div className="direct-items">
+								<h3>지급관리</h3>
+								<ul>
+									<li><Link to="/main/usr_2100/usr_2114" className="item-link"><i className="ico pay1"></i>지급정산신청</Link></li>
+									<li><Link to="/main/usr_2100/usr_2123" className="item-link"><i className="ico pay2"></i>지급현황</Link></li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					 */}
+					
 					<section className="home-section" data-section="visual">
 						<div className="inner">
 							<div className="visual-box">
@@ -125,25 +157,25 @@ function HomeContainer(){
 					</section>
 					<div className={sidebar ? 'home-sidebar' : 'home-sidebar closed'}>
 						<div className="sidebar-list">
-							<div className="sidebar-items">
+							<div className="direct-items">
 								<h3>출연관리</h3>
 								<ul>
-									<li><Link to="#" className="item-link"><i className="ico don1"></i>출연신청</Link></li>
-									<li><Link to="#" className="item-link"><i className="ico don2"></i>출연현황</Link></li>
+									<li><Link to="/main/usr_2000/usr_2000" className="item-link"><i className="ico don1"></i>출연신청</Link></li>
+									<li><Link to="/main/usr_2000/usr_2002" className="item-link"><i className="ico don2"></i>출연현황</Link></li>
 								</ul>
 							</div>
-							<div className="sidebar-items">
+							<div className="direct-items">
 								<h3>과제관리</h3>
 								<ul>
-									<li><Link to="#" className="item-link"><i className="ico tsk1"></i>과제승인신청</Link></li>
-									<li><Link to="#" className="item-link"><i className="ico tsk2"></i>과제현황</Link></li>
+									<li><Link to="/main/usr_2100/usr_2100" className="item-link"><i className="ico tsk1"></i>과제승인신청</Link></li>
+									<li><Link to="/main/usr_2100/usr_2105" className="item-link"><i className="ico tsk2"></i>과제현황</Link></li>
 								</ul>
 							</div>
-							<div className="sidebar-items">
+							<div className="direct-items">
 								<h3>지급관리</h3>
 								<ul>
-									<li><Link to="#" className="item-link"><i className="ico pay1"></i>지급정산신청</Link></li>
-									<li><Link to="#" className="item-link"><i className="ico pay2"></i>지급현황</Link></li>
+									<li><Link to="/main/usr_2100/usr_2114" className="item-link"><i className="ico pay1"></i>지급정산신청</Link></li>
+									<li><Link to="/main/usr_2100/usr_2123" className="item-link"><i className="ico pay2"></i>지급현황</Link></li>
 								</ul>
 							</div>
 							<button type="button" className="sidebar-closed" onClick={() => setSidebar(false)} >바로가기 닫기</button>
