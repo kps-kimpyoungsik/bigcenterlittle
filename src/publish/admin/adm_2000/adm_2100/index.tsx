@@ -24,9 +24,9 @@ function ContentsContainer() {
 								<div className="sf-value">
 									<div className="hz-root hz-left hz-gap8">
 										<div className="hz-item hz-root hz-gap5">
-											<UIDatePicker className="hz-item"/>
+											<div className="w120"><UIDatePicker className="hz-item"/></div>
 											<span className="hz-item">~</span>
-											<UIDatePicker className="hz-item"/>
+											<div className="w120"><UIDatePicker className="hz-item"/></div>
 										</div>
 										<div className="hz-item hz-root hz-gap5">
 											<button className="bt" data-color="pri-o2" data-size="md" type="button">오늘</button>
