@@ -3,7 +3,7 @@ import { DefaultLayout } from '../layouts/admin';
 import { LoginLayout } from '../layouts/admin';
 import { DashLayout } from '../layouts/admin';
 import {
-	admIndexPage,
+	// admIndexPage,
 
 	p404Page,
 	syscheckPage,
@@ -180,11 +180,13 @@ export type PageRouteProps = {
 	layout: React.ComponentType<any>;
 };
 export const routes: Array<PageRouteProps> = [
+	/*
 	{
 		path: '/admin/',
 		component: admIndexPage,
 		layout: DefaultLayout,
-	},	
+	},
+	*/	
 	{
 		path: '/admin/404',
 		component: p404Page,

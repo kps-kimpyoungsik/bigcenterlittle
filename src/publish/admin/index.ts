@@ -1,5 +1,5 @@
 export { default as adm0000Page } from './adm_4000/adm_0000';
-export { default as admIndexPage } from './adm_index';
+// export { default as admIndexPage } from './adm_index';
 
 export { default as p404Page } from './exceptionpage/404';
 export { default as syscheckPage } from './exceptionpage/syscheck';
