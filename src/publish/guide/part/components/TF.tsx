@@ -2,6 +2,7 @@ import React from "react";
 
 import UIInput from 'components/input/input';
 import UIInputPW from 'components/input/inputPW';
+import UIInputClaer from 'components/input/inputClear';
 function ContentsContainer() {
 	return (
 		<div>
@@ -43,12 +44,8 @@ function ContentsContainer() {
 			<UIInputPW className={'tf tf-md w100p'} value={''} placeholder={'비밀번호를 입력하세요.'}  />	
 
 			<br/><br/>
-			<h2 className="deco-h2">Clear Button</h2>								
-			<div className="tf-with-clear">
-				<UIInput className={'tf tf-md w100p'} value={'클리어버튼'} placeholder={'PH'} readOnly={false} />
-				<button className="btn-clear" type="button">삭제</button>  {/* .hide 클래스시 사라짐 */}
-			</div>
-			
+			<h2 className="deco-h2">Clear Button</h2>	
+			<UIInputClaer className={'tf tf-md'} value={'입력값이 있을경우'} placeholder={'입력하세요.'}/>							
 		</div>
 	);
 }

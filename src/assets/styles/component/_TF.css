@@ -214,8 +214,17 @@ border: 0;
 /*clear buttton*/
 .tf-with-clear {
   position: relative;
-  display: inline-block;
+  display: block;
+  
 }
+.tf-with-clear [type=text],
+.tf-with-clear [type=number],
+.tf-with-clear [type=password],
+.tf-with-clear [type=tel] {
+  width:100%;
+  padding-right:42px;
+}
+
 .tf-with-clear .btn-clear {
   position: absolute;
   top: 50%;
