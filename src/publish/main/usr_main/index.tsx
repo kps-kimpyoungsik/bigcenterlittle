@@ -86,62 +86,62 @@ function HomeContainer(){
 									<ul className="bd-list">
 										<li>
 											<label className="badge red">공지</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="subject"><Link to="/main/usr_2300/usr_2301"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
 											<label className="badge red">공지</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="subject"><Link to="/main/usr_2300/usr_2301"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
 											<label className="badge red">공지</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="subject"><Link to="/main/usr_2300/usr_2301"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
 											<label className="badge red">공지</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="subject"><Link to="/main/usr_2300/usr_2301"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 										<li>
 											<label className="badge red">공지</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
+											<div className="subject"><Link to="/main/usr_2300/usr_2301"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
 									</ul>
-									<button type="button" className="button-more">더보기</button>
+									<Link to="/main/usr_2300/usr_2300" className="button-more">더보기</Link>
 								</div>
 								<div className="bd-card research">
 									<h3 className="bd-title">수요조사</h3>
 									<ul className="bd-list">
 										<li>
 											<label className="badge green">모집중</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="subject"><Link to="/main/usr_1900/usr_1908"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
 											<div className="date">2024.05.30 ~ 2025.01.30</div>
 										</li>
 										<li>
 											<label className="badge green">모집중</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="subject"><Link to="/main/usr_1900/usr_1908"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
 											<div className="date">2024.05.30 ~ 2025.01.30</div>
 										</li>
 										<li>
 											<label className="badge green">모집중</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="subject"><Link to="/main/usr_1900/usr_1908"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
 											<div className="date">2024.05.30 ~ 2025.01.30</div>
 										</li>
 										<li>
 											<label className="badge gray">모집완료</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="subject"><Link to="/main/usr_1900/usr_1908"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
 											<div className="date">2024.05.30 ~ 2025.01.30</div>
 										</li>
 										<li>
 											<label className="badge gray">모집완료</label>
-											<div className="subject"><Link to="#"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
+											<div className="subject"><Link to="/main/usr_1900/usr_1908"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
 											<div className="date">2024.05.30 ~ 2025.01.30</div>
 										</li>
 									</ul>
-									<button type="button" className="button-more">더보기</button>
+									<Link to="/main/usr_1900/usr_1904" className="button-more">더보기</Link>
 								</div>
 							</div>
 						</div>
