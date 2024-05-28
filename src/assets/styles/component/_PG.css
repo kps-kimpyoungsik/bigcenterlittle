@@ -27,6 +27,7 @@
     border: 1px solid transparent;
     margin-right: 5px;
     border-radius: 3px;
+    /* border: 1px solid red; */
 }
 .pg .group .item.active {
     color: var(--p1);
@@ -46,8 +47,8 @@
 }
 .pg .group .item.first {background: url(../../img/icon/ic_pg_first.svg);}
 .pg .group .item.prev {background: url(../../img/icon/ic_pg_prev.svg);}
-.pg .group .item.next {background: url(../../img/icon/ic_pg_next.svg);}
-.pg .group .item.last {background: url(../../img/icon/ic_pg_last.svg);}
+.pg .group .item.next {background: url(../../img/icon/ic_pg_next.svg) 0 -1px;}
+.pg .group .item.last {background: url(../../img/icon/ic_pg_last.svg) 0 -1px;}
 
 .pg .group .item.first:hover,
 .pg .group .item.prev:hover,
