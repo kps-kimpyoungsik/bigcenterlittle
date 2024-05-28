@@ -199,8 +199,8 @@ input, button, textarea {
   column-gap: 8px;
 }
 .filebox .tf {
-flex-grow: 1;
-max-width:calc(100% - 146px);
+  flex-grow: 1;
+  max-width: calc(100% - 146px);
 }	
 .filebox input[type="file"] {
 position: absolute;
@@ -209,4 +209,23 @@ height: 0;
 padding: 0;
 overflow: hidden;
 border: 0;
+}
+
+/*clear buttton*/
+.tf-with-clear {
+  position: relative;
+  display: inline-block;
+}
+.tf-with-clear .btn-clear {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23BBC4CF'/%3E%3Cpath d='M13.5 6.5L6.5 13.5' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.5 13.5L6.5 6.5' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  border: 0;
+  border-radius: 50%;
+  text-indent: -9999px;
+  cursor: pointer;
 }

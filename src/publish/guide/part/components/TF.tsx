@@ -41,6 +41,13 @@ function ContentsContainer() {
 			<br/><br/>
 			<h3 className="deco-h3">Password</h3>					
 			<UIInputPW className={'tf tf-md w100p'} value={''} placeholder={'비밀번호를 입력하세요.'}  />	
+
+			<br/><br/>
+			<h2 className="deco-h2">Clear Button</h2>								
+			<div className="tf-with-clear">
+				<UIInput className={'tf tf-md w100p'} value={'클리어버튼'} placeholder={'PH'} readOnly={false} />
+				<button className="btn-clear" type="button">삭제</button>  {/* .hide 클래스시 사라짐 */}
+			</div>
 			
 		</div>
 	);
