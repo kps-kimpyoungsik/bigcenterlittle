@@ -359,7 +359,7 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3">
 								<p className="fo-key">이메일</p>
 								<div className="fo-value">
-									<div className="hz-root hz-gap5 w565">
+									<div className="hz-root hz-gap5 w100p">
 										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'메일계정 입력'} />	
 										<span>@</span>
 										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'메일주소 입력'} />	
