@@ -11,7 +11,7 @@ import ModalPopup from 'components/modal/';
 //import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip';
 //import { Popover } from "react-tiny-popover";
-import Virtual from 'assets/img/pages/usr_virtual.svg';
+//import Virtual from 'assets/img/pages/usr_virtual.svg';
 import Raonkupload from 'components/input/kupload';
 function ContentsContainer() {
 	const modaladm2004 = useToggleState({});
@@ -326,12 +326,13 @@ function ContentsContainer() {
 			{/* modal - 가상 계좌 발급 안내 */}
 			<ModalPopup
 				open={modaladm2004.isShowing}
-				title="가상 계좌 발급 안내"
+				title="가상계좌 발급 확인서 요청"
 				size="mid"
 				onClose={modaladm2004.close}
 			>
 				<div className="modal-con">
 					<div className="virtual-account">
+						{/*  
 						<h3 className="mb15">가상계좌란?</h3>
 						<p className="mb30">대중소기업 협력재단이 하나은행으로부터 가상계좌를 발급받아 출연기업에게 부여하고, 출연금이 개별 가상계좌에 입금되면 실시간 (또는 지정된 시각)으로 대중소기업 상생협력기금 모계좌에 자동으로 이체해드리는 서비스입니다.</p>
 						<h3 className="mb15">서비스 흐름</h3>
@@ -343,10 +344,40 @@ function ContentsContainer() {
 							<li>기금담당 : 홍길동</li>
 							<li>전화번호 : 02-368-8700</li>
 						</ul>
+						v0.9 반영*/}
+						<div className="guide mb15">
+							아래 입력된 이메일로 가상계좌 발급 확인서를 발송합니다.<br />
+							이메일을 확인 후 확인서요청 버튼을 클릭해 주세요.
+						</div>
+						<form className="fo fo-col2" name="" action="" method="">
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">담당자명</p>
+								<div className="fo-value">
+									<UIInput className={'tf tf-md w100p'} value={'홍길동'} placeholder={''} />
+								</div>
+							</div>
+							<div className="fo-item fo-m-1-3">
+								<p className="fo-key">이메일</p>
+								<div className="fo-value">
+									<div className="hz-root hz-gap5 w565">
+										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'메일계정 입력'} />	
+										<span>@</span>
+										<UIInput className={'hz-item hz-fg tf tf-md'} value={''} placeholder={'메일주소 입력'} />	
+										<div className="hz-item hz-fg sl sl-md">
+											<select>
+												<option>직접입력</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
 					</div>
 				</div>
 				<div className="modal-bottom">
-					<Button color="pri" size="md">확인</Button>
+					<Button color="gray-o" size="md">취소</Button>
+					<Button color="pri" size="md">확인서 요청</Button>
 				</div>
 			</ModalPopup>	
 		</PageContainer>
