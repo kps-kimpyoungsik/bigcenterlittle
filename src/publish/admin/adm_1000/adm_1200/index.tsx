@@ -23,9 +23,9 @@ function ContentsContainer() {
 									
 									<div className="hz-root hz-left hz-gap8">
 										<div className="hz-item hz-root hz-gap5"> 
-											<div className="hz-item w150"><UIDatePicker /></div> {/* [M.20240522] */} 
+											<div className="hz-item w120"><UIDatePicker /></div> {/* [M.20240522] */} 
 											<span className="hz-item">~</span>
-											<div className="hz-item w150"><UIDatePicker /></div> {/* [M.20240522] */} 
+											<div className="hz-item w120"><UIDatePicker /></div> {/* [M.20240522] */} 
 										</div>
 									</div>
 

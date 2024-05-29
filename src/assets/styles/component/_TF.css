@@ -193,6 +193,45 @@ input, button, textarea {
   right:20px;
 }
 
+
+.datepicker .react-datepicker__header {
+  padding-top: 19px;
+}
+.datepicker .react-datepicker__navigation--previous {
+  /* background: red; */
+}
+.datepicker .react-datepicker__navigation--next {
+  /* background: red; */
+  right:  auto;
+  left: 162px;
+}
+.react-datepicker__current-month {
+  /* background: pink; */
+  width: 160px;
+}
+.react-datepicker__today-button {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  border: 1px solid #9EC5FF;
+  background: #9EC5FF;
+  font-size: 13px;
+  font-weight: 500;
+  color: #297BF2;
+  border-radius: 3px;
+  padding: 5px 5px;
+  width: 46px;
+}
+.datepicker .react-datepicker__day--today {
+  color: #297BF2 !important;
+}
+.datepicker .react-datepicker__day--selected.react-datepicker__day--today {
+  color: #fff !important;
+}
+.react-datepicker__day {
+  border-radius: 50% !important;
+}
+
 /*TypeFile  추가*/
 .filebox {
   display: flex;
