@@ -178,9 +178,7 @@ input, button, textarea {
   color:#fff;
   border-radius: 50%;
   background-color: #3E8BFD;
-
 }
-
 .datepicker .react-datepicker__navigation {
   width:18px;
   height:18px;
@@ -197,16 +195,14 @@ input, button, textarea {
 .datepicker .react-datepicker__header {
   padding-top: 19px;
 }
-.datepicker .react-datepicker__navigation--previous {
-  /* background: red; */
-}
+/* .datepicker .react-datepicker__navigation--previous {
+  background: red;
+} */
 .datepicker .react-datepicker__navigation--next {
-  /* background: red; */
   right:  auto;
   left: 162px;
 }
 .react-datepicker__current-month {
-  /* background: pink; */
   width: 160px;
 }
 .react-datepicker__today-button {

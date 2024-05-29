@@ -382,7 +382,9 @@ h1.tx-hd2 + .hz-root {
 }
 .join-complete {
     text-align: center;
-    margin-top:100px;
+    padding:50px 0 70px;
+    margin:50px 0;
+    background-color:#F9FAFC ;
 }
 .join-complete::before {
     content:'';
@@ -411,7 +413,11 @@ h1.tx-hd2 + .hz-root {
 }
 .modal-con .tb-search-form.bd {
     border:1px solid #E4E4E4;
+    border-radius: 8px;
     padding:0;
+}
+.modal-con .tb-search-form.bd .hz-root {
+    padding:15px 0;
 }
 .modal-con .tb-search-form .sl {
     min-width:120px;

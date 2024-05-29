@@ -114,11 +114,12 @@ function ContentsContainer() {
 								</div>
 								<div className="fo-item fo-m-1-3 req">
 									<p className="fo-key">기업명</p>
-									<div className="fo-value flex-wrap">
-										<div className="hz-root hz-gap8 w565">
-											<UIInput className={'hz-item hz-fg tf tf-md'} value={'(주)신세계동대구복합환승센터'} placeholder={'기업명을 찾기 후 선택하세요'} />
+									<div className="fo-value d-block">
+										<div className="hz-root hz-gap8">
+											<UIInput className={'tf tf-md w400'} value={'(주)신세계동대구복합환승센터'} placeholder={'기업명을 찾기 후 선택하세요'} readOnly={true}/>
 											<Button color='pri-o2' size="md"  onClick={modaladm1202.open}>찾기</Button>
 											<Button color='gray-o' size="md">삭제</Button>
+											<Button color='gray' size="md">기업등록</Button>
 										</div>
 										<p className="tx-msg mt8"><span className="fc-pri">*소속 기업 정보가 없을 경우, 재단 담당자에게 기업 등록 요청 후 회원가입을 진행 바랍니다.</span></p>
 									</div>
