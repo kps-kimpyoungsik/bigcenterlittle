@@ -17,7 +17,7 @@ function LayoutHeader() {
 						<span>
 							<em className='user-name'>홍길동</em>님
 							(남은시간 세션 <em className='user-session'>58:31</em>)
-						</span>&nbsp;
+						</span>
 						<button className='btn-session-extend' type='button'>연장</button>
 					</li>
 					{/* Login 후 */}

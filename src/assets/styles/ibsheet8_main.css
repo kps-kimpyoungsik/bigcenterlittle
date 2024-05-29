@@ -2272,3 +2272,8 @@ BODY[class*=BodyPrint]>DIV[class*=PrintPage]>DIV>DIV>DIV[class*=PaddingWrapper]{
   color: #fff;
 }
 
+
+/*readonly 회색으로 나오는거 방지*/
+.IBClassReadOnly {
+  background: #fff;
+}

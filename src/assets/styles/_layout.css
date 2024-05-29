@@ -10,7 +10,6 @@
 */
 
 /*z-index*/
-/* .toast {z-index: 1100;} */
 .loading {z-index: 1100;}
 .alert {z-index: 1000;}
 .modal {z-index: 900;}
@@ -18,9 +17,11 @@
 .al-dim {z-index: 800;}
 .md {z-index: 750;}
 .md-dim {z-index: 700;}
-/* .fww-header-util {z-index: 500;} */
 .fww-util {z-index: 510;}
 .fww-header {z-index: 500;}
+.sf {z-index: 10;}
+#sheetDiv {z-index: 5; position: relative;}
+
 .fww-root {
     /*min-width: 1903px;*/ /*크롬(Bar:17)*/
     /*min-width: 1897px;*/ /*엣지(Bar:23)*/
@@ -87,7 +88,8 @@
     display: none;;
 }
 .fww-root .fww-util>ul>li>a {
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 14px;
     color: #000;
     text-decoration: none;
 }
@@ -104,12 +106,16 @@
 }
 .fww-root .fww-util>ul>li> .btn-session-extend {
     font-size: 12px;
-    font-weight: 400;
+    font-size: 14px;
+    /* font-weight: 400; */
+    font-weight: 500;
     color: #333;
     border: 1px solid #ccc;
     background: #fff;
     height: 22px;
+    height: 26px;
     border-radius: 3px;
+    margin-left: 5px;
 }
 .fww-root .fww-header {
     position: relative;
@@ -574,7 +580,7 @@
 }
 .fww-root .fww-util>ul>li>a{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 .fww-root .fww-util>ul>li>a::before{
     content:'';

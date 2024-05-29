@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .sf {
+  position: relative;
   border-radius: 10px;
   background: #fff;
   /* padding: 30px; */
