@@ -6,7 +6,12 @@ import Breadcrumb from 'layouts/admin/Breadcrumb';
 import Button from 'components/buttons/';
 import UIInput from 'components/input/input';
 import UIDatePicker from "components/datepicker";
+import UIDataTable from "components/dataTable/UIDataTable"
 function ContentsContainer() {
+	const tbCommCorpBizLicList= [
+		{key:1,data:[]},
+		{key:2,data:[]},
+	]
 	return (
 		<PageContainer>
 			<LayoutAside />
@@ -21,13 +26,13 @@ function ContentsContainer() {
 								<p className="fo-key">기업규모</p>
 								<div className="fo-value">
 									<div className="sl sl-md">
-										<select name="" id="" className="">
-											<option value="0">선택</option>
-											<option value="1">대기업</option>
-											<option value="2">공공기관</option>
-											<option value="3">중견기업</option>
-											<option value="4">중소기업</option>
-											<option value="5">기타</option>
+										<select name="" id="" className="" >
+											<option>선택</option>
+											<option>대기업</option>
+											<option>공공기관</option>
+											<option>중견기업</option>
+											<option>중소기업</option>
+											<option>기타</option>
 										</select>
 									</div>
 								</div>
@@ -37,7 +42,7 @@ function ContentsContainer() {
 								<div className="fo-value">
 									<div className="sl sl-md">											
 										<select name="" id="" className="">
-											<option value="0">선택</option>
+											<option>선택</option>
 											<option value="1">농업</option>
 											<option value="2">임업 및 어업</option>
 											<option value="3">광업</option>
@@ -94,7 +99,7 @@ function ContentsContainer() {
 								<div className="fo-value">
 									<div className="sl sl-md">
 										<select name="" id="" className="">
-											<option value="0">선택</option>
+											<option>선택</option>
 											<option selected value="1">동반성장지수</option>
 											<option value="2">공공기관평가</option>
 											<option value="3">미평가대상</option>
@@ -107,7 +112,7 @@ function ContentsContainer() {
 								<div className="fo-value">
 									<div className="sl sl-md">
 										<select name="" id="" className="">
-											<option value="0">선택</option>
+											<option>선택</option>
 											<option value="1">제조업-전기.전자</option>
 											<option value="2">제조업-기계.자동차.조선</option>
 											<option value="3">제조업-화학.비금속.금속</option>
@@ -121,12 +126,12 @@ function ContentsContainer() {
 											<option value="11">정보서비스업</option>
 											<option value="12">플랫폼사업자</option>
 											<option value="13">광고업</option>
-											<option value="14">공기업형-선도형</option>
+											<option value="14">공기업형 - 선도형</option>
 											<option value="15">공기업형 - 일반형</option>
-											<option value="16">준정부형 – 선도형(위탁집행형)</option>
-											<option value="17">준정부형 – 일반형(기금관리형)</option>
-											<option value="18">준정부형 – 일반형(강소형)</option>
-											<option value="19">준정부형 – 일반형(기타형)</option>
+											<option value="16">준정부형 - 선도형(위탁집행형)</option>
+											<option value="17">준정부형 - 일반형(기금관리형)</option>
+											<option value="18">준정부형 - 일반형(강소형)</option>
+											<option value="19">준정부형 - 일반형(기타형)</option>
 										</select>
 									</div>
 								</div>
@@ -148,7 +153,7 @@ function ContentsContainer() {
 								<div className="fo-value">
 									<div className="sl sl-md">
 										<select name="" id="" className="">
-											<option value="0">선택</option>
+											<option>선택</option>
 											<option selected value="1">영리</option>
 											<option value="2">비영리</option>
 										</select>
@@ -164,7 +169,7 @@ function ContentsContainer() {
 							<div className="fo-item fo-m-1-3">
 								<p className="fo-key">주소</p>
 								<div className="fo-value">
-									<div className="hz-root hz-gap8">
+									<div className="hz-root hz-gap8 w100p">
 										<UIInput className={'hz-item tf tf-md w120'} value={'12345'} placeholder={'우편번호'} readOnly={true}/>
 										<UIInput className={'hz-item tf tf-md hz-fg'} value={'서울특별시 중구 퇴계로 173'} placeholder={'주소'} readOnly={true}/>										
 										<Button color="gray-o" size="md">우편번호 찾기</Button>
@@ -192,6 +197,39 @@ function ContentsContainer() {
 						</div>
 					</form>	
 					<h2 className="tx tx-hd3">사업자등록증 이력</h2>
+
+					{/* DataTable */}
+					<UIDataTable 
+						dataList={tbCommCorpBizLicList}
+						headerVisible={{totalCount: true}}
+						rowNumber={true}
+						columns={[
+							{
+								title: "파일명",
+								width: "",
+								align: "left", //align은 좌측정렬일때 left, 우측정렬일때 right, 기본 가운데 정렬입니다. 
+								render: () => (
+									<span>사업자 등록증.pdf (57.44 KB)</span> // data 처리
+								),
+							},
+							{
+								title: "등록자",
+								width: "150px",
+								render: () => (
+									<span>관리자</span>// data 처리
+								),
+							},
+							{
+								title: "등록일시",
+								width: "180px",
+								render: () => (
+									<span>2022-05-23 11:36:06</span>// data 처리
+								),
+							},
+						]}
+					/>
+					
+					{/* 기존 table 
 					<div className="tb mb10">
 						<div className="tb-top">
 								<div>
@@ -234,6 +272,8 @@ function ContentsContainer() {
 							</tbody>
 						</table>
 					</div>
+ 					*/}
+
 					<div className="hz-root hz-right hz-gap5">
 						<Button color="pri-o" size="sm">저장</Button>
 						<Button color="gray-o" size="sm">목록</Button>
