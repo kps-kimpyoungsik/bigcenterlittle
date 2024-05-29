@@ -55,3 +55,40 @@
     opacity: 0.5;
 }
 .al+.al-dim.active {display: block;}
+
+
+
+
+/*Alret setting*/
+.size-alert .ReactModal__Content{
+	max-width: 360px;
+}
+.size-alert .ReactModal__Content .modal-popup-header {
+	position: relative;
+	margin-bottom:0;
+}
+.size-alert .ReactModal__Content .modal-popup-header .title {
+	font-size:0;
+}
+.size-alert .ReactModal__Content .btn-close{
+	position: absolute;
+	/* top:0; */
+	/* right:0; */
+	top:-15px;
+	right:-10px;    
+}
+.size-alert .ReactModal__Content .modal-con{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 115px;
+	font-size:15px;
+	font-weight:500;
+}
+.size-alert .ReactModal__Content .modal-bottom {
+	margin-top:0;
+}
+.size-alert .ReactModal__Content .modal-bottom .bt,
+.size-alert .ReactModal__Content .modal-bottom .buttons {
+	min-width:110px;
+}

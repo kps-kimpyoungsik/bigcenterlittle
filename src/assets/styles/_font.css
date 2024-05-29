@@ -121,25 +121,14 @@ http://scripts.sil.org/OFL
 	src: local('Roboto Regular'), url('../font/Roboto-Regular.woff') format('woff');
 }
 
-body, th, td, input, select, textarea, button {
+body, th, td, input, select, textarea, button,
+body .react-datepicker {
   font-family: 'Basefont', AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum,
     "돋움", sans-serif;
 }
-/*
-#sheetDiv .IBMainTable, 
-#sheetDiv2 .IBMainTable, 
-.price {
-  font-family: 'Adaptivefont';
-	font-weight: 500;
-}
-*/
 .ibsheet .IBMainTable, 
 .price {
   font-family: 'Adaptivefont';
 	font-weight: 500;
 }
 
-/* #sheetDiv,
-#sheetDiv2 {
-	border-top: 1px solid red;
-} */
