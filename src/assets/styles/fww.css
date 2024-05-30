@@ -1,4 +1,5 @@
-@import url("ibsheet8_main.css"); /*IBSheet*/
+@import url("raonkupload.custom.css"); /*KUpload 커스텀*/
+@import url("ibsheet8_main.css"); /*IBSheet 원본+커스텀*/
 @import url("_var.css"); /*스타일변수*/
 @import url("_base.css"); /*리셋 및 기본 스타일*/
 @import url("_font.css"); /*폰트 정의*/
