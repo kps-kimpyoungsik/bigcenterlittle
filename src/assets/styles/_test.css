@@ -242,3 +242,106 @@ a:hover {
 input, select {
 	cursor: inherit;
 }
+
+.filebox .ui-font-family {
+	font-family: 'Basefont';
+}
+.filebox .kupload-simple-ui{
+	width:100%;
+}
+.filebox .standard-font-size {
+	font-size:14px;
+}
+.filebox .kupload-simple-single-ui {
+	height: 36px !important;
+	padding:0;
+	border:none;
+	margin:0;
+}
+
+.filebox .kupload-simple-single-ui-area {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-btn-area {
+	position: static;
+	transform: inherit;
+	border-left: none;
+	width: auto;
+}
+.filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-info-area {
+	box-sizing: border-box;
+	width: auto;
+	max-width: calc(100% - 73px);
+	flex:1;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #fff;
+	padding:0 36px 0 12px;
+}
+.filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-info-area.file-btn-xonly .file-info {
+	margin:0;
+	max-width: 100%;
+	width:auto;
+}
+.filebox .kupload-simple-single-ui .file-info .file-name,
+.filebox .kupload-simple-single-ui .file-info .file-ext {
+	margin-bottom:0;
+	line-height: 1;
+	font-size:14px;
+}
+.filebox .kupload-simple-single-ui .file-info .file-size {
+	border-radius: 0;
+	border:none;
+	padding:0;
+	font-size:14px;
+	color:#333;
+	line-height: 1;
+}
+.filebox .kupload-simple-single-ui .file-info .file-size::before {
+	content:'('
+}
+.filebox .kupload-simple-single-ui .file-info .file-size::after {
+	content:')'
+}
+.filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-info-area .file-list-icons svg {
+	display: none;
+}
+.filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-info-area .file-list-icons a {
+	cursor: pointer;
+	width:16px;
+	height:16px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23BBC4CF'/%3E%3Cpath d='M10.8 5.19995L5.19995 10.8' stroke='white' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.8 10.8L5.19995 5.19995' stroke='white' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.filebox .kupload-single-ui-dwbtn {
+	margin-top:0;
+}
+.filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-btn-area a {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #5C9EFF;	
+	width: 65px;
+	height:36px;
+	background-color: #EDF4FF;
+	color:#5C9EFF;
+	border-radius: 3px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("data:image/svg+xml,%3Csvg width='23' height='14' viewBox='0 0 23 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.78453 3.44141C4.78453 3.90625 4.90302 4.35286 5.14 4.78125C5.38154 5.20964 5.72561 5.59017 6.17223 5.92285C6.6234 6.25098 7.15432 6.49935 7.765 6.66797L7.17711 7.66602C6.47529 7.47005 5.86461 7.16927 5.34508 6.76367C4.8301 6.35352 4.43362 5.86816 4.15563 5.30762C3.88219 5.91829 3.48115 6.44922 2.9525 6.90039C2.42841 7.34701 1.80862 7.67969 1.09313 7.89844L0.464219 6.87305C1.07945 6.69987 1.61494 6.4401 2.07066 6.09375C2.53095 5.7474 2.88414 5.34635 3.13023 4.89062C3.37633 4.4349 3.49938 3.95182 3.49938 3.44141V3.30469H0.83336V2.26562H3.49938V0.857422H4.7982V2.26562H7.45055V3.30469H4.78453V3.44141ZM10.1166 3.85156H11.8939V4.93164H10.1166V7.98047H8.81773V0.912109H10.1166V3.85156ZM10.308 9.63477H6.95836C7.03583 10.013 7.25003 10.3753 7.60094 10.7217C7.95185 11.0635 8.4053 11.3574 8.96129 11.6035C9.52184 11.8496 10.1393 12.0228 10.8138 12.123L10.3353 13.1211C9.40563 12.9753 8.57848 12.6995 7.85387 12.2939C7.12926 11.8883 6.58922 11.3962 6.23375 10.8174C5.88284 11.3916 5.34736 11.8792 4.62731 12.2803C3.91181 12.6859 3.08922 12.9616 2.15953 13.1074L1.68102 12.1094C2.36005 12.0137 2.97529 11.8451 3.52672 11.6035C4.08271 11.362 4.53616 11.0703 4.88707 10.7285C5.23798 10.3867 5.45217 10.0221 5.52965 9.63477H2.1732V8.5957H10.308V9.63477ZM22.4967 13.1621H21.1842V0.912109H22.4967V13.1621ZM18.8463 2.22461C18.8463 4.12044 18.3929 5.80664 17.486 7.2832C16.5836 8.75521 15.1276 9.97201 13.1178 10.9336L12.4342 9.88086C14.0429 9.11523 15.262 8.18327 16.0914 7.08496C16.9254 5.98665 17.4062 4.71289 17.5338 3.26367H13.0221V2.22461H18.8463Z' fill='%23297BF2'/%3E%3C/svg%3E%0A");
+}
+
+.filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-btn-area svg {
+	display: none;
+}
+
+
+
+/* 
+kupload-simple-ui-title-area-icon-border kupload-simple-ui-font-size
+kupload-simple-ui-title-area-icon-border kupload-simple-ui-font-size kupload-single-ui-dwbtn */

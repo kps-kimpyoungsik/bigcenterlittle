@@ -29,7 +29,6 @@ function ContentsContainer() {
 								<Button color='pri' size="big" href="/main/usr_1000/usr_1300">로그인 페이지로 이동</Button>
 							</div>
 						</div>
-
 					</div>
 				</main>
 			</div>				
