@@ -159,14 +159,23 @@
 .fww-header.active .fww-gnb .d1:first-child::after {
     content: '';
     position: absolute;
-    left:-20px;
-    bottom:0;
+
     transform: translateX(-100%);
     width:180px;
     height:180px;
-    background: url('/src/assets/img/char/char_gnb.svg') center center no-repeat;
+    
     background-size: contain;
     pointer-events: none;
+}
+.fww-header.usr.active .fww-gnb .d1:first-child::after {
+    left:-20px;
+    bottom:20px;    
+    background: url('/src/assets/img/char/char_gnb_usr.svg') center center no-repeat;
+}
+.fww-header.adm.active .fww-gnb .d1:first-child::after {
+    left:-40px;
+    bottom:40px;    
+    background: url('/src/assets/img/char/char_gnb_adm.svg') center center no-repeat;
 }
 
 
@@ -206,8 +215,10 @@
 }
 .fww-gnb .d2 {
     display: none;
-    padding:10px 0;
-    height: calc(100% - 90px);
+    /* padding:10px 0; */
+    padding:10px 0 30px 0;
+    /* height: calc(100% - 90px); */
+    height: calc(100% - 110px);
     border-right:1px solid #ededed;
 }
 .fww-header.active .d2 {

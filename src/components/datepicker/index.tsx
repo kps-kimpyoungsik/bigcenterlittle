@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css';
 
 export interface DatePickerBaseProps {
-	dateFormat?: string;
+	dateFormat?: string; 
 	displayFormat?: string;
 	displayOnly?: boolean;
 	showMonthYearPicker?: boolean;
