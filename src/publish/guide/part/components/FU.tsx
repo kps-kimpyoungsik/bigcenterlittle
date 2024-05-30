@@ -1,6 +1,7 @@
 import React from "react";
 import Raonkupload from 'components/input/kupload';
 import RaonkuploadSimple from 'components/input/kuploadSimple';
+import "assets/styles/_kupload.css"
 function ContentsContainer() {
 	return (
 		<div className='fww-con'>
