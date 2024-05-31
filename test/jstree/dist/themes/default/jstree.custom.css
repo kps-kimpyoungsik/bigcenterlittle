@@ -1,0 +1,89 @@
+
+.jstree.jstree-default {
+  border: 0;
+}
+.jstree.jstree-default {}
+.jstree.jstree-default .jstree-node {
+  position: relative;
+  min-height: 30px;
+  line-height: 30px;
+  margin-left: 15px;  
+  margin-bottom: 5px;
+}
+.jstree.jstree-default .jstree-node.jstree-last {
+  margin-bottom: 0;
+}
+.jstree.jstree-default .jstree-node:after {
+  position: absolute;
+  top: 32px;
+  bottom: 0px;
+  left: 7px;
+  content: "";
+  display: block;
+  width:1px;
+  background: #EEEEEE;
+}
+.jstree.jstree-default .jstree-node.jstree-closed:after {
+  display: none;
+}
+.jstree.jstree-default .jstree-node.jstree-leaf:after{
+  display: none;
+}
+.jstree-default>.jstree-container-ul>.jstree-node {
+  margin-left: 0px;
+}
+.jstree-default .jstree-icon:empty {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.jstree-default .jstree-anchor {
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+.jstree-anchor.jstree-hovered {
+  background: none;
+  background-color: #ECF4FF;
+}
+.jstree-anchor.jstree-clicked {
+  background-color: #ECF4FF;
+  box-shadow: none;
+  color: #297BF2;
+  font-weight: 500;
+}
+.jstree-default .jstree-closed>.jstree-ocl,
+.jstree-default .jstree-open>.jstree-ocl {
+  position: relative;
+  top: 7px;
+  width: 15px;
+  height: 15px;
+}
+.jstree-default .jstree-closed>.jstree-ocl {
+  background: url(./jstree_plus.svg) no-repeat 0 0;
+  margin-right: 5px;
+}
+.jstree-default .jstree-open>.jstree-ocl {
+  background: url(./jstree_minus.svg) no-repeat 0 0;
+  margin-right: 5px;
+}
+.jstree-default .jstree-node .jstree-anchor .jstree-themeicon {
+  background: url(./jstree_folder_closed.svg) no-repeat 0 50%;
+}
+.jstree-default .jstree-node.jstree-open>.jstree-anchor:first-of-type .jstree-themeicon {
+  background: url(./jstree_folder_opened.svg) no-repeat 0 50%;
+}
+.jstree-default .jstree-leaf>.jstree-ocl {
+  background: none;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.jstree-default .jstree-node, .jstree-default .jstree-icon { /*점선 없애기*/
+  background: none;
+}

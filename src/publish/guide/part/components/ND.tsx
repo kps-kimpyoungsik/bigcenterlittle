@@ -12,7 +12,6 @@ function ContentsContainer() {
 	return (
 		<>
 			
-				
 				<style>{css}</style> {/* Test용 CSS입니다. 실제 개발시 사용금지 */}
 
 				<h1 className="deco-h1">ND(노데이터)</h1>

@@ -22,6 +22,7 @@ import TB from './components/TB';
 import FO from './components/FO';
 import SF from './components/SF';
 import FU from './components/FU';
+import MT from './components/MT';
 function ContentsContainer() {
 	const asideInfo =[
 		{
@@ -47,7 +48,7 @@ function ContentsContainer() {
 			conts:[
 				{name:"PT (공간 분할)", target:"PT"},
 				{name:"TT (툴팁)", target:"TT"},
-				{name:"AL 알럿트", target:"AL"},
+				{name:"AL (알럿트)", target:"AL"},
 				{name:"MD (모달)", target:"MD"},
 			]
 		},
@@ -60,13 +61,14 @@ function ContentsContainer() {
 				{name:"FO (폼)", target:"FO"},
 				{name:"SF (검색필터)", target:"SF"},
 				{name:"FU (Fileupload)", target:"FU"},
+				{name:"MT (MenuTree)", target:"MT"},
 			]
 		},
 	]
 	const selectComponent = {
 		TX : <TX />, BT : <BT />, BD : <BD />,  TF:<TF />, CH:<CH />, RD:<RD />, SL:<SL />, TA:<TA />, PG:<PG />, ND:<ND />, LD:<LD />,
 		PT:<PT />, TT:<TT />, AL:<AL />, MD:<MD />,
-		TB:<TB />, FO:<FO />, SF:<SF />, FU:<FU />
+		TB:<TB />, FO:<FO />, SF:<SF />, FU:<FU />, MT:<MT />
 	}
 	const [content, setContent] = useState('TX');
 	const handleClickButton = e => {
