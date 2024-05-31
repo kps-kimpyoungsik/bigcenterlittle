@@ -426,6 +426,7 @@ h1.tx-hd2 + .hz-root {
     width:310px;
 }
 
+
 /*로그인*/
 .fww-main.sign-in-main {
     height:100%;
@@ -812,15 +813,8 @@ h1.tx-hd2 + .hz-root {
 .mypage .w100p .react-datepicker-wrapper {
     display: flex;
 }
-.mypage .fo-value .address {
-    width:855px;
-}
-.mypage .fo-value .address .hz-root {
-    width: 270px;
-}
-.mypage .fo-value .w-half {
-    width:370px;
-}
+
+
 /*비밀번호수정*/
 .mypage.pw-edit {
     width: 820px;

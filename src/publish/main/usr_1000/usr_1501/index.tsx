@@ -46,7 +46,7 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">업종</p>
 									<div className="fo-value">
-										<div className="sl sl-md">
+										<div className="sl sl-md w100p">
 											<select>
 												<option value="">업종</option>
 												{sectors.map((sec, idx) =>
@@ -67,7 +67,7 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">설립형태</p>
 									<div className="fo-value">
-										<div className="sl sl-md">
+										<div className="sl sl-md w100p">
 											<select>
 												<option>영리</option>
 												<option>비영리</option>
@@ -78,7 +78,7 @@ function ContentsContainer() {
 								<div className="fo-item req">
 									<p className="fo-key">기업규모</p>
 									<div className="fo-value">
-										<div className="sl sl-md">
+										<div className="sl sl-md w100p">
 											<select>
 												<option>대기업</option>
 												<option>공공기관</option>
@@ -101,21 +101,12 @@ function ContentsContainer() {
 										<UIInput className={'tf tf-md w100p'} value={'000-00-00000'} placeholder={''} readOnly={true} />
 									</div>
 								</div>
-								{/* 
-								<div className="fo-item fo-m-1-3 req">
-									<p className="fo-key">아이디</p>
-									<div className="fo-value">
-										<div className="w-half">
-											<UIInput className={'tf tf-md w100p'} value={'Idshowing'} placeholder={''} readOnly={true} />
-										</div>
-									</div>
-								</div>
-								v0.89삭제 */}
+							
 								<div className="fo-item fo-m-1-3 req">
 									<p className="fo-key">주소</p>
 									<div className="fo-value">
-										<div className="address">
-											<div className="hz-root hz-gap8">
+										<div className="address w100p">
+											<div className="hz-root hz-gap8 w280">
 												<UIInput className={'hz-item hz-fg tf tf-md'} value={'00000'} placeholder={''} disabled={true} />
 												<Button color='gray-o' size="md">주소찾기</Button>
 											</div>
@@ -127,7 +118,7 @@ function ContentsContainer() {
 								<div className="fo-item fo-m-1-3">
 									<p className="fo-key">홈페이지</p>
 									<div className="fo-value">
-										<div className="w-half">
+										<div className="w100p">
 											<UIInput className={'tf tf-md w100p'} value={'www.win-win.or.kr'} placeholder={''} />
 										</div>
 									</div>
