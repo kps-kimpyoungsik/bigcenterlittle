@@ -23,18 +23,20 @@ export interface DatePickerProps extends DatePickerBaseProps {
 	dateFormat?:string;
 }
 
-UIDatePicker.defaultProps = {
+UIDatePicker2.defaultProps = {
 	dateFormat : 'yyyy-MM-dd(eee)'
 } as DatePickerBaseProps;
 
 // DatePicker
-function UIDatePicker(props: DatePickerProps) {
+function UIDatePicker2(props: DatePickerProps) {
 	const [selectedDate, setSelectedDate] = useState<Date | null>(new Date());
 	//const [date] = React.useState(props.value)
 	const datePickerRef = React.useRef<any>();;
 	const picker: React.ReactElement = (
-		<div className="datepicker">
+		<div className="datepicker hz-root hz-gap5">
+			
 			<DatePicker
+				className='hz-item'
 				ref={datePickerRef}
 				dateFormat={props.dateFormat}
 				minDate={props.minDate}
@@ -43,9 +45,20 @@ function UIDatePicker(props: DatePickerProps) {
 				//selected={date}
 				onChange={(date) => setSelectedDate(date)}
 			/>
+			<span className='hz-item'>~</span>
+			<DatePicker
+				className='hz-item'
+				ref={datePickerRef}
+				dateFormat={props.dateFormat}
+				minDate={props.minDate}
+				maxDate={props.maxDate}
+				selected={selectedDate}
+				//selected={date}
+				onChange={(date) => setSelectedDate(date)}
+			/>			
 		</div>
 	);
 	return picker;
 }
 
-export default UIDatePicker;
+export default UIDatePicker2;

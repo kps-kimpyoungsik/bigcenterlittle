@@ -5,8 +5,10 @@
     ---------------------------------------------------------------------
     @ 목적 : [대중소기업상생협력기금종합관리시스템] 공통 레이아웃 정의
     @ 작성 : GRIDA Publishing Team.
-    @ 최종 : 2024.05.22.$$:$$
-    @ 메모 :  - (거의)모든 페이지에 등장하는 '공통 영역'을 정의한다. 예를들면 상단 헤더, 왼쪽 어사이드, 중앙 메인컨텐트 영역. 
+    @ 최종 : 2024.05.31.18:00
+    @ 메모 :  
+        - (거의)모든 페이지에 등장하는 '공통 영역'을 정의한다. 예를들면 상단 헤더, 왼쪽 어사이드, 중앙 메인컨텐트 영역. 
+        - z-index는 _layout.css 최상단에서 모아서 정의한다.
 */
 
 /*z-index*/
@@ -23,27 +25,13 @@
 #sheetDiv {z-index: 5; position: relative;}
 
 .fww-root {
-    /*min-width: 1903px;*/ /*크롬(Bar:17)*/
-    /*min-width: 1897px;*/ /*엣지(Bar:23)*/
-
-    /*엣지 항상 사이드바 표시 모드 + a*/
-    /* min-width: 1857px; */
-    /* width: 1760px; */
-    
-    /*
-        1760
-        엣지: 
-    */
     min-width: 1745px; /*엣지기준 */
-    /*min-width: 1748px;*/ /*크롬기준 */
 }
 .fww-root .fww-header-util {
-    /* position: fixed; */
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 125px; */
     height: 115px;
     background: #fff;
 }
@@ -88,7 +76,6 @@
     display: none;;
 }
 .fww-root .fww-util>ul>li>a {
-    /* font-size: 13px; */
     font-size: 14px;
     color: #000;
     text-decoration: none;
@@ -107,7 +94,6 @@
 .fww-root .fww-util>ul>li> .btn-session-extend {
     font-size: 12px;
     font-size: 14px;
-    /* font-weight: 400; */
     font-weight: 500;
     color: #333;
     border: 1px solid #ccc;
@@ -123,7 +109,6 @@
     border-bottom: 1px solid #e3e3e3;
     background: #fff;
 }
-
 .fww-header .logo {
     position: absolute;
     top:0;
@@ -134,9 +119,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
 .fww-gnb { 
     box-sizing: border-box;
     position: absolute;
@@ -153,17 +136,12 @@
     justify-content: center;
     width: 100%;
 }
-
-
-
 .fww-header.active .fww-gnb .d1:first-child::after {
     content: '';
     position: absolute;
-
     transform: translateX(-100%);
     width:180px;
     height:180px;
-    
     background-size: contain;
     pointer-events: none;
 }
@@ -177,8 +155,6 @@
     bottom:40px;    
     background: url('/src/assets/img/char/char_gnb_adm.svg') center center no-repeat;
 }
-
-
 .fww-gnb .d1 {
     max-width:195px;
     flex: 1;
@@ -215,9 +191,7 @@
 }
 .fww-gnb .d2 {
     display: none;
-    /* padding:10px 0; */
     padding:10px 0 30px 0;
-    /* height: calc(100% - 90px); */
     height: calc(100% - 110px);
     border-right:1px solid #ededed;
 }
@@ -247,99 +221,19 @@
     text-decoration: underline;
 }
 .fww-gnb .d2 .active > a {
-    /* color:var(--p2); */
     color: #297FFE;
     font-weight: 600;
 }
-
-/*
-
-.fww-root .fww-header .fww-gnb-depth2 {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: calc(100% - 265px);
-    padding-left: 265px;
-    background: #fff;
-    border-top: 1px solid #eee;
-    display: none;
-    border-bottom: 1px solid #eee;
-}
-.fww-root .fww-header .fww-gnb-depth2.active {
-    display: block;
-}
-.fww-root .fww-header .fww-gnb-depth2>ul {
-    display: flex;
-    justify-content: center;
-}
-.fww-root .fww-header .fww-gnb-depth2>ul>li {
-    position: relative;
-    width: 194px;
-    border-right: 1px solid #eee;
-    padding-bottom: 20px;
-}
-.fww-root .fww-header .fww-gnb-depth2>ul>li:first-of-type:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 100%;
-    background: #eee;
-}
-.fww-root .fww-header .fww-gnb-depth2>ul>li>.d2 {
-    margin-top: 20px;
-}
-.fww-root .fww-header .fww-gnb-depth2>ul>li>.d2>li {
-    height: 46px;
-    line-height: 46px;
-}
-.fww-root .fww-header .fww-gnb-depth2>ul>li>.d2>li>a {
-    display: block;
-    width: 100%;
-    height: 100%;;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align: left;
-    color: #555;
-}
-.fww-root .fww-header .fww-gnb-depth2>ul>li>.d2>li.active>a,
-.fww-root .fww-header .fww-gnb-depth2>ul>li>.d2>li:hover>a {
-    color: var(--p2);
-}
-*/
-/*사용자 sub 높이
-.fww-root .fww-header.usr::after {
-    height:240px;
-}
-.fww-root .fww-header.usr .right-area .fww-gnb .d2 {
-    height:230px;
-}*/
-
-/*관리자 sub 높이
-.fww-root .fww-header.adm::after {
-    height:480px;
-}
-.fww-root .fww-header.adm .right-area .fww-gnb .d2 {
-    height:470px;
-}*/
-
 .fww-root .fww-group-aside-con {
     position: relative;
     display: flex;
     width: 100%;
-    /* padding-top: 125px; */
 }
 .fww-root .fww-group-aside-con .fww-aside {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
     width: 265px;
-    /* border-right: 1px solid #e3e3e3; */
-    /* padding: 55px 15px;  */
     padding: 35px 15px; 
     box-sizing: border-box;
     background: #fff;
@@ -366,9 +260,7 @@
     height: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    /* font-size: 18px; */
     font-size: 16px;
-    /* height: 60px; */
     height: 56px;
     line-height: 60px;
     font-weight: 500;
@@ -412,7 +304,6 @@
 .fww-root .fww-group-aside-con .fww-aside>ul>li > .active + .d2 {
     display: block;
 }
-
 .fww-root .fww-group-aside-con .fww-aside .d2>li:last-of-type {
     border-bottom: 0;
 }
@@ -437,9 +328,7 @@
 .fww-root .fww-group-aside-con .fww-con .fww-brd {
     display: flex;
     justify-content: end;
-    /* margin-top: 20px; */
     margin-top: 15px;
-    /* margin-bottom: 15px; */
     margin-bottom: 5px;
     margin-right: 30px;
 }
@@ -460,11 +349,9 @@
     right: -13px;
 }
 .fww-root .fww-group-aside-con .fww-con .fww-brd>li>a {
-    /* font-size: 14px; */
     font-size: 13px;
     color: #333;
 }
-
 .fww-root .fww-group-aside-con .fww-con .fww-brd>li:first-of-type {
     font-size: 0;
 }
@@ -488,15 +375,12 @@
 .fww-root .fww-group-aside-con .fww-con .fww-brd>li:last-of-type>a {
     color: var(--p2);
 }
-
 .fww-root .fww-group-aside-con .fww-con.no-aside {
     max-width: none;
     width: 100%;
     background: #f9fafc;
 }
-
 .fww-root .fww-group-aside-con .fww-con .fww-main {
-    /* min-width: 1180px; */ /*temp*/
     padding: 0px 30px 30px 30px;
 }
 .fww-root .fww-group-aside-con .fww-con .fww-main .breadcrumb {
@@ -514,12 +398,9 @@
     color: #1d1d1d;
     margin-bottom: 10px;
 }
-
-/*2024.04.12*/
 .fww-container {
     display:flex;
     flex-direction: column;
-    /* height: 100vh; */ /*2024.04.26 - 어드민쪽 컨텐츠량 적을때도 세로 스크롤이 생겨서 일단 빼봄. */
     min-height:  calc(100vh - 125px);
     overflow: visible;
 }
@@ -553,7 +434,6 @@
     background-color: #ccc;
     margin-right:50px;
 }
-
 .fww-footer-info {
     padding:35px 0 40px 468px;
     font-size:14px;
@@ -591,7 +471,6 @@
 }
 .fww-root .fww-util>ul>li>a{
     display: flex;
-    /* align-items: center; */
 }
 .fww-root .fww-util>ul>li>a::before{
     content:'';
@@ -620,7 +499,6 @@
 .fww-root .fww-util>ul>li> .home::before {
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.52734 4.70215V11.6041C2.52734 12.4201 3.16109 13.1001 3.95734 13.1001H11.1398C11.9198 13.1001 12.5698 12.4371 12.5698 11.6041V4.70215' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 5.7392L7.63 1.2002L14 5.7392' stroke='%23666666' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
-
 .fww-adn-footer {
     padding:15px 10px;
     color:#666;
@@ -629,13 +507,10 @@
     text-align: center;
     margin-left:265px;
 }
-
 .fww-dashborad .fww-adn-footer{ 
     background-color: #EFF2F6;
     margin:0;
 }
-
-
 /*loading*/
 .loading {
     position: fixed;

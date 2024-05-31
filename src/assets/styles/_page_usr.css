@@ -5,15 +5,15 @@
     ---------------------------------------------------------------------
     @ 목적 : [대중소기업상생협력기금종합관리시스템] 상세 페이지 스타일 정의
     @ 작성 : GRIDA Publishing Team.
-    @ 최종 : 2024.$$.$$.$$:$$
-    @ 메모 : 앞에서 _component, _layout으로 커버되지 않는 각 페이지마다 유니크한 부분은 이곳에서 따로 정의한다.
+    @ 최종 : 2024.05.31.18:00
+    @ 메모 : (사용자페이지 전용) _component, _layout으로 커버되지 않는 각 페이지마다 유니크한 부분은 이곳에서 따로 정의한다.
 */
+
 /*
 
 [사용자페이지]--------------------------------------------------------------------------------------------------
 
 */
-
 
 /*Layout user 하단 간격 100px*/
 .fww-root .fww-group-aside-con .fww-main[data-layout="usr"] {
@@ -29,7 +29,6 @@
     margin-bottom:60px;
     font-weight:700;
 }
-
 /*게시판 상단 - 검색창*/
 .tb-search-form {
     display: flex;
@@ -45,7 +44,6 @@
     align-items: center;
     gap: 10px;
 }
-
 .tb-search-items + .tb-search-items {
     margin-left:50px;
 }
@@ -57,7 +55,6 @@
     color:#333;
     font-weight:500;
 }
-
 .tb-search-form .notice {
     justify-content: flex-start;
     gap:0;
@@ -74,7 +71,6 @@
 .tb-search-form .bt[data-size='big'] {
     min-width: 92px;
 }
-
 /*user 게시판 상세페이지*/
 .tb-view {
     padding-top:30px;
@@ -171,7 +167,6 @@
     background-color: #F4F4F4;
     margin-bottom:30px;
 }
-
 .tb-view-move {
     margin:50px 0 30px;
 }
@@ -218,12 +213,10 @@
 .tb-view-move .disabled .next::after {
     background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.19995 1L7.06995 6.88L12.95 1' stroke='%23BBBBBB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
-
 h1.tx-hd2 + .hz-root {
     margin-top:-10px;
     margin-bottom:25px!important;
 }
-
 /*사용자 서브타이틀*/
 .section-title {
     font-weight: 600;
@@ -241,8 +234,6 @@ h1.tx-hd2 + .hz-root {
     margin-right:10px;
     pointer-events: none;
 }
-
-
 /*회원가입*/
 .member-join .tx.tx-hd2 {
     margin-bottom:50px;
@@ -375,8 +366,6 @@ h1.tx-hd2 + .hz-root {
     line-height: 14px;
     color:#666;
 }
-
-
 .member-join .fo {
     margin-bottom:50px;
 }
@@ -425,8 +414,6 @@ h1.tx-hd2 + .hz-root {
 .modal-con .tb-search-form .tf {
     width:310px;
 }
-
-
 /*로그인*/
 .fww-main.sign-in-main {
     height:100%;
@@ -461,7 +448,6 @@ h1.tx-hd2 + .hz-root {
     background: url('/src/assets/img/pages/usr_login_bg.svg') 0 0 no-repeat;
     pointer-events: none;
 }
-
 .sign-in .list-group {
     background-color: #F6FAFF;
     padding:15px 20px;
@@ -569,7 +555,6 @@ h1.tx-hd2 + .hz-root {
     margin:0;
     cursor: pointer;
 }
-
 .sign-form .bt{
     width:100%;
 }
@@ -595,7 +580,6 @@ h1.tx-hd2 + .hz-root {
     margin:0 12px;
     pointer-events: none;
 }
-
 /*아이디비밀번호찾기*/
 .find-idpw{
     width: 700px;
@@ -739,13 +723,11 @@ h1.tx-hd2 + .hz-root {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("data:image/svg+xml,%3Csvg width='48' height='54' viewBox='0 0 48 54' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.52002 21.2002H30.92' stroke='%23333333' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.52002 12.3203H30.92' stroke='%23333333' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.6499 30.5703H20.2199' stroke='%23333333' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.22 46.97H6.85C3.9 46.97 1.5 44.57 1.5 41.62V6.85C1.5 3.9 3.9 1.5 6.85 1.5H36.27C39.22 1.5 41.62 3.9 41.62 6.85V28.25' stroke='%23333333' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40.9401 36.0799C44.4101 39.5499 44.0401 45.4099 39.8201 48.3699C37.1401 50.2499 33.3901 50.2499 30.7101 48.3699C26.4901 45.4099 26.1201 39.5499 29.5901 36.0799C32.7201 32.9499 37.8101 32.9499 40.9401 36.0799Z' stroke='%233E8BFD' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M45.9699 52.4499L40.9399 47.4199' stroke='%233E8BFD' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-
 }
 .find-idpw .id-result .member-id {
     margin-top:20px;
     font-weight:500;
 }
-
 .find-pw {
     width:400px;
     margin:0 auto;
@@ -771,7 +753,6 @@ h1.tx-hd2 + .hz-root {
 .find-pw .hz-root + .sub-txt {
     margin-top:40px;
 }
-
 .find-pw h4 {
     font-size:20px;
     line-height: 1;
@@ -781,11 +762,6 @@ h1.tx-hd2 + .hz-root {
 }
 
 /*mypage*/
-/* .mypage {
-    max-width: 1200px;
-    margin-left:auto;
-    margin-right:auto;
-} */
 .mypage .top-guide {
     display: flex;
     align-items: center;
@@ -813,8 +789,6 @@ h1.tx-hd2 + .hz-root {
 .mypage .w100p .react-datepicker-wrapper {
     display: flex;
 }
-
-
 /*비밀번호수정*/
 .mypage.pw-edit {
     width: 820px;
@@ -840,7 +814,6 @@ h1.tx-hd2 + .hz-root {
     line-height: 1;
     color:#666;
 }
-
 .mypage .withdrawal {
     border:1px solid #ddd;
     padding:20px;
@@ -859,13 +832,11 @@ h1.tx-hd2 + .hz-root {
     float: left;
     margin-left:-14px;
 }
-
 .mypage.pw-edit .withdrawal-info {
     background-color: #F9FAFC;
     padding:40px 0;
     margin:30px 0 50px;
 }
-
 .mypage.pw-edit .chk-id {
     margin:0 0 20px;
     text-align: center;
@@ -873,7 +844,6 @@ h1.tx-hd2 + .hz-root {
     line-height: 24px;
     font-weight: 500;
 }
-
 /*개인정보처리방침*/
 .fw-policy {
     font-size:15px;
@@ -939,7 +909,6 @@ h1.tx-hd2 + .hz-root {
 .fw-policy-section .list-group .no::after{
     content: '.';
 }
-
 /*보안프로그램*/
 .curity-program {
     max-width: 1200px;
@@ -979,7 +948,6 @@ h1.tx-hd2 + .hz-root {
     font-size:14px;
     line-height: 22px;
 }
-
 /*사용자메인*/
 .usr-home {
     background-image: url('../img/pages/usr_home_bg.svg'), url('../img/pages/usr_home_bg_02.svg');
@@ -990,10 +958,8 @@ h1.tx-hd2 + .hz-root {
     box-sizing: border-box;
 }
 .home-section[data-section='visual'] {
-    /* background-image: url('../img/pages/usr_home_visual.svg'); */
     background-repeat: no-repeat;
     background-position: calc(100% + 165px) bottom;
-
 }
 .home-section[data-section='business'] {
     margin-top:100px;
@@ -1002,7 +968,6 @@ h1.tx-hd2 + .hz-root {
     margin-top:165px;
 }
 .home-section[data-section='banner'] {
-    /* margin:153px 0 35px 0; */
     margin:153px 0 0 0;
     padding-bottom: 35px;
 }
@@ -1017,7 +982,6 @@ h1.tx-hd2 + .hz-root {
     justify-content: flex-start;
     height:768px;
 }
-
 .home-section .visual-box h1{
     font-size:98px;
     line-height: 110px;
@@ -1073,12 +1037,10 @@ h1.tx-hd2 + .hz-root {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("data:image/svg+xml,%3Csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 9L5.5034 5.0034L1.5 1' stroke='%23323232' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-
 }
 .home-section .visual-box .tx-link:hover {
     text-decoration: none;
 }
-
 .home-section .visual-box .bt {
     height:60px;
     width:190px;
@@ -1213,7 +1175,6 @@ h1.tx-hd2 + .hz-root {
     position: relative;
     z-index: 2;
     width:615px;
-    /* height:190px; */
     padding:30px 40px 40px;    
     border-radius: 20px;
     box-shadow: 0px 12px 16px 12px rgba(64, 62, 92, 0.08);
@@ -1226,9 +1187,6 @@ h1.tx-hd2 + .hz-root {
 .home-section .bd-group .bd-card + .bd-card {
     margin-top:auto;
 }
-/* .home-section .bd-card.notice {
-    height:410px;
-} */
 .home-section .bd-title {
     font-size:26px;
     line-height: 40px;
@@ -1244,9 +1202,6 @@ h1.tx-hd2 + .hz-root {
 .home-section .bd-list li + li {
     margin-top:20px;
 }
-/* .home-section .notice li + li {
-    margin-top:20px;
-} */
 .home-section .bd-list li {
     display: flex;
     align-items: center;
@@ -1326,12 +1281,6 @@ h1.tx-hd2 + .hz-root {
 .home-section .banner-group img {
     display:block;
 }
-/* .home-section .banner-group a{
-    transition: 0.2s all;
-}
-.home-section .banner-group a:hover {
-    transform: translateY(-10px);
-} */
 .home-sidebar {
     position: fixed;
     bottom:30px;
@@ -1345,7 +1294,6 @@ h1.tx-hd2 + .hz-root {
     border-radius: 48px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
 }
-
 .sidebar-list .direct-items h3{
     display: flex;
     align-items: center;
@@ -1356,7 +1304,6 @@ h1.tx-hd2 + .hz-root {
     border-radius: 12px;
     margin-bottom:12px;
 }
-
 .direct-items h3 {
     color:#297BF2;
     font-size:14px;
@@ -1399,7 +1346,6 @@ h1.tx-hd2 + .hz-root {
     letter-spacing: -0.6px;
     text-decoration: none;
 }
-
 .home-sidebar .direct-items .ico {
     display: block;
     margin:0 auto 5px;
@@ -1465,10 +1411,8 @@ h1.tx-hd2 + .hz-root {
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 13L8.00596 5.99404L1 13' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 .sidebar-list {
-    
     transform: translateY(0);
     transition: 0.3s all;
-   
 }
 
 .home-sidebar.closed .sidebar-list {
@@ -1528,7 +1472,6 @@ h1.tx-hd2 + .hz-root {
 .direct-links .direct-items{
     display: flex;
     align-items: center;
-
 }
 .direct-links .direct-items ul {
     display: flex;
@@ -1560,7 +1503,6 @@ h1.tx-hd2 + .hz-root {
     height:22px;
     margin-right:4px;
 }
-
 /*상생협력기금안내*/
 .fww-intro h2 {
     box-sizing: border-box;
@@ -1618,13 +1560,11 @@ h1.tx-hd2 + .hz-root {
     height:430px;
     box-sizing: border-box;
     border-radius: 10px;
-    /* border:1px solid #ddd; */
     padding:0 30px;
     font-size:14px;
     line-height: 20px;
     background-repeat: no-repeat;
     background-position: calc(100% - 25px) calc(100% - 20px);
-    /* background-position: center bottom; */
 }
 .fww-intro-section .card:nth-child(1) {
     background-color: #F0F2FF;
@@ -1795,8 +1735,6 @@ h1.tx-hd2 + .hz-root {
     background-repeat: no-repeat;
     pointer-events: none;
 }
-
-
 .loc-items.address h6::after {
     background-image: url("data:image/svg+xml,%3Csvg width='21' height='27' viewBox='0 0 21 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7309 6.43066H10.2815C8.15448 6.43066 6.43018 8.15497 6.43018 10.282V10.7313C6.43018 12.8584 8.15448 14.5827 10.2815 14.5827H10.7309C12.8579 14.5827 14.5822 12.8584 14.5822 10.7313V10.282C14.5822 8.15497 12.8579 6.43066 10.7309 6.43066Z' stroke='%23323232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.5 25.4432C10.5 25.4432 1 17.6378 1 10.5C1 5.24932 5.24932 1 10.5 1C15.7507 1 20 5.24932 20 10.5C20 17.625 10.5 25.4304 10.5 25.4304V25.4432Z' stroke='%23323232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
@@ -1806,7 +1744,6 @@ h1.tx-hd2 + .hz-root {
 .loc-items.subway h6::after {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.39618 7.8916H20.1038C22.1214 7.8916 23.75 9.52023 23.75 11.5378V21.03C23.75 23.716 21.5744 25.8916 18.8884 25.8916H10.6116C7.92556 25.8916 5.75 23.716 5.75 21.03V11.5378C5.75 9.52023 7.37863 7.8916 9.39618 7.8916Z' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.50537 20.75H10.8909' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19.8851 20.75H18.5117' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.32666 4.03832C9.15313 3.21185 10.2713 2.75 11.4259 2.75H18.0741C19.2409 2.75 20.3591 3.21185 21.1734 4.03832' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.4675 7.89112L12.1792 2.75' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.0322 7.89112L17.3205 2.75' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22.4617 28.4559L20.5049 25.5146' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.99536 25.5146L7.03857 28.4559' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M23.75 16.8848H5.75' stroke='%23333232' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
-
 /*조직도*/
 .org-wrap {
     position: relative;
@@ -1847,7 +1784,6 @@ h1.tx-hd2 + .hz-root {
     content: '';
     position: absolute;
     background-color: #ddd;
-    
     pointer-events: none;
 }
 .org-wrap h1::before{
@@ -1999,7 +1935,6 @@ h1.tx-hd2 + .hz-root {
     height: 76px;
     top:-76px
 }
-
 .fww-intro-section .tb-narrow[data-bg='white'] th{
     background-color: #fff;
 }
@@ -2012,7 +1947,6 @@ h1.tx-hd2 + .hz-root {
 .fww-intro .tab-menu {
     margin-bottom:50px;
 }
-
 /*기금운영*/
 .oper-title {
     font-size:26px;
@@ -2045,7 +1979,6 @@ h1.tx-hd2 + .hz-root {
     max-width: 900px;
     margin-left:auto;
     margin-right:auto;
-    /* gap:120px; */
 }
 .graphic-items {
     width:240px;
@@ -2060,7 +1993,6 @@ h1.tx-hd2 + .hz-root {
 .graphic-items:nth-child(1) {
     background-color: rgb(130, 151, 183);
     outline: 15px solid rgba(130, 151, 183, 0.1);
-    
 }
 .graphic-items:nth-child(2) {
     background-color: rgb(78, 149, 255);
@@ -2107,7 +2039,6 @@ h1.tx-hd2 + .hz-root {
 }
 .gallery-items {
     display:block;
-    
 }
 .gallery-items:hover {
     text-decoration: none;
@@ -2152,7 +2083,6 @@ h1.tx-hd2 + .hz-root {
     display: inline-flex;
     align-items: center;
     color:#666;
-    
 }
 .gallery-items .badge {
     padding:0;
@@ -2175,11 +2105,9 @@ h1.tx-hd2 + .hz-root {
     background-color: #ccc;
     margin:0 10px;
 }
-
 .gallery-list + .pg {
     margin-top:50px;
 }
-
 .fww-signature {
     color:#000;
     font-size:14px;
@@ -2196,11 +2124,9 @@ h1.tx-hd2 + .hz-root {
     letter-spacing: -0.6px;
     margin-top:20px;
 }
-
 .fund-section .tf-unit .tf::placeholder {
     text-align: left;
 }
-
 /*기금출연*/
 .fund-datepicker {
     display: flex;
@@ -2210,11 +2136,9 @@ h1.tx-hd2 + .hz-root {
 .fund-datepicker .datepicker {
     max-width: 180px;
 }
-
 .sf-fund .sf-value > .hz-root {
     min-height:36px;
 }
-
 .fund-section.simply {
     display:none;
 }
@@ -2230,9 +2154,6 @@ h1.tx-hd2 + .hz-root {
 .fund-section + .fund-section {
     margin-top:40px;
 }
-/* .fund-section .fo .bt[data-size='md']{
-    min-width:initial;
-} */
 .fund-section .tx-msg {
     font-size:13px;
     line-height: 1;
@@ -2247,7 +2168,6 @@ h1.tx-hd2 + .hz-root {
     float: left;
     margin-left:-14px;
 }
-
 .fund-section .col-group {
     display: flex;
     align-items: stretch;
@@ -2256,7 +2176,6 @@ h1.tx-hd2 + .hz-root {
 .fund-section .col-group .col-2 {
     width:50%;
 }
-
 .fund-form-group {
     display: flex;
     align-items: center;
@@ -2275,10 +2194,6 @@ h1.tx-hd2 + .hz-root {
 .fund-form-items + * {
     margin-left:auto;
 }
-/* .fund-form-items:not(.tf-unit) .tf {
-    max-width: calc(100% - 120px);
-} */
-
 /*안내사항(modal)*/
 .fww-noti section h3{
     font-size:16px;
@@ -2311,7 +2226,6 @@ h1.tx-hd2 + .hz-root {
     background-image: url("data:image/svg+xml,%3Csvg width='30' height='31' viewBox='0 0 30 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 26.8L21.15 15.65L10 4.5' stroke='%23C3C3C3' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
     pointer-events: none;
 }
-
 .fww-noti .step dt {
     color:#297FFE;
     font-size:14px;
@@ -2343,8 +2257,6 @@ h1.tx-hd2 + .hz-root {
 .fww-noti .step dl:nth-child(4) dt::before{
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='27' viewBox='0 0 24 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.6184 2.37422L15.0545 1.14991C15.4418 0.962521 15.8915 0.962521 16.2788 1.14991L18.7149 2.37422C19.1022 2.57411 19.5645 2.56161 19.9517 2.37422L21.0136 1.83702C21.9256 1.37479 23 2.0494 23 3.07382V23.7121C23 24.7365 21.9256 25.3986 21.0136 24.9489L19.9517 24.4117C19.5645 24.2118 19.1022 24.2118 18.7149 24.4117L16.2788 25.636C15.8915 25.8359 15.4293 25.8359 15.042 25.636L12.6059 24.4117C12.2186 24.2243 11.7689 24.2243 11.3816 24.4117L8.94549 25.636C8.55821 25.8234 8.10846 25.8234 7.72118 25.636L5.28507 24.4117C4.89779 24.2118 4.43555 24.2243 4.04827 24.4117L2.98637 24.9489C2.07439 25.4111 1 24.7365 1 23.7121V3.07382C1 2.0494 2.07439 1.38728 2.98637 1.83702L4.04827 2.37422C4.43555 2.57411 4.89779 2.57411 5.28507 2.37422L7.72118 1.14991C8.10846 0.950028 8.5707 0.950028 8.95798 1.14991L11.3941 2.37422C11.7814 2.56161 12.2311 2.56161 12.6184 2.37422Z' stroke='%23323232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.1438 9.78142C12.5935 9.2817 13.3556 8.70703 14.5424 8.70703C16.6037 8.70703 17.9779 10.5685 17.9779 12.305C17.9779 15.9279 13.3056 18.7014 12.1438 18.7014C10.9819 18.7014 6.30957 15.9279 6.30957 12.305C6.30957 10.5685 7.68379 8.70703 9.74512 8.70703C10.9195 8.70703 11.694 9.26921 12.1438 9.78142Z' stroke='%23297FFE' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
-
-
 .fww-noti .step.fund dl:nth-child(1) dt::before{
     background-image: url("data:image/svg+xml,%3Csvg width='25' height='29' viewBox='0 0 25 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.1833 11.9747V7.63682C20.1833 6.91155 19.8959 6.21366 19.3759 5.70734L15.5033 1.83471C14.9833 1.31471 14.2991 1.02734 13.5738 1.02734H3.76223C2.24329 1.02734 1.02539 2.24524 1.02539 3.76419V22.9221C1.02539 24.4273 2.24329 25.6589 3.76223 25.6589H9.23592' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.1832 7.86945H14.7095C13.9569 7.86945 13.3411 7.25366 13.3411 6.50103V1.02734' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.26758 16H10.8676' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.26758 20H9.37284' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.26758 11.6328H9.37284' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.8161 27.3959C14.4224 27.3959 11.6582 24.6317 11.6582 21.238C11.6582 17.8443 14.4224 15.0801 17.8161 15.0801C21.2098 15.0801 23.974 17.8443 23.974 21.238C23.974 24.6317 21.2235 27.3959 17.8161 27.3959Z' stroke='%23297BF2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.0876 20.1016L17.2549 22.9342L15.5581 21.2374' stroke='%23297BF2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.9883 26.0078L24 28' stroke='%23297BF2' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
@@ -2357,7 +2269,6 @@ h1.tx-hd2 + .hz-root {
 .fww-noti .step.fund dl:nth-child(4) dt::before{
     background-image: url("data:image/svg+xml,%3Csvg width='23' height='28' viewBox='0 0 23 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.2696 5.81486L17.1851 1.73032C16.6436 1.18886 15.9021 0.882812 15.137 0.882812H3.77848C2.17762 0.882812 0.882812 2.17762 0.882812 3.77848V24.0128C0.882812 25.6137 2.17762 26.9085 3.77848 26.9085H19.2333C20.8341 26.9085 22.1289 25.6137 22.1289 24.0128V7.86302C22.1289 7.0979 21.8229 6.35633 21.2814 5.81486H21.2696Z' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22.117 8.11021H16.3375C15.5371 8.11021 14.8896 7.4628 14.8896 6.66237V0.882812' stroke='%23333232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.2 14.9004L10.28 19.8204L7 16.5404' stroke='%233E8BFD' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
-
 .fww-noti .step dd {
     font-size:13px;
     line-height: 18px;
@@ -2385,12 +2296,9 @@ h1.tx-hd2 + .hz-root {
     height:100px;
     margin:0 32px;
 }
-
-
 .fww-noti .bz li:nth-child(n+6) {
     margin-top:30px;
 }
-
 .fww-noti .bz li span {
     display: block;
     text-align: center;
@@ -2492,7 +2400,6 @@ h1.tx-hd2 + .hz-root {
     border-radius: 50%;
     background-color: #666;
 }
-
 /*가상계좌*/
 .virtual-account {
     font-size:14px;
@@ -2526,8 +2433,6 @@ h1.tx-hd2 + .hz-root {
 .virtual-account .fo.fo-col2 .fo-item .fo-key {
     width:170px;
 }
-
-
 /*금액합께*/
 .tb-total {
     display: flex;
@@ -2592,8 +2497,6 @@ h1.tx-hd2 + .hz-root {
 .fund-section .pt .row .col.col-5 {
     width:calc(50% - 20px);
 }
-
-
 .modal-tskana .fo.fo-col2 .fo-item .fo-key {
     width: 124px;
 }
@@ -2601,7 +2504,6 @@ h1.tx-hd2 + .hz-root {
     font-size:13px;
     color:#666;
 }
-
 /*popover*/
 .popover-toggle {
     display: inline-block;
@@ -2630,7 +2532,6 @@ h1.tx-hd2 + .hz-root {
     color:#333;
     margin-bottom:10px;
 }
-
 .popover-conts .list-group li {
     padding-left:10px;
 }
@@ -2653,7 +2554,6 @@ h1.tx-hd2 + .hz-root {
     background-position: center;
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.24378 9.75747C0.406301 9.91999 0.620078 10.0013 0.832604 10.0013C1.04638 10.0013 1.25891 9.91999 1.42143 9.75747L4.99937 6.17899L8.57732 9.75747C8.74109 9.91999 8.95362 10.0013 9.1674 10.0013C9.37992 10.0013 9.5937 9.91999 9.75622 9.75747C10.0813 9.43118 10.0813 8.90486 9.75622 8.57857L6.17818 5L9.75497 1.42268C10.08 1.09639 10.08 0.570071 9.75497 0.24378C9.42993 -0.0812602 8.90236 -0.0812602 8.57732 0.24378L5 3.82164L1.42268 0.24378C1.09639 -0.0812602 0.570071 -0.0812602 0.24378 0.24378C-0.0812602 0.570071 -0.0812602 1.09764 0.24378 1.42268L3.82119 5.00063L0.24378 8.57857C-0.0812602 8.90486 -0.0812602 9.43118 0.24378 9.75747Z' fill='%23333333'/%3E%3C/svg%3E%0A");
 }
-
 /*tooltip*/
 .button-tooltip {
     display: inline-block;
@@ -2705,7 +2605,6 @@ h1.tx-hd2 + .hz-root {
 .tooltip-conts.react-tooltip__place-bottom-end {
     margin-left:10px;
 }
-
 /*기금운영 - 과제신청*/
 .fund-biz-title {
     font-size:22px;
@@ -2722,7 +2621,6 @@ h1.tx-hd2 + .hz-root {
 .fund-biz-preview {
     background-color: #F5F5F5;
 }
-
 .tb table[data-type=file] * {
     box-sizing: border-box;
 }
@@ -2735,7 +2633,6 @@ h1.tx-hd2 + .hz-root {
 .tb-narrow .ip-ch-label {
     vertical-align: middle;
 }
-
 .fo-key .req::after {
     content:'*';
     color:var(--p2);
@@ -2758,7 +2655,6 @@ h1.tx-hd2 + .hz-root {
 .fo-value.flex-wrap  .fo-item > .fo-key {
     width:180px;
 }
-
 .tb-top .price-summary {
     display: flex;
     align-items: center;
@@ -2766,7 +2662,6 @@ h1.tx-hd2 + .hz-root {
     font-size:14px;
     line-height: 1;
     color:#333;
-
 }
 .tb-top .price-summary::before {
     content:'';
@@ -2797,8 +2692,6 @@ h1.tx-hd2 + .hz-root {
 .tb-top .price-summary .items .total {
     font-weight:400;
 }
-
-
 /*textarea*/
 .ta-group .ta-ip {
     display: block;
@@ -2807,7 +2700,6 @@ h1.tx-hd2 + .hz-root {
     padding:10px;
     box-sizing: border-box;
     width:100%;
-    /* min-height: 70px; */
     resize: vertical;
 }
 .ta-group .ta-ip::placeholder {
@@ -2816,7 +2708,6 @@ h1.tx-hd2 + .hz-root {
 .ta-group .ta-ip:read-only {
     border-color: transparent;
 }
-
 .chk-group {
     display: flex;
     align-items: flex-start;
@@ -2870,7 +2761,6 @@ h1.tx-hd2 + .hz-root {
 .chk-group + .tx-msg {
     margin-top:15px;
 }
-
 /*switch*/
 .switch-button {
     position: relative;

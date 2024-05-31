@@ -5,12 +5,11 @@
     ---------------------------------------------------------------------
     @ 목적 : [대중소기업상생협력기금종합관리시스템]  공통 컴포넌트(부품) 정의.
     @ 작성 : GRIDA Publishing Team.
-    @ 최종 : 2024.$$.$$.$$:$$
-    @ 메모 : -
+    @ 최종 : 2024.05.31.18:00
+    @ 메모 : 컴포넌트 임포트 파일
 */
 /*기초 컴포넌트*/
 @import url("component/_TX.css");
-@import url("component/_PT.css");
 @import url("component/_BT.css");
 @import url("component/_TF.css");
 @import url("component/_SL.css");
@@ -19,16 +18,14 @@
 @import url("component/_TA.css");
 @import url("component/_PG.css");
 @import url("component/_BD.css");
+@import url("component/_ND.css");
 
 /*공간 컴포넌트*/
+@import url("component/_PT.css");
 @import url("component/_AL.css");
 @import url("component/_MD.css");
 
 /*특수 컴포넌트*/
-@import url("component/_ND.css");
 @import url("component/_TB.css");
 @import url("component/_FO.css");
 @import url("component/_SF.css");
-/* @import url("component/_IB.css"); */
-
-

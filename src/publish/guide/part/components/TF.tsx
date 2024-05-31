@@ -4,6 +4,7 @@ import UIInput from 'components/input/input';
 import UIInputPW from 'components/input/inputPW';
 import UIInputClaer from 'components/input/inputClear';
 import UIDatePicker from "components/datepicker";
+import UIDatePicker2 from "components/datepicker2";
 function ContentsContainer() {
 	return (
 		<div>
@@ -50,9 +51,26 @@ function ContentsContainer() {
 
 			<br/><br/>
 			<h2 className="deco-h2">DatePicker</h2>	
+
+			<h3 className="deco-h3">Normal</h3>	
 			<UIDatePicker />
 
+			<br/>
+			<h3 className="deco-h3">Width 조절</h3>	
+			<div className="w150"><UIDatePicker /></div>
+
 			<br/><br/>
+			<h2 className="deco-h2">DatePicker 2</h2>	
+
+			<h3 className="deco-h3">Normal</h3>	
+			<UIDatePicker2 />			
+
+			<br/>
+			<h3 className="deco-h3">Width 조절</h3>				
+			<div className="w375"><UIDatePicker2 /></div>
+
+			<br/><br/><br/><br/><br/><br/>
+			<h2 className="deco-h2">DatePicker 캘린더 영역 미리보기</h2>	
 			<div className="datepicker">
 				<div className="react-datepicker-wrapper">
 						<div className="react-datepicker__input-container">
