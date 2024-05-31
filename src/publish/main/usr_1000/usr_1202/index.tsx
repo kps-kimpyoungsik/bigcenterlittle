@@ -289,8 +289,8 @@ function ContentsContainer() {
 											<UIInput className={'hz-item hz-fg tf tf-md'} value={'00000'} placeholder={''} disabled={true} />
 											<Button color='gray-o' size="md">주소찾기</Button>
 										</div>
-										<UIInput className={'tf tf-md w100p mt8'} value={'서울특별시 중구 퇴계로 173'} placeholder={''} disabled={true} />
-										<UIInput className={'tf tf-md w100p mt8'} value={'남산스퀘어빌딩 7층'} placeholder={''}/>
+										<UIInput className={'tf tf-md w100p mt8'} value={''} placeholder={''} disabled={true} />
+										<UIInput className={'tf tf-md w100p mt8'} value={''} placeholder={'상세주소 입력'}/>
 									</div>
 								</div>
 							</div>
@@ -298,7 +298,7 @@ function ContentsContainer() {
 								<p className="fo-key">홈페이지</p>
 								<div className="fo-value">
 									<div className="w100p">
-										<UIInput className={'tf tf-md w100p'} value={'www.win-win.or.kr'} placeholder={''} />
+										<UIInput className={'tf tf-md w100p'} value={''} placeholder={'홈페이지 주소를 입력하세요'} />
 									</div>
 								</div>
 							</div>
