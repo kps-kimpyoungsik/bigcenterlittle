@@ -531,6 +531,20 @@ h1.tx-hd2 + .hz-root {
 }
 .sign-form .tf[type=text] {
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99967 9.99984C12.3009 9.99984 14.1663 8.13436 14.1663 5.83317C14.1663 3.53198 12.3009 1.6665 9.99967 1.6665C7.69849 1.6665 5.83301 3.53198 5.83301 5.83317C5.83301 8.13436 7.69849 9.99984 9.99967 9.99984Z' stroke='%23C8C8C8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.1585 18.3333C17.1585 15.1083 13.9501 12.5 10.0001 12.5C6.05013 12.5 2.8418 15.1083 2.8418 18.3333' stroke='%23C8C8C8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-color: #fff;
+    /* -webkit-box-shadow: 0 0 0px 1000px white inset !important; */
+    /* -webkit-text-fill-color: #fff !important;     */
+}
+/*크롬 autofill 대응*/
+.sign-form input.tf[type=text]:-webkit-autofill,
+.sign-form input.tf[type=text]:-webkit-autofill:hover,
+.sign-form input.tf[type=text]:-webkit-autofill:focus,
+.sign-form input.tf[type=text]:-webkit-autofill:active {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99967 9.99984C12.3009 9.99984 14.1663 8.13436 14.1663 5.83317C14.1663 3.53198 12.3009 1.6665 9.99967 1.6665C7.69849 1.6665 5.83301 3.53198 5.83301 5.83317C5.83301 8.13436 7.69849 9.99984 9.99967 9.99984Z' stroke='%23C8C8C8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.1585 18.3333C17.1585 15.1083 13.9501 12.5 10.0001 12.5C6.05013 12.5 2.8418 15.1083 2.8418 18.3333' stroke='%23C8C8C8' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") !important;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-transition: background-color 9999s ease-out;
+    /* -webkit-box-shadow: 0 0 0px 1000px white inset !important; */
+    /* -webkit-text-fill-color: #fff !important; */
 }
 .sign-form .tf[type=password] {
     padding-right:48px;
