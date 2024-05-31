@@ -69,6 +69,23 @@ function ContentsContainer() {
 			<h3 className="deco-h3">Width 조절</h3>				
 			<div className="w375"><UIDatePicker2 /></div>
 
+			<br/>
+			<h3 className="deco-h3">기능버튼과 함께</h3>							
+			
+			<div className="hz-root hz-gap8">
+				<div className="hz-item w375"><UIDatePicker2 /></div>
+				<div className="hz-item hz-root hz-gap5">
+					<button className="bt" data-color="pri-o2" data-size="md" type="button">이전1개월</button>
+					<button className="bt" data-color="pri-o2" data-size="md" type="button">이전3개월</button>
+					<button className="bt" data-color="pri" data-size="md" type="button">이전6개월</button>
+					<button className="bt" data-color="pri-o2" data-size="md" type="button">이전12개월</button>
+				</div>							
+			</div>
+			
+			
+
+
+
 			<br/><br/><br/><br/><br/><br/>
 			<h2 className="deco-h2">DatePicker 캘린더 영역 미리보기</h2>	
 			<div className="datepicker">
