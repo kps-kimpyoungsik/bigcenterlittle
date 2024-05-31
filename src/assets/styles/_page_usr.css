@@ -1397,7 +1397,9 @@ h1.tx-hd2 + .hz-root {
     font-weight: 500;
     color:#333;
     letter-spacing: -0.6px;
+    text-decoration: none;
 }
+
 .home-sidebar .direct-items .ico {
     display: block;
     margin:0 auto 5px;
@@ -1508,7 +1510,7 @@ h1.tx-hd2 + .hz-root {
     padding-right:50px;
 }
 .direct-links {
-    display: flex;
+    display: flex!important;
     align-items: center;
     opacity: 1;
     pointer-events: all;
