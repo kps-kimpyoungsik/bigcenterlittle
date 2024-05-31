@@ -1548,6 +1548,7 @@ h1.tx-hd2 + .hz-root {
     align-items: center;
     padding:0 16px;
     border:1px solid #E4E4E4;
+    background-color: #fff;
     border-radius: 20px;
     height:40px;
     font-size:15px;
