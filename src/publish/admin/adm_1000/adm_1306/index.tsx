@@ -228,12 +228,15 @@ function ContentsContainer() {
 					
 					<form className="fo fo-col3 mb30" name="" action="" method="">
 						<div className="inner">
-							<div className="fo-item">
+							<div className="fo-item fo-m-1-4"> {/* [M.20240603] 삭제 */} 
 								<p className="fo-key">중소기업 지원 수</p>
 								<div className="fo-value">
 									<UIInput className={'tf tf-md w100p'} value={'N 개사'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
+							
+							{/* [M.20240603] 삭제 */}
+							{/* 
 							<div className="fo-item">
 								<p className="fo-key">
 										
@@ -244,10 +247,8 @@ function ContentsContainer() {
 										disableStyleInjection={true}
 										place={"bottom-start"}
 										className="tooltip-conts"
-										//openOnClick
 									>
 										<div className="msg">
-											{/* <h6 className="tooltip-title">상생협력기금은 중소기업에게만 지원 가능합니다.</h6> */}
 											<p className="tx tx-cp1">상생협력기금은 중소기업에게만 지원 가능합니다.</p>
 										</div>
 									</Tooltip>									
@@ -256,12 +257,18 @@ function ContentsContainer() {
 									<UIInput className={'tf tf-md w100p'} value={'N 개사'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
+							 */}
+
+							{/* [M.20240603] 삭제 */}
+							{/*  
 							<div className="fo-item">
 								<p className="fo-key">합계</p>
 								<div className="fo-value">
 									<UIInput className={'tf tf-md w100p'} value={'N 개사'} placeholder={''} readOnly={true} />
 								</div>
 							</div>
+							*/}
+
 							<div className="fo-item fo-m-1-4">
 								<p className="fo-key">수행기관</p>
 								<div className="fo-value">

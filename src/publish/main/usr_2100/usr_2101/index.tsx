@@ -333,7 +333,7 @@ function ContentsContainer() {
 						<h3 className="section-title mb15">지원 대상</h3>
 						<form className="fo fo-col2" name="" action="" method="">
 							<div className="inner">
-								<div className="fo-item">
+								<div className="fo-item fo-m-1-3"> {/* [M.20240603]수정 */}
 									<div className="fo-key">
 										<span className="req">중소기업 지원 수</span>
 										<button type="button" className="button-tooltip" data-tooltip-id="tooltip5">도움말</button>
@@ -353,6 +353,9 @@ function ContentsContainer() {
 										</div>
 									</div>
 								</div>
+
+								{/* [M.20240603]삭제 */}
+								{/* 
 								<div className="fo-item">
 									<p className="fo-key">중소기업 외 지원 수</p>
 									<div className="fo-value">
@@ -362,6 +365,8 @@ function ContentsContainer() {
 										</div>
 									</div>
 								</div>
+								 */}
+
 								<div className="fo-item fo-m-1-3">
 									<div className="fo-key">
 										<span className="req">수행기관</span>

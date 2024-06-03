@@ -56,6 +56,55 @@ function ContentsContainer() {
 								</label>
 							</div>
 						</section>
+
+						<section className="join-section">
+							<div className="join-top">
+								<h3 className="section-title">개인정보 제3자 제공동의</h3>
+							</div>
+							<div className="terms-conts">
+								
+							</div>
+							<div className="join-agree">
+								<label htmlFor="ch-3" className="hz-item ip-ch-label ip-ch-18">
+									<input id="ch-3" className="ip-ch" type="checkbox" />
+									<span className="check"></span> 
+									<span className="txt">동의합니다.</span>
+								</label>
+							</div>
+						</section>
+
+						<section className="join-section">
+							<div className="join-top">
+								<h3 className="section-title">기업 신용정보상태 및 조회 동의서 필수 여부</h3>
+							</div>
+							<div className="terms-conts">
+								
+							</div>
+							<div className="join-agree">
+								<label htmlFor="ch-4" className="hz-item ip-ch-label ip-ch-18">
+									<input id="ch-4" className="ip-ch" type="checkbox" />
+									<span className="check"></span> 
+									<span className="txt">동의합니다.</span>
+								</label>
+							</div>
+						</section>
+
+						<section className="join-section">
+							<div className="join-top">
+								<h3 className="section-title">청렴서약</h3>
+							</div>
+							<div className="terms-conts">
+								
+							</div>
+							<div className="join-agree">
+								<label htmlFor="ch-5" className="hz-item ip-ch-label ip-ch-18">
+									<input id="ch-5" className="ip-ch" type="checkbox" />
+									<span className="check"></span> 
+									<span className="txt">동의합니다.</span>
+								</label>
+							</div>
+						</section>												
+
 						<div className="certification">
 							<h3>본인 인증 확인</h3>
 							<ul className="list-group">

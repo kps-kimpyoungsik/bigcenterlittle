@@ -33,9 +33,7 @@ function ManualContainer(): JSX.Element {
 								<div className="fo-item req">
 									<p className="fo-key">전용요청일</p>
 									<div className="fo-value">
-										<div className="w215">
-											<UIDatePicker />
-										</div>
+										<UIInput className={'tf tf-md w100p'} value={'YYYY-MM-DD(Day)'} placeholder={''} readOnly={true} />  {/* [M.20240603] 수정 */}
 									</div>
 								</div>
 							</div>
