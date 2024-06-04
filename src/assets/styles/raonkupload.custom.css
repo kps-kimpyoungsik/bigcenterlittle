@@ -5,7 +5,7 @@
     ---------------------------------------------------------------------
     @ 목적 : [대중소기업상생협력기금종합관리시스템] KUpload 커스텀
     @ 작성 : GRIDA Publishing Team
-    @ 최종 : 2024.05.31.18:00
+    @ 최종 : 2024.06.04.18:00
     @ 메모 :  
 */
 
@@ -239,6 +239,7 @@ input, select {
 	border-radius: 3px;
 	background-color: #fff;
 	padding:0 36px 0 12px;
+	height: 100%;
 }
 .filebox .kupload-simple-single-ui .kupload-simple-single-ui-area .file-info-area.file-btn-xonly .file-info {
 	margin:0;

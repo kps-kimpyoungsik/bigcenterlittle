@@ -5,7 +5,7 @@
     ---------------------------------------------------------------------
     @ 목적 : [대중소기업상생협력기금종합관리시스템] 공통 레이아웃 정의
     @ 작성 : GRIDA Publishing Team.
-    @ 최종 : 2024.05.31.18:00
+    @ 최종 : 2024.06.04.18:00
     @ 메모 :  
         - (거의)모든 페이지에 등장하는 '공통 영역'을 정의한다. 예를들면 상단 헤더, 왼쪽 어사이드, 중앙 메인컨텐트 영역. 
         - z-index는 _layout.css 최상단에서 모아서 정의한다.
@@ -514,22 +514,25 @@
 /*loading*/
 .loading {
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255,255,255,0.6);
-    background-image:url('../img/pages/loading_ci.svg');
+    /* background-image: url('../img/pages/loading_ci.svg'); */
+    background-image: url('../img/char/char_loading.gif');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: 160px 160px;
 }
+/*
 .loading .loader {
     display: block;
-    width:105px;
-    height:105px;
+    width: 105px;
+    height: 105px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -537,10 +540,11 @@
     animation: rotation 1s linear infinite;
     background: url('../img/pages/loading.png') center center no-repeat;
     background-size: contain;
-    
 }
-
+*/
+/*
 @keyframes rotation {
     0% { transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 } 
+*/

@@ -8,7 +8,7 @@ function ContentsContainer() {
 
 			<div className="error-container">
 				<div className="error-conts">
-				<i className="ico errsys"></i>
+					<i className="ico errsys"></i>
 					<h1>시스템 점검 안내</h1>
 					<p>
 						불편을 드려 죄송합니다.<br />

@@ -139,7 +139,20 @@ function ContentsContainer() {
 					</div>
 
 					<h3 className="section-title mb15">첨부파일</h3>
-					<div className="mb30">[D]Fileupload</div>
+					<form className="fo fo-col2" name="" action="" method="">
+						<div className="inner">
+							<div className="fo-item fo-m-1-3 req">
+								<p className="fo-key">전용신청공문</p>
+								<div className="fo-value">
+									[D]Fileupload
+								</div>
+							</div>
+						</div>
+					</form>
+					<div className="hz-root hz-right hz-gap5">
+						<Button color="pri-o" size="sm" >저장</Button>
+						<Button color="gray-o" size="sm" >목록</Button>
+					</div>
 
 					<h3 className="section-title mb15">반려 사유 내역</h3>
 					<div className="tb tb-narrow mb30">

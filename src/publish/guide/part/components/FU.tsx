@@ -15,7 +15,6 @@ function ContentsContainer() {
 			<br />
 			<h2 className="deco-h2">단건 처리</h2>
 			<RaonkuploadSimple />
-			<p style={{font:"13px", color:"#666",marginTop:"5px"}}>※ 기능X 디자인 css (test.css)</p>
 		</div>
 	);
 }
