@@ -48,6 +48,7 @@ export { default as usr2108Page } from './usr_2100/usr_2108';
 export { default as usr2114Page } from './usr_2100/usr_2114';
 export { default as usr2115Page } from './usr_2100/usr_2115';
 export { default as usr2116Page } from './usr_2100/usr_2116';
+export { default as usr2118Page } from './usr_2100/usr_2118';
 export { default as usr2119Page } from './usr_2100/usr_2119';
 export { default as usr2123Page } from './usr_2100/usr_2123';
 export { default as usr2125Page } from './usr_2100/usr_2125';
