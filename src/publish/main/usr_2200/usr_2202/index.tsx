@@ -22,7 +22,7 @@ function ContentsContainer() {
 					<form className="sf sf-fund" name="" action="" method="">
 						<div className="inner">
 							<div className="sf-item sf-m-1-3">
-								<p className="sf-key">발급일자</p>
+								<p className="sf-key">출연신청일</p>
 								<div className="sf-value">
 									<div className="fund-datepicker">
 										<div className="hz-root hz-gap5">
