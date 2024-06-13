@@ -184,6 +184,18 @@ function HomeContainer(){
 					</div>
 				</main>
 			</div>
+
+			{/* 20240613 - 메인 이미지 팝업 */}
+			<div className="main-img-popup">  {/* [D] ASIS처럼 적당한 top, left 값 주세요 */}
+				<img src="https://fund.win-win.or.kr/common/file/download/126AE20A-78C0-4CB8-8B87-8D0AAB5B3868.jpg" alt="" />
+				<div className="bottom-area">
+					<button className="btn-close-today" type="button">오늘하루열지않기</button>
+					<button className="btn-close" type="button">닫기</button>
+				</div>
+			</div>
+
+			{/* //20240613 - 메인 이미지 팝업 */}
+
 		</PageContainer>
 	);
 }

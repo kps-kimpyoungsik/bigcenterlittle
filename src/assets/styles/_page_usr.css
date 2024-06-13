@@ -1429,6 +1429,40 @@ h1.tx-hd2 + .hz-root {
     transition: 0.3s all;
 }
 
+/*20240613 -  메인 이미지 팝업*/
+.main-img-popup {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* border: 1px solid red; */
+    width: 450px;
+    height: auto;
+}
+.main-img-popup>img {
+    width: 100%;
+}
+.main-img-popup>.bottom-area {
+    display: flex;
+    justify-content: space-between;
+    height: 34px;
+    background: #444444;
+}
+.main-img-popup>.bottom-area .btn-close-today {
+    color: #fff;
+    font-size: 14px;
+    background: none;
+    border: 0;
+}
+.main-img-popup>.bottom-area .btn-close {
+    width: 34px;
+    border: 0;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L6 6M6 6L10 2M6 6L10 10M6 6L2 10' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+    text-indent: -9999px;
+}
+
 .home-sidebar.closed .sidebar-list {
     transform: translateY(+30px);
     opacity: 0;
