@@ -987,7 +987,11 @@ h1.tx-hd2 + .hz-root {
 }
 .home-section[data-section='banner'] {
     /* margin:153px 0 0 0; */ /*temp*/
+    padding-top: 100px;
     padding-bottom: 35px;
+    background-repeat: repeat-x;
+    background-position: center 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='1921' height='127' viewBox='0 0 1921 127' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1921 18.7192C1171 96.4025 762 -49.5976 0 18.8307V126.167H1921V18.7192Z' fill='%23F5F5F5' fill-opacity='0.5'/%3E%3C/svg%3E%0A");
 }
 .home-section .inner {
     max-width: 1260px;
