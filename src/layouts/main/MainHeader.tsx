@@ -2,6 +2,7 @@
 import React, { useState} from "react";
 import { Link, NavLink, useLocation  } from 'react-router-dom';
 import logo from 'assets/img/logo/logo_blk.svg';
+import logo_deco from 'assets/img/char/char_gnb_deco.gif';
 import menutree from './menutree.json';
 function LayoutHeader() {
 	const location = useLocation();
@@ -35,6 +36,7 @@ function LayoutHeader() {
 			<header className={hidden ? 'fww-header usr' : 'fww-header usr active'}>
 				<Link to="/main" className='logo'>
 						<img src={logo} alt="대·중소기업 상생협력기금 종합시스템" />
+						<img className="logo-deco" src={logo_deco} alt="" />
 				</Link>
 				<nav
 					className='fww-gnb' 

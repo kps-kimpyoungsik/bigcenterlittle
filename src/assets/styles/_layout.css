@@ -121,6 +121,13 @@
     align-items: center;
     justify-content: center;
 }
+.fww-header.usr .logo .logo-deco {
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    /* right: -47px; */
+    right: -37px;
+}
 .fww-gnb { 
     box-sizing: border-box;
     position: absolute;

@@ -30,7 +30,9 @@ function HomeContainer(){
 		<PageContainer>
 			<div className='fww-con'>
 				<main className="usr-home">
-					<div className={checked ? 'usr-direct' : 'usr-direct no-bg'}>
+
+					{/* 20240614 - 업무별바로가기 상단형 폐기 */}
+					{/* <div className={checked ? 'usr-direct' : 'usr-direct no-bg'}>
 						<h4>업무별 바로가기</h4>
 						<div className="switch-button">
 							<input type="checkbox" id="switch-chk" checked={checked} onChange={(e) => checkHandled(e)}/>
@@ -61,7 +63,7 @@ function HomeContainer(){
 								</ul>
 							</div>
 						</div>
-					</div>
+					</div> */}
 					
 					<section className="home-section" data-section="visual">
 						<div className="inner">
@@ -104,11 +106,6 @@ function HomeContainer(){
 											<div className="subject"><Link to="/main/usr_2300/usr_2301"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
 											<div className="date">2024.03.30</div>
 										</li>
-										<li>
-											<label className="badge red">공지</label>
-											<div className="subject"><Link to="/main/usr_2300/usr_2301"  className="tx tx-link">대·중소기업상생협력기금 운영·관리 규정</Link></div>
-											<div className="date">2024.03.30</div>
-										</li>
 									</ul>
 									<Link to="/main/usr_2300/usr_2300" className="button-more">더보기</Link>
 								</div>
@@ -127,11 +124,6 @@ function HomeContainer(){
 										</li>
 										<li>
 											<label className="badge green">모집중</label>
-											<div className="subject"><Link to="/main/usr_1900/usr_1908"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
-											<div className="date">2024.05.30 ~ 2025.01.30</div>
-										</li>
-										<li>
-											<label className="badge gray">모집완료</label>
 											<div className="subject"><Link to="/main/usr_1900/usr_1908"  className="tx tx-link">대중소기업상생협력기금 운영안내</Link></div>
 											<div className="date">2024.05.30 ~ 2025.01.30</div>
 										</li>
@@ -186,14 +178,14 @@ function HomeContainer(){
 			</div>
 
 			{/* 20240613 - 메인 이미지 팝업 */}
-			<div className="main-img-popup">  {/* [D] ASIS처럼 적당한 top, left 값 주세요 */}
+			{/* [D] ASIS처럼 적당한 top, left 값 주세요 */}
+			{/* <div className="main-img-popup">  
 				<img src="https://fund.win-win.or.kr/common/file/download/126AE20A-78C0-4CB8-8B87-8D0AAB5B3868.jpg" alt="" />
 				<div className="bottom-area">
 					<button className="btn-close-today" type="button">오늘하루열지않기</button>
 					<button className="btn-close" type="button">닫기</button>
 				</div>
-			</div>
-
+			</div> */}
 			{/* //20240613 - 메인 이미지 팝업 */}
 
 		</PageContainer>
