@@ -40,7 +40,10 @@ function ContentsContainer() {
 								<p className="tx-invalid mb12">에러 안내 메세지</p>
 								<div className="form-items mb12">
 									<UIInputPW className={'tf tf-big w100p'} value={''} placeholder={'비밀번호를 입력하세요'} />
-									<div className="kpd-check"><input type="checkbox" id="kpd-chk" defaultChecked/><label htmlFor="kpd-chk">키보드 보안입력</label></div>
+
+									{/* P24(usr_1300) 로그인 패스워드 입력 edit 에 마우스 디자인 제거 */}
+									{/* <div className="kpd-check"><input type="checkbox" id="kpd-chk" defaultChecked/><label htmlFor="kpd-chk">키보드 보안입력</label></div> */}
+									
 								</div>
 								<div className="mb30">
 									<label htmlFor="ch-id" className="hz-item ip-ch-label ip-ch-18">
