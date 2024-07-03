@@ -14,7 +14,8 @@ function ContentsContainer() {
 					<div className="curity-program">
 						<h1 className="tx tx-hd2">보안프로그램 설치</h1>
 						<h3 className="curity-title mb30">고객님의 안전한 서비스를 위해 보안 프로그램을 설치 하셔야 합니다.</h3>
-						<div className="tb tb-narrow mb50">
+						
+						<div className="tb tb-narrow mb20"> {/* [M.20240703] 수정 */}
 							<table>
 								<caption>보안프로그램 목록</caption>
 								<colgroup>
@@ -60,6 +61,13 @@ function ContentsContainer() {
 								</tbody>
 							</table>
 						</div>
+
+						{/* [M.20240703] 추가 */}
+						<div className="hz-root hz-center mb30">
+							<button className="bt" data-color="gray-o" data-size="md"  type="button">새로고침</button>
+						</div>						
+						{/* [M.20240703] 추가 */}
+
 						<h3 className="section-title mb30"><span className="fc-pri fw500">키보드 보안 (TouchEnNxKey with E2E)</span></h3>
 						<ul className="curity-info mb30">
 							<li>

@@ -89,7 +89,6 @@ function ContentsContainer() {
 										<col width="60px" />
 										<col />
 										<col />
-										
 									</colgroup>
 									<thead>
 										<tr>
@@ -124,13 +123,40 @@ function ContentsContainer() {
 											<td>
 												<div className="fund-form-group">
 													<div className="fund-form-items tf-unit">
-														<UIInput className={'tf tf-md ta-right'} value={'000,000,000'} placeholder={''}  />
+														<UIInput className={'tf tf-md ta-right'} value={'12,345,000'} placeholder={''}  />
 														<span className="u">원</span>
 													</div>
-													<div className="tx-msg ml10"><span className="fc-pri">(한글금액원)</span></div>
+													<div className="tx-msg ml10"><span className="fc-pri">(일천이백삼십사만오천 원)</span></div>
 												</div>
 											</td>
 										</tr>
+										<tr>
+											<td>
+												<label htmlFor="ch-t1" className="hz-item ip-ch-label ip-ch-18">
+													<input id="ch-t1" className="ip-ch" type="checkbox" />
+													<span className="check"></span> 
+												</label>
+											</td>
+											<td>
+												<div className="sl sl-md">
+													<select>
+														<option>선택하세요</option>
+														{sectors.map((sec, idx) =>
+															<option key={idx}>{sec}</option>
+														)}
+													</select>
+												</div>
+											</td>
+											<td>
+												<div className="fund-form-group">
+													<div className="fund-form-items tf-unit">
+														<UIInput className={'tf tf-md ta-right'} value={'0'} placeholder={''}  />
+														<span className="u">원</span>
+													</div>
+													<div className="tx-msg ml10"><span className="fc-pri">(원)</span></div>
+												</div>
+											</td>
+										</tr>										
 									</tbody>
 								</table>
 							</div>
