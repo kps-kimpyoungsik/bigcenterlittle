@@ -5,7 +5,7 @@ import ReactModal from 'react-modal';
 type ModalPopupProps = {
 	open: boolean;
 	title: string;
-	size: 'sm' | 'mid' | 'lg' | 'xlg' | 'alert';
+	size: 'sm' | 'mid' | 'lg' | 'xlg' | 'alert' | 'alert04';
 	onClose?: () => void;
 	children?: React.ReactNode;
 };

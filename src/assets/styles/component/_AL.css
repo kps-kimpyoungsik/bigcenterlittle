@@ -92,3 +92,18 @@
 .size-alert .ReactModal__Content .modal-bottom .buttons {
 	min-width:110px;
 }
+
+/*Type.04 With 이미지*/
+.size-alert04 .ReactModal__Content{
+	max-width: 600px;
+}
+.size-alert04 .ReactModal__Content .modal-popup-header .title {
+    font-size: 0;
+}
+.size-alert04 .ReactModal__Content .visual {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+.size-alert04  .modal-bottom {
+    margin-top: 30px;
+}
