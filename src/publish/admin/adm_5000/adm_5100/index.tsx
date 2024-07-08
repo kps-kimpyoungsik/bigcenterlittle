@@ -55,7 +55,10 @@ function ContentsContainer() {
 							</div>									
 						</div>
 					</div>
-					<div className='ibsheet'>[D] IBSHEET 영역</div>
+					<div className='ibsheet'>
+						[D] IBSHEET 영역 <br />
+						<button className="btn-file" type="button">첨부파일</button> {/* [M.20240708] 추가 */} 
+					</div>
 					<div className="pg">
 						<div className="group">
 							<button type="button" className="item first">처음</button>

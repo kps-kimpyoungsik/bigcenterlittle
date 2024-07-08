@@ -675,3 +675,14 @@ background-image: url(../img/icon/ic_left_10.svg);
     padding-left: 16px;
     background: url("data:image/svg+xml,%3Csvg width='6' height='8' viewBox='0 0 6 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.32584 3.51347C5.65768 3.75295 5.65768 4.24705 5.32584 4.48653L0.951123 7.64371C0.554305 7.93009 -3.77953e-07 7.64655 -3.56562e-07 7.15718L-8.05521e-08 0.842818C-5.91613e-08 0.353453 0.554305 0.0699077 0.951123 0.356287L5.32584 3.51347Z' fill='%239CA7B4'/%3E%3C/svg%3E%0A") no-repeat 0px 50%;
 }
+
+/*공지사항/팝업관리 리스트 첨부파일 버튼*/
+.btn-file {
+    width: 15px;
+    height: 15px;
+    border: 0;
+    background: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.19799 5.02765L7.06789 7.15775C6.40637 7.81927 6.40637 8.89093 7.06789 9.55246C7.72941 10.214 8.80108 10.214 9.4626 9.55246L12.3468 6.66822C13.4846 5.53041 13.4846 3.69138 12.3468 2.55356C11.209 1.41574 9.36999 1.41574 8.23217 2.55356L2.05356 8.71894C0.915741 9.85676 0.915741 11.6958 2.05356 12.8336C3.19138 13.9714 5.0304 13.9714 6.16822 12.8336L7.25312 11.7487' stroke='%23323232' stroke-width='1.1' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    text-indent:  -9999px;
+    margin-left: 5px;
+}
