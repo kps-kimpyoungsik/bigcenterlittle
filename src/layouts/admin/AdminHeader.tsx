@@ -1,7 +1,7 @@
 
 import React, {useState} from "react";
 import { Link, NavLink, useLocation  } from 'react-router-dom';
-import logo from 'assets/img/logo/logo_blk_new.svg';
+import logo from 'assets/img/logo/logo_blk_new.svg'; // [M.20240709] 수정
 import menutree from './menutree.json';
 function LayoutHeader() {
 	const location = useLocation(); 
