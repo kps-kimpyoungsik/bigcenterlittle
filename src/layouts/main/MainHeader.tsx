@@ -1,7 +1,7 @@
 
 import React, { useState} from "react";
 import { Link, NavLink, useLocation  } from 'react-router-dom';
-import logo from 'assets/img/logo/logo_blk.svg';
+import logo from 'assets/img/logo/logo_blk_new.svg';
 import logo_deco from 'assets/img/char/char_gnb_deco.gif';
 import menutree from './menutree.json';
 function LayoutHeader() {
