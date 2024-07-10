@@ -13,6 +13,17 @@ function PortalAside() {
 		}
 	}
 	return (
+		
+		// 20240710 - active 오류 이슈 발생
+		//menutree.json
+		/*
+			변경전
+			{"s_id":8, "sceenid":"1706", "name" : "통계관리", "dep3": []}
+
+			변경후
+			{"s_id":8, "sceenid":"1800", "name" : "통계관리", "dep3": []}
+		*/
+
 		<aside className='fww-aside'>
 			<p className="tit-d1">{menutree.gnb[0].name}</p>
 			<ul className='d1'>
