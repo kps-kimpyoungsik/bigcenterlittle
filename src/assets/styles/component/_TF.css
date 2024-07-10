@@ -223,6 +223,76 @@ input, button, textarea {
   border-radius: 50% !important;
 }
 
+/*datepicker 디자인 개편 (20240710)*/
+.react-datepicker__header {
+  /* background: red; */
+  /* border: 1px dashed red; */
+  padding: 10px 0px 0px 0px !important;
+}
+.react-datepicker__header>div:first-of-type {
+  /* border: 1px dashed red; */
+}
+.react-datepicker__header>div:first-of-type button {
+  text-indent: -9999px;
+  background: none;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  /* border: 1px solid red; */
+  background-position: 50% 50%;
+}
+.react-datepicker__header>div:first-of-type button:nth-of-type(1) {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 12L5.4966 8.0034L9.5 4' stroke='%23323232' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.react-datepicker__header>div:first-of-type button:nth-of-type(2) {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.5 12L5.4966 8.0034L9.5 4' stroke='%23323232' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  transform: rotate(180deg);
+}
+.react-datepicker__header>div:first-of-type select {
+  border: 0;
+  outline: 0;
+  /* border: 1px solid red; */
+  height: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  padding: 0;
+  appearance: none; /* 화살표 없애기 */
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 6.6001L7.9966 10.6035L12 6.6001' stroke='%23323232' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.react-datepicker__header>div:first-of-type select:nth-of-type(1) {
+  width: 65px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.react-datepicker__header>div:first-of-type select:nth-of-type(2) {
+  width: 50px !important;
+  margin-right: 10px;
+}
+.react-datepicker__today-button {
+  /* display: none; */
+  background: #EDF4FF !important;
+  border-color: #9EC5FF !important;
+}
+.datepicker .react-datepicker__day-names {
+  position: relative;
+  border-bottom: 0;
+}
+.datepicker .react-datepicker__day-names:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 36px;
+  left: 15px;
+  right: 15px; 
+  height: 1px;
+  background: #E4E4E4;
+}
+.datepicker .react-datepicker__month {
+  margin: 20px 20px 20px 20px;
+}
+
 /*TypeFile  추가*/
 .filebox {
   display: flex;
