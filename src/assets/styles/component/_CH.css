@@ -21,9 +21,42 @@
     border: 0;
 }
 
+/*16 (추후작업)*/
+.ip-ch-label.ip-ch-16 {
+    font-size: 13px;
+    /* padding-left: 24px; */
+    padding-left: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+.ip-ch-label.ip-ch-16 .txt {
+  position: relative;
+  top: 1px;
+  margin-left: 6px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+}
+.ip-ch-label.ip-ch-16 .ip-ch+.check {
+    width: 16px;
+    height: 16px;
+}
+.ip-ch-label.ip-ch-16 .ip-ch+.check {
+    background: url(../../img/icon/ic_checkbox_16_normal.svg);
+}
+.ip-ch-label.ip-ch-16 .ip-ch:checked+.check {
+    background: url(../../img/icon/ic_checkbox_16_active.svg);
+}
+.ip-ch-label.ip-ch-16 .ip-ch:disabled+.check {
+    background: url(../../img/icon/ic_checkbox_16_normal_disabled.svg);
+}
+.ip-ch-label.ip-ch-16 .ip-ch:disabled:checked+.check {
+    background: url(../../img/icon/ic_checkbox_16_active_disabled.svg);
+}
+
 /*18*/
 .ip-ch-label.ip-ch-18 {
-    font-size: 14px;
+    font-size: 13px;
     /* padding-left: 24px; */
     padding-left: 18px;
     height: 18px;
@@ -52,7 +85,3 @@
     background: url(../../img/icon/ic_checkbox_18_active_disabled.svg);
 }
 
-/*16 (추후작업)*/
-.ip-ch-label.ip-ch-16 {
-
-}

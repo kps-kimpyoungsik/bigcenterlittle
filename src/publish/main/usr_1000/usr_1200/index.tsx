@@ -24,11 +24,16 @@ function ContentsContainer() {
 						<section className="join-section">
 							<div className="join-top">
 								<h3 className="section-title">이용약관 동의</h3>
+
+								{/* [M.20240715] 삭제 */}
+								{/*
 								<label htmlFor="ch-all" className="hz-item ip-ch-label ip-ch-18">
 									<input name="ch-all" id="ch-all" className="ip-ch" type="checkbox" />
 									<span className="check"></span> 
 									<span className="txt">전체동의</span>
 								</label>
+								*/}
+
 							</div>
 							<div className="terms-conts">
 								<Terms />
@@ -104,6 +109,16 @@ function ContentsContainer() {
 								</label>
 							</div>
 						</section>												
+
+						{/* [M.20240715] 추가 */}
+						<div className="ta-center mb50">
+							<label htmlFor="ch-agreeall" className="hz-item ip-ch-label ip-ch-18">
+								<input name="ch-agreeall" id="ch-agreeall" className="ip-ch" type="checkbox" />
+								<span className="check"></span> 
+								<span className="txt fs18">위의 사항에 대하여 전체동의합니다.</span>
+							</label>
+						</div>									
+						{/* //[M.20240715] 추가 */}	
 
 						<div className="certification">
 							<h3>본인 인증 확인</h3>
