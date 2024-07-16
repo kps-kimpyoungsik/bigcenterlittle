@@ -11,10 +11,10 @@ function LayoutFooter() {
 			</ul>
 			<div className='fww-footer-info'>
 				<div className='info'>
-					<address>04554 서울특별시 중구 퇴계로 173 남산스퀘어빌딩 7층</address>
-					<p>Tel : 02-368-8771</p>
+					<address>서울특별시 중구 퇴계로 173 남산스퀘어 7층 대중소기업농어업협력재단</address> {/* [M.20270716] 수정 */}
+					<p>Tel : 02-368-8700</p> {/* [M.20270716] 수정 */} 
 					<p>Fax : 02-368-8709</p>
-					<p>E-mail : <a href="mailto:fund@win-win.or.kr" className='tx tx-link'>fund@win-win.or.kr</a></p>
+					<p>E-mail : <a href="mailto:winfis@win-win.or.kr" className='tx tx-link'>winfis@win-win.or.kr</a></p> {/* [M.20270716] 수정 */}
 				</div>
 				<div>시스템 관련 문의처 : 02-368-8979</div>
 				<div className='copyright'>Copyright ⓒ 2024 대·중소기업·농어업협력재단. All Rights Reserved.</div>
