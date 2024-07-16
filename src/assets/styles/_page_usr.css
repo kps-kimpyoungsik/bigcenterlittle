@@ -1305,6 +1305,9 @@ h1.tx-hd2 + .hz-root {
 .home-section .button-more:hover::before {
     transform: rotate(-180deg);
 }
+
+/*배너 케러셀로 변경 전 코드*/
+/*
 .home-section .banner-group {
     display: flex;
     align-items: flex-start;
@@ -1314,6 +1317,60 @@ h1.tx-hd2 + .hz-root {
 .home-section .banner-group img {
     display:block;
 }
+*/
+
+/*배너 케러셀로 변경 후 코드*/
+.home-section .banner-group {
+    /* border: 1px dashed red; */
+    margin-right: 64px;
+}
+.home-section .banner-group .slick-slider {
+    /* border: 1px dashed red; */
+}
+.home-section .banner-group .slick-slider .slick-list {
+    /* border: 1px dashed red; */
+}
+.home-section .banner-group .slick-slider .slick-list .slick-slide {
+    /* border: 1px dashed red; */
+    text-align: center;
+    margin-right: 50px;
+}
+.home-section .banner-group .slick-slider .slick-list .slick-slide a {
+    /* border: 1px solid green;     */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.home-section .banner-group .slick-slider .slick-list .slick-slide a img {
+    /* border: 1px solid blue; */
+    /* background: skyblue; */
+}
+.home-section .banner-group .slick-slider .slick-arrow {
+    /* border: 1px dashed red; */
+    width: 20px;
+    height: 20px;
+    /* background: red; */
+}
+.home-section .banner-group .slick-slider .slick-arrow::before {
+    background: none;
+    content: "";
+}
+.home-section .banner-group .slick-slider .slick-arrow.slick-prev {
+    /* border: 1px dashed red; */
+    left: auto;
+    /* right:  -20px; */
+    right: -40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2217 16.2222L6.10537 10.1163L12.2217 4' stroke='%23777777' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");    
+}
+.home-section .banner-group .slick-slider .slick-arrow.slick-next {
+    /* border: 1px dashed red; */
+    left: auto;
+    right: -64px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.32812 16.2222L14.4444 10.1163L8.32812 4' stroke='%23777777' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+
+
 .home-sidebar {
     position: fixed;
     /* bottom:30px; */

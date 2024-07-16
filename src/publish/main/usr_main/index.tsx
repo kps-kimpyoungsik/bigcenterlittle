@@ -1,6 +1,43 @@
 import React, {useState} from "react";
 import { Link } from 'react-router-dom';
 import PageContainer from '../PageContainer';
+import Slider from "react-slick"; //추가
+import "slick-carousel/slick/slick.css"; //추가
+import "slick-carousel/slick/slick-theme.css"; //추가
+
+// [M.20240716] 추가
+export function RelationCompany() {
+  var settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true		
+  };
+	const bnr = [
+		{src:'win-win.png',alt:'대중소기업농어업협력재단',url:'https://www.win-win.or.kr'},
+		{src:'winwingrowth.png',alt:'동반성장위원회',url:'https://www.winwingrowth.or.kr'},
+		{src:'index.win-win.png',alt:'동반성장지수',url:'https://index.win-win.or.kr'},
+		{src:'winwinnuri.png',alt:'상생누리',url:'https://www.winwinnuri.or.kr'},
+		{src:'kescrow.png',alt:'기술자료임치센터',url:'https://www.kescrow.or.kr'},
+		{src:'winwinfund.png',alt:'농어촌상생기금',url:'https://www.winwinfund.or.kr'},
+		{src:'benis.png',alt:'성과공유확산',url:'https://www.benis.or.kr'},
+	];	
+  return (
+		<>
+			<Slider {...settings}>
+				{bnr.map((bnr, index) =>
+					<a key={index} href={bnr.url} target="_blank" rel="noreferrer"><img src={require('assets/img/pages/'+bnr.src+'')} alt={bnr.alt} /></a>			
+				)}
+			</Slider>
+		</>
+  );
+}
+ // [M.20240716] 추가
+
 //import Button from 'components/buttons/';
 function HomeContainer(){
 	const [sidebar, setSidebar] = useState(false);
@@ -140,11 +177,21 @@ function HomeContainer(){
 					</section>
 					<section className="home-section" data-section="banner">
 						<div className="inner">
+
+
+							{/*[M.20240716] 삭제 */}
+							{/*
 							<div className="banner-group">
 								{bnr.map((bnr, index) =>
 									<a key={index} href={bnr.url} target="_blank" rel="noreferrer"><img src={require('assets/img/pages/'+bnr.src+'')} alt={bnr.alt} /></a>			
 								)}
 							</div>
+							*/}
+
+							<div className="banner-group">
+								<RelationCompany></RelationCompany>
+							</div>
+
 						</div>
 					</section>
 					<div className={sidebar ? 'home-sidebar' : 'home-sidebar closed'}>
