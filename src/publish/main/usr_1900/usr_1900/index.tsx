@@ -11,13 +11,20 @@ function ContentsContainer() {
 			<div className='fww-con'>
 				<Breadcrumb gnbIdx={0} lnbIdx={0}/>
 				<main className="fww-main" data-layout="usr">
-					<h1 className="tx tx-hd2">제도소개</h1>
-					<div className="fww-intro">
-						<h2>대ㆍ중소기업 상생협력기금은,</h2>
+					<h1 className="tx tx-hd2">대ㆍ중소기업 상생협력기금은,</h1> {/* [M.20240716] 수정 */}
+					<div className="fww-intro"> 
+						{/* <h2>대ㆍ중소기업 상생협력기금은,</h2> */} {/* [M.20240716] 삭제 */}
+						
+						<p className="fs26 fw600 mb50">내국법인이 중소기업과의 지속가능한 발전, 상생협력을 위하여 대‧ 중소기업‧농어업협력재단에 출연하는 민간기금(근거법령 : 상생협력법 제20조의5(대·중소기업상생협력기금의 설치 등))</p> {/* [M.20240716] 추가 */}
+						
+						{/* [M.20240716] 삭제 */}
+						{/*
 						<section className="fww-intro-section">
 							<h3 className="title">개요</h3>
 							<p>내국법인이 중소기업과의 지속가능한 발전, 상생협력을 위하여 대‧ 중소기업‧농어업협력재단에 출연하는 민간기금(근거법령 : 상생협력법 제20조의5(대·중소기업상생협력기금의 설치 등))</p>
 						</section>
+						*/}
+
 						<section className="fww-intro-section">
 							<h3 className="title">운영기관</h3>
 							<div className="agency">

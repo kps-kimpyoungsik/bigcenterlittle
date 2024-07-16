@@ -256,26 +256,46 @@ function ContentsContainer() {
 					<div className="fww-noti">
 						<section className="mb30">
 							<h3>출연절차</h3>
+
+							{/* [M.20240716] 수정 */}
 							<div className="step">
 								<dl>
 									<dt>01 출연신청</dt>
-									<dd>아래 [출연신청] 버튼 <br/>누른 후 저장 <br/>(출연신청서 첨부 必)</dd>
+									<dd>
+										아래[저장]버튼 누른후, <br/>
+										출연신청서 전자서명<br/>
+										(출연신청서 직인도 가능)
+									</dd>
 								</dl>
 								<dl>
-									<dt>02 상생협력기금출연</dt>
-									<dd>기업별 지정 계좌로<br />출연금 입금</dd>
+									<dt>02 출연금 입금</dt>
+									<dd>
+										출연기업별 지정계좌 <br/>
+										(하나은행)으로 출연금 입금
+									</dd>
 								</dl>
 								<dl>
 									<dt>03 출연확인</dt>
-									<dd>재단에서 출연입금내역<br />확인하여 처리</dd>
+									<dd>
+										재단에서 출연금 입금확인후 <br/>
+										기부금영수증 등록
+									</dd>
 								</dl>
 								<dl>
 									<dt>04 기부금영수증 출력</dt>
-									<dd>출연신청번호 <br />클릭하여<br />기부금영수증 출력</dd>
+									<dd>
+										본 시스템내에서 상시출력 가능
+									</dd>
 								</dl>
 							</div>
-							<div className="tx-msg">※ 출연신청 이후 별도 확인 절차는 없으며, 출연상태가 출연상태가 [수납완료]일때 기부금영수증이 발급됩니다. (온라인출력)</div>
+							{/* [M.20240716] 수정 */}
+
+							<div className="tx-msg">※ 출연신청 이후, 별도 확인절차는 없으며 출연신청금액을 지정계좌에 입금해주시면 됩니다.</div> {/* [M.20240716] 수정 */}
+							<div className="tx-msg">※ 재단 사업담당자가 입금내역을 확인하여 기부금영수증을 발급합니다.</div> {/* [M.20240716] 추가 */}
 						</section>
+
+						{/* [M.20240716] 삭제 */}
+						{/*
 						<section className="mb30">
 							<h3>기금활용사업</h3>
 							<ul className="bz">
@@ -291,6 +311,8 @@ function ContentsContainer() {
 								<li><span>협력사ESG<br />평가지원</span></li>
 							</ul>
 						</section>
+						*/}
+
 						<dl className="guide">
 							<dt>유의사항</dt>
 							<dd>
