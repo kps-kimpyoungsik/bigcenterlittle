@@ -26,7 +26,7 @@ function ContentsContainer() {
 									<label>기관 조직도</label>
 									<h1>사무총장</h1>
 									<div className="mid-group">
-										<h2>감사실</h2>
+										<h2>감사실</h2> {/* [M.20240712] 수정 */}
 										<h2>정책협력TF</h2>
 										<h2 className="skyblue">동반위 운영처</h2>
 									</div>
@@ -70,7 +70,7 @@ function ContentsContainer() {
 										<ul className="part skyblue">
 											<li>
 												<ul className="dir">
-													{/* <li>적합업종지원실</li> */}
+													{/* <li>적합업종지원실</li> */} {/* [M.20240712] 삭제 */}
 													<li>위원회운영부</li>
 													<li>홍보팀</li>
 													<li>동반성장평가부</li>
