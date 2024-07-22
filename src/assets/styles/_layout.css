@@ -23,6 +23,7 @@
 .fww-util {z-index: 510;}
 .fww-header {z-index: 500;}
 .sf {z-index: 10;}
+.react-datepicker-popper {z-index: 6;} /*캘린더의 팝업이 sun editor뒤로 묻히는 현상 해결*/
 #sheetDiv {z-index: 5; position: relative;}
 
 .fww-root {

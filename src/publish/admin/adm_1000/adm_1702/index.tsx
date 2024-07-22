@@ -49,6 +49,8 @@ function ContentsContainer() {
 
 					<h3 className="section-title mb15">내용등록</h3>
 					<div className="mb10">[D]Editor 영역</div>
+
+					
 					{/*클래스옵션: fo-col2, fo-col3 sf-1row*/}
 					<form className="fo fo-col2 mb30" name="" action="" method="">
 						<div className="inner">
