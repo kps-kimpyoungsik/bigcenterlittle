@@ -147,7 +147,8 @@ input, button, textarea {
   border-radius: 3px;
 }
 .datepicker .react-datepicker-popper {
-  top: -5px !important;;
+  top: -5px !important;
+  z-index: 6; /*캘린더의 팝업이 sun editor뒤로 묻히는 현상 해결*/
 }
 .datepicker .react-datepicker__triangle {
   display:none;
