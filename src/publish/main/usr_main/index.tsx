@@ -20,7 +20,7 @@ export function RelationCompany() {
 	const bnr = [
 		{src:'win-win.png',alt:'대중소기업농어업협력재단',url:'https://www.win-win.or.kr'},
 		{src:'winwingrowth.png',alt:'동반성장위원회',url:'https://www.winwingrowth.or.kr'},
-		{src:'index.win-win.png',alt:'동반성장지수',url:'http://index.win-win.or.kr'},
+		// {src:'index.win-win.png',alt:'동반성장지수',url:'http://index.win-win.or.kr'},
 		{src:'winwinnuri.png',alt:'상생누리',url:'https://www.winwinnuri.or.kr'},
 		{src:'kescrow.png',alt:'기술자료임치센터',url:'https://www.kescrow.or.kr'},
 		{src:'winwinfund.png',alt:'농어촌상생기금',url:'https://www.winwinfund.or.kr'},
